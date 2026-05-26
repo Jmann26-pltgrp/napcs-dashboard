@@ -231,7 +231,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
   </div>
   <div class="stat" id="stat-conf" title="View confirmed schools">
     <div class="stat-val sv-green" id="sv-conf">—</div>
-    <div class="stat-lbl">Confirmed Organized</div>
+    <div class="stat-lbl">Independently Organized</div>
     <div class="stat-sub" id="ss-conf"></div>
   </div>
   <div class="stat" id="stat-dep" title="View dependent schools">
@@ -270,7 +270,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
       <label class="fitem"><input type="checkbox" checked data-status="ORGANIZING"><span class="fdot" style="background:#F5A623"></span><span>Organizing (<span id="fc-2">0</span>)</span></label>
       <label class="fitem"><input type="checkbox" checked data-status="DECERTIFIED"><span class="fdot" style="background:#888;border:1px solid #555"></span><span>Decertified (<span id="fc-3">0</span>)</span></label>
       <label class="fitem"><input type="checkbox" checked data-status="CLOSED"><span class="fdot" style="background:#E07A4A"></span><span>Closed (<span id="fc-4">0</span>)</span></label>
-      <label class="fitem"><input type="checkbox" checked data-status="UNVERIFIED"><span class="fdot" style="background:transparent;border:1.5px dashed #38C0C4"></span><span>Unverified (<span id="fc-5">0</span>)</span></label>
+      <label class="fitem"><input type="checkbox" checked data-status="UNVERIFIED"><span class="fdot" style="background:transparent;border:1.5px dashed #8080C0"></span><span>Unverified (<span id="fc-5">0</span>)</span></label>
     </div>
 
   </div>
@@ -288,7 +288,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
       <div class="tab-row">
         <button class="ftab" data-tab="registry">Registry</button>
         <button class="ftab" data-tab="discovery">Discovery</button>
+        <button class="ftab" data-tab="verification">Verification</button>
+      </div>
+      <div class="tab-row-label" style="background:#0A1520"></div>
+      <div class="tab-row">
         <button class="ftab" data-tab="associations">Associations</button>
+        <button class="ftab" data-tab="" style="visibility:hidden;pointer-events:none"></button>
+        <button class="ftab" data-tab="" style="visibility:hidden;pointer-events:none"></button>
       </div>
       <div class="tab-row-label">&#9632; INTELLIGENCE <span style="font-size:7px;color:#4A6A80;font-weight:400;margin-left:4px">— select a state</span></div>
       <div class="tab-row">
@@ -493,7 +499,7 @@ SCHOOLS.forEach(function(s){
   var m=L.circleMarker([s.lat,s.lng],{
     radius:cfg.r,
     fillColor:cfg.color,
-    color:isUnv?'#38C0C4':'rgba(0,0,0,0.3)',  // Amber outline for unverified
+    color:isUnv?'#8080C0':'rgba(0,0,0,0.3)',  // Amber outline for unverified
     weight:isUnv?1.2:1,
     fillOpacity:isUnv?0:cfg.opacity,
     dashArray:isUnv?'2,2':null,
@@ -573,7 +579,7 @@ function openStateSlideout(code, coords){
   // Density
   h+='<div class="spo-section">Density Statistics</div>';
   h+=spoRow('Universe',(sd.universe||0).toLocaleString(),'');
-  h+=spoRow('Confirmed',(sd.conf||0)+' ('+confPctSt+'%)','g');
+  h+=spoRow('Independently Org.',(sd.conf||0)+' ('+confPctSt+'%)','g');
   if(sd.dep) h+=spoRow('Dependent',sd.dep+' ('+depPctSt+'%)','t');
   if(sd.org) h+=spoRow('Organizing',sd.org,'gold');
   h+=spoRow('Combined Density',pct+'%',combined>0?'g':'');
@@ -674,6 +680,7 @@ function switchTab(tab){
   else if(tab==='registry') buildRegistryPanel();
   else if(tab==='discovery') buildDiscoveryPanel();
   else if(tab==='associations') buildAssociationsPanel();
+  else if(tab==='verification') buildVerificationPanel();
   else if(isIntelTab(tab)) renderIntelTab(tab,_curState);
 }
 
@@ -688,7 +695,7 @@ function showNationalPanel(){
   h+='<div class="section-label">National Summary \u2014 May 2026</div>';
   h+=srow('Charter Schools (Registry '+(RC?RC.version:'v59')+')',NAT.universe.toLocaleString(),'');
   h+=srow('Total Organized',NAT.combined+' ('+NAT.density+')','sv-g');
-  h+=srow('Confirmed Organized',NAT.confirmed+' ('+NAT.confirmed_density+')','sv-g');
+  h+=srow('Independently Organized',NAT.confirmed+' ('+NAT.confirmed_density+')','sv-g');
   h+=srow('Dependent Schools',NAT.dependent+' ('+depPct+')','sv-t');
   h+=srow('Active Organizing',NAT.organizing,NAT.organizing>0?'sv-gold':'');
   h+=srow('Decertified',NAT.decertified,'');
@@ -711,7 +718,7 @@ function showStatePanel(code){
   var h='';
   h+='<div class="section-label">'+name+'</div>';
   h+=srow('Charter Population',(sd.universe||0).toLocaleString(),'');
-  h+=srow('Confirmed Organized',sd.conf||0,'sv-g');
+  h+=srow('Independently Organized',sd.conf||0,'sv-g');
   h+=srow('Dependent Schools',sd.dep||'\u2014',sd.dep?'sv-t':'');
   if(sd.org) h+=srow('Organizing',sd.org,'sv-gold');
   if(sd.dec) h+=srow('Decertified',sd.dec,'');
@@ -793,7 +800,7 @@ function buildRegistryPanel(){
   }
   // Then key stats
   h+='<div class="section-label">Registry Statistics</div>';
-  (RC.about.keyStats||[]).forEach(function(s){ h+='<div class="stat-chip"><span class="stat-chip-lbl">'+esc(s.label)+'</span><span class="stat-chip-val">'+esc(s.value)+'</span></div>'; });
+  (RC.about.keyStats||[]).filter(function(s){ return !s.label.includes('NAPCS research'); }).forEach(function(s){ var val = (s.label.includes('registry refresh')||s.label.includes('Last registry')) ? 'v59 · '+s.value : s.value; h+='<div class="stat-chip"><span class="stat-chip-lbl">'+esc(s.label)+'</span><span class="stat-chip-val">'+esc(val)+'</span></div>'; });
   setPanelBody(h);
 }
 
@@ -806,6 +813,76 @@ function buildDiscoveryPanel(){
   h+='</ul></div>';
   h+='<div class="section-label">Key Statistics</div>';
   d.keyStats.forEach(function(s){ h+='<div class="stat-chip"><span class="stat-chip-lbl">'+esc(s.label)+'</span><span class="stat-chip-val">'+esc(s.value)+'</span></div>'; });
+  setPanelBody(h);
+}
+
+// ── VERIFICATION PROCESS ──────────────────────────────────────────────────────
+function buildVerificationPanel(){
+  setPanelHdr('Verification Process','How we determine union status for every charter school');
+
+  var steps = [
+    {
+      n:1, title:'Identify Governing Labor Board',
+      body:'Before any search begins, we determine which labor board has jurisdiction over the school. This depends on state law, charter type, and incorporation structure. A California EERA school goes to PERB(CA). A Pennsylvania charter goes to NLRB. An Illinois school requires a school-by-school determination — NLRB for private nonprofits, IELRB for ISBE-authorized. Getting this wrong invalidates the search.'
+    },
+    {
+      n:2, title:'Confirm School Operational Status',
+      body:'We verify the school is currently open using the Charter School Registry (NCES CCD data + authorizer verification). Closed schools trigger the 3-year lookback protocol — they receive full research treatment with closure flagged. Schools listed as "Future" or "Inactive" are noted but not searched.'
+    },
+    {
+      n:3, title:'Search by Employer Name — Exact & Variants',
+      body:'We search the labor board portal by the school\'s legal employer name. Charter schools often operate under a different legal entity than their common name (e.g., "Aspire Public Schools" operates "Aspire Centennial College Prep Academy"). We check NAPCS_ID, NCES ID, and all known name variants. For NLRB, this means searching both the eCase system and the NLRB FLRA public case search.'
+    },
+    {
+      n:4, title:'Search by CMO / Network Name',
+      body:'If a school belongs to a charter management organization, we also search by the CMO name. Green Dot, KIPP, Uncommon Schools, Alliance, High Tech High — each may have labor board cases filed under the network name rather than the individual campus. This step catches schools that were organized as part of a network-wide campaign.'
+    },
+    {
+      n:5, title:'Review All Case Types — RC, CD, RM, UC, ULP',
+      body:'We review all labor board case types: RC (representation/election petition), CD (contract bar), RM (employer petition), UC (unit clarification), and ULP (unfair labor practice charges). ULP charges without an RC petition may indicate organizing activity. A closed RC case with a "Certification of Representative" result confirms union status.'
+    },
+    {
+      n:6, title:'Verify Certification Date & Unit Description',
+      body:'When a case confirms organization, we record the Labor Board Certified date (project-wide date convention). We also note the bargaining unit description — certificated staff only, all employees, or classified/support staff only — as this affects how the school is categorized. The unit description tells us which employees are covered.'
+    },
+    {
+      n:7, title:'Check CBA Status & Contract Access',
+      body:'A certified union does not automatically mean an active contract. We check whether a Collective Bargaining Agreement is in place. Some schools have been certified for years with no CBA executed (Certified/Dormant category). We check school websites, union websites, and labor board contracts portals (e.g., NJ PERC contracts database, PERB(CA) ePERB). Direct PDF links sometimes return 403 errors — in those cases we file an OPRA or FOIA request.'
+    },
+    {
+      n:8, title:'Check for Decertification or Jurisdiction Stripping',
+      body:'We review for decertification petitions (RD cases at NLRB), employer petitions (RM), and jurisdiction-stripping activity — particularly National Right to Work Foundation filings that argue a state-board-certified school is actually a private employer under NLRB. The St. HOPE (2026) and Gompers (2023) cases in California established this as a live threat. Any such finding triggers a HIGH priority monitoring flag.'
+    },
+    {
+      n:9, title:'Secondary Source Cross-Verification',
+      body:'For confirmed schools, we cross-reference against: union websites (some locals post charter school CBA lists), local news archives (organizing campaigns generate press coverage), FOIA/OPRA responses, school board meeting minutes, and educator social media. For voluntary recognition cases with no labor board record, secondary sources are often the only evidence. Monte del Sol (NM) is a documented example.'
+    },
+    {
+      n:10, title:'Classify & Apply Date Convention',
+      body:'We assign one of six statuses: CONFIRMED (active certification), DEPENDENT (structural coverage via district CBA), ORGANIZING (active petition pending), DECERTIFIED (certification removed), CLOSED (organized school, now closed — 3-year lookback), or UNVERIFIED (no evidence found — not confirmed non-union). UNVERIFIED explicitly means absence of evidence, not evidence of absence. The Labor Board Certified date is recorded as the canonical date for all CONFIRMED schools.'
+    },
+    {
+      n:11, title:'Sponsor Review & Data Entry Gate',
+      body:'No finding enters the master workbook without passing through the sponsor review gate. The research coordinator presents findings to Peri Lynn Turnbull for approval. Discovery schools (non-NAPCS schools found organized during sweeps) require explicit sponsor sign-off and a PLT-assigned NAPCS-ADD ID before entering the dataset. This gate prevents premature or incorrect entries from contaminating the research record.'
+    },
+    {
+      n:12, title:'Monitoring Queue & Refresh Protocol',
+      body:'Schools with pending petitions, active ULPs, CBA gaps, or NRtW risk factors are placed on the Active Monitoring Queue with a review frequency (Monthly / Quarterly). The full research cycle repeats on a biannual basis — next cycle: October 2026. State research sessions are documented in state-level research reports archived in Box.'
+    },
+  ];
+
+  var h = '<div style="font-size:10px;color:#4A6A80;margin-bottom:12px;line-height:1.5;padding:7px 9px;background:#0A1520;border-radius:4px">This 12-step process is applied to every charter school in the NAPCS research universe. Steps 1–9 are repeated for each school. Steps 10–12 govern classification, quality control, and ongoing monitoring.</div>';
+
+  steps.forEach(function(s){
+    h += '<div style="background:#111B27;border-radius:5px;padding:8px 10px;margin-bottom:7px;border-left:3px solid #2E75B6">' +
+      '<div style="display:flex;align-items:baseline;gap:8px;margin-bottom:4px">' +
+        '<span style="font-size:9px;font-weight:700;color:#2E75B6;background:#0A1520;padding:1px 6px;border-radius:10px;flex-shrink:0">Step '+s.n+'</span>' +
+        '<span style="font-size:10px;font-weight:700;color:#E8EDF2">'+esc(s.title)+'</span>' +
+      '</div>' +
+      '<div style="font-size:10px;color:#8BA0B4;line-height:1.6">'+esc(s.body)+'</div>' +
+    '</div>';
+  });
+
   setPanelBody(h);
 }
 
@@ -921,7 +998,7 @@ function renderIntelTab(tab,code){
 // ── MODAL ─────────────────────────────────────────────────────────────────────
 function openModal(status){
   var list=NAPCS_CONFIG.status_lists[status]||[];
-  var labels={CONFIRMED:'Confirmed Organized',DEPENDENT:'Dependent Schools',ORGANIZING:'Active Organizing',DECERTIFIED:'Decertified',CLOSED:'Closed (Formerly Organized)'};
+  var labels={CONFIRMED:'Independently Organized',DEPENDENT:'Dependent Schools',ORGANIZING:'Active Organizing',DECERTIFIED:'Decertified',CLOSED:'Closed (Formerly Organized)'};
   document.getElementById('modal-title').innerHTML='<span class="mbadge bc-'+status+'" style="font-size:10px;margin-right:8px">'+status+'</span>'+(labels[status]||status)+' \u2014 '+list.length+' schools';
   var rows=list.map(function(s){
     return '<div class="mrow"><span class="mbadge bc-'+status+'">'+esc(s.state)+'</span>'+

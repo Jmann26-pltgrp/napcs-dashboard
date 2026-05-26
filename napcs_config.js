@@ -2,7 +2,7 @@
 /**
  * napcs_config.js — National Configuration & Summary Data
  * PLT Strategies Group, Inc. | May 2026
- * Contains: national totals, state summaries, density table, jurisdiction data
+ * Contains: national totals, state summaries, density table, jurisdiction data, state reports
  * UPDATE when registry version changes or research sessions complete.
  */
 const NAPCS_CONFIG = {
@@ -27,21 +27,21 @@ const NAPCS_CONFIG = {
       "org": 0,
       "dec": 0,
       "clo": 0,
-      "lb": "NLRB Region 28 (Phoenix)",
+      "lb": "National Labor Relations Board",
       "lb_abbrev": "NLRB",
-      "note": "National Labor Relations Act (NLRA). Arizona is a right-to-work state (ARS §23-1302). No state public-sector collective "
+      "note": "AZ charter schools are private employers under NLRB jurisdiction. Region 28 (Phoenix) has jurisdiction over Arizona."
     },
     "CA": {
       "name": "California",
       "universe": 1246,
       "conf": 139,
       "dep": 66,
-      "org": 0,
+      "org": 2,
       "dec": 2,
       "clo": 0,
-      "lb": "PERB(CA) — California Public Employment Relations Board",
-      "lb_abbrev": "PERB(CA) — California Public Employment ",
-      "note": "Educational Employment Relations Act (EERA), Gov. Code §3540 et seq."
+      "lb": "Public Employment Relations Board",
+      "lb_abbrev": "PERB (CA)",
+      "note": "LAUSD-affiliated dependent charter; LAUSD is employer under EERA; UTLA CBA applies; PERB (CA) jurisdiction per Gov. Code"
     },
     "CT": {
       "name": "Connecticut",
@@ -51,9 +51,9 @@ const NAPCS_CONFIG = {
       "org": 0,
       "dec": 0,
       "clo": 0,
-      "lb": "SBLR (CT)",
-      "lb_abbrev": "Connecticut State Board of Labor Relatio",
-      "note": "Connecticut Teacher Negotiation Act (TNA) — Conn. Gen. Stat. §10-153a et seq. Governs certificated staff in most CT char"
+      "lb": "Connecticut State Board of Labor Relations",
+      "lb_abbrev": "SBLR",
+      "note": "CT state-authorized charter school. Split jurisdiction per C.G.S. §10-66dd: CERTIFIED staff (teachers/administrators) — "
     },
     "DC": {
       "name": "Washington DC",
@@ -64,7 +64,7 @@ const NAPCS_CONFIG = {
       "dec": 0,
       "clo": 1,
       "lb": "NLRB",
-      "lb_abbrev": "NLRB— Region 5 (Baltimore/Washington)",
+      "lb_abbrev": "NLRB — Region 5 (Baltimore/Washington)",
       "note": "National Labor Relations Act (NLRA). All DC Public Charter Schools (PCS) are authorized by the DC Public Charter School "
     },
     "DE": {
@@ -75,9 +75,9 @@ const NAPCS_CONFIG = {
       "org": 0,
       "dec": 0,
       "clo": 0,
-      "lb": "PERB(DE)",
-      "lb_abbrev": "Delaware Public Employment Relations Boa",
-      "note": "14 Del.C. Chapter 40 — Public School Employment Relations Act (PSERA). All Delaware charter schools are public employers"
+      "lb": "Public Employment Relations Board",
+      "lb_abbrev": "PERB (DE)",
+      "note": "All DE charter schools classified as public employers under PERB (DE). NLRB does not apply."
     },
     "FL": {
       "name": "Florida",
@@ -87,9 +87,21 @@ const NAPCS_CONFIG = {
       "org": 0,
       "dec": 0,
       "clo": 1,
-      "lb": "PERC (FL)",
-      "lb_abbrev": "Florida Public Employees Relations Commi",
-      "note": "Florida Public Employees Relations Act (PERA), Fla. Stat. §447.203. PERC(FL) has exclusive jurisdiction over all FL char"
+      "lb": "Public Employees Relations Commission",
+      "lb_abbrev": "PERC (FL)",
+      "note": "District-authorized charter. Classified as public employer under PERC (FL). Independently incorporated charters may be N"
+    },
+    "HI": {
+      "name": "Hawaii",
+      "universe": 40,
+      "conf": 0,
+      "dep": 40,
+      "org": 0,
+      "dec": 0,
+      "clo": 0,
+      "lb": "Hawaii Labor Relations Board",
+      "lb_abbrev": "HLRB",
+      "note": "All HI charter schools are public employers under HRS Chapter 89 (Collective Bargaining in Public Employment Act). HLRB "
     },
     "IL": {
       "name": "Illinois",
@@ -99,9 +111,9 @@ const NAPCS_CONFIG = {
       "org": 0,
       "dec": 0,
       "clo": 5,
-      "lb": "NLRB (Region 13) / IELRB",
-      "lb_abbrev": "NLRB, Region 13 (Chicago) — primary juri",
-      "note": "National Labor Relations Act (NLRA) for private nonprofits (most IL charters, per Chicago Mathematics & Science Academy,"
+      "lb": "Illinois Educational Labor Relations Board",
+      "lb_abbrev": "ILRB",
+      "note": "District-authorized IL charter school (authorized by CHICAGO PUBLIC SCHOOLS DISTRICT 299). District-authorized charters "
     },
     "LA": {
       "name": "Louisiana",
@@ -111,9 +123,9 @@ const NAPCS_CONFIG = {
       "org": 0,
       "dec": 0,
       "clo": 1,
-      "lb": "LSCSC / NLRB R15",
-      "lb_abbrev": "Louisiana State Civil Service Commission",
-      "note": "Louisiana Employee Relations Act (LERA) — post-Act 172 (signed May 23, 2024) for all BESE-authorized Type 2/5 charters. "
+      "lb": "Louisiana State Civil Service Commission (LERA)",
+      "lb_abbrev": "LSCSC/LERA",
+      "note": "Type 3B — locally/district-authorized public employer; Louisiana Employee Relations Act (LERA) jurisdiction; NLRB does n"
     },
     "MA": {
       "name": "Massachusetts",
@@ -124,7 +136,7 @@ const NAPCS_CONFIG = {
       "dec": 1,
       "clo": 1,
       "lb": "DLR (MA)",
-      "lb_abbrev": "Massachusetts Department of Labor Relati",
+      "lb_abbrev": "Massachusetts Department of Labor Relations",
       "note": "M.G.L. c. 71 §89 (Charter School Law — explicitly classifies charter school employees as public employees); M.G.L. c. 15"
     },
     "ME": {
@@ -135,9 +147,9 @@ const NAPCS_CONFIG = {
       "org": 0,
       "dec": 0,
       "clo": 0,
-      "lb": "NLRB",
-      "lb_abbrev": "NLRB— Region 1 (Boston)",
-      "note": "National Labor Relations Act (NLRA). Baxter Academy is incorporated as a private nonprofit charter school under the Main"
+      "lb": "Maine Labor Relations Board",
+      "lb_abbrev": "MLRB",
+      "note": "Public employees covered by MLRB. No public portal — labor board searches require emailing mlrb@maine.gov. NLRB may appl"
     },
     "MI": {
       "name": "Michigan",
@@ -147,9 +159,9 @@ const NAPCS_CONFIG = {
       "org": 0,
       "dec": 0,
       "clo": 0,
-      "lb": "MERC / NLRB Region 7",
-      "lb_abbrev": "Michigan Employment Relations Commission",
-      "note": "SPLIT JURISDICTION: (1) MERC under PERA (Mich. Comp. Laws §423.201 et seq.) for locally-authorized and ISD-authorized ch"
+      "lb": "Michigan Employment Relations Commission",
+      "lb_abbrev": "MERC",
+      "note": "Public employer under PERA; MERC primary jurisdiction. NLRB R7 may apply to independently incorporated charters."
     },
     "MN": {
       "name": "Minnesota",
@@ -159,9 +171,9 @@ const NAPCS_CONFIG = {
       "org": 0,
       "dec": 0,
       "clo": 1,
-      "lb": "BMS (MN)",
-      "lb_abbrev": "Minnesota Bureau of Mediation Services",
-      "note": "Minnesota Public Employment Labor Relations Act (PELRA), Minn. Stat. §179A. 2023 PELRA amendments explicitly included ch"
+      "lb": "Bureau of Mediation Services",
+      "lb_abbrev": "BMS (MN)",
+      "note": "MN PELRA (Minn. Stat. ch. 179A) explicitly covers charter schools as public employers despite nonprofit org. BMS has aff"
     },
     "NJ": {
       "name": "New Jersey",
@@ -171,9 +183,9 @@ const NAPCS_CONFIG = {
       "org": 0,
       "dec": 0,
       "clo": 1,
-      "lb": "PERC (NJ)",
-      "lb_abbrev": "Public Employment Relations Commission o",
-      "note": "N.J.S.A. 18A:36A (NJ Charter School Law); N.J.S.A. 34:13A-1 et seq. All NJ charter schools are public schools; all emplo"
+      "lb": "Public Employment Relations Commission",
+      "lb_abbrev": "PERC (NJ)",
+      "note": "All NJ charter schools under PERC (NJ). NJDOE is sole authorizer; all charters are public employers. NLRB does not apply"
     },
     "NM": {
       "name": "New Mexico",
@@ -183,9 +195,9 @@ const NAPCS_CONFIG = {
       "org": 0,
       "dec": 0,
       "clo": 0,
-      "lb": "PELRB (confirmed for J Paul Taylor Academy) / CONTESTED PELRB or NLRB Region 28 (other schools)",
-      "lb_abbrev": "J Paul Taylor Academy: PELRB jurisdictio",
-      "note": "NM charter schools authorized by PEC, serve as independent LEAs. PEBA (NMSA 10-7E) covers state agencies/units of local "
+      "lb": "New Mexico Public Employee Labor Relations Board (no jurisdiction over charters)",
+      "lb_abbrev": "PELRB (no jurisdiction)",
+      "note": "NM charter school — NLRB Region 28 (Phoenix) jurisdiction strongly indicated. PELRB has NO jurisdiction: charter schools"
     },
     "NY": {
       "name": "New York",
@@ -195,9 +207,9 @@ const NAPCS_CONFIG = {
       "org": 0,
       "dec": 1,
       "clo": 0,
-      "lb": "PERB(NY)",
-      "lb_abbrev": "New York Public Employment Relations Boa",
-      "note": "NY Education Law Article 56 (Charter Schools Act); NY Civil Service Law Article 14 (Taylor Law). NY charter school emplo"
+      "lb": "New York Public Employment Relations Board",
+      "lb_abbrev": "PERB (NY)",
+      "note": "CRITICAL JURISDICTION NOTE: PERB (NY) DECLINED jurisdiction over NY charter schools post-Hyde Leadership Charter School "
     },
     "OH": {
       "name": "Ohio",
@@ -207,9 +219,9 @@ const NAPCS_CONFIG = {
       "org": 0,
       "dec": 0,
       "clo": 0,
-      "lb": "NLRB (Region 8 / Region 9)",
-      "lb_abbrev": "NLRB— Region 8 (Cleveland) and Region 9 ",
-      "note": "National Labor Relations Act (NLRA). Ohio charter schools (\"community schools\" per ORC Chapter 3314) are classified as p"
+      "lb": "Ohio State Employment Relations Board",
+      "lb_abbrev": "SERB",
+      "note": "Ohio charter schools are independently incorporated nonprofits — NLRB jurisdiction per decade of NLRB/OFT precedent. SER"
     },
     "OR": {
       "name": "Oregon",
@@ -219,9 +231,9 @@ const NAPCS_CONFIG = {
       "org": 0,
       "dec": 1,
       "clo": 0,
-      "lb": "ERB (OR)",
-      "lb_abbrev": "Oregon Employment Relations Board",
-      "note": "PECBA — Public Employee Collective Bargaining Act (ORS 243.650 et seq.). All district-authorized OR charter schools are "
+      "lb": "Employment Relations Board",
+      "lb_abbrev": "ERB",
+      "note": "District-authorized charter (Eugene SD 4J) — public employer under ORS Ch. 338. ERB jurisdiction. NLRB does not apply."
     },
     "PA": {
       "name": "Pennsylvania",
@@ -231,9 +243,9 @@ const NAPCS_CONFIG = {
       "org": 0,
       "dec": 0,
       "clo": 0,
-      "lb": "NLRB",
+      "lb": "N/A — NLRB only",
       "lb_abbrev": "NLRB",
-      "note": "National Labor Relations Act (NLRA). Pennsylvania Virtual Charter School, 364 NLRB No. 87 (2016) established that all PA"
+      "note": "PA Commonwealth Court 2016: all PA charter schools = private employers. PLRB does not apply. NLRB Region 4 (Philadelphia"
     },
     "RI": {
       "name": "Rhode Island",
@@ -247,18 +259,6 @@ const NAPCS_CONFIG = {
       "lb_abbrev": "NLRB, Region 1, Boston",
       "note": "Federal NLRA. All 42 RI charter schools are independently incorporated nonprofits — including the 3 LEA/District-authori"
     },
-    "HI": {
-      "name": "Hawaii",
-      "universe": 40,
-      "conf": 0,
-      "dep": 40,
-      "org": 0,
-      "dec": 0,
-      "clo": 0,
-      "lb": "HLRB",
-      "lb_abbrev": "HLRB",
-      "note": "All HI charter schools are state employees — HSTA BU05 / HGEA / UPW"
-    },
     "WI": {
       "name": "Wisconsin",
       "universe": 225,
@@ -267,9 +267,9 @@ const NAPCS_CONFIG = {
       "org": 0,
       "dec": 0,
       "clo": 0,
-      "lb": "WERC / NLRB R18",
+      "lb": "Wisconsin Employment Relations Commission",
       "lb_abbrev": "WERC",
-      "note": "0 confirmed organized. Post-Act 10 — no charter school CB cases."
+      "note": "Non-instrumentality charter school under Wis. Stat. §118.40. Authorized by CITY OF MILWAUKEE (non-LEA authorizer). Indep"
     }
   },
   "state_centers": {
@@ -367,8 +367,7 @@ const NAPCS_CONFIG = {
       "dependent": 40,
       "combined": 40,
       "density": "100.0%",
-      "lb": "HLRB",
-      "note": "All HI charter schools are state employees — HSTA BU05 / HGEA / UPW"
+      "lb": "HLRB"
     },
     {
       "st": "OR",
@@ -378,8 +377,7 @@ const NAPCS_CONFIG = {
       "dependent": 120,
       "combined": 121,
       "density": "94.5%",
-      "lb": "Oregon Employment Relations Board",
-      "note": "PECBA — Public Employee Collective Bargaining Act (ORS 243.650 et seq.). All district-authorized OR charter schools are "
+      "lb": "ERB"
     },
     {
       "st": "CT",
@@ -389,8 +387,7 @@ const NAPCS_CONFIG = {
       "dependent": 1,
       "combined": 5,
       "density": "23.8%",
-      "lb": "Connecticut State Board of Labor Relatio",
-      "note": "Connecticut Teacher Negotiation Act (TNA) — Conn. Gen. Stat. §10-153a et seq. Governs certificated staff in most CT char"
+      "lb": "SBLR"
     },
     {
       "st": "IL",
@@ -400,8 +397,7 @@ const NAPCS_CONFIG = {
       "dependent": 1,
       "combined": 31,
       "density": "23.7%",
-      "lb": "NLRB, Region 13 (Chicago) — primary juri",
-      "note": "National Labor Relations Act (NLRA) for private nonprofits (most IL charters, per Chicago Mathematics & Science Academy,"
+      "lb": "ILRB"
     },
     {
       "st": "NJ",
@@ -411,8 +407,7 @@ const NAPCS_CONFIG = {
       "dependent": 0,
       "combined": 19,
       "density": "22.1%",
-      "lb": "Public Employment Relations Commission o",
-      "note": "N.J.S.A. 18A:36A (NJ Charter School Law); N.J.S.A. 34:13A-1 et seq. All NJ charter schools are public schools; all emplo"
+      "lb": "PERC (NJ)"
     },
     {
       "st": "MA",
@@ -422,8 +417,7 @@ const NAPCS_CONFIG = {
       "dependent": 5,
       "combined": 13,
       "density": "17.8%",
-      "lb": "Massachusetts Department of Labor Relati",
-      "note": "M.G.L. c. 71 §89 (Charter School Law — explicitly classifies charter school employees as public employees); M.G.L. c. 15"
+      "lb": "Massachusetts Department of Labor Relations"
     },
     {
       "st": "DE",
@@ -433,8 +427,7 @@ const NAPCS_CONFIG = {
       "dependent": 0,
       "combined": 4,
       "density": "17.4%",
-      "lb": "Delaware Public Employment Relations Boa",
-      "note": "14 Del.C. Chapter 40 — Public School Employment Relations Act (PSERA). All Delaware charter schools are public employers"
+      "lb": "PERB (DE)"
     },
     {
       "st": "RI",
@@ -444,8 +437,7 @@ const NAPCS_CONFIG = {
       "dependent": 0,
       "combined": 7,
       "density": "16.7%",
-      "lb": "NLRB, Region 1, Boston",
-      "note": "Federal NLRA. All 42 RI charter schools are independently incorporated nonprofits — including the 3 LEA/District-authori"
+      "lb": "NLRB, Region 1, Boston"
     },
     {
       "st": "CA",
@@ -455,8 +447,7 @@ const NAPCS_CONFIG = {
       "dependent": 66,
       "combined": 205,
       "density": "16.5%",
-      "lb": "PERB(CA) — California Public Employment ",
-      "note": "Educational Employment Relations Act (EERA), Gov. Code §3540 et seq."
+      "lb": "PERB (CA)"
     },
     {
       "st": "PA",
@@ -466,8 +457,7 @@ const NAPCS_CONFIG = {
       "dependent": 0,
       "combined": 21,
       "density": "12.0%",
-      "lb": "NLRB",
-      "note": "National Labor Relations Act (NLRA). Pennsylvania Virtual Charter School, 364 NLRB No. 87 (2016) established that all PA"
+      "lb": "NLRB"
     },
     {
       "st": "ME",
@@ -477,8 +467,7 @@ const NAPCS_CONFIG = {
       "dependent": 0,
       "combined": 1,
       "density": "9.1%",
-      "lb": "NLRB— Region 1 (Boston)",
-      "note": "National Labor Relations Act (NLRA). Baxter Academy is incorporated as a private nonprofit charter school under the Main"
+      "lb": "MLRB"
     },
     {
       "st": "NY",
@@ -488,8 +477,7 @@ const NAPCS_CONFIG = {
       "dependent": 4,
       "combined": 28,
       "density": "8.3%",
-      "lb": "New York Public Employment Relations Boa",
-      "note": "NY Education Law Article 56 (Charter Schools Act); NY Civil Service Law Article 14 (Taylor Law). NY charter school emplo"
+      "lb": "PERB (NY)"
     },
     {
       "st": "OH",
@@ -499,8 +487,7 @@ const NAPCS_CONFIG = {
       "dependent": 14,
       "combined": 26,
       "density": "8.0%",
-      "lb": "NLRB— Region 8 (Cleveland) and Region 9 ",
-      "note": "National Labor Relations Act (NLRA). Ohio charter schools (\"community schools\" per ORC Chapter 3314) are classified as p"
+      "lb": "SERB"
     },
     {
       "st": "DC",
@@ -510,8 +497,7 @@ const NAPCS_CONFIG = {
       "dependent": 0,
       "combined": 7,
       "density": "5.6%",
-      "lb": "NLRB— Region 5 (Baltimore/Washington)",
-      "note": "National Labor Relations Act (NLRA). All DC Public Charter Schools (PCS) are authorized by the DC Public Charter School "
+      "lb": "NLRB — Region 5 (Baltimore/Washington)"
     },
     {
       "st": "MI",
@@ -521,8 +507,7 @@ const NAPCS_CONFIG = {
       "dependent": 0,
       "combined": 10,
       "density": "2.7%",
-      "lb": "Michigan Employment Relations Commission",
-      "note": "SPLIT JURISDICTION: (1) MERC under PERA (Mich. Comp. Laws §423.201 et seq.) for locally-authorized and ISD-authorized ch"
+      "lb": "MERC"
     },
     {
       "st": "MN",
@@ -532,8 +517,7 @@ const NAPCS_CONFIG = {
       "dependent": 0,
       "combined": 7,
       "density": "2.3%",
-      "lb": "Minnesota Bureau of Mediation Services",
-      "note": "Minnesota Public Employment Labor Relations Act (PELRA), Minn. Stat. §179A. 2023 PELRA amendments explicitly included ch"
+      "lb": "BMS (MN)"
     },
     {
       "st": "LA",
@@ -543,8 +527,7 @@ const NAPCS_CONFIG = {
       "dependent": 0,
       "combined": 3,
       "density": "2.1%",
-      "lb": "Louisiana State Civil Service Commission",
-      "note": "Louisiana Employee Relations Act (LERA) — post-Act 172 (signed May 23, 2024) for all BESE-authorized Type 2/5 charters. "
+      "lb": "LSCSC/LERA"
     },
     {
       "st": "NM",
@@ -554,8 +537,7 @@ const NAPCS_CONFIG = {
       "dependent": 0,
       "combined": 2,
       "density": "2.0%",
-      "lb": "J Paul Taylor Academy: PELRB jurisdictio",
-      "note": "NM charter schools authorized by PEC, serve as independent LEAs. PEBA (NMSA 10-7E) covers state agencies/units of local "
+      "lb": "PELRB (no jurisdiction)"
     },
     {
       "st": "FL",
@@ -565,8 +547,7 @@ const NAPCS_CONFIG = {
       "dependent": 3,
       "combined": 8,
       "density": "1.1%",
-      "lb": "Florida Public Employees Relations Commi",
-      "note": "Florida Public Employees Relations Act (PERA), Fla. Stat. §447.203. PERC(FL) has exclusive jurisdiction over all FL char"
+      "lb": "PERC (FL)"
     },
     {
       "st": "AZ",
@@ -576,8 +557,7 @@ const NAPCS_CONFIG = {
       "dependent": 0,
       "combined": 4,
       "density": "0.7%",
-      "lb": "NLRB",
-      "note": "National Labor Relations Act (NLRA). Arizona is a right-to-work state (ARS §23-1302). No state public-sector collective "
+      "lb": "NLRB"
     },
     {
       "st": "WI",
@@ -587,8 +567,7 @@ const NAPCS_CONFIG = {
       "dependent": 0,
       "combined": 0,
       "density": "0.0%",
-      "lb": "WERC",
-      "note": "0 confirmed organized. Post-Act 10 — no charter school CB cases."
+      "lb": "WERC"
     }
   ],
   "jurisdiction_data": {
@@ -1323,24 +1302,6 @@ const NAPCS_CONFIG = {
         "union": "United Teachers Los Angeles (UTLA)",
         "date": "Unknown — PERB case number pending coord",
         "website": ""
-      },
-      {
-        "id": "C0614021",
-        "name": "Caliber: Beta Academy",
-        "city": "San Pablo",
-        "state": "CA",
-        "union": "Caliber Workers Union / Caliber Independent Worker",
-        "date": "May 26, 2022 (voluntary recognition by C",
-        "website": "http://www.caliberbetaacademy.org"
-      },
-      {
-        "id": "C0616026",
-        "name": "Caliber: ChangeMakers Academy",
-        "city": "Vallejo",
-        "state": "CA",
-        "union": "Caliber Workers Union / Caliber Independent Worker",
-        "date": "May 26, 2022 (voluntary recognition by C",
-        "website": "http://www.calibercma.org/"
       },
       {
         "id": "C0606020",
@@ -4927,6 +4888,366 @@ const NAPCS_CONFIG = {
         "website": "http://www.putnamschools.org/o/crccs"
       },
       {
+        "id": "150003000304",
+        "name": "Alaka'i O Kaua'i Charter School",
+        "city": "Koloa",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000262",
+        "name": "Connections New Century Public Charter School",
+        "city": "Hilo",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000305",
+        "name": "DreamHouse 'Ewa Beach",
+        "city": "Kapolei",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000275",
+        "name": "Hakipuʻu Academy",
+        "city": "Kaneohe",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000270",
+        "name": "Hālau Kū Māna Public Charter School",
+        "city": "Honolulu",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000295",
+        "name": "Hawaiʻi Technology Academy",
+        "city": "Waipahu",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000282",
+        "name": "Hawaii Academy of Arts and Science",
+        "city": "Pahoa",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000277",
+        "name": "Innovations - PCS",
+        "city": "Kailua-Kona",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000283",
+        "name": "Ka Umeke Kaeo Public Charter School",
+        "city": "Hilo",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000286",
+        "name": "Ka Waihona o ka Naauao Public Charter School",
+        "city": "Waianae",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000018",
+        "name": "Ka'ohao Public Charter School",
+        "city": "Kailua",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000240",
+        "name": "Kamaile Academy PCS",
+        "city": "Waianae",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000303",
+        "name": "Kamalani Academy",
+        "city": "Wahiawa",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000263",
+        "name": "Kanu o ka Aina New Century Public Charter School",
+        "city": "Kamuela",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000289",
+        "name": "Kanuikapono Public Charter School",
+        "city": "Anahola",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000302",
+        "name": "Kapolei Charter School by Goodwill Hawaii",
+        "city": "Kapolei",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000294",
+        "name": "Kawaikini New Century Public Charter School",
+        "city": "Lihue",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000278",
+        "name": "Ke Ana Laahana Public Charter School",
+        "city": "Hilo",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000276",
+        "name": "Ke Kula ʻo Samuel M. Kamakau Laboratory Public Charter School",
+        "city": "Kaneohe",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000280",
+        "name": "Ke Kula Niihau o Kekaha Learning Center",
+        "city": "Kekaha",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000284",
+        "name": "Ke Kula o Nāwahīokalaniʻōpuʻu Iki Laboratory Public Charter School",
+        "city": "Keaau",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000279",
+        "name": "Kihei Public Charter School",
+        "city": "Kihei",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000293",
+        "name": "Kona Pacific Public Charter School",
+        "city": "Kealakekua",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000288",
+        "name": "Kua o ka La New Century Public Charter School",
+        "city": "Hilo",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000066",
+        "name": "Kualapuu School - Public Conversion Charter",
+        "city": "Kualapuu",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000269",
+        "name": "Kula Aupuni Niihau A Kahelelani Aloha (KANAKA)",
+        "city": "Kekaha",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000308",
+        "name": "Kūlia Academy",
+        "city": "Honolulu",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000046",
+        "name": "Laupāhoehoe Community Public Charter School",
+        "city": "Laupahoehoe",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000299",
+        "name": "Mālama Honua Public Charter School",
+        "city": "Waimanalo",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000274",
+        "name": "Myron B. Thompson Academy",
+        "city": "Honolulu",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000264",
+        "name": "Nā Wai Ola Public Charter School",
+        "city": "Mountain View",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000310",
+        "name": "Namahana School",
+        "city": "Kilauea",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000309",
+        "name": "Parkway Village Preschool",
+        "city": "Kapolei",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000298",
+        "name": "School for Examining Essential Questions of Sustainability (SEAQS)",
+        "city": "Honolulu",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000273",
+        "name": "University Laboratory School",
+        "city": "Honolulu",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000281",
+        "name": "Volcano School of Arts and Sciences",
+        "city": "Volcano",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000271",
+        "name": "Voyager - A Public Charter School",
+        "city": "Honolulu",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000183",
+        "name": "Waialae Elementary Public Charter School",
+        "city": "Honolulu",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000268",
+        "name": "Waimea Middle Public Conversion Charter School",
+        "city": "Kamuela",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
+        "id": "150003000265",
+        "name": "West Hawaii Explorations Academy",
+        "city": "Kailua-Kona",
+        "state": "HI",
+        "union": "HSTA (BU05) / HGEA / UPW",
+        "date": "",
+        "website": ""
+      },
+      {
         "id": "C1798018",
         "name": "SPRINGFIELD BALL CHARTER SCHOOL",
         "city": "Springfield",
@@ -6223,6 +6544,26 @@ const NAPCS_CONFIG = {
         "website": "http://www.woodlandcharterschool.org"
       }
     ],
+    "ORGANIZING": [
+      {
+        "id": "C0614021",
+        "name": "Caliber: Beta Academy",
+        "city": "San Pablo",
+        "state": "CA",
+        "union": "Caliber Workers Union / Caliber Independent Worker",
+        "date": "May 26, 2022 (voluntary recognition by C",
+        "website": "http://www.caliberbetaacademy.org"
+      },
+      {
+        "id": "C0616026",
+        "name": "Caliber: ChangeMakers Academy",
+        "city": "Vallejo",
+        "state": "CA",
+        "union": "Caliber Workers Union / Caliber Independent Worker",
+        "date": "May 26, 2022 (voluntary recognition by C",
+        "website": "http://www.calibercma.org/"
+      }
+    ],
     "DECERTIFIED": [
       {
         "id": "NAPCS-ADD-CA-DEC-001",
@@ -6382,110 +6723,110 @@ const NAPCS_CONFIG = {
     ]
   },
   "stateReports": {
-  "AZ": {
-    "fileName": "AZ_State_Research_Report.pdf",
-    "boxUrl": null,
-    "netlifyUrl": "reports/AZ_State_Research_Report.pdf"
-  },
-  "CA": {
-    "fileName": "CA_State_Research_Report.pdf",
-    "boxUrl": null,
-    "netlifyUrl": "reports/CA_State_Research_Report.pdf"
-  },
-  "CT": {
-    "fileName": "CT_State_Research_Report.pdf",
-    "boxUrl": null,
-    "netlifyUrl": "reports/CT_State_Research_Report.pdf"
-  },
-  "DC": {
-    "fileName": "DC_State_Research_Report.pdf",
-    "boxUrl": null,
-    "netlifyUrl": "reports/DC_State_Research_Report.pdf"
-  },
-  "DE": {
-    "fileName": "DE_State_Research_Report.pdf",
-    "boxUrl": null,
-    "netlifyUrl": "reports/DE_State_Research_Report.pdf"
-  },
-  "FL": {
-    "fileName": "FL_State_Research_Report.pdf",
-    "boxUrl": null,
-    "netlifyUrl": "reports/FL_State_Research_Report.pdf"
-  },
-  "HI": {
-    "fileName": "HI_State_Research_Report.pdf",
-    "boxUrl": null,
-    "netlifyUrl": "reports/HI_State_Research_Report.pdf"
-  },
-  "IL": {
-    "fileName": "IL_State_Research_Report.pdf",
-    "boxUrl": null,
-    "netlifyUrl": "reports/IL_State_Research_Report.pdf"
-  },
-  "LA": {
-    "fileName": "LA_State_Research_Report.pdf",
-    "boxUrl": null,
-    "netlifyUrl": "reports/LA_State_Research_Report.pdf"
-  },
-  "MA": {
-    "fileName": "MA_State_Research_Report.pdf",
-    "boxUrl": null,
-    "netlifyUrl": "reports/MA_State_Research_Report.pdf"
-  },
-  "ME": {
-    "fileName": "ME_State_Research_Report.pdf",
-    "boxUrl": null,
-    "netlifyUrl": "reports/ME_State_Research_Report.pdf"
-  },
-  "MI": {
-    "fileName": "MI_State_Research_Report.pdf",
-    "boxUrl": null,
-    "netlifyUrl": "reports/MI_State_Research_Report.pdf"
-  },
-  "MN": {
-    "fileName": "MN_State_Research_Report.pdf",
-    "boxUrl": null,
-    "netlifyUrl": "reports/MN_State_Research_Report.pdf"
-  },
-  "NJ": {
-    "fileName": "NJ_State_Research_Report.pdf",
-    "boxUrl": null,
-    "netlifyUrl": "reports/NJ_State_Research_Report.pdf"
-  },
-  "NM": {
-    "fileName": "NM_State_Research_Report.pdf",
-    "boxUrl": null,
-    "netlifyUrl": "reports/NM_State_Research_Report.pdf"
-  },
-  "NY": {
-    "fileName": "NY_State_Research_Report.pdf",
-    "boxUrl": null,
-    "netlifyUrl": "reports/NY_State_Research_Report.pdf"
-  },
-  "OH": {
-    "fileName": "OH_State_Research_Report.pdf",
-    "boxUrl": null,
-    "netlifyUrl": "reports/OH_State_Research_Report.pdf"
-  },
-  "OR": {
-    "fileName": "OR_State_Research_Report.pdf",
-    "boxUrl": null,
-    "netlifyUrl": "reports/OR_State_Research_Report.pdf"
-  },
-  "PA": {
-    "fileName": "PA_State_Research_Report.pdf",
-    "boxUrl": null,
-    "netlifyUrl": "reports/PA_State_Research_Report.pdf"
-  },
-  "RI": {
-    "fileName": "RI_State_Research_Report.pdf",
-    "boxUrl": null,
-    "netlifyUrl": "reports/RI_State_Research_Report.pdf"
-  },
-  "WI": {
-    "fileName": "WI_State_Research_Report.pdf",
-    "boxUrl": null,
-    "netlifyUrl": "reports/WI_State_Research_Report.pdf"
+    "AZ": {
+      "fileName": "AZ_State_Research_Report.pdf",
+      "boxUrl": null,
+      "netlifyUrl": "reports/AZ_State_Research_Report.pdf"
+    },
+    "CA": {
+      "fileName": "CA_State_Research_Report.pdf",
+      "boxUrl": null,
+      "netlifyUrl": "reports/CA_State_Research_Report.pdf"
+    },
+    "CT": {
+      "fileName": "CT_State_Research_Report.pdf",
+      "boxUrl": null,
+      "netlifyUrl": "reports/CT_State_Research_Report.pdf"
+    },
+    "DC": {
+      "fileName": "DC_State_Research_Report.pdf",
+      "boxUrl": null,
+      "netlifyUrl": "reports/DC_State_Research_Report.pdf"
+    },
+    "DE": {
+      "fileName": "DE_State_Research_Report.pdf",
+      "boxUrl": null,
+      "netlifyUrl": "reports/DE_State_Research_Report.pdf"
+    },
+    "FL": {
+      "fileName": "FL_State_Research_Report.pdf",
+      "boxUrl": null,
+      "netlifyUrl": "reports/FL_State_Research_Report.pdf"
+    },
+    "HI": {
+      "fileName": "HI_State_Research_Report.pdf",
+      "boxUrl": null,
+      "netlifyUrl": "reports/HI_State_Research_Report.pdf"
+    },
+    "IL": {
+      "fileName": "IL_State_Research_Report.pdf",
+      "boxUrl": null,
+      "netlifyUrl": "reports/IL_State_Research_Report.pdf"
+    },
+    "LA": {
+      "fileName": "LA_State_Research_Report.pdf",
+      "boxUrl": null,
+      "netlifyUrl": "reports/LA_State_Research_Report.pdf"
+    },
+    "MA": {
+      "fileName": "MA_State_Research_Report.pdf",
+      "boxUrl": null,
+      "netlifyUrl": "reports/MA_State_Research_Report.pdf"
+    },
+    "ME": {
+      "fileName": "ME_State_Research_Report.pdf",
+      "boxUrl": null,
+      "netlifyUrl": "reports/ME_State_Research_Report.pdf"
+    },
+    "MI": {
+      "fileName": "MI_State_Research_Report.pdf",
+      "boxUrl": null,
+      "netlifyUrl": "reports/MI_State_Research_Report.pdf"
+    },
+    "MN": {
+      "fileName": "MN_State_Research_Report.pdf",
+      "boxUrl": null,
+      "netlifyUrl": "reports/MN_State_Research_Report.pdf"
+    },
+    "NJ": {
+      "fileName": "NJ_State_Research_Report.pdf",
+      "boxUrl": null,
+      "netlifyUrl": "reports/NJ_State_Research_Report.pdf"
+    },
+    "NM": {
+      "fileName": "NM_State_Research_Report.pdf",
+      "boxUrl": null,
+      "netlifyUrl": "reports/NM_State_Research_Report.pdf"
+    },
+    "NY": {
+      "fileName": "NY_State_Research_Report.pdf",
+      "boxUrl": null,
+      "netlifyUrl": "reports/NY_State_Research_Report.pdf"
+    },
+    "OH": {
+      "fileName": "OH_State_Research_Report.pdf",
+      "boxUrl": null,
+      "netlifyUrl": "reports/OH_State_Research_Report.pdf"
+    },
+    "OR": {
+      "fileName": "OR_State_Research_Report.pdf",
+      "boxUrl": null,
+      "netlifyUrl": "reports/OR_State_Research_Report.pdf"
+    },
+    "PA": {
+      "fileName": "PA_State_Research_Report.pdf",
+      "boxUrl": null,
+      "netlifyUrl": "reports/PA_State_Research_Report.pdf"
+    },
+    "RI": {
+      "fileName": "RI_State_Research_Report.pdf",
+      "boxUrl": null,
+      "netlifyUrl": "reports/RI_State_Research_Report.pdf"
+    },
+    "WI": {
+      "fileName": "WI_State_Research_Report.pdf",
+      "boxUrl": null,
+      "netlifyUrl": "reports/WI_State_Research_Report.pdf"
+    }
   }
-}
 };
