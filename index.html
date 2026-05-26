@@ -49,26 +49,30 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .fitem input{width:12px;height:12px;cursor:pointer;accent-color:#2E75B6;flex-shrink:0}
 .fdot{width:9px;height:9px;border-radius:50%;flex-shrink:0}
 
-/* STATE SLIDE-OUT PANEL */
-#state-slideout{position:absolute;top:0;right:-320px;width:320px;height:100%;background:#111B27;border-left:1px solid #2E75B6;z-index:500;transition:right 0.25s ease;overflow-y:auto;display:flex;flex-direction:column}
-#state-slideout.open{right:0}
-#state-slideout::-webkit-scrollbar{width:3px}
-#state-slideout::-webkit-scrollbar-thumb{background:#2A3D54;border-radius:2px}
-#sso-hdr{padding:12px 14px 8px;border-bottom:1px solid #1E2D40;display:flex;align-items:flex-start;justify-content:space-between;flex-shrink:0;background:#1A2535}
-#sso-title{font-size:14px;font-weight:700;color:#4A9FE0}
-#sso-sub{font-size:10px;color:#4A6A80;margin-top:2px}
-#sso-close{background:none;border:none;color:#4A6A80;font-size:20px;cursor:pointer;padding:0 4px;line-height:1;font-family:inherit;flex-shrink:0}
-#sso-close:hover{color:#fff}
-#sso-body{padding:10px 14px;flex:1}
-.sso-section{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:#2E75B6;margin:12px 0 6px;padding-bottom:4px;border-bottom:1px solid #1E2D40}
-.sso-section:first-child{margin-top:0}
-.sso-row{display:flex;justify-content:space-between;align-items:baseline;padding:3px 0;border-bottom:1px solid rgba(30,45,64,.4);font-size:10px}
-.sso-lbl{color:#8BA0B4}.sso-val{font-weight:700;color:#E8EDF2;text-align:right;max-width:180px;word-break:break-word}
-.sso-val.g{color:#6CC04A}.sso-val.t{color:#4ABFBF}.sso-val.b{color:#4A9FE0}.sso-val.gold{color:#F5A623}
-.sso-bar{height:5px;background:#0F1A25;border-radius:3px;overflow:hidden;margin:4px 0 8px}
-.sso-bar-fill{height:100%;background:linear-gradient(90deg,#2E75B6,#4ABFBF);border-radius:3px}
-.sso-report-btn{display:block;width:100%;margin-top:12px;padding:8px 12px;background:#1A3550;border:1px solid #2E75B6;color:#4A9FE0;border-radius:5px;text-align:center;font-size:11px;font-weight:700;cursor:pointer;text-decoration:none;font-family:inherit}
-.sso-report-btn:hover{background:#2E75B6;color:#fff}
+/* State detail popup from label */
+.state-popup .leaflet-popup-content-wrapper{background:#111B27;border:1px solid #2E75B6;border-radius:8px;box-shadow:0 4px 20px rgba(0,0,0,.7);min-width:260px;max-width:280px}
+.state-popup .leaflet-popup-content{margin:0;padding:0;min-width:260px}
+.state-popup .leaflet-popup-tip-container{display:none}
+.state-popup .leaflet-popup-close-button{color:#4A6A80!important;font-size:16px!important;top:6px!important;right:8px!important;z-index:10}
+.spo-hdr{padding:10px 14px 7px;border-bottom:1px solid #1E2D40;background:#1A2535;border-radius:8px 8px 0 0}
+.spo-title{font-size:13px;font-weight:700;color:#4A9FE0}
+.spo-sub{font-size:10px;color:#4A6A80;margin-top:1px}
+.spo-body{padding:8px 12px 10px;max-height:400px;overflow-y:auto}
+.spo-body::-webkit-scrollbar{width:3px}
+.spo-body::-webkit-scrollbar-thumb{background:#2A3D54;border-radius:2px}
+.spo-section{font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:#2E75B6;margin:9px 0 5px;padding-bottom:3px;border-bottom:1px solid #1E2D40}
+.spo-section:first-child{margin-top:0}
+.spo-row{display:flex;justify-content:space-between;align-items:baseline;padding:2px 0;border-bottom:1px solid rgba(30,45,64,.4);font-size:10px}
+.spo-lbl{color:#8BA0B4}.spo-val{font-weight:700;color:#E8EDF2;text-align:right;max-width:150px;word-break:break-word}
+.spo-val.g{color:#6CC04A}.spo-val.t{color:#4ABFBF}.spo-val.b{color:#4A9FE0}.spo-val.gold{color:#F5A623}
+.spo-bar{height:4px;background:#0F1A25;border-radius:2px;overflow:hidden;margin:4px 0 7px}
+.spo-bar-fill{height:100%;background:linear-gradient(90deg,#2E75B6,#4ABFBF);border-radius:2px}
+.spo-assoc{background:#1A2535;border-radius:4px;padding:6px 8px;margin-bottom:5px}
+.spo-assoc-name{font-size:10px;font-weight:700;color:#E8EDF2;margin-bottom:2px}
+.spo-assoc-link a{font-size:9px;color:#4A9FE0;text-decoration:none}
+.spo-assoc-link a:hover{text-decoration:underline}
+.spo-report-btn{display:block;margin-top:8px;padding:6px 10px;background:#1A3550;border:1px solid #2E75B6;color:#4A9FE0;border-radius:4px;text-align:center;font-size:10px;font-weight:700;cursor:pointer;text-decoration:none;font-family:inherit}
+.spo-report-btn:hover{background:#2E75B6;color:#fff}
 .sso-assoc-card{background:#1A2535;border-radius:5px;padding:7px 9px;margin-bottom:5px}
 .sso-assoc-name{font-size:10px;font-weight:700;color:#E8EDF2;margin-bottom:3px}
 .sso-assoc-link a{font-size:9px;color:#4A9FE0;text-decoration:none}
@@ -266,20 +270,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
       <label class="fitem"><input type="checkbox" checked data-status="ORGANIZING"><span class="fdot" style="background:#F5A623"></span><span>Organizing (<span id="fc-2">0</span>)</span></label>
       <label class="fitem"><input type="checkbox" checked data-status="DECERTIFIED"><span class="fdot" style="background:#888;border:1px solid #555"></span><span>Decertified (<span id="fc-3">0</span>)</span></label>
       <label class="fitem"><input type="checkbox" checked data-status="CLOSED"><span class="fdot" style="background:#E07A4A"></span><span>Closed (<span id="fc-4">0</span>)</span></label>
-      <label class="fitem"><input type="checkbox" checked data-status="UNVERIFIED"><span class="fdot" style="background:#9B6B2A;border:1px solid #D4923A"></span><span>Unverified (<span id="fc-5">0</span>)</span></label>
+      <label class="fitem"><input type="checkbox" checked data-status="UNVERIFIED"><span class="fdot" style="background:transparent;border:1.5px dashed #38C0C4"></span><span>Unverified (<span id="fc-5">0</span>)</span></label>
     </div>
 
-    <!-- STATE SLIDE-OUT -->
-    <div id="state-slideout">
-      <div id="sso-hdr">
-        <div>
-          <div id="sso-title">State Overview</div>
-          <div id="sso-sub"></div>
-        </div>
-        <button id="sso-close">&times;</button>
-      </div>
-      <div id="sso-body"></div>
-    </div>
+  </div>
+
   </div>
 
   <!-- SIDE PANEL -->
@@ -356,7 +351,7 @@ var STATUS_CFG = {
   ORGANIZING: {color:'#F5A623',r:9,opacity:0.95},
   DECERTIFIED:{color:'#888888',r:5,opacity:0.70},
   CLOSED:     {color:'#E07A4A',r:5,opacity:0.70},
-  UNVERIFIED: {color:'#D4923A',r:4,opacity:0.55}, // Warm amber — visible on dark map
+  UNVERIFIED: {color:'rgba(0,0,0,0)',r:5,opacity:1.0}, // No fill — cyan outline only
 };
 
 // Low-precision schools (geocoder fallback coordinates)
@@ -500,9 +495,9 @@ SCHOOLS.forEach(function(s){
   var m=L.circleMarker([s.lat,s.lng],{
     radius:cfg.r,
     fillColor:cfg.color,
-    color:isUnv?'#B07030':'rgba(0,0,0,0.3)',  // Amber outline for unverified
-    weight:isUnv?1:1,
-    fillOpacity:cfg.opacity,
+    color:isUnv?'#38C0C4':'rgba(0,0,0,0.3)',  // Amber outline for unverified
+    weight:isUnv?1.2:1,
+    fillOpacity:isUnv?0:cfg.opacity,
     dashArray:isUnv?'2,2':null,
   });
   m.bindPopup(buildPopup(s),{maxWidth:300});
@@ -555,16 +550,15 @@ Object.entries(NAPCS_CONFIG.state_centers).forEach(function(entry){
     iconAnchor:[22,12],iconSize:[44,24],
   });
   var mk=L.marker(coords,{icon:icon,zIndexOffset:1000,pane:'labelPane',interactive:true});
-  mk.on('click',function(){ openStateSlideout(code); });
+  mk.on('click',function(){ openStateSlideout(code, coords); });
   mk.addTo(stateLabelGroup);
 });
 
 // ── STATE SLIDE-OUT ───────────────────────────────────────────────────────────
-document.getElementById('sso-close').addEventListener('click',function(){
-  document.getElementById('state-slideout').classList.remove('open');
-});
+// ── STATE DETAIL POPUP from label ─────────────────────────────────────────────
+var _statePopup = null;
 
-function openStateSlideout(code){
+function openStateSlideout(code, coords){
   var sd=SD[code]||{}, jd=JDATA[code]||{}, assocs=ASSOC[code]||[];
   var name=STATE_NAMES[code]||code;
   var combined=(sd.conf||0)+(sd.dep||0);
@@ -572,62 +566,73 @@ function openStateSlideout(code){
   var confPctSt=sd.universe>0?((sd.conf||0)/sd.universe*100).toFixed(1):'0.0';
   var depPctSt=sd.universe>0?((sd.dep||0)/sd.universe*100).toFixed(1):'0.0';
   var barW=Math.min(100,parseFloat(pct));
+  var rpt=SR[code];
 
-  document.getElementById('sso-title').textContent=name;
-  document.getElementById('sso-sub').textContent=(jd.lb_abbrev||sd.lb_abbrev||sd.lb||'');
+  var h='<div class="spo-hdr"><div class="spo-title">'+esc(name)+'</div>';
+  h+='<div class="spo-sub">'+esc(jd.lb_abbrev||sd.lb_abbrev||sd.lb||'')+'</div></div>';
+  h+='<div class="spo-body">';
 
-  var h='';
+  // Density
+  h+='<div class="spo-section">Density Statistics</div>';
+  h+=spoRow('Universe',(sd.universe||0).toLocaleString(),'');
+  h+=spoRow('Confirmed',(sd.conf||0)+' ('+confPctSt+'%)','g');
+  if(sd.dep) h+=spoRow('Dependent',sd.dep+' ('+depPctSt+'%)','t');
+  if(sd.org) h+=spoRow('Organizing',sd.org,'gold');
+  h+=spoRow('Combined Density',pct+'%',combined>0?'g':'');
+  h+='<div class="spo-bar"><div class="spo-bar-fill" style="width:'+barW+'%"></div></div>';
 
-  // Density section
-  h+='<div class="sso-section">Density Statistics</div>';
-  h+=ssoRow('Charter Universe',(sd.universe||0).toLocaleString(),'');
-  h+=ssoRow('Confirmed Organized',(sd.conf||0)+' ('+confPctSt+'%)','g');
-  if(sd.dep) h+=ssoRow('Dependent (Structural)',sd.dep+' ('+depPctSt+'%)','t');
-  if(sd.org) h+=ssoRow('Active Organizing',sd.org,'gold');
-  if(sd.dec) h+=ssoRow('Decertified',sd.dec,'');
-  h+=ssoRow('Combined Density',pct+'%',combined>0?'g':'');
-  h+='<div class="sso-bar"><div class="sso-bar-fill" style="width:'+barW+'%"></div></div>';
-
-  // Jurisdiction section
-  if(jd.lb_abbrev||jd.lb_full){
-    h+='<div class="sso-section">Legal Jurisdiction</div>';
-    if(jd.lb_full) h+=ssoRow('Board',jd.lb_full.slice(0,50)+(jd.lb_full.length>50?'\u2026':''),'b');
-    if(jd.statute) h+=ssoRow('Statute',jd.statute,'');
-    if(jd.nlrb) h+=ssoRow('NLRB Applies',jd.nlrb,'');
-    if(jd.card_check) h+=ssoRow('Card-Check',jd.card_check,jd.card_check==='Yes'?'g':'');
-    if(jd.dominant) h+=ssoRow('Dominant Union',jd.dominant.slice(0,50),'');
-    if(jd.note) h+='<div style="font-size:9.5px;color:#6A7A8A;line-height:1.4;margin-top:6px;padding:5px 7px;background:#1A2535;border-radius:4px">'+esc(jd.note)+'</div>';
+  // Jurisdiction
+  if(jd.lb_full||jd.statute){
+    h+='<div class="spo-section">Jurisdiction</div>';
+    if(jd.lb_full) h+=spoRow('Board',jd.lb_full.slice(0,45)+(jd.lb_full.length>45?'\u2026':''),'b');
+    if(jd.statute) h+=spoRow('Statute',jd.statute,'');
+    if(jd.nlrb) h+=spoRow('NLRB',jd.nlrb,'');
+    if(jd.card_check) h+=spoRow('Card-Check',jd.card_check,jd.card_check==='Yes'?'g':'');
+    if(jd.note) h+='<div style="font-size:9px;color:#6A7A8A;line-height:1.4;margin-top:4px;padding:4px 6px;background:#1A2535;border-radius:3px">'+esc(jd.note.slice(0,120))+'</div>';
   }
 
-  // Charter associations
+  // Associations
   if(assocs.length){
-    h+='<div class="sso-section">Charter Association'+(assocs.length>1?'s':'')+'</div>';
+    h+='<div class="spo-section">Charter Association'+(assocs.length>1?'s':'')+'</div>';
     assocs.forEach(function(a){
-      h+='<div class="sso-assoc-card"><div class="sso-assoc-name">'+esc(a.name)+'</div>';
-      if(a.website) h+='<div class="sso-assoc-link"><a href="'+esc(a.website)+'" target="_blank" rel="noopener">'+esc(a.website.replace(/^https?:\/\//,''))+'</a></div>';
+      h+='<div class="spo-assoc"><div class="spo-assoc-name">'+esc(a.name)+'</div>';
+      if(a.website) h+='<div class="spo-assoc-link"><a href="'+esc(a.website)+'" target="_blank" rel="noopener">'+esc(a.website.replace(/^https?:\/\//,''))+'</a></div>';
       h+='</div>';
     });
   }
 
-  // State report download
-  var rpt=SR[code];
+  // Report button
   if(rpt && rpt.boxUrl){
-    h+='<a class="sso-report-btn" href="'+esc(rpt.boxUrl)+'" target="_blank" rel="noopener">&#8595; Download State Research Report</a>';
+    h+='<a class="spo-report-btn" href="'+esc(rpt.boxUrl)+'" target="_blank" rel="noopener">&#8595; Download State Research Report</a>';
   } else if(rpt && rpt.netlifyUrl){
-    h+='<a class="sso-report-btn" href="'+esc(rpt.netlifyUrl)+'" target="_blank" rel="noopener">&#8595; Download State Research Report</a>';
+    h+='<a class="spo-report-btn" href="'+esc(rpt.netlifyUrl)+'" target="_blank" rel="noopener">&#8595; Download State Research Report</a>';
   } else {
-    h+='<div class="sso-report-btn" style="opacity:0.4;cursor:default;pointer-events:none">&#8595; Report Coming Soon</div>';
+    h+='<div class="spo-report-btn" style="opacity:0.4;cursor:default">&#8595; Report Coming Soon</div>';
   }
 
-  document.getElementById('sso-body').innerHTML=h;
-  document.getElementById('state-slideout').classList.add('open');
+  h+='</div>'; // close spo-body
 
-  // Also zoom map to state
+  // Position popup at state center coords, or use NAPCS_CONFIG.state_centers
+  var popCoords = coords || NAPCS_CONFIG.state_centers[code] || [38,-96];
+
+  if(_statePopup) { map.closePopup(_statePopup); }
+  _statePopup = L.popup({
+    className:'state-popup',
+    maxWidth:300,
+    closeButton:true,
+    autoClose:true,
+    closeOnClick:false,
+  })
+  .setLatLng(popCoords)
+  .setContent(h)
+  .openOn(map);
+
+  // Also update right panel and zoom map
   zoomToState(code);
 }
 
-function ssoRow(l,v,cls){
-  return '<div class="sso-row"><span class="sso-lbl">'+esc(String(l))+'</span><span class="sso-val'+(cls?' '+cls:'')+'">'+(typeof v==='number'?v.toLocaleString():v)+'</span></div>';
+function spoRow(l,v,cls){
+  return '<div class="spo-row"><span class="spo-lbl">'+esc(String(l))+'</span><span class="spo-val'+(cls?' '+cls:'')+'">'+(typeof v==='number'?v.toLocaleString():v)+'</span></div>';
 }
 
 // ── STATE ZOOM ───────────────────────────────────────────────────────────────
@@ -647,7 +652,7 @@ document.getElementById('back-btn').addEventListener('click',function(){
   map.setView([38,-96],4);
   _curState=null;
   this.style.display='none';
-  document.getElementById('state-slideout').classList.remove('open');
+  if(_statePopup){ map.closePopup(_statePopup); _statePopup=null; }
   if(_curTab==='overview') showNationalPanel();
   else if(isIntelTab(_curTab)) renderIntelTab(_curTab,null);
 });
@@ -738,7 +743,7 @@ function buildDensityTable(){
     var pct=parseFloat(row.density)||0,univ=row.universe||1;
     var cW=maxPct>0?Math.round(row.confirmed/univ*100/maxPct*100):0;
     var dW=maxPct>0?Math.round((row.dependent||0)/univ*100/maxPct*100):0;
-    return '<tr><td><span class="dt-link" onclick="openStateSlideout(\''+row.st+'\')">'+esc(row.name)+'</span></td>'+
+    return '<tr><td><span class="dt-link" onclick="openStateSlideout(\''+row.st+'\',null)">'+esc(row.name)+'</span></td>'+
       '<td>'+row.universe.toLocaleString()+'</td>'+
       '<td style="color:#6CC04A;font-weight:700">'+row.confirmed+'</td>'+
       '<td style="color:#4ABFBF">'+(row.dependent||'\u2014')+'</td>'+
