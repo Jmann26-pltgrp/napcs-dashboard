@@ -4,934 +4,564 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NAPCS Charter School Unionization Dashboard | PLT Strategies Group</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/tabler-icons.min.css">
-<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script src="napcs_data.js"></script>
 <style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  /* Light mode (default) */
-  --bg:#faf9f7;--bg2:#ffffff;--bg3:#f3f1ee;--bg4:#ece9e4;
-  --text:#1a1917;--text2:#3d3b37;--text3:#7a7872;
-  --border:rgba(0,0,0,0.08);--border2:rgba(0,0,0,0.14);
-  --shadow:0 1px 3px rgba(0,0,0,0.08);
-  --blue:#2E75B6;--blue-lt:#e8f0f9;
-  --grn-bg:#e8f5e3;--grn-mid:#3a6b30;--grn-txt:#2a5022;
-  --teal-bg:#e0f2f0;--teal-mid:#00796B;--teal-txt:#004d40;
-  --burg-bg:#fce8ea;--burg-mid:#8B2635;--burg-txt:#6b1020;
-  --slate-bg:#e8eef6;--slate-mid:#2E75B6;--slate-txt:#1a4a7a;
-  --pur-bg:#ede8f8;--pur-mid:#534AB7;--pur-txt:#2d2572;
-  --amb-bg:#fff3e0;--amb-mid:#c17f2a;--amb-txt:#7a4a00;
-  --map-state:#d4c9b8;--map-stroke:rgba(255,255,255,0.6);
-  --density-vhigh:#6B1A2A;--density-high:#9c2a1f;
-  --density-mod:#bf6020;--density-low:#a08020;
-  --density-min:#c8b070;--density-dep:#00796B;
-  --radius:6px;--radius-lg:12px;
-  --font-sans:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;
-  --font-serif:Georgia,serif;
-}
-@media(prefers-color-scheme:dark){
-  :root{
-    --bg:#1a1917;--bg2:#232220;--bg3:#2a2927;--bg4:#1e1d1b;
-    --text:#f0ede8;--text2:#b4b2a9;--text3:#7a7872;
-    --border:rgba(255,255,255,0.08);--border2:rgba(255,255,255,0.14);
-    --shadow:0 1px 3px rgba(0,0,0,0.4);
-    --blue:#5b9bd5;--blue-lt:#1a2a3d;
-    --grn-bg:#1a2e14;--grn-mid:#4a7c3f;--grn-txt:#a8d4a0;
-    --teal-bg:#0d2a2a;--teal-mid:#00796B;--teal-txt:#80cbc4;
-    --burg-bg:#2a1218;--burg-mid:#8B2635;--burg-txt:#d4909a;
-    --slate-bg:#141d2a;--slate-mid:#2E75B6;--slate-txt:#90b8e0;
-    --pur-bg:#1a1628;--pur-mid:#534AB7;--pur-txt:#b0a8e0;
-    --amb-bg:#2a1e08;--amb-mid:#c17f2a;--amb-txt:#e8c07a;
-    --map-state:#3a3530;--map-stroke:rgba(255,255,255,0.12);
-  }
-}
-body{background:var(--bg);color:var(--text);font-family:var(--font-sans);font-size:14px;line-height:1.5;min-height:100vh}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0F1923;color:#E8EDF2;height:100vh;display:flex;flex-direction:column;overflow:hidden}
 
-/* ── Shell ─────────────────────────────────────────────────────────────── */
-.shell{max-width:1200px;margin:0 auto;padding:0 24px 80px}
+/* TOP BAR */
+#topbar{background:#1A2535;border-bottom:2px solid #2E75B6;padding:7px 18px;display:flex;align-items:center;gap:14px;flex-shrink:0}
+#topbar h1{font-size:14px;font-weight:700;color:#fff;letter-spacing:.3px;white-space:nowrap}
+#topbar .tsub{font-size:11px;color:#8BA0B4;white-space:nowrap}
+.tbadge{font-size:10px;font-weight:700;padding:2px 9px;border-radius:10px;white-space:nowrap}
+.tbadge-blue{background:#1A3550;color:#4A9FE0;border:1px solid #2E75B6}
+.tbadge-green{background:#0A2A0A;color:#6CC04A;border:1px solid #1E4A1E;margin-left:auto}
 
-/* ── Header ─────────────────────────────────────────────────────────────── */
-.hdr{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:14px;padding:20px 0 14px;border-bottom:1px solid var(--border);margin-bottom:0}
-.hdr-left{display:flex;align-items:center;gap:12px}
-.hdr-eye{font-size:28px;color:var(--blue);line-height:1}
-.hdr-title{font-size:18px;font-weight:700;letter-spacing:-0.3px;line-height:1.2}
-.hdr-sub{font-size:11px;color:var(--text3);margin-top:3px;letter-spacing:0.2px}
-.hdr-badges{display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding-top:4px}
-.badge{display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600}
-.badge-grn{background:var(--grn-bg);color:var(--grn-txt);border:1px solid var(--grn-mid)}
-.badge-teal{background:var(--teal-bg);color:var(--teal-txt);border:1px solid var(--teal-mid)}
-.badge-info{background:var(--bg3);color:var(--text3);border:1px solid var(--border2)}
+/* STAT BAR */
+#statbar{display:flex;gap:1px;background:#0F1923;flex-shrink:0;border-bottom:2px solid #1E2D40}
+.stat{background:#111B27;padding:8px 16px;flex:1;min-width:0;cursor:pointer;transition:background .15s;border-right:1px solid #1E2D40}
+.stat:hover{background:#1A2535}
+.stat:last-child{border-right:none}
+.stat-val{font-size:24px;font-weight:700;line-height:1;margin-bottom:2px}
+.stat-val.blue{color:#4A9FE0}
+.stat-val.green{color:#6CC04A}
+.stat-val.teal{color:#4ABFBF}
+.stat-val.gold{color:#F5A623}
+.stat-val.orange{color:#E07A4A}
+.stat-val.red{color:#E05A4A}
+.stat-lbl{font-size:9px;color:#8BA0B4;text-transform:uppercase;letter-spacing:.5px;font-weight:700}
+.stat-sub{font-size:9px;color:#4A6A80;margin-top:2px}
 
-/* ── Nav ─────────────────────────────────────────────────────────────────── */
-.nav{display:flex;gap:0;border-bottom:2px solid var(--border);margin-bottom:28px;overflow-x:auto;-webkit-overflow-scrolling:touch}
-.nav-tab{display:flex;align-items:center;gap:6px;padding:12px 16px;font-size:12.5px;color:var(--text3);cursor:pointer;white-space:nowrap;border-bottom:2px solid transparent;margin-bottom:-2px;transition:color 0.15s,border-color 0.15s;background:none;border-top:none;border-left:none;border-right:none;font-family:var(--font-sans)}
-.nav-tab i{font-size:15px}
-.nav-tab:hover{color:var(--text2)}
-.nav-tab.active{color:var(--blue);border-bottom-color:var(--blue);font-weight:600}
+/* MAIN */
+#main{display:flex;flex:1;overflow:hidden;position:relative}
+#mapwrap{flex:1;position:relative}
+#map{width:100%;height:100%}
+#back-btn{position:absolute;top:10px;left:54px;z-index:1000;background:#1A2535;border:1px solid #2E75B6;color:#4A9FE0;padding:5px 12px;border-radius:5px;font-size:11px;cursor:pointer;display:none;font-family:inherit}
+#back-btn:hover{background:#2E75B6;color:#fff}
 
-/* ── Panels ──────────────────────────────────────────────────────────────── */
-.view{display:none}.view.on{display:block}
+/* FILTER BAR */
+#filter-bar{position:absolute;bottom:28px;left:10px;z-index:1000;background:rgba(15,25,35,0.93);border:1px solid #1E2D40;border-radius:7px;padding:9px 12px;min-width:160px}
+#filter-bar .fb-title{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:#4A6A80;margin-bottom:7px}
+.fitem{display:flex;align-items:center;gap:6px;margin-bottom:5px;cursor:pointer;font-size:11px;color:#B0C0D0;user-select:none}
+.fitem:last-child{margin-bottom:0}
+.fitem input{width:12px;height:12px;cursor:pointer;accent-color:#2E75B6;flex-shrink:0}
+.fdot{width:9px;height:9px;border-radius:50%;flex-shrink:0}
 
-/* ── Metric Cards ────────────────────────────────────────────────────────── */
-.metrics{display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:12px;margin-bottom:16px}
-.mc{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px 18px;cursor:pointer;transition:box-shadow 0.15s,transform 0.1s;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:4px}
-.mc:hover{box-shadow:0 4px 12px rgba(0,0,0,0.12);transform:translateY(-1px)}
-.mc.grn{border-top:3px solid var(--grn-mid)}.mc.teal{border-top:3px solid var(--teal-mid)}
-.mc.burg{border-top:3px solid var(--burg-mid)}.mc.pur{border-top:3px solid var(--pur-mid)}
-.mc.blu{border-top:3px solid var(--blue)}.mc.amb{border-top:3px solid var(--amb-mid)}
-.mc-chevron{align-self:flex-end;color:var(--text3);font-size:12px;margin-bottom:4px}
-.mc-num{font-size:30px;font-weight:700;line-height:1;font-family:var(--font-serif)}
-.mc.grn .mc-num{color:var(--grn-mid)}.mc.teal .mc-num{color:var(--teal-mid)}
-.mc.burg .mc-num{color:var(--burg-mid)}.mc.pur .mc-num{color:var(--pur-mid)}
-.mc.blu .mc-num{color:var(--blue)}.mc.amb .mc-num{color:var(--amb-mid)}
-.mc-lbl{font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:0.5px;font-weight:600}
-.mc-sub{font-size:11px;color:var(--text2)}
+/* SIDE PANEL */
+#sidepanel{width:270px;background:#0F1923;border-left:1px solid #1E2D40;display:flex;flex-direction:column;flex-shrink:0}
+#panel-tabs{display:flex;border-bottom:1px solid #1E2D40;flex-shrink:0}
+.ptab{flex:1;padding:9px 0;text-align:center;font-size:11px;font-weight:600;color:#4A6A80;cursor:pointer;border-bottom:2px solid transparent;transition:all .15s;background:none;border-top:none;border-left:none;border-right:none;font-family:inherit}
+.ptab:hover{color:#8BA0B4}
+.ptab.active{color:#4A9FE0;border-bottom-color:#2E75B6}
+#panel-hdr{padding:10px 12px 7px;border-bottom:1px solid #1E2D40;flex-shrink:0}
+#panel-title{font-size:13px;font-weight:700;color:#4A9FE0}
+#panel-sub{font-size:10px;color:#4A6A80;margin-top:2px;line-height:1.4}
+#panel-body{flex:1;overflow-y:auto;padding:10px 12px}
+#panel-body::-webkit-scrollbar{width:3px}
+#panel-body::-webkit-scrollbar-track{background:transparent}
+#panel-body::-webkit-scrollbar-thumb{background:#2A3D54;border-radius:2px}
 
-/* ── Combined box ────────────────────────────────────────────────────────── */
-.combined-box{background:var(--grn-bg);border:1px solid var(--grn-mid);border-left:4px solid var(--grn-mid);border-radius:var(--radius-lg);padding:14px 18px;margin-bottom:20px;display:flex;align-items:center;gap:24px;flex-wrap:wrap}
-.combined-num{font-size:34px;font-weight:700;color:var(--grn-mid);font-family:var(--font-serif)}
-.combined-pct{font-size:18px;color:var(--grn-txt);margin-left:6px}
-.combined-lbl{font-size:11px;color:var(--grn-mid);text-transform:uppercase;letter-spacing:0.5px;font-weight:700}
-.combined-detail{display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--grn-txt)}
-.combined-detail span{display:flex;align-items:center;gap:5px}
-.swatch{width:10px;height:10px;border-radius:2px;display:inline-block;flex-shrink:0}
-.sw-grn{background:var(--grn-mid)}.sw-teal{background:var(--teal-mid)}
+/* PANEL ROWS */
+.section-label{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:#2E75B6;margin:12px 0 6px;padding-bottom:4px;border-bottom:1px solid #1E2D40}
+.section-label:first-child{margin-top:2px}
+.srow{display:flex;justify-content:space-between;align-items:baseline;padding:3px 0;border-bottom:1px solid rgba(30,45,64,.5)}
+.srow-lbl{font-size:10px;color:#8BA0B4}
+.srow-val{font-size:10px;font-weight:700;color:#E8EDF2;text-align:right;max-width:140px;word-break:break-word}
+.srow-val.green{color:#6CC04A}.srow-val.teal{color:#4ABFBF}.srow-val.gold{color:#F5A623}
+.srow-val.red{color:#E05A4A}.srow-val.blue{color:#4A9FE0}.srow-val.orange{color:#E07A4A}
+.density-bar-wrap{margin-top:8px}
+.density-bar{height:5px;background:#0F1A25;border-radius:3px;overflow:hidden}
+.density-fill{height:100%;border-radius:3px;background:linear-gradient(90deg,#2E75B6,#4ABFBF)}
+.oi-card{background:#1A2535;border-radius:5px;padding:7px 9px;margin-bottom:5px;border-left:3px solid #2E75B6}
+.oi-lbl{font-size:9px;color:#4A6A80;font-weight:700;text-transform:uppercase;letter-spacing:.3px;margin-bottom:2px}
+.oi-val{font-size:10px;color:#E8EDF2;line-height:1.3}
+.oi-val.pending{color:#F5A623}.oi-val.blue{color:#4A9FE0}
 
-/* ── Map legend ──────────────────────────────────────────────────────────── */
-.map-legend{display:flex;gap:14px;flex-wrap:wrap;padding:10px 0 4px;font-size:11px;color:var(--text3)}
-.legend-item{display:flex;align-items:center;gap:5px}
-.legend-sw{width:14px;height:10px;border-radius:2px;display:inline-block}
+/* DENSITY TABLE */
+#dtable{width:100%;border-collapse:collapse}
+#dtable th{background:#0A1520;color:#4A6A80;padding:5px 6px;text-align:left;font-weight:700;font-size:8px;text-transform:uppercase;letter-spacing:.3px;border-bottom:1px solid #1E2D40;position:sticky;top:0}
+#dtable td{padding:4px 6px;border-bottom:1px solid #0F1A25;font-size:10px;color:#B0C0D0}
+#dtable tr:hover td{background:#1A2535}
+#dtable .tot td{background:#0A1520;font-weight:700;color:#fff;border-top:2px solid #2E75B6}
+.dt-link{color:#4ABFBF;cursor:pointer;font-weight:600}
+.dt-link:hover{color:#fff;text-decoration:underline}
+.dt-bar{height:4px;background:#0F1A25;border-radius:2px;margin-top:3px;overflow:hidden}
+.dt-fill-conf{height:100%;background:#2E75B6;float:left}
+.dt-fill-dep{height:100%;background:#4ABFBF;float:left}
 
-/* ── National map ────────────────────────────────────────────────────────── */
-.map-wrap{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px;margin-bottom:20px;box-shadow:var(--shadow)}
-.map-hdr{font-size:12px;color:var(--text3);margin-bottom:8px}
-#umap{width:100%;height:460px;display:block}
-/* Tooltip */
-#tip{position:fixed;background:var(--bg2);border:1px solid var(--border2);border-radius:var(--radius);padding:8px 12px;font-size:12px;pointer-events:none;opacity:0;transition:opacity 0.12s;box-shadow:0 4px 12px rgba(0,0,0,0.15);max-width:200px;z-index:100}
-#tip .tip-state{font-weight:700;margin-bottom:4px}
-#tip .tip-row{color:var(--text2)}
+/* POPUP */
+.leaflet-popup-content-wrapper{background:#1A2535;border:1px solid #2E75B6;border-radius:8px;color:#E8EDF2;box-shadow:0 4px 20px rgba(0,0,0,.6)}
+.leaflet-popup-content{margin:10px 13px;font-size:11px;min-width:200px;max-width:260px}
+.leaflet-popup-tip{background:#1A2535}
+.leaflet-popup-close-button{color:#6B88A2!important;font-size:16px!important;top:5px!important;right:8px!important}
+.pu-name{font-size:12px;font-weight:700;color:#fff;margin-bottom:8px;line-height:1.3;padding-right:16px}
+.pu-row{display:grid;grid-template-columns:80px 1fr;gap:3px;margin-bottom:4px;align-items:flex-start}
+.pu-lbl{font-size:9px;color:#4A6A80;font-weight:700;text-transform:uppercase;letter-spacing:.3px;padding-top:1px}
+.pu-val{font-size:10px;color:#D0D8E0;word-break:break-word;line-height:1.3}
+.pu-val.green{color:#6CC04A}.pu-val.teal{color:#4ABFBF}.pu-val.gold{color:#F5A623}.pu-val.blue{color:#4A9FE0}
+.pu-badge{display:inline-block;font-size:9px;font-weight:700;padding:1px 6px;border-radius:3px}
+.pu-link{display:flex;align-items:center;gap:4px;margin-top:7px;padding-top:7px;border-top:1px solid #1E2D40}
+.pu-link a{color:#4A9FE0;font-size:10px;text-decoration:none}
+.pu-link a:hover{text-decoration:underline;color:#fff}
 
-/* ── Drilldown ────────────────────────────────────────────────────────────── */
-.drill-hdr{display:flex;align-items:center;gap:12px;margin-bottom:20px}
-.back-btn{display:flex;align-items:center;gap:5px;background:var(--bg3);border:1px solid var(--border2);color:var(--text2);padding:6px 12px;border-radius:var(--radius);cursor:pointer;font-size:12px;font-family:var(--font-sans)}
-.back-btn:hover{color:var(--text)}
-.drill-title{font-size:17px;font-weight:700}
-.tbl{width:100%;border-collapse:collapse}
-.tbl th{text-align:left;padding:8px 12px;font-size:11px;text-transform:uppercase;letter-spacing:0.4px;color:var(--text3);border-bottom:2px solid var(--border2);font-weight:700;background:var(--bg2);position:sticky;top:0}
-.tbl td{padding:9px 12px;font-size:12.5px;border-bottom:1px solid var(--border);vertical-align:top}
-.tbl tr:hover td{background:var(--bg3)}
-.sb{display:inline-block;padding:2px 7px;border-radius:3px;font-size:10px;font-weight:700;letter-spacing:0.4px}
-.sb-CON{background:var(--grn-bg);color:var(--grn-txt);border:1px solid var(--grn-mid)}
-.sb-DEP{background:var(--teal-bg);color:var(--teal-txt);border:1px solid var(--teal-mid)}
-.sb-ORG{background:var(--pur-bg);color:var(--pur-txt);border:1px solid var(--pur-mid)}
-.sb-DEC,.sb-CLO{background:var(--burg-bg);color:var(--burg-txt);border:1px solid var(--burg-mid)}
-.sb-DIS{background:var(--slate-bg);color:var(--slate-txt);border:1px solid var(--slate-mid)}
-.sb-UV{background:var(--amb-bg);color:var(--amb-txt);border:1px solid var(--amb-mid)}
+/* STATUS BADGE COLORS */
+.bc-CONFIRMED{background:#0A2A0A;color:#6CC04A;border:1px solid #1E4A1E}
+.bc-DEPENDENT{background:#0A2A2A;color:#4ABFBF;border:1px solid #1A4040}
+.bc-ORGANIZING{background:#2A1A0A;color:#F5A623;border:1px solid #4A3010}
+.bc-DECERTIFIED{background:#1A1A1A;color:#888;border:1px solid #333}
+.bc-CLOSED{background:#2A1010;color:#E07A4A;border:1px solid #4A2010}
+.bc-UNVERIFIED{background:#0A1520;color:#4A6A80;border:1px solid #1E2D40}
 
-/* ── State detail ─────────────────────────────────────────────────────────── */
-.state-sel-row{display:flex;align-items:center;gap:12px;margin-bottom:18px;flex-wrap:wrap}
-.state-sel-row label{font-size:12px;color:var(--text3);font-weight:600;text-transform:uppercase;letter-spacing:0.4px}
-select{background:var(--bg2);color:var(--text);border:1px solid var(--border2);border-radius:var(--radius);padding:7px 12px;font-size:13px;cursor:pointer;box-shadow:var(--shadow);font-family:var(--font-sans)}
-select:focus{outline:none;border-color:var(--blue)}
-.layer-toggles{display:flex;gap:8px;flex-wrap:wrap}
-.tog-btn{display:flex;align-items:center;gap:5px;padding:5px 12px;border:1px solid var(--border2);border-radius:20px;font-size:11px;font-weight:600;cursor:pointer;background:var(--bg2);color:var(--text2);transition:opacity 0.15s,background 0.15s;font-family:var(--font-sans)}
-.tog-btn.on{background:var(--bg3);color:var(--text)}
-.tog-btn.off{opacity:0.4}
-.tog-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
-.tog-dot-conf{background:var(--burg-mid)}
-.tog-dot-dep{background:var(--teal-mid)}
-.tog-dot-unorg{background:#888780;border:1px dashed #666}
-.state-stats{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
-.stat-pill{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:8px 14px;box-shadow:var(--shadow)}
-.stat-pill strong{display:block;font-size:20px;font-family:var(--font-serif)}
-.stat-pill span{font-size:11px;color:var(--text3)}
-.state-map-wrap{position:relative;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);margin-bottom:20px;overflow:hidden;box-shadow:var(--shadow)}
-#state-svg{width:100%;height:400px;display:block}
-.zoom-ctls{position:absolute;top:10px;right:10px;display:flex;flex-direction:column;gap:4px}
-.zbtn{width:28px;height:28px;background:var(--bg2);border:1px solid var(--border2);color:var(--text2);border-radius:4px;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow)}
-.zbtn:hover{color:var(--blue);border-color:var(--blue)}
+/* MODAL */
+#modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:3000;display:none;align-items:center;justify-content:center;padding:20px}
+#modal-overlay.open{display:flex}
+#modal-box{background:#1A2535;border:1px solid #2E75B6;border-radius:10px;width:100%;max-width:680px;max-height:80vh;display:flex;flex-direction:column;box-shadow:0 8px 32px rgba(0,0,0,.6)}
+#modal-hdr{padding:13px 16px;border-bottom:1px solid #1E2D40;display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
+#modal-title{font-size:13px;font-weight:700;color:#fff}
+#modal-close{background:none;border:none;color:#4A6A80;font-size:22px;cursor:pointer;line-height:1;padding:0 4px;font-family:inherit}
+#modal-close:hover{color:#fff}
+#modal-body{overflow-y:auto;padding:12px 16px}
+#modal-body::-webkit-scrollbar{width:4px}
+#modal-body::-webkit-scrollbar-thumb{background:#2A3D54;border-radius:2px}
+.mrow{display:flex;gap:10px;align-items:flex-start;padding:7px 0;border-bottom:1px solid #0F1923}
+.mrow:last-child{border-bottom:none}
+.mbadge{font-size:9px;font-weight:700;padding:2px 7px;border-radius:3px;flex-shrink:0;margin-top:1px}
+.mrow-body{}
+.mrow-name{font-size:12px;font-weight:600;color:#fff;cursor:pointer}
+.mrow-name:hover{color:#4A9FE0}
+.mrow-meta{font-size:10px;color:#4A6A80;margin-top:2px;line-height:1.4}
 
-/* ── Slide-out ────────────────────────────────────────────────────────────── */
-.slideout{position:absolute;top:0;right:-340px;width:340px;height:100%;background:var(--bg2);border-left:1px solid var(--border2);transition:right 0.22s ease;overflow-y:auto;z-index:20;padding:14px 16px}
-.slideout.open{right:0}
-.so-close{position:sticky;top:0;display:flex;justify-content:flex-end;background:var(--bg2);padding-bottom:8px;margin-bottom:4px}
-.so-close button{background:none;border:none;color:var(--text3);cursor:pointer;font-size:20px;padding:2px 6px;line-height:1}
-.so-close button:hover{color:var(--text)}
-.so-name{font-size:13px;font-weight:700;margin-bottom:3px;line-height:1.3}
-.so-id{font-size:10px;color:var(--text3);font-family:monospace;margin-bottom:10px}
-.so-row{display:flex;gap:8px;margin-bottom:5px;font-size:12px}
-.so-lbl{color:var(--text3);min-width:88px;flex-shrink:0;font-size:11px;text-transform:uppercase;letter-spacing:0.3px;padding-top:1px}
-.so-val{color:var(--text2);word-break:break-word;line-height:1.4}
-.so-divider{height:1px;background:var(--border);margin:10px 0}
-
-/* ── Intel & Open Items ───────────────────────────────────────────────────── */
-.section-hdr{font-size:14px;font-weight:700;border-bottom:2px solid var(--border2);padding-bottom:8px;margin-bottom:14px;margin-top:24px;display:flex;align-items:center;gap:8px}
-.section-hdr i{color:var(--blue)}
-.intel-item{margin-bottom:16px;background:var(--blue-lt);border-radius:var(--radius);padding:12px 14px}
-.intel-q{font-size:12px;font-weight:700;color:var(--blue);margin-bottom:5px}
-.intel-a{font-size:13px;color:var(--text2);line-height:1.6}
-.oi{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:10px 12px;margin-bottom:8px}
-.oi-top{display:flex;gap:8px;align-items:flex-start}
-.oi-desc{font-size:12.5px;color:var(--text2);margin-top:2px}
-.oi-res{font-size:11px;color:var(--text3);margin-top:5px;line-height:1.4}
-.pri{padding:2px 7px;border-radius:3px;font-size:10px;font-weight:700;white-space:nowrap}
-.pri-BLOCKING,.pri-CRITICAL{background:var(--burg-bg);color:var(--burg-txt);border:1px solid var(--burg-mid)}
-.pri-HIGH{background:var(--amb-bg);color:var(--amb-txt);border:1px solid var(--amb-mid)}
-.pri-MEDIUM{background:var(--slate-bg);color:var(--slate-txt);border:1px solid var(--slate-mid)}
-.pri-LOW,.pri-MONITORING{background:var(--bg3);color:var(--text3);border:1px solid var(--border2)}
-
-/* ── Density table ────────────────────────────────────────────────────────── */
-.tbl-wrap{overflow-x:auto;border-radius:var(--radius-lg);box-shadow:var(--shadow)}
-.dtbl{width:100%;border-collapse:collapse;font-size:13px;background:var(--bg2)}
-.dtbl th{text-align:left;padding:10px 14px;font-size:10.5px;text-transform:uppercase;letter-spacing:0.5px;color:var(--text3);border-bottom:2px solid var(--border2);font-weight:700;background:var(--bg2);position:sticky;top:0}
-.dtbl td{padding:10px 14px;border-bottom:1px solid var(--border);vertical-align:middle}
-.dtbl tr:hover td{background:var(--bg3)}
-.dtbl .tot td{border-top:2px solid var(--border2);font-weight:700;background:var(--bg3)}
-.stacked-bar{display:flex;height:8px;border-radius:4px;overflow:hidden;min-width:80px;background:var(--bg3);gap:0}
-.bar-conf{background:var(--burg-mid);transition:width 0.3s}
-.bar-dep{background:var(--teal-mid);transition:width 0.3s}
-.pct-lbl{font-weight:700;font-size:13px;font-family:var(--font-serif)}
-.dt-note{font-size:10.5px;color:var(--text3);line-height:1.4;max-width:280px}
-
-/* ── Networks ──────────────────────────────────────────────────────────────── */
-.net-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
-.net-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px;box-shadow:var(--shadow)}
-.net-hdr{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:10px}
-.net-name{font-size:13.5px;font-weight:700;line-height:1.3}
-.net-st{font-size:11px;color:var(--text3);margin-top:2px}
-.net-count{font-size:24px;font-weight:700;color:var(--grn-mid);font-family:var(--font-serif);text-align:right}
-.net-count-sub{font-size:10px;color:var(--text3);text-align:right}
-.net-union{font-size:12px;color:var(--text2);margin-bottom:5px}
-.net-cba{font-size:11px;color:var(--text3);line-height:1.4}
-
-/* ── Threat Intel ──────────────────────────────────────────────────────────── */
-.threat-grid{display:grid;gap:12px}
-.tc{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:14px 16px;box-shadow:var(--shadow)}
-.tc.CRITICAL{border-left:4px solid var(--burg-mid)}
-.tc.HIGH{border-left:4px solid var(--amb-mid)}
-.tc-hdr{display:flex;gap:10px;align-items:flex-start;margin-bottom:7px;flex-wrap:wrap}
-.tc-target{font-size:13px;font-weight:700;line-height:1.3;margin-bottom:5px}
-.tc-desc{font-size:12px;color:var(--text2);line-height:1.6}
-
-/* ── Timeline ──────────────────────────────────────────────────────────────── */
-.tl-filters{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:20px}
-.tl-filters label{font-size:12px;color:var(--text3);font-weight:600;text-transform:uppercase;letter-spacing:0.4px}
-.tl-year-group{margin-bottom:28px}
-.tl-year-hdr{font-size:13px;font-weight:700;color:var(--blue);border-bottom:1px solid var(--border);padding-bottom:6px;margin-bottom:12px;display:flex;align-items:center;gap:8px}
-.tl-count{font-size:11px;background:var(--blue-lt);color:var(--blue);padding:2px 8px;border-radius:10px;font-weight:600}
-.tl-event{display:flex;gap:14px;margin-bottom:10px;align-items:flex-start}
-.tl-dot{width:8px;height:8px;border-radius:50%;background:var(--burg-mid);flex-shrink:0;margin-top:5px}
-.tl-body{flex:1}
-.tl-school{font-size:13px;font-weight:600;line-height:1.3}
-.tl-meta{font-size:11px;color:var(--text3);margin-top:2px}
-.tl-union{font-size:11.5px;color:var(--text2);margin-top:3px}
-
-/* ── Patterns ──────────────────────────────────────────────────────────────── */
-.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
-.pcard{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:14px 16px;box-shadow:var(--shadow)}
-.pcard-st{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:4px;font-weight:600}
-.pcard-title{font-size:13px;font-weight:700;margin-bottom:7px;line-height:1.3}
-.pcard-body{font-size:12px;color:var(--text2);line-height:1.6}
-
-/* ── Scroll top ────────────────────────────────────────────────────────────── */
-#scroll-top{position:fixed;bottom:24px;right:24px;background:var(--blue);color:white;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;transition:opacity 0.2s;border:none;box-shadow:0 2px 8px rgba(0,0,0,0.2)}
-#scroll-top.vis{opacity:1}
-
-/* ── Responsive ────────────────────────────────────────────────────────────── */
-@media(max-width:640px){
-  .metrics{grid-template-columns:repeat(2,1fr)}
-  .shell{padding:0 14px 60px}
-  .hdr{flex-direction:column}
-}
+/* LEAFLET OVERRIDES */
+.leaflet-control-zoom{border:1px solid #2A3D54!important}
+.leaflet-control-zoom a{background:#1A2535!important;color:#4A9FE0!important;border-bottom:1px solid #2A3D54!important;font-family:inherit!important}
+.leaflet-control-zoom a:hover{background:#2E75B6!important;color:#fff!important}
+.leaflet-control-attribution{background:rgba(15,25,35,.8)!important;color:#4A6A80!important;font-size:9px!important}
+.leaflet-control-attribution a{color:#4A9FE0!important}
 </style>
 </head>
 <body>
-<div id="tip"><div class="tip-state"></div><div class="tip-row" id="tip-uni"></div><div class="tip-row" id="tip-conf"></div><div class="tip-row" id="tip-dep"></div><div class="tip-row" id="tip-dens"></div></div>
 
-<div class="shell">
+<!-- TOP BAR -->
+<div id="topbar">
+  <h1>NAPCS Charter School Unionization Dashboard</h1>
+  <span class="tsub" id="topbar-sub">PLT Strategies Group, Inc.</span>
+  <span class="tbadge tbadge-blue" id="badge-j"></span>
+  <span class="tbadge tbadge-green" id="badge-c"></span>
+</div>
 
-<!-- HEADER -->
-<header class="hdr">
-  <div class="hdr-left">
-    <i class="ti ti-building-community hdr-eye"></i>
-    <div>
-      <div class="hdr-title">NAPCS Charter School Unionization Dashboard</div>
-      <div class="hdr-sub" id="hdr-sub">PLT Strategies Group, Inc.</div>
+<!-- STAT BAR -->
+<div id="statbar">
+  <div class="stat" id="stat-0" title="View density table">
+    <div class="stat-val blue" id="sv-0">—</div>
+    <div class="stat-lbl">Total Charter Schools</div>
+    <div class="stat-sub" id="ss-0"></div>
+  </div>
+  <div class="stat" id="stat-1" title="View confirmed schools">
+    <div class="stat-val green" id="sv-1">—</div>
+    <div class="stat-lbl">Confirmed Organized</div>
+    <div class="stat-sub" id="ss-1"></div>
+  </div>
+  <div class="stat" id="stat-2" title="View dependent schools">
+    <div class="stat-val teal" id="sv-2">—</div>
+    <div class="stat-lbl">Structurally Covered</div>
+    <div class="stat-sub">District CBA</div>
+  </div>
+  <div class="stat" id="stat-3" title="View organizing schools">
+    <div class="stat-val gold" id="sv-3">—</div>
+    <div class="stat-lbl">Active Organizing</div>
+    <div class="stat-sub" id="ss-3"></div>
+  </div>
+  <div class="stat" id="stat-4" title="View decertified">
+    <div class="stat-val orange" id="sv-4">—</div>
+    <div class="stat-lbl">Decertified</div>
+    <div class="stat-sub">Cert removed</div>
+  </div>
+  <div class="stat" id="stat-5" title="View closed schools">
+    <div class="stat-val red" id="sv-5">—</div>
+    <div class="stat-lbl">Closed (Formerly Org.)</div>
+    <div class="stat-sub" id="ss-5"></div>
+  </div>
+</div>
+
+<!-- MAIN -->
+<div id="main">
+  <div id="mapwrap">
+    <div id="map"></div>
+    <button id="back-btn">← All States</button>
+    <div id="filter-bar">
+      <div class="fb-title">Filter by Status</div>
+      <label class="fitem"><input type="checkbox" checked data-status="CONFIRMED"><span class="fdot" style="background:#6CC04A"></span><span>Confirmed (<span id="fc-0">0</span>)</span></label>
+      <label class="fitem"><input type="checkbox" checked data-status="DEPENDENT"><span class="fdot" style="background:#4ABFBF"></span><span>Dependent (<span id="fc-1">0</span>)</span></label>
+      <label class="fitem"><input type="checkbox" checked data-status="ORGANIZING"><span class="fdot" style="background:#F5A623"></span><span>Organizing (<span id="fc-2">0</span>)</span></label>
+      <label class="fitem"><input type="checkbox" checked data-status="DECERTIFIED"><span class="fdot" style="background:#888;border:1px solid #555"></span><span>Decertified (<span id="fc-3">0</span>)</span></label>
+      <label class="fitem"><input type="checkbox" checked data-status="CLOSED"><span class="fdot" style="background:#E07A4A"></span><span>Closed (<span id="fc-4">0</span>)</span></label>
+      <label class="fitem"><input type="checkbox" checked data-status="UNVERIFIED"><span class="fdot" style="background:#1E2D40;border:1px solid #4A6A80"></span><span>Unverified (<span id="fc-5">0</span>)</span></label>
     </div>
   </div>
-  <div class="hdr-badges" id="hdr-badges"></div>
-</header>
 
-<!-- NAV -->
-<nav class="nav">
-  <button class="nav-tab active" data-view="v-national"><i class="ti ti-map-2"></i>National Map</button>
-  <button class="nav-tab" data-view="v-density"><i class="ti ti-percentage"></i>Density Table</button>
-  <button class="nav-tab" data-view="v-state"><i class="ti ti-building-community"></i>State Detail</button>
-  <button class="nav-tab" data-view="v-networks"><i class="ti ti-network"></i>Networks</button>
-  <button class="nav-tab" data-view="v-threat"><i class="ti ti-alert-triangle"></i>Threat Intel</button>
-  <button class="nav-tab" data-view="v-timeline"><i class="ti ti-clock"></i>Timeline</button>
-  <button class="nav-tab" data-view="v-patterns"><i class="ti ti-arrows-split-2"></i>Patterns</button>
-</nav>
-
-<!-- NATIONAL MAP VIEW -->
-<div class="view on" id="v-national">
-  <div id="v-national-main">
-    <div id="data-note" style="font-size:11px;color:var(--text3);margin-bottom:12px;padding:8px 12px;background:var(--bg3);border-radius:var(--radius);border-left:3px solid var(--border2)">
-      Research complete across all 19 jurisdictions as of May 2026 &middot; Registry v59 &middot; Click any state to view detail &middot; Click any metric card to drill down by status
+  <div id="sidepanel">
+    <div id="panel-tabs">
+      <button class="ptab active" onclick="switchTab('overview')">Overview</button>
+      <button class="ptab" onclick="switchTab('density')">Density Table</button>
     </div>
-    <div class="metrics" id="metric-cards"></div>
-    <div class="combined-box" id="combined-box"></div>
-    <div class="map-legend" id="map-legend"></div>
-    <div class="map-wrap">
-      <div class="map-hdr">National Overview &mdash; hover for details, click to drill in</div>
-      <svg id="umap"></svg>
+    <div id="panel-hdr">
+      <div id="panel-title">National Overview</div>
+      <div id="panel-sub">Click any state circle to zoom in</div>
     </div>
+    <div id="panel-body"></div>
   </div>
-  <div id="v-national-drill" style="display:none">
-    <div class="drill-hdr">
-      <button class="back-btn" id="back-btn"><i class="ti ti-arrow-left"></i>All States</button>
-      <div class="drill-title" id="drill-title"></div>
+</div>
+
+<!-- MODAL -->
+<div id="modal-overlay">
+  <div id="modal-box">
+    <div id="modal-hdr">
+      <div id="modal-title">Schools</div>
+      <button id="modal-close">&times;</button>
     </div>
-    <div id="drill-content"></div>
+    <div id="modal-body"></div>
   </div>
 </div>
-
-<!-- DENSITY TABLE VIEW -->
-<div class="view" id="v-density">
-  <div class="tbl-wrap"><table class="dtbl" id="density-tbl"></table></div>
-</div>
-
-<!-- STATE DETAIL VIEW -->
-<div class="view" id="v-state">
-  <div class="state-sel-row">
-    <label>Jurisdiction</label>
-    <select id="stsel"></select>
-    <div class="layer-toggles" id="layer-toggles">
-      <button class="tog-btn on" data-layer="conf"><span class="tog-dot tog-dot-conf"></span>Confirmed Union</button>
-      <button class="tog-btn on" data-layer="dep"><span class="tog-dot tog-dot-dep"></span>Dependent</button>
-      <button class="tog-btn on" data-layer="unorg"><span class="tog-dot tog-dot-unorg"></span>Unorganized</button>
-    </div>
-  </div>
-  <div id="state-content"></div>
-</div>
-
-<!-- NETWORKS VIEW -->
-<div class="view" id="v-networks">
-  <div class="net-grid" id="net-grid"></div>
-</div>
-
-<!-- THREAT INTEL VIEW -->
-<div class="view" id="v-threat">
-  <div class="threat-grid" id="threat-grid"></div>
-</div>
-
-<!-- TIMELINE VIEW -->
-<div class="view" id="v-timeline">
-  <div class="tl-filters">
-    <label>State</label>
-    <select id="tl-state-filter"><option value="">All States</option></select>
-  </div>
-  <div id="tl-content"></div>
-</div>
-
-<!-- PATTERNS VIEW -->
-<div class="view" id="v-patterns">
-  <div class="tl-filters">
-    <label>State</label>
-    <select id="pat-state-filter"><option value="">All States</option></select>
-  </div>
-  <div class="pgrid" id="pat-grid"></div>
-</div>
-
-</div><!-- /.shell -->
-
-<button id="scroll-top" title="Back to top"><i class="ti ti-arrow-up"></i></button>
 
 <script>
-// All data from NAPCS_DATA global (loaded from napcs_data.js)
-var D = NAPCS_DATA;
-var NAT = D.meta.national;
-var STATES = D.states;
-var STATE_NAMES_MAP = {};
-Object.keys(STATES).forEach(function(k){ STATE_NAMES_MAP[k] = STATES[k].name; });
-var STATE_ORDER = Object.keys(STATES).sort(function(a,b){ return STATES[a].name.localeCompare(STATES[b].name); });
+var NAT = DATA.national;
+var STATE_DATA = DATA.state_data;
+var SCHOOLS = DATA.schools;
 
-var STATUS_META = {
-  CONFIRMED: {label:'Confirmed Organized', sbClass:'sb-CON'},
-  DEPENDENT: {label:'Dependent (District CBA)', sbClass:'sb-DEP'},
-  ORGANIZING:{label:'Active Organizing', sbClass:'sb-ORG'},
-  DECERTIFIED:{label:'Decertified', sbClass:'sb-DEC'},
-  CLOSED:    {label:'Closed (Formerly Org.)', sbClass:'sb-CLO'},
-  DISPUTED:  {label:'Certified/Disputed', sbClass:'sb-DIS'},
+var STATE_NAMES = {
+  AZ:'Arizona',CA:'California',CT:'Connecticut',DC:'Washington DC',
+  DE:'Delaware',FL:'Florida',HI:'Hawaii',IL:'Illinois',
+  LA:'Louisiana',MA:'Massachusetts',ME:'Maine',MI:'Michigan',
+  MN:'Minnesota',NJ:'New Jersey',NM:'New Mexico',NY:'New York',
+  OH:'Ohio',OR:'Oregon',PA:'Pennsylvania',RI:'Rhode Island',WI:'Wisconsin'
 };
 
-// ── Header ────────────────────────────────────────────────────────────────
-document.getElementById('hdr-sub').textContent =
-  'PLT Strategies Group, Inc. \u00B7 Registry ' + D.meta.registryVersion + ' \u00B7 ' + D.meta.researchDate + ' \u00B7 CONFIDENTIAL';
-document.getElementById('hdr-badges').innerHTML =
-  '<span class="badge badge-info"><i class="ti ti-map-pin" style="font-size:12px"></i>' + D.meta.jurisdictions + ' Jurisdictions</span>' +
-  '<span class="badge badge-grn"><i class="ti ti-check" style="font-size:12px"></i>' + NAT.confirmed + ' Confirmed</span>' +
-  '<span class="badge badge-teal"><i class="ti ti-building" style="font-size:12px"></i>' + NAT.dependent + ' Dependent</span>';
+var STATUS_CFG = {
+  CONFIRMED:  {color:'#6CC04A', r:7,  z:40, opacity:0.88},
+  DEPENDENT:  {color:'#4ABFBF', r:6,  z:30, opacity:0.80},
+  ORGANIZING: {color:'#F5A623', r:8,  z:50, opacity:0.95},
+  DECERTIFIED:{color:'#888888', r:5,  z:20, opacity:0.70},
+  CLOSED:     {color:'#E07A4A', r:5,  z:15, opacity:0.70},
+  UNVERIFIED: {color:'#2A4060', r:4,  z:10, opacity:0.40},
+};
 
-// ── Nav ───────────────────────────────────────────────────────────────────
-var _builtViews = {national:true};
-document.querySelector('.nav').addEventListener('click', function(e) {
-  var btn = e.target.closest('.nav-tab');
-  if (!btn) return;
-  var viewId = btn.getAttribute('data-view');
-  document.querySelectorAll('.nav-tab').forEach(function(t){ t.classList.remove('active'); });
-  document.querySelectorAll('.view').forEach(function(v){ v.classList.remove('on'); });
-  btn.classList.add('active');
-  document.getElementById(viewId).classList.add('on');
-  if (viewId==='v-density' && !_builtViews.density){ buildDensity(); _builtViews.density=true; }
-  if (viewId==='v-state' && !_builtViews.state){ initStateDetail(); _builtViews.state=true; }
-  if (viewId==='v-networks' && !_builtViews.networks){ buildNetworks(); _builtViews.networks=true; }
-  if (viewId==='v-threat' && !_builtViews.threat){ buildThreat(); _builtViews.threat=true; }
-  if (viewId==='v-timeline' && !_builtViews.timeline){ buildTimeline(); _builtViews.timeline=true; }
-  if (viewId==='v-patterns' && !_builtViews.patterns){ buildPatterns(); _builtViews.patterns=true; }
-});
+// ── Header ─────────────────────────────────────────────────────────────────
+document.getElementById('topbar-sub').textContent =
+  'PLT Strategies Group, Inc. \u00B7 Registry v59 \u00B7 May 2026 \u00B7 CONFIDENTIAL';
+document.getElementById('badge-j').textContent = NAT.jurisdictions + ' Jurisdictions Complete';
+document.getElementById('badge-c').textContent = NAT.confirmed + ' Confirmed';
 
-// ── Metric Cards ──────────────────────────────────────────────────────────
-var CARDS = [
-  {key:'charterUniverse',label:'Total Charter Schools',sub:'Registry '+D.meta.registryVersion,color:'blu',status:null},
-  {key:'confirmed',label:'Confirmed Organized',sub:NAT.confirmedDensity+' of universe',color:'grn',status:'CONFIRMED'},
-  {key:'dependent',label:'Dependent (Structural)',sub:NAT.dependentDensity+' \u00B7 District CBA',color:'teal',status:'DEPENDENT'},
-  {key:'organizing',label:'Active Organizing',sub:'Petitions / elections',color:'pur',status:'ORGANIZING'},
-  {key:'decertified',label:'Decertified',sub:'Cert removed',color:'burg',status:'DECERTIFIED'},
-  {key:'closed',label:'Closed (Formerly Org.)',sub:'Historical',color:'burg',status:'CLOSED'},
-];
-document.getElementById('metric-cards').innerHTML = CARDS.map(function(c){
-  return '<div class="mc '+c.color+'" data-status="'+(c.status||'')+'">' +
-    '<div class="mc-chevron"><i class="ti ti-chevron-right"></i></div>' +
-    '<div class="mc-num">'+(NAT[c.key]||0).toLocaleString()+'</div>' +
-    '<div class="mc-lbl">'+c.label+'</div>' +
-    '<div class="mc-sub">'+c.sub+'</div></div>';
-}).join('');
-document.getElementById('metric-cards').addEventListener('click', function(e){
-  var card = e.target.closest('.mc');
-  if (!card) return;
-  var status = card.getAttribute('data-status');
-  if (status) showDrilldown(status);
-});
+document.getElementById('sv-0').textContent = NAT.universe.toLocaleString();
+document.getElementById('ss-0').textContent = NAT.jurisdictions + ' Jurisdictions \u00B7 Registry v59';
+document.getElementById('sv-1').textContent = NAT.confirmed.toLocaleString();
+document.getElementById('ss-1').textContent = NAT.confirmed_density + ' of ' + NAT.universe.toLocaleString() + ' schools';
+document.getElementById('sv-2').textContent = NAT.dependent.toLocaleString();
+document.getElementById('sv-3').textContent = NAT.organizing;
+document.getElementById('ss-3').textContent = NAT.organizing > 0 ? 'Active campaigns' : 'No active campaigns';
+document.getElementById('sv-4').textContent = NAT.decertified;
+document.getElementById('sv-5').textContent = NAT.closed;
 
-// ── Combined box ──────────────────────────────────────────────────────────
-document.getElementById('combined-box').innerHTML =
-  '<div><div class="combined-lbl">Total Organized &mdash; Confirmed + Dependent</div>' +
-  '<div><span class="combined-num">'+(NAT.combined||0).toLocaleString()+'</span><span class="combined-pct">'+NAT.combinedDensity+'</span></div></div>' +
-  '<div class="combined-detail">' +
-  '<span><span class="swatch sw-grn"></span>'+NAT.confirmed+' Confirmed ('+NAT.confirmedDensity+')</span>' +
-  '<span><span class="swatch sw-teal"></span>'+NAT.dependent+' Dependent ('+NAT.dependentDensity+')</span>' +
-  '</div>';
+// Filter counts
+var statusCounts = {CONFIRMED:0,DEPENDENT:0,ORGANIZING:0,DECERTIFIED:0,CLOSED:0,UNVERIFIED:0};
+SCHOOLS.forEach(function(s){ if(statusCounts[s.status]!==undefined) statusCounts[s.status]++; });
+document.getElementById('fc-0').textContent = statusCounts.CONFIRMED;
+document.getElementById('fc-1').textContent = statusCounts.DEPENDENT;
+document.getElementById('fc-2').textContent = statusCounts.ORGANIZING;
+document.getElementById('fc-3').textContent = statusCounts.DECERTIFIED;
+document.getElementById('fc-4').textContent = statusCounts.CLOSED;
+document.getElementById('fc-5').textContent = statusCounts.UNVERIFIED;
 
-// ── Map legend ────────────────────────────────────────────────────────────
-document.getElementById('map-legend').innerHTML =
-  '<div class="legend-item"><div class="legend-sw" style="background:#6B1A2A"></div>>20% density</div>' +
-  '<div class="legend-item"><div class="legend-sw" style="background:#9c2a1f"></div>10-20%</div>' +
-  '<div class="legend-item"><div class="legend-sw" style="background:#bf6020"></div>5-10%</div>' +
-  '<div class="legend-item"><div class="legend-sw" style="background:#a08020"></div>1-5%</div>' +
-  '<div class="legend-item"><div class="legend-sw" style="background:#c8b070"></div>&lt;1%</div>' +
-  '<div class="legend-item"><div class="legend-sw" style="background:repeating-linear-gradient(45deg,#0d2a2a,#0d2a2a 3px,#00796B 3px,#00796B 6px)"></div>Structural (OR)</div>' +
-  '<div class="legend-item"><div class="legend-sw" style="background:var(--map-state)"></div>Not in scope</div>';
+// Stat bar clicks
+document.getElementById('stat-0').onclick = function(){ switchTab('density'); };
+document.getElementById('stat-1').onclick = function(){ openModal('CONFIRMED'); };
+document.getElementById('stat-2').onclick = function(){ openModal('DEPENDENT'); };
+document.getElementById('stat-3').onclick = function(){ openModal('ORGANIZING'); };
+document.getElementById('stat-4').onclick = function(){ openModal('DECERTIFIED'); };
+document.getElementById('stat-5').onclick = function(){ openModal('CLOSED'); };
 
-// ── Drilldown ─────────────────────────────────────────────────────────────
-function showDrilldown(status) {
-  var schools = D.schools[status] || [];
-  var meta = STATUS_META[status] || {label:status, sbClass:'sb-UV'};
-  document.getElementById('drill-title').textContent = meta.label + ' \u2014 ' + schools.length + ' schools';
-  var rows = schools.map(function(s){
-    return '<tr><td>'+esc(s.n||'')+'</td><td>'+esc(s.st||'')+'</td><td>'+esc(s.c||'')+'</td>' +
-      '<td>'+esc((s.u||'').replace(/\s*\(.+\)/,''))+'</td><td>'+esc(s.dt||'')+'</td></tr>';
-  }).join('');
-  document.getElementById('drill-content').innerHTML =
-    '<table class="tbl"><thead><tr><th>School</th><th>State</th><th>City</th><th>Union</th><th>Certified</th></tr></thead>' +
-    '<tbody>'+(rows||'<tr><td colspan="5" style="text-align:center;color:var(--text3);padding:30px">No schools in this category</td></tr>')+'</tbody></table>';
-  document.getElementById('v-national-main').style.display='none';
-  document.getElementById('v-national-drill').style.display='';
-}
-document.getElementById('back-btn').addEventListener('click', function(){
-  document.getElementById('v-national-main').style.display='';
-  document.getElementById('v-national-drill').style.display='none';
-});
+// ── Map ─────────────────────────────────────────────────────────────────────
+var map = L.map('map', {center:[38,-96], zoom:4, zoomControl:true, preferCanvas:true});
+L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+  attribution:'&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com">CartoDB</a>',
+  subdomains:'abcd', maxZoom:19
+}).addTo(map);
 
-// ── National Choropleth Map ───────────────────────────────────────────────
-var FIPS = {'01':'AL','02':'AK','04':'AZ','05':'AR','06':'CA','08':'CO','09':'CT','10':'DE','11':'DC','12':'FL','13':'GA','15':'HI','16':'ID','17':'IL','18':'IN','19':'IA','20':'KS','21':'KY','22':'LA','23':'ME','24':'MD','25':'MA','26':'MI','27':'MN','28':'MS','29':'MO','30':'MT','31':'NE','32':'NV','33':'NH','34':'NJ','35':'NM','36':'NY','37':'NC','38':'ND','39':'OH','40':'OK','41':'OR','42':'PA','44':'RI','45':'SC','46':'SD','47':'TN','48':'TX','49':'UT','50':'VT','51':'VA','53':'WA','54':'WV','55':'WI','56':'WY'};
+// ── Layer groups ────────────────────────────────────────────────────────────
+var layers = {};
+Object.keys(STATUS_CFG).forEach(function(s){ layers[s] = L.layerGroup().addTo(map); });
 
-function densityFill(code) {
-  var st = STATES[code];
-  if (!st) return 'var(--map-state)';
-  var conf = st.confirmed||0, dep = st.dependent||0;
-  var pct = (conf+dep)/(st.universe||1);
-  if (code==='OR') return 'url(#or-hatch)';
-  if (pct>0.20) return '#6B1A2A';
-  if (pct>0.10) return '#9c2a1f';
-  if (pct>0.05) return '#bf6020';
-  if (pct>0.01) return '#a08020';
-  if (pct>0)    return '#c8b070';
-  return 'var(--map-state)';
-}
+// ── Build popup HTML ────────────────────────────────────────────────────────
+function buildPopup(s) {
+  var cfg = STATUS_CFG[s.status] || STATUS_CFG.UNVERIFIED;
+  var statusLabel = {
+    CONFIRMED:'Confirmed',DEPENDENT:'Dependent (District CBA)',
+    ORGANIZING:'Organizing',DECERTIFIED:'Decertified',
+    CLOSED:'Closed (Formerly Org.)',UNVERIFIED:'Unverified'
+  }[s.status] || s.status;
 
-(function buildMap(){
-  var svgEl = document.getElementById('umap');
-  var W = svgEl.getBoundingClientRect().width || 900;
-  var H = 460;
-  var svg = d3.select('#umap').attr('viewBox','0 0 '+W+' '+H);
-  var defs = svg.append('defs');
-  // OR hatch
-  var pat = defs.append('pattern').attr('id','or-hatch').attr('patternUnits','userSpaceOnUse').attr('width',6).attr('height',6);
-  pat.append('rect').attr('width',6).attr('height',6).attr('fill','#0d2a2a');
-  pat.append('line').attr('x1',0).attr('y1',0).attr('x2',6).attr('y2',6).attr('stroke','#00796B').attr('stroke-width',1.5);
-
-  var proj = d3.geoAlbersUsa().scale(W*1.25).translate([W/2, H/2]);
-  var path = d3.geoPath().projection(proj);
-  var tip = document.getElementById('tip');
-
-  d3.json('https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json').then(function(us){
-    var states = topojson.feature(us, us.objects.states);
-    svg.selectAll('path.st')
-      .data(states.features).enter()
-      .append('path').attr('class','st')
-      .attr('d', path)
-      .attr('fill', function(d){ return densityFill(FIPS[d.id.toString().padStart(2,'0')]); })
-      .attr('stroke','var(--map-stroke)').attr('stroke-width',0.6)
-      .attr('cursor', function(d){ return STATES[FIPS[d.id.toString().padStart(2,'0')]] ? 'pointer' : 'default'; })
-      .on('mousemove', function(event,d){
-        var code = FIPS[d.id.toString().padStart(2,'0')];
-        var st = STATES[code];
-        if (!st) return;
-        var conf = st.confirmed||0, dep = st.dependent||0;
-        var pct = ((conf+dep)/(st.universe||1)*100).toFixed(1);
-        document.querySelector('#tip .tip-state').textContent = st.name;
-        document.getElementById('tip-uni').textContent = 'Universe: '+(st.universe||0).toLocaleString()+' schools';
-        document.getElementById('tip-conf').textContent = 'Confirmed: '+conf;
-        document.getElementById('tip-dep').textContent = 'Dependent: '+dep;
-        document.getElementById('tip-dens').textContent = 'Combined density: '+pct+'%';
-        tip.style.opacity='1';
-        tip.style.left=(event.clientX+14)+'px';
-        tip.style.top=(event.clientY-10)+'px';
-      })
-      .on('mouseleave', function(){ tip.style.opacity='0'; })
-      .on('click', function(event,d){
-        var code = FIPS[d.id.toString().padStart(2,'0')];
-        if (!STATES[code]) return;
-        tip.style.opacity='0';
-        switchToStateDetail(code);
-      });
-  }).catch(function(){
-    svg.append('text').attr('x',W/2).attr('y',H/2).attr('text-anchor','middle')
-      .attr('fill','var(--text3)').attr('font-size',13)
-      .text('National map requires internet connection to load');
-  });
-})();
-
-function switchToStateDetail(code) {
-  document.querySelectorAll('.nav-tab').forEach(function(t){ t.classList.remove('active'); });
-  document.querySelectorAll('.view').forEach(function(v){ v.classList.remove('on'); });
-  document.querySelector('[data-view="v-state"]').classList.add('active');
-  document.getElementById('v-state').classList.add('on');
-  if (!_builtViews.state){ initStateDetail(); _builtViews.state=true; }
-  document.getElementById('stsel').value = code;
-  renderState(code);
-}
-
-// ── Density Table ─────────────────────────────────────────────────────────
-function buildDensity() {
-  var maxCombined = Math.max.apply(null, D.densityTable.map(function(r){ return (r.confirmed||0)+(r.dependent||0); }));
-  var rows = D.densityTable.map(function(r){
-    var conf = r.confirmed||0, dep = r.dependent||0;
-    var combined = conf+dep;
-    var univ = r.universe||1;
-    var pct = (combined/univ*100).toFixed(1);
-    var confW = maxCombined>0 ? (conf/univ*100/((maxCombined/univ*100))*100).toFixed(1) : 0;
-    var depW  = maxCombined>0 ? (dep/univ*100/((maxCombined/univ*100))*100).toFixed(1) : 0;
-    return '<tr>' +
-      '<td><strong>'+esc(r.name)+'</strong> <span style="color:var(--text3);font-size:11px">'+r.st+'</span></td>' +
-      '<td>'+esc(r.laborBoard||'')+'</td>' +
-      '<td>'+(r.universe||0).toLocaleString()+'</td>' +
-      '<td style="color:var(--grn-mid);font-weight:600">'+conf+'</td>' +
-      '<td style="color:var(--teal-mid);font-weight:600">'+dep+'</td>' +
-      '<td>'+combined+'</td>' +
-      '<td><div style="display:flex;align-items:center;gap:8px"><div class="stacked-bar"><div class="bar-conf" style="width:'+confW+'%"></div><div class="bar-dep" style="width:'+depW+'%"></div></div><span class="pct-lbl">'+pct+'%</span></div></td>' +
-      '<td class="dt-note">'+esc((r.note||'').slice(0,150))+'</td>' +
-      '</tr>';
-  }).join('');
-  var tot = D.densityTotals||{};
-  var totRow = '<tr class="tot">' +
-    '<td colspan="2"><strong>TOTAL</strong></td>' +
-    '<td>'+(tot.universe||0).toLocaleString()+'</td>' +
-    '<td style="color:var(--grn-mid);font-weight:700">'+(tot.confirmed||0)+'</td>' +
-    '<td style="color:var(--teal-mid);font-weight:700">'+(tot.dependent||0)+'</td>' +
-    '<td><strong>'+(tot.combined||0)+'</strong></td>' +
-    '<td><strong>'+(tot.density||'')+'</strong></td><td></td></tr>';
-  // Get labor board from state data
-  D.densityTable.forEach(function(r){ r.laborBoard = (STATES[r.st]&&STATES[r.st].laborBoard)||''; });
-  document.getElementById('density-tbl').innerHTML =
-    '<thead><tr><th>Jurisdiction</th><th>Labor Board</th><th>Universe</th><th>Confirmed</th><th>Dependent</th><th>Combined</th><th>Density Bar</th><th>Notes</th></tr></thead>' +
-    '<tbody>'+rows+totRow+'</tbody>';
-}
-
-// ── State Detail ──────────────────────────────────────────────────────────
-var _layers = {conf:true, dep:true, unorg:true};
-var _baseProj = null, _curProj = null, _curCode = null;
-var _stateMapSvg = null, _zoomBhvr = null;
-
-function initStateDetail() {
-  STATE_ORDER.forEach(function(code){
-    var opt = document.createElement('option');
-    opt.value=code; opt.textContent=STATES[code].name;
-    document.getElementById('stsel').appendChild(opt);
-  });
-  document.getElementById('stsel').addEventListener('change', function(){ renderState(this.value); });
-  // Layer toggles
-  document.getElementById('layer-toggles').addEventListener('click', function(e){
-    var btn = e.target.closest('.tog-btn');
-    if (!btn) return;
-    var layer = btn.getAttribute('data-layer');
-    _layers[layer] = !_layers[layer];
-    btn.classList.toggle('on', _layers[layer]);
-    btn.classList.toggle('off', !_layers[layer]);
-    if (_curCode) redrawCircles(_curProj||_baseProj);
-  });
-  renderState(STATE_ORDER[0]);
-}
-
-function renderState(code) {
-  _curCode = code;
-  var st = STATES[code];
-  if (!st) return;
-  var combined = (st.confirmed||0)+(st.dependent||0);
-  var densityPct = st.universe ? ((combined/st.universe)*100).toFixed(1)+'%' : 'N/A';
-
-  var html = '<div class="state-stats">' +
-    '<div class="stat-pill"><strong style="color:var(--grn-mid)">'+(st.confirmed||0)+'</strong><span>Confirmed</span></div>' +
-    '<div class="stat-pill"><strong style="color:var(--teal-mid)">'+(st.dependent||0)+'</strong><span>Dependent</span></div>' +
-    '<div class="stat-pill"><strong>'+combined+'</strong><span>Combined</span></div>' +
-    '<div class="stat-pill"><strong>'+densityPct+'</strong><span>of '+(st.universe||0).toLocaleString()+'</span></div>' +
-    '</div>';
-  html += '<div class="state-map-wrap" id="smwrap">' +
-    '<svg id="state-svg"></svg>' +
-    '<div class="zoom-ctls">' +
-    '<button class="zbtn" id="z-in" title="Zoom in"><i class="ti ti-plus"></i></button>' +
-    '<button class="zbtn" id="z-out" title="Zoom out"><i class="ti ti-minus"></i></button>' +
-    '<button class="zbtn" id="z-reset" title="Reset zoom"><i class="ti ti-focus-centered"></i></button>' +
-    '</div>' +
-    '<div class="slideout" id="slideout">' +
-    '<div class="so-close"><button id="so-close-btn">&times;</button></div>' +
-    '<div id="so-content"></div>' +
-    '</div>' +
-    '</div>';
-
-  if (st.intel&&st.intel.length) {
-    html += '<div class="section-hdr"><i class="ti ti-brain"></i>State Intelligence</div>';
-    html += st.intel.map(function(q){
-      if (!q||!q.prompt) return '';
-      return '<div class="intel-item"><div class="intel-q">'+esc(q.prompt)+'</div><div class="intel-a">'+esc(q.answer||'')+'</div></div>';
-    }).join('');
+  var h = '<div class="pu-name">' + esc(s.name) + '</div>';
+  h += purow('Status', '<span class="pu-badge bc-'+s.status+'">'+statusLabel+'</span>');
+  if (s.authorizer) h += purow('Authorizer', esc(s.authorizer));
+  h += purow('Jurisdiction', esc((s.lb_abbrev||s.lb||'') + (s.jnotes ? ' \u2014 ' + s.jnotes : '')));
+  if (s.status==='CONFIRMED'||s.status==='ORGANIZING') {
+    h += purow('Union', '<span class="pu-val green">'+esc(s.union||'—')+'</span>');
+    if (s.date) h += purow('Date', esc(s.date.slice(0,50)));
+    if (s.cba) h += purow('CBA', esc(s.cba));
   }
-
-  if (st.openItems&&st.openItems.length) {
-    html += '<div class="section-hdr"><i class="ti ti-clipboard-list"></i>Open Items</div>';
-    html += st.openItems.map(function(o){
-      var pc = 'pri-'+(o.priority||'MEDIUM').toUpperCase().replace(/\s.*/,'');
-      return '<div class="oi"><div class="oi-top"><span class="pri '+pc+'">'+(o.priority||'')+'</span><div class="oi-desc">'+esc(o.description||'')+'</div></div>' +
-        (o.resolution?'<div class="oi-res">'+esc(o.resolution)+'</div>':'')+'</div>';
-    }).join('');
+  if (s.status==='DEPENDENT') {
+    h += purow('Union', '<span class="pu-val teal">'+esc(s.union||'District CBA')+'</span>');
   }
-
-  document.getElementById('state-content').innerHTML = html;
-  document.getElementById('so-close-btn').addEventListener('click', function(){ document.getElementById('slideout').classList.remove('open'); });
-  document.getElementById('z-in').addEventListener('click', function(){ if(_zoomBhvr&&_stateMapSvg) _stateMapSvg.transition().call(_zoomBhvr.scaleBy,1.6); });
-  document.getElementById('z-out').addEventListener('click', function(){ if(_zoomBhvr&&_stateMapSvg) _stateMapSvg.transition().call(_zoomBhvr.scaleBy,1/1.6); });
-  document.getElementById('z-reset').addEventListener('click', function(){ if(_zoomBhvr&&_stateMapSvg) _stateMapSvg.transition().call(_zoomBhvr.transform,d3.zoomIdentity); });
-  buildStateMap(code, st);
+  h += purow('City', esc(s.city + ', ' + s.state));
+  if (s.cmo) h += purow('Network', esc(s.cmo));
+  if (s.website) {
+    h += '<div class="pu-link"><span>&#127760;</span><a href="'+esc(s.website)+'" target="_blank" rel="noopener">School Website &#8599;</a></div>';
+  }
+  if (s.id) h += purow('ID', '<span style="font-family:monospace;font-size:9px;color:#4A6A80">'+esc(s.id)+'</span>');
+  return h;
+}
+function purow(lbl, val) {
+  return '<div class="pu-row"><span class="pu-lbl">'+lbl+'</span><span class="pu-val">'+val+'</span></div>';
 }
 
-function buildStateMap(code, st) {
-  var svgEl = document.getElementById('state-svg');
-  var W = svgEl.getBoundingClientRect().width || 800;
-  var H = 400;
-  var svg = d3.select('#state-svg').attr('viewBox','0 0 '+W+' '+H);
-  svg.selectAll('*').remove();
-  _stateMapSvg = svg;
-  var defs = svg.append('defs');
-  var hp = defs.append('pattern').attr('id','dep-hatch').attr('patternUnits','userSpaceOnUse').attr('width',5).attr('height',5);
-  hp.append('line').attr('x1',0).attr('y1',0).attr('x2',5).attr('y2',5).attr('stroke','var(--teal-mid)').attr('stroke-width',1.5).attr('stroke-opacity',0.7);
+// ── Plot all schools ─────────────────────────────────────────────────────────
+SCHOOLS.forEach(function(s) {
+  if (!s.lat || !s.lng) return;
+  var cfg = STATUS_CFG[s.status] || STATUS_CFG.UNVERIFIED;
+  var opts = {
+    radius: cfg.r,
+    fillColor: cfg.color,
+    color: s.status==='UNVERIFIED' ? 'rgba(74,106,128,0.3)' : 'rgba(0,0,0,0.3)',
+    weight: s.status==='UNVERIFIED' ? 0.5 : 1,
+    fillOpacity: cfg.opacity,
+    dashArray: s.status==='UNVERIFIED' ? '2,2' : null,
+    pane: 'markerPane',
+  };
+  var m = L.circleMarker([s.lat, s.lng], opts);
+  m.bindPopup(buildPopup(s), {maxWidth:290});
+  m.addTo(layers[s.status]);
+});
 
-  d3.json('https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json').then(function(us){
-    var fipsMap = {};
-    Object.entries(FIPS).forEach(function(e){ fipsMap[e[1]]=e[0]; });
-    var fips = fipsMap[code];
-    var allFeatures = topojson.feature(us, us.objects.states).features;
-    var feat = allFeatures.find(function(f){ return f.id.toString().padStart(2,'0')===fips; });
-    if (!feat) return;
-
-    var proj = d3.geoAlbersUsa().fitSize([W, H], feat);
-    _baseProj = proj; _curProj = proj;
-
-    var mapG = svg.append('g').attr('class','map-g');
-    var circG = svg.append('g').attr('class','circ-g');
-    var lblG  = svg.append('g').attr('class','lbl-g');
-
-    function drawState(pr) {
-      var path = d3.geoPath().projection(pr);
-      mapG.selectAll('*').remove();
-      mapG.append('path').datum(feat)
-        .attr('d', path)
-        .attr('fill','var(--map-state)').attr('fill-opacity',0.4)
-        .attr('stroke','var(--border2)').attr('stroke-width',1);
-    }
-
-    function rSc(n){ return Math.max(5, Math.min(30, Math.sqrt(n||1)*7)); }
-
-    function redrawCirclesInner(pr) {
-      circG.selectAll('*').remove(); lblG.selectAll('*').remove();
-
-      // UNORGANIZED
-      if (_layers.unorg) {
-        Object.keys(D.unorgLookup).filter(function(k){ return k.startsWith(code+'|'); }).forEach(function(key){
-          var parts = key.split('|');
-          var pt = pr([parseFloat(parts[2]), parseFloat(parts[1])]);
-          if (!pt) return;
-          var schools = D.unorgLookup[key];
-          var r = rSc(schools.length);
-          circG.append('circle').attr('cx',pt[0]).attr('cy',pt[1]).attr('r',r)
-            .attr('fill','rgba(136,135,128,0.12)')
-            .attr('stroke','#888780').attr('stroke-dasharray','3,2').attr('stroke-width',1.2)
-            .attr('cursor','pointer')
-            .on('click', function(){ openSlideoutUnorg(key); });
-        });
-      }
-
-      // DEPENDENT
-      if (_layers.dep) {
-        var depGroups = {};
-        (st.dependentSchools||[]).forEach(function(s){
-          if (!s.lat||!s.lon) return;
-          var ck = s.lat.toFixed(2)+','+s.lon.toFixed(2);
-          if (!depGroups[ck]) depGroups[ck]={lat:s.lat,lon:s.lon,schools:[]};
-          depGroups[ck].schools.push(s);
-        });
-        Object.values(depGroups).forEach(function(g){
-          var pt = pr([g.lon, g.lat]);
-          if (!pt||pt[0]<0||pt[0]>W||pt[1]<0||pt[1]>H) return;
-          var r = rSc(g.schools.length);
-          circG.append('circle').attr('cx',pt[0]+2).attr('cy',pt[1]+2).attr('r',r)
-            .attr('fill','var(--burg-mid)').attr('fill-opacity',0.7).attr('cursor','pointer')
-            .on('click', function(){ openSlideoutGroup(g.schools,'DEPENDENT'); });
-          circG.append('circle').attr('cx',pt[0]+2).attr('cy',pt[1]+2).attr('r',r)
-            .attr('fill','url(#dep-hatch)').attr('cursor','pointer')
-            .on('click', function(){ openSlideoutGroup(g.schools,'DEPENDENT'); });
-        });
-      }
-
-      // CONFIRMED
-      if (_layers.conf) {
-        var confGroups = {};
-        (st.confirmedSchools||[]).forEach(function(s){
-          if (!s.lat||!s.lon) return;
-          var ck = s.lat.toFixed(2)+','+s.lon.toFixed(2);
-          if (!confGroups[ck]) confGroups[ck]={lat:s.lat,lon:s.lon,schools:[]};
-          confGroups[ck].schools.push(s);
-        });
-        Object.values(confGroups).forEach(function(g){
-          var pt = pr([g.lon, g.lat]);
-          if (!pt||pt[0]<0||pt[0]>W||pt[1]<0||pt[1]>H) return;
-          var n = g.schools.length;
-          var r = rSc(n);
-          var fill = n>10?'#6B1A2A':n>5?'#8B2635':n>2?'#a83040':'#c05060';
-          circG.append('circle').attr('cx',pt[0]).attr('cy',pt[1]).attr('r',r)
-            .attr('fill',fill).attr('fill-opacity',0.92)
-            .attr('stroke','rgba(255,255,255,0.35)').attr('stroke-width',0.8)
-            .attr('cursor','pointer')
-            .on('click', function(){ openSlideoutGroup(g.schools,'CONFIRMED'); });
-          if (r>=10) circG.append('text').attr('x',pt[0]).attr('y',pt[1])
-            .attr('text-anchor','middle').attr('dominant-baseline','central')
-            .attr('fill','white').attr('font-size',10).attr('font-weight','700')
-            .attr('pointer-events','none').text(n);
-        });
-      }
-
-      // City labels (last — on top)
-      (D.stateCities[code]||[]).forEach(function(c){
-        var pt = pr([c[2], c[1]]);
-        if (!pt||pt[0]<0||pt[0]>W||pt[1]<0||pt[1]>H) return;
-        lblG.append('circle').attr('cx',pt[0]).attr('cy',pt[1]).attr('r',2.5)
-          .attr('fill','white').attr('stroke','#1a1917').attr('stroke-width',0.8).attr('pointer-events','none');
-        lblG.append('text').attr('x',pt[0]+7).attr('y',pt[1]+4).attr('font-size',9.5).attr('font-weight','600')
-          .attr('stroke','#1a1917').attr('stroke-width',3).attr('stroke-linejoin','round').attr('fill','none')
-          .attr('pointer-events','none').text(c[0]);
-        lblG.append('text').attr('x',pt[0]+7).attr('y',pt[1]+4).attr('font-size',9.5).attr('font-weight','600')
-          .attr('fill','rgba(240,237,232,0.9)').attr('pointer-events','none').text(c[0]);
-      });
-    }
-
-    window.redrawCircles = redrawCirclesInner;
-    drawState(proj);
-    redrawCirclesInner(proj);
-
-    // Geographic zoom (re-project, not transform)
-    var zoom = d3.zoom().scaleExtent([1,12]).on('zoom', function(event){
-      var t = event.transform;
-      var bs = _baseProj.scale(), bt = _baseProj.translate();
-      var np = d3.geoAlbersUsa().scale(bs*t.k).translate([bt[0]*t.k+t.x, bt[1]*t.k+t.y]);
-      _curProj = np;
-      drawState(np);
-      redrawCirclesInner(np);
-    });
-    _zoomBhvr = zoom;
-    svg.call(zoom);
-  }).catch(function(){
-    svg.append('text').attr('x',W/2).attr('y',H/2).attr('text-anchor','middle')
-      .attr('fill','var(--text3)').attr('font-size',13).text('Map requires internet connection');
+// ── State label markers (national view) ─────────────────────────────────────
+var stateLabelGroup = L.layerGroup().addTo(map);
+Object.entries(DATA.state_centers).forEach(function(entry) {
+  var code = entry[0], coords = entry[1];
+  var sd = STATE_DATA[code];
+  if (!sd) return;
+  var combined = sd.conf + sd.dep;
+  var pct = sd.universe > 0 ? ((combined/sd.universe)*100).toFixed(1) : '0.0';
+  var icon = L.divIcon({
+    className:'',
+    html: '<div style="background:rgba(15,25,35,0.8);border:1px solid rgba(46,117,182,0.5);border-radius:4px;padding:2px 6px;text-align:center;pointer-events:none;white-space:nowrap">'+
+          '<div style="font-size:10px;font-weight:700;color:#E8EDF2;line-height:1.3">'+code+'</div>'+
+          '<div style="font-size:9px;color:#4ABFBF;line-height:1.2">'+pct+'%</div></div>',
+    iconAnchor:[22,12], iconSize:[44,24],
   });
-}
+  var mk = L.marker(coords, {icon:icon, zIndexOffset:-500, interactive:true});
+  mk.on('click', function(){ zoomToState(code); });
+  mk.addTo(stateLabelGroup);
+});
 
-function redrawCircles(pr) {
-  if (window.redrawCircles && typeof window.redrawCircles === 'function') window.redrawCircles(pr);
-}
-
-function openSlideoutGroup(schools, status) {
-  var sbCls = status==='CONFIRMED'?'sb-CON':'sb-DEP';
-  var html = '';
-  schools.forEach(function(s,i){
-    if (i>0) html+='<div class="so-divider"></div>';
-    html += '<div class="so-name">'+esc(s.name)+'</div>' +
-      '<div class="so-id">'+esc(s.napcsId||'')+'</div>' +
-      '<span class="sb '+sbCls+'">'+status+'</span><br><br>' +
-      soRow('Union',s.union)+soRow('Affiliate',s.natlAff)+
-      soRow('Certified',s.dateUnionized)+soRow('Case',s.certCase)+
-      soRow('CBA',s.cbaStatus)+soRow('1st Contract',s.firstContract)+
-      soRow('Authorizer',s.authorizer);
+// ── Filter checkboxes ───────────────────────────────────────────────────────
+document.querySelectorAll('#filter-bar input[type=checkbox]').forEach(function(cb) {
+  cb.addEventListener('change', function() {
+    var st = this.getAttribute('data-status');
+    if (this.checked) map.addLayer(layers[st]);
+    else map.removeLayer(layers[st]);
   });
-  openSlideout(html);
+});
+
+// ── State zoom ──────────────────────────────────────────────────────────────
+var _currentState = null;
+var _currentTab = 'overview';
+
+function zoomToState(code) {
+  var schools = SCHOOLS.filter(function(s){ return s.state===code && s.lat; });
+  if (!schools.length) return;
+  var lats = schools.map(function(s){ return s.lat; });
+  var lngs = schools.map(function(s){ return s.lng; });
+  var pad = 0.4;
+  map.fitBounds([
+    [Math.min.apply(null,lats)-pad, Math.min.apply(null,lngs)-pad],
+    [Math.max.apply(null,lats)+pad, Math.max.apply(null,lngs)+pad]
+  ], {maxZoom:10});
+  _currentState = code;
+  document.getElementById('back-btn').style.display='block';
+  if (_currentTab==='overview') showStatePanel(code);
 }
 
-function openSlideoutUnorg(key) {
-  var schools = D.unorgLookup[key]||[];
-  var html = '<div class="so-name">Unorganized Area</div>' +
-    '<div class="so-id">'+schools.length+' school'+(schools.length!==1?'s':'')+' in this location</div>' +
-    '<span class="sb sb-UV">UNVERIFIED</span><br><br>';
-  schools.forEach(function(s){
-    html+='<div style="margin-bottom:8px"><div style="font-size:13px;font-weight:600">'+esc(s.name)+'</div>' +
-      '<div style="font-size:11px;color:var(--text3)">'+esc(s.city||'')+' &bull; '+esc(s.napcsId||'')+'</div></div>';
+document.getElementById('back-btn').addEventListener('click', function() {
+  map.setView([38,-96], 4);
+  _currentState = null;
+  this.style.display='none';
+  showNationalPanel();
+});
+
+// ── Panel tabs ──────────────────────────────────────────────────────────────
+function switchTab(tab) {
+  _currentTab = tab;
+  document.querySelectorAll('.ptab').forEach(function(b,i){
+    b.classList.toggle('active', (i===0&&tab==='overview')||(i===1&&tab==='density'));
   });
-  openSlideout(html);
+  if (tab==='overview') {
+    if (_currentState) showStatePanel(_currentState);
+    else showNationalPanel();
+  } else {
+    buildDensityTable();
+  }
 }
 
-function openSlideout(html) {
-  document.getElementById('so-content').innerHTML = html;
-  document.getElementById('slideout').classList.add('open');
+// ── National overview panel ─────────────────────────────────────────────────
+function showNationalPanel() {
+  document.getElementById('panel-title').textContent = 'National Overview';
+  document.getElementById('panel-sub').textContent = 'Click any state circle to zoom in';
+  var h = '';
+  h += '<div class="section-label">National Summary &mdash; May 2026</div>';
+  h += srow('Charter Schools (Registry v59)', NAT.universe.toLocaleString(), '');
+  h += srow('Confirmed Organized', NAT.confirmed+' ('+NAT.confirmed_density+')', 'green');
+  h += srow('Dependent (District CBA)', NAT.dependent+' ('+(NAT.dependent?(NAT.dependent/NAT.universe*100).toFixed(1)+'%':'0%')+')', 'teal');
+  h += srow('Combined', NAT.combined+' ('+NAT.density+')', 'green');
+  h += srow('Active Organizing', NAT.organizing, NAT.organizing>0?'gold':'');
+  h += srow('Decertified', NAT.decertified, '');
+  h += srow('Closed (formerly org.)', NAT.closed, 'red');
+  h += srow('Jurisdictions', NAT.jurisdictions+' total', '');
+  h += '<div class="section-label">&#9888; Open Items</div>';
+  h += '<div class="oi-card"><div class="oi-lbl">POLAHS decision</div><div class="oi-val pending">Peri Lynn &mdash; pending</div></div>';
+  h += '<div class="oi-card"><div class="oi-lbl">Biannual refresh</div><div class="oi-val blue">October 2026 target</div></div>';
+  h += '<div class="section-label">Data Source</div>';
+  h += srow('School coordinates', 'Charter School Registry v59', 'blue');
+  h += srow('Union status', 'PLT Research \u00B7 May 2026', '');
+  document.getElementById('panel-body').innerHTML = h;
 }
 
-function soRow(lbl, val) {
-  if (!val) return '';
-  return '<div class="so-row"><span class="so-lbl">'+lbl+'</span><span class="so-val">'+esc(val)+'</span></div>';
+// ── State panel ─────────────────────────────────────────────────────────────
+function showStatePanel(code) {
+  var sd = STATE_DATA[code];
+  if (!sd) return;
+  var name = STATE_NAMES[code] || code;
+  document.getElementById('panel-title').textContent = name;
+  document.getElementById('panel-sub').textContent = (sd.lb_abbrev||sd.lb||'') + (sd.note ? ' \u00B7 ' + sd.note.slice(0,80) : '');
+
+  var combined = sd.conf + sd.dep;
+  var pct = sd.universe > 0 ? (combined/sd.universe*100).toFixed(1) : '0.0';
+  var maxPct = 100;
+  var barW = Math.min(100, parseFloat(pct));
+
+  var h = '';
+  h += '<div class="section-label">'+name+'</div>';
+  h += srow('Charter Population', sd.universe.toLocaleString(), '');
+  h += srow('Confirmed Organized', sd.conf, 'green');
+  h += srow('Dependent (District CBA)', sd.dep||'&mdash;', sd.dep?'teal':'');
+  if (sd.org) h += srow('Organizing', sd.org, 'gold');
+  if (sd.dec) h += srow('Decertified', sd.dec, '');
+  h += srow('Combined Density', pct+'%', combined>0?'green':'');
+  h += '<div class="density-bar-wrap"><div class="density-bar"><div class="density-fill" style="width:'+barW+'%"></div></div></div>';
+
+  h += '<div class="section-label">Jurisdiction</div>';
+  h += srow('Labor Board', sd.lb_abbrev||sd.lb||'&mdash;', 'blue');
+  if (sd.note) h += srow('Note', sd.note.slice(0,100), '');
+
+  // Registry data counts
+  var stateSchools = SCHOOLS.filter(function(s){ return s.state===code; });
+  var onMapConf = stateSchools.filter(function(s){ return s.status==='CONFIRMED'; }).length;
+  var onMapDep = stateSchools.filter(function(s){ return s.status==='DEPENDENT'; }).length;
+  var onMapUnv = stateSchools.filter(function(s){ return s.status==='UNVERIFIED'; }).length;
+  h += '<div class="section-label">Registry Data (all '+stateSchools.length+' schools)</div>';
+  h += srow('Confirmed on map', onMapConf, 'green');
+  if (onMapDep) h += srow('Dependent on map', onMapDep, 'teal');
+  h += srow('Unverified on map', onMapUnv, '');
+
+  document.getElementById('panel-body').innerHTML = h;
 }
 
-// ── Networks ──────────────────────────────────────────────────────────────
-function buildNetworks() {
-  var html = '';
-  STATE_ORDER.forEach(function(code){
-    var nets = D.networks[code];
-    if (!nets||!nets.length) return;
-    nets.forEach(function(n){
-      html += '<div class="net-card">' +
-        '<div class="net-hdr"><div><div class="net-name">'+esc(n.name)+'</div><div class="net-st">'+esc(STATES[code].name)+'</div></div>' +
-        '<div><div class="net-count">'+n.organizedCount+'</div><div class="net-count-sub">schools</div></div></div>' +
-        '<div class="net-union">'+esc(n.union||'')+'</div>' +
-        '<div class="net-cba">'+esc(n.cbaStatus||'')+'</div>' +
-        (n.keyFindings?'<div class="net-cba" style="margin-top:6px;color:var(--text2)">'+esc(n.keyFindings)+'</div>':'') +
-        '</div>';
-    });
-  });
-  document.getElementById('net-grid').innerHTML = html||'<div style="color:var(--text3);padding:20px">No network data available</div>';
+function srow(lbl, val, cls) {
+  return '<div class="srow"><span class="srow-lbl">'+lbl+'</span><span class="srow-val'+(cls?' '+cls:'')+'">'+(typeof val==='number'?val.toLocaleString():val)+'</span></div>';
 }
 
-// ── Threat Intel ──────────────────────────────────────────────────────────
-function buildThreat() {
-  var sorted = (D.monitoring||[]).slice().sort(function(a,b){
-    return ({'CRITICAL':0,'HIGH':1}[a.priority]||2)-({'CRITICAL':0,'HIGH':1}[b.priority]||2);
-  });
-  document.getElementById('threat-grid').innerHTML = sorted.map(function(m){
-    return '<div class="tc '+m.priority+'">' +
-      '<div class="tc-hdr"><span class="pri pri-'+m.priority+'">'+m.priority+'</span>' +
-      '<span class="badge badge-info" style="font-size:10px">'+esc(m.stateName||m.state)+'</span></div>' +
-      '<div class="tc-target">'+esc(m.target||'')+'</div>' +
-      '<div class="tc-desc">'+esc(m.description||'')+'</div></div>';
-  }).join('')||'<div style="color:var(--text3);padding:20px">No critical or high items</div>';
-}
+// ── Density table ───────────────────────────────────────────────────────────
+function buildDensityTable() {
+  document.getElementById('panel-title').textContent = 'Density Table';
+  document.getElementById('panel-sub').textContent = 'All '+NAT.jurisdictions+' jurisdictions by combined density';
 
-// ── Timeline ──────────────────────────────────────────────────────────────
-function buildTimeline() {
-  // Populate state filter
-  var statesWithTL = [...new Set((D.timeline||[]).map(function(t){return t.state;}))].sort(function(a,b){
-    return (STATES[a]&&STATES[b])?STATES[a].name.localeCompare(STATES[b].name):0;
-  });
-  var sel = document.getElementById('tl-state-filter');
-  statesWithTL.forEach(function(code){
-    var opt=document.createElement('option'); opt.value=code;
-    opt.textContent=(STATES[code]?STATES[code].name:code); sel.appendChild(opt);
-  });
-  renderTimeline('');
-  sel.addEventListener('change',function(){ renderTimeline(this.value); });
-}
+  // Build rows from state_data sorted by density desc
+  var rows = Object.entries(STATE_DATA).map(function(e) {
+    var code=e[0], sd=e[1];
+    var combined = sd.conf+sd.dep;
+    var pct = sd.universe>0 ? combined/sd.universe*100 : 0;
+    return {code:code, sd:sd, combined:combined, pct:pct};
+  }).sort(function(a,b){ return b.pct-a.pct; });
 
-function renderTimeline(filterState) {
-  var events = filterState ? (D.timeline||[]).filter(function(t){return t.state===filterState;}) : (D.timeline||[]);
-  // Group by year
-  var byYear = {};
-  events.forEach(function(t){
-    var yr = t.year===9999?'Unknown Year':t.year.toString();
-    if (!byYear[yr]) byYear[yr]=[];
-    byYear[yr].push(t);
-  });
-  var years = Object.keys(byYear).sort(function(a,b){ return parseInt(a)-parseInt(b); });
-  var html = years.map(function(yr){
-    var evts = byYear[yr];
-    return '<div class="tl-year-group">' +
-      '<div class="tl-year-hdr"><i class="ti ti-calendar"></i>'+yr+' <span class="tl-count">'+evts.length+'</span></div>' +
-      evts.map(function(t){
-        return '<div class="tl-event"><div class="tl-dot"></div><div class="tl-body">' +
-          '<div class="tl-school">'+esc(t.school||'')+'</div>' +
-          '<div class="tl-meta">'+esc(t.stateName||t.state)+' &bull; '+esc(t.date||'')+' &bull; '+esc(t.certCase||'')+'</div>' +
-          '<div class="tl-union">'+esc(t.union||'')+'</div>' +
-          '</div></div>';
-      }).join('') + '</div>';
+  var maxPct = rows.length>0 ? rows[0].pct : 100;
+
+  var trs = rows.map(function(row) {
+    var code=row.code, sd=row.sd;
+    var confBarW = sd.universe>0 ? Math.round(sd.conf/sd.universe*100/maxPct*100) : 0;
+    var depBarW  = sd.universe>0 ? Math.round(sd.dep/sd.universe*100/maxPct*100) : 0;
+    return '<tr>'+
+      '<td><span class="dt-link" onclick="zoomToState(\''+code+'\')">'+esc(STATE_NAMES[code]||code)+'</span></td>'+
+      '<td>'+sd.universe.toLocaleString()+'</td>'+
+      '<td style="color:#6CC04A;font-weight:700">'+sd.conf+'</td>'+
+      '<td style="color:#4ABFBF">'+( sd.dep||'&mdash;')+'</td>'+
+      '<td style="font-weight:700">'+row.pct.toFixed(1)+'%'+
+        '<div class="dt-bar"><div class="dt-fill-conf" style="width:'+confBarW+'%"></div><div class="dt-fill-dep" style="width:'+depBarW+'%"></div></div>'+
+      '</td>'+
+    '</tr>';
   }).join('');
-  document.getElementById('tl-content').innerHTML = html||'<div style="color:var(--text3);padding:20px">No timeline events</div>';
+
+  var totConf = Object.values(STATE_DATA).reduce(function(a,sd){ return a+sd.conf;},0);
+  var totDep  = Object.values(STATE_DATA).reduce(function(a,sd){ return a+sd.dep;},0);
+  var totUniv = Object.values(STATE_DATA).reduce(function(a,sd){ return a+sd.universe;},0);
+  var totPct  = totUniv>0 ? ((totConf+totDep)/totUniv*100).toFixed(1)+'%' : '0%';
+  var totRow  = '<tr class="tot"><td><strong>ALL '+NAT.jurisdictions+'</strong></td>'+
+    '<td><strong>'+totUniv.toLocaleString()+'</strong></td>'+
+    '<td style="color:#6CC04A"><strong>'+totConf+'</strong></td>'+
+    '<td style="color:#4ABFBF"><strong>'+totDep+'</strong></td>'+
+    '<td><strong>'+totPct+'</strong></td></tr>';
+
+  document.getElementById('panel-body').innerHTML =
+    '<table id="dtable"><thead><tr>'+
+    '<th>State</th><th>Univ</th><th>Conf</th><th>Dep</th><th>%</th>'+
+    '</tr></thead><tbody>'+trs+totRow+'</tbody></table>';
 }
 
-// ── Patterns ──────────────────────────────────────────────────────────────
-function buildPatterns() {
-  var statesWithPat = [...new Set((D.patterns||[]).map(function(p){return p.state;}))].sort(function(a,b){
-    return (STATES[a]&&STATES[b])?STATES[a].name.localeCompare(STATES[b].name):0;
-  });
-  var sel = document.getElementById('pat-state-filter');
-  statesWithPat.forEach(function(code){
-    var opt=document.createElement('option'); opt.value=code;
-    opt.textContent=(STATES[code]?STATES[code].name:code); sel.appendChild(opt);
-  });
-  renderPatterns('');
-  sel.addEventListener('change',function(){ renderPatterns(this.value); });
+// ── Modal ───────────────────────────────────────────────────────────────────
+function openModal(status) {
+  var list = DATA.status_lists[status] || [];
+  var labels = {
+    CONFIRMED:'Confirmed Organized Schools',
+    DEPENDENT:'Dependent (Structurally Covered)',
+    ORGANIZING:'Active Organizing Campaigns',
+    DECERTIFIED:'Decertified Schools',
+    CLOSED:'Closed (Formerly Organized)',
+  };
+  document.getElementById('modal-title').innerHTML =
+    '<span class="mbadge bc-'+status+'" style="font-size:10px;margin-right:8px">'+( status)+'</span>'+
+    (labels[status]||status)+' &mdash; '+list.length+' schools';
+
+  var rows = list.map(function(s) {
+    return '<div class="mrow">'+
+      '<span class="mbadge bc-'+status+'">'+s.state+'</span>'+
+      '<div class="mrow-body">'+
+        '<div class="mrow-name">'+(s.website?'<a href="'+esc(s.website)+'" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">'+esc(s.name)+' &#8599;</a>':esc(s.name))+'</div>'+
+        '<div class="mrow-meta">'+esc(s.city+', '+s.state)+(s.union?' \u00B7 '+esc(s.union.slice(0,40)):'')+(s.date?' \u00B7 '+esc(s.date.slice(0,30)):'')+'</div>'+
+      '</div>'+
+    '</div>';
+  }).join('');
+
+  document.getElementById('modal-body').innerHTML = rows ||
+    '<div style="text-align:center;color:#4A6A80;padding:30px">No schools in this category</div>';
+  document.getElementById('modal-overlay').classList.add('open');
 }
 
-function renderPatterns(filterState) {
-  var pats = filterState?(D.patterns||[]).filter(function(p){return p.state===filterState;}):(D.patterns||[]);
-  document.getElementById('pat-grid').innerHTML = pats.map(function(p){
-    return '<div class="pcard"><div class="pcard-st">'+(STATES[p.state]?STATES[p.state].name:p.state)+'</div>' +
-      '<div class="pcard-title">'+esc(p.title||'')+'</div>' +
-      '<div class="pcard-body">'+esc(p.body||'')+'</div></div>';
-  }).join('')||'<div style="color:var(--text3);padding:20px">No patterns</div>';
-}
+document.getElementById('modal-close').onclick = function(){ document.getElementById('modal-overlay').classList.remove('open'); };
+document.getElementById('modal-overlay').addEventListener('click', function(e){ if(e.target===this) this.classList.remove('open'); });
 
-// ── Scroll to top ─────────────────────────────────────────────────────────
-window.addEventListener('scroll',function(){ document.getElementById('scroll-top').classList.toggle('vis',window.scrollY>300); });
-document.getElementById('scroll-top').addEventListener('click',function(){ window.scrollTo({top:0,behavior:'smooth'}); });
-
-// ── Utility ───────────────────────────────────────────────────────────────
+// ── Utility ─────────────────────────────────────────────────────────────────
 function esc(s){ if(!s) return ''; return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 
+// ── Init ─────────────────────────────────────────────────────────────────────
+showNationalPanel();
 </script>
 </body>
 </html>
