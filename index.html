@@ -52,7 +52,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 /* SIDE PANEL */
 #sidepanel{width:270px;background:#0F1923;border-left:1px solid #1E2D40;display:flex;flex-direction:column;flex-shrink:0}
 #panel-tabs{display:flex;border-bottom:1px solid #1E2D40;flex-shrink:0}
-.ptab{flex:1;padding:9px 0;text-align:center;font-size:11px;font-weight:600;color:#4A6A80;cursor:pointer;border-bottom:2px solid transparent;transition:all .15s;background:none;border-top:none;border-left:none;border-right:none;font-family:inherit}
+.ptab{flex:1;padding:8px 0;text-align:center;font-size:10px;font-weight:600;color:#4A6A80;cursor:pointer;border-bottom:2px solid transparent;transition:all .15s;background:none;border-top:none;border-left:none;border-right:none;font-family:inherit;white-space:nowrap}
 .ptab:hover{color:#8BA0B4}
 .ptab.active{color:#4A9FE0;border-bottom-color:#2E75B6}
 #panel-hdr{padding:10px 12px 7px;border-bottom:1px solid #1E2D40;flex-shrink:0}
@@ -168,6 +168,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
     <div class="stat-lbl">Structurally Covered</div>
     <div class="stat-sub">District CBA</div>
   </div>
+  <div class="stat" id="stat-comb" title="Total organized schools (confirmed + dependent)" style="cursor:default">
+    <div class="stat-val" id="sv-comb" style="color:#A8D4A0">—</div>
+    <div class="stat-lbl" style="color:#6CC04A">Total Organized</div>
+    <div class="stat-sub" id="ss-comb"></div>
+  </div>
   <div class="stat" id="stat-3" title="View organizing schools">
     <div class="stat-val gold" id="sv-3">—</div>
     <div class="stat-lbl">Active Organizing</div>
@@ -205,6 +210,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
     <div id="panel-tabs">
       <button class="ptab active" onclick="switchTab('overview')">Overview</button>
       <button class="ptab" onclick="switchTab('density')">Density Table</button>
+      <button class="ptab" onclick="switchTab('jurisdiction')">Jurisdiction</button>
     </div>
     <div id="panel-hdr">
       <div id="panel-title">National Overview</div>
@@ -258,6 +264,8 @@ document.getElementById('ss-0').textContent = NAT.jurisdictions + ' Jurisdiction
 document.getElementById('sv-1').textContent = NAT.confirmed.toLocaleString();
 document.getElementById('ss-1').textContent = NAT.confirmed_density + ' of ' + NAT.universe.toLocaleString() + ' schools';
 document.getElementById('sv-2').textContent = NAT.dependent.toLocaleString();
+document.getElementById('sv-comb').textContent = NAT.combined.toLocaleString();
+document.getElementById('ss-comb').textContent = NAT.density + ' combined · ' + NAT.confirmed + ' + ' + NAT.dependent;
 document.getElementById('sv-3').textContent = NAT.organizing;
 document.getElementById('ss-3').textContent = NAT.organizing > 0 ? 'Active campaigns' : 'No active campaigns';
 document.getElementById('sv-4').textContent = NAT.decertified;
@@ -306,12 +314,20 @@ function buildPopup(s) {
   if (s.authorizer) h += purow('Authorizer', esc(s.authorizer));
   h += purow('Jurisdiction', esc((s.lb_abbrev||s.lb||'') + (s.jnotes ? ' \u2014 ' + s.jnotes : '')));
   if (s.status==='CONFIRMED'||s.status==='ORGANIZING') {
-    h += purow('Union', '<span class="pu-val green">'+esc(s.union||'—')+'</span>');
+    var uUrl = unionUrl(s.union);
+    var uVal = uUrl
+      ? '<a href="'+esc(uUrl)+'" target="_blank" rel="noopener" style="color:#6CC04A;text-decoration:underline">'+esc(s.union||'—')+'</a>'
+      : '<span class="pu-val green">'+esc(s.union||'—')+'</span>';
+    h += purow('Union', uVal);
     if (s.date) h += purow('Date', esc(s.date.slice(0,50)));
     if (s.cba) h += purow('CBA', esc(s.cba));
   }
   if (s.status==='DEPENDENT') {
-    h += purow('Union', '<span class="pu-val teal">'+esc(s.union||'District CBA')+'</span>');
+    var uUrl2 = unionUrl(s.union);
+    var uVal2 = uUrl2
+      ? '<a href="'+esc(uUrl2)+'" target="_blank" rel="noopener" style="color:#4ABFBF;text-decoration:underline">'+esc(s.union||'District CBA')+'</a>'
+      : '<span class="pu-val teal">'+esc(s.union||'District CBA')+'</span>';
+    h += purow('Union', uVal2);
   }
   h += purow('City', esc(s.city + ', ' + s.state));
   if (s.cmo) h += purow('Network', esc(s.cmo));
@@ -343,7 +359,60 @@ SCHOOLS.forEach(function(s) {
   m.addTo(layers[s.status]);
 });
 
-// ── State label markers (national view) ─────────────────────────────────────
+// ── Union URL lookup ─────────────────────────────────────────────────────────
+function unionUrl(u) {
+  if (!u) return null;
+  var s = u.toUpperCase();
+  if (s.includes('UTLA')) return 'https://www.utla.net';
+  if (s.includes('UFT')) return 'https://www.uft.org';
+  if (s.includes('CTU') || s.includes('CHICAGO TEACHERS UNION')) return 'https://www.ctulocal1.com';
+  if (s.includes('CHIACTS')) return 'https://www.chiacts.org';
+  if (s.includes('DC ACTS')) return 'https://www.dcacts.org';
+  if (s.includes('MICHIGAN ACTS') || s.includes('MICHIGAN ALLIANCE')) return 'https://www.michiganacts.org';
+  if (s.includes('AZ-ACTS') || s.includes('AACTS') || s.includes('ARIZONA ALLIANCE')) return 'https://www.az-acts.org';
+  if (s.includes('UTNO')) return 'https://www.utno.org';
+  if (s.includes('BROWARD TEACHERS') || (s.includes('BTU') && s.includes('BROWARD'))) return 'https://www.browardteachers.com';
+  if (s.includes('RIFT') || s.includes('RHODE ISLAND FEDERATION')) return 'https://www.rifthp.org';
+  if (s.includes('IBEW LOCAL 2323')) return 'https://www.ibewlocal2323.org';
+  if (s.includes('IBEW')) return 'https://www.ibew.org';
+  if (s.includes('UAW LOCAL 2110')) return 'https://uaw2110.org';
+  if (s.includes('TEAMSTERS LOCAL 170')) return 'https://teamsters170.org';
+  if (s.includes('UAW')) return 'https://uaw.org';
+  if (s.includes('IWW') || s.includes('INDUSTRIAL WORKERS')) return 'https://www.iww.org';
+  if (s.includes('PROVIDENCE TEACHERS UNION')) return 'https://www.ptu.org';
+  if (s.includes('CRANSTON TEACHERS ALLIANCE')) return 'https://www.cranstonta.org';
+  if (s.includes('BOSTON TEACHERS UNION') || s.includes('BTU LOCAL')) return 'https://www.btu.org';
+  if (s.includes('UESF')) return 'https://www.uesf.org';
+  if (s.includes('HSTA')) return 'https://www.hsta.org';
+  if (s.includes('HGEA')) return 'https://www.hgea.org';
+  if (s.includes('NYSUT')) return 'https://www.nysut.org';
+  if (s.includes('NJEA')) return 'https://www.njea.org';
+  if (s.includes('PSEA')) return 'https://www.psea.org';
+  if (s.includes('IFT')) return 'https://www.ift-aft.org';
+  if (s.includes('IEA') || s.includes('ILLINOIS EDUCATION ASSOCIATION')) return 'https://www.ieanea.org';
+  if (s.includes('OEA') || s.includes('OREGON EDUCATION ASSOCIATION')) return 'https://www.oregoned.org';
+  if (s.includes('AFT-OREGON')) return 'https://www.aft-oregon.org';
+  if (s.includes('WTU') || s.includes('WASHINGTON TEACHERS UNION')) return 'https://www.wtulocal6.net';
+  if (s.includes('EDUCATION MINNESOTA')) return 'https://www.educationminnesota.org';
+  if (s.includes('MICHIGAN EDUCATION ASSOCIATION') || s.includes('MEA') && s.includes('MICHIGAN')) return 'https://www.mea.org';
+  if (s.includes('OFT') || s.includes('OHIO FEDERATION')) return 'https://www.ohiofederation.org';
+  if (s.includes('OEA') && s.includes('OHIO')) return 'https://www.ohea.org';
+  if (s.includes('CTA') || s.includes('CALIFORNIA TEACHERS ASSOCIATION')) return 'https://www.cta.org';
+  if (s.includes('CFT') || s.includes('CALIFORNIA FEDERATION')) return 'https://www.cft.org';
+  if (s.includes('FEA') || s.includes('FLORIDA EDUCATION')) return 'https://feaweb.org';
+  if (s.includes('DSEA') || s.includes('DELAWARE STATE EDUCATION')) return 'https://www.dsea.org';
+  if (s.includes('CEA') || s.includes('CONNECTICUT EDUCATION ASSOCIATION')) return 'https://www.cea.org';
+  if (s.includes('NEA-NM')) return 'https://nea-nm.org';
+  if (s.includes('MEA') || s.includes('MAINE EDUCATION')) return 'https://www.maineea.org';
+  if (s.includes('AFT')) return 'https://www.aft.org';
+  if (s.includes('NEA')) return 'https://www.nea.org';
+  return null;
+}
+
+// ── State label markers (national view) — on top pane ───────────────────────
+// Create a custom pane above all circles so labels are never hidden
+map.createPane('labelPane');
+map.getPane('labelPane').style.zIndex = 650;
 var stateLabelGroup = L.layerGroup().addTo(map);
 Object.entries(DATA.state_centers).forEach(function(entry) {
   var code = entry[0], coords = entry[1];
@@ -358,7 +427,7 @@ Object.entries(DATA.state_centers).forEach(function(entry) {
           '<div style="font-size:9px;color:#4ABFBF;line-height:1.2">'+pct+'%</div></div>',
     iconAnchor:[22,12], iconSize:[44,24],
   });
-  var mk = L.marker(coords, {icon:icon, zIndexOffset:-500, interactive:true});
+  var mk = L.marker(coords, {icon:icon, zIndexOffset:1000, pane:'labelPane', interactive:true});
   mk.on('click', function(){ zoomToState(code); });
   mk.addTo(stateLabelGroup);
 });
@@ -401,14 +470,17 @@ document.getElementById('back-btn').addEventListener('click', function() {
 // ── Panel tabs ──────────────────────────────────────────────────────────────
 function switchTab(tab) {
   _currentTab = tab;
-  document.querySelectorAll('.ptab').forEach(function(b,i){
-    b.classList.toggle('active', (i===0&&tab==='overview')||(i===1&&tab==='density'));
-  });
+  var tabs = document.querySelectorAll('.ptab');
+  tabs[0].classList.toggle('active', tab==='overview');
+  tabs[1].classList.toggle('active', tab==='density');
+  tabs[2].classList.toggle('active', tab==='jurisdiction');
   if (tab==='overview') {
     if (_currentState) showStatePanel(_currentState);
     else showNationalPanel();
-  } else {
+  } else if (tab==='density') {
     buildDensityTable();
+  } else {
+    buildJurisdictionTable();
   }
 }
 
@@ -484,40 +556,30 @@ function buildDensityTable() {
   document.getElementById('panel-title').textContent = 'Density Table';
   document.getElementById('panel-sub').textContent = 'All '+NAT.jurisdictions+' jurisdictions by combined density';
 
-  // Build rows from state_data sorted by density desc
-  var rows = Object.entries(STATE_DATA).map(function(e) {
-    var code=e[0], sd=e[1];
-    var combined = sd.conf+sd.dep;
-    var pct = sd.universe>0 ? combined/sd.universe*100 : 0;
-    return {code:code, sd:sd, combined:combined, pct:pct};
-  }).sort(function(a,b){ return b.pct-a.pct; });
-
-  var maxPct = rows.length>0 ? rows[0].pct : 100;
+  var rows = DATA.density_table;
+  var maxPct = rows.length > 0 ? parseFloat(rows[0].density) : 100;
 
   var trs = rows.map(function(row) {
-    var code=row.code, sd=row.sd;
-    var confBarW = sd.universe>0 ? Math.round(sd.conf/sd.universe*100/maxPct*100) : 0;
-    var depBarW  = sd.universe>0 ? Math.round(sd.dep/sd.universe*100/maxPct*100) : 0;
+    var pct = parseFloat(row.density)||0;
+    var univ = row.universe||1;
+    var confBarW = maxPct>0 ? Math.round(row.confirmed/univ*100/maxPct*100) : 0;
+    var depBarW  = maxPct>0 ? Math.round((row.dependent||0)/univ*100/maxPct*100) : 0;
     return '<tr>'+
-      '<td><span class="dt-link" onclick="zoomToState(\''+code+'\')">'+esc(STATE_NAMES[code]||code)+'</span></td>'+
-      '<td>'+sd.universe.toLocaleString()+'</td>'+
-      '<td style="color:#6CC04A;font-weight:700">'+sd.conf+'</td>'+
-      '<td style="color:#4ABFBF">'+( sd.dep||'&mdash;')+'</td>'+
-      '<td style="font-weight:700">'+row.pct.toFixed(1)+'%'+
+      '<td><span class="dt-link" onclick="zoomToState(\''+row.st+'\')">'+esc(row.name)+'</span></td>'+
+      '<td>'+row.universe.toLocaleString()+'</td>'+
+      '<td style="color:#6CC04A;font-weight:700">'+row.confirmed+'</td>'+
+      '<td style="color:#4ABFBF">'+(row.dependent||'&mdash;')+'</td>'+
+      '<td style="font-weight:700">'+row.density+
         '<div class="dt-bar"><div class="dt-fill-conf" style="width:'+confBarW+'%"></div><div class="dt-fill-dep" style="width:'+depBarW+'%"></div></div>'+
       '</td>'+
     '</tr>';
   }).join('');
 
-  var totConf = Object.values(STATE_DATA).reduce(function(a,sd){ return a+sd.conf;},0);
-  var totDep  = Object.values(STATE_DATA).reduce(function(a,sd){ return a+sd.dep;},0);
-  var totUniv = Object.values(STATE_DATA).reduce(function(a,sd){ return a+sd.universe;},0);
-  var totPct  = totUniv>0 ? ((totConf+totDep)/totUniv*100).toFixed(1)+'%' : '0%';
-  var totRow  = '<tr class="tot"><td><strong>ALL '+NAT.jurisdictions+'</strong></td>'+
-    '<td><strong>'+totUniv.toLocaleString()+'</strong></td>'+
-    '<td style="color:#6CC04A"><strong>'+totConf+'</strong></td>'+
-    '<td style="color:#4ABFBF"><strong>'+totDep+'</strong></td>'+
-    '<td><strong>'+totPct+'</strong></td></tr>';
+  var totRow = '<tr class="tot"><td><strong>ALL '+NAT.jurisdictions+'</strong></td>'+
+    '<td><strong>'+NAT.universe.toLocaleString()+'</strong></td>'+
+    '<td style="color:#6CC04A"><strong>'+NAT.confirmed+'</strong></td>'+
+    '<td style="color:#4ABFBF"><strong>'+NAT.dependent+'</strong></td>'+
+    '<td><strong>'+NAT.density+'</strong></td></tr>';
 
   document.getElementById('panel-body').innerHTML =
     '<table id="dtable"><thead><tr>'+
@@ -556,6 +618,65 @@ function openModal(status) {
 
 document.getElementById('modal-close').onclick = function(){ document.getElementById('modal-overlay').classList.remove('open'); };
 document.getElementById('modal-overlay').addEventListener('click', function(e){ if(e.target===this) this.classList.remove('open'); });
+
+// ── Jurisdiction table ───────────────────────────────────────────────────────
+function buildJurisdictionTable() {
+  document.getElementById('panel-title').textContent = 'Legal Jurisdiction';
+  document.getElementById('panel-sub').textContent = 'Labor board & governing law by jurisdiction';
+
+  var JD = DATA.jurisdiction_data || {};
+  var SD = DATA.state_data || {};
+  var STATE_NAMES_LOCAL = {
+    AZ:'Arizona',CA:'California',CT:'Connecticut',DC:'Washington DC',
+    DE:'Delaware',FL:'Florida',HI:'Hawaii',IL:'Illinois',
+    LA:'Louisiana',MA:'Massachusetts',ME:'Maine',MI:'Michigan',
+    MN:'Minnesota',NJ:'New Jersey',NM:'New Mexico',NY:'New York',
+    OH:'Ohio',OR:'Oregon',PA:'Pennsylvania',RI:'Rhode Island',WI:'Wisconsin'
+  };
+
+  // Sort alphabetically by state name
+  var codes = Object.keys(JD).sort(function(a,b){
+    return (STATE_NAMES_LOCAL[a]||a).localeCompare(STATE_NAMES_LOCAL[b]||b);
+  });
+
+  var rows = codes.map(function(code) {
+    var j = JD[code];
+    var sd = SD[code] || {};
+    var nlrbColor = j.nlrb==='Yes'?'#4A9FE0': j.nlrb==='No'?'#6CC04A':'#F5A623';
+    var ccColor = j.card_check==='Yes'?'#6CC04A': j.card_check==='No'?'#888':'#F5A623';
+
+    return '<div style="background:#1A2535;border-radius:5px;padding:8px 10px;margin-bottom:6px;border-left:3px solid #2E75B6;cursor:pointer" onclick="zoomToState(\''+code+'\')">' +
+      // State name + board
+      '<div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:4px">' +
+        '<span style="font-size:11px;font-weight:700;color:#E8EDF2">'+esc(STATE_NAMES_LOCAL[code]||code)+'</span>' +
+        '<span style="font-size:9px;font-weight:700;color:#4A9FE0;white-space:nowrap;margin-left:6px">'+esc(j.lb_abbrev)+'</span>' +
+      '</div>' +
+      // Full board name
+      '<div style="font-size:9px;color:#4A6A80;margin-bottom:4px;line-height:1.3">'+esc(j.lb_full)+'</div>' +
+      // Statute
+      '<div style="font-size:9px;color:#8BA0B4;margin-bottom:5px;font-style:italic">'+esc(j.statute)+'</div>' +
+      // NLRB + Card Check badges
+      '<div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:4px">' +
+        '<span style="font-size:8px;font-weight:700;padding:1px 5px;border-radius:3px;background:rgba(0,0,0,0.3);color:'+nlrbColor+'">NLRB: '+esc(j.nlrb)+'</span>' +
+        '<span style="font-size:8px;font-weight:700;padding:1px 5px;border-radius:3px;background:rgba(0,0,0,0.3);color:'+ccColor+'">Card-Check: '+esc(j.card_check)+'</span>' +
+      '</div>' +
+      // Dominant union
+      '<div style="font-size:9px;color:#8BA0B4;margin-bottom:3px"><span style="color:#4A6A80;font-weight:700">Union: </span>'+esc(j.dominant)+'</div>' +
+      // Key note
+      '<div style="font-size:9px;color:#6A7A8A;line-height:1.3;border-top:1px solid rgba(255,255,255,0.05);padding-top:4px;margin-top:3px">'+esc(j.note)+'</div>' +
+    '</div>';
+  }).join('');
+
+  // Legend
+  var legend = '<div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px;padding:6px 8px;background:#0A1520;border-radius:4px">' +
+    '<span style="font-size:8px;color:#4A9FE0;font-weight:700">&#9679; NLRB: Yes</span>' +
+    '<span style="font-size:8px;color:#6CC04A;font-weight:700">&#9679; NLRB: No (state board)</span>' +
+    '<span style="font-size:8px;color:#F5A623;font-weight:700">&#9679; Partial</span>' +
+    '<span style="font-size:8px;color:#4A6A80;margin-left:4px">&#9632; Card-check = easier organizing</span>' +
+    '</div>';
+
+  document.getElementById('panel-body').innerHTML = legend + rows;
+}
 
 // ── Utility ─────────────────────────────────────────────────────────────────
 function esc(s){ if(!s) return ''; return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
