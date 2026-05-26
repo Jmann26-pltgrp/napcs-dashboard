@@ -1,0 +1,20838 @@
+'use strict';
+/**
+ * napcs_data.js — NAPCS Dashboard Data File
+ * PLT Strategies Group, Inc. | Generated: 2026-05-26
+ * Registry: v59
+ * UPDATE THIS FILE ONLY when data changes. Never edit index.html for data updates.
+ */
+const NAPCS_DATA = {
+  "meta": {
+    "registryVersion": "v59",
+    "researchDate": "May 2026",
+    "buildDate": "2026-05-26",
+    "jurisdictions": 19,
+    "national": {
+      "charterUniverse": 4940,
+      "confirmed": 308,
+      "confirmedDensity": "6.2%",
+      "dependent": 214,
+      "dependentDensity": "4.3%",
+      "combined": 522,
+      "combinedDensity": "10.6%",
+      "organizing": 0,
+      "decertified": 5,
+      "closed": 12,
+      "approvedDiscoveries": 23,
+      "registryVersion": "v59",
+      "auditDate": "May 25, 2026",
+      "auditNote": "4-pass data file audit + gap school research complete. 5 dupes resolved (CA×3, DC×1, NY×1). DE BASSE charter revoked March 2026 — closed June 2026. MN Ubah confirmed organized. AZ CITY Center WON May 19, 2026."
+    }
+  },
+  "states": {
+    "AZ": {
+      "name": "Arizona",
+      "laborBoard": "NLRB Region 28 (Phoenix)",
+      "governingLaw": "National Labor Relations Act (NLRA). Arizona is a right-to-work state (ARS §23-1302). No state public-sector collective bargaining statute applies to charter schools. NLRB Region 28 has exclusive jurisdiction.",
+      "universe": 562,
+      "confirmed": 4,
+      "dependent": 0,
+      "intel": [
+        {
+          "prompt": "What is the organizing infrastructure in Arizona — who is doing this, and how well-resourced are they?",
+          "answer": "The Arizona Alliance of Charter Teachers and Staff (AACTS), AFT Local 6627, headquartered in Peoria, AZ, is the sole documented organizing vehicle in the Arizona charter sector. AACTS is an AFT affiliate — it has access to the full organizational and legal resources of the American Federation of Teachers, including Washington DC-based attorney Michael Piccinelli. The AFT connection is significant: AFT President Randi Weingarten personally announced the BASIS Tucson North contract ratification in August 2025, signaling national strategic investment in the AZ charter sector. AACTS has now organized one school (BASIS Tucson North, certified April 2023, CBA August 2025), is within days of a second election (CITY Center — May 19, 2026), and has an open ULP campaign at a third employer (BASIS Go..."
+        },
+        {
+          "prompt": "What is the employer defense posture — how are AZ charter operators responding to organizing?",
+          "answer": "Two separate employer defense strategies are documented. BASIS Educational Group retained Ogletree Deakins (Christopher Meister, Meredith Kirshenbaum, Kyle Broadfoot — Phoenix office) during the BASIS Tucson North organizing campaign in 2022-23. Ogletree Deakins also represents Legacy Traditional School in the open ULP case (28-CA-358360). CITY Center for Collaborative Learning retained Littler Mendelson P.C. (Phoenix) in December 2025 — a national firm known for representing Starbucks and other employers in high-profile union avoidance campaigns. Littler Mendelson filed an RM petition in January 2026 arguing AZ charter schools are \"public employers\" outside NLRB jurisdiction. This argument was rejected by NLRB Region 28 Regional Director Cornele Overstreet in a 24-page ruling on May 4, 20..."
+        },
+        {
+          "prompt": "What is the political context — how does HCR2040 affect the AZ charter sector?",
+          "answer": "Arizona Republicans passed HCR2040 in March 2026 — a ballot referral to defund education unions by prohibiting use of public resources for union organizing. This measure goes to voters, not immediate law. Its practical impact on charter school organizing is uncertain: AZ charter schools are private employers under the NLRA, not public employers. Public resource restrictions would primarily affect public school unions (TEA, AEA affiliates), not AACTS/AFT organizing at private charter employers. However, HCR2040 signals a legislative environment hostile to teacher union organizing generally. The NLRB Regional Director's May 4, 2026 ruling (rejecting the \"public employer\" defense at CITY Center) is directly relevant: the same jurisdictional argument underlies both HCR2040's theory of charter ..."
+        },
+        {
+          "prompt": "What is the significance of the CITY Center jurisdictional ruling for the broader AZ charter sector?",
+          "answer": "The May 4, 2026 NLRB Region 28 ruling (24 pages) rejecting the CITY Center governing board's \"public employer\" defense is the most significant labor law development in the AZ charter sector since the BASIS Tucson North certification in April 2023. The ruling establishes that AZ charter schools — because they are not sufficiently linked to state government — are private employers under the NLRA and may hold NLRB elections. NLRB Regional Director Overstreet wrote: \"These arguments by the employer are not convincing.\" The employer cited no precedent supporting its position. The ruling opens the door for AACTS to organize at any AZ charter school without the jurisdictional defense available to public employers. The employer has 10 days post-election to appeal to the full NLRB Board. If the Boa..."
+        }
+      ],
+      "openItems": [
+        {
+          "priority": "BLOCKING",
+          "description": "NLRB election May 19, 2026 — result pending. Monitor NLRB Region 28 case docket after May 19.",
+          "resolution": ""
+        },
+        {
+          "priority": "BLOCKING",
+          "description": "Employer has 10 days post-election (after May 19) to appeal NLRB Region 28 jurisdictional ruling to NLRB Board. If appealed: certification may be delayed pending Board review. Current Board composition (Trump-era) could reverse ruling.",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "Law360 May 2026 reports NLRB regional director approved union vote at \"network of AZ charter schools.\" Believed to be BASIS Goodyear RC petition approval. Monitor for election date and result.",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "NLRB FOIA recommended for case 28-RC-313911 — CBA not publicly posted. Full contract terms, voter list, and election transcript not available.",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "AZ HCR2040 (March 2026) — ballot referral to defund education unions. Goes to AZ voters. Practical impact on NLRB-jurisdiction charter employers uncertain. Sponsor briefing recommended.",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "RC petition case number not yet docketed in NLRB public ADS as of May 10, 2026. Case number needed for records.",
+          "resolution": ""
+        }
+      ],
+      "confirmedSchools": [
+        {
+          "napcsId": "C0412011",
+          "name": "BASIS Tucson North",
+          "city": "Tucson",
+          "state": "AZ",
+          "status": "CONFIRMED",
+          "union": "Arizona Alliance of Charter Teachers and Staff (AACTS), AFT Local 6627",
+          "stateAff": "AZ-ACTS / AACTS",
+          "natlAff": "American Federation of Teachers (AFT) / AFL-CIO",
+          "dateUnionized": "April 25, 2023",
+          "certCase": "28-RC-313911",
+          "cbaStatus": "Active CBA — ratified August 2025. First charter union contract in Arizona history. Contract secured end to unjust labor",
+          "firstContract": "Ratified August 2025",
+          "authorizer": "Arizona State Board for Charter Schools (ASBCS)",
+          "website": "http://enrollbasis.com/tucson-north/",
+          "lat": 32.2226,
+          "lon": -110.9747
+        },
+        {
+          "napcsId": "C0404006",
+          "name": "City High School",
+          "city": "Tucson",
+          "state": "AZ",
+          "status": "CONFIRMED",
+          "union": "Arizona Alliance of Charter Teachers and Staff (AACTS), AFT Local 6627 (petition",
+          "stateAff": "AZ-ACTS / AACTS",
+          "natlAff": "American Federation of Teachers (AFT) / AFL-CIO",
+          "dateUnionized": "May 19, 2026 (election date; NLRB certification pending — cert date = date NLRB issues formal Certification of Representative, typically 7-10 days post-election absent employer objections)",
+          "certCase": "RC petition filed ~January 2026 (NLRB Region 28 — case number not yet docketed in public search as of May 10, 2026)",
+          "cbaStatus": "No CBA — election not yet held. DO NOT ENTER as unionized.",
+          "firstContract": "N/A — not yet certified",
+          "authorizer": "Arizona State Board for Charter Schools (ASBCS)",
+          "website": "http://www.cityhighschool.org",
+          "lat": 32.2226,
+          "lon": -110.9747
+        },
+        {
+          "napcsId": "C0414026",
+          "name": "Paulo Freire Freedom School - Downtown",
+          "city": "Tucson",
+          "state": "AZ",
+          "status": "CONFIRMED",
+          "union": "Arizona Alliance of Charter Teachers and Staff (AACTS), AFT Local 6627 (petition",
+          "stateAff": "AZ-ACTS / AACTS",
+          "natlAff": "American Federation of Teachers (AFT) / AFL-CIO",
+          "dateUnionized": "May 19, 2026 (election date; NLRB certification pending — cert date = date NLRB issues formal Certification of Representative, typically 7-10 days post-election absent employer objections)",
+          "certCase": "RC petition filed ~January 2026 (NLRB Region 28 — same petition as City High School / CITY Center case)",
+          "cbaStatus": "No CBA — election not yet held. DO NOT ENTER as unionized.",
+          "firstContract": "N/A — not yet certified",
+          "authorizer": "Arizona State Board for Charter Schools (ASBCS)",
+          "website": "http://www.paulofreireschool.org",
+          "lat": 32.2226,
+          "lon": -110.9747
+        },
+        {
+          "napcsId": "C0405011",
+          "name": "Paulo Freire Freedom School - University",
+          "city": "Tucson",
+          "state": "AZ",
+          "status": "CONFIRMED",
+          "union": "Arizona Alliance of Charter Teachers and Staff (AACTS), AFT Local 6627 (petition",
+          "stateAff": "AZ-ACTS / AACTS",
+          "natlAff": "American Federation of Teachers (AFT) / AFL-CIO",
+          "dateUnionized": "May 19, 2026 (election date; NLRB certification pending — cert date = date NLRB issues formal Certification of Representative, typically 7-10 days post-election absent employer objections)",
+          "certCase": "RC petition filed ~January 2026 (NLRB Region 28 — same petition as City High School / CITY Center case)",
+          "cbaStatus": "No CBA — election not yet held. DO NOT ENTER as unionized.",
+          "firstContract": "N/A — not yet certified",
+          "authorizer": "Arizona State Board for Charter Schools (ASBCS)",
+          "website": "http://www.paulofreireschool.org",
+          "lat": 32.2226,
+          "lon": -110.9747
+        }
+      ],
+      "dependentSchools": [],
+      "networks": [
+        {
+          "name": "BASIS Educational Group — Arizona",
+          "union": "Arizona Alliance of Charter Teachers and Staff (AACTS), AFT Local 6627",
+          "schoolIds": [
+            "C0412011"
+          ],
+          "organizedCount": 1,
+          "cbaStatus": "Active CBA at BASIS Tucson North — ratified August 2025. First charter union contract in Arizona history. CBA not public",
+          "keyFindings": [
+            "BASIS Tucson North (C0412011) — CONFIRMED organized; AFT Local 6627; cert April 25, 2023; CBA ratified August 2025.",
+            "BASIS Goodyear — ORGANIZING at non-NAPCS campus; active ULP 28-CA-373855; Law360 May 2026 reports NLRB regional director approved union vote at \"network of AZ charter schools\" — monitor for RC petition.",
+            "BASIS operates 10 AZ schools in NCES Top 100 (2025-26 rankings). AACTS organizing campaign active across the BASIS AZ network.",
+            "Employer defense: Ogletree Deakins (Christopher Meister, Meredith Kirshenbaum, Kyle Broadfoot — Phoenix) representing BASIS Educational Group."
+          ]
+        }
+      ]
+    },
+    "CA": {
+      "name": "California",
+      "laborBoard": "PERB(CA) — California Public Employment Relations Board",
+      "governingLaw": "Educational Employment Relations Act (EERA), Gov. Code §3540 et seq.",
+      "universe": 1246,
+      "confirmed": 139,
+      "dependent": 66,
+      "intel": [
+        {
+          "prompt": "Political and legal environment shaping charter labor in this state",
+          "answer": "California is the most complex charter labor jurisdiction in the NAPCS dataset. PERB(CA) administers the Educational Employment Relations Act (EERA), which treats all charter schools as public employers — meaning card-check certification is available, employer neutrality is the norm, and organizing timelines are significantly faster than NLRB elections. The state's political environment is strongly pro-labor: AB 1243 (2023) extended EERA protections, and the LAUSD Horace Mann model demonstrates that structural UTLA coverage can apply district-wide without individual school elections. The most significant 2026 legislative development is AB 288, signed in 2026: private sector workers in California may now petition PERB when the NLRB is unwilling or unable to act. This directly counters the N..."
+        },
+        {
+          "prompt": "Community and social conditions driving organizing activity",
+          "answer": "Los Angeles is the epicenter of CA charter organizing, driven by UTLA's geographic density, political infrastructure, and explicit charter organizing strategy. The LAUSD neutrality ordinance (applicable to district-authorized schools) removes employer counter-organizing as a tool for any school operating under LAUSD authorization. Alliance College-Ready Public Schools illustrates the organizing pressure landscape: 4 schools have active certifications but 19 remain uncertified — all subject to ongoing UTLA organizing pressure and the same neutrality environment. CAVA's 9-school network-wide certification (California Virtual Educators United) reflects a distinct organizing pattern in virtual/online schools, where geographic dispersal is replaced by platform-level worker density. The Caliber ..."
+        },
+        {
+          "prompt": "What charter leaders should understand about how organizers are approaching schools",
+          "answer": "In California, card-check certification under EERA is the dominant organizing pathway — meaning a union can achieve recognition without a secret ballot election if it demonstrates majority support through signed authorization cards. This removes the employer's most powerful counter-organizing tool (the election campaign window) and makes the timeline from first card to certification as short as weeks. UTLA deploys a geographic saturation model in Los Angeles: organizing teams work adjacent schools simultaneously, using teacher social networks across campuses. HTEC (HTH network) demonstrates that a single network-level certification can cover all campuses — organizers will seek network-wide bargaining units wherever the employer structure supports it. CAVA's network-wide virtual certificati..."
+        },
+        {
+          "prompt": "What charter leaders should be doing now",
+          "answer": "At the school level: understand your charter's legal incorporation structure and whether you are an independently incorporated nonprofit — this determines NLRB/PERB exposure. Conduct a legal review of whether the St. HOPE NLRB jurisdiction argument could apply to your school. At the network level: if your network has a mix of certified and uncertified schools (as Alliance does), recognize that the certified schools' CBAs create salary and working condition benchmarks that organizers will use in uncertified school campaigns. Prioritize staff engagement and working condition transparency at uncertified campuses. At the state association level: engage with PERB on the NLRB jurisdiction switch risk created by St. HOPE — the charter sector needs EERA clarification on which schools are vulnerabl..."
+        },
+        {
+          "prompt": "Trends and developments to watch over the next 3–5 years",
+          "answer": "Three legislative and legal developments will shape CA charter labor over the next 3-5 years. First, AB 288 (2026): private sector workers can now petition PERB when NLRB is unwilling or unable to act — this directly neutralizes the NRtW NLRB jurisdiction-switch playbook that decertified St. HOPE. Expect PERB to become more aggressive in asserting jurisdiction over independently incorporated CA charters previously assumed to be NLRB-vulnerable. Second, the Hawkins County private-employer route (NLRB v. Natural Gas Utility District of Hawkins County, 402 U.S. 600, 1971): NRtW has now demonstrated that independently incorporated CA charter nonprofits with self-perpetuating boards can be argued out of PERB jurisdiction entirely and into NLRB. Under Trump NLRB, this route may become more acces..."
+        },
+        {
+          "prompt": "What did research find that surprised us / contradicts national expectations",
+          "answer": "Three findings stand out. First, the NRtW dual decertification playbook is more sophisticated than expected: the combination of PERB's own decertification procedure (Gompers) and NLRB private-employer jurisdiction challenge (St. HOPE) in the same state within three years suggests a deliberate sequencing strategy — test the PERB pathway first, then the NLRB pathway once PERB decert is established. No other state in the NAPCS dataset shows this dual-track pattern. Second, the IWW presence at Caliber is genuinely anomalous: IWW is an industrial union with no CTA/CFT/NEA/AFT affiliation, uses direct-action organizing methodology, and completed a 5+ year PERB certification campaign at a small (2-school) Bay Area charter — culminating in voluntary recognition by CEO Terence Johnson on May 26, 20..."
+        },
+        {
+          "prompt": "What does the PERB case history for The Accelerated School reveal about charter school labor relations in California?",
+          "answer": "The Accelerated School (South Los Angeles) has one of the most documented PERB histories of any California charter school, spanning 2009 to 2026. UTLA was first certified on March 25, 2009 (case LA-RR-1166-E: THE ACCELERATED SCHOOL and UNITED TEACHERS OF LOS ANGELES). On the same day, SEIU Local 99 filed three simultaneous petitions to organize support staff (LA-RR-1168, -1169, -1170-E, all 03/18/2009) — all three closed without certification in June 2009, leaving support staff unorganized to this day. In 2018 an impasse was declared (LA-IM-3987-E) after 20 months of failed negotiations — leading to the first California charter school strike in January 2019 (8 days). A 2024 unit modification petition (LA-UM-1059-E, closed March 2026) reflects ongoing governance of the bargaining unit. TAS ..."
+        },
+        {
+          "prompt": "What does the ePERB null result pattern tell us about how California charter unions are organized, and what are the implications for research methodology?",
+          "answer": "A systematic ePERB search of 11 California charter schools (May 23 2026) produced one confirmed case (The Accelerated School, LA-RR-1166-E) and 10 null results. The nulls fall into three distinct categories: (1) LAUSD-umbrella organized — five LAUSD community charters (Calahan, Chandler, Darby, Emelita, Granada Community) return no individual cases because their PERB record is under Los Angeles Unified School District; a null result for a LAUSD-affiliated school confirms district-umbrella organization, not non-organization; (2) Likely voluntary recognition — Realm Charter, Five Keys, Gompers, Camino Nuevo, Steele Canyon, Creative Arts, and Options for Youth all returned null, consistent with the employer voluntarily recognizing the union without a PERB election petition; voluntarily recogn..."
+        }
+      ],
+      "openItems": [
+        {
+          "priority": "HIGH",
+          "description": "Enter all 49 newly approved CA schools into PLT Accumulator",
+          "resolution": "Enter all 49 schools into PLT Accumulator. Use data files ca_state_data_lausd.js, ca_state_data_green_dot.js, ca_state_data_cava.js, ca_state_data_confirmed_individual.js for field values."
+        },
+        {
+          "priority": "HIGH",
+          "description": "PERB case numbers and certification dates — UTLA conversion charters (4 schools)",
+          "resolution": "Update certMethod for Granada Hills, Palisades, Pacoima, Montague to: LAUSD master CBA retention from conversion — no individual PERB case. If individual cert date needed, search ePERB (https://eperb-"
+        },
+        {
+          "priority": "HIGH",
+          "description": "PERB case numbers — UTLA LAUSD-affiliated community charters (5 schools)",
+          "resolution": "Update certMethod for all 5 schools to LAUSD master CBA / district-umbrella. No ePERB case number exists by design. Date convention: use LAUSD-UTLA master agreement date (not school-specific)."
+        },
+        {
+          "priority": "HIGH",
+          "description": "Step 0 — District CBA verification for San Carlos School District",
+          "resolution": "Contact San Carlos School District at scsdk8.org for current CBA document. Check recognition clause (Article 1 or similar) for language covering all district employees or charter campuses. Document CB"
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "Step 0 — Lakeside USD CBA verification for River Valley Charter",
+          "resolution": "Contact Lakeside Union School District for CBA document. Confirm recognition clause covers River Valley Charter staff. Document CBA period."
+        },
+        {
+          "priority": "HIGH",
+          "description": "PERB case numbers — school-specific unions with no ePERB case found",
+          "resolution": "For each school: (1) Email PERBforms@perb.ca.gov with school name + union name to confirm voluntary recognition; (2) Check school website for posted CBA documents; (3) If voluntary recognition confirm"
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "Step 0 — District CBA verification for 15 district-affiliated singles",
+          "resolution": "For each school: identify authorizing LEA from ca_state_data_confirmed_individual.js authorizer field. Contact LEA for CBA document. Confirm recognition clause. Document CBA period and coverage langua"
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "PERB case number — CAVA @ Sutter (C0606022)",
+          "resolution": "Search ePERB for Party = California Virtual Academy OR CAVA, Case Type = RR. Document statewide certification case number and cert date."
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "Camino Nuevo Charter High (C0604009) — PERB case number pending",
+          "resolution": "Email PERBforms@perb.ca.gov with school name + union name. Check https://caminonuevo.org for posted CBA. If voluntary recognition confirmed, code certMethod accordingly."
+        },
+        {
+          "priority": "COMPLETE",
+          "description": "Accelerated School (C0694001) — PERB case number and cert date CONFIRMED",
+          "resolution": "Update accumulator with Labor Board Certified Date = March 25 2009, PERB case LA-RR-1166-E. No further research needed."
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "AIPCS II (C0607001) — confirm PERB ADS null result and NAPCS data error",
+          "resolution": "Search ePERB Party = American Indian Public Charter. If null, confirm UNVERIFIED coding. Check if school is still open (CDE CALPADS). Document finding."
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "Discovery Charter San Jose (C0694006) — PERB ADS search needed",
+          "resolution": "Search ePERB Party = Discovery Charter. Document result. If certified, move to CONFIRMED with case number and cert date. If null, confirm UNVERIFIED coding."
+        },
+        {
+          "priority": "LOW",
+          "description": "Type D resolution — 5 dropped CA schools",
+          "resolution": "For each: confirm Type D drop reason (closed >3 years, or never was NAPCS, etc.). If within 3-year lookback and formerly organized, prepare historical record. Document disposition."
+        },
+        {
+          "priority": "HIGH",
+          "description": "St. HOPE Public Charter Schools (C0603056): NLRB RD petition (Jan 10 2026) — jurisdictional challenge risk",
+          "resolution": "Monitor NLRB Region 20 docket + NRtW press releases. Monitor PERB response under AB 288. Update CONFIRMED/DECERTIFIED status when resolved."
+        },
+        {
+          "priority": "HIGH",
+          "description": "Registry cross-tab (Charter_School_Registry_v45.xlsx, May 15, 2026) identified 55 CA charter schools with \"Historical only\" union status — prior closed PERB cases but no currently confirmed active certification. These schools are distinct from both CONFIRMED and no-union-found schools and must be pr",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "CONFIRMED — active PERB certification (UTLA, LA-RR-1237-E) but NO CBA in effect. Dormant certification. Sponsor flagged as possible decertification — research confirms no decertification was ever filed. UTLA certified Dec 2014; never successfully bargained a first contract; union appears dormant.",
+          "resolution": ""
+        }
+      ],
+      "confirmedSchools": [
+        {
+          "napcsId": "C0603020",
+          "name": "Granada Hills Charter",
+          "city": "Granada Hills",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "UTLA",
+          "natlAff": "AFT/NEA/AFL-CIO",
+          "dateUnionized": "~2003 (conversion from LAUSD Granada Hills HS)",
+          "certCase": "",
+          "cbaStatus": "Active — UTLA CBA confirmed. New contract announced (LA School Report). 4,700+ students K-12.",
+          "firstContract": "Retained from LAUSD conversion (~2003). Subsequent contracts negotiated directly with UTLA.",
+          "authorizer": "Los Angeles Unified School District (LAUSD)",
+          "website": "https://www.ghctk12.com",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0695011",
+          "name": "Palisades Charter High",
+          "city": "Pacific Palisades",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "UTLA",
+          "natlAff": "AFT/NEA/AFL-CIO",
+          "dateUnionized": "~1993 (conversion from LAUSD Palisades HS)",
+          "certCase": "",
+          "cbaStatus": "Active — UTLA CBA with 8% raise over 2 years (LA School Report). 2,991 students.",
+          "firstContract": "Retained from LAUSD conversion. Subsequent UTLA contracts negotiated directly.",
+          "authorizer": "Los Angeles Unified School District (LAUSD)",
+          "website": "https://www.palihigh.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0603046",
+          "name": "Pacoima Charter Elementary",
+          "city": "Pacoima",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "UTLA",
+          "natlAff": "AFT/NEA/AFL-CIO",
+          "dateUnionized": "Conversion — UTLA retained from LAUSD",
+          "certCase": "",
+          "cbaStatus": "Active — UTLA CBA with 12% raise per year for 2 years (LA School Report).",
+          "firstContract": "Retained from LAUSD conversion.",
+          "authorizer": "Los Angeles Unified School District (LAUSD)",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0696007",
+          "name": "Montague Charter Academy",
+          "city": "Arleta",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "UTLA",
+          "natlAff": "AFT/NEA/AFL-CIO",
+          "dateUnionized": "Conversion from LAUSD Montague Elementary",
+          "certCase": "",
+          "cbaStatus": "Active — UTLA CBA (LA School Report: one of 6 LAUSD conversion charters).",
+          "firstContract": "Retained from LAUSD conversion.",
+          "authorizer": "Los Angeles Unified School District (LAUSD)",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0694001",
+          "name": "The Accelerated School",
+          "city": "South Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "UTLA",
+          "natlAff": "AFT/NEA/AFL-CIO",
+          "dateUnionized": "March 25, 2009 (PERB LA-RR-1166-E, closed 03/25/2009)",
+          "certCase": "",
+          "cbaStatus": "Active 2024-2027 CBA. URL: https://utla.net/app/uploads/2026/05/AS-UTLA_CBA-2024-2027.pdf",
+          "firstContract": "~2019 (ratified after 8-day strike, January 2019). Successor: 2024-2027.",
+          "authorizer": "Los Angeles Unified School District (LAUSD) — community charter",
+          "website": "https://www.acceleratedschools.net",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0613092",
+          "name": "Calahan Community Charter",
+          "city": "Northridge",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "UTLA",
+          "natlAff": "AFT/NEA/AFL-CIO",
+          "dateUnionized": "Unknown — PERB case number pending coordinator search",
+          "certCase": "",
+          "cbaStatus": "Active — UTLA CBA. Cert date and PERB case pending coordinator ePERB ADS search.",
+          "firstContract": "",
+          "authorizer": "LAUSD (LEA-affiliated community charter)",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0613094",
+          "name": "Chandler Learning Academy",
+          "city": "Northridge",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "UTLA",
+          "natlAff": "AFT/NEA/AFL-CIO",
+          "dateUnionized": "Unknown — PERB case number pending",
+          "certCase": "",
+          "cbaStatus": "Active — UTLA CBA. Cert date and PERB case pending.",
+          "firstContract": "",
+          "authorizer": "LAUSD (LEA-affiliated community charter)",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0613095",
+          "name": "Darby Avenue Charter",
+          "city": "Northridge",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "UTLA",
+          "natlAff": "AFT/NEA/AFL-CIO",
+          "dateUnionized": "Unknown — PERB case number pending",
+          "certCase": "",
+          "cbaStatus": "Active — UTLA CBA. Cert date and PERB case pending.",
+          "firstContract": "",
+          "authorizer": "LAUSD (LEA-affiliated community charter)",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0613096",
+          "name": "Emelita Academy Charter",
+          "city": "Tarzana",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "UTLA",
+          "natlAff": "AFT/NEA/AFL-CIO",
+          "dateUnionized": "Unknown — PERB case number pending",
+          "certCase": "",
+          "cbaStatus": "Active — UTLA CBA. Cert date and PERB case pending.",
+          "firstContract": "",
+          "authorizer": "LAUSD (LEA-affiliated community charter)",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0613097",
+          "name": "Granada Community Charter",
+          "city": "Northridge",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "UTLA",
+          "natlAff": "AFT/NEA/AFL-CIO",
+          "dateUnionized": "Unknown — PERB case number pending",
+          "certCase": "",
+          "cbaStatus": "Active — UTLA CBA. Cert date and PERB case pending.",
+          "firstContract": "",
+          "authorizer": "LAUSD (LEA-affiliated community charter)",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0609015",
+          "name": "Alliance College-Ready Middle Academy 5",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "UTLA",
+          "natlAff": "AFT/NEA/AFL-CIO",
+          "dateUnionized": "May 21, 2020",
+          "certCase": "",
+          "cbaStatus": "Active — UTLA CBA. Certified May 21, 2020 after 2-year legal battle.",
+          "firstContract": "Post-certification — first contract negotiated after May 2020 certification.",
+          "authorizer": "Los Angeles Unified School District (LAUSD) — independent charter",
+          "website": "",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0600002",
+          "name": "Animo Leadership High",
+          "city": "Inglewood",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Asociación De Maestros Unidos (AMU)",
+          "stateAff": "Independent (no state affiliate)",
+          "natlAff": "Independent (no national affiliate)",
+          "dateUnionized": "2001 (first AMU CBA ratified; organizing began 1999)",
+          "certCase": "LA-RR-1071-E (AMU network recognition, 2001)",
+          "cbaStatus": "Active — AMU–Green Dot CBA (current term December 2023)",
+          "firstContract": "Ratified 2001 (first AMU CBA — Green Dot founding contract)",
+          "authorizer": "Los Angeles Unified School District (LAUSD)",
+          "website": "https://greendot.org/schools/animo-leadership/",
+          "lat": 33.9617,
+          "lon": -118.3531
+        },
+        {
+          "napcsId": "C0602050",
+          "name": "Animo Inglewood Charter High",
+          "city": "Inglewood",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Asociación De Maestros Unidos (AMU)",
+          "stateAff": "Independent (no state affiliate)",
+          "natlAff": "Independent (no national affiliate)",
+          "dateUnionized": "Network-wide AMU coverage from school opening — specific campus cert date UNVERIFIED",
+          "certCase": "UNVERIFIED — school-specific PERB case number not confirmed. PERB records request recommended.",
+          "cbaStatus": "Active — AMU–Green Dot CBA (current term December 2023)",
+          "firstContract": "Network-wide — AMU–Green Dot CBA (first ratified 2001)",
+          "authorizer": "Los Angeles Unified School District (LAUSD)",
+          "website": "https://greendot.org/schools/animo-inglewood/",
+          "lat": 33.9617,
+          "lon": -118.3531
+        },
+        {
+          "napcsId": "C0604002",
+          "name": "Animo South Los Angeles Charter",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Asociación De Maestros Unidos (AMU)",
+          "stateAff": "Independent (no state affiliate)",
+          "natlAff": "Independent (no national affiliate)",
+          "dateUnionized": "Network-wide AMU coverage from school opening — specific campus cert date UNVERIFIED",
+          "certCase": "UNVERIFIED — school-specific PERB case number not confirmed. PERB records request recommended.",
+          "cbaStatus": "Active — AMU–Green Dot CBA (current term December 2023)",
+          "firstContract": "Network-wide — AMU–Green Dot CBA (first ratified 2001)",
+          "authorizer": "Los Angeles Unified School District (LAUSD)",
+          "website": "https://ca.greendot.org/southla",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0604003",
+          "name": "Animo Venice Charter High",
+          "city": "Venice",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Asociación De Maestros Unidos (AMU)",
+          "stateAff": "Independent (no state affiliate)",
+          "natlAff": "Independent (no national affiliate)",
+          "dateUnionized": "Network-wide AMU coverage from school opening — specific campus cert date UNVERIFIED",
+          "certCase": "UNVERIFIED — school-specific PERB case number not confirmed. PERB records request recommended.",
+          "cbaStatus": "Active — AMU–Green Dot CBA (current term December 2023)",
+          "firstContract": "Network-wide — AMU–Green Dot CBA (first ratified 2001)",
+          "authorizer": "Los Angeles Unified School District (LAUSD)",
+          "website": "https://ca.greendot.org/venice",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0606008",
+          "name": "Animo Jackie Robinson High",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Asociación De Maestros Unidos (AMU)",
+          "stateAff": "Independent (no state affiliate)",
+          "natlAff": "Independent (no national affiliate)",
+          "dateUnionized": "Network-wide AMU coverage from school opening — specific campus cert date UNVERIFIED",
+          "certCase": "UNVERIFIED — school-specific PERB case number not confirmed. PERB records request recommended.",
+          "cbaStatus": "Active — AMU–Green Dot CBA (current term December 2023)",
+          "firstContract": "Network-wide — AMU–Green Dot CBA (first ratified 2001)",
+          "authorizer": "Los Angeles Unified School District (LAUSD)",
+          "website": "https://ca.greendot.org/jackierobinson/",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0606010",
+          "name": "Animo Pat Brown",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Asociación De Maestros Unidos (AMU)",
+          "stateAff": "Independent (no state affiliate)",
+          "natlAff": "Independent (no national affiliate)",
+          "dateUnionized": "Network-wide AMU coverage from school opening — specific campus cert date UNVERIFIED",
+          "certCase": "UNVERIFIED — school-specific PERB case number not confirmed. PERB records request recommended.",
+          "cbaStatus": "Active — AMU–Green Dot CBA (current term December 2023)",
+          "firstContract": "Network-wide — AMU–Green Dot CBA (first ratified 2001)",
+          "authorizer": "Los Angeles Unified School District (LAUSD)",
+          "website": "https://ca.greendot.org/patbrown",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0606011",
+          "name": "Animo Ralph Bunche High",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Asociación De Maestros Unidos (AMU)",
+          "stateAff": "Independent (no state affiliate)",
+          "natlAff": "Independent (no national affiliate)",
+          "dateUnionized": "Network-wide AMU coverage from school opening — specific campus cert date UNVERIFIED",
+          "certCase": "UNVERIFIED — school-specific PERB case number not confirmed. PERB records request recommended.",
+          "cbaStatus": "Active — AMU–Green Dot CBA (current term December 2023)",
+          "firstContract": "Network-wide — AMU–Green Dot CBA (first ratified 2001)",
+          "authorizer": "Los Angeles Unified School District (LAUSD)",
+          "website": "https://ca.greendot.org/ralphbunche/",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0607002",
+          "name": "Animo Watts College Preparatory Academy",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Asociación De Maestros Unidos (AMU)",
+          "stateAff": "Independent (no state affiliate)",
+          "natlAff": "Independent (no national affiliate)",
+          "dateUnionized": "Network-wide AMU coverage from school opening — specific campus cert date UNVERIFIED",
+          "certCase": "UNVERIFIED — school-specific PERB case number not confirmed. PERB records request recommended.",
+          "cbaStatus": "Active — AMU–Green Dot CBA (current term December 2023)",
+          "firstContract": "Network-wide — AMU–Green Dot CBA (first ratified 2001)",
+          "authorizer": "Los Angeles Unified School District (LAUSD)",
+          "website": "https://ca.greendot.org/watts",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0610012",
+          "name": "Animo Jefferson Charter Middle",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Asociación De Maestros Unidos (AMU)",
+          "stateAff": "Independent (no state affiliate)",
+          "natlAff": "Independent (no national affiliate)",
+          "dateUnionized": "Network-wide AMU coverage from school opening — specific campus cert date UNVERIFIED",
+          "certCase": "UNVERIFIED — school-specific PERB case number not confirmed. PERB records request recommended.",
+          "cbaStatus": "Active — AMU–Green Dot CBA (current term December 2023)",
+          "firstContract": "Network-wide — AMU–Green Dot CBA (first ratified 2001)",
+          "authorizer": "Los Angeles Unified School District (LAUSD)",
+          "website": "https://ca.greendot.org/jefferson",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0613002",
+          "name": "Animo James B. Taylor Charter Middle",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Asociación De Maestros Unidos (AMU)",
+          "stateAff": "Independent (no state affiliate)",
+          "natlAff": "Independent (no national affiliate)",
+          "dateUnionized": "Network-wide AMU coverage from school opening — specific campus cert date UNVERIFIED",
+          "certCase": "UNVERIFIED — school-specific PERB case number not confirmed. PERB records request recommended.",
+          "cbaStatus": "Active — AMU–Green Dot CBA (current term December 2023)",
+          "firstContract": "Network-wide — AMU–Green Dot CBA (first ratified 2001)",
+          "authorizer": "Los Angeles Unified School District (LAUSD)",
+          "website": "https://ca.greendot.org/taylor",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0614016",
+          "name": "Animo Ellen Ochoa Charter Middle",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Asociación De Maestros Unidos (AMU)",
+          "stateAff": "Independent (no state affiliate)",
+          "natlAff": "Independent (no national affiliate)",
+          "dateUnionized": "Network-wide AMU coverage from school opening — specific campus cert date UNVERIFIED",
+          "certCase": "UNVERIFIED — school-specific PERB case number not confirmed. PERB records request recommended.",
+          "cbaStatus": "Active — AMU–Green Dot CBA (current term December 2023)",
+          "firstContract": "Network-wide — AMU–Green Dot CBA (first ratified 2001)",
+          "authorizer": "Los Angeles Unified School District (LAUSD)",
+          "website": "https://ca.greendot.org/ochoa",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0614017",
+          "name": "Animo Mae Jemison Charter Middle",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Asociación De Maestros Unidos (AMU)",
+          "stateAff": "Independent (no state affiliate)",
+          "natlAff": "Independent (no national affiliate)",
+          "dateUnionized": "Network-wide AMU coverage from school opening — specific campus cert date UNVERIFIED",
+          "certCase": "UNVERIFIED — school-specific PERB case number not confirmed. PERB records request recommended.",
+          "cbaStatus": "Active — AMU–Green Dot CBA (current term December 2023)",
+          "firstContract": "Network-wide — AMU–Green Dot CBA (first ratified 2001)",
+          "authorizer": "Los Angeles Unified School District (LAUSD)",
+          "website": "https://ca.greendot.org/jemison",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0616031",
+          "name": "Animo Florence Firestone Charter Middle School",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Asociación De Maestros Unidos (AMU)",
+          "stateAff": "Independent (no state affiliate)",
+          "natlAff": "Independent (no national affiliate)",
+          "dateUnionized": "Network-wide AMU coverage from school opening — specific campus cert date UNVERIFIED",
+          "certCase": "UNVERIFIED — school-specific PERB case number not confirmed. PERB records request recommended.",
+          "cbaStatus": "Active — AMU–Green Dot CBA (current term December 2023)",
+          "firstContract": "Network-wide — AMU–Green Dot CBA (first ratified 2001)",
+          "authorizer": "Los Angeles Unified School District (LAUSD)",
+          "website": "https://ca.greendot.org/florence-firestone/",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0617006",
+          "name": "Animo City of Champions Charter High",
+          "city": "Inglewood",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Asociación De Maestros Unidos (AMU)",
+          "stateAff": "Independent (no state affiliate)",
+          "natlAff": "Independent (no national affiliate)",
+          "dateUnionized": "Network-wide AMU coverage from school opening — specific campus cert date UNVERIFIED",
+          "certCase": "UNVERIFIED — school-specific PERB case number not confirmed. PERB records request recommended.",
+          "cbaStatus": "Active — AMU–Green Dot CBA (current term December 2023)",
+          "firstContract": "Network-wide — AMU–Green Dot CBA (first ratified 2001)",
+          "authorizer": "Los Angeles Unified School District (LAUSD)",
+          "website": "https://greendot.org/schools/animo-city-of-champions/",
+          "lat": 33.9617,
+          "lon": -118.3531
+        },
+        {
+          "napcsId": "C0618030",
+          "name": "Ánimo Compton Charter",
+          "city": "Compton",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Asociación De Maestros Unidos (AMU)",
+          "stateAff": "Independent (no state affiliate)",
+          "natlAff": "Independent (no national affiliate)",
+          "dateUnionized": "Network-wide AMU coverage from school opening — specific campus cert date UNVERIFIED",
+          "certCase": "UNVERIFIED — school-specific PERB case number not confirmed. PERB records request recommended.",
+          "cbaStatus": "Active — AMU–Green Dot CBA (current term December 2023)",
+          "firstContract": "Network-wide — AMU–Green Dot CBA (first ratified 2001)",
+          "authorizer": "Los Angeles Unified School District (LAUSD)",
+          "website": "https://greendot.org/schools/animo-compton/",
+          "lat": 33.8958,
+          "lon": -118.2201
+        },
+        {
+          "napcsId": "C0618167",
+          "name": "Animo Legacy Charter Middle",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Asociación De Maestros Unidos (AMU)",
+          "stateAff": "Independent (no state affiliate)",
+          "natlAff": "Independent (no national affiliate)",
+          "dateUnionized": "Network-wide AMU coverage from school opening — specific campus cert date UNVERIFIED",
+          "certCase": "UNVERIFIED — school-specific PERB case number not confirmed. PERB records request recommended.",
+          "cbaStatus": "Active — AMU–Green Dot CBA (current term December 2023)",
+          "firstContract": "Network-wide — AMU–Green Dot CBA (first ratified 2001)",
+          "authorizer": "Los Angeles Unified School District (LAUSD)",
+          "website": "https://ca.greendot.org/legacy",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0603045",
+          "name": "Animo Oscar De La Hoya Charter High",
+          "city": "LOS ANGELES",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Animo Management United (AMU) / UTLA chapter (Green Dot network union)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Green Dot network-wide certification — PERB certified (network AMU/UTLA)",
+          "certCase": "Green Dot / AMU network-level PERB certification — school-specific case number not confirmed; PERB records request recommended",
+          "cbaStatus": "Active — Green Dot network CBA covers all AMU member schools",
+          "firstContract": "Active — Green Dot network CBA in effect",
+          "authorizer": "OSCAR DE LA HOYA ANIMO CHARTER HIGH DISTRICT",
+          "website": "http://ca.greendot.org/odlh/",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0608025",
+          "name": "Alain Leroy Locke College Preparatory Academy",
+          "city": "LOS ANGELES",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Animo Management United (AMU) / UTLA chapter (Green Dot network union)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Green Dot network-wide certification — PERB certified (network AMU/UTLA)",
+          "certCase": "Green Dot / AMU network-level PERB certification — school-specific case number not confirmed; PERB records request recommended",
+          "cbaStatus": "Active — Green Dot network CBA covers all AMU member schools",
+          "firstContract": "Active — Green Dot network CBA in effect",
+          "authorizer": "ALAIN LEROY LOCKE COLLEGE PREPARATORY ACADEMY DISTRICT",
+          "website": "http://greendot.org/locke/",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0600011",
+          "name": "High Tech Elementary Explorer",
+          "city": "San Diego",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "High Tech Education Collective (HTEC)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "2021",
+          "certCase": "LA-RR-1313-E (filed 04/23/2021, closed 08/30/2021); LA-RR-1330-E (filed 03/17/2022, closed 05/19/2022); LA-IM-4121-E (filed 11/17/2022, closed 11/18/2022); LA-CE-6924-E (network ULP case). School-specific case numbers not separately confirmed — PERB records request recommended.",
+          "cbaStatus": "Active — HTEC certificated staff CBA (ratified February 2, 2023; compensation TA February 5, 2024: +6% for 2023–24, +1% ",
+          "firstContract": "Certificated: ratified February 2, 2023 (HTH Board ratified January 25, 2023). Classified: ratified July 2024 (TA June 2024; ratification vote June 21–July 8, 2024).",
+          "authorizer": "San Diego Unified School District",
+          "website": "https://www.hightechhigh.org",
+          "lat": 32.7157,
+          "lon": -117.1611
+        },
+        {
+          "napcsId": "C0600013",
+          "name": "High Tech High",
+          "city": "San Diego",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "High Tech Education Collective (HTEC)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "2021",
+          "certCase": "LA-RR-1313-E (filed 04/23/2021, closed 08/30/2021); LA-RR-1330-E (filed 03/17/2022, closed 05/19/2022); LA-IM-4121-E (filed 11/17/2022, closed 11/18/2022); LA-CE-6924-E (network ULP case). School-specific case numbers not separately confirmed — PERB records request recommended.",
+          "cbaStatus": "Active — HTEC certificated staff CBA (ratified February 2, 2023; compensation TA February 5, 2024: +6% for 2023–24, +1% ",
+          "firstContract": "Certificated: ratified February 2, 2023 (HTH Board ratified January 25, 2023). Classified: ratified July 2024 (TA June 2024; ratification vote June 21–July 8, 2024).",
+          "authorizer": "San Diego Unified School District",
+          "website": "https://www.hightechhigh.org",
+          "lat": 32.7157,
+          "lon": -117.1611
+        },
+        {
+          "napcsId": "C0603025",
+          "name": "High Tech Middle",
+          "city": "San Diego",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "High Tech Education Collective (HTEC)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "2021",
+          "certCase": "LA-RR-1313-E (filed 04/23/2021, closed 08/30/2021); LA-RR-1330-E (filed 03/17/2022, closed 05/19/2022); LA-IM-4121-E (filed 11/17/2022, closed 11/18/2022); LA-CE-6924-E (network ULP case). School-specific case numbers not separately confirmed — PERB records request recommended.",
+          "cbaStatus": "Active — HTEC certificated staff CBA (ratified February 2, 2023; compensation TA February 5, 2024: +6% for 2023–24, +1% ",
+          "firstContract": "Certificated: ratified February 2, 2023 (HTH Board ratified January 25, 2023). Classified: ratified July 2024 (TA June 2024; ratification vote June 21–July 8, 2024).",
+          "authorizer": "San Diego Unified School District",
+          "website": "https://www.hightechhigh.org",
+          "lat": 32.7157,
+          "lon": -117.1611
+        },
+        {
+          "napcsId": "C0604033",
+          "name": "High Tech High International",
+          "city": "San Diego",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "High Tech Education Collective (HTEC)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "2021",
+          "certCase": "LA-RR-1313-E (filed 04/23/2021, closed 08/30/2021); LA-RR-1330-E (filed 03/17/2022, closed 05/19/2022); LA-IM-4121-E (filed 11/17/2022, closed 11/18/2022); LA-CE-6924-E (network ULP case). School-specific case numbers not separately confirmed — PERB records request recommended.",
+          "cbaStatus": "Active — HTEC certificated staff CBA (ratified February 2, 2023; compensation TA February 5, 2024: +6% for 2023–24, +1% ",
+          "firstContract": "Certificated: ratified February 2, 2023 (HTH Board ratified January 25, 2023). Classified: ratified July 2024 (TA June 2024; ratification vote June 21–July 8, 2024).",
+          "authorizer": "San Diego Unified School District",
+          "website": "https://www.hightechhigh.org",
+          "lat": 32.7157,
+          "lon": -117.1611
+        },
+        {
+          "napcsId": "C0605028",
+          "name": "High Tech High Media Arts",
+          "city": "San Diego",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "High Tech Education Collective (HTEC)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "2021",
+          "certCase": "LA-RR-1313-E (filed 04/23/2021, closed 08/30/2021); LA-RR-1330-E (filed 03/17/2022, closed 05/19/2022); LA-IM-4121-E (filed 11/17/2022, closed 11/18/2022); LA-CE-6924-E (network ULP case). School-specific case numbers not separately confirmed — PERB records request recommended.",
+          "cbaStatus": "Active — HTEC certificated staff CBA (ratified February 2, 2023; compensation TA February 5, 2024: +6% for 2023–24, +1% ",
+          "firstContract": "Certificated: ratified February 2, 2023 (HTH Board ratified January 25, 2023). Classified: ratified July 2024 (TA June 2024; ratification vote June 21–July 8, 2024).",
+          "authorizer": "San Diego Unified School District",
+          "website": "https://www.hightechhigh.org",
+          "lat": 32.7157,
+          "lon": -117.1611
+        },
+        {
+          "napcsId": "C0605029",
+          "name": "High Tech Middle Media Arts",
+          "city": "San Diego",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "High Tech Education Collective (HTEC)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "2021",
+          "certCase": "LA-RR-1313-E (filed 04/23/2021, closed 08/30/2021); LA-RR-1330-E (filed 03/17/2022, closed 05/19/2022); LA-IM-4121-E (filed 11/17/2022, closed 11/18/2022); LA-CE-6924-E (network ULP case). School-specific case numbers not separately confirmed — PERB records request recommended.",
+          "cbaStatus": "Active — HTEC certificated staff CBA (ratified February 2, 2023; compensation TA February 5, 2024: +6% for 2023–24, +1% ",
+          "firstContract": "Certificated: ratified February 2, 2023 (HTH Board ratified January 25, 2023). Classified: ratified July 2024 (TA June 2024; ratification vote June 21–July 8, 2024).",
+          "authorizer": "San Diego Unified School District",
+          "website": "https://www.hightechhigh.org",
+          "lat": 32.7157,
+          "lon": -117.1611
+        },
+        {
+          "napcsId": "C0615037",
+          "name": "High Tech Elementary",
+          "city": "San Diego",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "High Tech Education Collective (HTEC)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "2021",
+          "certCase": "LA-RR-1313-E (filed 04/23/2021, closed 08/30/2021); LA-RR-1330-E (filed 03/17/2022, closed 05/19/2022); LA-IM-4121-E (filed 11/17/2022, closed 11/18/2022); LA-CE-6924-E (network ULP case). School-specific case numbers not separately confirmed — PERB records request recommended.",
+          "cbaStatus": "Active — HTEC certificated staff CBA (ratified February 2, 2023; compensation TA February 5, 2024: +6% for 2023–24, +1% ",
+          "firstContract": "Certificated: ratified February 2, 2023 (HTH Board ratified January 25, 2023). Classified: ratified July 2024 (TA June 2024; ratification vote June 21–July 8, 2024).",
+          "authorizer": "San Diego Unified School District",
+          "website": "https://www.hightechhigh.org",
+          "lat": 32.7157,
+          "lon": -117.1611
+        },
+        {
+          "napcsId": "C0607037",
+          "name": "High Tech High Chula Vista",
+          "city": "Chula Vista",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "High Tech Education Collective (HTEC)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "2021",
+          "certCase": "LA-RR-1313-E (filed 04/23/2021, closed 08/30/2021); LA-RR-1330-E (filed 03/17/2022, closed 05/19/2022); LA-IM-4121-E (filed 11/17/2022, closed 11/18/2022); LA-CE-6924-E (network ULP case). School-specific case numbers not separately confirmed — PERB records request recommended.",
+          "cbaStatus": "Active — HTEC certificated staff CBA (ratified February 2, 2023; compensation TA February 5, 2024: +6% for 2023–24, +1% ",
+          "firstContract": "Certificated: ratified February 2, 2023 (HTH Board ratified January 25, 2023). Classified: ratified July 2024 (TA June 2024; ratification vote June 21–July 8, 2024).",
+          "authorizer": "Chula Vista Elementary School District",
+          "website": "https://www.hightechhigh.org",
+          "lat": 32.6401,
+          "lon": -117.0842
+        },
+        {
+          "napcsId": "C0611050",
+          "name": "High Tech Elementary Chula Vista",
+          "city": "Chula Vista",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "High Tech Education Collective (HTEC)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "2021",
+          "certCase": "LA-RR-1313-E (filed 04/23/2021, closed 08/30/2021); LA-RR-1330-E (filed 03/17/2022, closed 05/19/2022); LA-IM-4121-E (filed 11/17/2022, closed 11/18/2022); LA-CE-6924-E (network ULP case). School-specific case numbers not separately confirmed — PERB records request recommended.",
+          "cbaStatus": "Active — HTEC certificated staff CBA (ratified February 2, 2023; compensation TA February 5, 2024: +6% for 2023–24, +1% ",
+          "firstContract": "Certificated: ratified February 2, 2023 (HTH Board ratified January 25, 2023). Classified: ratified July 2024 (TA June 2024; ratification vote June 21–July 8, 2024).",
+          "authorizer": "Chula Vista Elementary School District",
+          "website": "https://www.hightechhigh.org",
+          "lat": 32.6401,
+          "lon": -117.0842
+        },
+        {
+          "napcsId": "C0611051",
+          "name": "High Tech Middle Chula Vista",
+          "city": "Chula Vista",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "High Tech Education Collective (HTEC)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "2021",
+          "certCase": "LA-RR-1313-E (filed 04/23/2021, closed 08/30/2021); LA-RR-1330-E (filed 03/17/2022, closed 05/19/2022); LA-IM-4121-E (filed 11/17/2022, closed 11/18/2022); LA-CE-6924-E (network ULP case). School-specific case numbers not separately confirmed — PERB records request recommended.",
+          "cbaStatus": "Active — HTEC certificated staff CBA (ratified February 2, 2023; compensation TA February 5, 2024: +6% for 2023–24, +1% ",
+          "firstContract": "Certificated: ratified February 2, 2023 (HTH Board ratified January 25, 2023). Classified: ratified July 2024 (TA June 2024; ratification vote June 21–July 8, 2024).",
+          "authorizer": "Chula Vista Elementary School District",
+          "website": "https://www.hightechhigh.org",
+          "lat": 32.6401,
+          "lon": -117.0842
+        },
+        {
+          "napcsId": "C0607038",
+          "name": "High Tech High North County",
+          "city": "San Marcos",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "High Tech Education Collective (HTEC)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "2021",
+          "certCase": "LA-RR-1313-E (filed 04/23/2021, closed 08/30/2021); LA-RR-1330-E (filed 03/17/2022, closed 05/19/2022); LA-IM-4121-E (filed 11/17/2022, closed 11/18/2022); LA-CE-6924-E (network ULP case). School-specific case numbers not separately confirmed — PERB records request recommended.",
+          "cbaStatus": "Active — HTEC certificated staff CBA (ratified February 2, 2023; compensation TA February 5, 2024: +6% for 2023–24, +1% ",
+          "firstContract": "Certificated: ratified February 2, 2023 (HTH Board ratified January 25, 2023). Classified: ratified July 2024 (TA June 2024; ratification vote June 21–July 8, 2024).",
+          "authorizer": "San Marcos Unified School District",
+          "website": "https://www.hightechhigh.org",
+          "lat": 37.7749,
+          "lon": -122.4194
+        },
+        {
+          "napcsId": "C0609033",
+          "name": "High Tech Middle North County",
+          "city": "San Marcos",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "High Tech Education Collective (HTEC)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "2021",
+          "certCase": "LA-RR-1313-E (filed 04/23/2021, closed 08/30/2021); LA-RR-1330-E (filed 03/17/2022, closed 05/19/2022); LA-IM-4121-E (filed 11/17/2022, closed 11/18/2022); LA-CE-6924-E (network ULP case). School-specific case numbers not separately confirmed — PERB records request recommended.",
+          "cbaStatus": "Active — HTEC certificated staff CBA (ratified February 2, 2023; compensation TA February 5, 2024: +6% for 2023–24, +1% ",
+          "firstContract": "Certificated: ratified February 2, 2023 (HTH Board ratified January 25, 2023). Classified: ratified July 2024 (TA June 2024; ratification vote June 21–July 8, 2024).",
+          "authorizer": "San Marcos Unified School District",
+          "website": "https://www.hightechhigh.org",
+          "lat": 37.7749,
+          "lon": -122.4194
+        },
+        {
+          "napcsId": "C0613029",
+          "name": "High Tech Elementary North County",
+          "city": "San Marcos",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "High Tech Education Collective (HTEC)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "2021",
+          "certCase": "LA-RR-1313-E (filed 04/23/2021, closed 08/30/2021); LA-RR-1330-E (filed 03/17/2022, closed 05/19/2022); LA-IM-4121-E (filed 11/17/2022, closed 11/18/2022); LA-CE-6924-E (network ULP case). School-specific case numbers not separately confirmed — PERB records request recommended.",
+          "cbaStatus": "Active — HTEC certificated staff CBA (ratified February 2, 2023; compensation TA February 5, 2024: +6% for 2023–24, +1% ",
+          "firstContract": "Certificated: ratified February 2, 2023 (HTH Board ratified January 25, 2023). Classified: ratified July 2024 (TA June 2024; ratification vote June 21–July 8, 2024).",
+          "authorizer": "San Marcos Unified School District",
+          "website": "https://www.hightechhigh.org",
+          "lat": 37.7749,
+          "lon": -122.4194
+        },
+        {
+          "napcsId": "C0618077",
+          "name": "High Tech High Mesa",
+          "city": "San Diego",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "High Tech Education Collective (HTEC)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "2021",
+          "certCase": "LA-RR-1313-E (filed 04/23/2021, closed 08/30/2021); LA-RR-1330-E (filed 03/17/2022, closed 05/19/2022); LA-IM-4121-E (filed 11/17/2022, closed 11/18/2022); LA-CE-6924-E (network ULP case). School-specific case numbers not separately confirmed — PERB records request recommended.",
+          "cbaStatus": "Active — HTEC certificated staff CBA (ratified February 2, 2023; compensation TA February 5, 2024: +6% for 2023–24, +1% ",
+          "firstContract": "Certificated: ratified February 2, 2023 (HTH Board ratified January 25, 2023). Classified: ratified July 2024 (TA June 2024; ratification vote June 21–July 8, 2024).",
+          "authorizer": "San Diego Community College District",
+          "website": "https://www.hightechhigh.org",
+          "lat": 32.7157,
+          "lon": -117.1611
+        },
+        {
+          "napcsId": "C0619017",
+          "name": "High Tech Elementary Mesa",
+          "city": "San Diego",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "High Tech Education Collective (HTEC)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "2021",
+          "certCase": "LA-RR-1313-E (filed 04/23/2021, closed 08/30/2021); LA-RR-1330-E (filed 03/17/2022, closed 05/19/2022); LA-IM-4121-E (filed 11/17/2022, closed 11/18/2022); LA-CE-6924-E (network ULP case). School-specific case numbers not separately confirmed — PERB records request recommended.",
+          "cbaStatus": "Active — HTEC certificated staff CBA (ratified February 2, 2023; compensation TA February 5, 2024: +6% for 2023–24, +1% ",
+          "firstContract": "Certificated: ratified February 2, 2023 (HTH Board ratified January 25, 2023). Classified: ratified July 2024 (TA June 2024; ratification vote June 21–July 8, 2024).",
+          "authorizer": "San Diego Community College District",
+          "website": "https://www.hightechhigh.org",
+          "lat": 32.7157,
+          "lon": -117.1611
+        },
+        {
+          "napcsId": "C0619018",
+          "name": "High Tech Middle Mesa",
+          "city": "San Diego",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "High Tech Education Collective (HTEC)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "2021",
+          "certCase": "LA-RR-1313-E (filed 04/23/2021, closed 08/30/2021); LA-RR-1330-E (filed 03/17/2022, closed 05/19/2022); LA-IM-4121-E (filed 11/17/2022, closed 11/18/2022); LA-CE-6924-E (network ULP case). School-specific case numbers not separately confirmed — PERB records request recommended.",
+          "cbaStatus": "Active — HTEC certificated staff CBA (ratified February 2, 2023; compensation TA February 5, 2024: +6% for 2023–24, +1% ",
+          "firstContract": "Certificated: ratified February 2, 2023 (HTH Board ratified January 25, 2023). Classified: ratified July 2024 (TA June 2024; ratification vote June 21–July 8, 2024).",
+          "authorizer": "San Diego Community College District",
+          "website": "https://www.hightechhigh.org",
+          "lat": 32.7157,
+          "lon": -117.1611
+        },
+        {
+          "napcsId": "C0602009",
+          "name": "California Virtual Academy @ San Diego",
+          "city": "Simi Valley",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "California Virtual Educators United",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "PERB(CA) certified (exact date unconfirmed — network-wide unit; PERB records request recommended)",
+          "certCase": "LA-CE-6847-E (closed); LA-CE-6842-E (closed); LA-IM-4140-E (impasse, closed) — network-level cases; school-specific case numbers unconfirmed",
+          "cbaStatus": "Active CBA presumed (network-wide unit); specific CBA terms unconfirmed — PERB records request recommended",
+          "firstContract": "Unconfirmed — PERB records request recommended",
+          "authorizer": "California Virtual Academy @ San Diego District",
+          "website": "http://www.caliva.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0604008",
+          "name": "California Virtual Academy @ Sonoma",
+          "city": "Simi Valley",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "California Virtual Educators United",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "PERB(CA) certified (exact date unconfirmed — network-wide unit; PERB records request recommended)",
+          "certCase": "LA-CE-6847-E (closed); LA-CE-6842-E (closed); LA-IM-4140-E (impasse, closed) — network-level cases; school-specific case numbers unconfirmed",
+          "cbaStatus": "Active CBA presumed (network-wide unit); specific CBA terms unconfirmed — PERB records request recommended",
+          "firstContract": "Unconfirmed — PERB records request recommended",
+          "authorizer": "California Virtual Academy @ Sonoma District",
+          "website": "http://www.caliva.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0606019",
+          "name": "California Virtual Academy at Kings",
+          "city": "Simi Valley",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "California Virtual Educators United",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "PERB(CA) certified (exact date unconfirmed — network-wide unit; PERB records request recommended)",
+          "certCase": "LA-CE-6847-E (closed); LA-CE-6842-E (closed); LA-IM-4140-E (impasse, closed) — network-level cases; school-specific case numbers unconfirmed",
+          "cbaStatus": "Active CBA presumed (network-wide unit); specific CBA terms unconfirmed — PERB records request recommended",
+          "firstContract": "Unconfirmed — PERB records request recommended",
+          "authorizer": "California Virtual Academy at Kings District",
+          "website": "http://www.caliva.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0606020",
+          "name": "California Virtual Academy @ Los Angeles",
+          "city": "Simi Valley",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "California Virtual Educators United",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "PERB(CA) certified (exact date unconfirmed — network-wide unit; PERB records request recommended)",
+          "certCase": "LA-CE-6847-E (closed); LA-CE-6842-E (closed); LA-IM-4140-E (impasse, closed) — network-level cases; school-specific case numbers unconfirmed",
+          "cbaStatus": "Active CBA presumed (network-wide unit); specific CBA terms unconfirmed — PERB records request recommended",
+          "firstContract": "Unconfirmed — PERB records request recommended",
+          "authorizer": "California Virtual Academy @ Los Angeles District",
+          "website": "http://www.caliva.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0606021",
+          "name": "California Virtual Academy San Mateo",
+          "city": "Simi Valley",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "California Virtual Educators United",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "PERB(CA) certified (exact date unconfirmed — network-wide unit; PERB records request recommended)",
+          "certCase": "LA-CE-6847-E (closed); LA-CE-6842-E (closed); LA-IM-4140-E (impasse, closed) — network-level cases; school-specific case numbers unconfirmed",
+          "cbaStatus": "Active CBA presumed (network-wide unit); specific CBA terms unconfirmed — PERB records request recommended",
+          "firstContract": "Unconfirmed — PERB records request recommended",
+          "authorizer": "California Virtual Academy San Mateo District",
+          "website": "http://www.caliva.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0612014",
+          "name": "California Virtual Academy at Fresno",
+          "city": "Simi Valley",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "California Virtual Educators United",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "PERB(CA) certified (exact date unconfirmed — network-wide unit; PERB records request recommended)",
+          "certCase": "LA-CE-6847-E (closed); LA-CE-6842-E (closed); LA-IM-4140-E (impasse, closed) — network-level cases; school-specific case numbers unconfirmed",
+          "cbaStatus": "Active CBA presumed (network-wide unit); specific CBA terms unconfirmed — PERB records request recommended",
+          "firstContract": "Unconfirmed — PERB records request recommended",
+          "authorizer": "California Virtual Academy at Fresno District",
+          "website": "http://www.caliva.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0612016",
+          "name": "California Virtual Academy at Maricopa",
+          "city": "Simi Valley",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "California Virtual Educators United",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "PERB(CA) certified (exact date unconfirmed — network-wide unit; PERB records request recommended)",
+          "certCase": "LA-CE-6847-E (closed); LA-CE-6842-E (closed); LA-IM-4140-E (impasse, closed) — network-level cases; school-specific case numbers unconfirmed",
+          "cbaStatus": "Active CBA presumed (network-wide unit); specific CBA terms unconfirmed — PERB records request recommended",
+          "firstContract": "Unconfirmed — PERB records request recommended",
+          "authorizer": "California Virtual Academy at Maricopa District",
+          "website": "http://www.caliva.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0612108",
+          "name": "California Virtual Academy @ San Joaquin",
+          "city": "Simi Valley",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "California Virtual Educators United",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "PERB(CA) certified (exact date unconfirmed — network-wide unit; PERB records request recommended)",
+          "certCase": "LA-CE-6847-E (closed); LA-CE-6842-E (closed); LA-IM-4140-E (impasse, closed) — network-level cases; school-specific case numbers unconfirmed",
+          "cbaStatus": "Active CBA presumed (network-wide unit); specific CBA terms unconfirmed — PERB records request recommended",
+          "firstContract": "Unconfirmed — PERB records request recommended",
+          "authorizer": "California Virtual Academy @ San Joaquin District",
+          "website": "http://cava.k12.com/",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0613111",
+          "name": "California Virtual Academy at Sutter",
+          "city": "Simi Valley",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "California Virtual Educators United",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "PERB(CA) certified (exact date unconfirmed — network-wide unit; PERB records request recommended)",
+          "certCase": "LA-CE-6847-E (closed); LA-CE-6842-E (closed); LA-IM-4140-E (impasse, closed) — network-level cases; school-specific case numbers unconfirmed",
+          "cbaStatus": "Active CBA presumed (network-wide unit); specific CBA terms unconfirmed — PERB records request recommended",
+          "firstContract": "Unconfirmed — PERB records request recommended",
+          "authorizer": "California Virtual Academy at Sutter District",
+          "website": "http://www.caliva.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0606022",
+          "name": "California Virtual Academy @ Sutter",
+          "city": "Marysville",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "California Virtual Educators United (CVEU/CTA)",
+          "stateAff": "CTA",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "~2014 (statewide CAVA certification)",
+          "certCase": "",
+          "cbaStatus": "",
+          "firstContract": "",
+          "authorizer": "",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0611081",
+          "name": "Summit Public School: Tahoma",
+          "city": "San Jose",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Unite Summit",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "02/27/2023",
+          "certCase": "SF-RR-1004-E (recognition petition 01/28/2019); SF-CO-875-E (certification order 02/27/2023)",
+          "cbaStatus": "First CBA ratified June 2022. Renewal term and current status not confirmed in public sources as of May 2026. PERB recor",
+          "firstContract": "First contract ratified June 2022 — Summit Board of Directors approved the first Unite Summit CBA at June 16, 2022 board meeting.",
+          "authorizer": "Summit Public School: Tahoma District",
+          "website": "http://tahoma.summitps.org",
+          "lat": 37.3382,
+          "lon": -121.8863
+        },
+        {
+          "napcsId": "C0613027",
+          "name": "Summit Public School: Shasta",
+          "city": "Daly City",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Unite Summit",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "02/27/2023",
+          "certCase": "SF-RR-1004-E (recognition petition 01/28/2019); SF-CO-875-E (certification order 02/27/2023)",
+          "cbaStatus": "First CBA ratified June 2022. Renewal term and current status not confirmed in public sources as of May 2026. PERB recor",
+          "firstContract": "First contract ratified June 2022 — Summit Board of Directors approved the first Unite Summit CBA at June 16, 2022 board meeting.",
+          "authorizer": "Summit Public School: Shasta District",
+          "website": "http://shasta.summitps.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0614146",
+          "name": "Summit Public School K2",
+          "city": "El Cerrito",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Unite Summit",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "02/27/2023",
+          "certCase": "SF-RR-1004-E (recognition petition 01/28/2019); SF-CO-875-E (certification order 02/27/2023)",
+          "cbaStatus": "First CBA ratified June 2022. Renewal term and current status not confirmed in public sources as of May 2026. PERB recor",
+          "firstContract": "First contract ratified June 2022 — Summit Board of Directors approved the first Unite Summit CBA at June 16, 2022 board meeting.",
+          "authorizer": "Summit Public School K2 District",
+          "website": "http://k2.summitps.org",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0616048",
+          "name": "Summit Public School: Tamalpais",
+          "city": "Richmond",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Unite Summit",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "02/27/2023",
+          "certCase": "SF-RR-1004-E (recognition petition 01/28/2019); SF-CO-875-E (certification order 02/27/2023)",
+          "cbaStatus": "First CBA ratified June 2022. Renewal term and current status not confirmed in public sources as of May 2026. PERB recor",
+          "firstContract": "First contract ratified June 2022 — Summit Board of Directors approved the first Unite Summit CBA at June 16, 2022 board meeting.",
+          "authorizer": "Summit Public School: Tamalpais District",
+          "website": "http://tam.summitps.org",
+          "lat": 37.9358,
+          "lon": -122.3477
+        },
+        {
+          "napcsId": "C0604027",
+          "name": "Alliance Gertz-Ressler Richard Merkin 6-12 Complex",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Alliance Educators United (UTLA chapter)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E)",
+          "certCase": "PERB Order No. Ad-491 / Decision 2809E (May 2020); Decision 2974E (2025 — ULP settled)",
+          "cbaStatus": "Active CBA — ratified May 2025. Contract period not confirmed from public sources; PERB records request recommended.",
+          "firstContract": "CBA ratified May 2025 (100% YES vote)",
+          "authorizer": "Alliance Gertz-Ressler Richard Merkin 6-12 Complex District",
+          "website": "http://gertzresslerhigh.org",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0605026",
+          "name": "Alliance Judy Ivie Burton Technology Academy High",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Alliance Educators United (UTLA chapter)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E)",
+          "certCase": "PERB Order No. Ad-491 / Decision 2809E (May 2020); Decision 2974E (2025 — ULP settled)",
+          "cbaStatus": "Active CBA — ratified May 2025. Contract period not confirmed from public sources; PERB records request recommended.",
+          "firstContract": "CBA ratified May 2025 (100% YES vote)",
+          "authorizer": "Alliance Judy Ivie Burton Technology Academy High District",
+          "website": "http://www.burtontech.org/",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0609011",
+          "name": "Alliance Leichtman-Levine Family Foundation Environmental Science High",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Alliance Educators United (UTLA chapter)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "~2020-2021 (PERB certification anticipated following PERB Order No. Ad-491 May 2020 — exact formal cert date not confirmed; PERB records request needed)",
+          "certCase": "PERB Order No. Ad-491 / Decision 2809E (network-level); exact school-specific case number not confirmed — PERB records request recommended (PERBforms@perb.ca.gov)",
+          "cbaStatus": "No CBA — certified; bargaining ongoing. PERB records request recommended for current bargaining status.",
+          "firstContract": "No first contract — bargaining ongoing as of Registry scan May 2026",
+          "authorizer": "Alliance Leichtman-Levine Family Foundation Env Sci High District",
+          "website": "http://www.llesat.org",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0609013",
+          "name": "Alliance Morgan McKinzie High",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Alliance Educators United (UTLA chapter)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "~2020-2021 (PERB certification anticipated following PERB Order No. Ad-491 May 2020 — exact formal cert date not confirmed; PERB records request needed)",
+          "certCase": "PERB Order No. Ad-491 / Decision 2809E (network-level); exact school-specific case number not confirmed — PERB records request recommended (PERBforms@perb.ca.gov)",
+          "cbaStatus": "No CBA — certified; bargaining ongoing. PERB records request recommended for current bargaining status.",
+          "firstContract": "No first contract — bargaining ongoing as of Registry scan May 2026",
+          "authorizer": "Alliance Morgan McKinzie High District",
+          "website": "http://www.mckinziehs.org",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0605030",
+          "name": "Alliance Collins Family College-Ready High",
+          "city": "Huntington Park",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Alliance Educators United (UTLA chapter)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)",
+          "certCase": "PERB Order No. Ad-491 / Decision 2809E (May 2020 — network-wide); Decision 2974E (2025 — ULP settled)",
+          "cbaStatus": "Active network CBA ratified May 2025. Campus-level CBA applicability not confirmed for all schools; PERB records request",
+          "firstContract": "Network CBA ratified May 2025 (100% YES vote). Campus-specific CBA applicability not separately confirmed; PERB records request recommended.",
+          "authorizer": "Alliance Collins Family College-Ready High District",
+          "website": "http://collinsfamilyjaguars.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0606030",
+          "name": "Alliance Dr. Olga Mohan High",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Alliance Educators United (UTLA chapter)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)",
+          "certCase": "PERB Order No. Ad-491 / Decision 2809E (May 2020 — network-wide); Decision 2974E (2025 — ULP settled)",
+          "cbaStatus": "Active network CBA ratified May 2025. Campus-level CBA applicability not confirmed for all schools; PERB records request",
+          "firstContract": "Network CBA ratified May 2025 (100% YES vote). Campus-specific CBA applicability not separately confirmed; PERB records request recommended.",
+          "authorizer": "Alliance Dr. Olga Mohan High District",
+          "website": "http://mohanhs.org",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0606031",
+          "name": "Alliance Ouchi-O'Donovan 6-12 Complex",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Alliance Educators United (UTLA chapter)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)",
+          "certCase": "PERB Order No. Ad-491 / Decision 2809E (May 2020 — network-wide); Decision 2974E (2025 — ULP settled)",
+          "cbaStatus": "Active network CBA ratified May 2025. Campus-level CBA applicability not confirmed for all schools; PERB records request",
+          "firstContract": "Network CBA ratified May 2025 (100% YES vote). Campus-specific CBA applicability not separately confirmed; PERB records request recommended.",
+          "authorizer": "Alliance Ouchi-O'Donovan 6-12 Complex District",
+          "website": "http://ouchihs.org",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0606056",
+          "name": "Alliance Marc & Eva Stern Math and Science",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Alliance Educators United (UTLA chapter)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)",
+          "certCase": "PERB Order No. Ad-491 / Decision 2809E (May 2020 — network-wide); Decision 2974E (2025 — ULP settled)",
+          "cbaStatus": "Active network CBA ratified May 2025. Campus-level CBA applicability not confirmed for all schools; PERB records request",
+          "firstContract": "Network CBA ratified May 2025 (100% YES vote). Campus-specific CBA applicability not separately confirmed; PERB records request recommended.",
+          "authorizer": "Alliance Marc & Eva Stern Math and Science District",
+          "website": "http://sternmass.org",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0607020",
+          "name": "Alliance Patti and Peter Neuwirth Leadership Academy",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Alliance Educators United (UTLA chapter)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)",
+          "certCase": "PERB Order No. Ad-491 / Decision 2809E (May 2020 — network-wide); Decision 2974E (2025 — ULP settled)",
+          "cbaStatus": "Active network CBA ratified May 2025. Campus-level CBA applicability not confirmed for all schools; PERB records request",
+          "firstContract": "Network CBA ratified May 2025 (100% YES vote). Campus-specific CBA applicability not separately confirmed; PERB records request recommended.",
+          "authorizer": "Alliance Patti and Peter Neuwirth Leadership Acad District",
+          "website": "http://www.neuwirthleadership.org",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0607098",
+          "name": "Alliance Jack H. Skirball Middle",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Alliance Educators United (UTLA chapter)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)",
+          "certCase": "PERB Order No. Ad-491 / Decision 2809E (May 2020 — network-wide); Decision 2974E (2025 — ULP settled)",
+          "cbaStatus": "Active network CBA ratified May 2025. Campus-level CBA applicability not confirmed for all schools; PERB records request",
+          "firstContract": "Network CBA ratified May 2025 (100% YES vote). Campus-specific CBA applicability not separately confirmed; PERB records request recommended.",
+          "authorizer": "Alliance Jack H. Skirball Middle District",
+          "website": "http://skirballmiddle.org",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0609012",
+          "name": "Alliance Piera Barbaglia Shaheen Health Services Academy",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Alliance Educators United (UTLA chapter)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)",
+          "certCase": "PERB Order No. Ad-491 / Decision 2809E (May 2020 — network-wide); Decision 2974E (2025 — ULP settled)",
+          "cbaStatus": "Active network CBA ratified May 2025. Campus-level CBA applicability not confirmed for all schools; PERB records request",
+          "firstContract": "Network CBA ratified May 2025 (100% YES vote). Campus-specific CBA applicability not separately confirmed; PERB records request recommended.",
+          "authorizer": "Alliance Piera Barbaglia Shaheen Hlt Srvs Acad District",
+          "website": "http://www.pbshsa.org",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0609014",
+          "name": "Alliance College-Ready Middle Academy 4",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Alliance Educators United (UTLA chapter)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)",
+          "certCase": "PERB Order No. Ad-491 / Decision 2809E (May 2020 — network-wide); Decision 2974E (2025 — ULP settled)",
+          "cbaStatus": "Active network CBA ratified May 2025. Campus-level CBA applicability not confirmed for all schools; PERB records request",
+          "firstContract": "Network CBA ratified May 2025 (100% YES vote). Campus-specific CBA applicability not separately confirmed; PERB records request recommended.",
+          "authorizer": "Alliance College-Ready Middle Academy 4 District",
+          "website": "http://crma4.org",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0610038",
+          "name": "Alliance Cindy and Bill Simon Technology Academy High",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Alliance Educators United (UTLA chapter)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)",
+          "certCase": "PERB Order No. Ad-491 / Decision 2809E (May 2020 — network-wide); Decision 2974E (2025 — ULP settled)",
+          "cbaStatus": "Active network CBA ratified May 2025. Campus-level CBA applicability not confirmed for all schools; PERB records request",
+          "firstContract": "Network CBA ratified May 2025 (100% YES vote). Campus-specific CBA applicability not separately confirmed; PERB records request recommended.",
+          "authorizer": "Alliance Cindy and Bill Simon Tech Acad High District",
+          "website": "http://simontechnology.org",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0611025",
+          "name": "Alliance Tennenbaum Family Technology High",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Alliance Educators United (UTLA chapter)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)",
+          "certCase": "PERB Order No. Ad-491 / Decision 2809E (May 2020 — network-wide); Decision 2974E (2025 — ULP settled)",
+          "cbaStatus": "Active network CBA ratified May 2025. Campus-level CBA applicability not confirmed for all schools; PERB records request",
+          "firstContract": "Network CBA ratified May 2025 (100% YES vote). Campus-specific CBA applicability not separately confirmed; PERB records request recommended.",
+          "authorizer": "Alliance Tennenbaum Family Technology High District",
+          "website": "http://www.tennenbaumtech.org/",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0611026",
+          "name": "Alliance Ted K. Tajima High",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Alliance Educators United (UTLA chapter)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)",
+          "certCase": "PERB Order No. Ad-491 / Decision 2809E (May 2020 — network-wide); Decision 2974E (2025 — ULP settled)",
+          "cbaStatus": "Active network CBA ratified May 2025. Campus-level CBA applicability not confirmed for all schools; PERB records request",
+          "firstContract": "Network CBA ratified May 2025 (100% YES vote). Campus-specific CBA applicability not separately confirmed; PERB records request recommended.",
+          "authorizer": "Alliance Ted K. Tajima High District",
+          "website": "http://www.tajimahigh.org",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0612002",
+          "name": "Alliance Renee and Meyer Luskin Academy High",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Alliance Educators United (UTLA chapter)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)",
+          "certCase": "PERB Order No. Ad-491 / Decision 2809E (May 2020 — network-wide); Decision 2974E (2025 — ULP settled)",
+          "cbaStatus": "Active network CBA ratified May 2025. Campus-level CBA applicability not confirmed for all schools; PERB records request",
+          "firstContract": "Network CBA ratified May 2025 (100% YES vote). Campus-specific CBA applicability not separately confirmed; PERB records request recommended.",
+          "authorizer": "Alliance Renee and Meyer Luskin Academy High District",
+          "website": "http://luskinacademy.org",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0612022",
+          "name": "Alliance Susan and Eric Smidt Technology High",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Alliance Educators United (UTLA chapter)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)",
+          "certCase": "PERB Order No. Ad-491 / Decision 2809E (May 2020 — network-wide); Decision 2974E (2025 — ULP settled)",
+          "cbaStatus": "Active network CBA ratified May 2025. Campus-level CBA applicability not confirmed for all schools; PERB records request",
+          "firstContract": "Network CBA ratified May 2025 (100% YES vote). Campus-specific CBA applicability not separately confirmed; PERB records request recommended.",
+          "authorizer": "Alliance Susan and Eric Smidt Technology High District",
+          "website": "http://smidttech.org",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0613050",
+          "name": "Alliance College-Ready Middle Academy 12",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Alliance Educators United (UTLA chapter)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)",
+          "certCase": "PERB Order No. Ad-491 / Decision 2809E (May 2020 — network-wide); Decision 2974E (2025 — ULP settled)",
+          "cbaStatus": "Active network CBA ratified May 2025. Campus-level CBA applicability not confirmed for all schools; PERB records request",
+          "firstContract": "Network CBA ratified May 2025 (100% YES vote). Campus-specific CBA applicability not separately confirmed; PERB records request recommended.",
+          "authorizer": "Alliance College-Ready Middle Academy 12 District",
+          "website": "http://crma12.org",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0614010",
+          "name": "Alliance College-Ready Middle Academy 8",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Alliance Educators United (UTLA chapter)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)",
+          "certCase": "PERB Order No. Ad-491 / Decision 2809E (May 2020 — network-wide); Decision 2974E (2025 — ULP settled)",
+          "cbaStatus": "Active network CBA ratified May 2025. Campus-level CBA applicability not confirmed for all schools; PERB records request",
+          "firstContract": "Network CBA ratified May 2025 (100% YES vote). Campus-specific CBA applicability not separately confirmed; PERB records request recommended.",
+          "authorizer": "Alliance College-Ready Middle Academy 8 District",
+          "website": "http://crma8.org",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0614011",
+          "name": "Alliance Kory Hunter Middle",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Alliance Educators United (UTLA chapter)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)",
+          "certCase": "PERB Order No. Ad-491 / Decision 2809E (May 2020 — network-wide); Decision 2974E (2025 — ULP settled)",
+          "cbaStatus": "Active network CBA ratified May 2025. Campus-level CBA applicability not confirmed for all schools; PERB records request",
+          "firstContract": "Network CBA ratified May 2025 (100% YES vote). Campus-specific CBA applicability not separately confirmed; PERB records request recommended.",
+          "authorizer": "Alliance Kory Hunter Middle District",
+          "website": "http://www.koryhunterms.org",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0614012",
+          "name": "Alliance Margaret M. Bloomfield Technology Academy High",
+          "city": "Huntington Park",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Alliance Educators United (UTLA chapter)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)",
+          "certCase": "PERB Order No. Ad-491 / Decision 2809E (May 2020 — network-wide); Decision 2974E (2025 — ULP settled)",
+          "cbaStatus": "Active network CBA ratified May 2025. Campus-level CBA applicability not confirmed for all schools; PERB records request",
+          "firstContract": "Network CBA ratified May 2025 (100% YES vote). Campus-specific CBA applicability not separately confirmed; PERB records request recommended.",
+          "authorizer": "Alliance Margaret M. Bloomfield Tech Acad High District",
+          "website": "http://bloomfieldhs.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0615005",
+          "name": "Alliance Marine - Innovation and Technology 6-12 Complex",
+          "city": "Sun Valley",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Alliance Educators United (UTLA chapter)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)",
+          "certCase": "PERB Order No. Ad-491 / Decision 2809E (May 2020 — network-wide); Decision 2974E (2025 — ULP settled)",
+          "cbaStatus": "Active network CBA ratified May 2025. Campus-level CBA applicability not confirmed for all schools; PERB records request",
+          "firstContract": "Network CBA ratified May 2025 (100% YES vote). Campus-specific CBA applicability not separately confirmed; PERB records request recommended.",
+          "authorizer": "Alliance Marine - Innovation and Tech 6-12 Complex District",
+          "website": "http://www.alliancemit.org",
+          "lat": 37.3688,
+          "lon": -122.0363
+        },
+        {
+          "napcsId": "C0615006",
+          "name": "Alliance Virgil Roberts Leadership Academy",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Alliance Educators United (UTLA chapter)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)",
+          "certCase": "PERB Order No. Ad-491 / Decision 2809E (May 2020 — network-wide); Decision 2974E (2025 — ULP settled)",
+          "cbaStatus": "Active network CBA ratified May 2025. Campus-level CBA applicability not confirmed for all schools; PERB records request",
+          "firstContract": "Network CBA ratified May 2025 (100% YES vote). Campus-specific CBA applicability not separately confirmed; PERB records request recommended.",
+          "authorizer": "Alliance Virgil Roberts Leadership Academy District",
+          "website": "http://www.avrlacademy.org",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0612029",
+          "name": "Citizens of the World Charter School: Silver Lake",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "June 7, 2024 (PERB recognition order — LA-RR-1352-E)",
+          "certCase": "LA-RR-1352-E (recognition 06/07/2024); LA-IM-4224-E (impasse 04/24/2026, resolved 04/29/2026)",
+          "cbaStatus": "No CBA confirmed. Impasse filed 04/24/2026, resolved 04/29/2026. Bargaining ongoing. PERB records request recommended fo",
+          "firstContract": "No first contract confirmed — impasse resolved April 29, 2026; bargaining ongoing",
+          "authorizer": "Citizens of the World Charter School Silver Lake District",
+          "website": "http://cwcsilverlake.org",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0613011",
+          "name": "Citizens of the World Charter School: Mar Vista",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "June 7, 2024 (PERB recognition order — LA-RR-1352-E)",
+          "certCase": "LA-RR-1352-E (recognition 06/07/2024); LA-IM-4224-E (impasse 04/24/2026, resolved 04/29/2026)",
+          "cbaStatus": "No CBA confirmed. Impasse filed 04/24/2026, resolved 04/29/2026. Bargaining ongoing. PERB records request recommended fo",
+          "firstContract": "No first contract confirmed — impasse resolved April 29, 2026; bargaining ongoing",
+          "authorizer": "Citizens of the World Charter School Mar Vista District",
+          "website": "http://www.cwcmarvista.org",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0617015",
+          "name": "Citizens of the World Charter School: Hollywood",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "June 7, 2024 (PERB recognition order — LA-RR-1352-E)",
+          "certCase": "LA-RR-1352-E (recognition 06/07/2024); LA-IM-4224-E (impasse 04/24/2026, resolved 04/29/2026)",
+          "cbaStatus": "No CBA confirmed. Impasse filed 04/24/2026, resolved 04/29/2026. Bargaining ongoing. PERB records request recommended fo",
+          "firstContract": "No first contract confirmed — impasse resolved April 29, 2026; bargaining ongoing",
+          "authorizer": "Citizens of the World Charter School Hollywood District",
+          "website": "http://cwchollywood.org",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0619068",
+          "name": "Citizens of the World Charter School: West Valley",
+          "city": "Winnetka",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "June 7, 2024 (PERB recognition order — LA-RR-1352-E)",
+          "certCase": "LA-RR-1352-E (recognition 06/07/2024); LA-IM-4224-E (impasse 04/24/2026, resolved 04/29/2026)",
+          "cbaStatus": "No CBA confirmed. Impasse filed 04/24/2026, resolved 04/29/2026. Bargaining ongoing. PERB records request recommended fo",
+          "firstContract": "No first contract confirmed — impasse resolved April 29, 2026; bargaining ongoing",
+          "authorizer": "Citizens of the World Charter School West Valley District",
+          "website": "http://www.cwcwestvalley.org/",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0621006",
+          "name": "Citizens of the World: East Valley",
+          "city": "Valley Village",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "June 7, 2024 (PERB recognition order — LA-RR-1352-E)",
+          "certCase": "LA-RR-1352-E (recognition 06/07/2024); LA-IM-4224-E (impasse 04/24/2026, resolved 04/29/2026)",
+          "cbaStatus": "No CBA confirmed. Impasse filed 04/24/2026, resolved 04/29/2026. Bargaining ongoing. PERB records request recommended fo",
+          "firstContract": "No first contract confirmed — impasse resolved April 29, 2026; bargaining ongoing",
+          "authorizer": "Citizens of the World Charter School East Valley District",
+          "website": "http://cwceastvalley.org/",
+          "lat": 33.9425,
+          "lon": -117.2297
+        },
+        {
+          "napcsId": "C0601017",
+          "name": "Environmental Charter High - Lawndale",
+          "city": "Lawndale",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Environmental Educators United",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "May 11, 2023 (PERB recognition order — LA-RR-1344-E)",
+          "certCase": "LA-RR-1344-E (recognition 05/11/2023); LA-IM-4190-E (impasse, closed 12/03/2025); LA-CE-7156-E (open ULP, filed 03/27/2026)",
+          "cbaStatus": "CBA status not confirmed from public sources. Impasse (LA-IM-4190-E) closed 12/03/2025. PERB records request recommended",
+          "firstContract": "Not confirmed from public sources — impasse resolved December 2025; CBA status not confirmed. PERB records request recommended.",
+          "authorizer": "Environmental Charter High - Lawndale District",
+          "website": "http://www.ecsonline.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0610046",
+          "name": "Environmental Charter Middle - Gardena",
+          "city": "Gardena",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Environmental Educators United",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "May 11, 2023 (PERB recognition order — LA-RR-1344-E; network-wide)",
+          "certCase": "LA-RR-1344-E (recognition 05/11/2023); LA-IM-4190-E (impasse, closed 12/03/2025)",
+          "cbaStatus": "CBA status not confirmed from public sources. Impasse (LA-IM-4190-E) closed 12/03/2025. PERB records request recommended",
+          "firstContract": "Not confirmed from public sources — impasse resolved December 2025; CBA status not confirmed. PERB records request recommended.",
+          "authorizer": "Environmental Charter Middle - Gardena District",
+          "website": "http://www.ecsonline.org",
+          "lat": 33.8883,
+          "lon": -118.3089
+        },
+        {
+          "napcsId": "C0613022",
+          "name": "Environmental Charter Middle - Inglewood",
+          "city": "Inglewood",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Environmental Educators United",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "May 11, 2023 (PERB recognition order — LA-RR-1344-E; network-wide)",
+          "certCase": "LA-RR-1344-E (recognition 05/11/2023); LA-IM-4190-E (impasse, closed 12/03/2025)",
+          "cbaStatus": "CBA status not confirmed from public sources. Impasse (LA-IM-4190-E) closed 12/03/2025. PERB records request recommended",
+          "firstContract": "Not confirmed from public sources — impasse resolved December 2025; CBA status not confirmed. PERB records request recommended.",
+          "authorizer": "Environmental Charter Middle - Inglewood District",
+          "website": "http://www.ecsonline.org",
+          "lat": 33.9617,
+          "lon": -118.3531
+        },
+        {
+          "napcsId": "C0621009",
+          "name": "Environmental Charter High - Gardena",
+          "city": "Gardena",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Environmental Educators United",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "May 11, 2023 (PERB recognition order — LA-RR-1344-E; network-wide)",
+          "certCase": "LA-RR-1344-E (recognition 05/11/2023); LA-IM-4190-E (impasse, closed 12/03/2025)",
+          "cbaStatus": "CBA status not confirmed from public sources. Impasse (LA-IM-4190-E) closed 12/03/2025. PERB records request recommended",
+          "firstContract": "Not confirmed from public sources — impasse resolved December 2025; CBA status not confirmed. PERB records request recommended.",
+          "authorizer": "Environmental Charter High - Gardena District",
+          "website": "http://www.ecsonline.org",
+          "lat": 33.8883,
+          "lon": -118.3089
+        },
+        {
+          "napcsId": "C0600015",
+          "name": "Joe Serna Jr. Charter",
+          "city": "Acampo",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "California School Employees Association (CSEA) — Chapter 665",
+          "stateAff": "California School Employees Association (CSEA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "Not confirmed — PERB records request required (PERBforms@perb.ca.gov)",
+          "certCase": "SA-CE-3264-E (open ULP, filed 03/25/2026); additional CSEA case numbers — PERB records request required",
+          "cbaStatus": "CBA status not confirmed from public sources. PERB records request recommended (PERBforms@perb.ca.gov).",
+          "firstContract": "Not confirmed from public sources — PERB records request required",
+          "authorizer": "Lodi Unified",
+          "website": "http://www.lodiusd.net",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0603033",
+          "name": "Leadership Public Schools: Richmond",
+          "city": "Richmond",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "East Bay Educators United",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "Not confirmed — PERB records request required (PERBforms@perb.ca.gov)",
+          "certCase": "SF-RR-1039-E; additional cases — PERB records request required",
+          "cbaStatus": "CBA status not confirmed from public sources. Multiple closed PERB cases per Registry v9. PERB records request recommend",
+          "firstContract": "Not confirmed from public sources — PERB records request recommended",
+          "authorizer": "Leadership Public Schools: Richmond District",
+          "website": "http://www.leadps.org",
+          "lat": 37.9358,
+          "lon": -122.3477
+        },
+        {
+          "napcsId": "C0604034",
+          "name": "Ivy Academia",
+          "city": "Woodland Hills",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Not confirmed — PERB records request required (PERBforms@perb.ca.gov)",
+          "certCase": "LA-RR-1212-E; multiple additional UTLA ULP cases per Registry v9 — PERB records request required for complete history",
+          "cbaStatus": "Active CBA presumed (UTLA-organized; active CBA confirmed pre-2024 per prior research). Current CBA terms not confirmed.",
+          "firstContract": "Not confirmed from public sources — PERB records request recommended",
+          "authorizer": "Ivy Academia District",
+          "website": "http://www.iaecs.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0604053",
+          "name": "Ocean Charter",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Ocean Charter Teachers Association",
+          "stateAff": "Independent (no state affiliate)",
+          "natlAff": "Independent (no national affiliate)",
+          "dateUnionized": "Circa 2005 (PERB recognition — LA-RR-1115-E); exact date not confirmed — PERB records request required",
+          "certCase": "LA-RR-1115-E (2005); active cases through 2016 per Registry v9 — PERB records request required for complete history",
+          "cbaStatus": "CBA status not confirmed from public sources. Active union from 2005 through at least 2016 per Registry v9. PERB records",
+          "firstContract": "Not confirmed from public sources — active since at least 2005. PERB records request recommended.",
+          "authorizer": "Ocean Charter District",
+          "website": "http://oceancs.org",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0605060",
+          "name": "Santa Rosa Academy",
+          "city": "Menifee",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Menifee Teachers Association",
+          "stateAff": "Not confirmed — PERB records request required to determine CTA/independent status",
+          "natlAff": "Not confirmed — PERB records request required",
+          "dateUnionized": "Not confirmed — PERB records request required (PERBforms@perb.ca.gov)",
+          "certCase": "LA-RR-1308-E; additional cases — PERB records request required",
+          "cbaStatus": "CBA status not confirmed from public sources. PERB records request recommended (PERBforms@perb.ca.gov).",
+          "firstContract": "Not confirmed from public sources — PERB records request recommended",
+          "authorizer": "Santa Rosa Academy District",
+          "website": "http://www.sra.mn",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0605133",
+          "name": "School of Arts and Enterprise",
+          "city": "Pomona",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "SAE Teachers Association",
+          "stateAff": "Independent (no state affiliate)",
+          "natlAff": "Independent (no national affiliate)",
+          "dateUnionized": "Not confirmed — PERB records request required (PERBforms@perb.ca.gov)",
+          "certCase": "LA-CE-6865-E; additional cases — PERB records request required",
+          "cbaStatus": "CBA status not confirmed from public sources. Active union per Registry v9. PERB records request recommended (PERBforms@",
+          "firstContract": "Not confirmed from public sources — PERB records request recommended",
+          "authorizer": "School of Arts and Enterprise District",
+          "website": "http://www.thesae.k12.ca.us/",
+          "lat": 34.0553,
+          "lon": -117.7526
+        },
+        {
+          "napcsId": "C0606003",
+          "name": "Albert Einstein Academies",
+          "city": "San Diego",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Einstein Educators Collective",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "Not confirmed — PERB records request required (PERBforms@perb.ca.gov)",
+          "certCase": "LA-RR-1351-E (certification); LA-CE-6951-E (closed ULP)",
+          "cbaStatus": "CBA status not confirmed from public sources. ULP LA-CE-6951-E closed per Registry v9. PERB records request recommended ",
+          "firstContract": "Not confirmed from public sources — PERB records request recommended",
+          "authorizer": "Albert Einstein Academies District",
+          "website": "http://www.aeacs.org/",
+          "lat": 32.7157,
+          "lon": -117.1611
+        },
+        {
+          "napcsId": "C0606059",
+          "name": "Monterey Bay Charter",
+          "city": "Pacific Grove",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Monterey Bay United",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "Circa 2020 (PERB certification — SF-RR-1011-E); exact date not confirmed — PERB records request required",
+          "certCase": "SF-RR-1011-E (2020); multiple resolved impasses per Registry v9 — PERB records request required",
+          "cbaStatus": "CBA status not confirmed from public sources. Multiple resolved impasses per Registry v9 suggest active bargaining histo",
+          "firstContract": "Not confirmed from public sources — PERB records request recommended",
+          "authorizer": "Monterey Bay Charter District",
+          "website": "http://www.mbayschool.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0606082",
+          "name": "Leadership Public Schools - Hayward",
+          "city": "Hayward",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "East Bay Educators United",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "Not confirmed — PERB records request required (PERBforms@perb.ca.gov)",
+          "certCase": "SF-CE-3673-E; additional cases — PERB records request required",
+          "cbaStatus": "CBA status not confirmed from public sources. PERB records request recommended (PERBforms@perb.ca.gov).",
+          "firstContract": "Not confirmed from public sources — PERB records request recommended",
+          "authorizer": "Leadership Public Schools - Hayward District",
+          "website": "http://www.leadps.org/hayward/",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0609069",
+          "name": "Sycamore Academy of Science and Cultural Arts",
+          "city": "Wildomar",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Lake Elsinore Teachers Association",
+          "stateAff": "Not confirmed — PERB records request required to determine CTA/independent status",
+          "natlAff": "Not confirmed — PERB records request required",
+          "dateUnionized": "Not confirmed — PERB records request required (PERBforms@perb.ca.gov)",
+          "certCase": "LA-DP-453-E and/or LA-DP-454-E (two-campus cases covering Wildomar and Chino Valley campuses); additional cases — PERB records request required",
+          "cbaStatus": "CBA status not confirmed from public sources. PERB records request recommended (PERBforms@perb.ca.gov).",
+          "firstContract": "Not confirmed from public sources — PERB records request recommended",
+          "authorizer": "Sycamore Academy of Science and Cultural Arts District",
+          "website": "http://www.sycamoreacademycharter.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0610119",
+          "name": "iQ Academy California-Los Angeles",
+          "city": "Simi Valley",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "IQ Academy Teachers Association",
+          "stateAff": "Independent (no state affiliate)",
+          "natlAff": "Independent (no national affiliate)",
+          "dateUnionized": "Not confirmed — PERB records request required (PERBforms@perb.ca.gov)",
+          "certCase": "LA-CE-6919-E; additional cases — PERB records request required",
+          "cbaStatus": "CBA status not confirmed from public sources. PERB records request recommended (PERBforms@perb.ca.gov).",
+          "firstContract": "Not confirmed from public sources — PERB records request recommended",
+          "authorizer": "IQ Academy California-Los Angeles District",
+          "website": "http://iqca.k12start.com",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0611108",
+          "name": "Thomas Edison Charter Academy",
+          "city": "San Francisco",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Edison Charter Teachers Union",
+          "stateAff": "Independent (no state affiliate)",
+          "natlAff": "Independent (no national affiliate)",
+          "dateUnionized": "Circa 2007 (PERB certification — SF-RR-895-E); exact date not confirmed — PERB records request required",
+          "certCase": "SF-RR-895-E (2007); additional cases — PERB records request required",
+          "cbaStatus": "CBA presumed active (organized since 2007). Current CBA terms not confirmed. PERB records request recommended (PERBforms",
+          "firstContract": "Not confirmed from public sources — organized since 2007. PERB records request recommended.",
+          "authorizer": "Thomas Edison Charter Academy District",
+          "website": "http://www.teca-sf.org",
+          "lat": 37.7749,
+          "lon": -122.4194
+        },
+        {
+          "napcsId": "C0612053",
+          "name": "Palmdale Aerospace Academy",
+          "city": "Palmdale",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Palmdale Elementary Teachers Association (certificated unit); Palmdale Aerospace",
+          "stateAff": "Not confirmed for either unit — PERB records request required",
+          "natlAff": "Not confirmed for either unit — PERB records request required",
+          "dateUnionized": "Not confirmed — PERB records request required for both units (PERBforms@perb.ca.gov)",
+          "certCase": "LA-RR-1325-E (certificated unit) and LA-RR-1340-E (classified unit); additional cases — PERB records request required",
+          "cbaStatus": "CBA status not confirmed from public sources for either unit. PERB records request recommended (PERBforms@perb.ca.gov).",
+          "firstContract": "Not confirmed from public sources for either unit — PERB records request recommended",
+          "authorizer": "Palmdale Aerospace Academy District",
+          "website": "http://www.tpaa.org",
+          "lat": 34.5794,
+          "lon": -118.1165
+        },
+        {
+          "napcsId": "C0619040",
+          "name": "Sycamore Academy of Science and Cultural Arts - Chino Valley",
+          "city": "Chino",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Lake Elsinore Teachers Association",
+          "stateAff": "Not confirmed — PERB records request required to determine CTA/independent status",
+          "natlAff": "Not confirmed — PERB records request required",
+          "dateUnionized": "Not confirmed — PERB records request required (PERBforms@perb.ca.gov)",
+          "certCase": "LA-DP-453-E and/or LA-DP-454-E (two-campus cases covering Wildomar and Chino Valley campuses); additional cases — PERB records request required",
+          "cbaStatus": "CBA status not confirmed from public sources. PERB records request recommended (PERBforms@perb.ca.gov).",
+          "firstContract": "Not confirmed from public sources — PERB records request recommended",
+          "authorizer": "Sycamore Acad of Sci and Cultural Arts - Chino Vly District",
+          "website": "http://www.sycamorechino.org/",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0694034",
+          "name": "Creative Arts Charter",
+          "city": "San Francisco",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Educators of San Francisco (UESF)",
+          "stateAff": "California Federation of Teachers (CFT)",
+          "natlAff": "American Federation of Teachers (AFT)",
+          "dateUnionized": "Circa 2010 (PERB certification — SF-RR-926-E and/or SF-RR-927-E); exact date not confirmed — PERB records request required",
+          "certCase": "SF-RR-926-E and SF-RR-927-E (2010); additional cases — PERB records request required",
+          "cbaStatus": "CBA presumed active (organized since 2010). Current CBA terms not confirmed. PERB records request recommended (PERBforms",
+          "firstContract": "Not confirmed from public sources — organized since 2010. PERB records request recommended.",
+          "authorizer": "Creative Arts Charter District",
+          "website": "http://www.creativeartscharter.org",
+          "lat": 37.7749,
+          "lon": -122.4194
+        },
+        {
+          "napcsId": "C0696020",
+          "name": "Montague Charter Academy",
+          "city": "Pacoima",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Not confirmed — long UTLA organizing history since 2001; exact PERB certification date requires records request (PERBforms@perb.ca.gov)",
+          "certCase": "LA-CE-7147-E (open ULP, filed 03/12/2026); multiple prior cert petitions and ULPs per Registry v9 — PERB records request required for complete history",
+          "cbaStatus": "CBA status not confirmed from public sources. Active union with long organizing history since 2001. PERB records request",
+          "firstContract": "Not confirmed from public sources — PERB records request recommended",
+          "authorizer": "Montague Charter Academy District",
+          "website": "http://montaguecharter.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0699038",
+          "name": "Pacific Collegiate Charter",
+          "city": "Santa Cruz",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Pacific Collegiate School (United PCS)",
+          "stateAff": "Independent (no state affiliate)",
+          "natlAff": "Independent (no national affiliate)",
+          "dateUnionized": "Not confirmed — PERB records request required (PERBforms@perb.ca.gov)",
+          "certCase": "SF-CE-3691-E (open); multiple resolved impasse cases per Registry v9 — PERB records request required",
+          "cbaStatus": "CBA status not confirmed from public sources. Multiple resolved impasses per Registry v9. OPEN case SF-CE-3691-E. PERB r",
+          "firstContract": "Not confirmed from public sources — multiple resolved impasses suggest active bargaining history. PERB records request recommended.",
+          "authorizer": "Pacific Collegiate Charter District",
+          "website": "http://www.pacificcollegiate.com",
+          "lat": 33.7455,
+          "lon": -117.8677
+        },
+        {
+          "napcsId": "C0694024",
+          "name": "San Carlos Charter Learning Center",
+          "city": "San Carlos",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "San Carlos Teachers Association (CTA affiliate)",
+          "stateAff": "CTA",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "1994 (district CBA coverage from opening — California first charter school)",
+          "certCase": "",
+          "cbaStatus": "Active — San Carlos Teachers Association CBA. Successor CBA terms pending Step 0 (coordinator: obtain CBA from PERB ADS ",
+          "firstContract": "N/A — covered by district CBA from opening. California's first charter school (1994).",
+          "authorizer": "San Carlos School District (LEA)",
+          "website": "https://www.sancarloscharter.org",
+          "lat": 37.7749,
+          "lon": -122.4194
+        },
+        {
+          "napcsId": "C0600004",
+          "name": "Arundel Elementary",
+          "city": "San Carlos",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "San Carlos Teachers Association (CTA affiliate)",
+          "stateAff": "CTA",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "District CBA — San Carlos USD",
+          "certCase": "",
+          "cbaStatus": "Active — San Carlos Teachers Association CBA (district-wide).",
+          "firstContract": "N/A — district CBA coverage.",
+          "authorizer": "San Carlos School District (LEA)",
+          "website": "https://www.scsdk8.org",
+          "lat": 37.7749,
+          "lon": -122.4194
+        },
+        {
+          "napcsId": "C0699005",
+          "name": "Brittan Acres Elementary",
+          "city": "San Carlos",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "San Carlos Teachers Association (CTA affiliate)",
+          "stateAff": "CTA",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "District CBA — San Carlos USD",
+          "certCase": "",
+          "cbaStatus": "Active — San Carlos Teachers Association CBA (district-wide).",
+          "firstContract": "N/A — district CBA coverage.",
+          "authorizer": "San Carlos School District (LEA)",
+          "website": "https://www.scsdk8.org",
+          "lat": 37.7749,
+          "lon": -122.4194
+        },
+        {
+          "napcsId": "C0699023",
+          "name": "Heather Elementary",
+          "city": "San Carlos",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "San Carlos Teachers Association (CTA affiliate)",
+          "stateAff": "CTA",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "District CBA — San Carlos USD",
+          "certCase": "",
+          "cbaStatus": "Active — San Carlos Teachers Association CBA (district-wide).",
+          "firstContract": "N/A — district CBA coverage.",
+          "authorizer": "San Carlos School District (LEA)",
+          "website": "https://www.scsdk8.org",
+          "lat": 37.7749,
+          "lon": -122.4194
+        },
+        {
+          "napcsId": "C0600036",
+          "name": "Tierra Linda Middle",
+          "city": "San Carlos",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "San Carlos Teachers Association (CTA affiliate)",
+          "stateAff": "CTA",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "District CBA — San Carlos USD",
+          "certCase": "",
+          "cbaStatus": "Active — San Carlos Teachers Association CBA (district-wide).",
+          "firstContract": "N/A — district CBA coverage.",
+          "authorizer": "San Carlos School District (LEA)",
+          "website": "https://www.scsdk8.org",
+          "lat": 37.7749,
+          "lon": -122.4194
+        },
+        {
+          "napcsId": "C0600042",
+          "name": "White Oaks Elementary",
+          "city": "San Carlos",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "San Carlos Teachers Association (CTA affiliate)",
+          "stateAff": "CTA",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "District CBA — San Carlos USD",
+          "certCase": "",
+          "cbaStatus": "Active — San Carlos Teachers Association CBA (district-wide).",
+          "firstContract": "N/A — district CBA coverage.",
+          "authorizer": "San Carlos School District (LEA)",
+          "website": "https://www.scsdk8.org",
+          "lat": 37.7749,
+          "lon": -122.4194
+        },
+        {
+          "napcsId": "C0604009",
+          "name": "Camino Nuevo Charter High",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Camino Nuevo Teachers Association (CTA affiliate)",
+          "stateAff": "CTA",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "With Camino Nuevo network",
+          "certCase": "Not confirmed from PERB primary source — pending PERB records request. Historical context: CNTA recognized 2005 (LA-RR-1112-E), impasse 2006-2007 (LA-IM-3360-E). Whether CNTA is still active and certified at Dalzell Lance campus requires PERB confirmation.",
+          "cbaStatus": "",
+          "firstContract": "",
+          "authorizer": "",
+          "website": "",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0697008",
+          "name": "River Valley Charter",
+          "city": "Lakeside",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "California Teachers Association (Lakeside USD local, CTA affiliate)",
+          "stateAff": "CTA",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "District CBA — Lakeside Union School District (PERB case for district certification)",
+          "certCase": "",
+          "cbaStatus": "",
+          "firstContract": "",
+          "authorizer": "",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0611068",
+          "name": "Realm Charter",
+          "city": "Berkeley",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Berkeley Federation of Teachers (AFT affiliate)",
+          "stateAff": "AFT",
+          "natlAff": "AFT/AFL-CIO",
+          "dateUnionized": "Unknown — PERB case number pending",
+          "certCase": "",
+          "cbaStatus": "",
+          "firstContract": "",
+          "authorizer": "",
+          "website": "",
+          "lat": 37.8716,
+          "lon": -122.2727
+        },
+        {
+          "napcsId": "C0608056",
+          "name": "Five Keys Adult School (SF Sheriffs Dept)",
+          "city": "San Francisco",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "California Federation of Teachers (CFT/AFT)",
+          "stateAff": "CFT",
+          "natlAff": "AFT/AFL-CIO",
+          "dateUnionized": "Unknown — PERB case number pending",
+          "certCase": "",
+          "cbaStatus": "",
+          "firstContract": "",
+          "authorizer": "",
+          "website": "",
+          "lat": 37.7749,
+          "lon": -122.4194
+        },
+        {
+          "napcsId": "C0614072",
+          "name": "Shenandoah Valley",
+          "city": "Plymouth",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Amador County Teachers Association (ACTA, CTA affiliate)",
+          "stateAff": "CTA",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "District CBA — Amador County USD",
+          "certCase": "",
+          "cbaStatus": "",
+          "firstContract": "",
+          "authorizer": "",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0698001",
+          "name": "Antioch Charter Academy",
+          "city": "Antioch",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Antioch Education Association (AEA, CTA affiliate)",
+          "stateAff": "CTA",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "District CBA — Antioch USD",
+          "certCase": "",
+          "cbaStatus": "",
+          "firstContract": "",
+          "authorizer": "",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0693004",
+          "name": "Darnall Charter",
+          "city": "Chula Vista",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Darnall Charter Teachers Association (CTA affiliate)",
+          "stateAff": "CTA",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Unknown — PERB case number pending",
+          "certCase": "",
+          "cbaStatus": "",
+          "firstContract": "",
+          "authorizer": "",
+          "website": "",
+          "lat": 32.6401,
+          "lon": -117.0842
+        },
+        {
+          "napcsId": "C0698007",
+          "name": "Helix High",
+          "city": "La Mesa",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Helix Teachers Association (CTA affiliate)",
+          "stateAff": "CTA",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Unknown — PERB case number pending",
+          "certCase": "",
+          "cbaStatus": "",
+          "firstContract": "",
+          "authorizer": "",
+          "website": "",
+          "lat": 37.8044,
+          "lon": -122.2712
+        },
+        {
+          "napcsId": "C0610032",
+          "name": "Children of Promise Preparatory Academy",
+          "city": "Inglewood",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Inglewood Teachers Association (ITA, CTA affiliate)",
+          "stateAff": "CTA",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "District CBA — Inglewood USD",
+          "certCase": "",
+          "cbaStatus": "",
+          "firstContract": "",
+          "authorizer": "",
+          "website": "",
+          "lat": 33.9617,
+          "lon": -118.3531
+        },
+        {
+          "napcsId": "C0616009",
+          "name": "Pinnacle Academy Charter Independent Study",
+          "city": "King City",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "King City Joint Union High School District Teachers Association (CTA affiliate)",
+          "stateAff": "CTA",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "District CBA — King City JUHSD",
+          "certCase": "",
+          "cbaStatus": "",
+          "firstContract": "",
+          "authorizer": "",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0605040",
+          "name": "Los Angeles Academy of Arts and Enterprise Charter",
+          "city": "Pomona",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "LA Academy of Arts and Enterprise (CTA affiliate)",
+          "stateAff": "CTA",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Unknown — PERB case number pending",
+          "certCase": "",
+          "cbaStatus": "",
+          "firstContract": "",
+          "authorizer": "",
+          "website": "",
+          "lat": 34.0553,
+          "lon": -117.7526
+        },
+        {
+          "napcsId": "C0602025",
+          "name": "Los Angeles Leadership Academy",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Los Angeles Leadership Academy United (independent local)",
+          "stateAff": "Independent",
+          "natlAff": "Independent",
+          "dateUnionized": "Unknown — PERB case number pending",
+          "certCase": "",
+          "cbaStatus": "",
+          "firstContract": "",
+          "authorizer": "",
+          "website": "",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0699030",
+          "name": "Mare Island Technology Academy",
+          "city": "Vallejo",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Mare Island Technology Academy Education Association (CTA affiliate)",
+          "stateAff": "CTA",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Unknown — PERB case number pending",
+          "certCase": "",
+          "cbaStatus": "",
+          "firstContract": "",
+          "authorizer": "",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0694017",
+          "name": "Mueller Charter School (Robert L.)",
+          "city": "Chula Vista",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Mueller Charter School Teachers Association (CTA affiliate)",
+          "stateAff": "CTA",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Unknown — PERB case number pending",
+          "certCase": "",
+          "cbaStatus": "",
+          "firstContract": "",
+          "authorizer": "",
+          "website": "",
+          "lat": 32.6401,
+          "lon": -117.0842
+        },
+        {
+          "napcsId": "C0695016",
+          "name": "Santiago Middle",
+          "city": "Garden Grove",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Orange Unified Education Association (OUEA, CTA affiliate)",
+          "stateAff": "CTA",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "District CBA — Orange USD",
+          "certCase": "",
+          "cbaStatus": "",
+          "firstContract": "",
+          "authorizer": "",
+          "website": "",
+          "lat": 33.8883,
+          "lon": -118.3089
+        },
+        {
+          "napcsId": "C0610014",
+          "name": "Architecture Construction and Engineering Charter",
+          "city": "Oxnard",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Oxnard Federation of Teachers and Staff (AFT affiliate)",
+          "stateAff": "AFT",
+          "natlAff": "AFT/AFL-CIO",
+          "dateUnionized": "District CBA — Oxnard USD",
+          "certCase": "",
+          "cbaStatus": "",
+          "firstContract": "",
+          "authorizer": "",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0613059",
+          "name": "Gateway To College Academy",
+          "city": "Petaluma",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Petaluma Federation of Teachers (AFT affiliate)",
+          "stateAff": "AFT",
+          "natlAff": "AFT/AFL-CIO",
+          "dateUnionized": "District CBA — Petaluma City USD",
+          "certCase": "",
+          "cbaStatus": "",
+          "firstContract": "",
+          "authorizer": "",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0612067",
+          "name": "Oak Park Preparatory Academy",
+          "city": "Sacramento",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Sacramento City Teachers Association (SCTA, CTA/NEA affiliate)",
+          "stateAff": "CTA",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "District CBA — Sacramento City USD",
+          "certCase": "",
+          "cbaStatus": "",
+          "firstContract": "",
+          "authorizer": "",
+          "website": "",
+          "lat": 38.5816,
+          "lon": -121.4944
+        },
+        {
+          "napcsId": "C0694027",
+          "name": "Harriet Tubman Village Charter",
+          "city": "San Diego",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "San Diego Education Association (SDEA, NEA affiliate)",
+          "stateAff": "NEA",
+          "natlAff": "NEA",
+          "dateUnionized": "District CBA — San Diego USD",
+          "certCase": "",
+          "cbaStatus": "",
+          "firstContract": "",
+          "authorizer": "",
+          "website": "",
+          "lat": 32.7157,
+          "lon": -117.1611
+        },
+        {
+          "napcsId": "C0605025",
+          "name": "Gompers Charter Middle",
+          "city": "San Diego",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "San Diego Educators Association (CTA affiliate)",
+          "stateAff": "CTA",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Unknown — PERB case number pending",
+          "certCase": "",
+          "cbaStatus": "",
+          "firstContract": "",
+          "authorizer": "",
+          "website": "",
+          "lat": 32.7157,
+          "lon": -117.1611
+        },
+        {
+          "napcsId": "C0608058",
+          "name": "Walter L. Bachrodt Elementary",
+          "city": "San Jose",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "San Jose Teachers Association (SJTA, CTA affiliate)",
+          "stateAff": "CTA",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "District CBA — San Jose USD",
+          "certCase": "",
+          "cbaStatus": "",
+          "firstContract": "",
+          "authorizer": "",
+          "website": "",
+          "lat": 37.3382,
+          "lon": -121.8863
+        },
+        {
+          "napcsId": "C0693012",
+          "name": "Peabody Charter",
+          "city": "Santa Barbara",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Santa Barbara Teachers Association (SBTA, CTA affiliate)",
+          "stateAff": "CTA",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "District CBA — Santa Barbara USD",
+          "certCase": "",
+          "cbaStatus": "",
+          "firstContract": "",
+          "authorizer": "",
+          "website": "",
+          "lat": 33.7455,
+          "lon": -117.8677
+        },
+        {
+          "napcsId": "C0615066",
+          "name": "Shasta County Independent Study Charter",
+          "city": "Redding",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Shasta County Certificated Employees Association (SCCEA, CTA affiliate)",
+          "stateAff": "CTA",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "County CBA — Shasta County Office of Education",
+          "certCase": "",
+          "cbaStatus": "",
+          "firstContract": "",
+          "authorizer": "",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0606072",
+          "name": "Steele Canyon High",
+          "city": "El Cajon",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Steele Canyon Charter Teachers Association (CTA affiliate)",
+          "stateAff": "CTA",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Unknown — PERB case number pending",
+          "certCase": "",
+          "cbaStatus": "",
+          "firstContract": "",
+          "authorizer": "",
+          "website": "",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0695002",
+          "name": "Children's Community Charter",
+          "city": "Paradise",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Teacher's Association of Paradise (TAP, CTA affiliate)",
+          "stateAff": "CTA",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "District CBA — Paradise USD",
+          "certCase": "",
+          "cbaStatus": "",
+          "firstContract": "",
+          "authorizer": "",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0606071",
+          "name": "Smythe Academy of Arts and Sciences",
+          "city": "Sacramento",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Twin Rivers United Educators (TRUE, CTA affiliate)",
+          "stateAff": "CTA",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "District CBA — Twin Rivers USD",
+          "certCase": "",
+          "cbaStatus": "",
+          "firstContract": "",
+          "authorizer": "",
+          "website": "",
+          "lat": 38.5816,
+          "lon": -121.4944
+        },
+        {
+          "napcsId": "C0694005",
+          "name": "Creative Arts Charter",
+          "city": "San Francisco",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Educators of San Francisco (UESF, AFT affiliate)",
+          "stateAff": "AFT",
+          "natlAff": "AFT/AFL-CIO",
+          "dateUnionized": "Unknown — PERB case number pending",
+          "certCase": "",
+          "cbaStatus": "",
+          "firstContract": "",
+          "authorizer": "",
+          "website": "",
+          "lat": 37.7749,
+          "lon": -122.4194
+        },
+        {
+          "napcsId": "C0693011",
+          "name": "Options for Youth-Victorville Charter",
+          "city": "Victorville",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Victor Valley Options for Youth Teachers Association (CTA affiliate)",
+          "stateAff": "CTA",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Unknown — PERB case number pending",
+          "certCase": "",
+          "cbaStatus": "",
+          "firstContract": "",
+          "authorizer": "",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0603045",
+          "name": "Animo Oscar De La Hoya Charter High",
+          "city": "LOS ANGELES",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Animo Management United (AMU) / UTLA chapter (Green Dot network union)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Green Dot network-wide certification — PERB certified (network AMU/UTLA)",
+          "certCase": "Green Dot / AMU network-level PERB certification — school-specific case number not confirmed; PERB records request recommended",
+          "cbaStatus": "Active — Green Dot network CBA covers all AMU member schools",
+          "firstContract": "Active — Green Dot network CBA in effect",
+          "authorizer": "OSCAR DE LA HOYA ANIMO CHARTER HIGH DISTRICT",
+          "website": "http://ca.greendot.org/odlh/",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0608025",
+          "name": "Alain Leroy Locke College Preparatory Academy",
+          "city": "LOS ANGELES",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Animo Management United (AMU) / UTLA chapter (Green Dot network union)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Green Dot network-wide certification — PERB certified (network AMU/UTLA)",
+          "certCase": "Green Dot / AMU network-level PERB certification — school-specific case number not confirmed; PERB records request recommended",
+          "cbaStatus": "Active — Green Dot network CBA covers all AMU member schools",
+          "firstContract": "Active — Green Dot network CBA in effect",
+          "authorizer": "ALAIN LEROY LOCKE COLLEGE PREPARATORY ACADEMY DISTRICT",
+          "website": "http://greendot.org/locke/",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0603076",
+          "name": "Granada Hills Charter High",
+          "city": "Granada Hills",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Pre-2016 UTLA certification (conversion charter or independent charter organizing)",
+          "certCase": "UTLA chapter confirmed per LA School Report (2016 source); school-specific PERB case number not confirmed. PERB records request required for exact certification date.",
+          "cbaStatus": "Active — UTLA CBA covers this school. Specific contract terms not confirmed from public sources.",
+          "firstContract": "Active CBA — UTLA multi-year contract in effect",
+          "authorizer": "GRANADA HILLS CHARTER DISTRICT",
+          "website": "http://www.ghctk12.com",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0611037",
+          "name": "El Camino Real Charter High",
+          "city": "Woodland Hills",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Pre-2016 UTLA certification (conversion charter or independent charter organizing)",
+          "certCase": "UTLA chapter confirmed per LA School Report (2016 source); school-specific PERB case number not confirmed. PERB records request required for exact certification date.",
+          "cbaStatus": "Active — UTLA CBA covers this school. Specific contract terms not confirmed from public sources.",
+          "firstContract": "Active CBA — UTLA multi-year contract in effect",
+          "authorizer": "EL CAMINO REAL CHARTER HIGH DISTRICT",
+          "website": "http://ecrchs.net",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0609009",
+          "name": "Birmingham Community Charter High",
+          "city": "Lake Balboa",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Pre-2016 UTLA certification (conversion charter or independent charter organizing)",
+          "certCase": "UTLA chapter confirmed per LA School Report (2016 source); school-specific PERB case number not confirmed. PERB records request required for exact certification date.",
+          "cbaStatus": "Active — UTLA CBA covers this school. Specific contract terms not confirmed from public sources.",
+          "firstContract": "Active CBA — UTLA multi-year contract in effect",
+          "authorizer": "BIRMINGHAM COMMUNITY CHARTER HIGH DISTRICT",
+          "website": "http://birminghamcharter.com",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0607033",
+          "name": "Global Education Academy",
+          "city": "LOS ANGELES",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Pre-2016 UTLA certification (conversion charter or independent charter organizing)",
+          "certCase": "UTLA chapter confirmed per LA School Report (2016 source); school-specific PERB case number not confirmed. PERB records request required for exact certification date.",
+          "cbaStatus": "Active — UTLA CBA covers this school. Specific contract terms not confirmed from public sources.",
+          "firstContract": "Active CBA — UTLA multi-year contract in effect",
+          "authorizer": "GLOBAL EDUCATION ACADEMY DISTRICT",
+          "website": "http://www.geaschool.com",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0614043",
+          "name": "Global Education Academy 2",
+          "city": "LOS ANGELES",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Pending verification — likely via network UTLA chapter",
+          "certCase": "UTLA chapter confirmed per LA School Report (2016 source); school-specific PERB case number not confirmed. PERB records request required for exact certification date.",
+          "cbaStatus": "Active — UTLA CBA covers this school. Specific contract terms not confirmed from public sources.",
+          "firstContract": "Active CBA — UTLA multi-year contract in effect",
+          "authorizer": "GLOBAL EDUCATION ACADEMY 2 DISTRICT",
+          "website": "http://www.geaschool.com",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0694032",
+          "name": "Accelerated School",
+          "city": "LOS ANGELES",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Pre-2016 UTLA certification (conversion charter or independent charter organizing)",
+          "certCase": "UTLA chapter confirmed per LA School Report (2016 source); school-specific PERB case number not confirmed. PERB records request required for exact certification date.",
+          "cbaStatus": "Active — UTLA CBA covers this school. Specific contract terms not confirmed from public sources.",
+          "firstContract": "Active CBA — UTLA multi-year contract in effect",
+          "authorizer": "ACCELERATED DISTRICT",
+          "website": "http://www.accelerated.org/our-schools/tas/",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0603093",
+          "name": "Pacoima Charter Elementary",
+          "city": "PACOIMA",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Pre-2016 UTLA certification (conversion charter or independent charter organizing)",
+          "certCase": "UTLA chapter confirmed per LA School Report (2016 source); school-specific PERB case number not confirmed. PERB records request required for exact certification date.",
+          "cbaStatus": "Active — UTLA CBA covers this school. Specific contract terms not confirmed from public sources.",
+          "firstContract": "Active CBA — UTLA multi-year contract in effect",
+          "authorizer": "PACOIMA CHARTER ELEMENTARY DISTRICT",
+          "website": "http://pacoimacharter.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0695025",
+          "name": "Palisades Charter High",
+          "city": "Pacific Palisades",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Pre-2016 UTLA certification (conversion charter or independent charter organizing)",
+          "certCase": "UTLA chapter confirmed per LA School Report (2016 source); school-specific PERB case number not confirmed. PERB records request required for exact certification date.",
+          "cbaStatus": "Active — UTLA CBA covers this school. Specific contract terms not confirmed from public sources.",
+          "firstContract": "Active CBA — UTLA multi-year contract in effect",
+          "authorizer": "PALISADES CHARTER HIGH DISTRICT",
+          "website": "http://palihigh.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0614021",
+          "name": "Caliber: Beta Academy",
+          "city": "San Pablo",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Caliber Workers Union / Caliber Independent Workers Association (IWW)",
+          "stateAff": "Independent (IWW — Industrial Workers of the World)",
+          "natlAff": "Industrial Workers of the World (IWW)",
+          "dateUnionized": "May 26, 2022 (voluntary recognition by CEO Terence Johnson; PERB confirmed majority support week of May 10, 2022)",
+          "certCase": "SF-RR-1020-E (original Caliber Beta organizing petition, April 2021). PERB confirmed majority support May 10, 2022. Voluntary recognition May 26, 2022. SF-DP-355-E and SF-DP-356-E (filed 02/25/2026) are post-recognition dispute petitions — not decertification. STATUS: CONFIRMED as of May 26, 2022.",
+          "cbaStatus": "Certified May 2022. CBA status unknown — IWW direct-action model. Caliber Workers Union website (caliberworkers.org) is ",
+          "firstContract": "N/A — no certification; no CBA applicable",
+          "authorizer": "Caliber Beta Academy District",
+          "website": "http://www.caliberbetaacademy.org",
+          "lat": 37.7749,
+          "lon": -122.4194
+        },
+        {
+          "napcsId": "C0616026",
+          "name": "Caliber: ChangeMakers Academy",
+          "city": "Vallejo",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Caliber Workers Union / Caliber Independent Workers Association (IWW)",
+          "stateAff": "Independent (IWW — Industrial Workers of the World)",
+          "natlAff": "Industrial Workers of the World (IWW)",
+          "dateUnionized": "May 26, 2022 (voluntary recognition by CEO Terence Johnson; PERB confirmed majority support week of May 10, 2022)",
+          "certCase": "SF-RR-1020-E (original Caliber Beta organizing petition, April 2021). PERB confirmed majority support May 10, 2022. Voluntary recognition May 26, 2022. SF-DP-355-E and SF-DP-356-E (filed 02/25/2026) are post-recognition dispute petitions — not decertification. STATUS: CONFIRMED as of May 26, 2022.",
+          "cbaStatus": "Certified May 2022. CBA status unknown — IWW direct-action model. Caliber Workers Union website (caliberworkers.org) is ",
+          "firstContract": "N/A — no certification; no CBA applicable",
+          "authorizer": "Caliber ChangeMakers Academy District",
+          "website": "http://www.calibercma.org/",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NAPCS-ADD-CA-001",
+          "name": "Horizon Charter",
+          "city": "Lincoln",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Horizon Certificated Employees Association (CTA/NEA) — certificated unit; Horizo",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "Certificated unit: 2001 (SA-RR-1028-E — recognition). Classified unit: recognition date not confirmed — PERB records request recommended.",
+          "certCase": "SA-RR-1028-E (certificated recognition, 2001). SA-CE-2975-E (ULP, 2019). SA-CE-2947-E (ULP, 2018). SA-IM-3542-E (impasse, 2021). SA-IM-3616-E (classified impasse, closed 07/28/2025). SA-IM-3538-E (classified impasse, 2021). Most recent case closed 07/28/2025.",
+          "cbaStatus": "Active CBAs for both units — long union history since 2001. Current CBA terms not confirmed from public sources. PERB re",
+          "firstContract": "Long-standing bargaining relationship since 2001 (certificated). First contract date not confirmed — PERB records request recommended.",
+          "authorizer": "Placer Hills Union Elementary School District (self-authorizing; verify with CDE)",
+          "website": "https://www.horizoncharter.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NAPCS-ADD-CA-002",
+          "name": "Port of Los Angeles High",
+          "city": "San Pedro",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Teachers Los Angeles (UTLA) — certified but dormant; no CBA ever ratified",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "December 15, 2014 (LA-RR-1237-E closed — UTLA certified as exclusive representative)",
+          "certCase": "LA-RR-1237-E (UTLA recognition — filed Oct 28, 2014; closed Dec 15, 2014). LA-DP-413-E (Dispute over Prior Recognition — filed Feb 18, 2016; closed Nov 8, 2016; NOT a decertification — see litigation notes).",
+          "cbaStatus": "None — no CBA ever ratified. UTLA certification is active (never decertified) but dormant. School operates without colle",
+          "firstContract": "None — no CBA ever ratified. UTLA certified Dec 2014; salary set by unilateral Board action as of 2025-26 (Board-approved Faculty Salary Matrix, effective 07/01/2025). No evidence of any collective bargaining agreement in POLAHS board records 2023-2025.",
+          "authorizer": "Los Angeles Unified School District (LAUSD)",
+          "website": "https://www.polahs.net",
+          "lat": 37.7749,
+          "lon": -122.4194
+        },
+        {
+          "napcsId": "NAPCS-ADD-CA-003",
+          "name": "Summit Preparatory Charter High",
+          "city": "Redwood City",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Unite Summit (CTA/NEA)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "February 27, 2023 (PERB(CA) certification via SF-CO-875-E)",
+          "certCase": "SF-RR-1004-E (original petition, 01/28/2019); SF-CO-875-E (certification order, 02/27/2023); SF-CE-3745-E (OPEN ULP, filed 01/16/2026). Multiple ULP charges 2019–2026 (20 EERA cases total in SF region per Registry scan).",
+          "cbaStatus": "First contract likely in bargaining or disputed — open ULP SF-CE-3745-E (filed 01/16/2026, open as of Registry scan May ",
+          "firstContract": "Not confirmed — certification February 2023; open ULP SF-CE-3745-E (filed 01/16/2026) likely related to first contract dispute. PERB records request recommended.",
+          "authorizer": "Sequoia Union High School District",
+          "website": "https://www.summitps.org/schools/prep/",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NAPCS-ADD-CA-004",
+          "name": "Sparrow Academy",
+          "city": "La Mesa",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "La Mesa-Spring Valley Teachers Association (CTA/NEA)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "Date not confirmed from public sources — LA-RR-1331-E recognition petition. PERB records request recommended.",
+          "certCase": "LA-RR-1331-E (La Mesa-Spring Valley Teachers Association recognition petition, Sparrow Academy).",
+          "cbaStatus": "Active — La Mesa-Spring Valley Teachers Association organized. CBA terms not confirmed. PERB records request recommended",
+          "firstContract": "Not confirmed from public sources — PERB records request recommended.",
+          "authorizer": "La Mesa-Spring Valley Unified School District",
+          "website": "https://www.lmsvusd.net/domain/553",
+          "lat": 37.8044,
+          "lon": -122.2712
+        },
+        {
+          "napcsId": "NAPCS-ADD-CA-005",
+          "name": "Riverside Preparatory",
+          "city": "Oro Grande",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Oro Grande Riverside Prep Educators Association (Independent)",
+          "stateAff": "Independent (no CTA/CFT affiliation)",
+          "natlAff": "Independent (no NEA/AFT affiliation)",
+          "dateUnionized": "Date not confirmed from public sources — LA-CE-6921-E (closed). PERB records request recommended.",
+          "certCase": "LA-CE-6921-E (closed ULP case — Oro Grande Riverside Prep Educators Association v. Riverside Preparatory School).",
+          "cbaStatus": "Active — Oro Grande Riverside Prep Educators Association organized. CBA status not confirmed — PERB records request reco",
+          "firstContract": "Not confirmed from public sources — PERB records request recommended.",
+          "authorizer": "Oro Grande School District",
+          "website": "https://www.ogusd.org/domain/21",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NAPCS-ADD-CA-006",
+          "name": "Quail Lake Environmental Charter",
+          "city": "Clovis",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Environmental Educators United (CTA/NEA)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "July 7, 2023 (PERB(CA) recognition — LA-RR-1344-E, certified 07/07/2023)",
+          "certCase": "LA-RR-1344-E (recognition, certified 07/07/2023); LA-IM-4190-E (impasse, closed 12/03/2025); LA-CE-7156-E (OPEN ULP, filed 03/27/2026). Same PERB cases as Environmental Charter Schools NAPCS schools.",
+          "cbaStatus": "First contract likely in bargaining or disputed — active ULP LA-CE-7156-E (filed 03/27/2026, open as of Registry scan Ma",
+          "firstContract": "Not confirmed — impasse LA-IM-4190-E closed 12/03/2025; active ULP LA-CE-7156-E (filed 03/27/2026) may indicate first contract dispute. PERB records request recommended.",
+          "authorizer": "Environmental Charter Schools (self-authorizing; Fresno County charter district)",
+          "website": "https://ecsonline.org/quail-lake/",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0603045",
+          "name": "Animo Oscar De La Hoya Charter High",
+          "city": "LOS ANGELES",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Animo Management United (AMU) / UTLA chapter (Green Dot network union)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Green Dot network-wide certification — PERB certified (network AMU/UTLA)",
+          "certCase": "Green Dot / AMU network-level PERB certification — school-specific case number not confirmed; PERB records request recommended",
+          "cbaStatus": "Active — Green Dot network CBA covers all AMU member schools",
+          "firstContract": "Active — Green Dot network CBA in effect",
+          "authorizer": "OSCAR DE LA HOYA ANIMO CHARTER HIGH DISTRICT",
+          "website": "http://ca.greendot.org/odlh/",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0603076",
+          "name": "Granada Hills Charter High",
+          "city": "Granada Hills",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Pre-2016 UTLA certification (conversion charter or independent charter organizing)",
+          "certCase": "UTLA chapter confirmed per LA School Report (2016 source); school-specific PERB case number not confirmed. PERB records request required for exact certification date.",
+          "cbaStatus": "Active — UTLA CBA covers this school. Specific contract terms not confirmed from public sources.",
+          "firstContract": "Active CBA — UTLA multi-year contract in effect",
+          "authorizer": "GRANADA HILLS CHARTER DISTRICT",
+          "website": "http://www.ghctk12.com",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0603093",
+          "name": "Pacoima Charter Elementary",
+          "city": "PACOIMA",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Pre-2016 UTLA certification (conversion charter or independent charter organizing)",
+          "certCase": "UTLA chapter confirmed per LA School Report (2016 source); school-specific PERB case number not confirmed. PERB records request required for exact certification date.",
+          "cbaStatus": "Active — UTLA CBA covers this school. Specific contract terms not confirmed from public sources.",
+          "firstContract": "Active CBA — UTLA multi-year contract in effect",
+          "authorizer": "PACOIMA CHARTER ELEMENTARY DISTRICT",
+          "website": "http://pacoimacharter.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0607033",
+          "name": "Global Education Academy",
+          "city": "LOS ANGELES",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Pre-2016 UTLA certification (conversion charter or independent charter organizing)",
+          "certCase": "UTLA chapter confirmed per LA School Report (2016 source); school-specific PERB case number not confirmed. PERB records request required for exact certification date.",
+          "cbaStatus": "Active — UTLA CBA covers this school. Specific contract terms not confirmed from public sources.",
+          "firstContract": "Active CBA — UTLA multi-year contract in effect",
+          "authorizer": "GLOBAL EDUCATION ACADEMY DISTRICT",
+          "website": "http://www.geaschool.com",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0608025",
+          "name": "Alain Leroy Locke College Preparatory Academy",
+          "city": "LOS ANGELES",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "Animo Management United (AMU) / UTLA chapter (Green Dot network union)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Green Dot network-wide certification — PERB certified (network AMU/UTLA)",
+          "certCase": "Green Dot / AMU network-level PERB certification — school-specific case number not confirmed; PERB records request recommended",
+          "cbaStatus": "Active — Green Dot network CBA covers all AMU member schools",
+          "firstContract": "Active — Green Dot network CBA in effect",
+          "authorizer": "ALAIN LEROY LOCKE COLLEGE PREPARATORY ACADEMY DISTRICT",
+          "website": "http://greendot.org/locke/",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0609009",
+          "name": "Birmingham Community Charter High",
+          "city": "Lake Balboa",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Pre-2016 UTLA certification (conversion charter or independent charter organizing)",
+          "certCase": "UTLA chapter confirmed per LA School Report (2016 source); school-specific PERB case number not confirmed. PERB records request required for exact certification date.",
+          "cbaStatus": "Active — UTLA CBA covers this school. Specific contract terms not confirmed from public sources.",
+          "firstContract": "Active CBA — UTLA multi-year contract in effect",
+          "authorizer": "BIRMINGHAM COMMUNITY CHARTER HIGH DISTRICT",
+          "website": "http://birminghamcharter.com",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0611037",
+          "name": "El Camino Real Charter High",
+          "city": "Woodland Hills",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Pre-2016 UTLA certification (conversion charter or independent charter organizing)",
+          "certCase": "UTLA chapter confirmed per LA School Report (2016 source); school-specific PERB case number not confirmed. PERB records request required for exact certification date.",
+          "cbaStatus": "Active — UTLA CBA covers this school. Specific contract terms not confirmed from public sources.",
+          "firstContract": "Active CBA — UTLA multi-year contract in effect",
+          "authorizer": "EL CAMINO REAL CHARTER HIGH DISTRICT",
+          "website": "http://ecrchs.net",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0614043",
+          "name": "Global Education Academy 2",
+          "city": "LOS ANGELES",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Pending verification — likely via network UTLA chapter",
+          "certCase": "UTLA chapter confirmed per LA School Report (2016 source); school-specific PERB case number not confirmed. PERB records request required for exact certification date.",
+          "cbaStatus": "Active — UTLA CBA covers this school. Specific contract terms not confirmed from public sources.",
+          "firstContract": "Active CBA — UTLA multi-year contract in effect",
+          "authorizer": "GLOBAL EDUCATION ACADEMY 2 DISTRICT",
+          "website": "http://www.geaschool.com",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0694032",
+          "name": "Accelerated School",
+          "city": "LOS ANGELES",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Pre-2016 UTLA certification (conversion charter or independent charter organizing)",
+          "certCase": "UTLA chapter confirmed per LA School Report (2016 source); school-specific PERB case number not confirmed. PERB records request required for exact certification date.",
+          "cbaStatus": "Active — UTLA CBA covers this school. Specific contract terms not confirmed from public sources.",
+          "firstContract": "Active CBA — UTLA multi-year contract in effect",
+          "authorizer": "ACCELERATED DISTRICT",
+          "website": "http://www.accelerated.org/our-schools/tas/",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0695025",
+          "name": "Palisades Charter High",
+          "city": "Pacific Palisades",
+          "state": "CA",
+          "status": "CONFIRMED",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Pre-2016 UTLA certification (conversion charter or independent charter organizing)",
+          "certCase": "UTLA chapter confirmed per LA School Report (2016 source); school-specific PERB case number not confirmed. PERB records request required for exact certification date.",
+          "cbaStatus": "Active — UTLA CBA covers this school. Specific contract terms not confirmed from public sources.",
+          "firstContract": "Active CBA — UTLA multi-year contract in effect",
+          "authorizer": "PALISADES CHARTER HIGH DISTRICT",
+          "website": "http://palihigh.org",
+          "lat": null,
+          "lon": null
+        }
+      ],
+      "dependentSchools": [
+        {
+          "napcsId": "C0612051",
+          "name": "Alfred B. Nobel Charter Middle School",
+          "city": "Northridge",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://nobelms.com",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0611013",
+          "name": "Beckford Charter for Enriched Studies",
+          "city": "Northridge",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://beckfordcharter.lausd.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0611014",
+          "name": "Calabash Charter Academy",
+          "city": "Woodland Hills",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://calabashacad.lausd.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0613093",
+          "name": "Calvert Charter for Enriched Studies",
+          "city": "Woodland Hills",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://calvertes.lausd.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0693002",
+          "name": "Canyon Elementary Charter School",
+          "city": "Santa Monica",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://canyoncharter.com",
+          "lat": 33.7455,
+          "lon": -117.8677
+        },
+        {
+          "napcsId": "C0610028",
+          "name": "Carpenter Community Charter School",
+          "city": "Studio City",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://carpenteres.lausd.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0613088",
+          "name": "Chatsworth Charter High School",
+          "city": "Chatsworth",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://chatsworthhs.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0608029",
+          "name": "Colfax Charter Elementary School",
+          "city": "Valley Village",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://colfaxcharteres.lausd.org",
+          "lat": 33.9425,
+          "lon": -117.2297
+        },
+        {
+          "napcsId": "C0605014",
+          "name": "Community Magnet Charter Elementary School",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://communitymagnetces.lausd.org",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0612052",
+          "name": "Castlebay Lane Charter Elementary School",
+          "city": "Northridge",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://castlebaylanecharter.com",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0612031",
+          "name": "Dearborn Elementary Charter Academy",
+          "city": "Northridge",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://dearbornelem.com",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0612032",
+          "name": "Dixie Canyon Community Charter School",
+          "city": "Sherman Oaks",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://dixiecanyones.lausd.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0604017",
+          "name": "Dr. Theodore T. Alexander Jr. Science Center School",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://alexanderes.lausd.org",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0612033",
+          "name": "El Oro Way Charter for Enriched Studies",
+          "city": "Granada Hills",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://elorowaycharteres.lausd.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0614035",
+          "name": "Emerson Community Charter School",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://emersoncc.lausd.org",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0612020",
+          "name": "Enadia Way Technology Charter School",
+          "city": "West Hills",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://enadiaway.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0612034",
+          "name": "Encino Charter Elementary School",
+          "city": "Encino",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://encinoces.lausd.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0613089",
+          "name": "Grover Cleveland Charter High School",
+          "city": "Reseda",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://clevelandhs.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0611043",
+          "name": "Hale Charter Academy",
+          "city": "Woodland Hills",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://halecharteracademy.com",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0612036",
+          "name": "Hamlin Charter Academy",
+          "city": "West Hills",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://hamlincharter.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0612037",
+          "name": "Haynes Charter for Enriched Studies",
+          "city": "West Hills",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://haynesces.lausd.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0612003",
+          "name": "Hesby Oaks Leadership Charter School",
+          "city": "Encino",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://hesbyoaks.com",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0612038",
+          "name": "Justice Street Academy Charter School",
+          "city": "West Hills",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://justicestacademyes.lausd.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0693022",
+          "name": "Kenter Canyon Elementary Charter School",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://kentercanyones.lausd.org",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0612039",
+          "name": "Knollwood Preparatory Academy",
+          "city": "Granada Hills",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://knollwoodacad.lausd.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0612040",
+          "name": "Lockhurst Drive Charter Elementary School",
+          "city": "Woodland Hills",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://lockhurstes.lausd.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0612050",
+          "name": "Louis Armstrong Middle School Charter",
+          "city": "Sherman Oaks",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://louisarmstrongms.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0693023",
+          "name": "Marquez Charter Elementary School",
+          "city": "Pacific Palisades",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://marquezres.lausd.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0612041",
+          "name": "Nestle Avenue Charter Elementary School",
+          "city": "Tarzana",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://nestleavecharter.com",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0693010",
+          "name": "Open Charter Magnet School",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://www.opencharter.org",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0698011",
+          "name": "Palisades Charter Elementary School",
+          "city": "Pacific Palisades",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://palielementary.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0612042",
+          "name": "Plainview Academic Charter Academy",
+          "city": "Tujunga",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://plainview.lausd.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0611065",
+          "name": "Pomelo Community Charter School",
+          "city": "West Hills",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://pomelocharteres.lausd.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0694020",
+          "name": "Paul Revere Charter Middle School and Magnet Center",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://www.paulreverems.com",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0611100",
+          "name": "Riverside Drive Charter Elementary School",
+          "city": "Sherman Oaks",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://riversidedrivecharter.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0612043",
+          "name": "Serrania Avenue Charter for Enriched Studies",
+          "city": "Woodland Hills",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://serraniaavees.lausd.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0611073",
+          "name": "Sherman Oaks Elementary Charter School",
+          "city": "Sherman Oaks",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://shermanoakselementarycharter.com",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0612044",
+          "name": "Superior Street Elementary Charter School",
+          "city": "Chatsworth",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://superiores.lausd.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0616012",
+          "name": "Sylmar Charter High School",
+          "city": "Sylmar",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://sylmarhs.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0613090",
+          "name": "Taft Charter High School",
+          "city": "Woodland Hills",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://www.lausd.k12.ca.us/Taft_HS",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0695018",
+          "name": "Topanga Elementary Charter School",
+          "city": "Topanga",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://www.topangaelementary.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0612045",
+          "name": "Topeka Charter School for Advanced Studies",
+          "city": "Northridge",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://topekacharter.lausd.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0612046",
+          "name": "Van Gogh Charter School",
+          "city": "Granada Hills",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://vangoghcharter.lausd.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0611091",
+          "name": "Welby Way Elementary Charter School",
+          "city": "West Hills",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://welbywayces.lausd.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0693021",
+          "name": "Westwood Elementary Charter School",
+          "city": "Los Angeles",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://westwoodces.lausd.org",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0612047",
+          "name": "Wilbur Charter for Enriched Academics",
+          "city": "Tarzana",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://wilburcharteres.lausd.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0612048",
+          "name": "Woodlake Elementary Community Charter School",
+          "city": "Woodland Hills",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://woodlakeelementary.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0612049",
+          "name": "Woodland Hills Elementary Charter for Enriched Studies",
+          "city": "Woodland Hills",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "United Teachers Los Angeles (UTLA)",
+          "stateAff": "California Teachers Association (CTA) / California Federation of Teachers (CFT)",
+          "natlAff": "AFT / NEA (UTLA is dual-affiliated)",
+          "dateUnionized": "Structural — no independent certification event",
+          "certCase": "N/A — structural coverage under LAUSD master CBA",
+          "cbaStatus": "Active — LAUSD-UTLA Master CBA 2022–2025 (utla.net/contracts); 2025–2027 successor Tentative Agreement reached April 12,",
+          "firstContract": "N/A — covered under LAUSD-UTLA master CBA",
+          "authorizer": "Los Angeles Unified School District",
+          "website": "http://wheces.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0600016",
+          "name": "Journey School",
+          "city": "Aliso Viejo",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Capistrano Unified Education Association (CUEA — CTA/NEA) — coverage unverified",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "UNVERIFIED",
+          "certCase": "None found — PERB(CA) Registry scan May 9, 2026",
+          "cbaStatus": "UNVERIFIED — no CBA records found in PERB(CA) Registry scan (May 9, 2026) or open-source research.",
+          "firstContract": "UNVERIFIED",
+          "authorizer": "Capistrano Unified School District",
+          "website": "http://www.journeyschool.net",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0600019",
+          "name": "Marysville Charter Academy For The Arts",
+          "city": "Marysville",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Marysville Teachers Association (CTA/NEA)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Marysville Joint Unified School District district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under Marysville Joint Unified School District master CBA",
+          "cbaStatus": "Active — district master CBA in effect.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Marysville Joint Unified School District",
+          "website": "N/A",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0600029",
+          "name": "Orchard View",
+          "city": "Sebastopol",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Twin Hills Teachers Association (CTA)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Twin Hills Union Elementary School District district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under Twin Hills Union Elementary School District master CBA",
+          "cbaStatus": "Active — district master CBA in effect.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Twin Hills Union Elementary School District",
+          "website": "http://www.orchardviewschool.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0601009",
+          "name": "Delta Charter Elementary",
+          "city": "Tracy",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "New Jerusalem Teachers Association (CTA)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via New Jerusalem Elementary School District district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under New Jerusalem Elementary School District master CBA",
+          "cbaStatus": "Active — district master CBA in effect.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "New Jerusalem Elementary School District",
+          "website": "http://www.deltacharter.net",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0601010",
+          "name": "Denair Charter Academy",
+          "city": "Denair",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Denair Teachers Association (CTA)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Denair Unified School District district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under Denair Unified School District master CBA",
+          "cbaStatus": "Active — district master CBA in effect.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Denair Unified School District",
+          "website": "http://www.dusd.k12.ca.us/dca",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0601030",
+          "name": "Nuview Bridge Early College High",
+          "city": "Nuevo",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Nuview Teachers Association (CTA) — coverage unverified",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Nuview Union School District district CBA (structural coverage — verification needed)",
+          "certCase": "No independent PERB certification — employees likely covered under Nuview Union School District master CBA; confirmation required",
+          "cbaStatus": "Assumed active — district master CBA in effect; verification needed before accumulator entry.",
+          "firstContract": "N/A — covered under district master CBA (if coverage confirmed)",
+          "authorizer": "Nuview Union School District",
+          "website": "http://nbechs.nuviewusd.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0601037",
+          "name": "Watsonville Charter School Of The Arts",
+          "city": "Watsonville",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Pajaro Valley Federation of Teachers (AFT/CFT Local 1936)",
+          "stateAff": "California Federation of Teachers (CFT)",
+          "natlAff": "AFT / CFT",
+          "dateUnionized": "Via Pajaro Valley Unified SD district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under PVUSD/PVFT master CBA 2022-2025. PVFT = AFT/CFT Local 1936.",
+          "cbaStatus": "Active — district master CBA in effect. See union and certCase fields for details.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Pajaro Valley Unified School District",
+          "website": "N/A",
+          "lat": 36.9102,
+          "lon": -121.7569
+        },
+        {
+          "napcsId": "C0601088",
+          "name": "Roseland Charter",
+          "city": "Santa Rosa",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Roseland Teachers Association (CTA/NEA)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Roseland Public Schools district CBA (pre-dates charter — structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under Roseland Charter District master CBA",
+          "cbaStatus": "Active — district master CBA in effect. See union and certCase fields for details.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Roseland Public Schools (Roseland Charter District)",
+          "website": "http://www.roselandsd.org",
+          "lat": 38.4405,
+          "lon": -122.7145
+        },
+        {
+          "napcsId": "C0602027",
+          "name": "Mary Collins Charter School At Cherry Valley",
+          "city": "PETALUMA",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Petaluma Federation of Teachers (AFT/CFT)",
+          "stateAff": "California Federation of Teachers (CFT)",
+          "natlAff": "AFT / CFT",
+          "dateUnionized": "Via Petaluma Joint Union High School District district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under Petaluma Joint Union High School District master CBA",
+          "cbaStatus": "Active — district master CBA in effect.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Petaluma Joint Union High School District",
+          "website": "http://www.cherryvalleyelementary.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0602040",
+          "name": "Pacific Crest Academy",
+          "city": "El Dorado",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "El Dorado Teachers Association (CTA) — coverage unverified",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via El Dorado Union High School District district CBA (structural coverage — verification needed)",
+          "certCase": "No independent PERB certification — employees likely covered under El Dorado Union High School District master CBA; confirmation required",
+          "cbaStatus": "Assumed active — district master CBA in effect; verification needed before accumulator entry.",
+          "firstContract": "N/A — covered under district master CBA (if coverage confirmed)",
+          "authorizer": "El Dorado Union High School District",
+          "website": "http://pacificcrest.eduhsd.k12.ca.us",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0602042",
+          "name": "Sunridge Charter",
+          "city": "Sebastopol",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Twin Hills Teachers Association (CTA)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Twin Hills Union Elementary School District district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under Twin Hills Union Elementary School District master CBA",
+          "cbaStatus": "Active — district master CBA in effect.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Twin Hills Union Elementary School District",
+          "website": "http://www.sunridgeschool.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0603001",
+          "name": "George Washington Carver School Of Arts And Science",
+          "city": "Sacramento",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Sacramento City Teachers Association (CTA/NEA) — coverage unverified",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Sacramento City Unified district CBA (structural coverage — verification needed)",
+          "certCase": "No independent PERB certification — employees likely covered under Sacramento City Unified master CBA; confirmation required",
+          "cbaStatus": "Assumed active — district master CBA in effect; verification needed before accumulator entry.",
+          "firstContract": "N/A — covered under district master CBA (if coverage confirmed)",
+          "authorizer": "Sacramento City Unified",
+          "website": "http://www.carverartsandscience.org",
+          "lat": 38.5816,
+          "lon": -121.4944
+        },
+        {
+          "napcsId": "C0603004",
+          "name": "California Military Institute",
+          "city": "Perris",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Perris Teachers Association (CTA/NEA) — coverage unverified",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Perris Union High School District district CBA (structural coverage — verification needed)",
+          "certCase": "No independent PERB certification — employees likely covered under Perris Union High School District master CBA; confirmation required",
+          "cbaStatus": "Assumed active — district master CBA in effect; verification needed before accumulator entry.",
+          "firstContract": "N/A — covered under district master CBA (if coverage confirmed)",
+          "authorizer": "Perris Union High School District",
+          "website": "http://www.cmicharter.org/",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0603016",
+          "name": "El Rancho Charter",
+          "city": "Anaheim",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Orange Unified Education Association (CTA/NEA) — coverage unverified",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Orange Unified School District district CBA (structural coverage — verification needed)",
+          "certCase": "No independent PERB certification — employees likely covered under Orange Unified School District master CBA; confirmation required",
+          "cbaStatus": "Assumed active — district master CBA in effect; verification needed before accumulator entry.",
+          "firstContract": "N/A — covered under district master CBA (if coverage confirmed)",
+          "authorizer": "Orange Unified School District",
+          "website": "http://www.elranchocharter.org",
+          "lat": 33.8366,
+          "lon": -117.9143
+        },
+        {
+          "napcsId": "C0603023",
+          "name": "Hawthorne Math And Science Academy",
+          "city": "Hawthorne",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Hawthorne Teachers Association (CTA) — coverage unverified",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Hawthorne School District district CBA (structural coverage — verification needed)",
+          "certCase": "No independent PERB certification — employees likely covered under Hawthorne School District master CBA; confirmation required",
+          "cbaStatus": "Assumed active — district master CBA in effect; verification needed before accumulator entry.",
+          "firstContract": "N/A — covered under district master CBA (if coverage confirmed)",
+          "authorizer": "Hawthorne School District",
+          "website": "http://www.hawthornemsa.org",
+          "lat": 33.9164,
+          "lon": -118.3526
+        },
+        {
+          "napcsId": "C0603037",
+          "name": "The Met",
+          "city": "Sacramento",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Sacramento City Teachers Association (CTA/NEA) — coverage unverified",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Sacramento City Unified district CBA (structural coverage — verification needed)",
+          "certCase": "No independent PERB certification — employees likely covered under Sacramento City Unified master CBA; confirmation required",
+          "cbaStatus": "Assumed active — district master CBA in effect; verification needed before accumulator entry.",
+          "firstContract": "N/A — covered under district master CBA (if coverage confirmed)",
+          "authorizer": "Sacramento City Unified",
+          "website": "N/A",
+          "lat": 38.5816,
+          "lon": -121.4944
+        },
+        {
+          "napcsId": "C0603040",
+          "name": "New Technology High",
+          "city": "Sacramento",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Sacramento City Teachers Association (CTA/NEA) — coverage unverified",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Sacramento City Unified district CBA (structural coverage — verification needed)",
+          "certCase": "No independent PERB certification — employees likely covered under Sacramento City Unified master CBA; confirmation required",
+          "cbaStatus": "Assumed active — district master CBA in effect; verification needed before accumulator entry.",
+          "firstContract": "N/A — covered under district master CBA (if coverage confirmed)",
+          "authorizer": "Sacramento City Unified",
+          "website": "N/A",
+          "lat": 38.5816,
+          "lon": -121.4944
+        },
+        {
+          "napcsId": "C0604011",
+          "name": "Northwest Prep Charter",
+          "city": "Santa Rosa",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Piner-Olivet Teachers Association (CTA)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Piner-Olivet Union Elementary SD district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under Piner-Olivet Union Elementary SD master CBA",
+          "cbaStatus": "Active — district master CBA in effect. See union and certCase fields for details.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Piner-Olivet Union Elementary School District",
+          "website": "http://www.pousd.org",
+          "lat": 38.4405,
+          "lon": -122.7145
+        },
+        {
+          "napcsId": "C0604045",
+          "name": "Mark West Charter",
+          "city": "Santa Rosa",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Mark West Teachers Association (CTA)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Mark West Union School District district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under Mark West Union SD master CBA",
+          "cbaStatus": "Active — district master CBA in effect. See union and certCase fields for details.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Mark West Union School District",
+          "website": "http://www.markwestcharter.org",
+          "lat": 38.4405,
+          "lon": -122.7145
+        },
+        {
+          "napcsId": "C0604058",
+          "name": "Spring Creek Elementary Charter",
+          "city": "Santa Rosa",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Rincon Valley Teachers Association (CTA)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Rincon Valley Union Elementary SD district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under Rincon Valley Union Elementary SD master CBA",
+          "cbaStatus": "Active — district master CBA in effect. See union and certCase fields for details.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Rincon Valley Union Elementary School District",
+          "website": "N/A",
+          "lat": 38.4405,
+          "lon": -122.7145
+        },
+        {
+          "napcsId": "C0604059",
+          "name": "Santa Rosa Accelerated Charter",
+          "city": "Santa Rosa",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Santa Rosa Teachers Association (CTA/NEA)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Santa Rosa City Schools district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under SRCS/SRTA master CBA. Active SRTA CBA: 2024-2027 (ratified June 26, 2024)",
+          "cbaStatus": "Active — district master CBA in effect. See union and certCase fields for details.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Santa Rosa City Schools (Santa Rosa Elementary School District)",
+          "website": "http://sracs-santarosa-ca.schoolloop.com",
+          "lat": 38.4405,
+          "lon": -122.7145
+        },
+        {
+          "napcsId": "C0604069",
+          "name": "Whitmore Charter High",
+          "city": "Ceres",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Ceres Teachers Association (CTA) — coverage unverified",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Ceres Unified School District district CBA (structural coverage — verification needed)",
+          "certCase": "No independent PERB certification — employees likely covered under Ceres Unified School District master CBA; confirmation required",
+          "cbaStatus": "Assumed active — district master CBA in effect; verification needed before accumulator entry.",
+          "firstContract": "N/A — covered under district master CBA (if coverage confirmed)",
+          "authorizer": "Ceres Unified School District",
+          "website": "http://www.ceres.k12.ca.us/wcs",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0604070",
+          "name": "Whitmore Charter School Of Art & Technology",
+          "city": "Ceres",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Ceres Teachers Association (CTA) — coverage unverified",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Ceres Unified School District district CBA (structural coverage — verification needed)",
+          "certCase": "No independent PERB certification — employees likely covered under Ceres Unified School District master CBA; confirmation required",
+          "cbaStatus": "Assumed active — district master CBA in effect; verification needed before accumulator entry.",
+          "firstContract": "N/A — covered under district master CBA (if coverage confirmed)",
+          "authorizer": "Ceres Unified School District",
+          "website": "http://www.ceres.k12.ca.us",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0604071",
+          "name": "Oak Grove Elementary/Willowside Middle",
+          "city": "Santa Rosa",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Oak Grove Education Association (CTA)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Oak Grove Union Elementary SD district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under Oak Grove Union Elementary SD master CBA",
+          "cbaStatus": "Active — district master CBA in effect. See union and certCase fields for details.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Oak Grove Union Elementary School District",
+          "website": "http://www.ogusd.org",
+          "lat": 38.4405,
+          "lon": -122.7145
+        },
+        {
+          "napcsId": "C0605015",
+          "name": "Creative Connections Arts Academy",
+          "city": "NORTH HIGHLANDS",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Twin Rivers Educators Association (CTA/NEA) — coverage unverified",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Twin Rivers Unified School District district CBA (structural coverage — verification needed)",
+          "certCase": "No independent PERB certification — employees likely covered under Twin Rivers Unified School District master CBA; confirmation required",
+          "cbaStatus": "Assumed active — district master CBA in effect; verification needed before accumulator entry.",
+          "firstContract": "N/A — covered under district master CBA (if coverage confirmed)",
+          "authorizer": "Twin Rivers Unified School District",
+          "website": "http://ccaa.trusd.net/",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0606038",
+          "name": "Fairmont Charter Elementary",
+          "city": "Vacaville",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Vacaville Teachers Association (CTA/NEA)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Vacaville Unified School District district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under Vacaville Unified School District master CBA",
+          "cbaStatus": "Active — district master CBA in effect.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Vacaville Unified School District",
+          "website": "http://fairmont.vacavilleusd.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0606040",
+          "name": "Forestville Academy",
+          "city": "Forestville",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Forestville Teachers Association (CTA)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Forestville Union Elementary School District district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under Forestville Union Elementary School District master CBA",
+          "cbaStatus": "Active — district master CBA in effect.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Forestville Union Elementary School District",
+          "website": "http://www.forestvilleusd.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0606064",
+          "name": "Paradise Charter",
+          "city": "Modesto",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Paradise Teachers Association (CTA)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Paradise Elementary School District district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under Paradise Elementary School District master CBA",
+          "cbaStatus": "Active — district master CBA in effect.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Paradise Elementary School District",
+          "website": "http://www.paradiseesd.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0606069",
+          "name": "Salmon Creek School - A Charter",
+          "city": "Occidental",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Harmony Teachers Association (CTA)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Harmony Union Elementary School District district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under Harmony Union Elementary School District master CBA",
+          "cbaStatus": "Active — district master CBA in effect.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Harmony Union Elementary School District",
+          "website": "http://www.harmonyusd.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0607012",
+          "name": "Butterfield Charter",
+          "city": "Porterville",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Porterville Federation of Teachers (AFT/CFT) or Porterville Teachers Association",
+          "stateAff": "California Federation of Teachers (CFT)",
+          "natlAff": "AFT / CFT",
+          "dateUnionized": "Via Porterville Unified School District district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under Porterville Unified School District master CBA",
+          "cbaStatus": "Active — district master CBA in effect.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Porterville Unified School District",
+          "website": "N/A",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0607074",
+          "name": "Santa Rosa Charter School For The Arts",
+          "city": "Santa Rosa",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Santa Rosa Teachers Association (CTA/NEA)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Santa Rosa City Schools district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under SRCS/SRTA master CBA. Active SRTA CBA: 2024-2027. School website (srcsa.org): \"As a dependent public charter school, Santa Rosa Charter School for the Arts has a different registration process.\"",
+          "cbaStatus": "Active — district master CBA in effect. See union and certCase fields for details.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Santa Rosa City Schools (Santa Rosa Elementary School District)",
+          "website": "http://www.srcsa.org",
+          "lat": 38.4405,
+          "lon": -122.7145
+        },
+        {
+          "napcsId": "C0607090",
+          "name": "Vallejo Charter",
+          "city": "Vallejo",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Vallejo Education Association (CTA/NEA)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Vallejo City Unified district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under Vallejo City Unified master CBA",
+          "cbaStatus": "Active — district master CBA in effect.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Vallejo City Unified",
+          "website": "http://www.vallejo.k12.ca.us",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0608009",
+          "name": "Palm Desert Charter Middle",
+          "city": "Palm Desert",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Desert Sands Teachers Association (CTA/NEA) — coverage unverified",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Desert Sands Unified School District district CBA (structural coverage — verification needed)",
+          "certCase": "No independent PERB certification — employees likely covered under Desert Sands Unified School District master CBA; confirmation required",
+          "cbaStatus": "Assumed active — district master CBA in effect; verification needed before accumulator entry.",
+          "firstContract": "N/A — covered under district master CBA (if coverage confirmed)",
+          "authorizer": "Desert Sands Unified School District",
+          "website": "http://www.dsusd.us",
+          "lat": 34.5794,
+          "lon": -118.1165
+        },
+        {
+          "napcsId": "C0608013",
+          "name": "Academy Of Careers And Exploration",
+          "city": "Helendale",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Helendale Teachers Association (CTA)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Helendale Elementary School District district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under Helendale Elementary School District master CBA",
+          "cbaStatus": "Active — district master CBA in effect.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Helendale Elementary School District",
+          "website": "http://www.helendalesd.com/schools/a_c_e_and_r_m_s_school",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0608046",
+          "name": "Orcutt Academy Charter",
+          "city": "Los Alamos",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Orcutt Teachers Association (CTA) — coverage unverified",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Orcutt Union Elementary School District district CBA (structural coverage — verification needed)",
+          "certCase": "No independent PERB certification — employees likely covered under Orcutt Union Elementary School District master CBA; confirmation required",
+          "cbaStatus": "Assumed active — district master CBA in effect; verification needed before accumulator entry.",
+          "firstContract": "N/A — covered under district master CBA (if coverage confirmed)",
+          "authorizer": "Orcutt Union Elementary School District",
+          "website": "http://www.orcutt-schools.net",
+          "lat": 34.0522,
+          "lon": -118.2437
+        },
+        {
+          "napcsId": "C0608077",
+          "name": "Ceiba College Preparatory Academy",
+          "city": "Watsonville",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Pajaro Valley Federation of Teachers (AFT/CFT Local 1936)",
+          "stateAff": "California Federation of Teachers (CFT)",
+          "natlAff": "AFT / CFT",
+          "dateUnionized": "Via Pajaro Valley Unified SD district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under PVUSD/PVFT master CBA. PVFT = AFT/CFT Local 1936.",
+          "cbaStatus": "Active — district master CBA in effect. See union and certCase fields for details.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Pajaro Valley Unified School District",
+          "website": "http://www.ceibaschools.org",
+          "lat": 36.9102,
+          "lon": -121.7569
+        },
+        {
+          "napcsId": "C0609019",
+          "name": "Da Vinci Charter Academy High",
+          "city": "Davis",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Davis Teachers Association (CTA/NEA) — coverage unverified",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Davis Joint Unified School District district CBA (structural coverage — verification needed)",
+          "certCase": "No independent PERB certification — employees likely covered under Davis Joint Unified School District master CBA; confirmation required",
+          "cbaStatus": "Assumed active — district master CBA in effect; verification needed before accumulator entry.",
+          "firstContract": "N/A — covered under district master CBA (if coverage confirmed)",
+          "authorizer": "Davis Joint Unified School District",
+          "website": "http://www.davincicharteracademy.net/",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0609068",
+          "name": "Stockton Early College Academy",
+          "city": "STOCKTON",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Stockton Teachers Association (CTA/NEA) — coverage unverified",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Stockton Unified School District district CBA (structural coverage — verification needed)",
+          "certCase": "No independent PERB certification — employees likely covered under Stockton Unified School District master CBA; confirmation required",
+          "cbaStatus": "Assumed active — district master CBA in effect; verification needed before accumulator entry.",
+          "firstContract": "N/A — covered under district master CBA (if coverage confirmed)",
+          "authorizer": "Stockton Unified School District",
+          "website": "http://seca-susd-ca.schoolloop.com",
+          "lat": 37.9577,
+          "lon": -121.2908
+        },
+        {
+          "napcsId": "C0610033",
+          "name": "Cielo Vista Charter",
+          "city": "Palm Springs",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Palm Springs Teachers Association (CTA/NEA) — coverage unverified",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Palm Springs Unified School District district CBA (structural coverage — verification needed)",
+          "certCase": "No independent PERB certification — employees likely covered under Palm Springs Unified School District master CBA; confirmation required",
+          "cbaStatus": "Assumed active — district master CBA in effect; verification needed before accumulator entry.",
+          "firstContract": "N/A — covered under district master CBA (if coverage confirmed)",
+          "authorizer": "Palm Springs Unified School District",
+          "website": "http://www.psusd.us",
+          "lat": 34.5794,
+          "lon": -118.1165
+        },
+        {
+          "napcsId": "C0610084",
+          "name": "Pittman Charter",
+          "city": "STOCKTON",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Stockton Teachers Association (CTA/NEA) — coverage unverified",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Stockton Unified School District district CBA (structural coverage — verification needed)",
+          "certCase": "No independent PERB certification — employees likely covered under Stockton Unified School District master CBA; confirmation required",
+          "cbaStatus": "Assumed active — district master CBA in effect; verification needed before accumulator entry.",
+          "firstContract": "N/A — covered under district master CBA (if coverage confirmed)",
+          "authorizer": "Stockton Unified School District",
+          "website": "N/A",
+          "lat": 37.9577,
+          "lon": -121.2908
+        },
+        {
+          "napcsId": "C0610105",
+          "name": "Village Elementary Charter",
+          "city": "Santa Rosa",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Rincon Valley Teachers Association (CTA)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Rincon Valley Union Elementary SD district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under Rincon Valley Union Elementary SD master CBA",
+          "cbaStatus": "Active — district master CBA in effect. See union and certCase fields for details.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Rincon Valley Union Elementary School District",
+          "website": "N/A",
+          "lat": 38.4405,
+          "lon": -122.7145
+        },
+        {
+          "napcsId": "C0610109",
+          "name": "Western Center Academy",
+          "city": "Hemet",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Hemet Teachers Association (CTA) — coverage unverified",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Hemet Unified School District district CBA (structural coverage — verification needed)",
+          "certCase": "No independent PERB certification — employees likely covered under Hemet Unified School District master CBA; confirmation required",
+          "cbaStatus": "Assumed active — district master CBA in effect; verification needed before accumulator entry.",
+          "firstContract": "N/A — covered under district master CBA (if coverage confirmed)",
+          "authorizer": "Hemet Unified School District",
+          "website": "http://www.westerncenteracademy.com",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0611023",
+          "name": "Chicago Park Community Charter",
+          "city": "Grass Valley",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Chicago Park Teachers Association (CTA)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Chicago Park Elementary School District district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under Chicago Park Elementary School District master CBA",
+          "cbaStatus": "Active — district master CBA in effect.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Chicago Park Elementary School District",
+          "website": "http://www.chicagoparkschool.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0611032",
+          "name": "Del Vista Math And Science Academy",
+          "city": "Delano",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Delano Teachers Association (CTA/NEA)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Delano Union Elementary School District district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under Delano Union Elementary School District master CBA",
+          "cbaStatus": "Active — district master CBA in effect.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Delano Union Elementary School District",
+          "website": "http://www.duesd.org/schools/delvistaes/",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0612096",
+          "name": "San Miguel Elementary",
+          "city": "Santa Rosa",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Mark West Teachers Association (CTA)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Mark West Union School District district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under Mark West Union SD master CBA",
+          "cbaStatus": "Active — district master CBA in effect. See union and certCase fields for details.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Mark West Union School District",
+          "website": "http://www.mwusd.org",
+          "lat": 38.4405,
+          "lon": -122.7145
+        },
+        {
+          "napcsId": "C0612098",
+          "name": "Old Adobe Elementary Charter",
+          "city": "PETALUMA",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Old Adobe Teachers Association (CTA)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Old Adobe Union Elementary School District district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under Old Adobe Union Elementary School District master CBA",
+          "cbaStatus": "Active — district master CBA in effect.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Old Adobe Union Elementary School District",
+          "website": "http://www.oldadobe.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0612103",
+          "name": "Santa Rosa French-American Charter (Srfacs)",
+          "city": "Santa Rosa",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Santa Rosa Teachers Association (CTA/NEA)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Santa Rosa City Schools district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under SRCS/SRTA master CBA. Active SRTA CBA: 2024-2027",
+          "cbaStatus": "Active — district master CBA in effect. See union and certCase fields for details.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Santa Rosa City Schools (Santa Rosa Elementary School District)",
+          "website": "http://srfacs.srcschools.org",
+          "lat": 38.4405,
+          "lon": -122.7145
+        },
+        {
+          "napcsId": "C0614061",
+          "name": "New Joseph Bonnheim (Njb) Community Charter",
+          "city": "Sacramento",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Sacramento City Teachers Association (CTA/NEA) — coverage unverified",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Sacramento City Unified district CBA (structural coverage — verification needed)",
+          "certCase": "No independent PERB certification — employees likely covered under Sacramento City Unified master CBA; confirmation required",
+          "cbaStatus": "Assumed active — district master CBA in effect; verification needed before accumulator entry.",
+          "firstContract": "N/A — covered under district master CBA (if coverage confirmed)",
+          "authorizer": "Sacramento City Unified",
+          "website": "http://www.thenewbonnheim.com",
+          "lat": 38.5816,
+          "lon": -121.4944
+        },
+        {
+          "napcsId": "C0615002",
+          "name": "Advanced Learning Academy",
+          "city": "Santa Ana",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Santa Ana Educators Association (CTA/NEA) — coverage unverified",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Santa Ana Unified School District district CBA (structural coverage — verification needed)",
+          "certCase": "No independent PERB certification — employees likely covered under Santa Ana Unified School District master CBA; confirmation required",
+          "cbaStatus": "Assumed active — district master CBA in effect; verification needed before accumulator entry.",
+          "firstContract": "N/A — covered under district master CBA (if coverage confirmed)",
+          "authorizer": "Santa Ana Unified School District",
+          "website": "http://www.sausd.us/advancedlearning",
+          "lat": 33.7455,
+          "lon": -117.8677
+        },
+        {
+          "napcsId": "C0615030",
+          "name": "Evergreen Institute Of Excellence",
+          "city": "Cottonwood",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Evergreen Teachers Association (CTA)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Evergreen Union Elementary School District district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under Evergreen Union Elementary School District master CBA",
+          "cbaStatus": "Active — district master CBA in effect.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Evergreen Union Elementary School District",
+          "website": "http://eie.evergreenusd.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0616049",
+          "name": "Accelerated Charter High",
+          "city": "Tulare",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Tulare Teachers Association (CTA/NEA)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Tulare Joint Union High School District district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under Tulare Joint Union High School District master CBA",
+          "cbaStatus": "Active — district master CBA in effect.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Tulare Joint Union High School District",
+          "website": "http://www.tulare.k12.ca.us",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0693001",
+          "name": "Bowling Green Charter Mccoy Academuy",
+          "city": "Sacramento",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Sacramento City Teachers Association (CTA/NEA) — coverage unverified",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Sacramento City Unified district CBA (structural coverage — verification needed)",
+          "certCase": "No independent PERB certification — employees likely covered under Sacramento City Unified master CBA; confirmation required",
+          "cbaStatus": "Assumed active — district master CBA in effect; verification needed before accumulator entry.",
+          "firstContract": "N/A — covered under district master CBA (if coverage confirmed)",
+          "authorizer": "Sacramento City Unified",
+          "website": "N/A",
+          "lat": 38.5816,
+          "lon": -121.4944
+        },
+        {
+          "napcsId": "C0694008",
+          "name": "Buckingham Collegiate Charter Academy",
+          "city": "Vacaville",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Vacaville Teachers Association (CTA/NEA)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Vacaville Unified School District district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under Vacaville Unified School District master CBA",
+          "cbaStatus": "Active — district master CBA in effect.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Vacaville Unified School District",
+          "website": "http://buckingham.vacavilleusd.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0694014",
+          "name": "Linscott Charter",
+          "city": "Watsonville",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Pajaro Valley Federation of Teachers (AFT/CFT Local 1936)",
+          "stateAff": "California Federation of Teachers (CFT)",
+          "natlAff": "AFT / CFT",
+          "dateUnionized": "Via Pajaro Valley Unified SD district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under PVUSD/PVFT master CBA 2022-2025.",
+          "cbaStatus": "Active — district master CBA in effect. See union and certCase fields for details.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Pajaro Valley Unified School District",
+          "website": "http://linscott.pvusd.net/",
+          "lat": 36.9102,
+          "lon": -121.7569
+        },
+        {
+          "napcsId": "C0695006",
+          "name": "Hart-Ransom Academic Charter",
+          "city": "Modesto",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Hart-Ransom Teachers Association (CTA)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Hart-Ransom Union Elementary School District district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under Hart-Ransom Union Elementary School District master CBA",
+          "cbaStatus": "Active — district master CBA in effect.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Hart-Ransom Union Elementary School District",
+          "website": "http://www.hart-ransomcharter.com/index.html",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0695008",
+          "name": "Kern Workforce 2000 Academy",
+          "city": "Bakersfield",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Kern High School Teachers Association (CTA/NEA) — coverage unverified",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Kern High School District district CBA (structural coverage — verification needed)",
+          "certCase": "No independent PERB certification — employees likely covered under Kern High School District master CBA; confirmation required",
+          "cbaStatus": "Assumed active — district master CBA in effect; verification needed before accumulator entry.",
+          "firstContract": "N/A — covered under district master CBA (if coverage confirmed)",
+          "authorizer": "Kern High School District",
+          "website": "http://workforce.kernhigh.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0695020",
+          "name": "Westside Preparatory Charter",
+          "city": "Rio Linda",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Twin Rivers Educators Association (CTA/NEA) — coverage unverified",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Twin Rivers Unified School District district CBA (structural coverage — verification needed)",
+          "certCase": "No independent PERB certification — employees likely covered under Twin Rivers Unified School District master CBA; confirmation required",
+          "cbaStatus": "Assumed active — district master CBA in effect; verification needed before accumulator entry.",
+          "firstContract": "N/A — covered under district master CBA (if coverage confirmed)",
+          "authorizer": "Twin Rivers Unified School District",
+          "website": "http://wpcs.trusd.net/",
+          "lat": 34.0633,
+          "lon": -117.6509
+        },
+        {
+          "napcsId": "C0696004",
+          "name": "Central Valley Home",
+          "city": "Kingsburg",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Kingsburg Elementary Teachers Association (CTA)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Kingsburg Elementary Charter School District district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under Kingsburg Elementary Charter School District master CBA",
+          "cbaStatus": "Active — district master CBA in effect.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Kingsburg Elementary Charter School District",
+          "website": "http://www.kesd.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0696011",
+          "name": "Piner-Olivet Charter",
+          "city": "Santa Rosa",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Piner-Olivet Teachers Association (CTA)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Piner-Olivet Union Elementary SD district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under Piner-Olivet Union Elementary SD master CBA",
+          "cbaStatus": "Active — district master CBA in effect. See union and certCase fields for details.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Piner-Olivet Union Elementary School District",
+          "website": "http://www.pousd.org",
+          "lat": 38.4405,
+          "lon": -122.7145
+        },
+        {
+          "napcsId": "C0698002",
+          "name": "Cali Calmecac Language Academy",
+          "city": "Windsor",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Windsor Teachers Association (CTA/NEA)",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Windsor Unified School District district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under Windsor Unified School District master CBA",
+          "cbaStatus": "Active — district master CBA in effect.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Windsor Unified School District",
+          "website": "http://www.wusd.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0698005",
+          "name": "Circle Of Independent Learning",
+          "city": "Fremont",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Fremont Teachers Association (CTA/NEA) — coverage unverified",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Fremont Unified School District district CBA (structural coverage — verification needed)",
+          "certCase": "No independent PERB certification — employees likely covered under Fremont Unified School District master CBA; confirmation required",
+          "cbaStatus": "Assumed active — district master CBA in effect; verification needed before accumulator entry.",
+          "firstContract": "N/A — covered under district master CBA (if coverage confirmed)",
+          "authorizer": "Fremont Unified School District",
+          "website": "http://www.coilk12.net",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0699001",
+          "name": "Diamond Technology Institute",
+          "city": "Watsonville",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Pajaro Valley Federation of Teachers (AFT/CFT Local 1936)",
+          "stateAff": "California Federation of Teachers (CFT)",
+          "natlAff": "AFT / CFT",
+          "dateUnionized": "Via Pajaro Valley Unified SD district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under PVUSD/PVFT master CBA 2022-2025.",
+          "cbaStatus": "Active — district master CBA in effect. See union and certCase fields for details.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Pajaro Valley Unified School District",
+          "website": "http://www.avci.pvusd.net",
+          "lat": 36.9102,
+          "lon": -121.7569
+        },
+        {
+          "napcsId": "C0699003",
+          "name": "Alianza Charter",
+          "city": "Watsonville",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Pajaro Valley Federation of Teachers (AFT/CFT Local 1936)",
+          "stateAff": "California Federation of Teachers (CFT)",
+          "natlAff": "AFT / CFT",
+          "dateUnionized": "Via Pajaro Valley Unified SD district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under PVUSD/PVFT master CBA 2022-2025.",
+          "cbaStatus": "Active — district master CBA in effect. See union and certCase fields for details.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Pajaro Valley Unified School District",
+          "website": "http://www.alianza.pvusd.net",
+          "lat": 36.9102,
+          "lon": -121.7569
+        },
+        {
+          "napcsId": "C0699008",
+          "name": "Charter Home School Academy",
+          "city": "Visalia",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Visalia Teachers Association (CTA/NEA) — coverage unverified",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Visalia Unified School District district CBA (structural coverage — verification needed)",
+          "certCase": "No independent PERB certification — employees likely covered under Visalia Unified School District master CBA; confirmation required",
+          "cbaStatus": "Assumed active — district master CBA in effect; verification needed before accumulator entry.",
+          "firstContract": "N/A — covered under district master CBA (if coverage confirmed)",
+          "authorizer": "Visalia Unified School District",
+          "website": "http://www.vusd.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0699016",
+          "name": "Elk Grove Charter",
+          "city": "Elk Grove",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Elk Grove Education Association (CTA/NEA) — coverage unverified",
+          "stateAff": "California Teachers Association (CTA)",
+          "natlAff": "CTA/NEA",
+          "dateUnionized": "Via Elk Grove Unified School District district CBA (structural coverage — verification needed)",
+          "certCase": "No independent PERB certification — employees likely covered under Elk Grove Unified School District master CBA; confirmation required",
+          "cbaStatus": "Assumed active — district master CBA in effect; verification needed before accumulator entry.",
+          "firstContract": "N/A — covered under district master CBA (if coverage confirmed)",
+          "authorizer": "Elk Grove Unified School District",
+          "website": "http://egcharter.com",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C0699037",
+          "name": "Pacific Coast Charter",
+          "city": "Watsonville",
+          "state": "CA",
+          "status": "DEPENDENT",
+          "union": "Pajaro Valley Federation of Teachers (AFT/CFT Local 1936)",
+          "stateAff": "California Federation of Teachers (CFT)",
+          "natlAff": "AFT / CFT",
+          "dateUnionized": "Via Pajaro Valley Unified SD district CBA (structural coverage)",
+          "certCase": "No independent PERB certification — employees covered under PVUSD/PVFT master CBA 2022-2025.",
+          "cbaStatus": "Active — district master CBA in effect. See union and certCase fields for details.",
+          "firstContract": "N/A — covered under district master CBA",
+          "authorizer": "Pajaro Valley Unified School District",
+          "website": "http://www.pccs.pvusd.net",
+          "lat": 36.9102,
+          "lon": -121.7569
+        }
+      ],
+      "networks": [
+        {
+          "name": "LAUSD Horace Mann Charter Schools",
+          "union": "",
+          "schoolIds": [
+            "C0612051",
+            "C0611013",
+            "C0611014",
+            "C0613093",
+            "C0693002",
+            "C0610028",
+            "C0613088",
+            "C0608029",
+            "C0605014",
+            "C0612052",
+            "C0612031",
+            "C0612032",
+            "C0604017",
+            "C0612033",
+            "C0614035",
+            "C0612020",
+            "C0612034",
+            "C0613089",
+            "C0611043",
+            "C0612036",
+            "C0612037",
+            "C0612003",
+            "C0612038",
+            "C0693022",
+            "C0612039",
+            "C0612040",
+            "C0612050",
+            "C0693023",
+            "C0612041",
+            "C0693010",
+            "C0698011",
+            "C0612042",
+            "C0611065",
+            "C0694020",
+            "C0611100",
+            "C0612043",
+            "C0611073",
+            "C0612044",
+            "C0616012",
+            "C0613090",
+            "C0695018",
+            "C0612045",
+            "C0612046",
+            "C0611091",
+            "C0693021",
+            "C0612047",
+            "C0612048",
+            "C0612049",
+            "C0603020",
+            "C0695011",
+            "C0603046",
+            "C0696007",
+            "C0694001",
+            "C0613092",
+            "C0613094",
+            "C0613095",
+            "C0613096",
+            "C0613097",
+            "C0609015"
+          ],
+          "organizedCount": 59,
+          "cbaStatus": "",
+          "keyFindings": ""
+        },
+        {
+          "name": "Green Dot Public Schools / Animo (AMU)",
+          "union": "",
+          "schoolIds": [
+            "C0600002",
+            "C0602050",
+            "C0604002",
+            "C0604003",
+            "C0606008",
+            "C0606010",
+            "C0606011",
+            "C0607002",
+            "C0610012",
+            "C0613002",
+            "C0614016",
+            "C0614017",
+            "C0616031",
+            "C0617006",
+            "C0618030",
+            "C0618167",
+            "C0603045",
+            "C0608025"
+          ],
+          "organizedCount": 18,
+          "cbaStatus": "",
+          "keyFindings": ""
+        },
+        {
+          "name": "High Tech High / HTEC",
+          "union": "",
+          "schoolIds": [
+            "C0600011",
+            "C0600013",
+            "C0603025",
+            "C0604033",
+            "C0605028",
+            "C0605029",
+            "C0615037",
+            "C0607037",
+            "C0611050",
+            "C0611051",
+            "C0607038",
+            "C0609033",
+            "C0613029",
+            "C0618077",
+            "C0619017",
+            "C0619018",
+            "C0604032",
+            "C0618019"
+          ],
+          "organizedCount": 18,
+          "cbaStatus": "",
+          "keyFindings": ""
+        },
+        {
+          "name": "California Virtual Academies (CAVA / K12 Inc.)",
+          "union": "",
+          "schoolIds": [
+            "C0602009",
+            "C0604008",
+            "C0606019",
+            "C0606020",
+            "C0606021",
+            "C0612014",
+            "C0612016",
+            "C0612108",
+            "C0613111",
+            "C0606022"
+          ],
+          "organizedCount": 10,
+          "cbaStatus": "",
+          "keyFindings": ""
+        },
+        {
+          "name": "Summit Public Schools",
+          "union": "",
+          "schoolIds": [
+            "C0611081",
+            "C0613027",
+            "C0614146",
+            "C0616048"
+          ],
+          "organizedCount": 4,
+          "cbaStatus": "",
+          "keyFindings": ""
+        },
+        {
+          "name": "Alliance College-Ready Public Schools",
+          "union": "",
+          "schoolIds": [
+            "C0604027",
+            "C0605026",
+            "C0609011",
+            "C0609013",
+            "C0605030",
+            "C0606030",
+            "C0606031",
+            "C0606056",
+            "C0607020",
+            "C0607098",
+            "C0609012",
+            "C0609014",
+            "C0610038",
+            "C0611025",
+            "C0611026",
+            "C0612002",
+            "C0612022",
+            "C0613050",
+            "C0614010",
+            "C0614011",
+            "C0614012",
+            "C0615005",
+            "C0615006"
+          ],
+          "organizedCount": 23,
+          "cbaStatus": "",
+          "keyFindings": ""
+        },
+        {
+          "name": "Citizens of the World Charter Schools (CWC)",
+          "union": "",
+          "schoolIds": [
+            "C0612029",
+            "C0613011",
+            "C0617015",
+            "C0619068",
+            "C0621006"
+          ],
+          "organizedCount": 5,
+          "cbaStatus": "",
+          "keyFindings": ""
+        },
+        {
+          "name": "Environmental Charter Schools",
+          "union": "",
+          "schoolIds": [
+            "C0601017",
+            "C0610046",
+            "C0613022",
+            "C0621009"
+          ],
+          "organizedCount": 4,
+          "cbaStatus": "",
+          "keyFindings": ""
+        },
+        {
+          "name": "Caliber Public Schools",
+          "union": "",
+          "schoolIds": [
+            "C0614021",
+            "C0616026"
+          ],
+          "organizedCount": 2,
+          "cbaStatus": "",
+          "keyFindings": ""
+        },
+        {
+          "name": "San Carlos School District Charter Cluster",
+          "union": "",
+          "schoolIds": [
+            "C0694024",
+            "C0600004",
+            "C0699005",
+            "C0699023",
+            "C0600036",
+            "C0600042"
+          ],
+          "organizedCount": 6,
+          "cbaStatus": "",
+          "keyFindings": ""
+        }
+      ]
+    },
+    "CT": {
+      "name": "Connecticut",
+      "laborBoard": "SBLR (CT)",
+      "governingLaw": "Connecticut Teacher Negotiation Act (TNA) — Conn. Gen. Stat. §10-153a et seq. Governs certificated staff in most CT charter schools classified as public employers. SBLR handles prohibited practice complaints; representation via TNA process administered by CT SBE.",
+      "universe": 21,
+      "confirmed": 4,
+      "dependent": 1,
+      "intel": [
+        {
+          "prompt": "TNA JURISDICTION — A UNIQUE LABOR LAW FRAMEWORK",
+          "answer": "Connecticut is the only state in the NAPCS dataset governed by the Teacher Negotiation Act (TNA). Unlike NLRB or typical state PERB processes, TNA representation does not generate a public certification database or election record. Representation is confirmed via CEA affiliate listings and NAPCS baseline data, not primary labor board records. This creates a documentation gap: cert dates for ISAAC (2005) and New Beginnings (pre-2013) are approximate and cannot be confirmed without direct contact with CEA or CT SBE. The sponsor must decide whether TNA representation dates are acceptable proxies for the project-wide \"Labor Board Certified date\" convention."
+        },
+        {
+          "prompt": "UAW AT COMMON GROUND — OUTLIER UNION IN AN NEA STATE",
+          "answer": "Common Ground High School (New Haven Ecology Project, Inc.) is the only CT NAPCS school organized under NLRB, and the only school in CT represented by UAW rather than CEA/NEA. UAW Local 2110 — a NYC-based amalgamated union covering academics, journalists, and arts workers — organized Common Ground in November 2021 (vote approx. 62–8). Post-election, 4 teachers were non-renewed; NLRB ULP settlement of $10,000 documented (April 2022). First contract status as of research date: in progress. Vote tally disputed across three conflicting sources (68-2 NAPCS, 62-8 press, 63-7 commenter). Gap: official tally obtainable via NLRB ADS (Region 1) or NLRB records request for Case 01-RC-239165."
+        },
+        {
+          "prompt": "INTEGRATED DAY — OLDEST CHARTER UNION IN CT DATASET",
+          "answer": "Integrated Day Charter School (Norwich) was founded in 1997 with CEA/NEA support from inception — the union predates the school's first day of operation. The local is now called the Norwich Integrated Education Association (formerly Integrated Day Charter School Association). This is the oldest charter school union in the CT NAPCS dataset and among the oldest in the full national dataset."
+        }
+      ],
+      "openItems": [
+        {
+          "priority": "SPONSOR",
+          "description": "TNA date convention — sponsor decision required",
+          "resolution": ""
+        },
+        {
+          "priority": "SPONSOR",
+          "description": "NLRB jurisdiction workbook column label for Common Ground",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "TNA representation date — \"Pre-2013\" in NAPCS; exact year unknown",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "Vote tally discrepancy — 3 conflicting sources (68-2, 62-8, 63-7)",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "TNA representation date — \"2005\" from NAPCS baseline; no primary source confirmed",
+          "resolution": ""
+        },
+        {
+          "priority": "LOW",
+          "description": "CBA / compact not publicly posted",
+          "resolution": ""
+        },
+        {
+          "priority": "LOW",
+          "description": "CBA not publicly available — UAW Local 2110",
+          "resolution": ""
+        },
+        {
+          "priority": "LOW",
+          "description": "Founding CBA / compact not publicly available",
+          "resolution": ""
+        }
+      ],
+      "confirmedSchools": [
+        {
+          "napcsId": "C0997004",
+          "name": "INTERDISTRICT SCHOOL FOR ARTS AND COMMUNICATION (ISAAC)",
+          "city": "New London",
+          "state": "CT",
+          "status": "CONFIRMED",
+          "union": "ISAAC Education Association",
+          "stateAff": "CEA (Connecticut Education Association)",
+          "natlAff": "NEA",
+          "dateUnionized": "2005 (per NAPCS baseline — primary source confirmation pending CEA/CT SBE records request)",
+          "certCase": "Unknown — no CT SBE certification database",
+          "cbaStatus": "Active (assumed)",
+          "firstContract": "Unknown",
+          "authorizer": "Connecticut State Board of Education",
+          "website": "https://www.isaacschool.org",
+          "lat": 41.3083,
+          "lon": -72.9279
+        },
+        {
+          "napcsId": "C0902001",
+          "name": "NEW BEGINNINGS FAMILY ACADEMY",
+          "city": "Bridgeport",
+          "state": "CT",
+          "status": "CONFIRMED",
+          "union": "New Beginnings Education Association",
+          "stateAff": "CEA (Connecticut Education Association)",
+          "natlAff": "NEA",
+          "dateUnionized": "Pre-2013 (NAPCS baseline; exact year unknown. Gap: exact date obtainable via CEA or CT SBE records request.)",
+          "certCase": "Unknown",
+          "cbaStatus": "Active (assumed)",
+          "firstContract": "Unknown",
+          "authorizer": "Connecticut State Board of Education",
+          "website": "https://www.nbfacademy.org",
+          "lat": 41.1865,
+          "lon": -73.1952
+        },
+        {
+          "napcsId": "C0997001",
+          "name": "COMMON GROUND HIGH SCHOOL",
+          "city": "New Haven",
+          "state": "CT",
+          "status": "CONFIRMED",
+          "union": "UAW Local 2110",
+          "stateAff": "UAW (International Union, United Automobile Workers)",
+          "natlAff": "UAW / AFL-CIO",
+          "dateUnionized": "November 2021 (NLRB election date)",
+          "certCase": "RC case # pending NLRB FOIA (see ULP 01-CA-294819)",
+          "cbaStatus": "In Progress — first contract not yet ratified",
+          "firstContract": "In progress as of April 2026",
+          "authorizer": "Connecticut State Board of Education",
+          "website": "https://www.commongroundct.org",
+          "lat": 41.3083,
+          "lon": -72.9279
+        },
+        {
+          "napcsId": "C0997003",
+          "name": "INTEGRATED DAY CHARTER SCHOOL",
+          "city": "Norwich",
+          "state": "CT",
+          "status": "CONFIRMED",
+          "union": "Norwich Integrated Education Association",
+          "stateAff": "CEA (Connecticut Education Association)",
+          "natlAff": "NEA",
+          "dateUnionized": "1997 (founding — union predates first day of school operation)",
+          "certCase": "Unknown",
+          "cbaStatus": "Active (assumed)",
+          "firstContract": "Unknown (1997 founding)",
+          "authorizer": "Connecticut State Board of Education",
+          "website": "https://www.idcs.org",
+          "lat": null,
+          "lon": null
+        }
+      ],
+      "dependentSchools": [
+        {
+          "napcsId": "C0914002",
+          "name": "ELM CITY MONTESSORI SCHOOL",
+          "city": "New Haven",
+          "state": "CT",
+          "status": "DEPENDENT",
+          "union": "New Haven Federation of Teachers (NHFT)",
+          "stateAff": "AFT Connecticut",
+          "natlAff": "AFT",
+          "dateUnionized": "N/A — DEPENDENT (covered by pre-existing NHFT district CBA from school opening)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — NHFT district CBA in force",
+          "firstContract": "N/A",
+          "authorizer": "New Haven Board of Education",
+          "website": "https://www.nhps.net/elmcitymontessori",
+          "lat": 41.3083,
+          "lon": -72.9279
+        }
+      ],
+      "networks": []
+    },
+    "DC": {
+      "name": "Washington DC",
+      "laborBoard": "NLRB",
+      "governingLaw": "National Labor Relations Act (NLRA). All DC Public Charter Schools (PCS) are authorized by the DC Public Charter School Board (DC PCSB) and independently incorporated as private nonprofit employers. DC PERB covers traditional DCPS employees only — PERB(DC) does NOT apply to any DC PCS. All DC charter labor matters are handled by NLRB Region 5.",
+      "universe": 125,
+      "confirmed": 7,
+      "dependent": 0,
+      "intel": [
+        {
+          "prompt": "DC ACTS LOCAL 1927 — SOLE ORGANIZING VEHICLE, CHAPTER MODEL",
+          "answer": "DC ACTS (District of Columbia Alliance of Charter Teachers and Staff, Local 1927, AFT) is the exclusive organizing vehicle for all 7 DC NAPCS charter schools. DC ACTS operates a chapter model: each school forms its own named chapter (Capital City Staff Union, DCI Staff Union, Breakthrough Montessori Staff Union, etc.) under shared DC ACTS infrastructure. WTU (Washington Teachers Union, Local 6, AFT) represents traditional DCPS staff and serves as a sister AFT affiliate to DC ACTS — they are sister locals, not affiliated in a parent-child relationship."
+        },
+        {
+          "prompt": "NO EMPLOYER COUNTER-ORGANIZING — A UNIQUE FINDING",
+          "answer": "Across all 6 DC charter organizing campaigns (May 2019 through May 2025), there is no documented employer ULP charge, no counter-organizing campaign, and no public anti-union statement from any DC PCSB-authorized charter school. This is the most striking finding in the DC research and unique in the full 584-school NAPCS dataset: an NLRB-jurisdiction market with zero documented employer resistance to unionization across 6 campaigns spanning 6 years."
+        },
+        {
+          "prompt": "BREAKTHROUGH MONTESSORI — FIRST EMPLOYER-FILED RM PETITION IN FULL DATASET",
+          "answer": "Breakthrough Montessori's May 2025 certification (NLRB Case 05-RM-365867) is notable: the employer filed the RM (representation management) petition rather than waiting for union-filed RC petition. The employer chose a cooperative approach — facilitating rather than resisting the election. 48-5 vote (91%). This is the only employer-initiated representation petition in the full 584-school NAPCS dataset and the clearest example of the DC charter sector's collaborative labor relations culture."
+        },
+        {
+          "prompt": "CAPITAL CITY FIRST CONTRACT RATIFIED — AUGUST 2025",
+          "answer": "Capital City PCS (all 3 campuses, 200+ employees) ratified its first contract in August 2025, approximately 15 months after certification (May 2024). This is within the typical first-contract timeline for NLRB-jurisdiction schools and significantly faster than some comparators in the dataset (e.g., Hiawatha Academies in MN, still unresolved 4+ years post-cert). DC ACTS's strong infrastructure appears to accelerate first contract timelines."
+        }
+      ],
+      "openItems": [
+        {
+          "priority": "HIGH",
+          "description": "NLRB records requests — cert dates, vote tallies, unit descriptions for all 7 schools",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "NLRB case number not confirmed — pending verification",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "First contract status — nearly 2 years post-certification as of April 2026",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "First contract status — recently certified May 2025",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "Voluntary recognition mechanism — confirm method for COVID-era recognition (May 2020)",
+          "resolution": ""
+        },
+        {
+          "priority": "LOW",
+          "description": "First contract ratified August 2025 — update all 3 campus reports",
+          "resolution": ""
+        }
+      ],
+      "confirmedSchools": [
+        {
+          "napcsId": "C1100001",
+          "name": "J.F. COOK CAMPUS — MUNDO VERDE BILINGUAL PCS",
+          "city": "Washington",
+          "state": "DC",
+          "status": "CONFIRMED",
+          "union": "Mundo Verde Staff Union",
+          "stateAff": "WTU (Washington Teachers Union) — sister AFT affiliate",
+          "natlAff": "AFT",
+          "dateUnionized": "May 15, 2019 (NLRB election date, Case 05-RC-240305)",
+          "certCase": "NLRB 05-RC-240305",
+          "cbaStatus": "Active — CBA ratified 2023",
+          "firstContract": "CBA ratified 2023 (active)",
+          "authorizer": "DC Public Charter School Board (DC PCSB)",
+          "website": "https://www.mundoverdepcs.org",
+          "lat": 38.9072,
+          "lon": -77.0369
+        },
+        {
+          "napcsId": "C1100005",
+          "name": "CAPITAL CITY PCS — LOWER SCHOOL",
+          "city": "Washington",
+          "state": "DC",
+          "status": "CONFIRMED",
+          "union": "Capital City Staff Union",
+          "stateAff": "WTU (sister AFT affiliate)",
+          "natlAff": "AFT",
+          "dateUnionized": "May 2, 2024 (NLRB election date, Case 05-RC-338902)",
+          "certCase": "NLRB 05-RC-338902",
+          "cbaStatus": "Active — first contract ratified August 2025",
+          "firstContract": "Ratified August 2025",
+          "authorizer": "DC PCSB",
+          "website": "https://www.ccpcs.org",
+          "lat": 38.9072,
+          "lon": -77.0369
+        },
+        {
+          "napcsId": "C1108006",
+          "name": "CAPITAL CITY PCS — UPPER SCHOOL",
+          "city": "Washington",
+          "state": "DC",
+          "status": "CONFIRMED",
+          "union": "Capital City Staff Union",
+          "stateAff": "WTU (sister AFT affiliate)",
+          "natlAff": "AFT",
+          "dateUnionized": "May 2, 2024 (network-wide, NLRB 05-RC-338902)",
+          "certCase": "NLRB 05-RC-338902",
+          "cbaStatus": "Active — first contract ratified August 2025",
+          "firstContract": "Ratified August 2025",
+          "authorizer": "DC PCSB",
+          "website": "https://www.ccpcs.org",
+          "lat": 38.9072,
+          "lon": -77.0369
+        },
+        {
+          "napcsId": "C1112001",
+          "name": "CAPITAL CITY PCS — MIDDLE SCHOOL",
+          "city": "Washington",
+          "state": "DC",
+          "status": "CONFIRMED",
+          "union": "Capital City Staff Union",
+          "stateAff": "WTU (sister AFT affiliate)",
+          "natlAff": "AFT",
+          "dateUnionized": "May 2, 2024 (network-wide, NLRB 05-RC-338902)",
+          "certCase": "NLRB 05-RC-338902",
+          "cbaStatus": "Active — first contract ratified August 2025",
+          "firstContract": "Ratified August 2025",
+          "authorizer": "DC PCSB",
+          "website": "https://www.ccpcs.org",
+          "lat": 38.9072,
+          "lon": -77.0369
+        },
+        {
+          "napcsId": "C1114009",
+          "name": "DISTRICT OF COLUMBIA INTERNATIONAL SCHOOL (DCI)",
+          "city": "Washington",
+          "state": "DC",
+          "status": "CONFIRMED",
+          "union": "DCI Staff Union",
+          "stateAff": "WTU (sister AFT affiliate)",
+          "natlAff": "AFT",
+          "dateUnionized": "May 7, 2024 (NLRB election date — case # pending verification)",
+          "certCase": "Pending NLRB ADS verification",
+          "cbaStatus": "In Progress — first contract bargaining commenced June 2025",
+          "firstContract": "In negotiation — bargaining commenced June 2025; status unconfirmed as of May 2026",
+          "authorizer": "DC PCSB",
+          "website": "https://www.dcinternationalschool.org",
+          "lat": 38.9072,
+          "lon": -77.0369
+        },
+        {
+          "napcsId": "C1116001",
+          "name": "BREAKTHROUGH MONTESSORI PCS",
+          "city": "Washington",
+          "state": "DC",
+          "status": "CONFIRMED",
+          "union": "Breakthrough Montessori Staff Union",
+          "stateAff": "WTU (sister AFT affiliate)",
+          "natlAff": "AFT",
+          "dateUnionized": "June 5, 2025 (NLRB cert — employer RM petition, Case 05-RM-365867; election tally May 28, 2025)",
+          "certCase": "NLRB 05-RM-365867",
+          "cbaStatus": "In Progress — first contract bargaining commenced June 2025",
+          "firstContract": "In negotiation — bargaining commenced June 2025; status unconfirmed as of May 2026",
+          "authorizer": "DC PCSB",
+          "website": "https://www.breakthroughmontessori.org",
+          "lat": 38.9072,
+          "lon": -77.0369
+        },
+        {
+          "napcsId": "C1119008",
+          "name": "CALLE OCHO CAMPUS — MUNDO VERDE BILINGUAL PCS",
+          "city": "Washington",
+          "state": "DC",
+          "status": "CONFIRMED",
+          "union": "Mundo Verde Staff Union",
+          "stateAff": "WTU (sister AFT affiliate)",
+          "natlAff": "AFT",
+          "dateUnionized": "May 4, 2020 (voluntary recognition / card count date during COVID — mechanism pending verification)",
+          "certCase": "NLRB 05-RC-240305 (covers both Mundo Verde campuses)",
+          "cbaStatus": "Active — CBA ratified 2023",
+          "firstContract": "CBA ratified 2023 (active)",
+          "authorizer": "DC PCSB",
+          "website": "https://www.mundoverdepcs.org",
+          "lat": 38.9072,
+          "lon": -77.0369
+        }
+      ],
+      "dependentSchools": [],
+      "networks": []
+    },
+    "DE": {
+      "name": "Delaware",
+      "laborBoard": "PERB(DE)",
+      "governingLaw": "14 Del.C. Chapter 40 — Public School Employment Relations Act (PSERA). All Delaware charter schools are public employers. PERB(DE) has exclusive jurisdiction. The NLRB has never claimed jurisdiction over a Delaware charter school. Card-check (majority authorization / BU determination without election) is available under PSERA — confirmed by Sussex Academy cert February 2026 (case 1521, BU Determination).",
+      "universe": 23,
+      "confirmed": 4,
+      "dependent": 0,
+      "intel": [
+        {
+          "prompt": "What is the political and legal environment shaping charter labor relations in this state?",
+          "answer": "Delaware presents the clearest and most union-friendly jurisdictional framework of any state in the NAPCS research dataset. All charter schools are public employers under 14 Del.C. Chapter 40 (the Public School Employment Relations Act), and the Delaware Public Employment Relations Board (PERB) has exclusive jurisdiction over all charter school labor matters. There is no NLRB complexity, no dual-jurisdiction ambiguity, and no employer argument available that a charter school is a private entity. Every Delaware charter school staff that seeks to organize files with PERB(DE) and proceeds through the state public-employer framework.\n\nThe most significant structural advantage for organizing is the availability of card-check certification — formally called a BU Determination by majority authori..."
+        },
+        {
+          "prompt": "What community and social conditions are driving organizing activity in this state?",
+          "answer": "Delaware is a small state with a highly concentrated public school labor environment. The Delaware State Education Association (DSEA) is the sole teacher union in the state, affiliated with NEA, and represents educators across all 16 traditional public school districts as well as multiple charter schools. This concentration means DSEA has deep institutional presence, strong political relationships with the state legislature and Department of Education, and an organizing infrastructure that can mobilize across charter school contexts without the resource constraints that smaller or newer unions face in larger states.\n\nThe organizing history at Charter School of Wilmington (spring 2018) is illustrative. The Exceptional Delaware blog — the principal public record of Delaware charter labor rel..."
+        },
+        {
+          "prompt": "What organizing strategies and approaches are being used in this state?",
+          "answer": "DSEA is the sole organizing actor in the Delaware charter sector, and its strategy is relationship-based rather than campaign-based. Unlike the CTU-ACTS model in Illinois (which uses a dedicated charter organizing arm) or the OFT/Cleveland ACTS model in Ohio (a multi-operator local), DSEA integrates charter schools directly into its standard UniServ structure. Each certified Delaware charter school is assigned a DSEA UniServ Director who serves as the ongoing representative for that local — the same structure used for every traditional public school district in the state.\n\nThis integration strategy has two significant advantages. First, it eliminates the resource gap that new union organizing campaigns typically face in the period between certification and first contract — charter locals a..."
+        },
+        {
+          "prompt": "What should charter leaders be doing now in response to organizing patterns in this state?",
+          "answer": "Delaware charter leaders operate in the most union-friendly legal environment of any state in the NAPCS research dataset. Card-check availability means there is no election window to use for counter-organizing; once a majority of staff signs authorization cards and PERB issues a BU Determination, the certification is complete. The practical implication is that the only meaningful employer intervention available is upstream — in the quality of the employment relationship before any organizing drive begins.\n\nThe 100% NAPCS union density rate in Delaware should be understood in context: Delaware has only 4 NAPCS charter schools, and all 4 are in the CONFIRMED category. However, the broader Delaware charter universe has 24 schools, and DSEA's UniServ structure covers them all — meaning DSEA ha..."
+        },
+        {
+          "prompt": "What trends should charter sector leaders watch over the next 3–5 years?",
+          "answer": "The most significant trend to monitor is the expansion of DSEA charter representation into the 20 remaining non-NAPCS Delaware charter schools. With DSEA actively assigning UniServ directors who cover charter school locals, the institutional capacity for rapid organizing expansion exists. Schools opened after 2020 — including Sussex Montessori (2020) — have already organized. New charter school openings in Delaware should be assessed for DSEA organizing risk from their first year of operation.\n\nSussex Academy's February 2026 certification is a specific signal worth tracking. Sussex Academy is a high-performing, high-status school with a predominantly white, affluent student body in rural Sussex County — demographically and institutionally distinct from the Wilmington charter schools that o..."
+        },
+        {
+          "prompt": "What surprised us in this state? What contradicts what national leaders expect?",
+          "answer": "The most significant finding in Delaware is one that national charter sector leaders consistently underestimate: 100% NAPCS union density is achievable, and in Delaware, it has been achieved. The four schools in the NAPCS Delaware dataset span a wide range of school profiles — a rigorous STEM high school (Charter School of Wilmington, ranked #1 in Delaware), a Greek dual-language K-12 school (Odyssey Charter School, 2,192 students), an IB-accelerated K-12 school in rural Sussex County (Sussex Academy), and a Montessori K-6 school serving low-income families in Seaford (Sussex Montessori). These are not schools with a single organizing narrative. They are four very different schools that organized because the legal framework makes organizing accessible and DSEA has the institutional capacit..."
+        }
+      ],
+      "openItems": [
+        {
+          "priority": "HIGH",
+          "description": "PERB(DE) FOIA — Sussex Montessori cert date and BU description",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "PERB(DE) FOIA — Charter School of Wilmington cert date and local name confirmation",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "PERB(DE) FOIA — Odyssey Charter School cert date and OCSEA CBA current period",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "Sussex Academy — BU description and bargaining unit scope confirmation",
+          "resolution": ""
+        },
+        {
+          "priority": "medium",
+          "description": "Sussex Montessori — CBA status",
+          "resolution": ""
+        },
+        {
+          "priority": "LOW",
+          "description": "MN NAPCS-ADD-MN-002 accumulator placeholder",
+          "resolution": ""
+        }
+      ],
+      "confirmedSchools": [
+        {
+          "napcsId": "C1096002",
+          "name": "Charter School of Wilmington",
+          "city": "Wilmington",
+          "state": "DE",
+          "status": "CONFIRMED",
+          "union": "Charter School of Wilmington Education Association (CSWEA)",
+          "stateAff": "Delaware State Education Association (DSEA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "Spring 2018 (exact date pending PERB(DE) FOIA)",
+          "certCase": "Pending PERB(DE) FOIA records request",
+          "cbaStatus": "Active CBA in effect",
+          "firstContract": "Active CBA in effect (successor cycle; exact dates pending PERB FOIA)",
+          "authorizer": "Red Clay Consolidated School District",
+          "website": "https://www.charterschool.org",
+          "lat": 39.7447,
+          "lon": -75.5484
+        },
+        {
+          "napcsId": "C1006003",
+          "name": "Odyssey Charter School",
+          "city": "Wilmington",
+          "state": "DE",
+          "status": "CONFIRMED",
+          "union": "Odyssey Charter School Education Association (OCSEA)",
+          "stateAff": "Delaware State Education Association (DSEA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "Fall 2018 (exact date pending PERB(DE) FOIA)",
+          "certCase": "Pending PERB(DE) FOIA records request",
+          "cbaStatus": "Active CBA in effect (successor cycle — school has been organized since fall 2018)",
+          "firstContract": "Active CBA in effect — CBA referenced in Delaware Public Radio 2020 reporting; current period pending confirmation",
+          "authorizer": "Christina School District",
+          "website": "http://odysseycharterschooldel.com",
+          "lat": 39.7447,
+          "lon": -75.5484
+        },
+        {
+          "napcsId": "C1000002",
+          "name": "Sussex Academy of Arts and Sciences",
+          "city": "Georgetown",
+          "state": "DE",
+          "status": "CONFIRMED",
+          "union": "Sussex Academy of Arts and Sciences Education Association (SAASEA)",
+          "stateAff": "Delaware State Education Association (DSEA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "February 2026 (PERB(DE) case 1521 — Notice of BU Determination and Certification)",
+          "certCase": "PERB(DE) REP case 1521 — Notice of BU Determination and Certification of BU Representative, February 2026",
+          "cbaStatus": "No CBA yet — certification February 2026, first contract bargaining in progress",
+          "firstContract": "In negotiation — certification February 2026; first contract not yet ratified as of May 2026",
+          "authorizer": "Delaware Department of Education (statewide authorizer)",
+          "website": "https://www.sussexacademy.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C1018001",
+          "name": "Sussex Montessori School",
+          "city": "Seaford",
+          "state": "DE",
+          "status": "CONFIRMED",
+          "union": "Sussex Montessori Education Association (SMEA)",
+          "stateAff": "Delaware State Education Association (DSEA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "Unknown — pending PERB(DE) FOIA records request",
+          "certCase": "Pending PERB(DE) FOIA records request",
+          "cbaStatus": "Status unknown — pending PERB(DE) FOIA records request",
+          "firstContract": "Status unknown — pending PERB(DE) FOIA and DSEA direct inquiry",
+          "authorizer": "Delaware Department of Education (statewide authorizer)",
+          "website": "https://sussexmontessoricharter.com",
+          "lat": null,
+          "lon": null
+        }
+      ],
+      "dependentSchools": [],
+      "networks": []
+    },
+    "FL": {
+      "name": "Florida",
+      "laborBoard": "PERC (FL)",
+      "governingLaw": "Florida Public Employees Relations Act (PERA), Fla. Stat. §447.203. PERC(FL) has exclusive jurisdiction over all FL charter schools — all are public employers. NLRB has no jurisdiction. SB256 (2023) requires annual union recertification if dues-paying membership falls below 60%.",
+      "universe": 734,
+      "confirmed": 5,
+      "dependent": 3,
+      "intel": [
+        {
+          "prompt": "FL-1 — Florida's Charter Sector: The Most Significant Unorganized Market in the Dataset",
+          "answer": "Florida has the second-largest charter school sector in the United States by enrollment. The NAPCS Unionization Research Project searched 768 FL registry schools and found zero NLRB RC certifications and only one independently organized employer: the City of Pembroke Pines, a municipal entity. This makes Florida the most significant unorganized charter market in the dataset — a deliberate product of state policy (HB 7), labor law (SB256 recertification requirements), right-to-work status, and a for-profit EMO sector (Academica Corp., 146 schools) with a strong employer posture. CSUSA's open ULP (12-CA-372781, Sep 2025) is the leading indicator of possible future organizing activity in a non-municipal FL school."
+        },
+        {
+          "prompt": "FL-2 — Two Independently Organized FL Charters: Pembroke Pines (2007) and Compass Middle (2009)",
+          "answer": "Registry v48 deep research (May 2026) confirmed two independently organized FL charter employers. The City of Pembroke Pines Charter School System (January 2007, BTU Local 1975/FEA, 181-46 vote across 7 campuses) is a municipal employer with no ideological objection to unionization. BTU won SB256 recertification July 2025 (6,228-128). Compass Middle Charter School, Inc. (Bartow, Polk County) holds three separate PERC certifications (Cert #1713/#1714/#1715, December 1, 2009) under the Polk Education Association/FEA — instructional, classified, and paraprofessional units. Compass Middle is the only independently organized non-municipal FL charter in the NAPCS dataset, and its 2009 certifications predate widespread charter sector awareness of PERC(FL) organizing pathways. Both employers passe..."
+        },
+        {
+          "prompt": "FL-3 — PERC(FL) Portal: Accessible via Union-Name Search (Methodology Correction)",
+          "answer": "METHODOLOGY CORRECTION (May 2026): The PERC(FL) certification search portal IS publicly accessible at perc.myflorida.com/co/certResults.aspx. The initial FL research session assumed the portal was inaccessible based on web research alone — this was incorrect. The portal does not support employer-name searching but does support union-name searching. The Registry Project supplemental sweep using union-name methodology confirmed all three Pembroke Pines certifications, three AES/Bellalago/CRC district union certifications, and three Compass Middle certifications (PERC Cert #1713/#1714/#1715, December 1, 2009). The practical implication: any future FL charter school research should use the union-name search at perc.myflorida.com/co/certResults.aspx as the primary tool, supplemented by district..."
+        },
+        {
+          "prompt": "FL-4 — SB256 (2023): Florida's Most Significant Anti-Union Law in the Dataset",
+          "answer": "Florida SB256 (2023) eliminated payroll dues deduction for most public sector unions and requires annual recertification if a union falls below 60% dues-paying membership. This is the most aggressive state-level attack on public-sector union security in the NAPCS dataset — more operationally significant than Louisiana Act 172 (which affected only one school) because it affects every public-sector charter school union in Florida. BTU, CCEA, OCEA, and PFT/United have all faced or will face recertification elections. (Note: NAPCS baseline listed OTU and PTU — these names do not exist in PERC; corrected to OCEA and PFT/United per Registry Project deep research May 2026.) BTU won its recertification election July 2025 (6,228-128 — decisive). The law is designed to induce gradual attrition of un..."
+        },
+        {
+          "prompt": "FL-5 — CSUSA Active ULP: The Leading Organizing Indicator in the FL Charter Sector",
+          "answer": "Charter Schools USA (CSUSA, CMO_113) has an open NLRB ULP investigation (12-CA-372781, filed Sep 2025) with a pattern of prior charges (2017 settled, 2024 dismissed). CSUSA operates in 15+ states and is one of the largest for-profit EMO operators nationally. No RC petition has been filed in any FL CSUSA case — but the ULP pattern without petitions is a leading indicator of organizing interest or employer preemptive action. None of the 16 NAPCS FL schools are CSUSA-managed. However, CSUSA operates 25 FL schools in the broader registry. Monitoring the CSUSA ULP for escalation to RC petition is the highest-priority monitoring action in the FL post-session."
+        },
+        {
+          "prompt": "",
+          "answer": ""
+        }
+      ],
+      "openItems": [
+        {
+          "priority": "HIGH",
+          "description": "PERC(FL) Florida Public Records Act request — cert date, case number, BU description",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "PERC(FL) Florida Public Records Act request — determine whether FSU campus employees are in the BTU Charter School Professionals bargaining unit or have separate arrangement. Session E: recoded UNVERIFIED (D4) — structural ambiguity; FSU authorizer makes BTU coverage uncertain. PERC records request ",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "RESOLVED May 20, 2026 — Palm Pointe confirmed CLOSED/TRANSITIONED. No longer a charter school as of July 2024. PLT Status updated in Accumulator v3. Remove from NAPCS charter dataset. TYPE D RESOLUTION (Session E, May 24, 2026): D1 — school closed/transitioned. Correct status retained.",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "RESOLVED Session E (May 24, 2026) — TYPE D RESOLUTION: D4 for all 7. NAPCS prior-period union data was an error for all 7 schools. All schools confirmed currently operating (open) with no PERC certifications found in portal search or web research. Recoded CLOSED/TRANSITIONED → UNVERIFIED. Schools: F",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "PRIORITY MONITORING: PEA (Polk Education Association) must file for annual recertification under SB256 (2023) for all 3 Compass Middle bargaining units if dues-paying density falls below 60%. Check PERC(FL) portal (perc.myflorida.com/co/certResults.aspx — search \"Polk Education Association\") for any",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "Monitor BTU SB256 recertification cycle — BTU must re-register annually with PERC(FL). 2025 cycle underway. Any recertification failure would affect all 3 CONFIRMED schools.",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "CSUSA FL ULP monitoring: NLRB 12-CA-372781 (open Sep 2025). Monitor for RC petition filing or resolution. No NAPCS FL schools are CSUSA-managed, but national monitoring warranted.",
+          "resolution": ""
+        },
+        {
+          "priority": "LOW",
+          "description": "Registry disambiguation: two registry rows (Charlotte Campus / Lee Campus). Confirm whether NAPCS C1209003 covers one or both campuses; update registry reconciliation if needed.",
+          "resolution": ""
+        }
+      ],
+      "confirmedSchools": [
+        {
+          "napcsId": "C1298003",
+          "name": "City of Pembroke Pines Charter — West Middle School",
+          "city": "Pembroke Pines",
+          "state": "FL",
+          "status": "CONFIRMED",
+          "union": "Broward Teachers Union (BTU) Local #1975 — Charter School Professionals Unit",
+          "stateAff": "Florida Education Association (FEA)",
+          "natlAff": "AFT / NEA / AFL-CIO (FEA is dual-affiliated)",
+          "dateUnionized": "January 2007 (exact date pending PERC(FL) records)",
+          "certCase": "PERC(FL) — case number pending Florida Public Records Act request",
+          "cbaStatus": "Active CBA — 2024-25 salary tentative agreement reached (BTU Negotiations page, 2024)",
+          "firstContract": "First contract negotiated 2007-08 school year",
+          "authorizer": "Broward County School District",
+          "website": "http://pinescharter.net",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C1200007",
+          "name": "City of Pembroke Pines Charter School — Academic Village",
+          "city": "Pembroke Pines",
+          "state": "FL",
+          "status": "CONFIRMED",
+          "union": "Broward Teachers Union (BTU) Local #1975 — Charter School Professionals Unit",
+          "stateAff": "Florida Education Association (FEA)",
+          "natlAff": "AFT / NEA / AFL-CIO",
+          "dateUnionized": "January 2007 (exact date pending PERC(FL) records)",
+          "certCase": "PERC(FL) — case number pending Florida Public Records Act request",
+          "cbaStatus": "Active CBA — 2024-25 agreement in effect",
+          "firstContract": "First contract negotiated 2007-08 school year",
+          "authorizer": "Broward County School District",
+          "website": "http://pinescharter.net",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C1299007",
+          "name": "City of Pembroke Pines Charter School — East Campus Elementary",
+          "city": "Pembroke Pines",
+          "state": "FL",
+          "status": "CONFIRMED",
+          "union": "Broward Teachers Union (BTU) Local #1975 — Charter School Professionals Unit",
+          "stateAff": "Florida Education Association (FEA)",
+          "natlAff": "AFT / NEA / AFL-CIO",
+          "dateUnionized": "January 2007 (exact date pending PERC(FL) records)",
+          "certCase": "PERC(FL) — case number pending Florida Public Records Act request",
+          "cbaStatus": "Active CBA — 2024-25 agreement in effect",
+          "firstContract": "First contract negotiated 2007-08 school year",
+          "authorizer": "Broward County School District",
+          "website": "http://pinescharter.net",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C1203019",
+          "name": "Pembroke Pines FSU Charter Elementary School",
+          "city": "Pembroke Pines",
+          "state": "FL",
+          "status": "CONFIRMED",
+          "union": "Broward Teachers Union (BTU) / Florida Education Association (FEA) / AFT / NEA /",
+          "stateAff": "N/A",
+          "natlAff": "N/A",
+          "dateUnionized": "N/A",
+          "certCase": "N/A",
+          "cbaStatus": "N/A",
+          "firstContract": "N/A",
+          "authorizer": "Florida State University (FSUS-Broward developmental research school)",
+          "website": "http://www.pinescharter.net",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C1202008",
+          "name": "Compass Middle Charter School",
+          "city": "Bartow",
+          "state": "FL",
+          "status": "CONFIRMED",
+          "union": "Polk Education Association (PEA) / FEA — 3 separate certified units (instruction",
+          "stateAff": "Florida Education Association (FEA)",
+          "natlAff": "FEA / NEA",
+          "dateUnionized": "December 1, 2009 (earliest of 3 PERC certifications)",
+          "certCase": "PERC Cert #1713 (instructional), PERC Cert #1714 (classified), PERC Cert #1715 (paraprofessional) — all December 1, 2009",
+          "cbaStatus": "Active (assumed — certified 2009; SB256 recertification status pending verification)",
+          "firstContract": "Unknown — PERC(FL) Florida Public Records Act request required",
+          "authorizer": "Polk County School District",
+          "website": "http://schools.polk-fl.net/compassmiddle",
+          "lat": null,
+          "lon": null
+        }
+      ],
+      "dependentSchools": [
+        {
+          "napcsId": "C1299001",
+          "name": "Academy of Environmental Science",
+          "city": "Crystal River",
+          "state": "FL",
+          "status": "DEPENDENT",
+          "union": "Citrus County Education Association (CCEA)",
+          "stateAff": "Florida Education Association (FEA)",
+          "natlAff": "AFT / NEA / AFL-CIO",
+          "dateUnionized": "N/A — DEPENDENT status (district CBA applies)",
+          "certCase": "N/A — no independent PERC certification",
+          "cbaStatus": "Active district CBA — 2022-25 CCEA Instructional Contract (publicly posted on citrusschools.org); currently in full-book",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Citrus County School District",
+          "website": "http://aes.citrusschools.org/",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C1204006",
+          "name": "Bellalago Charter Academy",
+          "city": "Kissimmee",
+          "state": "FL",
+          "status": "DEPENDENT",
+          "union": "Osceola County Education Association (OCEA)",
+          "stateAff": "Florida Education Association (FEA)",
+          "natlAff": "AFT / NEA / AFL-CIO",
+          "dateUnionized": "N/A — DEPENDENT status (district CBA applies)",
+          "certCase": "N/A — no independent PERC certification",
+          "cbaStatus": "Active district CBA — OCEA / Osceola County SD (FEA)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Osceola County School District",
+          "website": "http://www.osceolaschools.net",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C1203026",
+          "name": "Children's Reading Center Charter School",
+          "city": "Palatka",
+          "state": "FL",
+          "status": "DEPENDENT",
+          "union": "Putnam Federation of Teachers/United (PFT/United)",
+          "stateAff": "Florida Education Association (FEA)",
+          "natlAff": "AFT / NEA / AFL-CIO",
+          "dateUnionized": "N/A — DEPENDENT status (district CBA applies)",
+          "certCase": "N/A — no independent PERC certification",
+          "cbaStatus": "Active district CBA — PFT/United / Putnam County SD (FEA)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Putnam County School District",
+          "website": "http://www.putnamschools.org/o/crccs",
+          "lat": null,
+          "lon": null
+        }
+      ],
+      "networks": []
+    },
+    "IL": {
+      "name": "Illinois",
+      "laborBoard": "NLRB (Region 13) / IELRB",
+      "governingLaw": "National Labor Relations Act (NLRA) for private nonprofits (most IL charters, per Chicago Mathematics & Science Academy, 359 NLRB 41, Dec 14 2012). Illinois Educational Labor Relations Act (IELRA, 115 ILCS 5/) for public-employer charters (ISBE-authorized). NOTE: ILRB (Illinois Labor Relations Board) does NOT cover educational employers — never cite ILRB for any charter school.",
+      "universe": 131,
+      "confirmed": 30,
+      "dependent": 1,
+      "intel": [
+        {
+          "prompt": "What is the political and legal environment shaping charter labor relations in this state?",
+          "answer": "Illinois presents the most complex labor relations environment in the NAPCS research dataset — and the most consequential for national charter sector strategy. The jurisdictional framework is dual: most independently incorporated charter nonprofits fall under NLRB (Region 13) per the landmark Chicago Mathematics & Science Academy ruling (359 NLRB 41, Dec 14 2012); ISBE-authorized and district-operated charters fall under the Illinois Educational Labor Relations Board (IELRB). The ILRB — Illinois Labor Relations Board — explicitly excludes educational employers and must never be cited for any IL charter school. This dual structure matters because NLRB jurisdiction historically required secret ballot elections, giving employers a counter-organizing window that CTU had to work around. Two leg..."
+        },
+        {
+          "prompt": "What community and social conditions are driving organizing activity in this state?",
+          "answer": "The Chicago charter sector organized under conditions that are structurally unique in the national dataset: a politically powerful district teachers union (CTU) with a strategic commitment to charter organizing, a city where charter operators depend on CPS authorization and therefore face real political consequences for resisting labor organizing, and a working-class Latino and Black parent base in the schools CTU has primarily targeted. CTU's charter strategy is not opportunistic — it is deliberate. The union created ChiACTS (Chicago Alliance of Charter Teachers and Staff) as a dedicated charter organizing vehicle, giving charter teachers a locally branded identity while connecting them to CTU's legal, administrative, and bargaining infrastructure. This chapter model is the same architect..."
+        },
+        {
+          "prompt": "What organizing strategies and approaches are charter school organizers using in this state?",
+          "answer": "CTU's IL charter organizing strategy has three distinctive features that charter sector leaders must understand. First, the network-first approach: CTU organized entire CMOs rather than individual schools, creating wall-to-wall network certifications at Acero, YCCS, and CICS. This prevents the employer strategy of closing one organized campus while expanding unorganized ones — when the whole network is organized, there is no unorganized campus to expand to. Second, the UEJ structure at Acero (United Educators for Justice) gave Acero teachers a separately named local that reflects the school's identity and values rather than simply being a CTU sub-unit. This naming strategy reduces the alienating effect of affiliation with a large district union. Third, CTU used NLRB ULP charges aggressivel..."
+        },
+        {
+          "prompt": "What should charter school leaders be doing right now in response to this environment?",
+          "answer": "Illinois charter leaders face a bifurcated reality that requires different responses depending on their authorization status. For CPS-authorized charters not yet organized: HB 1120's neutrality requirement — if it survives federal court — means the pre-2023 playbook of open employer opposition is no longer legally available. Leaders should understand that neutrality does not mean passivity: it means no captive audience meetings, no direct anti-union communications, no surveillance of organizing activity. Leaders who continue pre-2023 practices post-HB 1120 face charter non-renewal as a consequence. For all IL charter operators: the Perspectives election result (45-51, Aug 2024) demonstrates that CTU elections are still winnable without employer interference — through staff culture, compens..."
+        },
+        {
+          "prompt": "What trends should sector leaders watch over the next 3–5 years?",
+          "answer": "Five trends deserve close monitoring in Illinois. First, the federal court proceedings on HB 1120 and the 2023 card-check law — a ruling striking these down would restore the pre-2023 employer playbook; a ruling upholding them would accelerate organizing across the 75+ non-union IL charter campuses. Second, the Noble Schools monitoring situation: with 17 campuses and ~800 staff, a successful Noble organizing drive would be the largest IL charter union event since Acero. The 2017 drive came within 130 signatures of a petition. Noble's labor relations posture post-HB 1120 is worth watching closely. Third, the Acero reabsorption (5 campuses converting to CPS district schools in fall 2026): this is the first test of what happens to CTU charter agreements when the charter ends — whether CPS abs..."
+        },
+        {
+          "prompt": "What surprised us or contradicts what national sector leaders expect?",
+          "answer": "Three findings from Illinois research directly challenge assumptions common in national charter sector leadership. First, the 53 vs. 26 discrepancy: the NAPCS dataset lists 26 organized IL schools. The Registry found 53. The entire gap is explained by CMO campus counting — NAPCS listed 3 CICS schools; CICS has 12 organized campuses. This means national-level union density figures for Illinois derived from the NAPCS dataset are roughly half the real number. Sector leaders who believe union exposure in IL is limited to 26 schools should understand they are looking at fewer than half the organized employers. Second, the Perspectives result: CTU election losses in Illinois are almost unheard of. The 45-51 result at Perspectives in August 2024 — without any documented employer ULP charges — sug..."
+        }
+      ],
+      "openItems": [
+        {
+          "priority": "HIGH",
+          "description": "Verify current operational and union status — STATUS HOLD",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "NLRB Region 13 records requests needed — all certification dates, case numbers, vote tallies",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "NAPCS addition decisions pending for 3 discovery schools",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "Status code update required at CPS transition (fall 2026)",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "Verify current bargaining agent — IFT Local 4343 vs. CTU Local 1",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "Confirm governing labor board — IELRB vs. NLRB",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "Verify independence from CICS / Civitas network",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "Monitor for CTU re-filing — Perspectives is now highest-priority unorganized Chicago charter network",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "Monitor for organizing activity — 17 campuses, ~800 staff, highest-priority non-union target",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "Monitor for third NLRB petition from Prairie Crossing support staff",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "IELRB records request — certification date for Springfield SD 186 dependent coverage",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "NLRB R13 FOIA — RC case number and exact cert date for ChicagoQuest CTU certification (~2014)",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "Verify CICS ChicagoQuest is currently open (May 2026). CPS profile page exists; school fought off 2020 closure attempt.",
+          "resolution": ""
+        },
+        {
+          "priority": "REVIEWER_DECISION",
+          "description": "Sponsor NAPCS addition decisions needed for 2 new Session C discovery schools",
+          "resolution": ""
+        }
+      ],
+      "confirmedSchools": [
+        {
+          "napcsId": "C1701005",
+          "name": "PASSAGES CHARTER SCHOOL",
+          "city": "Chicago",
+          "state": "IL",
+          "status": "CONFIRMED",
+          "union": "ChiACTS (Chicago Alliance of Charter Teachers and Staff)",
+          "stateAff": "Chicago Teachers Union (CTU) / IFT",
+          "natlAff": "AFT",
+          "dateUnionized": "Unknown — NLRB Region 13 records request needed",
+          "certCase": "",
+          "cbaStatus": "Active (assumed — renewal status unconfirmed)",
+          "firstContract": "",
+          "authorizer": "Chicago Public Schools (CPS)",
+          "website": "",
+          "lat": 41.8781,
+          "lon": -87.6298
+        },
+        {
+          "napcsId": "C1703003",
+          "name": "CHICAGO INTERNATIONAL CHARTER SCHOOL (CICS) - NORTHTOWN",
+          "city": "Chicago",
+          "state": "IL",
+          "status": "CONFIRMED",
+          "union": "ChiACTS (Chicago Alliance of Charter Teachers and Staff)",
+          "stateAff": "Chicago Teachers Union (CTU) / IFT",
+          "natlAff": "AFT",
+          "dateUnionized": "Unknown — NLRB Region 13 records request needed",
+          "certCase": "",
+          "cbaStatus": "Active — CTU CBA 2018-22, renewal status to verify",
+          "firstContract": "",
+          "authorizer": "Chicago Public Schools (CPS)",
+          "website": "",
+          "lat": 41.8781,
+          "lon": -87.6298
+        },
+        {
+          "napcsId": "C1704003",
+          "name": "NAMASTE CHARTER SCHOOL",
+          "city": "Chicago",
+          "state": "IL",
+          "status": "CONFIRMED",
+          "union": "ChiACTS (Chicago Alliance of Charter Teachers and Staff)",
+          "stateAff": "Chicago Teachers Union (CTU) / IFT",
+          "natlAff": "AFT",
+          "dateUnionized": "Unknown — NLRB Region 13 records request needed",
+          "certCase": "",
+          "cbaStatus": "Active (CBA period unconfirmed)",
+          "firstContract": "",
+          "authorizer": "Chicago Public Schools (CPS)",
+          "website": "",
+          "lat": 41.8781,
+          "lon": -87.6298
+        },
+        {
+          "napcsId": "C1705003",
+          "name": "CHICAGO INTERNATIONAL CHARTER SCHOOL (CICS) - WRIGHTWOOD",
+          "city": "Chicago",
+          "state": "IL",
+          "status": "CONFIRMED",
+          "union": "ChiACTS (Chicago Alliance of Charter Teachers and Staff)",
+          "stateAff": "Chicago Teachers Union (CTU) / IFT",
+          "natlAff": "AFT",
+          "dateUnionized": "Unknown — NLRB Region 13 records request needed",
+          "certCase": "",
+          "cbaStatus": "Active — CTU CBA confirmed 2018-22, renewal unconfirmed",
+          "firstContract": "",
+          "authorizer": "Chicago Public Schools (CPS)",
+          "website": "",
+          "lat": 41.8781,
+          "lon": -87.6298
+        },
+        {
+          "napcsId": "C1705008",
+          "name": "ACERO CHARTER SCHOOL NETWORK - RUFINO TAMAYO",
+          "city": "Chicago",
+          "state": "IL",
+          "status": "CONFIRMED",
+          "union": "United Educators for Justice (UEJ) / ChiACTS",
+          "stateAff": "Chicago Teachers Union (CTU) / IFT",
+          "natlAff": "AFT",
+          "dateUnionized": "Unknown — NLRB Region 13 records request needed",
+          "certCase": "",
+          "cbaStatus": "Active — Acero network CBA (UEJ)",
+          "firstContract": "",
+          "authorizer": "Chicago Public Schools (CPS)",
+          "website": "",
+          "lat": 41.8781,
+          "lon": -87.6298
+        },
+        {
+          "napcsId": "C1705012",
+          "name": "ASPIRA ANTONIA PANTOJA HIGH SCHOOL",
+          "city": "Chicago",
+          "state": "IL",
+          "status": "CONFIRMED",
+          "union": "ChiACTS / Youth Connections (YCCS)",
+          "stateAff": "Chicago Teachers Union (CTU) / IFT",
+          "natlAff": "AFT",
+          "dateUnionized": "Unknown — NLRB Region 13 records request needed",
+          "certCase": "",
+          "cbaStatus": "Active under YCCS network",
+          "firstContract": "",
+          "authorizer": "Chicago Public Schools (CPS)",
+          "website": "",
+          "lat": 41.8781,
+          "lon": -87.6298
+        },
+        {
+          "napcsId": "C1705019",
+          "name": "YCCS: ASSOCIATION HOUSE",
+          "city": "Chicago",
+          "state": "IL",
+          "status": "CONFIRMED",
+          "union": "ChiACTS / Youth Connections (YCCS)",
+          "stateAff": "Chicago Teachers Union (CTU) / IFT",
+          "natlAff": "AFT",
+          "dateUnionized": "Unknown — NLRB Region 13 records request needed",
+          "certCase": "",
+          "cbaStatus": "Active — YCCS network CBA",
+          "firstContract": "",
+          "authorizer": "Chicago Public Schools (CPS)",
+          "website": "",
+          "lat": 41.8781,
+          "lon": -87.6298
+        },
+        {
+          "napcsId": "C1705022",
+          "name": "YCCS: LATINO YOUTH HIGH SCHOOL",
+          "city": "Chicago",
+          "state": "IL",
+          "status": "CONFIRMED",
+          "union": "ChiACTS / Youth Connections (YCCS)",
+          "stateAff": "Chicago Teachers Union (CTU) / IFT",
+          "natlAff": "AFT",
+          "dateUnionized": "Unknown — NLRB Region 13 records request needed",
+          "certCase": "",
+          "cbaStatus": "Active — CTU CBA 2018-22, renewal to confirm",
+          "firstContract": "",
+          "authorizer": "Chicago Public Schools (CPS)",
+          "website": "",
+          "lat": 41.8781,
+          "lon": -87.6298
+        },
+        {
+          "napcsId": "C1705030",
+          "name": "YCCS: YOUTH CONNECTION LEADERSHIP ACADEMY",
+          "city": "Chicago",
+          "state": "IL",
+          "status": "CONFIRMED",
+          "union": "ChiACTS / Youth Connections (YCCS)",
+          "stateAff": "Chicago Teachers Union (CTU) / IFT",
+          "natlAff": "AFT",
+          "dateUnionized": "Unknown — NLRB Region 13 records request needed",
+          "certCase": "",
+          "cbaStatus": "Active — YCCS network CBA",
+          "firstContract": "",
+          "authorizer": "Chicago Public Schools (CPS)",
+          "website": "",
+          "lat": 41.8781,
+          "lon": -87.6298
+        },
+        {
+          "napcsId": "C1706003",
+          "name": "CHICAGO INTERNATIONAL CHARTER SCHOOL (CICS) - RALPH ELLISON",
+          "city": "Chicago",
+          "state": "IL",
+          "status": "CONFIRMED",
+          "union": "ChiACTS (Chicago Alliance of Charter Teachers and Staff)",
+          "stateAff": "Chicago Teachers Union (CTU) / IFT",
+          "natlAff": "AFT",
+          "dateUnionized": "Unknown — NLRB Region 13 records request needed",
+          "certCase": "",
+          "cbaStatus": "Active — CTU CBA 2018-22, renewal unconfirmed",
+          "firstContract": "",
+          "authorizer": "Chicago Public Schools (CPS)",
+          "website": "",
+          "lat": 41.8781,
+          "lon": -87.6298
+        },
+        {
+          "napcsId": "C1706009",
+          "name": "ACERO CHARTER SCHOOL NETWORK - CARLOS FUENTES",
+          "city": "Chicago",
+          "state": "IL",
+          "status": "CONFIRMED",
+          "union": "United Educators for Justice (UEJ) / ChiACTS",
+          "stateAff": "Chicago Teachers Union (CTU) / IFT",
+          "natlAff": "AFT",
+          "dateUnionized": "Unknown — NLRB Region 13 records request needed",
+          "certCase": "",
+          "cbaStatus": "Active — Acero UEJ network CBA",
+          "firstContract": "",
+          "authorizer": "Chicago Public Schools (CPS)",
+          "website": "",
+          "lat": 41.8781,
+          "lon": -87.6298
+        },
+        {
+          "napcsId": "C1706010",
+          "name": "ACERO CHARTER SCHOOL NETWORK - BARTOLOME DE LAS CASAS",
+          "city": "Chicago",
+          "state": "IL",
+          "status": "CONFIRMED",
+          "union": "United Educators for Justice (UEJ) / ChiACTS",
+          "stateAff": "Chicago Teachers Union (CTU) / IFT",
+          "natlAff": "AFT",
+          "dateUnionized": "Unknown — NLRB Region 13 records request needed",
+          "certCase": "",
+          "cbaStatus": "Active — Acero UEJ network CBA",
+          "firstContract": "",
+          "authorizer": "Chicago Public Schools (CPS)",
+          "website": "",
+          "lat": 41.8781,
+          "lon": -87.6298
+        },
+        {
+          "napcsId": "C1706011",
+          "name": "URBAN PREP ACADEMY CHARTER HS - ENGLEWOOD",
+          "city": "Chicago",
+          "state": "IL",
+          "status": "CONFIRMED",
+          "union": "ChiACTS (Chicago Alliance of Charter Teachers and Staff)",
+          "stateAff": "Chicago Teachers Union (CTU) / IFT",
+          "natlAff": "AFT",
+          "dateUnionized": "June 2015 (NLRB cert RC-151747)",
+          "certCase": "",
+          "cbaStatus": "Active — first contract ratified June 2021",
+          "firstContract": "",
+          "authorizer": "Chicago Public Schools (CPS)",
+          "website": "",
+          "lat": 41.8781,
+          "lon": -87.6298
+        },
+        {
+          "napcsId": "C1707007",
+          "name": "ACERO CHARTER SCHOOL NETWORK - OFFICER DONALD J. MARQUEZ SCHOOL",
+          "city": "Chicago",
+          "state": "IL",
+          "status": "CONFIRMED",
+          "union": "United Educators for Justice (UEJ) / ChiACTS",
+          "stateAff": "Chicago Teachers Union (CTU) / IFT",
+          "natlAff": "AFT",
+          "dateUnionized": "Unknown — NLRB Region 13 records request needed",
+          "certCase": "",
+          "cbaStatus": "Active — Acero UEJ network CBA",
+          "firstContract": "",
+          "authorizer": "Chicago Public Schools (CPS)",
+          "website": "",
+          "lat": 41.8781,
+          "lon": -87.6298
+        },
+        {
+          "napcsId": "C1708010",
+          "name": "ACERO CHARTER SCHOOL NETWORK - SPC DANIEL ZIZUMBO CAMPUS",
+          "city": "Chicago",
+          "state": "IL",
+          "status": "CONFIRMED",
+          "union": "United Educators for Justice (UEJ) / ChiACTS",
+          "stateAff": "Chicago Teachers Union (CTU) / IFT",
+          "natlAff": "AFT",
+          "dateUnionized": "Unknown — NLRB Region 13 records request needed",
+          "certCase": "",
+          "cbaStatus": "Active — Acero UEJ network CBA",
+          "firstContract": "",
+          "authorizer": "Chicago Public Schools (CPS)",
+          "website": "",
+          "lat": 41.8781,
+          "lon": -87.6298
+        },
+        {
+          "napcsId": "C1708011",
+          "name": "ACERO CHARTER SCHOOL NETWORK - PFC OMAR E. TORRES CAMPUS",
+          "city": "Chicago",
+          "state": "IL",
+          "status": "CONFIRMED",
+          "union": "United Educators for Justice (UEJ) / ChiACTS",
+          "stateAff": "Chicago Teachers Union (CTU) / IFT",
+          "natlAff": "AFT",
+          "dateUnionized": "Unknown — NLRB Region 13 records request needed",
+          "certCase": "",
+          "cbaStatus": "Active — Acero UEJ network CBA",
+          "firstContract": "",
+          "authorizer": "Chicago Public Schools (CPS)",
+          "website": "",
+          "lat": 41.8781,
+          "lon": -87.6298
+        },
+        {
+          "napcsId": "C1708012",
+          "name": "ACERO CHARTER SCHOOL NETWORK - MAJOR HECTOR P. GARCIA M.D. HIGH SCHOOL",
+          "city": "Chicago",
+          "state": "IL",
+          "status": "CONFIRMED",
+          "union": "United Educators for Justice (UEJ) / ChiACTS",
+          "stateAff": "Chicago Teachers Union (CTU) / IFT",
+          "natlAff": "AFT",
+          "dateUnionized": "Unknown — NLRB Region 13 records request needed",
+          "certCase": "",
+          "cbaStatus": "Active — Acero UEJ network CBA",
+          "firstContract": "",
+          "authorizer": "Chicago Public Schools (CPS)",
+          "website": "",
+          "lat": 41.8781,
+          "lon": -87.6298
+        },
+        {
+          "napcsId": "C1710004",
+          "name": "ACERO CHARTER SCHOOL NETWORK - SANDRA CISNEROS",
+          "city": "Chicago",
+          "state": "IL",
+          "status": "CONFIRMED",
+          "union": "United Educators for Justice (UEJ) / ChiACTS",
+          "stateAff": "Chicago Teachers Union (CTU) / IFT",
+          "natlAff": "AFT",
+          "dateUnionized": "Unknown — NLRB Region 13 records request needed",
+          "certCase": "",
+          "cbaStatus": "Active — Acero UEJ network CBA",
+          "firstContract": "",
+          "authorizer": "Chicago Public Schools (CPS)",
+          "website": "",
+          "lat": 41.8781,
+          "lon": -87.6298
+        },
+        {
+          "napcsId": "C1710009",
+          "name": "URBAN PREP ACADEMY CHARTER HS - BRONZEVILLE",
+          "city": "Chicago",
+          "state": "IL",
+          "status": "CONFIRMED",
+          "union": "ChiACTS (Chicago Alliance of Charter Teachers and Staff)",
+          "stateAff": "Chicago Teachers Union (CTU) / IFT",
+          "natlAff": "AFT",
+          "dateUnionized": "June 2015 (network-wide, NLRB RC-151747)",
+          "certCase": "",
+          "cbaStatus": "Active — first contract ratified June 2021",
+          "firstContract": "",
+          "authorizer": "Chicago Public Schools (CPS)",
+          "website": "",
+          "lat": 41.8781,
+          "lon": -87.6298
+        },
+        {
+          "napcsId": "C1710013",
+          "name": "INSTITUTO HEALTH SCIENCE CAREER ACADEMY (IHSCA)",
+          "city": "Chicago",
+          "state": "IL",
+          "status": "CONFIRMED",
+          "union": "ChiACTS (Chicago Alliance of Charter Teachers and Staff)",
+          "stateAff": "Chicago Teachers Union (CTU) / IFT",
+          "natlAff": "AFT",
+          "dateUnionized": "Unknown — NLRB Region 13 records request needed",
+          "certCase": "",
+          "cbaStatus": "Active (assumed)",
+          "firstContract": "",
+          "authorizer": "Chicago Public Schools (CPS)",
+          "website": "",
+          "lat": 41.8781,
+          "lon": -87.6298
+        },
+        {
+          "napcsId": "C1711003",
+          "name": "ACERO CHARTER SCHOOL NETWORK - JOVITA IDAR",
+          "city": "Chicago",
+          "state": "IL",
+          "status": "CONFIRMED",
+          "union": "United Educators for Justice (UEJ) / ChiACTS",
+          "stateAff": "Chicago Teachers Union (CTU) / IFT",
+          "natlAff": "AFT",
+          "dateUnionized": "Unknown — NLRB Region 13 records request needed",
+          "certCase": "",
+          "cbaStatus": "Active — Acero UEJ network CBA",
+          "firstContract": "",
+          "authorizer": "Chicago Public Schools (CPS)",
+          "website": "",
+          "lat": 41.8781,
+          "lon": -87.6298
+        },
+        {
+          "napcsId": "C1711004",
+          "name": "ACERO CHARTER SCHOOL NETWORK - ESMERALDA SANTIAGO",
+          "city": "Chicago",
+          "state": "IL",
+          "status": "CONFIRMED",
+          "union": "United Educators for Justice (UEJ) / ChiACTS",
+          "stateAff": "Chicago Teachers Union (CTU) / IFT",
+          "natlAff": "AFT",
+          "dateUnionized": "Unknown — NLRB Region 13 records request needed",
+          "certCase": "",
+          "cbaStatus": "Active — Acero UEJ network CBA",
+          "firstContract": "",
+          "authorizer": "Chicago Public Schools (CPS)",
+          "website": "",
+          "lat": 41.8781,
+          "lon": -87.6298
+        },
+        {
+          "napcsId": "C1712003",
+          "name": "ACERO CHARTER SCHOOL NETWORK - ROBERTO CLEMENTE",
+          "city": "Chicago",
+          "state": "IL",
+          "status": "CONFIRMED",
+          "union": "United Educators for Justice (UEJ) / ChiACTS",
+          "stateAff": "Chicago Teachers Union (CTU) / IFT",
+          "natlAff": "AFT",
+          "dateUnionized": "Unknown — NLRB Region 13 records request needed",
+          "certCase": "",
+          "cbaStatus": "Active — Acero UEJ network CBA",
+          "firstContract": "",
+          "authorizer": "Chicago Public Schools (CPS)",
+          "website": "",
+          "lat": 41.8781,
+          "lon": -87.6298
+        },
+        {
+          "napcsId": "C1712007",
+          "name": "INSTITUTO JUSTICE AND LEADERSHIP CHARTER ACADEMY",
+          "city": "Chicago",
+          "state": "IL",
+          "status": "CONFIRMED",
+          "union": "ChiACTS (Chicago Alliance of Charter Teachers and Staff)",
+          "stateAff": "Chicago Teachers Union (CTU) / IFT",
+          "natlAff": "AFT",
+          "dateUnionized": "Unknown — NLRB Region 13 records request needed",
+          "certCase": "",
+          "cbaStatus": "Active (assumed)",
+          "firstContract": "",
+          "authorizer": "Chicago Public Schools (CPS)",
+          "website": "",
+          "lat": 41.8781,
+          "lon": -87.6298
+        },
+        {
+          "napcsId": "C1713006",
+          "name": "ACERO CHARTER SCHOOL NETWORK - BRIGHTON PARK",
+          "city": "Chicago",
+          "state": "IL",
+          "status": "CONFIRMED",
+          "union": "United Educators for Justice (UEJ) / ChiACTS",
+          "stateAff": "Chicago Teachers Union (CTU) / IFT",
+          "natlAff": "AFT",
+          "dateUnionized": "Unknown — NLRB Region 13 records request needed",
+          "certCase": "",
+          "cbaStatus": "Active — Acero UEJ network CBA",
+          "firstContract": "",
+          "authorizer": "Chicago Public Schools (CPS)",
+          "website": "",
+          "lat": 41.8781,
+          "lon": -87.6298
+        },
+        {
+          "napcsId": "C1713007",
+          "name": "ACERO CHARTER SCHOOL NETWORK VICTORIA SOTO CAMPUS",
+          "city": "Chicago",
+          "state": "IL",
+          "status": "CONFIRMED",
+          "union": "United Educators for Justice (UEJ) / ChiACTS",
+          "stateAff": "Chicago Teachers Union (CTU) / IFT",
+          "natlAff": "AFT",
+          "dateUnionized": "Unknown — NLRB Region 13 records request needed",
+          "certCase": "",
+          "cbaStatus": "Active — Acero UEJ network CBA",
+          "firstContract": "",
+          "authorizer": "Chicago Public Schools (CPS)",
+          "website": "",
+          "lat": 41.8781,
+          "lon": -87.6298
+        },
+        {
+          "napcsId": "C1713010",
+          "name": "CHRISTOPHER HOUSE",
+          "city": "Chicago",
+          "state": "IL",
+          "status": "CONFIRMED",
+          "union": "ChiACTS (Chicago Alliance of Charter Teachers and Staff)",
+          "stateAff": "Chicago Teachers Union (CTU) / IFT",
+          "natlAff": "AFT",
+          "dateUnionized": "Unknown — NLRB Region 13 records request needed",
+          "certCase": "",
+          "cbaStatus": "Active (assumed)",
+          "firstContract": "",
+          "authorizer": "Chicago Public Schools (CPS)",
+          "website": "",
+          "lat": 41.8781,
+          "lon": -87.6298
+        },
+        {
+          "napcsId": "C1799009",
+          "name": "PRAIRIE CROSSING CHARTER SCHOOL",
+          "city": "Grayslake",
+          "state": "IL",
+          "status": "CONFIRMED",
+          "union": "Prairie Crossing Federation of Teachers and Support Staff",
+          "stateAff": "Illinois Federation of Teachers (IFT)",
+          "natlAff": "AFT",
+          "dateUnionized": "Unknown — IELRB records request needed",
+          "certCase": "",
+          "cbaStatus": "Active (assumed — CBA not publicly accessible)",
+          "firstContract": "",
+          "authorizer": "Illinois State Board of Education (ISBE)",
+          "website": "",
+          "lat": 42.3439,
+          "lon": -88.0404
+        },
+        {
+          "napcsId": "NAPCS-ADD-IL-001",
+          "name": "NAMASTE ELEMENTARY CHARTER SCHOOL",
+          "city": "Chicago",
+          "state": "IL",
+          "status": "CONFIRMED",
+          "union": "ChiACTS (Chicago Alliance of Charter Teachers and Staff)",
+          "stateAff": "Chicago Teachers Union (CTU) / IFT",
+          "natlAff": "AFT",
+          "dateUnionized": "Unknown — NLRB Region 13 records request needed",
+          "certCase": "",
+          "cbaStatus": "Active (assumed)",
+          "firstContract": "",
+          "authorizer": "Chicago Public Schools (CPS)",
+          "website": "",
+          "lat": 41.8781,
+          "lon": -87.6298
+        },
+        {
+          "napcsId": "NAPCS-ADD-IL-002",
+          "name": "JACKSON CHARTER SCHOOL",
+          "city": "Chicago",
+          "state": "IL",
+          "status": "CONFIRMED",
+          "union": "ChiACTS (Chicago Alliance of Charter Teachers and Staff)",
+          "stateAff": "Chicago Teachers Union (CTU) / IFT",
+          "natlAff": "AFT",
+          "dateUnionized": "Unknown — NLRB Region 13 records request needed",
+          "certCase": "",
+          "cbaStatus": "Active (assumed)",
+          "firstContract": "",
+          "authorizer": "Chicago Public Schools (CPS)",
+          "website": "",
+          "lat": 41.8781,
+          "lon": -87.6298
+        },
+        {
+          "napcsId": "NAPCS-ADD-IL-003",
+          "name": "YCCS WEST",
+          "city": "Chicago",
+          "state": "IL",
+          "status": "CONFIRMED",
+          "union": "ChiACTS / Youth Connections (YCCS)",
+          "stateAff": "Chicago Teachers Union (CTU) / IFT",
+          "natlAff": "AFT",
+          "dateUnionized": "Unknown — NLRB Region 13 records request needed",
+          "certCase": "",
+          "cbaStatus": "Active — YCCS network CBA",
+          "firstContract": "",
+          "authorizer": "Chicago Public Schools (CPS)",
+          "website": "",
+          "lat": 41.8781,
+          "lon": -87.6298
+        }
+      ],
+      "dependentSchools": [
+        {
+          "napcsId": "C1798018",
+          "name": "SPRINGFIELD BALL CHARTER SCHOOL",
+          "city": "Springfield",
+          "state": "IL",
+          "status": "DEPENDENT",
+          "union": "Springfield Education Association (SEA) — district CBA coverage",
+          "stateAff": "Illinois Education Association (IEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "N/A — structural coverage, no independent certification event",
+          "certCase": "",
+          "cbaStatus": "Active — Springfield SD 186 CBA with SEA",
+          "firstContract": "",
+          "authorizer": "Springfield School District 186",
+          "website": "",
+          "lat": 39.7817,
+          "lon": -89.6501
+        }
+      ],
+      "networks": [
+        {
+          "name": "Acero Charter Schools (formerly UNO)",
+          "union": "United Educators for Justice (UEJ) / ChiACTS",
+          "schoolIds": [
+            "C1705008",
+            "C1706009",
+            "C1706010",
+            "C1707007",
+            "C1708010",
+            "C1708011",
+            "C1708012",
+            "C1710004",
+            "C1711003",
+            "C1711004",
+            "C1712003",
+            "C1712004",
+            "C1713006",
+            "C1713007"
+          ],
+          "organizedCount": 14,
+          "cbaStatus": "",
+          "keyFindings": ""
+        },
+        {
+          "name": "ASPIRA of Illinois",
+          "union": "ChiACTS (CTU teachers) + IFT Local 4343 (counselors + paraprofessionals) + IUOE ",
+          "schoolIds": [
+            "C1705001",
+            "C1707001",
+            "C1705012",
+            "C1715001"
+          ],
+          "organizedCount": 4,
+          "cbaStatus": "",
+          "keyFindings": ""
+        },
+        {
+          "name": "Chicago International Charter School (CICS) / Civitas Education Partners",
+          "union": "ChiACTS (CTU-ACTS) — teacher unit; PLUS Epic Academy unit (office/support staff,",
+          "schoolIds": [
+            "C1703003",
+            "C1705003",
+            "C1706003"
+          ],
+          "organizedCount": 3,
+          "cbaStatus": "",
+          "keyFindings": ""
+        },
+        {
+          "name": "Youth Connection Charter School (YCCS)",
+          "union": "ChiACTS / Youth Connections",
+          "schoolIds": [
+            "C1705019",
+            "C1705022",
+            "C1705030"
+          ],
+          "organizedCount": 3,
+          "cbaStatus": "",
+          "keyFindings": ""
+        },
+        {
+          "name": "Urban Prep Academies",
+          "union": "ChiACTS (Chicago Alliance of Charter Teachers and Staff)",
+          "schoolIds": [
+            "C1706011",
+            "C1710009"
+          ],
+          "organizedCount": 2,
+          "cbaStatus": "",
+          "keyFindings": ""
+        },
+        {
+          "name": "Instituto del Progreso Latino",
+          "union": "ChiACTS (Chicago Alliance of Charter Teachers and Staff)",
+          "schoolIds": [
+            "C1710013",
+            "C1712007"
+          ],
+          "organizedCount": 2,
+          "cbaStatus": "",
+          "keyFindings": ""
+        }
+      ]
+    },
+    "LA": {
+      "name": "Louisiana",
+      "laborBoard": "LSCSC / NLRB R15",
+      "governingLaw": "Louisiana Employee Relations Act (LERA) — post-Act 172 (signed May 23, 2024) for all BESE-authorized Type 2/5 charters. Pre-Act 172: NLRA / NLRB R15. Locally-authorized (Type 1/3/3B/4) charters: LSCSC/LERA throughout.",
+      "universe": 142,
+      "confirmed": 3,
+      "dependent": 0,
+      "intel": [
+        {
+          "prompt": "What is the political and legal environment shaping charter labor relations in Louisiana?",
+          "answer": "Louisiana presents the most legislatively reactive jurisdictional environment in the NAPCS research dataset. The New Orleans charter sector has been a site of sustained UTNO organizing since 2013 — and the Louisiana state legislature responded with Act 172 (signed May 23, 2024), reclassifying all BESE-authorized Type 2/5 charters as public employers under LERA and eliminating NLRB Region 15 jurisdiction. This was not a gradual regulatory evolution: it was a targeted legislative intervention, signed two days after UTNO won NLRB certification at Lycée Français de la Nouvelle-Orléans, that retroactively stripped the certification of any operative effect. The legislature effectively nullified a confirmed union election through jurisdictional reclassification. No comparable legislative action a..."
+        },
+        {
+          "prompt": "What is UTNO's role and what does its organizing pattern reveal?",
+          "answer": "United Teachers of New Orleans (UTNO), AFT Local 527, is the sole union that has successfully organized New Orleans charter schools. Its president, Dave Cash, teaches at one of the organized schools (Rooted School). This creates a highly personalized, community-embedded organizing model — UTNO leadership is literally employed in the schools they are organizing. UTNO’s organizing history in the NAPCS dataset covers all four confirmed schools: Morris Jeff (first NOLA charter to unionize, 2013, voluntary board recognition), Benjamin Franklin HS (board vote, 2014), Bricolage Academy (NLRB election, 2021), and the failed Lycée Français campaign (NLRB election win, 2024 — jurisdiction stripped). The non-NAPCS registry confirms UTNO has also organized Rooted School (2022) and Living School (2023,..."
+        },
+        {
+          "prompt": "What does Act 172 mean for the future of charter school organizing in Louisiana?",
+          "answer": "Act 172 is the most significant single legislative act affecting charter school labor relations documented anywhere in the NAPCS research dataset. It creates a structural organizing barrier at all 52 BESE-authorized Type 2/5 LA charter schools. Future organizing at these schools cannot go through NLRB R15 — jurisdiction was eliminated. It must go through LSCSC under LERA, but LSCSC has no established charter school organizing procedures. UTNO faces a first-mover cost problem analogous to New Mexico’s jurisdictional ambiguity: the cost of establishing LSCSC charter school jurisdiction falls entirely on the first school to attempt organizing under LERA, with no guarantee of outcome. In the near term, Act 172 has made Type 2/5 charter school organizing in Louisiana practically impossible with..."
+        },
+        {
+          "prompt": "What is the employer posture in Louisiana charter schools?",
+          "answer": "Louisiana charter school employers present two distinct postures. Type 1/3/3B locally-authorized (OPSB) schools — Morris Jeff, Benjamin Franklin, Bricolage — have been cooperative with voluntary recognition. Board votes and voluntary recognition were the mechanism at two of the three, consistent with a community-school governance model in which board members were not adversarially opposed to UTNO recognition. The OPSB posture is cooperative or neutral. In contrast, Type 2 BESE-authorized schools have shown adversarial employer posture. International High School’s operator (Voices for International Business and Education, Inc.) spent 9 years (2016–2025) refusing to bargain despite an NLRB election win, generating 10 ULP cases and a Fifth Circuit ruling before the school closed. Lycée França..."
+        }
+      ],
+      "openItems": [
+        {
+          "priority": "HIGH",
+          "description": "LSCSC filing monitoring — will UTNO pursue LERA certification?",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "LSCSC records request for formal certification documentation and CBA copy",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "LSCSC records request for board vote documentation and CBA copy",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "🔴 Act 172 — sponsor briefing recommended",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "NLRB FOIA for case number and vote tally documentation for 2021 election",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "KIPP NOLA organizing threat monitoring",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "NLRB R15 records request for full case history documentation",
+          "resolution": ""
+        }
+      ],
+      "confirmedSchools": [
+        {
+          "napcsId": "C2210012",
+          "name": "Morris Jeff Community School",
+          "city": "New Orleans",
+          "state": "LA",
+          "status": "CONFIRMED",
+          "union": "Morris Jeff United Educators (MJUE) / UTNO",
+          "stateAff": "United Teachers of New Orleans (UTNO) / Louisiana Federation of Teachers (LFT)",
+          "natlAff": "AFT / AFL-CIO (AFT Local 527)",
+          "dateUnionized": "2013",
+          "certCase": "N/A — voluntary recognition; no NLRB case filed",
+          "cbaStatus": "Active CBA — successive contracts. Most recent contract linked in NAPCS Accumulator.",
+          "firstContract": "Active CBA on file (PLT Accumulator source link)",
+          "authorizer": "Orleans Parish School Board (OPSB) — Type 3B locally-authorized",
+          "website": "https://morrisjeff.org",
+          "lat": 29.9511,
+          "lon": -90.0715
+        },
+        {
+          "napcsId": "C2205002",
+          "name": "Benjamin Franklin High School",
+          "city": "New Orleans",
+          "state": "LA",
+          "status": "CONFIRMED",
+          "union": "United Teachers of Franklin / UTNO",
+          "stateAff": "United Teachers of New Orleans (UTNO) / Louisiana Federation of Teachers (LFT)",
+          "natlAff": "AFT / AFL-CIO (AFT Local 527)",
+          "dateUnionized": "2014",
+          "certCase": "N/A — board vote; no NLRB case filed",
+          "cbaStatus": "Active CBA. Board voted to recognize UTNO May 2014. Successive contracts in effect.",
+          "firstContract": "Active CBA on file (PLT Accumulator source link)",
+          "authorizer": "Orleans Parish School Board (OPSB) — Type 3 locally-authorized",
+          "website": "https://www.bfhsla.org",
+          "lat": 29.9511,
+          "lon": -90.0715
+        },
+        {
+          "napcsId": "C2217025",
+          "name": "Bricolage Academy",
+          "city": "New Orleans",
+          "state": "LA",
+          "status": "CONFIRMED",
+          "union": "Bricolage Academy Educators United (BAEU) / UTNO",
+          "stateAff": "United Teachers of New Orleans (UTNO) / Louisiana Federation of Teachers (LFT)",
+          "natlAff": "AFT / AFL-CIO (AFT Local 527)",
+          "dateUnionized": "2021",
+          "certCase": "NLRB R15 election May 28, 2021 — case number not confirmed in registry; election outcome confirmed by NAPCS Baseline and registry records",
+          "cbaStatus": "Active CBA. Election May 28, 2021. CBA ratified post-election; successive contract in effect.",
+          "firstContract": "Active CBA on file (PLT Accumulator source link)",
+          "authorizer": "Orleans Parish School Board (OPSB) — Type 1 locally-authorized",
+          "website": "https://www.bricolageacademy.org",
+          "lat": 29.9511,
+          "lon": -90.0715
+        }
+      ],
+      "dependentSchools": [],
+      "networks": []
+    },
+    "MA": {
+      "name": "Massachusetts",
+      "laborBoard": "DLR (MA)",
+      "governingLaw": "M.G.L. c. 71 §89 (Charter School Law — explicitly classifies charter school employees as public employees); M.G.L. c. 150E (Public Employee Collective Bargaining). Card-check (Written Majority Authorization / WMA) available — no election required.",
+      "universe": 73,
+      "confirmed": 8,
+      "dependent": 5,
+      "intel": [
+        {
+          "prompt": "What is the political and legal environment shaping charter labor relations in this state?",
+          "answer": "Massachusetts is the only state in the NAPCS research dataset with complete statutory clarity for charter school labor relations. M.G.L. c. 71 §89(y) explicitly classifies all charter school employees as public employees, placing them under DLR(MA) jurisdiction with card-check (Written Majority Authorization / WMA) available under Chapter 150E. The NLRB has never successfully asserted jurisdiction over a MA charter school, and no employer has successfully challenged the public employer classification. This produces a qualitatively different legal environment from every other state: there is no jurisdictional ambiguity for employers to exploit, no secret ballot election required, and no counter-organizing window. The organizing path in MA is: gather authorization cards from 50%+ of the barg..."
+        },
+        {
+          "prompt": "What community and social conditions are driving organizing activity in this state?",
+          "answer": "The 2024 organizing surge in Massachusetts — at least two new certifications (Codman Academy, CCSC Cambridge) and a first contract ratification (NHCS) within twelve months — reflects a convergence of factors that charter sector leaders should understand as a pattern, not a coincidence. First, the Boston charter sector is geographically proximate to BTU (Boston Teachers Union) organizing infrastructure. BTU has existing relationships with charter teachers who attended the same education schools, live in the same neighborhoods, and in some cases started their careers in BPS. The ideological distance between \"charter teacher\" and \"union member\" is measurably smaller in Boston than in Chicago or New York. Second, post-pandemic compensation pressure: charter school teachers saw real wage declin..."
+        },
+        {
+          "prompt": "What organizing strategies and approaches are charter school organizers using in this state?",
+          "answer": "Massachusetts charter school organizing in 2024-26 is characterized by speed, quiet, and the deliberate use of WMA card-check to prevent employer campaigns. The BTU pattern for Boston-area charters: outreach begins among staff who already have relationships with BTU members or organizers, often through social networks rather than formal campaign events; authorization cards are gathered through workplace conversations rather than public meetings; the WMA petition is filed once 50%+ is secured, triggering certification before the employer has an opportunity to respond. The result is that MA charter school employers often learn about organizing activity when DLR certifies the unit — not when the campaign begins. The Codman Academy certification (May 2024) and CCSC Cambridge certification (Jun..."
+        },
+        {
+          "prompt": "What should charter school leaders be doing right now in response to this environment?",
+          "answer": "The MA legal environment requires a fundamentally different approach from NLRB-jurisdiction states. Three things MA charter leaders cannot do that their IL or PA counterparts can: (1) They cannot use the charter renewal process as implicit leverage against organizing — BESE does not condition renewal on labor relations posture. (2) They cannot demand a secret ballot election to trigger a 20-day counter-organizing window. (3) They cannot ask for legal counsel to file election objections as a delay tactic — there is no election to object to. What MA charter leaders can do: invest proactively in compensation competitiveness against the BPS salary schedule; build professional development and career ladder structures that give staff reasons to prefer charter employment over BPS employment on pr..."
+        },
+        {
+          "prompt": "What trends should sector leaders watch over the next 3–5 years?",
+          "answer": "Four trends are worth monitoring closely for the next biannual cycle. First, the BTU expansion trajectory: BTU organized Codman (2024), NHCS first contract (2026), and CCSC Cambridge (2024). Each certification adds to BTU's credibility as a charter organizing vehicle and reduces the social distance between \"charter teacher\" and \"BTU member.\" The next logical targets in the BTU orbit are any Boston-area charter schools with compensation gaps relative to BPS and any school that has experienced rapid enrollment growth (which often compresses planning time and increases staff stress). Second, the PVPA successor contract: the July 2023–June 2026 CBA has now expired (as of May 2026). UAW Local 2322 and PVPA are in successor negotiations. If successor negotiations stall, a first-in-MA-charter-sec..."
+        },
+        {
+          "prompt": "What surprised us or contradicts what national leaders expect?",
+          "answer": "Three findings from MA research directly challenge common national assumptions. First, the invisible contract: Foxborough Regional Charter School has an active, confirmed CBA with FRCSTA — a completely independent local with no national affiliation — that is invisible to press monitoring, Alidade feeds, national union databases, and open-source research. It was detectable only through the DESE educator contracts portal. National charter sector leaders who rely on AFT/NEA databases and press monitoring to track union activity are missing organized schools in states with educator contract disclosure portals. This will recur in other states. Second, the non-AFT/NEA affiliations: three MA charter unions have affiliations outside the AFT/NEA world — Teamsters Local 170 (AMSA, Marlborough), UAW ..."
+        }
+      ],
+      "openItems": [
+        {
+          "priority": "HIGH",
+          "description": "Status upgrade required: ORGANIZING → CONFIRMED",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "Second bargaining unit not recorded in NAPCS workbook",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "Cert date correction AND first contract ratification",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "Cert date correction",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "Cert date confirmed",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "Date confirmed + 3 units confirmed",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "CBA expired June 2026 — successor negotiations in progress",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "NAPCS record disposition — merged school",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "Certification mechanism and date unknown",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "April 15, 2020 denied DLR petition — nature unknown",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "Exact decertification date and nature of 8/22/2012 DLR document",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "First contract copy",
+          "resolution": ""
+        }
+      ],
+      "confirmedSchools": [
+        {
+          "napcsId": "C2501002",
+          "name": "CODMAN ACADEMY CHARTER PUBLIC SCHOOL",
+          "city": "Boston",
+          "state": "MA",
+          "status": "CONFIRMED",
+          "union": "Codman Academy Educators Union / Boston Teachers Union Local 66",
+          "stateAff": "AFT Massachusetts",
+          "natlAff": "AFT",
+          "dateUnionized": "May 29, 2024 (DLR WMA card-check certification)",
+          "certCase": "",
+          "cbaStatus": "Bargaining in progress (assumed — cert May 2024; first contract not confirmed)",
+          "firstContract": "",
+          "authorizer": "Massachusetts Board of Elementary and Secondary Education (BESE)",
+          "website": "https://www.codmanacademy.org",
+          "lat": 42.3601,
+          "lon": -71.0589
+        },
+        {
+          "napcsId": "C2505001",
+          "name": "ADVANCED MATH AND SCIENCE ACADEMY CHARTER SCHOOL",
+          "city": "Marlborough",
+          "state": "MA",
+          "status": "CONFIRMED",
+          "union": "AMSA Educators Association / Teamsters Local 170",
+          "stateAff": "IBT (International Brotherhood of Teamsters)",
+          "natlAff": "IBT / AFL-CIO",
+          "dateUnionized": "July 16, 2014 (Unit 1 — teachers); March 13, 2023 (Unit 2 — Department Chairs)",
+          "certCase": "",
+          "cbaStatus": "Active — CBA on file (DESE portal orgcode 04300000)",
+          "firstContract": "",
+          "authorizer": "Massachusetts Board of Elementary and Secondary Education (BESE)",
+          "website": "https://www.amsa.us",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C2505002",
+          "name": "COMMUNITY CHARTER SCHOOL OF CAMBRIDGE",
+          "city": "Cambridge",
+          "state": "MA",
+          "status": "CONFIRMED",
+          "union": "Community Charter School of Cambridge Educators Union / AFT Massachusetts",
+          "stateAff": "AFT Massachusetts",
+          "natlAff": "AFT",
+          "dateUnionized": "June 7, 2024 (DLR certification; amended June 10, 2024)",
+          "certCase": "",
+          "cbaStatus": "Bargaining in progress (assumed — cert June 2024; first contract not confirmed)",
+          "firstContract": "",
+          "authorizer": "Massachusetts Board of Elementary and Secondary Education (BESE)",
+          "website": "https://www.ccscambridge.org",
+          "lat": 42.3736,
+          "lon": -71.1097
+        },
+        {
+          "napcsId": "C2594002",
+          "name": "NEIGHBORHOOD HOUSE CHARTER SCHOOL",
+          "city": "Boston",
+          "state": "MA",
+          "status": "CONFIRMED",
+          "union": "Neighborhood House Charter School Educators Union / Boston Teachers Union Local ",
+          "stateAff": "AFT Massachusetts",
+          "natlAff": "AFT",
+          "dateUnionized": "March 18, 2024 (DLR certification — 4 records including 3 on 3/18/2024 + 1 on 3/28/2024)",
+          "certCase": "",
+          "cbaStatus": "ACTIVE — first contract RATIFIED March 2026 (tentative agreement Feb 25, 2026; ratified early March 2026)",
+          "firstContract": "",
+          "authorizer": "Massachusetts Board of Elementary and Secondary Education (BESE)",
+          "website": "https://www.nhcs.net",
+          "lat": 42.3601,
+          "lon": -71.0589
+        },
+        {
+          "napcsId": "C2595003",
+          "name": "CAPE COD LIGHTHOUSE CHARTER SCHOOL",
+          "city": "East Harwich",
+          "state": "MA",
+          "status": "CONFIRMED",
+          "union": "Cape Cod Lighthouse Charter School Educators Association / AFT Massachusetts",
+          "stateAff": "AFT Massachusetts",
+          "natlAff": "AFT",
+          "dateUnionized": "April 14, 2011 (DLR certification — 1 record)",
+          "certCase": "",
+          "cbaStatus": "Active (assumed — 14 years post-certification; successor contracts expected)",
+          "firstContract": "",
+          "authorizer": "Massachusetts Board of Elementary and Secondary Education (BESE)",
+          "website": "https://cclcs.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C2595004",
+          "name": "CITY ON A HILL CHARTER PUBLIC SCHOOL",
+          "city": "Boston",
+          "state": "MA",
+          "status": "CONFIRMED",
+          "union": "City on a Hill Educators Association / Boston Teachers Union Local 66",
+          "stateAff": "AFT Massachusetts",
+          "natlAff": "AFT",
+          "dateUnionized": "May 1, 2018 (DLR certification — 3 records, all dated 5/1/2018 covering 3 campuses)",
+          "certCase": "",
+          "cbaStatus": "Active (assumed — 7 years post-certification; successor contracts expected)",
+          "firstContract": "",
+          "authorizer": "Massachusetts Board of Elementary and Secondary Education (BESE)",
+          "website": "https://www.cityonahillcs.org",
+          "lat": 42.3601,
+          "lon": -71.0589
+        },
+        {
+          "napcsId": "C2596006",
+          "name": "PIONEER VALLEY PERFORMING ARTS CHARTER PUBLIC SCHOOL",
+          "city": "South Hadley",
+          "state": "MA",
+          "status": "CONFIRMED",
+          "union": "PVPA Staff Association / UAW Local 2322",
+          "stateAff": "UAW (United Auto Workers)",
+          "natlAff": "UAW / AFL-CIO",
+          "dateUnionized": "February 8, 2018 (DLR certification — confirmed in DLR records and CBA Article 2)",
+          "certCase": "",
+          "cbaStatus": "EXPIRED — July 1, 2023–June 30, 2026 CBA has expired as of May 7, 2026. Successor negotiations in progress.",
+          "firstContract": "",
+          "authorizer": "Massachusetts Board of Elementary and Secondary Education (BESE)",
+          "website": "https://pvpa.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C2598006",
+          "name": "FOXBOROUGH REGIONAL CHARTER SCHOOL",
+          "city": "Foxborough",
+          "state": "MA",
+          "status": "CONFIRMED",
+          "union": "FRCSTA — Foxborough Regional Charter School Teachers Association",
+          "stateAff": "Independent (no state affiliate)",
+          "natlAff": "Independent (no national affiliation)",
+          "dateUnionized": "Unknown — no DLR records found; voluntary recognition suspected",
+          "certCase": "",
+          "cbaStatus": "Active — CBA confirmed on DESE portal",
+          "firstContract": "",
+          "authorizer": "Massachusetts Board of Elementary and Secondary Education (BESE)",
+          "website": "https://www.foxboroughcharter.org",
+          "lat": null,
+          "lon": null
+        }
+      ],
+      "dependentSchools": [
+        {
+          "napcsId": "C2511003",
+          "name": "BOSTON GREEN ACADEMY HORACE MANN CHARTER SCHOOL",
+          "city": "Boston",
+          "state": "MA",
+          "status": "DEPENDENT",
+          "union": "Boston Teachers Union Local 66 / AFT Massachusetts",
+          "stateAff": "AFT Massachusetts",
+          "natlAff": "AFT",
+          "dateUnionized": "September 2011 (school opening — Horace Mann statutory coverage)",
+          "certCase": "",
+          "cbaStatus": "Active — BPS-BTU District CBA (September 2024–August 2027)",
+          "firstContract": "",
+          "authorizer": "Boston Public Schools",
+          "website": "",
+          "lat": 42.3601,
+          "lon": -71.0589
+        },
+        {
+          "napcsId": "C2512008",
+          "name": "DUDLEY STREET NEIGHBORHOOD CHARTER SCHOOL",
+          "city": "Boston",
+          "state": "MA",
+          "status": "DEPENDENT",
+          "union": "Boston Teachers Union Local 66 / AFT Massachusetts",
+          "stateAff": "AFT Massachusetts",
+          "natlAff": "AFT",
+          "dateUnionized": "2012 (school opening — Horace Mann statutory coverage)",
+          "certCase": "",
+          "cbaStatus": "Active — BPS-BTU District CBA (September 2024–August 2027)",
+          "firstContract": "",
+          "authorizer": "Boston Public Schools",
+          "website": "",
+          "lat": 42.3601,
+          "lon": -71.0589
+        },
+        {
+          "napcsId": "C2513006",
+          "name": "UP ACADEMY CHARTER SCHOOL OF DORCHESTER",
+          "city": "Boston",
+          "state": "MA",
+          "status": "DEPENDENT",
+          "union": "Boston Teachers Union Local 66 / AFT Massachusetts",
+          "stateAff": "AFT Massachusetts",
+          "natlAff": "AFT",
+          "dateUnionized": "2013 (school opening — Horace Mann statutory coverage)",
+          "certCase": "",
+          "cbaStatus": "Active — BPS-BTU District CBA (September 2024–August 2027)",
+          "firstContract": "",
+          "authorizer": "Boston Public Schools",
+          "website": "",
+          "lat": 42.3601,
+          "lon": -71.0589
+        },
+        {
+          "napcsId": "C2598004",
+          "name": "BOSTON DAY AND EVENING ACADEMY",
+          "city": "Boston",
+          "state": "MA",
+          "status": "DEPENDENT",
+          "union": "Boston Teachers Union Local 66 / AFT Massachusetts",
+          "stateAff": "AFT Massachusetts",
+          "natlAff": "AFT",
+          "dateUnionized": "1998 (Horace Mann charter authorization — school opening)",
+          "certCase": "",
+          "cbaStatus": "Active — BPS-BTU District CBA (September 2024–August 2027)",
+          "firstContract": "",
+          "authorizer": "Boston Public Schools",
+          "website": "",
+          "lat": 42.3601,
+          "lon": -71.0589
+        },
+        {
+          "napcsId": "C2598007",
+          "name": "EDWARD M. KENNEDY ACADEMY FOR HEALTH CAREERS",
+          "city": "Boston",
+          "state": "MA",
+          "status": "DEPENDENT",
+          "union": "Boston Teachers Union Local 66 / AFT Massachusetts",
+          "stateAff": "AFT Massachusetts",
+          "natlAff": "AFT",
+          "dateUnionized": "2007 (school opening — Horace Mann statutory coverage)",
+          "certCase": "",
+          "cbaStatus": "Active — BPS-BTU District CBA (September 2024–August 2027)",
+          "firstContract": "",
+          "authorizer": "Boston Public Schools",
+          "website": "",
+          "lat": 42.3601,
+          "lon": -71.0589
+        }
+      ],
+      "networks": []
+    },
+    "ME": {
+      "name": "Maine",
+      "laborBoard": "NLRB",
+      "governingLaw": "National Labor Relations Act (NLRA). Baxter Academy is incorporated as a private nonprofit charter school under the Maine Charter School Commission — it is not a public employer and falls under NLRB, not MLRB. MLRB (Maine Labor Relations Board) governs traditional public employers only and does NOT apply to Baxter Academy.",
+      "universe": 11,
+      "confirmed": 1,
+      "dependent": 0,
+      "intel": [
+        {
+          "prompt": "BAXTER ACADEMY — OVERWHELMING VOTE IN A TINY STATE",
+          "answer": "Baxter Academy for Technology and Science (Portland) is Maine's only NAPCS charter school and the state's first STEM-focused public charter high school. Staff voted 30-4 (88%) to join MEA/NEA in May 2019 — the most lopsided vote in Maine's charter sector history. The Baxter Academy Education Association is the local affiliate. MEA (Maine Education Association) is the NEA-affiliated statewide teacher union. CBA is active; exact contract period requires MEA or school confirmation."
+        },
+        {
+          "prompt": "MLRB DOES NOT APPLY — JURISDICTION CLARIFICATION",
+          "answer": "Baxter Academy is incorporated as a private nonprofit under the Maine Charter School Commission. It is not a \"public employer\" under Maine law and is therefore NOT subject to MLRB jurisdiction. All labor matters are handled by NLRB Region 1 (Boston). This is consistent with the NAPCS project's treatment of other privately incorporated charter schools in NLRB-jurisdiction states."
+        },
+        {
+          "prompt": "MAINE CONNECTIONS ACADEMY — NON-NAPCS NEAR-MISS",
+          "answer": "Maine Connections Academy (a virtual Stride K12 school) held an NLRB election in January 2020 (Case 01-RC-249587) and voted 10-9 AGAINST unionizing. No subsequent organizing drive confirmed as of April 2026. This is a biannual monitoring target — Stride K12 schools have been targeted by unions in multiple states."
+        }
+      ],
+      "openItems": [
+        {
+          "priority": "LOW",
+          "description": "NLRB FOIA for official certified election document — Case 01-RC-239165",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "CBA text and current contract period not publicly confirmed",
+          "resolution": ""
+        },
+        {
+          "priority": "LOW",
+          "description": "Monitor for re-organizing activity — voted 10-9 against in Jan 2020",
+          "resolution": ""
+        },
+        {
+          "priority": "LOW",
+          "description": "Full registry sweep — biannual refresh October 2026",
+          "resolution": ""
+        }
+      ],
+      "confirmedSchools": [
+        {
+          "napcsId": "C2313001",
+          "name": "BAXTER ACADEMY FOR TECHNOLOGY AND SCIENCE",
+          "city": "Portland",
+          "state": "ME",
+          "status": "CONFIRMED",
+          "union": "Baxter Academy Education Association",
+          "stateAff": "MEA (Maine Education Association)",
+          "natlAff": "NEA",
+          "dateUnionized": "May 14, 2019 (NLRB election/certification date, Case 01-RC-239165)",
+          "certCase": "NLRB 01-RC-239165",
+          "cbaStatus": "Active",
+          "firstContract": "Unknown — CBA active; period requires MEA confirmation",
+          "authorizer": "Maine Charter School Commission",
+          "website": "https://baxter-academy.org",
+          "lat": 43.6591,
+          "lon": -70.2568
+        }
+      ],
+      "dependentSchools": [],
+      "networks": []
+    },
+    "MI": {
+      "name": "Michigan",
+      "laborBoard": "MERC / NLRB Region 7",
+      "governingLaw": "SPLIT JURISDICTION: (1) MERC under PERA (Mich. Comp. Laws §423.201 et seq.) for locally-authorized and ISD-authorized charter schools (public employers); (2) NLRB Region 7 (Detroit, prefix \"07-\") for privately incorporated charter nonprofits under NLRA. Authorizer type is the determinative factor — same pattern as Illinois. Michigan calls charter schools \"Public School Academies (PSAs).\" Prop 22 (November 2022) repealed right-to-work for private-sector workers effective March 2023 / February 2024 (private sector NLRB workers); card-check (majority sign-up) available for MERC-jurisdiction schools under PERA.",
+      "universe": 373,
+      "confirmed": 10,
+      "dependent": 0,
+      "intel": [
+        {
+          "prompt": "What is the political and legal environment shaping charter labor relations in this state?",
+          "answer": "Michigan presents a jurisdictional landscape that is more complex than any other state in the NAPCS dataset except Illinois, with which it shares the split MERC/NLRB structure. The determinative factor is authorizer type: locally or ISD-authorized charter schools are public employers under PERA and fall under MERC jurisdiction (with card-check certification available), while privately incorporated charter nonprofits are private employers under the NLRA and fall under NLRB Region 7 (Detroit) jurisdiction.\n\nThe political context shifted fundamentally in late 2022 when Michigan voters passed Proposition 22, repealing the 2013 \"Freedom to Work\" right-to-work law. For private-sector workers (NLRB-jurisdiction charters), the repeal took effect February 2024 — meaning that new CBAs at Michigan ch..."
+        },
+        {
+          "prompt": "What community and social conditions are driving organizing activity in this state?",
+          "answer": "Arts Academy in the Woods (AAW) was the first charter school in Michigan to unionize (2012) and remains the flagship of Michigan charter union organizing. Its profile fits the Mission-Driven First Mover pattern seen throughout the NAPCS dataset: arts-integrated curriculum, progressive pedagogy, LGBTQ-affirming school culture, and a highly engaged and values-driven staff. The 20-1 vote was nearly unanimous — a signal that the organizing drive was a collective affirmation of shared identity rather than a contested adversarial campaign. The school's employment page continues to highlight union membership as a feature, attracting teachers who value collective representation.\n\nUniversity Yes Academy (UYA, Detroit) followed a very different path. The 2015 organizing drive occurred in the context..."
+        },
+        {
+          "prompt": "What organizing strategies and approaches are being used in this state?",
+          "answer": "Michigan has two distinct organizing tracks in the charter sector, with different unions, different legal frameworks, and different target school profiles.\n\nMEA/NEA (Michigan Education Association) is dominant in the non-NAPCS Michigan charter sector. The three registry-confirmed organized schools — Macomb Montessori Academy, Old Redford Academy, and West Michigan Academy of Arts and Academics — are all MEA-organized, all MERC-jurisdiction schools, and were all organized in the 2010-2018 window. MEA's MERC strategy leverages card-check certification (no election required with majority cards) and has been effective in smaller, community-rooted schools. MEA's historical opposition to charter schools as a policy matter has not prevented it from representing charter school employees when appro..."
+        },
+        {
+          "prompt": "What should charter leaders be doing now in response to organizing patterns in this state?",
+          "answer": "Michigan charter leaders face a jurisdiction-first imperative: the first question any charter operator must answer is which labor board governs — MERC or NLRB Region 7. This determination affects every subsequent decision about organizing vulnerability, card-check exposure, and CBA negotiation dynamics. University authorizer alone does not resolve the question; the school's corporate structure and the degree of authorizer management control both matter.\n\nFor schools in the Detroit metro area — where Michigan ACTS infrastructure is concentrated — the lessons from the UYA case are instructive: management restructuring to evade bargaining creates federal liability rather than eliminating union obligations. The NLRB's alter-ego doctrine binds a successor employer when management, ownership, an..."
+        },
+        {
+          "prompt": "What trends should charter sector leaders watch over the next 3-5 years?",
+          "answer": "The most consequential near-term development in Michigan charter labor is the open ULP at Stride K12/Michigan Great Lakes Virtual Academy (MGLVA, case 07-CA-356535, filed December 2024, MEA charging). This case involves a virtual charter school with statewide enrollment — if MEA successfully organizes MGLVA, it would be the first organized virtual charter in the Michigan dataset. MEA's involvement rather than Michigan ACTS suggests MERC jurisdiction (MGLVA may be authorized by a local district or ISD). Monitor NLRB and MERC dockets for any RC petition at MGLVA.\n\nMid-Michigan Leadership Academy (MMLA, C2696006) has a documented MEA certification from January 2000 and a failed decertification vote. The current SABIS management (SABIS is an international for-profit EMO based in Lebanon) and M..."
+        },
+        {
+          "prompt": "What surprised us in this state? What contradicts what national leaders expect?",
+          "answer": "The most significant finding in the Michigan data is the complete absence of MEA/NEA in the NAPCS school list — despite MEA's dominance in the broader Michigan charter sector (all 3 registry-confirmed organized schools are MEA). All Michigan NAPCS union schools are AFT-Michigan (Michigan ACTS). This bifurcation appears to reflect a target-school dynamic: MEA has focused on MERC-jurisdiction schools with card-check availability (community-oriented, ISD-authorized, often suburban or small-city charters), while Michigan ACTS has focused on NLRB-jurisdiction schools in the Detroit urban market. The NAPCS selection bias toward urban schools likely explains the AFT-only NAPCS finding.\n\nThe historical MEA election at MMLA (2000, 38-21 vote — \"the largest unionized charter school in the nation\" at..."
+        }
+      ],
+      "openItems": [
+        {
+          "priority": "HIGH",
+          "description": "Michigan FOIA Act request to MERC — MEA certified Jan 2000 (38-21); failed decert (30-16); no current CBA found in Mackinac database; SABIS now manages. MERC 2000-era records not in public digital portal — formal records request required (email merc@michigan.gov). If MEA still active: recode to CONF",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "Search NLRB ADS (nlrb.gov/search/case) for employer names \"University Yes Academy\" and \"New Paradigm for Education\" — filter post-2016, look for CA (ULP) or RC (election) cases. This is a free public search; no FOIA required. If no cases found: NPFE likely continued without Michigan ACTS — recode UY",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "Search NLRB ADS (nlrb.gov/search/case) for employer \"Arts Academy in the Woods\" Region 7, cases filed 2011-2012. Case page shows cert date, vote tally, and unit description publicly — no FOIA required. CBA terms: direct request to school or AFT Michigan.",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "Active ULP 07-CA-356535 (MEA, filed Dec 2024, open). Monitor NLRB ADS for any RC petition at MGLVA. If RC filed: check if MGLVA in NAPCS dataset.",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "CORRECTED Session C (May 24, 2026): CCA network is CONFIRMED — Michigan ACTS certified Feb 7, 2013 (2:1 margin); second 5-year contract ratified 91-3 (~2016). Post-Leona Group (~2019) status requires verification. Monitor for: (1) NLRB R7 FOIA for RC case number and exact cert date; (2) Whether Mich",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "NLRB R7 FOIA — RC case number and exact cert date for Michigan ACTS network-wide certification (Feb 7, 2013). Post-Leona Group status verification.",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "MERC FOIA — union name, case number, and cert date for active bargaining agreement confirmed on transparency page.",
+          "resolution": ""
+        }
+      ],
+      "confirmedSchools": [
+        {
+          "napcsId": "C2601002",
+          "name": "Arts Academy in the Woods",
+          "city": "Fraser",
+          "state": "MI",
+          "status": "CONFIRMED",
+          "union": "Arts Academy in the Woods Federation of Teachers (Michigan ACTS — Michigan Allia",
+          "stateAff": "AFT Michigan",
+          "natlAff": "AFT / AFL-CIO (AFT Local 6482)",
+          "dateUnionized": "~January 2012 (exact date recoverable via NLRB ADS public search — no FOIA needed)",
+          "certCase": "Case number pending NLRB ADS search (nlrb.gov/search/case, employer \"Arts Academy in the Woods\", Region 7, 2011-2012) — public record, no FOIA needed",
+          "cbaStatus": "Active — successive CBAs since ~2012-13. Employment page confirms active membership as of May 2026. MERC Contract Bargai",
+          "firstContract": "First contract ratified ~2012-13. Successive contracts in effect since. Exact terms: request directly from school or AFT Michigan — no FOIA needed for charter school CBA.",
+          "authorizer": "Macomb Intermediate School District (Macomb ISD)",
+          "website": "http://www.artsacad.net",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C2610008",
+          "name": "University Yes Academy",
+          "city": "Detroit",
+          "state": "MI",
+          "status": "CONFIRMED",
+          "union": "Michigan Alliance of Charter Teachers and Staff (Michigan ACTS)",
+          "stateAff": "AFT Michigan",
+          "natlAff": "AFT / AFL-CIO (AFT Local 6482)",
+          "dateUnionized": "May 14, 2015 (NLRB Certification of Representative issued — case 07-RC-148928)",
+          "certCase": "07-RC-148928 (CONFIRMED from NLRB ADS, May 2026)",
+          "cbaStatus": "UNKNOWN — certified May 14, 2015 under New Urban Learning. Employer restructuring post-certification creates uncertainty",
+          "firstContract": "Unknown — employer (New Urban Learning) departed mid-2015; InspirED (alter-ego) refused to bargain; NLRB complaint filed March 2016. NPFE (New Paradigm for Education) now manages UYA. Whether NPFE recognized Michigan ACTS and ratified first CBA is UNKNOWN — Gap: current CBA status obtainable via NLRB ADS (search \"University Yes Academy\" / \"New Paradigm for Education\" — public search, no FOIA required) or MERC records request.",
+          "authorizer": "Bay Mills Community College",
+          "website": "https://uya.npfeschools.org",
+          "lat": 42.3314,
+          "lon": -83.0458
+        },
+        {
+          "napcsId": "C2600004",
+          "name": "Grand Rapids Child Discovery Center",
+          "city": "Grand Rapids",
+          "state": "MI",
+          "status": "CONFIRMED",
+          "union": "Unknown — bargaining agreement active per school transparency page; union name r",
+          "stateAff": "Unknown — MERC FOIA required",
+          "natlAff": "Unknown — MERC FOIA required",
+          "dateUnionized": "Unknown — MERC FOIA required for cert date",
+          "certCase": "Unknown — MERC FOIA required. Contact: MERC, 2309 Technology Pkwy, Suite 104, Okemos, MI 48864 or merc@michigan.gov",
+          "cbaStatus": "ACTIVE — confirmed via GRCDC transparency page (2025-26): \"Health benefits for teaching staff are directed by the curren",
+          "firstContract": "Unknown",
+          "authorizer": "Grand Rapids Public Schools",
+          "website": "http://www.childdiscoverycenter.org",
+          "lat": 42.9634,
+          "lon": -85.6681
+        },
+        {
+          "napcsId": "C2601012",
+          "name": "Cesar Chavez Academy High School",
+          "city": "Detroit",
+          "state": "MI",
+          "status": "CONFIRMED",
+          "union": "Michigan Alliance of Charter Teachers & Staff (Michigan ACTS) / AFT Michigan / A",
+          "stateAff": "AFT Michigan",
+          "natlAff": "American Federation of Teachers (AFT) / AFL-CIO",
+          "dateUnionized": "February 7, 2013 (NLRB R7 election, 2:1 margin — confirmed AFT Michigan organizer interview)",
+          "certCase": "NLRB Region 7 RC case number unknown — 2013 cert; prior ADS scan (May 8, 2026) returned 0 results because search was under wrong employer name or pre-digitization case. NLRB R7 FOIA required: 477 Michigan Ave, Suite 300, Detroit MI 48226. Also search under \"Cesar Chavez Academy,\" \"Cesar Chavez Academy Inc,\" \"Michigan Alliance of Charter Teachers.\"",
+          "cbaStatus": "ACTIVE — Second 5-year contract ratified 91-3 per AFT Michigan press release (~2016). Post-Leona Group (departed ~2019) ",
+          "firstContract": "Ratified within 3 years of certification (2013-2016 period). Second 5-year contract ratified 91-3 (~2016). AFT Michigan press release confirms both.",
+          "authorizer": "Saginaw Valley State University",
+          "website": "http://www.chavezwaterman.com",
+          "lat": 42.3314,
+          "lon": -83.0458
+        },
+        {
+          "napcsId": "C2609001",
+          "name": "Cesar Chavez Academy Intermediate",
+          "city": "Detroit",
+          "state": "MI",
+          "status": "CONFIRMED",
+          "union": "Michigan Alliance of Charter Teachers & Staff (Michigan ACTS) / AFT Michigan / A",
+          "stateAff": "AFT Michigan",
+          "natlAff": "American Federation of Teachers (AFT) / AFL-CIO",
+          "dateUnionized": "February 7, 2013 (network-wide certification — see C2601012 for full detail)",
+          "certCase": "Same network-wide RC case as C2601012 — case number unknown, NLRB R7 FOIA required",
+          "cbaStatus": "ACTIVE — see C2601012 for full detail. Post-Leona Group status requires verification.",
+          "firstContract": "Second 5-year contract ratified 91-3 (~2016) covering all campuses",
+          "authorizer": "Saginaw Valley State University",
+          "website": "http://www.chavezmartin.com/",
+          "lat": 42.3314,
+          "lon": -83.0458
+        },
+        {
+          "napcsId": "C2699073",
+          "name": "Cesar Chavez Academy Middle School",
+          "city": "Detroit",
+          "state": "MI",
+          "status": "CONFIRMED",
+          "union": "Michigan Alliance of Charter Teachers & Staff (Michigan ACTS) / AFT Michigan / A",
+          "stateAff": "AFT Michigan",
+          "natlAff": "American Federation of Teachers (AFT) / AFL-CIO",
+          "dateUnionized": "February 7, 2013 (network-wide certification — see C2601012 for full detail)",
+          "certCase": "Same network-wide RC case as C2601012 — case number unknown, NLRB R7 FOIA required",
+          "cbaStatus": "ACTIVE — see C2601012. Post-Leona Group status requires verification.",
+          "firstContract": "Second 5-year contract ratified 91-3 (~2016) covering all campuses",
+          "authorizer": "Saginaw Valley State University",
+          "website": "http://www.chavezgoldsmith.com/",
+          "lat": 42.3314,
+          "lon": -83.0458
+        },
+        {
+          "napcsId": "C2699074",
+          "name": "Cesar Chavez Academy Elementary",
+          "city": "Detroit",
+          "state": "MI",
+          "status": "CONFIRMED",
+          "union": "Michigan Alliance of Charter Teachers & Staff (Michigan ACTS) / AFT Michigan / A",
+          "stateAff": "AFT Michigan",
+          "natlAff": "American Federation of Teachers (AFT) / AFL-CIO",
+          "dateUnionized": "February 7, 2013 (network-wide certification — see C2601012 for full detail)",
+          "certCase": "Same network-wide RC case as C2601012 — case number unknown, NLRB R7 FOIA required",
+          "cbaStatus": "ACTIVE — see C2601012. Post-Leona Group status requires verification.",
+          "firstContract": "Second 5-year contract ratified 91-3 (~2016) covering all campuses",
+          "authorizer": "Saginaw Valley State University",
+          "website": "http://www.chavezvernor.com/",
+          "lat": 42.3314,
+          "lon": -83.0458
+        },
+        {
+          "napcsId": "NAPCS-ADD-MI-001",
+          "name": "Macomb Montessori Academy",
+          "city": "Clinton Township",
+          "state": "MI",
+          "status": "CONFIRMED",
+          "union": "Michigan Education Association (MEA) / NEA — dual bargaining unit (teachers + jo",
+          "stateAff": "Michigan Education Association (MEA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "Unknown — confirmed as of 2018 MEA reporting",
+          "certCase": "Gap: MERC case numbers obtainable via Michigan FOIA Act request to MERC",
+          "cbaStatus": "Unknown — no public CBA located; MERC records request required",
+          "firstContract": "Unknown — no public CBA located",
+          "authorizer": "Macomb County ISD (or local district) — MERC jurisdiction confirmed by registry classification",
+          "website": "Unknown — research coordinator to verify current school website",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NAPCS-ADD-MI-002",
+          "name": "Old Redford Academy",
+          "city": "Detroit",
+          "state": "MI",
+          "status": "CONFIRMED",
+          "union": "Michigan Education Association (MEA) / NEA",
+          "stateAff": "Michigan Education Association (MEA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "Unknown — confirmed existing as of November 2017 (NLRB ULP case)",
+          "certCase": "NLRB 8(a)(5) refusal-to-bargain case: 07-CA-209199 (November 2017) — confirms MEA certification existed at time of ULP. Original MERC cert case number: Gap — obtainable via MERC FOIA.",
+          "cbaStatus": "Unknown — employer refused to bargain (ULP case 2017); whether first contract was ultimately achieved requires MERC/NLRB",
+          "firstContract": "Unknown — no public CBA located",
+          "authorizer": "Unknown — MERC jurisdiction per registry classification; local district or ISD authorizer likely",
+          "website": "Unknown — research coordinator to verify current school website and operational status",
+          "lat": 42.3314,
+          "lon": -83.0458
+        },
+        {
+          "napcsId": "NAPCS-ADD-MI-003",
+          "name": "West Michigan Academy of Arts and Academics",
+          "city": "Spring Lake",
+          "state": "MI",
+          "status": "CONFIRMED",
+          "union": "Michigan Education Association (MEA) / NEA",
+          "stateAff": "Michigan Education Association (MEA)",
+          "natlAff": "National Education Association (NEA)",
+          "dateUnionized": "October 12, 2010",
+          "certCase": "07-RC-023370",
+          "cbaStatus": "Unknown — no public CBA located; school ~15 years post-cert. NLRB ADS follow-up for any subsequent litigation.",
+          "firstContract": "Unknown — ~15 years post-cert as of May 2026",
+          "authorizer": "Grand Valley State University",
+          "website": "Unknown — research coordinator to verify current school website (not in NCES CCD; address 17350 Hazel St, Spring Lake MI 49456)",
+          "lat": null,
+          "lon": null
+        }
+      ],
+      "dependentSchools": [],
+      "networks": [
+        {
+          "name": "Cesar Chavez Academy",
+          "union": "",
+          "schoolIds": [
+            "C2601012",
+            "C2609001",
+            "C2699073",
+            "C2699074"
+          ],
+          "organizedCount": 4,
+          "cbaStatus": "",
+          "keyFindings": ""
+        }
+      ]
+    },
+    "MN": {
+      "name": "Minnesota",
+      "laborBoard": "BMS (MN)",
+      "governingLaw": "Minnesota Public Employment Labor Relations Act (PELRA), Minn. Stat. §179A. 2023 PELRA amendments explicitly included charter school employees as public employees — all MN charter organizing now routes through BMS. Pre-2023 certifications (TCGIS, CSE, Hiawatha) were processed via NLRB because schools were treated as private employers before the amendment.",
+      "universe": 309,
+      "confirmed": 7,
+      "dependent": 0,
+      "intel": [
+        {
+          "prompt": "EDUCATION MINNESOTA — DUAL-AFFILIATED MONOPOLY",
+          "answer": "Education Minnesota (EdMN) is the sole organizing vehicle for MN charter school staff in the NAPCS dataset. EdMN is uniquely dual-affiliated with both NEA and AFT nationally — every MN charter union is simultaneously NEA and AFT. EdMN uses a chapter model: each school forms its own named chapter under shared EdMN infrastructure. The NAPCS dataset includes 5 distinct EdMN chapters: TCGIS Staff Association, CSE Staff Association, Hiawatha Area Workers United (HAWU — covering 4 campuses), ASA Staff Association, and Great River Staff Association."
+        },
+        {
+          "prompt": "2023 PELRA AMENDMENT — JURISDICTION SHIFT",
+          "answer": "Pre-2023, MN charter schools were treated as private employers and organized via NLRB. The 2023 PELRA amendments explicitly included charter school employees as public employees under state jurisdiction — all new MN charter organizing routes through BMS. This creates a split record: NLRB case numbers for TCGIS, CSE, and Hiawatha (all 2014/2021), BMS case numbers for ASA (2021 — filed after the amendment? Requires clarification) and Ubah (2011 — predates amendment; confirm BMS jurisdiction). Historical NLRB records remain valid; new petitions will generate BMS case numbers."
+        },
+        {
+          "prompt": "HIAWATHA FIRST CONTRACT — MULTI-YEAR DELAY",
+          "answer": "Hiawatha Academies certified in June 2021 (NLRB 18-RC-276584). BMS mediation records (BMS 23PN2305, April 2023) indicate first contract bargaining extended at least 2 years post-certification. First contract status as of May 2026 is unconfirmed — BMS records request and HAWU/EdMN contact required. If unresolved, this is one of the longest post-certification bargaining delays in the full NAPCS dataset."
+        },
+        {
+          "prompt": "CHARTER MORATORIUM BILL AND KIPP MN REBRAND — ORGANIZING ENVIRONMENT SIGNALS",
+          "answer": "Two legislative and institutional developments are material to the MN charter organizing environment as of Session D (May 2026):\n\n(1) SF 2257 (2025-26 session): A Minnesota Senate bill introduced March 2025 would establish a two-year moratorium on formation of new charter schools from July 1, 2025 through July 1, 2027. Status: Referred to Education Policy Committee. If enacted, this would freeze the MN charter universe at current size — meaning no new schools for EdMN to target but also no new schools with which to dilute union density. EdMN's organizing efforts would focus entirely on existing non-union charters. The moratorium bill reflects broader DFL-aligned political support for reducing charter sector expansion — the same political environment that passed the 2023 PELRA amendment exp..."
+        }
+      ],
+      "openItems": [
+        {
+          "priority": "HIGH",
+          "description": "NAPCS addition APPROVED May 19, 2026 (PLT director). NAPCS ID pending NAPCS assignment. Enter into PLT Accumulator when NAPCS ID assigned.",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "Section 8 approval required — ASA individual school report (status change UNVERIFIED → CONFIRMED). Pre-existing open item from MN session.",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "BMS records requests — priority queue",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "PLT Accumulator data entry — after NAPCS addition approval confirmed",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "PLT Accumulator update — UNVERIFIED → CONFIRMED (after Section 8 approval)",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "BMS 25RA0150 arbitration resolution — August 2024",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "First contract status — unconfirmed as of May 2026",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "Registry v6 data quality fix — ASA city field error",
+          "resolution": ""
+        },
+        {
+          "priority": "LOW",
+          "description": "KIPP MN rebrand 2026-27 — monitor for organizing interest",
+          "resolution": ""
+        }
+      ],
+      "confirmedSchools": [
+        {
+          "napcsId": "C2705019",
+          "name": "TWIN CITIES GERMAN IMMERSION SCHOOL (TCGIS)",
+          "city": "Saint Paul",
+          "state": "MN",
+          "status": "CONFIRMED",
+          "union": "TCGIS Staff Association",
+          "stateAff": "Education Minnesota (EdMN)",
+          "natlAff": "NEA / AFT",
+          "dateUnionized": "January 2014 (NLRB, pre-PELRA amendment)",
+          "certCase": "NLRB Region 18 — case # pending BMS records request",
+          "cbaStatus": "Active (assumed)",
+          "firstContract": "Unknown — successor CBA terms pending BMS records request",
+          "authorizer": "MN Department of Education (MDE)",
+          "website": "https://www.tcgis.org",
+          "lat": 44.9537,
+          "lon": -93.09
+        },
+        {
+          "napcsId": "C2707002",
+          "name": "COMMUNITY SCHOOL OF EXCELLENCE (CSE)",
+          "city": "Saint Paul",
+          "state": "MN",
+          "status": "CONFIRMED",
+          "union": "CSE Staff Association",
+          "stateAff": "Education Minnesota (EdMN)",
+          "natlAff": "NEA / AFT",
+          "dateUnionized": "June 2014 (NLRB, pre-PELRA amendment)",
+          "certCase": "NLRB Region 18 — case # pending BMS records request",
+          "cbaStatus": "Active (assumed)",
+          "firstContract": "Unknown — successor CBA terms pending BMS records request",
+          "authorizer": "MN Department of Education (MDE)",
+          "website": "https://www.cse.k12.mn.us",
+          "lat": 44.9537,
+          "lon": -93.09
+        },
+        {
+          "napcsId": "C2707018",
+          "name": "HIAWATHA LEADERSHIP ACADEMY - NORTHROP CAMPUS",
+          "city": "Minneapolis",
+          "state": "MN",
+          "status": "CONFIRMED",
+          "union": "Hiawatha Area Workers United (HAWU)",
+          "stateAff": "Education Minnesota (EdMN)",
+          "natlAff": "NEA / AFT",
+          "dateUnionized": "June 2021 (network-wide — NLRB 18-RC-276584)",
+          "certCase": "NLRB 18-RC-276584 (network)",
+          "cbaStatus": "Unknown — first contract likely resolved but unconfirmed",
+          "firstContract": "Unknown — BMS 23PN2305 mediation April 2023; first contract status unconfirmed",
+          "authorizer": "MN Department of Education (MDE)",
+          "website": "https://hiawathaacademies.org",
+          "lat": 44.9778,
+          "lon": -93.265
+        },
+        {
+          "napcsId": "C2714001",
+          "name": "ART AND SCIENCE ACADEMY",
+          "city": "Isanti",
+          "state": "MN",
+          "status": "CONFIRMED",
+          "union": "ASA Staff Association",
+          "stateAff": "Education Minnesota (EdMN)",
+          "natlAff": "NEA / AFT",
+          "dateUnionized": "2021 (BMS card-check, case 21RCE0933 — exact date pending BMS records request)",
+          "certCase": "BMS 21RCE0933 (certification) + BMS 25RA0150 (arbitration Aug 2024)",
+          "cbaStatus": "Unknown — arbitration outcome may affect CBA status",
+          "firstContract": "Unknown — BMS arbitration August 2024 (25RA0150) suggests contract dispute; outcome pending",
+          "authorizer": "MN Guild (authorizer confirmed Session 2)",
+          "website": "https://www.artandscienceacademy.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C2715010",
+          "name": "HIAWATHA COLLEGIATE HIGH SCHOOL",
+          "city": "Minneapolis",
+          "state": "MN",
+          "status": "CONFIRMED",
+          "union": "Hiawatha Area Workers United (HAWU)",
+          "stateAff": "Education Minnesota (EdMN)",
+          "natlAff": "NEA / AFT",
+          "dateUnionized": "June 2021 (network-wide — NLRB 18-RC-276584)",
+          "certCase": "NLRB 18-RC-276584 (network)",
+          "cbaStatus": "Unknown",
+          "firstContract": "Unknown — see Northrop campus notes",
+          "authorizer": "MN Department of Education (MDE)",
+          "website": "https://hiawathaacademies.org",
+          "lat": 44.9778,
+          "lon": -93.265
+        },
+        {
+          "napcsId": "C2718004",
+          "name": "HIAWATHA COLLEGE PREP - NORTHROP CAMPUS",
+          "city": "Minneapolis",
+          "state": "MN",
+          "status": "CONFIRMED",
+          "union": "Hiawatha Area Workers United (HAWU)",
+          "stateAff": "Education Minnesota (EdMN)",
+          "natlAff": "NEA / AFT",
+          "dateUnionized": "June 2021 (network-wide — NLRB 18-RC-276584)",
+          "certCase": "NLRB 18-RC-276584 (network)",
+          "cbaStatus": "Unknown",
+          "firstContract": "Unknown — see Northrop (Leadership Academy) campus notes",
+          "authorizer": "MN Department of Education (MDE)",
+          "website": "https://hiawathaacademies.org",
+          "lat": 44.9778,
+          "lon": -93.265
+        },
+        {
+          "napcsId": "NAPCS-ADD-MN-002",
+          "name": "Ubah Medical Academy",
+          "city": "Hopkins",
+          "state": "MN",
+          "status": "CONFIRMED",
+          "union": "Ubah Academy Staff Association",
+          "stateAff": "Education Minnesota (EdMN)",
+          "natlAff": "NEA / AFT",
+          "dateUnionized": "2011 (BMS case 11PCE0488 — exact date pending BMS records request)",
+          "certCase": "BMS 11PCE0488",
+          "cbaStatus": "Active (assumed — 2011 certification; 14+ years)",
+          "firstContract": "Unknown — predates PLT research scope. BMS records request required.",
+          "authorizer": "TBD — NCES CCD verification pending",
+          "website": "https://ubahmedicalacademy.org",
+          "lat": null,
+          "lon": null
+        }
+      ],
+      "dependentSchools": [],
+      "networks": [
+        {
+          "name": "Hiawatha Academies",
+          "union": "",
+          "schoolIds": [
+            "C2707017",
+            "C2707018",
+            "C2715010",
+            "C2718004"
+          ],
+          "organizedCount": 4,
+          "cbaStatus": "",
+          "keyFindings": ""
+        }
+      ]
+    },
+    "NJ": {
+      "name": "New Jersey",
+      "laborBoard": "PERC (NJ)",
+      "governingLaw": "N.J.S.A. 18A:36A (NJ Charter School Law); N.J.S.A. 34:13A-1 et seq. All NJ charter schools are public schools; all employees are public employees.",
+      "universe": 86,
+      "confirmed": 19,
+      "dependent": 0,
+      "intel": [
+        {
+          "prompt": "What is the political and legal environment shaping charter labor relations in this state?",
+          "answer": "New Jersey presents the clearest statutory framework for charter school unionization of any state in the NAPCS research dataset. NJ charter school law (N.J.S.A. 18A:36A) explicitly classifies charter schools as public schools and their employees as public employees — a determination that was never contested and has no NLRB analog in NJ. PERC (NJ) has full and exclusive jurisdiction; the NLRB does not apply. Card-check certification is available under the NJPERA without an election, giving NJEA a structural organizing advantage it has used consistently. The result is a predictable, low-friction certification pathway: when NJEA secures majority authorization cards, certification follows as a matter of administrative process rather than an adversarial election. PERC's public contracts portal ..."
+        },
+        {
+          "prompt": "What community and social conditions are driving organizing activity in this state?",
+          "answer": "The NJ charter sector presents a paradox for sector leaders: the schools most likely to be unionized are among the most mission-intensive and longest-operating, not the schools with the most contentious labor environments. Many of the 17 confirmed unionized NJ charter schools are high-performing institutions with stable staff tenure and collaborative leadership cultures (Soaring Heights, LEAP Academy). This pattern reflects the organizing logic of the NJ charter sector: NJEA has consistently used card-check certification as a professional service delivery to charter school staff who want collective bargaining not to confront management, but to formalize an already collaborative relationship. The 2015–2016 wave of card-check certifications reflects NJEA's systematic outreach across the sect..."
+        },
+        {
+          "prompt": "What organizing strategies and approaches are being used in this state?",
+          "answer": "NJEA's NJ charter organizing strategy has four defining characteristics. First, overwhelming dominance: 15 of 17 confirmed active NAPCS-listed NJ charter schools are NJEA-affiliated, with only two exceptions (Englewood on the Palisades / AFT-NJ, and New Horizons / Independent). NJEA operates as a near-monopoly organizing vehicle. Second, card-check preference: the vast majority of NJ charter certifications used card-check rather than election, reflecting NJEA's strategy of organizing through voluntary employer engagement rather than adversarial campaigns. Third, timing coordination: the 2015–2016 cluster of certifications (five schools in a single window) suggests a deliberate campaign. Fourth, scope: NJEA consistently seeks broad-based units (professional and non-professional employees), ..."
+        },
+        {
+          "prompt": "What should charter leaders be doing now in response to organizing patterns in this state?",
+          "answer": "For NJ charter leaders, the primary strategic insight is that PERC (NJ) creates a fundamentally different organizing risk environment than NLRB states. The card-check mechanism means a campaign can result in certification within weeks of a majority card-check submission — without any employer counter-campaign window. Leaders who are not currently unionized should monitor NJEA field representative activity in their geographic markets and maintain proactive staff relations practices. The Jersey City market is the highest-risk: of eight NAPCS-listed schools in Hudson County, five are confirmed unionized, and BelovED's September 2024 certification adds to the critical mass. Leaders should make PERC portal monitoring part of their governance calendar. The 64% CBA non-filing rate means portal mo..."
+        },
+        {
+          "prompt": "What trends should charter sector leaders watch over the next 3–5 years?",
+          "answer": "Three trends warrant sustained monitoring. First, BelovED as an indicator: the September 2024 dual-unit certification (1,556 students, 266 staff) signals continued NJEA activity. If a first contract is ratified, it will be the most significant NJ charter labor agreement in recent years. Second, the three possible NAPCS data errors: if OPRA confirms that Burch, Teaneck Community, and University Academy HS were never certified, the NJ confirmed total drops materially — a correction that should prompt NAPCS to audit its NJ source documentation. Third, the Englewood on the Palisades CBA gap: no successor contract has been filed since 2015. If the AFT-NJ local has been dormant or informally decertified, it would be the only documented de facto deunionization in the NJ NAPCS dataset."
+        },
+        {
+          "prompt": "What surprised us in this state? What contradicts what national leaders expect?",
+          "answer": "Two findings contradict common assumptions. First, the non-adversarial character of NJ charter school organizing. The NJ dataset tells a different story than the national discourse: high-performing, long-established schools (Soaring Heights: founded 1997, described in 2024 press as \"only unionized\" K-8 in Hudson County; LEAP Academy: 2004, Camden) are among the unionized, with no evidence of labor strife at any NAPCS-listed NJ charter school. The NJ charter union model developed as a professional services arrangement, not a labor conflict. Second, the NJEA near-monopoly. National observers might expect AFT to be competitive in Newark and Jersey City. The data shows the opposite: NJEA dominates to a degree not seen in any other researched state — AFT has exactly one NJ charter school in the..."
+        }
+      ],
+      "openItems": [
+        {
+          "priority": "HIGH",
+          "description": "OPRA requests pending for all schools",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "Reviewer decision required — zero PERC footprint",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "NAPCS addition decisions pending for both discovery schools",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "Cert date, union name, vote tally entirely unknown",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "CBA expired 2015 — current status unknown",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "First contract monitoring",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "Dual NAPCS rows decision + HS campus cert status",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "Dual certification events — investigate 2016 reaffirmation",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "Date Convention propagation once OPRA received",
+          "resolution": ""
+        }
+      ],
+      "confirmedSchools": [
+        {
+          "napcsId": "C3400004",
+          "name": "The Queen City Academy Charter School",
+          "city": "Plainfield",
+          "state": "NJ",
+          "status": "CONFIRMED",
+          "union": "Queen City Education Association",
+          "stateAff": "NJEA",
+          "natlAff": "NEA",
+          "dateUnionized": "2015 (card check — exact date pending OPRA)",
+          "certCase": "PERC (NJ) — pending OPRA",
+          "cbaStatus": "None found on PERC portal",
+          "firstContract": "Unknown — pending OPRA",
+          "authorizer": "New Jersey Department of Education",
+          "website": "https://www.queencityacademy.org",
+          "lat": 40.6337,
+          "lon": -74.4074
+        },
+        {
+          "napcsId": "C3401005",
+          "name": "LEAP Academy University Charter School",
+          "city": "Camden",
+          "state": "NJ",
+          "status": "CONFIRMED",
+          "union": "LEAP Academy Teachers Association",
+          "stateAff": "NJEA",
+          "natlAff": "NEA",
+          "dateUnionized": "2004 (exact date pending OPRA)",
+          "certCase": "PERC (NJ) — pending OPRA",
+          "cbaStatus": "None found on PERC portal",
+          "firstContract": "Unknown — pending OPRA",
+          "authorizer": "New Jersey Department of Education",
+          "website": "https://www.leapacademy.org",
+          "lat": 39.9259,
+          "lon": -75.1196
+        },
+        {
+          "napcsId": "C3401006",
+          "name": "New Horizons Community Charter School",
+          "city": "Newark",
+          "state": "NJ",
+          "status": "CONFIRMED",
+          "union": "New Horizons Employee Association",
+          "stateAff": "Independent",
+          "natlAff": "N/A",
+          "dateUnionized": "2003 (exact date pending OPRA)",
+          "certCase": "PERC (NJ) — pending OPRA",
+          "cbaStatus": "None found on PERC portal",
+          "firstContract": "Unknown",
+          "authorizer": "New Jersey Department of Education",
+          "website": "https://www.newhorizonscs.org",
+          "lat": 40.7357,
+          "lon": -74.1724
+        },
+        {
+          "napcsId": "C3403001",
+          "name": "Paterson Charter School for Science and Technology",
+          "city": "Paterson",
+          "state": "NJ",
+          "status": "CONFIRMED",
+          "union": "Paterson Charter Education Association",
+          "stateAff": "NJEA",
+          "natlAff": "NEA",
+          "dateUnionized": "2015 (card check — exact date pending OPRA)",
+          "certCase": "PERC (NJ) — pending OPRA",
+          "cbaStatus": "CONFIRMED on PERC portal (2017 agreement)",
+          "firstContract": "CBA on file (2017)",
+          "authorizer": "New Jersey Department of Education",
+          "website": "https://www.patersoncharter.org",
+          "lat": 40.9176,
+          "lon": -74.1719
+        },
+        {
+          "napcsId": "C3408004",
+          "name": "Community Charter School of Paterson",
+          "city": "Paterson",
+          "state": "NJ",
+          "status": "CONFIRMED",
+          "union": "Community Charter School of Paterson Education Association",
+          "stateAff": "NJEA",
+          "natlAff": "NEA",
+          "dateUnionized": "2015 (card check — exact date pending OPRA)",
+          "certCase": "PERC (NJ) — pending OPRA",
+          "cbaStatus": "None found on PERC portal",
+          "firstContract": "Unknown",
+          "authorizer": "New Jersey Department of Education",
+          "website": "https://www.ccsp.org",
+          "lat": 40.9176,
+          "lon": -74.1719
+        },
+        {
+          "napcsId": "C3411005",
+          "name": "Dr. Lena Edwards Academic Charter School",
+          "city": "Jersey City",
+          "state": "NJ",
+          "status": "CONFIRMED",
+          "union": "Dr. Lena Edwards Academic Charter School Education Association",
+          "stateAff": "NJEA",
+          "natlAff": "NEA",
+          "dateUnionized": "~2016 (cert date uncertain — \"2016?\" in NAPCS baseline)",
+          "certCase": "PERC (NJ) — pending OPRA",
+          "cbaStatus": "None found on PERC portal",
+          "firstContract": "Unknown",
+          "authorizer": "New Jersey Department of Education",
+          "website": "https://www.drlenacs.org",
+          "lat": 40.7178,
+          "lon": -74.0431
+        },
+        {
+          "napcsId": "C3497004",
+          "name": "Learning Community Charter School",
+          "city": "Jersey City",
+          "state": "NJ",
+          "status": "CONFIRMED",
+          "union": "Learning Community Charter School Education Association",
+          "stateAff": "NJEA",
+          "natlAff": "NEA",
+          "dateUnionized": "2024 (exact date pending OPRA)",
+          "certCase": "PERC (NJ) — pending OPRA",
+          "cbaStatus": "CONFIRMED on PERC portal",
+          "firstContract": "CBA on file",
+          "authorizer": "New Jersey Department of Education",
+          "website": "https://www.learningcommunitycs.com",
+          "lat": 40.7178,
+          "lon": -74.0431
+        },
+        {
+          "napcsId": "C3497009",
+          "name": "Soaring Heights Charter School",
+          "city": "Jersey City",
+          "state": "NJ",
+          "status": "CONFIRMED",
+          "union": "Soaring Heights Charter School Education Association (name inferred — pending OP",
+          "stateAff": "NJEA (inferred)",
+          "natlAff": "NEA (inferred)",
+          "dateUnionized": "Unknown — predates PERC online database; OPRA highest priority",
+          "certCase": "PERC (NJ) — no online record (predates database)",
+          "cbaStatus": "None found on PERC portal",
+          "firstContract": "Unknown",
+          "authorizer": "New Jersey Department of Education",
+          "website": "https://www.shcsjc.org",
+          "lat": 40.7178,
+          "lon": -74.0431
+        },
+        {
+          "napcsId": "C3497010",
+          "name": "Sussex County Charter School",
+          "city": "Sparta",
+          "state": "NJ",
+          "status": "CONFIRMED",
+          "union": "Sussex County Charter Education Association",
+          "stateAff": "NJEA",
+          "natlAff": "NEA",
+          "dateUnionized": "2016 (card check — exact date pending OPRA)",
+          "certCase": "PERC (NJ) — pending OPRA",
+          "cbaStatus": "None found on PERC portal",
+          "firstContract": "Unknown",
+          "authorizer": "New Jersey Department of Education",
+          "website": "https://www.sussexcountycharter.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C3498003",
+          "name": "Classical Academy Charter School",
+          "city": "Clifton",
+          "state": "NJ",
+          "status": "CONFIRMED",
+          "union": "Classical Academy Charter School Association",
+          "stateAff": "Independent",
+          "natlAff": "N/A",
+          "dateUnionized": "2015-16 (exact date pending OPRA)",
+          "certCase": "PERC (NJ) — pending OPRA",
+          "cbaStatus": "CONFIRMED on PERC portal (2017 agreement)",
+          "firstContract": "CBA on file (2017)",
+          "authorizer": "New Jersey Department of Education",
+          "website": "https://www.classicalacademy.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C3498004",
+          "name": "East Orange Community Charter School",
+          "city": "East Orange",
+          "state": "NJ",
+          "status": "CONFIRMED",
+          "union": "East Orange Community Charter Education Association",
+          "stateAff": "NJEA",
+          "natlAff": "NEA",
+          "dateUnionized": "2019 (exact date pending OPRA)",
+          "certCase": "PERC (NJ) — pending OPRA",
+          "cbaStatus": "None found on PERC portal",
+          "firstContract": "Unknown",
+          "authorizer": "New Jersey Department of Education",
+          "website": "https://www.eoccs.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C3498006",
+          "name": "Englewood on the Palisades Charter School",
+          "city": "Englewood",
+          "state": "NJ",
+          "status": "CONFIRMED",
+          "union": "Englewood on the Palisades Charter School Teachers Association",
+          "stateAff": "AFT-NJ",
+          "natlAff": "AFT",
+          "dateUnionized": "October 20, 2010 (PERC RO-2011-010)",
+          "certCase": "PERC RO-2011-010 (October 20, 2010)",
+          "cbaStatus": "EXPIRED — CBA expired 2015; no successor on PERC portal",
+          "firstContract": "Unknown",
+          "authorizer": "New Jersey Department of Education",
+          "website": "https://www.eopcs.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C3498007",
+          "name": "Greater Brunswick Charter School",
+          "city": "New Brunswick",
+          "state": "NJ",
+          "status": "CONFIRMED",
+          "union": "Greater Brunswick Charter School Education Association",
+          "stateAff": "NJEA",
+          "natlAff": "NEA",
+          "dateUnionized": "2000-2001 (exact date pending OPRA)",
+          "certCase": "PERC (NJ) — pending OPRA (pre-2005 gap)",
+          "cbaStatus": "None found on PERC portal",
+          "firstContract": "Unknown",
+          "authorizer": "New Jersey Department of Education",
+          "website": "https://www.gbcsnj.org",
+          "lat": 40.4862,
+          "lon": -74.4518
+        },
+        {
+          "napcsId": "C3498011",
+          "name": "International Charter School",
+          "city": "Trenton",
+          "state": "NJ",
+          "status": "CONFIRMED",
+          "union": "International Charter School of Trenton Education Association",
+          "stateAff": "NJEA",
+          "natlAff": "NEA",
+          "dateUnionized": "2000 (original PERC election); reaffirmed via card check 2016",
+          "certCase": "PERC (NJ) — two case numbers pending OPRA (2000 + 2016)",
+          "cbaStatus": "None found on PERC portal",
+          "firstContract": "Unknown",
+          "authorizer": "New Jersey Department of Education",
+          "website": "https://www.icstrenton.org",
+          "lat": 40.2171,
+          "lon": -74.7429
+        },
+        {
+          "napcsId": "C3498012",
+          "name": "Golden Door Charter School",
+          "city": "Jersey City",
+          "state": "NJ",
+          "status": "CONFIRMED",
+          "union": "Golden Door Education Association",
+          "stateAff": "NJEA",
+          "natlAff": "NEA",
+          "dateUnionized": "2015 (card check — exact date pending OPRA)",
+          "certCase": "PERC (NJ) — pending OPRA",
+          "cbaStatus": "None found on PERC portal",
+          "firstContract": "Unknown",
+          "authorizer": "New Jersey Department of Education",
+          "website": "https://www.goldendoorcharter.org",
+          "lat": 40.7178,
+          "lon": -74.0431
+        },
+        {
+          "napcsId": "C3499005",
+          "name": "Marion P. Thomas Charter School PAC Academy",
+          "city": "Newark",
+          "state": "NJ",
+          "status": "CONFIRMED",
+          "union": "Marion P. Thomas Education Association",
+          "stateAff": "NJEA",
+          "natlAff": "NEA",
+          "dateUnionized": "Unknown — CBA confirmed on PERC portal; cert date pending OPRA",
+          "certCase": "PERC (NJ) — pending OPRA",
+          "cbaStatus": "CONFIRMED on PERC portal",
+          "firstContract": "CBA on file",
+          "authorizer": "New Jersey Department of Education",
+          "website": "https://www.mptcs.org",
+          "lat": 40.7357,
+          "lon": -74.1724
+        },
+        {
+          "napcsId": "C3499006",
+          "name": "Marion P. Thomas Charter School STEAM Academy",
+          "city": "Newark",
+          "state": "NJ",
+          "status": "CONFIRMED",
+          "union": "Marion P. Thomas Education Association",
+          "stateAff": "NJEA",
+          "natlAff": "NEA",
+          "dateUnionized": "Unknown — same CBA as C3499005",
+          "certCase": "PERC (NJ) — same case as C3499005",
+          "cbaStatus": "CONFIRMED (same CBA as C3499005)",
+          "firstContract": "Same as C3499005",
+          "authorizer": "New Jersey Department of Education",
+          "website": "https://www.mptcs.org",
+          "lat": 40.7357,
+          "lon": -74.1724
+        },
+        {
+          "napcsId": "NAPCS-ADD-NJ-001",
+          "name": "The Ethical Community Charter School",
+          "city": "Jersey City",
+          "state": "NJ",
+          "status": "CONFIRMED",
+          "union": "Ethical Community CS Education Association (pending OPRA confirmation)",
+          "stateAff": "NJEA (inferred)",
+          "natlAff": "NEA (inferred)",
+          "dateUnionized": "September 2020 (PERC cert date from Registry v7)",
+          "certCase": "PERC RO-2021-010 (September 2020)",
+          "cbaStatus": "None found on PERC portal",
+          "firstContract": "Unknown",
+          "authorizer": "New Jersey Department of Education",
+          "website": "https://www.teccs.org",
+          "lat": 40.7178,
+          "lon": -74.0431
+        },
+        {
+          "napcsId": "NAPCS-ADD-NJ-002",
+          "name": "BelovED Community Charter School",
+          "city": "Jersey City",
+          "state": "NJ",
+          "status": "CONFIRMED",
+          "union": "BelovED CS Education Association (pending OPRA confirmation)",
+          "stateAff": "NJEA (inferred)",
+          "natlAff": "NEA (inferred)",
+          "dateUnionized": "September 19, 2024 — MOST RECENT CHARTER CERT IN FULL NAPCS DATASET (all states)",
+          "certCase": "PERC RO-2024-051 and PERC RO-2024-053 (September 19, 2024)",
+          "cbaStatus": "Pre-first-contract (certified Sept 2024 — bargaining in progress as of May 2026)",
+          "firstContract": "Not yet ratified — bargaining in progress",
+          "authorizer": "New Jersey Department of Education",
+          "website": "https://www.belovedccs.org",
+          "lat": 40.7178,
+          "lon": -74.0431
+        }
+      ],
+      "dependentSchools": [],
+      "networks": [
+        {
+          "name": "Marion P. Thomas Charter School",
+          "union": "Marion P. Thomas Education Association",
+          "schoolIds": [
+            "C3499005",
+            "C3499006"
+          ],
+          "organizedCount": 2,
+          "cbaStatus": "Active — CBA confirmed on PERC (NJ) public contracts portal",
+          "keyFindings": [
+            "Both campuses (PAC Academy C3499005 and STEAM Academy C3499006) are the same legal employer at the same address. PERC (NJ) treats them as a single employer with a single CBA.",
+            "CBA covers professional and non-professional employees (broad-based / wall-to-wall unit). High School Campus employees are excluded but retain separate organizing rights per CBA Article I.",
+            "Reviewer must decide: keep both NAPCS rows or consolidate to one."
+          ]
+        }
+      ]
+    },
+    "NM": {
+      "name": "New Mexico",
+      "laborBoard": "PELRB (confirmed for J Paul Taylor Academy) / CONTESTED PELRB or NLRB Region 28 (other schools)",
+      "governingLaw": "NM charter schools authorized by PEC, serve as independent LEAs. PEBA (NMSA 10-7E) covers state agencies/units of local government. Two NAPCS schools confirmed organized under NEA-NM via PELRB public employer framework, establishing that at least some NM charter schools are treated as public employers under PEBA. Jurisdictional question remains unsettled for the broader NM charter sector. Option C declared May 9, 2026 for unresolved schools.",
+      "universe": 98,
+      "confirmed": 2,
+      "dependent": 0,
+      "intel": [
+        {
+          "prompt": "What is the political and legal environment shaping charter labor relations in this state?",
+          "answer": "New Mexico presents one of the most genuinely ambiguous jurisdictional pictures in the NAPCS research dataset — not because the law is complex, but because it has never been tested in the charter school context. The New Mexico Public Employee Bargaining Act (PEBA, NMSA 10-7E) creates the PELRB and covers state agencies and units of local government. New Mexico charter schools are authorized by the Public Education Commission (a state body) and serve as their own Local Education Agencies — attributes that suggest public employer status. At the same time, NM charter schools are typically incorporated as 501(c)(3) nonprofit organizations, not as direct arms of the state government, which could place them within NLRB jurisdiction as private employers.\n\nThe PELRB has operated since 2003 under P..."
+        },
+        {
+          "prompt": "What community and social conditions are driving organizing activity in this state?",
+          "answer": "New Mexico's charter sector is notable for what is absent: any visible organizing activity. Across all research methods — PELRB portal search, NLRB R28 web search, news monitoring, and the April 2026 Registry v22 scan of all 98 NM charter schools (Registry v50) — no evidence of a union petition, card drive, representation election, or recognition has surfaced. This is significant in a state where traditional public school educators across 89 districts are represented by NEA-NM and AFT-NM affiliates, and where chronic underfunding and teacher shortages create the structural conditions that drive organizing elsewhere.\n\nPossible explanations for the absence of activity include: (1) the PELRB/NLRB R28 jurisdictional ambiguity creates a procedural deterrent — the first school to organize would ..."
+        },
+        {
+          "prompt": "What organizing strategies and approaches are being used in this state?",
+          "answer": "No organizing strategies are currently documented in New Mexico's charter sector. The relevant question is what conditions would make organizing viable if interest developed.\n\nThe jurisdictional ambiguity is the primary structural obstacle. Filing with PELRB in a public-employer framework potentially triggers PEBA's card-check provisions, making organizing procedurally easier. Filing with NLRB R28 triggers the standard secret ballot election process, giving employers a structured counter-organizing window. If the employer contested PELRB jurisdiction, the resulting litigation could delay organizing by years and make the petitioning school the test case for the entire NM charter sector.\n\nThe union most likely to enter NM charter organizing based on adjacent-state infrastructure is AFT, via ..."
+        },
+        {
+          "prompt": "What should charter leaders be doing now in response to organizing patterns in this state?",
+          "answer": "New Mexico charter leaders are operating in the least organizationally active charter labor environment in the NAPCS research dataset. With zero confirmed union schools and a genuinely ambiguous jurisdictional landscape, the immediate risk of a formal organizing campaign is low — but not zero, particularly as AFT's AACTS organizing infrastructure expands in Region 28 geography.\n\nThe most important near-term action is jurisdictional clarity. Every NM charter operator should determine — ideally with legal counsel — whether their school is more likely classified as a public employer (PELRB) or a private nonprofit employer (NLRB R28) in the event of an organizing petition. This determination affects procedural rules, discovery obligations, and permissible employer responses. An operator unprep..."
+        },
+        {
+          "prompt": "What trends should charter sector leaders watch over the next 3-5 years?",
+          "answer": "The most consequential trend to monitor is the geographic expansion of AFT's AACTS charter organizing infrastructure from Arizona into New Mexico. AACTS operates in NLRB Region 28 geography (AZ and NM), has organized BASIS Tucson North (2023), has an active NLRB ULP case at BASIS Goodyear (28-CA-373855), and a Law360-reported pending RC petition at a network of Arizona charter schools. If AACTS achieves a second Arizona certification, New Mexico is the logical next target: same NLRB region, existing AFT-NM state infrastructure, and similar charter sector workforce conditions.\n\nThe second trend is potential resolution of the PELRB/NLRB jurisdictional question. If any NM charter staff file a petition with either board, the resulting ruling will establish precedent for the entire NM charter s..."
+        },
+        {
+          "prompt": "What surprised us in this state? What contradicts what national leaders expect?",
+          "answer": "The primary finding that will surprise national charter sector leaders is the complete absence of organizing activity in a state with a functioning public-sector collective bargaining law and chronic workforce stress. States with PELRB-equivalent public employer frameworks — Massachusetts (70% density), New Jersey (high density), Delaware (100% NAPCS density), Minnesota — have all produced significant charter sector organizing. New Mexico has produced none.\n\nNational leaders often assume that public-employer status plus a functional state bargaining board produces organizing activity. New Mexico contradicts this assumption. The jurisdictional ambiguity may be the key variable: uncertainty about whether PELRB or NLRB R28 applies acts as a procedural deterrent, with the cost of being the fir..."
+        }
+      ],
+      "openItems": [
+        {
+          "priority": "HIGH",
+          "description": "Jurisdictional determination — PELRB vs. NLRB Region 28 for NM charter schools",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "NLRB Region 28 ADS full search — all 98 NM registry schools (Registry v50) by employer name",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "Confirm 501(c)(3) incorporation status of all 5 NAPCS schools",
+          "resolution": ""
+        },
+        {
+          "priority": "LOW",
+          "description": "Monitor AFT-NM and AACTS for charter sector organizing activity in NM",
+          "resolution": ""
+        }
+      ],
+      "confirmedSchools": [
+        {
+          "napcsId": "C3500003",
+          "name": "Monte del Sol Charter School",
+          "city": "Santa Fe",
+          "state": "NM",
+          "status": "CONFIRMED",
+          "union": "NEA-New Mexico (National Education Association)",
+          "stateAff": "NEA-NM",
+          "natlAff": "NEA",
+          "dateUnionized": "2010-2011 school year",
+          "certCase": "Not found in case petition portal — predates or outside indexed records",
+          "cbaStatus": "ACTIVE — 2025-2026 CBA posted publicly on school website (November 2025)",
+          "firstContract": "2010-2011 (approx.)",
+          "authorizer": "New Mexico Public Education Commission (PEC)",
+          "website": "https://www.montedelsolcharterschool.org",
+          "lat": 35.687,
+          "lon": -105.9378
+        },
+        {
+          "napcsId": "C3511001",
+          "name": "J Paul Taylor Academy",
+          "city": "Las Cruces",
+          "state": "NM",
+          "status": "CONFIRMED",
+          "union": "National Education Association (NEA)",
+          "stateAff": "NEA-NM (via PELRB)",
+          "natlAff": "NEA",
+          "dateUnionized": "2015-2016 school year (unit formed); 2017-2018 (CBA ratified)",
+          "certCase": "Listed in PELRB All Known State and Local Public Bargaining Units (Feb 2026) as \"John Paul Taylor Academy — NEA\"",
+          "cbaStatus": "ACTIVE — CBA posted on school HR page; salary schedules posted through 2025-26",
+          "firstContract": "2017-2018 (first CBA ratified per school history)",
+          "authorizer": "New Mexico Public Education Commission (PEC)",
+          "website": "http://www.jpaultayloracademy.org",
+          "lat": 32.3199,
+          "lon": -106.7637
+        }
+      ],
+      "dependentSchools": [],
+      "networks": []
+    },
+    "NY": {
+      "name": "New York",
+      "laborBoard": "PERB(NY)",
+      "governingLaw": "NY Education Law Article 56 (Charter Schools Act); NY Civil Service Law Article 14 (Taylor Law). NY charter school employees are public employees. PERB(NY) has primary jurisdiction for certification and ULP proceedings.",
+      "universe": 338,
+      "confirmed": 24,
+      "dependent": 4,
+      "intel": [
+        {
+          "prompt": "What is the political and legal environment shaping charter labor relations in New York?",
+          "answer": "New York presents the most legally complex charter school labor relations environment in the NAPCS dataset. NY charter school employees are statutory public employees under Education Law Article 56 — meaning the Taylor Law (NY Civil Service Law Article 14) applies and PERB(NY) has primary jurisdiction for certification and unfair labor practice proceedings. However, a competing NLRB jurisdictional claim has developed post-2016: the NLRB has asserted jurisdiction over some independently incorporated NY charters that contest public employer status. In practice the vast majority of NY charter union certifications — especially the UFT wave of 2007-2012 — are PERB(NY) certifications. This created a critical methodology error in PLT initial research (April 2026): searching NLRB ADS returned zero..."
+        },
+        {
+          "prompt": "What organizing history and union activity defines the NY charter sector?",
+          "answer": "NY charter school unionization has two distinct waves. The first wave (2007-2012) was driven by the UFT's strategic campaign to organize charter schools as part of its broader defense of public education. Merrick Academy-Queens became the first NY charter school to unionize in 2007 — an overwhelming majority vote that UFT President Mulgrew characterized as charter school teachers wanting a voice. The campaign expanded to Bronx Community Charter School (47-0 in 2018), NY French-American Charter School (PERB card-check March 2012), and numerous conversion charters where UFT representation was automatic under Education Law. University Prep Charter HS was founded in 2008 as a Green Dot/UFT collaboration — union from inception. Amber Charter School (East Harlem) has had a UFT CBA since Septembe..."
+        },
+        {
+          "prompt": "What community and social conditions are driving organizing activity in New York?",
+          "answer": "The NY charter union landscape reflects three distinct organizing logics. First, the conversion charter dynamic: schools that converted from district schools brought UFT representation as a legal matter of continuity — these schools never experienced organizing campaigns. Second, the UFT strategic campaign (2007-2012): UFT organized independent charter schools in NYC as a mission-defensive posture, arguing that non-union charters created unfair labor competition and threatened district school teacher conditions. This campaign produced the bulk of the 21 confirmed schools but stalled after 2012 — the difficult first-contract negotiations (Merrick went 4+ years without a CBA, chapter leader fired, 11 staff terminated by FedEx) deterred further organizing at schools where management was resis..."
+        },
+        {
+          "prompt": "What are the most important open intelligence questions for NY charter sector leaders?",
+          "answer": "Four questions matter most. First, what happened to Merrick Academy — the first NY charter union? UFT certified 2007, contract never ratified, chapter leader fired by FedEx letter 2010, Taylor Law ULP filed, not on UFT dues list 2026. The school is active (738 students, K-7). Either decertification occurred or the unit was abandoned — PERB FOIL is the only resolution path. Second, are there additional organized schools among the 13 UNVERIFIED NAPCS-scope schools that simply have pre-digital PERB records? A full PERB(NY) portal sweep (not NLRB ADS) would answer this definitively. Third, is Academy of the City actually organized? NAPCS asserts UFT but zero evidence exists from any source — school not on UFT dues list, opened 2011, no Chalkbeat articles. Almost certainly a NAPCS data error bu..."
+        },
+        {
+          "prompt": "What patterns in NY are relevant to other states in the NAPCS dataset?",
+          "answer": "Four cross-state implications. First, the methodology correction: searching NLRB ADS for NY charter certifications is wrong — most certifications are PERB(NY). Any other state with a dual-jurisdiction charter environment (IL: IELRB vs NLRB; MI: MERC vs NLRB) should be similarly scrutinized for incorrect initial board search. Second, the UFT dues list model: the UFT publishes a complete list of all represented charter schools with per-school dues rates. This is the most efficient single-source check for NYC charter UFT representation — a model other state unions (NJEA, EdMN, CTU) do not replicate publicly. Third, the pre-digital certification gap: NY certifications from 2007-2012 pre-date NLRB ADS digitization and are PERB(NY) records requiring FOIL. Any state with significant organizing ac..."
+        }
+      ],
+      "openItems": [
+        {
+          "priority": "HIGH",
+          "description": "NLRB FOIA — union name for Uncommon Preparatory Charter HS (NAPCS-ADD-NY-003, case 29-RC-341899). Union name not in public ADS. FOIA to NLRB Region 29 required before accumulator entry. This is the highest-priority NY FOIA request.",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "NLRB FOIA — RC case number and exact certification dates for KIPP Academy Bronx (C3600013), Wildcat Academy (C3600011/C3600012), and Future Leaders Institute (C3600020). All are conversion charters with UFT coverage confirmed; exact cert dates and case numbers still need NLRB FOIA to R2 for accumula",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "KIPP Academy Bronx (C3600013) — NRtW decertification petition active as of May 2026. Monitor NLRB R2 ADS weekly. If election is ordered: alert Peri Lynn Turnbull immediately. Cases: 02-CB-356035 (Barrera ULP v. UFT); employer ULP charges (UFT v. KIPP); Barrera decert petition filed May 2024 / Septem",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "NY conversion charter Type B audit — Session B identified 3 conversion charters (FLI, Wildcat, KIPP) that were coded CONFIRMED or UNVERIFIED when they should be DEPENDENT. Remaining 19 UNVERIFIED schools in the NY dataset: confirm whether any are additional conversion charters before coding UNVERIFI",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "Wildcat Academy accumulator entry: school has two NAPCS IDs (C3600011 Bronx, C3600012 Manhattan) but is one school entity. Data entry coordinator should enter both rows with DEPENDENT status and identical union data. Confirm with sponsor whether both IDs should be entered or one flagged for NAPCS re",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "KIPP Academy duplicate NAPCS IDs (C3600013 primary, C3600014 duplicate). Data entry under C3600013 only. C3600014 should be flagged to NAPCS for removal. Confirm sponsor decision.",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "PERB(NY) FOIL required — complex historical status. UFT certified 2007 (first NY charter union). Contract never ratified. UFT chapter leader Carrington fired July 2010 — PERB Taylor Law ULP filed. No post-2011 evidence of ratification or decertification. NOT on UFT dues list 2026. Anti-union managem",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "PERB(NY) FOIL required — probable NAPCS data error. Zero evidence from all 8 online protocol steps (May 25 2026). NOT on UFT dues list. School opened 2011. Facebook: UFT appeared only as NYCATA guest event host for student art exhibition — not staff union representation. PERB FOIL will very likely r",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "PERB(NY) records request recommended — CONFIRMED via press (WNY Labor Today March 2012) but PERB case number not confirmed from public sources. Unit description and current CBA status unknown.",
+          "resolution": ""
+        }
+      ],
+      "confirmedSchools": [
+        {
+          "napcsId": "C3600001",
+          "name": "Amber Charter School",
+          "city": "New York",
+          "state": "NY",
+          "status": "CONFIRMED",
+          "union": "United Federation of Teachers (UFT) Local 2",
+          "stateAff": "New York State United Teachers (NYSUT)",
+          "natlAff": "American Federation of Teachers (AFT) / NEA / AFL-CIO",
+          "dateUnionized": "September 1, 2009 (UFT CBA effective date; PERB(NY) certification date not confirmed from public sources — PERB records request recommended)",
+          "certCase": "PERB(NY) — case number not confirmed from public sources. PERB records request recommended (perb.ny.gov or FOIL to PERB). NLRB ADS search (April 2026) returned 0 results — CBA predates digitization window for this employer.",
+          "cbaStatus": "Active. UFT dues schedule (uft.org/your-rights/salary/uft-dues) lists Amber Charter School as dues-paying UFT unit. Curr",
+          "firstContract": "September 1, 2009 — UFT CBA documented in academic literature (NYU Law Review, 2013) and UFT salary schedule page.",
+          "authorizer": "SUNY Charter Schools Institute",
+          "website": "https://www.ambercharter.org",
+          "lat": 40.7128,
+          "lon": -74.006
+        },
+        {
+          "napcsId": "C3600006",
+          "name": "King Center Charter School",
+          "city": "Buffalo",
+          "state": "NY",
+          "status": "CONFIRMED",
+          "union": "King Center United Professionals / NYSUT / AFT / NEA / AFL-CIO",
+          "stateAff": "New York State United Teachers (NYSUT)",
+          "natlAff": "American Federation of Teachers (AFT) / NEA / AFL-CIO",
+          "dateUnionized": "October 1, 2024 (NLRB Certification of Representative, case 03-RC-351776)",
+          "certCase": "03-RC-351776 (NLRB Region 3, Buffalo; Closed — Certification of Representative, October 1, 2024)",
+          "cbaStatus": "Pre-first-contract — school in governance/stability crisis (~60% teacher turnover, board legitimacy dispute, enrollment ",
+          "firstContract": "In negotiation — certified October 2024; bargaining underway amid acute institutional crisis",
+          "authorizer": "Buffalo City School District",
+          "website": "https://www.kingcenterchs.org",
+          "lat": 42.8864,
+          "lon": -78.8784
+        },
+        {
+          "napcsId": "C3600008",
+          "name": "Renaissance Charter School",
+          "city": "Jackson Heights",
+          "state": "NY",
+          "status": "CONFIRMED",
+          "union": "United Federation of Teachers, Local 2 / NYSUT / AFT",
+          "stateAff": "New York State United Teachers (NYSUT)",
+          "natlAff": "American Federation of Teachers (AFT) / AFL-CIO",
+          "dateUnionized": "Pre-2010 (NAPCS 2018-19 listed; UFT teachers staged public protest ~2010; cert date requires NLRB FOIA to R29)",
+          "certCase": "Unknown — pre-ADS. ULP cases confirming active certified unit: 29-CB-013398 (UFT v. Renaissance — union filed against employer, confirming certification); 29-CB-351025 (UFT v. Renaissance, Sep 2024, 8(b)(3) bad faith bargaining); 29-CA-376912 (Dec 2025, open). CB case type = union filing AGAINST employer = confirms UFT is the certified representative.",
+          "cbaStatus": "Active (assumed) — active bad faith bargaining charges indicate ongoing CBA relationship",
+          "firstContract": "Unknown — likely ratified early-to-mid 2010s; ongoing bargaining disputes",
+          "authorizer": "NYC Department of Education",
+          "website": "https://www.renaissancecharter.org",
+          "lat": 40.7557,
+          "lon": -73.883
+        },
+        {
+          "napcsId": "C3601011",
+          "name": "Riverhead Charter School",
+          "city": "Calverton",
+          "state": "NY",
+          "status": "CONFIRMED",
+          "union": "NYSUT (local name not specified in case record)",
+          "stateAff": "New York State United Teachers (NYSUT)",
+          "natlAff": "NEA / AFT (NYSUT is dual-affiliated)",
+          "dateUnionized": "November 2016 (survived decertification — union remained certified)",
+          "certCase": "29-RD-132061 (decertification petition — union survived Nov 2016)",
+          "cbaStatus": "Unknown — no public CBA found",
+          "firstContract": "Unknown",
+          "authorizer": "Riverhead Central School District",
+          "website": "https://www.riverheadcharterschool.org",
+          "lat": 40.9168,
+          "lon": -72.7551
+        },
+        {
+          "napcsId": "C3602004",
+          "name": "Global Concepts Charter School",
+          "city": "Lackawanna",
+          "state": "NY",
+          "status": "CONFIRMED",
+          "union": "Global Concepts Charter School Union (INDEPENDENT — no national affiliation)",
+          "stateAff": "None — independent union",
+          "natlAff": "None — independent union",
+          "dateUnionized": "March 2017",
+          "certCase": "03-RC-192601",
+          "cbaStatus": "Unknown — no public CBA found",
+          "firstContract": "Unknown — all post-cert ULP cases closed; no public CBA found",
+          "authorizer": "Lackawanna City School District",
+          "website": "https://www.globalconceptscs.org",
+          "lat": 42.8253,
+          "lon": -78.8275
+        },
+        {
+          "napcsId": "C3604006",
+          "name": "Opportunity Charter School",
+          "city": "New York",
+          "state": "NY",
+          "status": "CONFIRMED",
+          "union": "United Federation of Teachers, Local 2 / NYSUT / AFT",
+          "stateAff": "New York State United Teachers (NYSUT)",
+          "natlAff": "American Federation of Teachers (AFT) / AFL-CIO",
+          "dateUnionized": "Pre-2013 (UFT chapter leader \"Crystal Chandler\" named in UFT press release, 2013; cert date requires NLRB FOIA to R2)",
+          "certCase": "Unknown — pre-ADS. FOIA to NLRB Region 2 required.",
+          "cbaStatus": "Active (assumed) — active chapter leader documented 2013",
+          "firstContract": "Unknown",
+          "authorizer": "NYC Department of Education",
+          "website": "https://www.opportunitycharter.org",
+          "lat": 40.7128,
+          "lon": -74.006
+        },
+        {
+          "napcsId": "C3605007",
+          "name": "Charter School for Educational Excellence",
+          "city": "Yonkers",
+          "state": "NY",
+          "status": "CONFIRMED",
+          "union": "Yonkers Federation of Teachers (YFT) / NYSUT / AFT",
+          "stateAff": "New York State United Teachers (NYSUT)",
+          "natlAff": "American Federation of Teachers (AFT) / AFL-CIO",
+          "dateUnionized": "Pre-September 2016 (decert petition dismissed Sep 2016 — union was already certified)",
+          "certCase": "02-RD-180608 (decertification petition — DISMISSED Sep 2016)",
+          "cbaStatus": "Unknown — no public CBA found",
+          "firstContract": "Unknown",
+          "authorizer": "SUNY Charter Schools Institute",
+          "website": "https://www.csee.us",
+          "lat": 40.9312,
+          "lon": -73.8988
+        },
+        {
+          "napcsId": "C3608004",
+          "name": "Bronx Academy of Promise Charter School",
+          "city": "Bronx",
+          "state": "NY",
+          "status": "CONFIRMED",
+          "union": "United Federation of Teachers, Local 2 / NYSUT / AFT",
+          "stateAff": "New York State United Teachers (NYSUT)",
+          "natlAff": "American Federation of Teachers (AFT) / AFL-CIO",
+          "dateUnionized": "Pre-2024 (UFT cert confirmed via CB case 02-CB-314576 — exact date requires NLRB FOIA to R2)",
+          "certCase": "RC case unknown — FOIA to NLRB R2 required. Certification confirmed via CB case 02-CB-314576: \"United Federation of Teachers (Bronx Academy of Promise Charter School)\" — UFT filed against BAP, confirming valid NLRB certification. NOTE: Prior data file incorrectly cited 02-CB-356035 and 02-CB-356026 — verified as KIPP Academy Bronx cases, not BAP.",
+          "cbaStatus": "Active (assumed) — active CB case confirms ongoing certified bargaining relationship",
+          "firstContract": "Unknown",
+          "authorizer": "SUNY Charter Schools Institute",
+          "website": "https://www.bronxacademyofpromise.org",
+          "lat": 40.8448,
+          "lon": -73.8648
+        },
+        {
+          "napcsId": "C3608005",
+          "name": "Bronx Community Charter School",
+          "city": "Bronx",
+          "state": "NY",
+          "status": "CONFIRMED",
+          "union": "United Federation of Teachers (UFT) / UFT ACTS",
+          "stateAff": "New York State United Teachers (NYSUT)",
+          "natlAff": "American Federation of Teachers (AFT) / NEA / AFL-CIO",
+          "dateUnionized": "N/A",
+          "certCase": "N/A",
+          "cbaStatus": "N/A",
+          "firstContract": "N/A",
+          "authorizer": "NYC Department of Education",
+          "website": "https://www.bronxcommunitycharter.org",
+          "lat": 40.8448,
+          "lon": -73.8648
+        },
+        {
+          "napcsId": "C3608006",
+          "name": "Bronx Global Learning Institute for Girls Charter School",
+          "city": "Bronx",
+          "state": "NY",
+          "status": "CONFIRMED",
+          "union": "United Federation of Teachers, Local 2 / NYSUT / AFT",
+          "stateAff": "New York State United Teachers (NYSUT)",
+          "natlAff": "American Federation of Teachers (AFT) / AFL-CIO",
+          "dateUnionized": "November 2018",
+          "certCase": "02-RC-230328",
+          "cbaStatus": "Unknown — no public CBA found",
+          "firstContract": "Unknown",
+          "authorizer": "NYC Department of Education",
+          "website": "https://www.bgligcs.com",
+          "lat": 40.8448,
+          "lon": -73.8648
+        },
+        {
+          "napcsId": "C3608010",
+          "name": "University Prep High School",
+          "city": "Bronx",
+          "state": "NY",
+          "status": "CONFIRMED",
+          "union": "United Federation of Teachers (UFT) Local 2",
+          "stateAff": "New York State United Teachers (NYSUT)",
+          "natlAff": "American Federation of Teachers (AFT) / NEA / AFL-CIO",
+          "dateUnionized": "January 2010 (UFT-Green Dot founding partnership; school opened as UFT/Green Dot collaborative 2008 — union from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "N/A",
+          "firstContract": "N/A",
+          "authorizer": "SUNY Charter Schools Institute",
+          "website": "https://www.uppublicschools.org",
+          "lat": 40.8448,
+          "lon": -73.8648
+        },
+        {
+          "napcsId": "C3608017",
+          "name": "NYC Charter High School for Architecture, Engineering & Construction Industries",
+          "city": "Bronx",
+          "state": "NY",
+          "status": "CONFIRMED",
+          "union": "United Federation of Teachers, Local 2 / NYSUT / AFT",
+          "stateAff": "New York State United Teachers (NYSUT)",
+          "natlAff": "American Federation of Teachers (AFT) / AFL-CIO",
+          "dateUnionized": "January 2010 (per UFT.org press release — \"Since January 2010, when teachers formed a union at the New York City Charter HS for Architecture, Engineering and Construction Industries\")",
+          "certCase": "Unknown — January 2010 cert. FOIA to NLRB Region 2 required.",
+          "cbaStatus": "Unknown — first contract dispute as of 2013; current status requires follow-up",
+          "firstContract": "Not ratified as of November 2013 (UFT.org — \"three years later, the staff is still without a contract\"). Status since 2013 unknown.",
+          "authorizer": "NYC Department of Education",
+          "website": "https://www.nycharterhs.org",
+          "lat": 40.8448,
+          "lon": -73.8648
+        },
+        {
+          "napcsId": "C3609019",
+          "name": "Growing Up Green Charter School",
+          "city": "Long Island City",
+          "state": "NY",
+          "status": "CONFIRMED",
+          "union": "United Federation of Teachers, Local 2 / AFT",
+          "stateAff": "New York State United Teachers (NYSUT)",
+          "natlAff": "American Federation of Teachers (AFT) / AFL-CIO",
+          "dateUnionized": "March 2023",
+          "certCase": "29-RC-315289",
+          "cbaStatus": "Unknown — no public CBA found",
+          "firstContract": "Unknown — ~2 years post-cert as of May 2026",
+          "authorizer": "NYC Department of Education",
+          "website": "https://www.growingupgreenschool.org",
+          "lat": 40.7448,
+          "lon": -73.9468
+        },
+        {
+          "napcsId": "C3610026",
+          "name": "New York French-American Charter School",
+          "city": "New York",
+          "state": "NY",
+          "status": "CONFIRMED",
+          "union": "United Federation of Teachers (UFT) Local 2",
+          "stateAff": "New York State United Teachers (NYSUT)",
+          "natlAff": "American Federation of Teachers (AFT) / NEA / AFL-CIO",
+          "dateUnionized": "March 2012 (PERB(NY) certification order — UFT certified as exclusive negotiating agent)",
+          "certCase": "N/A",
+          "cbaStatus": "N/A",
+          "firstContract": "N/A",
+          "authorizer": "SUNY Charter Schools Institute",
+          "website": "https://www.nyfacs.org",
+          "lat": 40.7128,
+          "lon": -74.006
+        },
+        {
+          "napcsId": "C3611011",
+          "name": "New Visions Charter High School for Advanced Math and Science",
+          "city": "Bronx",
+          "state": "NY",
+          "status": "CONFIRMED",
+          "union": "United Federation of Teachers, Local 2 / AFT",
+          "stateAff": "New York State United Teachers (NYSUT)",
+          "natlAff": "American Federation of Teachers (AFT) / AFL-CIO",
+          "dateUnionized": "Pre-existing — exact date unknown; FOIA to NLRB Region 2 required",
+          "certCase": "Unknown — identified as pre-existing UFT school in New Visions network",
+          "cbaStatus": "Unknown — UFT dues page lists New Visions network schools",
+          "firstContract": "Unknown",
+          "authorizer": "NYC Department of Education",
+          "website": "https://www.newvisions.org",
+          "lat": 40.8448,
+          "lon": -73.8648
+        },
+        {
+          "napcsId": "C3611012",
+          "name": "New Visions Charter High School for the Humanities",
+          "city": "Bronx",
+          "state": "NY",
+          "status": "CONFIRMED",
+          "union": "United Federation of Teachers, Local 2 / AFT",
+          "stateAff": "New York State United Teachers (NYSUT)",
+          "natlAff": "American Federation of Teachers (AFT) / AFL-CIO",
+          "dateUnionized": "Pre-existing — exact date unknown; FOIA to NLRB Region 2 required",
+          "certCase": "Unknown — identified as pre-existing UFT school in New Visions network",
+          "cbaStatus": "Unknown — UFT dues page lists New Visions network schools",
+          "firstContract": "Unknown",
+          "authorizer": "NYC Department of Education",
+          "website": "https://www.newvisions.org",
+          "lat": 40.8448,
+          "lon": -73.8648
+        },
+        {
+          "napcsId": "C3612010",
+          "name": "New Visions Charter High School for the Humanities II",
+          "city": "Bronx",
+          "state": "NY",
+          "status": "CONFIRMED",
+          "union": "United Federation of Teachers, Local 2 / AFT",
+          "stateAff": "New York State United Teachers (NYSUT)",
+          "natlAff": "American Federation of Teachers (AFT) / AFL-CIO",
+          "dateUnionized": "Pre-existing — exact date unknown; FOIA to NLRB Region 2 required",
+          "certCase": "Unknown — identified as pre-existing UFT school in New Visions network",
+          "cbaStatus": "Unknown — UFT dues page lists New Visions network schools",
+          "firstContract": "Unknown",
+          "authorizer": "NYC Department of Education",
+          "website": "https://www.newvisions.org",
+          "lat": 40.8448,
+          "lon": -73.8648
+        },
+        {
+          "napcsId": "C3614006",
+          "name": "Compass Charter School",
+          "city": "Brooklyn",
+          "state": "NY",
+          "status": "CONFIRMED",
+          "union": "United Federation of Teachers, Local 2 / NYSUT / AFT",
+          "stateAff": "New York State United Teachers (NYSUT)",
+          "natlAff": "American Federation of Teachers (AFT) / AFL-CIO",
+          "dateUnionized": "March 2021",
+          "certCase": "29-RC-270011",
+          "cbaStatus": "Unknown — no public CBA found",
+          "firstContract": "Unknown — ~4 years post-cert as of May 2026",
+          "authorizer": "NYC Education Department (NYSED authorized)",
+          "website": "https://www.compasscharterschool.org",
+          "lat": 40.6782,
+          "lon": -73.9442
+        },
+        {
+          "napcsId": "C3615003",
+          "name": "Charter High School for Law and Social Justice",
+          "city": "Bronx",
+          "state": "NY",
+          "status": "CONFIRMED",
+          "union": "United Federation of Teachers, Local 2 / AFT",
+          "stateAff": "New York State United Teachers (NYSUT)",
+          "natlAff": "American Federation of Teachers (AFT) / AFL-CIO",
+          "dateUnionized": "Pre-existing — exact date unknown; FOIA to NLRB Region 29 required",
+          "certCase": "CA-29-CA cases 2023 (confirmed UFT involvement)",
+          "cbaStatus": "Unknown — no public CBA found",
+          "firstContract": "Unknown",
+          "authorizer": "NYC Department of Education",
+          "website": "https://www.charterlsj.org",
+          "lat": 40.8448,
+          "lon": -73.8648
+        },
+        {
+          "napcsId": "C3615012",
+          "name": "Brooklyn Prospect Charter School — CSD 13.2",
+          "city": "Brooklyn",
+          "state": "NY",
+          "status": "CONFIRMED",
+          "union": "United Federation of Teachers, Local 2 / NYSUT / AFT",
+          "stateAff": "New York State United Teachers (NYSUT)",
+          "natlAff": "American Federation of Teachers (AFT) / AFL-CIO",
+          "dateUnionized": "May 2024 (voted May 2024; cert date = tally date — FOIA to R29 for exact cert date)",
+          "certCase": "29-RC-340300 (NLRB Region 29, Brooklyn)",
+          "cbaStatus": "Pre-first-contract — bargaining underway. UFT filed ULP against school one week before election.",
+          "firstContract": "In negotiation — certified May 2024; first contract bargaining commenced late 2024",
+          "authorizer": "NYC Department of Education",
+          "website": "https://www.brooklynprospect.org",
+          "lat": 40.6782,
+          "lon": -73.9442
+        },
+        {
+          "napcsId": "C3618014",
+          "name": "Elm Community Charter School",
+          "city": "Elmhurst",
+          "state": "NY",
+          "status": "CONFIRMED",
+          "union": "United Federation of Teachers, Local 2 / AFT",
+          "stateAff": "New York State United Teachers (NYSUT)",
+          "natlAff": "American Federation of Teachers (AFT) / AFL-CIO",
+          "dateUnionized": "2020",
+          "certCase": "UFT certified 2020 — exact case number via FOIA",
+          "cbaStatus": "Unknown — disputed. NLRB Region 29 ALJ decision Nov 3, 2022 found school engaged in bad faith bargaining.",
+          "firstContract": "Unknown — ~5 years post-cert as of May 2026",
+          "authorizer": "NYC Department of Education",
+          "website": "https://www.elmcommunitycs.org",
+          "lat": 40.7357,
+          "lon": -73.8826
+        },
+        {
+          "napcsId": "NAPCS-ADD-NY-001",
+          "name": "Charter School of Inquiry (Williamsville, Erie County)",
+          "city": "Williamsville",
+          "state": "NY",
+          "status": "CONFIRMED",
+          "union": "Charter School of Inquiry Union (independent — no national affiliation)",
+          "stateAff": "None — in-house independent union",
+          "natlAff": "None — in-house independent union",
+          "dateUnionized": "2019",
+          "certCase": "Gap: case number obtainable via NLRB ADS R3 or FOIA to Region 3",
+          "cbaStatus": "Unknown — no public CBA located",
+          "firstContract": "Unknown — ~6 years post-cert as of May 2026",
+          "authorizer": "SUNY Charter Schools Institute",
+          "website": "https://www.charterschoolofinquiry.com",
+          "lat": 42.9612,
+          "lon": -78.7376
+        },
+        {
+          "napcsId": "NAPCS-ADD-NY-002",
+          "name": "Amber Charter School — Inwood Campus",
+          "city": "New York",
+          "state": "NY",
+          "status": "CONFIRMED",
+          "union": "United Federation of Teachers, Local 2 / NYSUT / AFT",
+          "stateAff": "New York State United Teachers (NYSUT)",
+          "natlAff": "American Federation of Teachers (AFT) / AFL-CIO",
+          "dateUnionized": "May 2022",
+          "certCase": "02-RC-290431",
+          "cbaStatus": "Unknown — no public CBA located",
+          "firstContract": "Unknown — ~3 years post-cert as of May 2026",
+          "authorizer": "NYC Department of Education",
+          "website": "https://www.ambercharter.org",
+          "lat": 40.7128,
+          "lon": -74.006
+        },
+        {
+          "napcsId": "NAPCS-ADD-NY-003",
+          "name": "Uncommon Preparatory Charter High School (Brooklyn)",
+          "city": "Brooklyn",
+          "state": "NY",
+          "status": "CONFIRMED",
+          "union": "Gap: union name unknown — obtainable via NLRB ADS R29 or FOIA to Region 29",
+          "stateAff": "Gap: unknown pending FOIA resolution",
+          "natlAff": "Gap: unknown pending FOIA resolution",
+          "dateUnionized": "Estimated June 2024 (case 29-RC-341899 filed May 8, 2024; closed)",
+          "certCase": "29-RC-341899 (NLRB Region 29, Brooklyn; filed May 8, 2024; Closed)",
+          "cbaStatus": "Unknown — no public CBA located",
+          "firstContract": "Unknown — ~1 year post-cert as of May 2026",
+          "authorizer": "NYC Department of Education",
+          "website": "https://www.uncommonschools.org",
+          "lat": 40.6782,
+          "lon": -73.9442
+        }
+      ],
+      "dependentSchools": [
+        {
+          "napcsId": "C3600011",
+          "name": "John V. Lindsay Wildcat Academy CS — Bronx Campus",
+          "city": "Bronx",
+          "state": "NY",
+          "status": "DEPENDENT",
+          "union": "United Federation of Teachers (UFT) Local 2",
+          "stateAff": "New York State United Teachers (NYSUT)",
+          "natlAff": "American Federation of Teachers (AFT) / AFL-CIO",
+          "dateUnionized": "2000 — converted from NYC DOE alternative public school (founded 1992/1993 as district alternative); UFT coverage transferred automatically at conversion under NY Charter Schools Act",
+          "certCase": "N/A — no independent NLRB RC case. Coverage flows from NYC DOE/UFT master CBA. UFT chapter page (uft.org/chapters/city-chapters/charter-schools) lists John V. Lindsay Wildcat Academy. Indeed employee reviews confirm \"UFT union school, teachers receive that scale and benefits.\" Wikipedia confirms conversion from district alternative school in 2000.",
+          "cbaStatus": "ACTIVE — covered by NYC DOE/UFT master collective bargaining agreement",
+          "firstContract": "N/A — covered by existing NYC DOE/UFT CBA from inception (2000)",
+          "authorizer": "NYC Department of Education (conversion charter)",
+          "website": "https://www.jvlwildcat.org",
+          "lat": 40.8448,
+          "lon": -73.8648
+        },
+        {
+          "napcsId": "C3600012",
+          "name": "John V. Lindsay Wildcat Academy CS — Manhattan Campus",
+          "city": "New York",
+          "state": "NY",
+          "status": "DEPENDENT",
+          "union": "United Federation of Teachers (UFT) Local 2",
+          "stateAff": "New York State United Teachers (NYSUT)",
+          "natlAff": "American Federation of Teachers (AFT) / AFL-CIO",
+          "dateUnionized": "2000 — same conversion event as Bronx campus; UFT coverage transferred automatically at conversion under NY Charter Schools Act",
+          "certCase": "N/A — no independent NLRB RC case. Same UFT relationship as Bronx campus (C3600011). Both campuses operate under same school entity (John V. Lindsay Wildcat Academy Charter School).",
+          "cbaStatus": "ACTIVE — covered by NYC DOE/UFT master collective bargaining agreement",
+          "firstContract": "N/A — covered by existing NYC DOE/UFT CBA from inception (2000)",
+          "authorizer": "NYC Department of Education (conversion charter)",
+          "website": "https://www.jvlwildcat.org",
+          "lat": 40.7128,
+          "lon": -74.006
+        },
+        {
+          "napcsId": "C3600013",
+          "name": "KIPP Academy Charter School",
+          "city": "Bronx",
+          "state": "NY",
+          "status": "DEPENDENT",
+          "union": "United Federation of Teachers (UFT) Local 2",
+          "stateAff": "New York State United Teachers (NYSUT)",
+          "natlAff": "American Federation of Teachers (AFT) / AFL-CIO",
+          "dateUnionized": "2000 — KIPP Academy converted from a program within PS 156 (Bronx); UFT coverage transferred automatically at conversion under NY Charter Schools Act. \"At no time did the KIPP Academy classroom teacher ever vote to have the UFT represent them. They were subject to automatic, non-consensual representation by the UFT\" (KIPP federal complaint 2017).",
+          "certCase": "N/A — no independent NLRB RC case number. Coverage flows from NYC DOE/UFT master CBA via conversion statute. NLRB case 02-RD-191760 (2018) — decertification petition, not certification. NLRB KIPP Academy Charter School decert petition under review. Barrera decert petition (filed May 2024 / September 2024): NLRB R2, NRtW Foundation. CB charges: 02-CB-356035 (UFT v. KIPP Academy — illegal dues demands per Dec 2024 Barrera charge); 02-CA-XXXXXX (employer ULP charges filed by UFT — employer encouraging decert). Status as of May 2026: decertification petition active; UFT ULP blocking charges filed; NLRB R2 determining whether to block election pending ULP resolution.",
+          "cbaStatus": "ACTIVE — covered by NYC DOE/UFT master collective bargaining agreement. UFT chapter page lists KIPP Academy. Active dece",
+          "firstContract": "N/A — covered by existing NYC DOE/UFT CBA from inception (2000)",
+          "authorizer": "NYC Department of Education (conversion charter)",
+          "website": "https://www.kippnyc.org",
+          "lat": 40.8448,
+          "lon": -73.8648
+        },
+        {
+          "napcsId": "C3605009",
+          "name": "Future Leaders Institute Charter School",
+          "city": "New York",
+          "state": "NY",
+          "status": "DEPENDENT",
+          "union": "United Federation of Teachers (UFT) Local 2",
+          "stateAff": "NYSUT",
+          "natlAff": "AFT / NEA",
+          "dateUnionized": "2005 — converted from NYC DOE district school; UFT coverage transferred automatically at conversion under NY Charter Schools Act",
+          "certCase": "N/A — no independent NLRB or PERB(NY) case. Coverage flows from NYC DOE/UFT master CBA. SUNY charter renewal report (2018-19) confirms: \"FLI converted to a charter school from a traditional district school in 2005 and operates under the collective bargaining agreements negotiated by New York City with the teachers, supervisors and paraprofessionals unions as a result of being a conversion charter school.\"",
+          "cbaStatus": "ACTIVE — covered by NYC DOE/UFT master collective bargaining agreement. FLI is responsible for paying UFT member employe",
+          "firstContract": "N/A — covered by existing NYC DOE/UFT CBA from inception (2005)",
+          "authorizer": "NYC Department of Education / SUNY (conversion charter)",
+          "website": "https://www.futureleadersinstitute.org",
+          "lat": 40.7128,
+          "lon": -74.006
+        }
+      ],
+      "networks": [
+        {
+          "name": "UFT Charter Schools (UFT-operated)",
+          "union": "",
+          "schoolIds": [
+            "C3611011",
+            "C3611012"
+          ],
+          "organizedCount": 2,
+          "cbaStatus": "",
+          "keyFindings": ""
+        }
+      ]
+    },
+    "OH": {
+      "name": "Ohio",
+      "laborBoard": "NLRB (Region 8 / Region 9)",
+      "governingLaw": "National Labor Relations Act (NLRA). Ohio charter schools (\"community schools\" per ORC Chapter 3314) are classified as privately incorporated nonprofits — private employers under the NLRA. SERB (State Employment Relations Board, ORC Chapter 4117) does NOT apply. Settled by NLRB precedent: Menlo Park Academy (08-RC-286190, 2022), KIPP Columbus (09-CA-310589, 2022–2024), and a decade of prior Ohio charter elections all confirming NLRB jurisdiction.",
+      "universe": 323,
+      "confirmed": 12,
+      "dependent": 14,
+      "intel": [
+        {
+          "prompt": "What is the political and legal environment shaping charter labor relations in this state?",
+          "answer": "Ohio presents one of the most counterintuitive jurisdictional stories in the NAPCS research dataset. Ohio charter schools are known locally as \"community schools\" and are funded through the state's public education system — yet they are legally classified as private employers, placing them squarely within NLRB jurisdiction rather than the state SERB framework. This classification is not a technicality. It has been argued, litigated, and consistently confirmed over nearly a decade of Ohio charter organizing drives. Every Ohio charter operator that has challenged NLRB jurisdiction — including KIPP Columbus and Menlo Park Academy — has lost. The NLRB's operative standard (\"not created directly by the state and not a department or administrative arm of government\") applies cleanly to all indep..."
+        },
+        {
+          "prompt": "What community and social conditions are driving organizing activity in this state?",
+          "answer": "The organizing geography of Ohio's charter sector is strikingly concentrated. Seven of nine confirmed union schools are in the Cleveland metropolitan area, all represented by a single local (Cleveland ACTS, OFT Local 6570). This concentration is not accidental — it reflects a deliberate organizing infrastructure built school by school since 2015, anchored in the ACCEL/ICAN network and expanding outward. Cleveland has a strong union culture rooted in its industrial history, and the Ohio Federation of Teachers has deep institutional roots in the Cleveland Teachers Union (CTU), which provides organizing expertise, legal resources, and institutional memory to the charter campaign.\n\nThe Columbus market presents a different dynamic. KIPP Columbus — one of the most prominent organized KIPP campus..."
+        },
+        {
+          "prompt": "What organizing strategies and approaches are being used in this state?",
+          "answer": "The Cleveland ACTS model is the most sophisticated single-city charter union infrastructure in the full NAPCS research dataset. Established around the 2015–2016 ACCEL/ICAN certifications, Cleveland ACTS (OFT Local 6570) now represents seven schools spanning three unrelated charter operators (ACCEL/ICAN, Summit Academy, and independent operators Stepstone and Menlo Park). This multi-operator local is a deliberate strategic choice: by aggregating bargaining power across operators, Cleveland ACTS can maintain a critical mass of organized staff, share legal and bargaining infrastructure, and create a visible organizing presence that reduces the risk premium for individual schools.\n\nThe Cleveland ACTS replication playbook is identifiable across each certification: early organizing committee for..."
+        },
+        {
+          "prompt": "What should charter leaders be doing now in response to organizing patterns in this state?",
+          "answer": "Ohio charter leaders face a structurally clearer environment than most states: the law is settled (NLRB jurisdiction, secret ballot elections), the dominant union is identified (OFT/AFT via Cleveland ACTS), and the organizing geography is concentrated enough to study. The most important strategic insight from the Ohio data is that employer counter-organizing has failed in every documented case, and in the KIPP Columbus case, it generated NLRB unfair labor practice findings that became a public liability. Charter leaders should treat NLRB compliance as an absolute floor — not because the law requires it (it does), but because ULP violations are documented in the federal record and accessible to future organizing campaigns as evidence of bad-faith management.\n\nThe schools that have organized..."
+        },
+        {
+          "prompt": "What trends should charter sector leaders watch over the next 3–5 years?",
+          "answer": "The most consequential near-term development is ACPA United's first contract negotiation. The 44-1 vote creates strong mandate for the union; the absence of prior organizing at ACPA means the employer has no CBA template to anchor negotiations. The trajectory of this negotiation — whether it is collaborative or contentious, and whether it results in a contract within 12–18 months — will signal whether OFT's Columbus organizing strategy has durable institutional support.\n\nKIPP Columbus ACTS continues to negotiate its first contract (certified May 2023, contract status pending as of May 2026). Three-plus years of post-certification bargaining without a first contract is unusual and warrants monitoring. The NLRB's August 2024 ULP findings against KIPP Columbus (wage freeze threat, withheld st..."
+        },
+        {
+          "prompt": "What surprised us in this state? What contradicts what national leaders expect?",
+          "answer": "The most significant surprise in the Ohio data is the complete absence of OEA/NEA in the Ohio charter sector. OEA (Ohio Education Association), the NEA state affiliate, represents approximately 120,000 Ohio public school educators and is one of the most powerful education unions in the country. Yet across 9 confirmed Ohio charter union schools, OEA has zero representation. Every certified Ohio charter school union is affiliated with OFT (AFT). This is counterintuitive given OEA's institutional dominance in traditional public school districts and its resources — but it reflects the strategic decision OFT made in the mid-2010s to invest specifically in charter school organizing through the Cleveland ACTS infrastructure, while OEA did not.\n\nThe second surprise is the NLRB-jurisdiction classif..."
+        },
+        {
+          "prompt": "Ohio has two separate research tracks — how do they work and how do you tell them apart?",
+          "answer": "Ohio is the only state in the NAPCS dataset with a confirmed dual-track jurisdictional architecture within the same state research scope. Understanding this split is essential for accurate research, correct Accumulator coding, and the right refresh cadence.\n\nTRACK 1 — INDEPENDENTLY INCORPORATED CHARTERS (NLRB, secret ballot):\nCovers all 9 CONFIRMED Ohio schools (Cleveland ACTS, KIPP Columbus, ACPA). These schools are privately incorporated nonprofits not created directly by the state. NLRB Regions 8 (Cleveland) and 9 (Columbus/Cincinnati) have exclusive jurisdiction. Research path: NLRB ADS employer name search. A zero-result ADS search means no union — expected and definitive. Refresh source: NLRB ADS re-scan annually. CBAs filed with NLRB or held privately; not at SERB.\n\nTRACK 2 — CONVER..."
+        }
+      ],
+      "openItems": [
+        {
+          "priority": "LOW",
+          "description": "District CBA Text Verification — 12 DEPENDENT Schools (ORC 3314.10(A)(3)). STATUTORY COVERAGE CONFIRMED May 22, 2026: ORC §3314.10(A)(3) is self-executing — charter employees remain in district bargaining unit automatically by statute. No district CBA needs to explicitly name the community school fo",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "Gate 0 Methodology Gap — OH DEPENDENT Schools Missed in Initial Research. 12 district-sponsored charter schools were coded UNVERIFIED in the May 2026 initial session because the Gate 0 authorizer classification check was not part of the research protocol. These schools are covered by district CBAs u",
+          "resolution": ""
+        },
+        {
+          "priority": "CRITICAL",
+          "description": "KIPP Columbus first contract — over 3 years post-certification (May 2023) with no ratified CBA as of May 2026. Monitor NLRB docket for contract status and any additional ULP filings.",
+          "resolution": ""
+        },
+        {
+          "priority": "LOW",
+          "description": "Registry v7 ADS scan (April 2026) searched all 351 Ohio charter schools by employer name against NLRB Regions 8 and 9 — no records found for any of the 23 UNVERIFIED schools. Registry ADS scan is sufficient clearance for UNVERIFIED accumulator entry. Individual NLRB FOIA requests are NOT required.",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "Correct PERB/SERB → NLRB label in all 32 Ohio rows in PLT Accumulator before any data entry. The NAPCS baseline pre-populated incorrect labor board labels.",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "ACPA United first contract: newly certified Dec 2025. Monitor OFT communications and NLRB docket for first contract ratification. Flag if not ratified within 18 months.",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "Confirm exact NLRB certification dates for Cleveland ACTS schools (Northeast Ohio College Prep, Cleveland College Prep, University of Cleveland Prep, Stepstone Academy). Case numbers known; exact cert dates require NLRB case record lookup or FOIA.",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "Summit Academy Painesville: confirmed organized, no NAPCS ID. Discovery Report produced this session. Sponsor decision pending: ADD to NAPCS dataset / DO NOT ADD / HOLD.",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "NLRB Records Request — Summit Academy Youngstown (C3905038) and Summit Academy Secondary School-Youngstown (C3904066). Both CONFIRMED May 22, 2026 as independently organized OEA/NEA units. NLRB case number, certification date, and vote tally needed for Accumulator entry under Labor Board Certified d",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "Summit Academy Lorain (C3901015) identity confirmed: K-8 Alternative Learners campus is the NAPCS entry and is confirmed organized. Summit Academy Secondary Lorain (separate campus) is also organized but may not have its own NAPCS ID. Confirm with sponsor whether Secondary Lorain should be added.",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "NLRB FOIA — exact certification dates for all 7 Cleveland ACTS schools",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "Everest High School (Reynoldsburg, OH) — NLRB R8 individual employer-name ADS search required. Step 0 complete: St. Aloysius Orphanage (501c3) is current authorizer — NOT a school district. ORC §3314.10(A)(3) does NOT apply. NLRB R8 jurisdiction confirmed. Prior Registry v7 batch scan may not have i",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "Franklin Local Community School — NAPCS ID verification required before accumulator entry. NAPCS gap list refers to this school as \"Franklin Local Digital.\" Actual name on district website: \"Franklin Local Community School.\" Confirm NAPCS ID and whether \"Franklin Local Digital\" is the same school or",
+          "resolution": ""
+        },
+        {
+          "priority": "LOW",
+          "description": "Zanesville Community HS (C3907020) — CBA text enrichment (does not block entry). Statutory DEPENDENT coverage confirmed via ORC §3314.10(A)(3) and SERB CBA 21-MED-03-0442 (ZEA/OEA/NEA). Optional enrichment: confirm charter school named in CBA text. Access: serb.ohio.gov CBA archive → \"Zanesville Cit",
+          "resolution": ""
+        }
+      ],
+      "confirmedSchools": [
+        {
+          "napcsId": "C3902003",
+          "name": "Arts and College Preparatory Academy (ACPA)",
+          "city": "Columbus",
+          "state": "OH",
+          "status": "CONFIRMED",
+          "union": "ACPA United",
+          "stateAff": "OFT",
+          "natlAff": "AFT",
+          "dateUnionized": "December 5, 2025",
+          "certCase": "09-RC-375102",
+          "cbaStatus": "Pre-first-contract — bargaining not yet commenced",
+          "firstContract": "Not yet ratified — certified Dec 5, 2025; first contract negotiations expected to begin 2026",
+          "authorizer": "Ohio Department of Education and Workforce",
+          "website": "https://artcollegeprep.org",
+          "lat": 39.9612,
+          "lon": -82.9988
+        },
+        {
+          "napcsId": "C3910017",
+          "name": "Northeast Ohio College Preparatory School",
+          "city": "Cleveland",
+          "state": "OH",
+          "status": "CONFIRMED",
+          "union": "Cleveland Alliance for Charter Teachers and Staff (Cleveland ACTS)",
+          "stateAff": "OFT",
+          "natlAff": "AFT",
+          "dateUnionized": "May 12, 2016",
+          "certCase": "08-RC-128479",
+          "cbaStatus": "Active — multiple contract cycles",
+          "firstContract": "First contract ratified ~2017. Current CBA in effect.",
+          "authorizer": "Ohio Department of Education and Workforce",
+          "website": "https://www.neohiocollegeprep.org",
+          "lat": 41.4993,
+          "lon": -81.6944
+        },
+        {
+          "napcsId": "C3910003",
+          "name": "Cleveland College Preparatory Academy",
+          "city": "Cleveland",
+          "state": "OH",
+          "status": "CONFIRMED",
+          "union": "Cleveland Alliance for Charter Teachers and Staff (Cleveland ACTS)",
+          "stateAff": "OFT",
+          "natlAff": "AFT",
+          "dateUnionized": "Spring 2016 — exact date pending NLRB records request",
+          "certCase": "08-RC-175167",
+          "cbaStatus": "Active — multiple contract cycles",
+          "firstContract": "First contract ratified ~2017. Current CBA in effect.",
+          "authorizer": "Ohio Department of Education and Workforce",
+          "website": "https://www.clevelandcollegeprep.org",
+          "lat": 41.4993,
+          "lon": -81.6944
+        },
+        {
+          "napcsId": "C3911020",
+          "name": "University of Cleveland Preparatory School",
+          "city": "Cleveland",
+          "state": "OH",
+          "status": "CONFIRMED",
+          "union": "Cleveland Alliance for Charter Teachers and Staff (Cleveland ACTS)",
+          "stateAff": "OFT",
+          "natlAff": "AFT",
+          "dateUnionized": "March 2016 (approximate) — exact date pending NLRB records request",
+          "certCase": "NLRB Region 8 RC case — case number pending NLRB records request",
+          "cbaStatus": "Active — multiple contract cycles",
+          "firstContract": "First contract ratified ~2017. Current CBA in effect.",
+          "authorizer": "Ohio Department of Education and Workforce",
+          "website": "https://www.universityclevelandprep.org",
+          "lat": 41.4993,
+          "lon": -81.6944
+        },
+        {
+          "napcsId": "C3912013",
+          "name": "Stepstone Academy",
+          "city": "Cleveland",
+          "state": "OH",
+          "status": "CONFIRMED",
+          "union": "Cleveland Alliance for Charter Teachers and Staff (Cleveland ACTS)",
+          "stateAff": "OFT",
+          "natlAff": "AFT",
+          "dateUnionized": "September 21, 2018",
+          "certCase": "08-RC-196813",
+          "cbaStatus": "Active — multiple contract cycles",
+          "firstContract": "First contract ratified ~2019-20. Current CBA in effect.",
+          "authorizer": "Ohio Department of Education and Workforce",
+          "website": "https://www.stepstoneacademy.org",
+          "lat": 41.4993,
+          "lon": -81.6944
+        },
+        {
+          "napcsId": "C3904065",
+          "name": "Summit Academy Secondary School-Parma",
+          "city": "Parma",
+          "state": "OH",
+          "status": "CONFIRMED",
+          "union": "Cleveland Alliance for Charter Teachers and Staff (Cleveland ACTS)",
+          "stateAff": "OFT",
+          "natlAff": "AFT",
+          "dateUnionized": "March 2018 (approximate) — exact date pending NLRB records request",
+          "certCase": "NLRB Region 8 RC case — case number pending NLRB records request",
+          "cbaStatus": "Active — CBA first ratified March 1, 2019 (post-strike)",
+          "firstContract": "First contract ratified March 1, 2019, following Ohio's first charter school strike (February 2019). Current CBA in effect.",
+          "authorizer": "Ohio Department of Education and Workforce",
+          "website": "https://www.summitacademy.com",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C3901015",
+          "name": "Summit Academy Community School for Alternative Learners of Lorain",
+          "city": "Lorain",
+          "state": "OH",
+          "status": "CONFIRMED",
+          "union": "OFT (local designation pending NLRB records confirmation)",
+          "stateAff": "OFT",
+          "natlAff": "AFT",
+          "dateUnionized": "January 14, 2022",
+          "certCase": "NLRB Region 8 RC case — case number pending NLRB records request",
+          "cbaStatus": "Active — first CBA ratified ~2022-23",
+          "firstContract": "First contract ratified ~2022-23. Current CBA in effect.",
+          "authorizer": "Ohio Department of Education and Workforce",
+          "website": "https://www.summitacademy.com",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C3904034",
+          "name": "Menlo Park Academy",
+          "city": "Cleveland",
+          "state": "OH",
+          "status": "CONFIRMED",
+          "union": "Cleveland Alliance for Charter Teachers and Staff (Cleveland ACTS)",
+          "stateAff": "OFT",
+          "natlAff": "AFT",
+          "dateUnionized": "April 14, 2022",
+          "certCase": "08-RC-286190",
+          "cbaStatus": "Active — first CBA ratified ~2022-23",
+          "firstContract": "First contract ratified ~2022-23. Current CBA in effect.",
+          "authorizer": "Ohio Department of Education and Workforce",
+          "website": "https://www.menloparkacademy.net",
+          "lat": 41.4993,
+          "lon": -81.6944
+        },
+        {
+          "napcsId": "C3908011",
+          "name": "KIPP Columbus",
+          "city": "Columbus",
+          "state": "OH",
+          "status": "CONFIRMED",
+          "union": "KIPP Columbus Alliance for Charter Teachers and Staff (KIPP Columbus ACTS)",
+          "stateAff": "OFT",
+          "natlAff": "AFT",
+          "dateUnionized": "May 5, 2023",
+          "certCase": "09-CA-310589 (ULP case, Aug 2024 findings); RC case number pending NLRB records confirmation",
+          "cbaStatus": "Pre-first-contract — in negotiation (3+ years post-certification)",
+          "firstContract": "Not yet ratified as of May 2026. Certified May 5, 2023. Bargaining ongoing — over 3 years without first contract is an outlier in the Ohio dataset.",
+          "authorizer": "Ohio Department of Education and Workforce",
+          "website": "https://www.kippcolumbus.org",
+          "lat": 39.9612,
+          "lon": -82.9988
+        },
+        {
+          "napcsId": "C3904066",
+          "name": "Summit Academy Secondary School-Youngstown",
+          "city": "Youngstown",
+          "state": "OH",
+          "status": "CONFIRMED",
+          "union": "Summit Academy Youngstown Secondary Education Association / Youngstown Education",
+          "stateAff": "OEA",
+          "natlAff": "NEA",
+          "dateUnionized": "Pre-2018-19 (NAPCS lists this school in BOTH 2018-19 and 2023-24 union data — exact cert date requires NLRB FOIA to Region 8)",
+          "certCase": "NLRB Region 8 — case number NOT FOUND in public ADS (May 22, 2026 session). Pre-digitization case. FOIA required: file NLRB FOIA to Region 8 (Cleveland) under employer \"Summit Academy Secondary School-Youngstown\" or \"Summit Academy Management Inc.\" at 2800 Shady Run Rd, Youngstown OH 44502. FOIA portal: nlrb.gov/foia. Region 8: 1240 E. 9th St., Suite 1695, Cleveland OH 44199.",
+          "cbaStatus": "ACTIVE — CBA in effect per NAPCS 2018-19 and 2023-24 data (consistently listed both periods)",
+          "firstContract": "Pending NLRB FOIA",
+          "authorizer": "Summit Academy Management / independently authorized",
+          "website": "https://summitacademies.org/youngstown-secondary/",
+          "lat": 41.0998,
+          "lon": -80.6495
+        },
+        {
+          "napcsId": "C3905038",
+          "name": "Summit Academy Youngstown",
+          "city": "Youngstown",
+          "state": "OH",
+          "status": "CONFIRMED",
+          "union": "Ohio Education Association / Summit Academy Youngstown Staff Association",
+          "stateAff": "OEA",
+          "natlAff": "NEA",
+          "dateUnionized": "Pre-2018-19 (NAPCS lists this school in BOTH 2018-19 and 2023-24 union data — exact cert date requires NLRB FOIA to Region 8)",
+          "certCase": "NLRB Region 8 — case number NOT FOUND in public ADS (May 22, 2026 session). Pre-digitization case. FOIA required: file NLRB FOIA to Region 8 (Cleveland) under employer \"Summit Academy Youngstown\" or \"Summit Academy Management Inc.\" at Youngstown OH 44502. FOIA portal: nlrb.gov/foia.",
+          "cbaStatus": "ACTIVE — CBA in effect per NAPCS 2018-19 and 2023-24 data (consistently listed both periods)",
+          "firstContract": "Pending NLRB FOIA",
+          "authorizer": "Summit Academy Management / independently authorized",
+          "website": "https://summitacademies.org/youngstown/",
+          "lat": 41.0998,
+          "lon": -80.6495
+        },
+        {
+          "napcsId": "NAPCS-ADD-OH-001",
+          "name": "Summit Academy Community School — Painesville",
+          "city": "Painesville",
+          "state": "OH",
+          "status": "CONFIRMED",
+          "union": "Cleveland Alliance for Charter Teachers and Staff (Cleveland ACTS)",
+          "stateAff": "OFT",
+          "natlAff": "AFT",
+          "dateUnionized": "Unknown — NLRB records request required for exact cert date",
+          "certCase": "NLRB Region 8 RC case 08-RC-236745 (Certification of Representative)",
+          "cbaStatus": "Active (inferred — post-cert)",
+          "firstContract": "First contract likely ratified (organized before Lorain 2022). Exact date pending NLRB records.",
+          "authorizer": "Unknown — Summit Academy Management",
+          "website": "https://www.summitacademy.com",
+          "lat": null,
+          "lon": null
+        }
+      ],
+      "dependentSchools": [
+        {
+          "napcsId": "C3906029",
+          "name": "Franklin Local Community School",
+          "city": "McConnelsville",
+          "state": "OH",
+          "status": "DEPENDENT",
+          "union": "Franklin Local Education Association (FLEA)",
+          "stateAff": "OEA",
+          "natlAff": "NEA",
+          "dateUnionized": "Covered from school opening — district CBA extends by operation of Ohio law",
+          "certCase": "N/A — ORC §3314.10(A)(3) statutory coverage; no independent charter certification. Franklin Local School District explicitly identifies as \"the sponsor\" on school profile page.",
+          "cbaStatus": "ACTIVE — covered by Franklin Local School District master CBA (SERB archive — specific contract number pending FOIA)",
+          "firstContract": "N/A — covered by existing district CBA from inception",
+          "authorizer": "Franklin Local School District",
+          "website": "https://www.franklinlocalschools.org/schools/franklin-local-community-school/",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C3906011",
+          "name": "Coshocton Opportunity School",
+          "city": "Coshocton",
+          "state": "OH",
+          "status": "DEPENDENT",
+          "union": "Coshocton City Education Association",
+          "stateAff": "OEA",
+          "natlAff": "NEA",
+          "dateUnionized": "Covered from school opening — district CBA extends by operation of Ohio law",
+          "certCase": "N/A — district CBA coverage under ORC 3314.10(A)(3); no independent charter certification",
+          "cbaStatus": "ACTIVE — covered by Coshocton City School District master CBA",
+          "firstContract": "N/A — covered by existing district CBA from inception",
+          "authorizer": "Coshocton City School District",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C3906013",
+          "name": "Eagle Learning Center",
+          "city": "Oregon",
+          "state": "OH",
+          "status": "DEPENDENT",
+          "union": "Oregon City Federation of Teachers",
+          "stateAff": "OFT/AFT",
+          "natlAff": "NEA",
+          "dateUnionized": "Covered from school opening — district CBA extends by operation of Ohio law",
+          "certCase": "N/A — district CBA coverage under ORC 3314.10(A)(3); no independent charter certification",
+          "cbaStatus": "ACTIVE — covered by Oregon City School District master CBA",
+          "firstContract": "N/A — covered by existing district CBA from inception",
+          "authorizer": "Oregon City School District",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C3902009",
+          "name": "Fairborn Digital Academy",
+          "city": "Fairborn",
+          "state": "OH",
+          "status": "DEPENDENT",
+          "union": "Fairborn Education Association",
+          "stateAff": "OEA/NEA",
+          "natlAff": "NEA",
+          "dateUnionized": "Covered from school opening — district CBA extends by operation of Ohio law",
+          "certCase": "N/A — district CBA coverage under ORC 3314.10(A)(3); no independent charter certification",
+          "cbaStatus": "ACTIVE — covered by Fairborn City School District master CBA",
+          "firstContract": "N/A — covered by existing district CBA from inception",
+          "authorizer": "Fairborn City School District",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C3905013",
+          "name": "Findlay Digital Academy",
+          "city": "Findlay",
+          "state": "OH",
+          "status": "DEPENDENT",
+          "union": "Findlay Education Association",
+          "stateAff": "OEA/NEA",
+          "natlAff": "NEA",
+          "dateUnionized": "Covered from school opening — district CBA extends by operation of Ohio law",
+          "certCase": "N/A — district CBA coverage under ORC 3314.10(A)(3); no independent charter certification",
+          "cbaStatus": "ACTIVE — covered by Findlay City School District master CBA",
+          "firstContract": "N/A — covered by existing district CBA from inception",
+          "authorizer": "Findlay City School District",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C3903003",
+          "name": "Foxfire High School",
+          "city": "Mcconnelsville",
+          "state": "OH",
+          "status": "DEPENDENT",
+          "union": "Maysville Education Association",
+          "stateAff": "OEA/NEA",
+          "natlAff": "NEA",
+          "dateUnionized": "Covered from school opening — district CBA extends by operation of Ohio law",
+          "certCase": "N/A — district CBA coverage under ORC 3314.10(A)(3); no independent charter certification",
+          "cbaStatus": "ACTIVE — covered by Maysville Local School District master CBA",
+          "firstContract": "N/A — covered by existing district CBA from inception",
+          "authorizer": "Maysville Local School District",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C3910011",
+          "name": "Foxfire Intermediate School",
+          "city": "Mcconnelsville",
+          "state": "OH",
+          "status": "DEPENDENT",
+          "union": "Maysville Education Association",
+          "stateAff": "OEA/NEA",
+          "natlAff": "NEA",
+          "dateUnionized": "Covered from school opening — district CBA extends by operation of Ohio law",
+          "certCase": "N/A — district CBA coverage under ORC 3314.10(A)(3); no independent charter certification",
+          "cbaStatus": "ACTIVE — covered by Maysville Local School District master CBA",
+          "firstContract": "N/A — covered by existing district CBA from inception",
+          "authorizer": "Maysville Local School District",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C3906030",
+          "name": "Par Excellence Academy",
+          "city": "Newark",
+          "state": "OH",
+          "status": "DEPENDENT",
+          "union": "Newark Teachers Association",
+          "stateAff": "OEA/NEA",
+          "natlAff": "NEA",
+          "dateUnionized": "Covered from school opening — district CBA extends by operation of Ohio law",
+          "certCase": "N/A — district CBA coverage under ORC 3314.10(A)(3); no independent charter certification",
+          "cbaStatus": "ACTIVE — covered by Newark City School District master CBA",
+          "firstContract": "N/A — covered by existing district CBA from inception",
+          "authorizer": "Newark City School District",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C3904050",
+          "name": "Quaker Digital Academy",
+          "city": "New Philadelphia",
+          "state": "OH",
+          "status": "DEPENDENT",
+          "union": "New Philadelphia Education Association",
+          "stateAff": "OEA/NEA",
+          "natlAff": "NEA",
+          "dateUnionized": "Covered from school opening — district CBA extends by operation of Ohio law",
+          "certCase": "N/A — district CBA coverage under ORC 3314.10(A)(3); no independent charter certification",
+          "cbaStatus": "ACTIVE — covered by New Philadelphia City School District master CBA",
+          "firstContract": "N/A — covered by existing district CBA from inception",
+          "authorizer": "New Philadelphia City School District",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C3905032",
+          "name": "Rittman Academy",
+          "city": "Rittman",
+          "state": "OH",
+          "status": "DEPENDENT",
+          "union": "Rittman Education Association",
+          "stateAff": "OEA/NEA",
+          "natlAff": "NEA",
+          "dateUnionized": "Covered from school opening — district CBA extends by operation of Ohio law",
+          "certCase": "N/A — district CBA coverage under ORC 3314.10(A)(3); no independent charter certification",
+          "cbaStatus": "ACTIVE — covered by Rittman Exempted Village School District master CBA",
+          "firstContract": "N/A — covered by existing district CBA from inception",
+          "authorizer": "Rittman Exempted Village School District",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C3905033",
+          "name": "Schnee Learning Center",
+          "city": "Cuyahoga Falls",
+          "state": "OH",
+          "status": "DEPENDENT",
+          "union": "Cuyahoga Falls Education Association",
+          "stateAff": "OEA/NEA",
+          "natlAff": "NEA",
+          "dateUnionized": "Covered from school opening — district CBA extends by operation of Ohio law",
+          "certCase": "N/A — district CBA coverage under ORC 3314.10(A)(3); no independent charter certification",
+          "cbaStatus": "ACTIVE — covered by Cuyahoga Falls City School District master CBA",
+          "firstContract": "N/A — covered by existing district CBA from inception",
+          "authorizer": "Cuyahoga Falls City School District",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C3902042",
+          "name": "Tomorrow Center Digital",
+          "city": "Cardington",
+          "state": "OH",
+          "status": "DEPENDENT",
+          "union": "Mount Gilead Teachers Association",
+          "stateAff": "OEA/NEA",
+          "natlAff": "NEA",
+          "dateUnionized": "Covered from school opening — district CBA extends by operation of Ohio law",
+          "certCase": "N/A — district CBA coverage under ORC 3314.10(A)(3); no independent charter certification",
+          "cbaStatus": "ACTIVE — covered by Cardington-Lincoln Local School District master CBA",
+          "firstContract": "N/A — covered by existing district CBA from inception",
+          "authorizer": "Cardington-Lincoln Local School District",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C3914011",
+          "name": "Utica Shale Academy of Ohio",
+          "city": "Salineville",
+          "state": "OH",
+          "status": "DEPENDENT",
+          "union": "Jefferson County Teachers Association",
+          "stateAff": "OEA/NEA",
+          "natlAff": "NEA",
+          "dateUnionized": "Covered from school opening — district CBA extends by operation of Ohio law",
+          "certCase": "N/A — district CBA coverage under ORC 3314.10(A)(3); no independent charter certification",
+          "cbaStatus": "ACTIVE — covered by Southern Local School District (Jefferson County) master CBA",
+          "firstContract": "N/A — covered by existing district CBA from inception",
+          "authorizer": "Southern Local School District (Jefferson County)",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C3907020",
+          "name": "Zanesville Community High School",
+          "city": "Zanesville",
+          "state": "OH",
+          "status": "DEPENDENT",
+          "union": "Zanesville Education Association (ZEA)",
+          "stateAff": "OEA",
+          "natlAff": "NEA",
+          "dateUnionized": "Covered from school opening — district CBA extends by operation of Ohio law",
+          "certCase": "N/A — ORC §3314.10(A)(3) statutory coverage; no independent charter certification. District CBA on file at SERB: 21-MED-03-0442 (Zanesville City School District / Zanesville Education Association, effective 2021-2022).",
+          "cbaStatus": "ACTIVE — covered by Zanesville City School District master CBA with Zanesville Education Association (ZEA/OEA/NEA)",
+          "firstContract": "N/A — covered by existing district CBA from inception",
+          "authorizer": "Zanesville City School District",
+          "website": "https://www.zanesvillecommunityhighschool.org",
+          "lat": null,
+          "lon": null
+        }
+      ],
+      "networks": [
+        {
+          "name": "Cleveland Alliance for Charter Teachers and Staff (Cleveland ACTS)",
+          "union": "Cleveland Alliance for Charter Teachers and Staff (Cleveland ACTS)",
+          "schoolIds": [
+            "C3910017",
+            "C3911020",
+            "C3910003",
+            "C3912013",
+            "C3904065",
+            "C3901015",
+            "C3904034"
+          ],
+          "organizedCount": 7,
+          "cbaStatus": "Active — all 7 schools have ratified CBAs. Multiple contract cycles completed.",
+          "keyFindings": [
+            "Cleveland ACTS (OFT Local 6570) is the most developed multi-operator charter union local in the NAPCS dataset. Seven schools across three unrelated operators share a single local.",
+            "The ACTS model allows organizing infrastructure (legal, bargaining, communications) to be shared across schools, reducing cost and risk for each individual organizing campaign.",
+            "First Ohio charter school strike occurred at Summit Academy Parma (Feb 2019), producing the first CBA in Ohio's charter sector. This established the template for subsequent negotiations.",
+            "Cleveland ACTS president Sue Kraus (University of Cleveland Prep, 15-year staff member) is OFT's primary spokesperson for charter organizing — providing continuity and institutional knowledge."
+          ]
+        }
+      ]
+    },
+    "OR": {
+      "name": "Oregon",
+      "laborBoard": "ERB (OR)",
+      "governingLaw": "PECBA — Public Employee Collective Bargaining Act (ORS 243.650 et seq.). All district-authorized OR charter schools are public employers under PECBA/ERB jurisdiction. ERB (not PERB — a common error) administers collective bargaining for Oregon public employers including charter schools authorized by local school districts. NLRB applies only to independently incorporated charter operators authorized by the State Board of Education (rare — Oregon Virtual Academy is the primary example in this dataset).",
+      "universe": 128,
+      "confirmed": 1,
+      "dependent": 120,
+      "intel": [
+        {
+          "prompt": "What is the political and legal environment shaping charter labor relations in this state?",
+          "answer": "Oregon's charter labor relations environment is defined by a single structural fact: all 34 NAPCS charter schools are district-authorized dependent charters, meaning their certificated staff are district employees covered by district CBAs under PECBA/ERB jurisdiction. The research question for Oregon is fundamentally different from NLRB states like PA or NY — it is not \"did this school organize?\" but rather \"does the authorizing district's OEA/OSEA local cover charter-employed staff?\" The ERB (Employment Relations Board) — not PERB, a common error — administers PECBA. Oregon's charter sector has actually seen a DECLINE in independent charter organizing since the early 2010s (per Education Week 2019), the opposite of the trend in IL, MA, and NJ. This is attributable to the dependent charter..."
+        },
+        {
+          "prompt": "What should sector leaders watch over the next 3–5 years?",
+          "answer": "Three items warrant monitoring. First, The Ivy School (Medford) NLRB election result: UNION LOST 2-31 on May 12, 2026 — CLOSED. This resolved the prior blocking item and revealed a strategic finding detailed in the Hawkins County intelligence entry below. Second, Mosier Community School's 2026 ERB re-certification (RC-003-26, March 5, 2026): the most recent ERB charter school certification in the full 128-school OR registry. Mosier is a small rural K-8 with 157 students. The fact that OEA sought a new certification order in 2026 (12 years after the original 2014 cert) may indicate a unit restructuring, employer challenge, or membership renewal — ERB records request needed for full context. Third, the Valley Inquiry Charter (VICS) 2024 staffing transition: VICS moved all staff to charter-di..."
+        },
+        {
+          "prompt": "THE HAWKINS COUNTY ROUTE — STRATEGIC INTELLIGENCE FOR CHARTER SECTOR LEADERS",
+          "answer": "The Ivy School NLRB election (May 12, 2026) — won decisively 31-2 by the employer — reveals a legal architecture that charter sector leaders in every DEPENDENT state must understand. The Hawkins County test (NLRB v. Natural Gas Utility District of Hawkins County, 402 U.S. 600 (1971)) determines whether a charter school is a private employer under NLRB or a public employer under state labor law. A charter school is a PRIVATE employer (NLRB jurisdiction) if it was: (1) NOT created directly by the state, and (2) governed by a board NOT accountable to public officials or voters. Any charter meeting both criteria is outside ERB/state labor board jurisdiction — even in states like Oregon where charter schools are nominally public. This matters because NLRB jurisdiction means: no card-check (secr..."
+        },
+        {
+          "prompt": "What surprised us or contradicts what national leaders expect?",
+          "answer": "Three findings challenge standard national assumptions. First, Oregon's DECLINING charter union trend: national charter sector observers expect Oregon (a progressive, union-friendly state) to have high and growing charter union density. The reality is the opposite — ERB cases show declining activity, and the dependent charter structure means most \"union coverage\" is structural district CBA coverage rather than independent organizing. Second, the ERB vs. PERB confusion: Oregon's labor board is ERB, not PERB. \"PERB\" (Public Employment Relations Board) is the label used in CA, NY, and DE — all different agencies. The Oregon ERB has no public employer search portal; the only scalable search method is the ContentDM REST API (cdm17027.contentdm.oclc.org). Third, ORVA's dual-name issue: Oregon Vi..."
+        }
+      ],
+      "openItems": [
+        {
+          "priority": "HIGH",
+          "description": "SPONSOR BRIEFING — Hawkins County Private-Employer Route for Independently Incorporated Charters",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "ERB records request — CC-007-14 (2014) and RC-003-26 (2026)",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "NAPCS addition APPROVED by PLT director May 19, 2026. Assign official NAPCS ID. Enter into PLT Accumulator. NAPCS ID pending NAPCS assignment.",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "ERB records request — DC-008-11 (decertification 2011)",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "Direct verification — 2024 staffing transition",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "ERB records requests — 20 small rural district schools",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "OEA local verification — SKEA, NCEA, GBEA, OCEA, CBEA",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "Current CBA — ORVA Educators United",
+          "resolution": ""
+        }
+      ],
+      "confirmedSchools": [
+        {
+          "napcsId": "C4102006",
+          "name": "MOSIER COMMUNITY SCHOOL",
+          "city": "Mosier",
+          "state": "OR",
+          "status": "CONFIRMED",
+          "union": "Oregon Education Association (OEA) — District 21 Education Association",
+          "stateAff": "OEA (Oregon Education Association)",
+          "natlAff": "NEA",
+          "dateUnionized": "June 24, 2014 (ERB CC-007-14 — Certification of Exclusive Representative)",
+          "certCase": "",
+          "cbaStatus": "Active — ERB certified, CBA status unknown (records request needed)",
+          "firstContract": "",
+          "authorizer": "North Wasco County SD 21",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NAPCS-ADD-OR-001",
+          "name": "OREGON VIRTUAL ACADEMY (ORVA)",
+          "city": "North Bend (statewide virtual)",
+          "state": "OR",
+          "status": "CONFIRMED",
+          "union": "Oregon Virtual Academy Educators United, AFT-Oregon, AFT, AFL-CIO",
+          "stateAff": "AFT-Oregon",
+          "natlAff": "AFT",
+          "dateUnionized": "August 20, 2021 (NLRB 19-RC-278342 — Certification of Representative)",
+          "certCase": "",
+          "cbaStatus": "Active — post-first-contract (cert Aug 2021; 3+ years post-cert)",
+          "firstContract": "",
+          "authorizer": "North Bend SD 13 (district-authorized but independently incorporated)",
+          "website": "",
+          "lat": 44.0582,
+          "lon": -121.3153
+        }
+      ],
+      "dependentSchools": [
+        {
+          "napcsId": "C4102003",
+          "name": "HOWARD STREET CHARTER",
+          "city": "Salem",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Salem-Keizer Education Association (SKEA) / OEA / NEA",
+          "stateAff": "OEA (Oregon Education Association)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Salem-Keizer district CBA coverage from inception)",
+          "certCase": "",
+          "cbaStatus": "Active — Salem-Keizer EA district CBA (covers all district-employed staff)",
+          "firstContract": "",
+          "authorizer": "Salem-Keizer SD 24J",
+          "website": "",
+          "lat": 44.9429,
+          "lon": -123.0351
+        },
+        {
+          "napcsId": "C4102008",
+          "name": "OPTIMUM LEARNING ENVIRONMENT CHARTER SCHOOL",
+          "city": "Keizer",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Salem-Keizer Education Association (SKEA) / OEA / NEA",
+          "stateAff": "OEA",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Salem-Keizer district CBA)",
+          "certCase": "",
+          "cbaStatus": "Active — Salem-Keizer EA district CBA",
+          "firstContract": "",
+          "authorizer": "Salem-Keizer SD 24J",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4104003",
+          "name": "CAMAS VALLEY SCHOOL",
+          "city": "Camas Valley",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Local OEA chapter or no union (tiny rural district — UNVERIFIED)",
+          "stateAff": "OEA (if local exists)",
+          "natlAff": "NEA (if local exists)",
+          "dateUnionized": "Unknown — ERB records request required",
+          "certCase": "",
+          "cbaStatus": "Unknown — ERB records request required",
+          "firstContract": "",
+          "authorizer": "Camas Valley SD 21J",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4104004",
+          "name": "CENTER FOR ADVANCED LEARNING",
+          "city": "Gresham",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Gresham-Barlow Education Association (GBEA) / OEA / NEA",
+          "stateAff": "OEA",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Gresham-Barlow district CBA — LIKELY)",
+          "certCase": "",
+          "cbaStatus": "Active — GBEA district CBA (LIKELY)",
+          "firstContract": "",
+          "authorizer": "Gresham-Barlow SD 10J",
+          "website": "",
+          "lat": 45.5001,
+          "lon": -122.4302
+        },
+        {
+          "napcsId": "C4104006",
+          "name": "CLACKAMAS MIDDLE COLLEGE",
+          "city": "Happy Valley",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "North Clackamas Education Association (NCEA) / OEA / NEA",
+          "stateAff": "OEA",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (North Clackamas district CBA — LIKELY)",
+          "certCase": "",
+          "cbaStatus": "Active — NCEA district CBA (LIKELY)",
+          "firstContract": "",
+          "authorizer": "North Clackamas SD 12",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4104008",
+          "name": "JANE GOODALL ENVIRONMENTAL MIDDLE CHARTER SCHOOL",
+          "city": "Salem",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Salem-Keizer Education Association (SKEA) / OEA / NEA",
+          "stateAff": "OEA",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Salem-Keizer district CBA)",
+          "certCase": "",
+          "cbaStatus": "Active — SKEA district CBA",
+          "firstContract": "",
+          "authorizer": "Salem-Keizer SD 24J",
+          "website": "",
+          "lat": 44.9429,
+          "lon": -123.0351
+        },
+        {
+          "napcsId": "C4104011",
+          "name": "PAISLEY CHARTER SCHOOL",
+          "city": "Paisley",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Local OEA chapter or no union (tiny rural district — UNVERIFIED)",
+          "stateAff": "OEA (if local exists)",
+          "natlAff": "NEA (if local exists)",
+          "dateUnionized": "Unknown — ERB records request required",
+          "certCase": "",
+          "cbaStatus": "Unknown",
+          "firstContract": "",
+          "authorizer": "Paisley SD 11",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4105004",
+          "name": "CLACKAMAS WEB ACADEMY",
+          "city": "Clackamas",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "North Clackamas Education Association (NCEA) / OEA / NEA",
+          "stateAff": "OEA",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (North Clackamas district CBA — LIKELY)",
+          "certCase": "",
+          "cbaStatus": "Active — NCEA district CBA (LIKELY)",
+          "firstContract": "",
+          "authorizer": "North Clackamas SD 12",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4105005",
+          "name": "DAYS CREEK CHARTER SCHOOL",
+          "city": "Days Creek",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Local OEA chapter or no union (tiny rural district — UNVERIFIED)",
+          "stateAff": "OEA (if local exists)",
+          "natlAff": "NEA (if local exists)",
+          "dateUnionized": "Unknown",
+          "certCase": "",
+          "cbaStatus": "Unknown",
+          "firstContract": "",
+          "authorizer": "Douglas County SD 15",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4105008",
+          "name": "IONE COMMUNITY CHARTER SCHOOL",
+          "city": "Ione",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Local OEA chapter or no union (tiny rural district — UNVERIFIED)",
+          "stateAff": "OEA (if local exists)",
+          "natlAff": "NEA (if local exists)",
+          "dateUnionized": "Unknown",
+          "certCase": "",
+          "cbaStatus": "Unknown",
+          "firstContract": "",
+          "authorizer": "Ione SD R2",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4106002",
+          "name": "CASCADE HEIGHTS PUBLIC CHARTER SCHOOL",
+          "city": "Clackamas",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "North Clackamas Education Association (NCEA) / OEA / NEA",
+          "stateAff": "OEA",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (North Clackamas district CBA — LIKELY)",
+          "certCase": "",
+          "cbaStatus": "Active — NCEA district CBA (LIKELY)",
+          "firstContract": "",
+          "authorizer": "North Clackamas SD 12",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4106005",
+          "name": "MILWAUKIE ACADEMY OF THE ARTS",
+          "city": "Milwaukie",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "North Clackamas Education Association (NCEA) / OEA / NEA",
+          "stateAff": "OEA",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (North Clackamas district CBA — LIKELY)",
+          "certCase": "",
+          "cbaStatus": "Active — NCEA district CBA (LIKELY)",
+          "firstContract": "",
+          "authorizer": "North Clackamas SD 12",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4106009",
+          "name": "OREGON CITY SERVICE LEARNING ACADEMY",
+          "city": "Oregon City",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Oregon City Education Association (OCEA) / OEA / NEA",
+          "stateAff": "OEA",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Oregon City district CBA — LIKELY)",
+          "certCase": "",
+          "cbaStatus": "Active — OCEA district CBA (LIKELY)",
+          "firstContract": "",
+          "authorizer": "Oregon City SD 62",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4106015",
+          "name": "RESOURCE LINK CHARTER SCHOOL",
+          "city": "Coos Bay",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Coos Bay Education Association (CBEA) / OEA / NEA",
+          "stateAff": "OEA",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Coos Bay district CBA — LIKELY)",
+          "certCase": "",
+          "cbaStatus": "Active — CBEA district CBA (LIKELY)",
+          "firstContract": "",
+          "authorizer": "Coos Bay SD 9",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4107005",
+          "name": "FOSSIL CHARTER SCHOOL",
+          "city": "Fossil",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Local OEA chapter or no union (tiny rural district — UNVERIFIED)",
+          "stateAff": "OEA (if local exists)",
+          "natlAff": "NEA (if local exists)",
+          "dateUnionized": "Unknown",
+          "certCase": "",
+          "cbaStatus": "Unknown",
+          "firstContract": "",
+          "authorizer": "Fossil SD 21J",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4109001",
+          "name": "IMBLER CHARTER SCHOOL",
+          "city": "Imbler",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Local OEA chapter or no union (tiny rural district — UNVERIFIED)",
+          "stateAff": "OEA (if local exists)",
+          "natlAff": "NEA (if local exists)",
+          "dateUnionized": "Unknown",
+          "certCase": "",
+          "cbaStatus": "Unknown",
+          "firstContract": "",
+          "authorizer": "Imbler SD 11",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4109006",
+          "name": "COVE CHARTER SCHOOL",
+          "city": "Cove",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Local OEA chapter or no union (tiny rural district — UNVERIFIED)",
+          "stateAff": "OEA (if local exists)",
+          "natlAff": "NEA (if local exists)",
+          "dateUnionized": "Unknown",
+          "certCase": "",
+          "cbaStatus": "Unknown",
+          "firstContract": "",
+          "authorizer": "Cove SD 15",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4109007",
+          "name": "ELKTON CHARTER SCHOOL",
+          "city": "Elkton",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Local OEA chapter or no union (tiny rural district — UNVERIFIED)",
+          "stateAff": "OEA (if local exists)",
+          "natlAff": "NEA (if local exists)",
+          "dateUnionized": "Unknown",
+          "certCase": "",
+          "cbaStatus": "Unknown",
+          "firstContract": "",
+          "authorizer": "Elkton SD 34",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4109012",
+          "name": "NORTH POWDER CHARTER SCHOOL",
+          "city": "North Powder",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Local OEA chapter or no union (tiny rural district — UNVERIFIED)",
+          "stateAff": "OEA (if local exists)",
+          "natlAff": "NEA (if local exists)",
+          "dateUnionized": "Unknown",
+          "certCase": "",
+          "cbaStatus": "Unknown",
+          "firstContract": "",
+          "authorizer": "North Powder SD 8J",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4109013",
+          "name": "PROSPECT CHARTER SCHOOL",
+          "city": "Prospect",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Local OEA chapter or no union (tiny rural district — UNVERIFIED)",
+          "stateAff": "OEA (if local exists)",
+          "natlAff": "NEA (if local exists)",
+          "dateUnionized": "Unknown",
+          "certCase": "",
+          "cbaStatus": "Unknown",
+          "firstContract": "",
+          "authorizer": "Prospect SD 59",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4109017",
+          "name": "REEDSPORT COMMUNITY CHARTER SCHOOL",
+          "city": "Reedsport",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Local OEA chapter or no union (small coastal district — UNVERIFIED)",
+          "stateAff": "OEA (if local exists)",
+          "natlAff": "NEA (if local exists)",
+          "dateUnionized": "Unknown",
+          "certCase": "",
+          "cbaStatus": "Unknown",
+          "firstContract": "",
+          "authorizer": "Reedsport SD 105",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4110007",
+          "name": "PINE EAGLE CHARTER SCHOOL",
+          "city": "Halfway",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Local OEA chapter or no union (tiny rural district — UNVERIFIED)",
+          "stateAff": "OEA (if local exists)",
+          "natlAff": "NEA (if local exists)",
+          "dateUnionized": "Unknown",
+          "certCase": "",
+          "cbaStatus": "Unknown",
+          "firstContract": "",
+          "authorizer": "Pine Eagle SD 61",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4110011",
+          "name": "TRIANGLE LAKE CHARTER SCHOOL",
+          "city": "Blachly",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Local OEA chapter or no union (tiny rural district — UNVERIFIED)",
+          "stateAff": "OEA (if local exists)",
+          "natlAff": "NEA (if local exists)",
+          "dateUnionized": "Unknown",
+          "certCase": "",
+          "cbaStatus": "Unknown",
+          "firstContract": "",
+          "authorizer": "Blachly SD 90",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4110012",
+          "name": "ANNEX CHARTER SCHOOL",
+          "city": "Ontario",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Local OEA chapter or no union (small eastern Oregon district — UNVERIFIED)",
+          "stateAff": "OEA (if local exists)",
+          "natlAff": "NEA (if local exists)",
+          "dateUnionized": "Unknown",
+          "certCase": "",
+          "cbaStatus": "Unknown",
+          "firstContract": "",
+          "authorizer": "Annex SD 29",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4111001",
+          "name": "ARLINGTON CHARTER SCHOOL",
+          "city": "Arlington",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Local OEA chapter or no union (tiny rural district — UNVERIFIED)",
+          "stateAff": "OEA (if local exists)",
+          "natlAff": "NEA (if local exists)",
+          "dateUnionized": "Unknown",
+          "certCase": "",
+          "cbaStatus": "Unknown",
+          "firstContract": "",
+          "authorizer": "Arlington SD 3",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4111003",
+          "name": "BUTTE FALLS CHARTER SCHOOL",
+          "city": "Butte Falls",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Local OEA chapter or no union (tiny rural district — UNVERIFIED)",
+          "stateAff": "OEA (if local exists)",
+          "natlAff": "NEA (if local exists)",
+          "dateUnionized": "Unknown",
+          "certCase": "",
+          "cbaStatus": "Unknown",
+          "firstContract": "",
+          "authorizer": "Butte Falls SD 91",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4111005",
+          "name": "HARPER CHARTER SCHOOL",
+          "city": "Harper",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Local OEA chapter or no union (tiny rural district — UNVERIFIED)",
+          "stateAff": "OEA (if local exists)",
+          "natlAff": "NEA (if local exists)",
+          "dateUnionized": "Unknown",
+          "certCase": "",
+          "cbaStatus": "Unknown",
+          "firstContract": "",
+          "authorizer": "Harper SD 66",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4111006",
+          "name": "JOSEPH CHARTER SCHOOL",
+          "city": "Joseph",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Local OEA chapter or no union (tiny rural district — UNVERIFIED)",
+          "stateAff": "OEA (if local exists)",
+          "natlAff": "NEA (if local exists)",
+          "dateUnionized": "Unknown",
+          "certCase": "",
+          "cbaStatus": "Unknown",
+          "firstContract": "",
+          "authorizer": "Joseph SD 6",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4112001",
+          "name": "BURNT RIVER CHARTER SCHOOL",
+          "city": "Unity",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Local OEA chapter or no union (tiny rural district — UNVERIFIED)",
+          "stateAff": "OEA (if local exists)",
+          "natlAff": "NEA (if local exists)",
+          "dateUnionized": "Unknown",
+          "certCase": "",
+          "cbaStatus": "Unknown",
+          "firstContract": "",
+          "authorizer": "Burnt River SD 30J",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4112002",
+          "name": "HUNTINGTON CHARTER SCHOOL",
+          "city": "Huntington",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Local OEA chapter or no union (tiny rural district — UNVERIFIED)",
+          "stateAff": "OEA (if local exists)",
+          "natlAff": "NEA (if local exists)",
+          "dateUnionized": "Unknown",
+          "certCase": "",
+          "cbaStatus": "Unknown",
+          "firstContract": "",
+          "authorizer": "Huntington SD 16J",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4117001",
+          "name": "ALSEA CHARTER SCHOOL",
+          "city": "Alsea",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Local OEA chapter or no union (tiny rural district — UNVERIFIED)",
+          "stateAff": "OEA (if local exists)",
+          "natlAff": "NEA (if local exists)",
+          "dateUnionized": "Unknown",
+          "certCase": "",
+          "cbaStatus": "Unknown",
+          "firstContract": "",
+          "authorizer": "Alsea SD 7J",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-411158001727",
+          "name": "Academy For Character Education",
+          "city": "Cottage Grove",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "South Lane Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (South Lane SD 45J3 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — South Lane SD 45J3 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "South Lane SD 45J3",
+          "website": "http://www.ACEClassicalEd.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410933001725",
+          "name": "Alliance Charter Academy",
+          "city": "Oregon City",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Oregon City Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Oregon City SD 62 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Oregon City SD 62 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Oregon City SD 62",
+          "website": "http://alliancecharteracademy.com",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410192001791",
+          "name": "Arco Iris Spanish Immersion School",
+          "city": "Beaverton",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Beaverton Education Association (BEA) / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Beaverton SD 48J CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Beaverton SD 48J OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Beaverton SD 48J",
+          "website": "http://arcoirisschool.org",
+          "lat": 45.4871,
+          "lon": -122.8037
+        },
+        {
+          "napcsId": "NCES-410963001489",
+          "name": "Armadillo Community Charter School",
+          "city": "Phoenix",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Phoenix-Talent Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Phoenix-Talent SD 4 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Phoenix-Talent SD 4 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Phoenix-Talent SD 4",
+          "website": "http://www.armadillocharter.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410394004181",
+          "name": "Arthur Academy",
+          "city": "Portland",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "David Douglas Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (David Douglas SD 40 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — David Douglas SD 40 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "David Douglas SD 40",
+          "website": "http://www.arthuracademy.org",
+          "lat": 45.5051,
+          "lon": -122.675
+        },
+        {
+          "napcsId": "NCES-410171001783",
+          "name": "Baker Early College",
+          "city": "Baker City",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Baker Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Baker SD 5J CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Baker SD 5J OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Baker SD 5J",
+          "website": "http://www.bakercharters.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410171001767",
+          "name": "Baker Web Academy",
+          "city": "Baker City",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Baker Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Baker SD 5J CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Baker SD 5J OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Baker SD 5J",
+          "website": "http://www.bakercharters.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410198001845",
+          "name": "Bend International School",
+          "city": "Bend",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Bend Education Association (BEA) / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Bend-Lapine Administrative SD 1 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Bend-Lapine Administrative SD 1 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Bend-Lapine Administrative SD 1",
+          "website": "http://www.bendinternationalschool.org",
+          "lat": 44.0582,
+          "lon": -121.3153
+        },
+        {
+          "napcsId": "NCES-411145000829",
+          "name": "Bethany Charter School",
+          "city": "Silverton",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Silver Falls Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Silver Falls SD 4J CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Silver Falls SD 4J OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Silver Falls SD 4J",
+          "website": "http://bethanycharter.silverfalls.orvsd.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410759001846",
+          "name": "Bridge Charter Academy",
+          "city": "Lowell",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Lowell Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Lowell SD 71 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Lowell SD 71 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Lowell SD 71",
+          "website": "http://www.bridgecharter.com",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410828001869",
+          "name": "Cascade Virtual Academy",
+          "city": "Prineville",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Mitchell Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Mitchell SD 55 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Mitchell SD 55 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Mitchell SD 55",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-411158001677",
+          "name": "Childs Way Charter School",
+          "city": "Dorena",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "South Lane Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (South Lane SD 45J3 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — South Lane SD 45J3 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "South Lane SD 45J3",
+          "website": "http://childswaycharterschool.net/",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410002301535",
+          "name": "City View Charter School",
+          "city": "Hillsboro",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Hillsboro Education Association (HEA) / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Hillsboro SD 1J CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Hillsboro SD 1J OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Hillsboro SD 1J",
+          "website": "http://www.cityviewcharter.org",
+          "lat": 45.5229,
+          "lon": -122.9898
+        },
+        {
+          "napcsId": "NCES-410933001793",
+          "name": "Clackamas Academy of Industrial Sciences",
+          "city": "Oregon City",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Oregon City Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Oregon City SD 62 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Oregon City SD 62 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Oregon City SD 62",
+          "website": "http://www.caisoc.com",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410474000533",
+          "name": "Coburg Community Charter School",
+          "city": "Eugene",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Eugene Education Association (EEA) / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Eugene SD 4J CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Eugene SD 4J OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Eugene SD 4J",
+          "website": "http://coburgcharter.org",
+          "lat": 44.0521,
+          "lon": -123.0868
+        },
+        {
+          "napcsId": "NCES-410342001729",
+          "name": "Corbett School",
+          "city": "Corbett",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Corbett Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Corbett SD 39 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Corbett SD 39 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Corbett SD 39",
+          "website": "http://corbett.k12.or.us/",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410450001831",
+          "name": "Crater Lake Academy",
+          "city": "Eagle Point",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Eagle Point Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Eagle Point SD 9 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Eagle Point SD 9 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Eagle Point SD 9",
+          "website": "http://www.craterlakecharter.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410386001835",
+          "name": "Dallas Community Charter",
+          "city": "Dallas",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Dallas Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Dallas SD 2 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Dallas SD 2 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Dallas SD 2",
+          "website": "http://dallascommunityschool.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410198001860",
+          "name": "Desert Sky Montessori",
+          "city": "Bend",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Bend Education Association (BEA) / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Bend-Lapine Administrative SD 1 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Bend-Lapine Administrative SD 1 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Bend-Lapine Administrative SD 1",
+          "website": "http://www.dsmontessori.org",
+          "lat": 44.0582,
+          "lon": -121.3153
+        },
+        {
+          "napcsId": "NCES-410828001864",
+          "name": "Destinations Career Academy of Oregon",
+          "city": "Prineville",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Mitchell Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Mitchell SD 55 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Mitchell SD 55 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Mitchell SD 55",
+          "website": "",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410750001582",
+          "name": "Eddyville Charter School",
+          "city": "Eddyville",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Lincoln County Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Lincoln County SD CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Lincoln County SD OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Lincoln County SD",
+          "website": "http://eddyvillecharterschool.org/",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-411004001581",
+          "name": "Emerson School",
+          "city": "Portland",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Portland Association of Teachers (PAT) / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Portland SD 1J CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Portland SD 1J OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Portland SD 1J",
+          "website": "http://www.emersonschool.org",
+          "lat": 45.5051,
+          "lon": -122.675
+        },
+        {
+          "napcsId": "NCES-410516001724",
+          "name": "Forest Grove Community School",
+          "city": "Forest Grove",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Forest Grove Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Forest Grove SD 15 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Forest Grove SD 15 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Forest Grove SD 15",
+          "website": "http://www.fgcschool.org/",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410001501859",
+          "name": "Frontier Charter Academy",
+          "city": "Gervais",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Gervais Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Gervais SD 1 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Gervais SD 1 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Gervais SD 1",
+          "website": "http://www.frontiercharteracademy.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410564000327",
+          "name": "Glendale Community Charter School Pre-K-12",
+          "city": "Glendale",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Glendale Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Glendale SD 77 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Glendale SD 77 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Glendale SD 77",
+          "website": "http://www.glendale.k12.or.us",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410600001733",
+          "name": "Gresham Arthur Academy",
+          "city": "Gresham",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Gresham-Barlow Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Gresham-Barlow SD 10J CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Gresham-Barlow SD 10J OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Gresham-Barlow SD 10J",
+          "website": "http://www.arthuracademy.org",
+          "lat": 45.5001,
+          "lon": -122.4302
+        },
+        {
+          "napcsId": "NCES-411052011356",
+          "name": "Holla School",
+          "city": "Portland",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Reynolds Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Reynolds SD 7 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Reynolds SD 7 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Reynolds SD 7",
+          "website": "http://www.hollaschool.org",
+          "lat": 45.5051,
+          "lon": -122.675
+        },
+        {
+          "napcsId": "NCES-410723001873",
+          "name": "Harmony Academy",
+          "city": "Lake Oswego",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Lake Oswego Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Lake Oswego SD 7J CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Lake Oswego SD 7J OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Lake Oswego SD 7J",
+          "website": "http://www.oregonrecoveryschools.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410627001084",
+          "name": "Helix Charter School",
+          "city": "Helix",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Helix Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Helix SD 1 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Helix SD 1 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Helix SD 1",
+          "website": "http://www.helix.k12.or.us",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410192001823",
+          "name": "Hope Chinese Charter School",
+          "city": "Beaverton",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Beaverton Education Association (BEA) / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Beaverton SD 48J CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Beaverton SD 48J OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Beaverton SD 48J",
+          "website": "http://hopeccs.org",
+          "lat": 45.4871,
+          "lon": -122.8037
+        },
+        {
+          "napcsId": "NCES-410348001743",
+          "name": "Inavale Community Partners Dba Muddy Creek Charter School",
+          "city": "Corvallis",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Corvallis Education Association (CEA) / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Corvallis SD 509J CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Corvallis SD 509J OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Corvallis SD 509J",
+          "website": "http://www.muddycreekcharterschool.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410828001813",
+          "name": "Insight School of Oregon Painted Hills",
+          "city": "Mitchell",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Mitchell Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Mitchell SD 55 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Mitchell SD 55 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Mitchell SD 55",
+          "website": "http://or-ph.insightschools.net",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-411004001830",
+          "name": "Kairos Pdx",
+          "city": "Portland",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Portland Association of Teachers (PAT) / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Portland SD 1J CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Portland SD 1J OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Portland SD 1J",
+          "website": "http://kairospdx.org/",
+          "lat": 45.5051,
+          "lon": -122.675
+        },
+        {
+          "napcsId": "NCES-410690011366",
+          "name": "Kalmiopsis Community Arts High School",
+          "city": "Cave Junction",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Three Rivers Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Three Rivers/Josephine County SD CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Three Rivers/Josephine County SD OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Three Rivers/Josephine County SD",
+          "website": "http://www.kcahs.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410804001829",
+          "name": "Kids Unlimited Academy",
+          "city": "Medford",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Medford Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Medford SD 549C CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Medford SD 549C OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Medford SD 549C",
+          "website": "http://kuoregon.org",
+          "lat": 42.3265,
+          "lon": -122.8756
+        },
+        {
+          "napcsId": "NCES-410960000021",
+          "name": "Kings Valley Charter School",
+          "city": "Philomath",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Philomath Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Philomath SD 17J CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Philomath SD 17J OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Philomath SD 17J",
+          "website": "http://sites.google.com/a/kvschool.org/kvcs/",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-411004001814",
+          "name": "Le Monde French Immersion Public Charter School",
+          "city": "Portland",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Portland Association of Teachers (PAT) / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Portland SD 1J CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Portland SD 1J OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Portland SD 1J",
+          "website": "http://www.lemondeimmersion.org",
+          "lat": 45.5051,
+          "lon": -122.675
+        },
+        {
+          "napcsId": "NCES-410600001757",
+          "name": "Lewis And Clark Montessori Charter School",
+          "city": "Gresham",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Gresham-Barlow Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Gresham-Barlow SD 10J CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Gresham-Barlow SD 10J OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Gresham-Barlow SD 10J",
+          "website": "http://www.lewisandclarkcharter.org/",
+          "lat": 45.5001,
+          "lon": -122.4302
+        },
+        {
+          "napcsId": "NCES-410804001796",
+          "name": "Logos Charter School",
+          "city": "Medford",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Medford Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Medford SD 549C CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Medford SD 549C OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Medford SD 549C",
+          "website": "http://www.logoscharter.com",
+          "lat": 42.3265,
+          "lon": -122.8756
+        },
+        {
+          "napcsId": "NCES-411104001494",
+          "name": "Lourdes School",
+          "city": "Scio",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Scio Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Scio SD 95 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Scio SD 95 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Scio SD 95",
+          "website": "http://www.lourdes.k12.or.us/",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410386001045",
+          "name": "Luckiamute Valley Charter School",
+          "city": "Monmouth",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Dallas Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Dallas SD 2 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Dallas SD 2 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Dallas SD 2",
+          "website": "http://www.lvcs.k12.or.us",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410804001736",
+          "name": "Madrone Trail Public Charter School",
+          "city": "Central Point",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Medford Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Medford SD 549C CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Medford SD 549C OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Medford SD 549C",
+          "website": "http://www.madronetrail.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410798000629",
+          "name": "Mckenzie River Community School",
+          "city": "Finn Rock",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "McKenzie Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Mckenzie SD 68 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Mckenzie SD 68 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Mckenzie SD 68",
+          "website": "http://www.mckenziesd.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410600001787",
+          "name": "Metro East Web Academy",
+          "city": "Gresham",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Gresham-Barlow Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Gresham-Barlow SD 10J CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Gresham-Barlow SD 10J OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Gresham-Barlow SD 10J",
+          "website": "http://www.mewebacademy.org",
+          "lat": 45.5001,
+          "lon": -122.4302
+        },
+        {
+          "napcsId": "NCES-410831001789",
+          "name": "Molalla River Academy",
+          "city": "Molalla",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Molalla River Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Molalla River SD 35 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Molalla River SD 35 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Molalla River SD 35",
+          "website": "http://www.molallariveracademy.com",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410759001834",
+          "name": "Mountain View Academy",
+          "city": "Lowell",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Lowell Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Lowell SD 71 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Lowell SD 71 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Lowell SD 71",
+          "website": "http://www.mtviewacademy.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-411224004176",
+          "name": "Multi-Sensory Instruction Teaching Children Hands-On (Mitch)",
+          "city": "Tualatin",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Tigard-Tualatin Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Tigard-Tualatin SD 23J CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Tigard-Tualatin SD 23J OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Tigard-Tualatin SD 23J",
+          "website": "http://www.mitchcharterschool.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-411052001434",
+          "name": "Multnomah Learning Academy",
+          "city": "Fairview",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Reynolds Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Reynolds SD 7 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Reynolds SD 7 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Reynolds SD 7",
+          "website": "http://www.mla.k12.or.us",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410474001593",
+          "name": "Network Charter School",
+          "city": "Eugene",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Eugene Education Association (EEA) / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Eugene SD 4J CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Eugene SD 4J OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Eugene SD 4J",
+          "website": "http://www.networkcharterschool.net/",
+          "lat": 44.0521,
+          "lon": -123.0868
+        },
+        {
+          "napcsId": "NCES-410951001534",
+          "name": "Nixyaawii Community School",
+          "city": "Pendleton",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Pendleton Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Pendleton SD 16 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Pendleton SD 16 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Pendleton SD 16",
+          "website": "http://www.nixyaawii.k12.or.us/",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410810001680",
+          "name": "Oregon Charter Academy",
+          "city": "Mill City",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Santiam Canyon Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Santiam Canyon SD 129J CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Santiam Canyon SD 129J OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Santiam Canyon SD 129J",
+          "website": "http://www.oregoncharter.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-411011001895",
+          "name": "Oregon Connections Academy",
+          "city": "Prairie City",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Prairie City Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Prairie City SD 4 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Prairie City SD 4 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Prairie City SD 4",
+          "website": "http://www.connectionsacademy.com",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410360001870",
+          "name": "Oregon Family School",
+          "city": "Crane",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Harney County Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Harney County SD 4 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Harney County SD 4 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Harney County SD 4",
+          "website": "http://www.oregonfamilyschool.com",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410171001877",
+          "name": "Oregon International School",
+          "city": "Baker City",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Baker Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Baker SD 5J CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Baker SD 5J OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Baker SD 5J",
+          "website": "http://www.oregon-international-school.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-411089001799",
+          "name": "Oregon Trail Academy",
+          "city": "Boring",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Oregon Trail Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Oregon Trail SD 46 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Oregon Trail SD 46 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Oregon Trail SD 46",
+          "website": "http://ota.oregontrailschools.com/",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-411071001685",
+          "name": "Phoenix School",
+          "city": "Roseburg",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Douglas County Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Douglas County SD 4 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Douglas County SD 4 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Douglas County SD 4",
+          "website": "http://phoenix.roseburg.k12.or.us/",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-411004001667",
+          "name": "Portland Arthur Academy Charter School",
+          "city": "Portland",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Portland Association of Teachers (PAT) / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Portland SD 1J CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Portland SD 1J OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Portland SD 1J",
+          "website": "http://www.arthuracademy.org",
+          "lat": 45.5051,
+          "lon": -122.675
+        },
+        {
+          "napcsId": "NCES-411004001649",
+          "name": "Portland Village School",
+          "city": "Portland",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Portland Association of Teachers (PAT) / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Portland SD 1J CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Portland SD 1J OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Portland SD 1J",
+          "website": "http://www.portlandvillageschool.org",
+          "lat": 45.5051,
+          "lon": -122.675
+        },
+        {
+          "napcsId": "NCES-410372000242",
+          "name": "Powell Butte Community Charter School",
+          "city": "Powell Butte",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Crook County Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Crook County SD CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Crook County SD OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Crook County SD",
+          "website": "http://www.powellbuttecharterschool.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-411035001785",
+          "name": "Redmond Proficiency Academy",
+          "city": "Redmond",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Redmond Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Redmond SD 2J CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Redmond SD 2J OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Redmond SD 2J",
+          "website": "http://www.rpacademy.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-411052001540",
+          "name": "Reynolds Arthur Academy",
+          "city": "Troutdale",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Reynolds Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Reynolds SD 7 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Reynolds SD 7 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Reynolds SD 7",
+          "website": "http://www.arthuracademy.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-411068001811",
+          "name": "Rivers Edge Academy Charter School",
+          "city": "Rogue River",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Rogue River Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Rogue River SD 35 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Rogue River SD 35 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Rogue River SD 35",
+          "website": "http://www.reach-school.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-411052001798",
+          "name": "Rockwood Preparatory Academy",
+          "city": "Portland",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Reynolds Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Reynolds SD 7 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Reynolds SD 7 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Reynolds SD 7",
+          "website": "http://rockwoodprep.org/",
+          "lat": 45.5051,
+          "lon": -122.675
+        },
+        {
+          "napcsId": "NCES-410738004186",
+          "name": "Sand Ridge Charter School",
+          "city": "Lebanon",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Lebanon Community Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Lebanon Community SD 9 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Lebanon Community SD 9 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Lebanon Community SD 9",
+          "website": "http://www.piecharters.k12.or.us",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-411098001011",
+          "name": "Sauvie Island School",
+          "city": "Portland",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Scappoose Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Scappoose SD 1J CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Scappoose SD 1J OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Scappoose SD 1J",
+          "website": "http://www.sauvieislandschool.org",
+          "lat": 45.5051,
+          "lon": -122.675
+        },
+        {
+          "napcsId": "NCES-411122001803",
+          "name": "Sheridan Allprep Academy",
+          "city": "Sheridan",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Sheridan Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Sheridan SD 48J CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Sheridan SD 48J OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Sheridan SD 48J",
+          "website": "http://www.sheridanallprep.org/",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-411129001684",
+          "name": "Sherwood Charter School",
+          "city": "Sherwood",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Sherwood Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Sherwood SD 88J CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Sherwood SD 88J OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Sherwood SD 88J",
+          "website": "http://sherwoodcharterschool.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410750001590",
+          "name": "Siletz Valley Schools",
+          "city": "Siletz",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Lincoln County Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Lincoln County SD CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Lincoln County SD OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Lincoln County SD",
+          "website": "http://www.siletzvalleyschools.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410363001756",
+          "name": "Silvies River Charter School",
+          "city": "Crane",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Harney County Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Harney County Union High SD 1J CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Harney County Union High SD 1J OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Harney County Union High SD 1J",
+          "website": "http://www.silviesrcs.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-411098001542",
+          "name": "South Columbia Family School",
+          "city": "Warren",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Scappoose Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Scappoose SD 1J CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Scappoose SD 1J OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Scappoose SD 1J",
+          "website": "http://www.scfamilyschool.net/",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410933001642",
+          "name": "Springwater Environmental Sciences School",
+          "city": "Oregon City",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Oregon City Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Oregon City SD 62 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Oregon City SD 62 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Oregon City SD 62",
+          "website": "http://www.springwaterschool.com",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-411172001732",
+          "name": "St Helens Arthur Academy",
+          "city": "St Helens",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "St Helens Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (St Helens SD 502 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — St Helens SD 502 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "St Helens SD 502",
+          "website": "http://www.arthuracademy.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410470001766",
+          "name": "Summit Learning Charter",
+          "city": "Eagle Creek",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Estacada Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Estacada SD 108 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Estacada SD 108 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Estacada SD 108",
+          "website": "http://www.summitlearningcharter.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410690001797",
+          "name": "Sunny Wolf Charter School",
+          "city": "Wolf Creek",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Three Rivers Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Three Rivers/Josephine County SD CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Three Rivers/Josephine County SD OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Three Rivers/Josephine County SD",
+          "website": "http://www.sunnywolfcharterschool.com",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-411197001643",
+          "name": "Sweet Home Charter School",
+          "city": "Sweet Home",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Sweet Home Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Sweet Home SD 55 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Sweet Home SD 55 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Sweet Home SD 55",
+          "website": "http://www.sweethomecharterschool.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410774001872",
+          "name": "Teach-Nw",
+          "city": "Eugene",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Marcola Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Marcola SD 79J CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Marcola SD 79J OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Marcola SD 79J",
+          "website": "http://www.teach-nw.com",
+          "lat": 44.0521,
+          "lon": -123.0868
+        },
+        {
+          "napcsId": "NCES-411110001857",
+          "name": "The Cannon Beach Academy",
+          "city": "Cannon Beach",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Seaside Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Seaside SD 10 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Seaside SD 10 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Seaside SD 10",
+          "website": "http://thecannonbeachacademy.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-411145001769",
+          "name": "The Community Roots School",
+          "city": "Silverton",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Silver Falls Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Silver Falls SD 4J CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Silver Falls SD 4J OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Silver Falls SD 4J",
+          "website": "http://www.crmontessori.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410804001843",
+          "name": "The Valley School of Southern Oregon",
+          "city": "Medford",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Medford Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Medford SD 549C CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Medford SD 549C OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Medford SD 549C",
+          "website": "http://www.thevalleyschool.education",
+          "lat": 42.3265,
+          "lon": -122.8756
+        },
+        {
+          "napcsId": "NCES-411317001437",
+          "name": "Three Rivers Charter School",
+          "city": "West Linn",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "West Linn-Wilsonville Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (West Linn-Wilsonville SD 3J CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — West Linn-Wilsonville SD 3J OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "West Linn-Wilsonville SD 3J",
+          "website": "http://www.3rcs.org/pages/Three_Rivers_Charter_School",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410474001848",
+          "name": "Twin Rivers Charter School",
+          "city": "Eugene",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Eugene Education Association (EEA) / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Eugene SD 4J CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Eugene SD 4J OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Eugene SD 4J",
+          "website": "http://twinriverscharter.org/",
+          "lat": 44.0521,
+          "lon": -123.0868
+        },
+        {
+          "napcsId": "NCES-411254001122",
+          "name": "Ukiah Charter School",
+          "city": "Ukiah",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Ukiah Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Ukiah SD 80R CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Ukiah SD 80R OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Ukiah SD 80R",
+          "website": "http://www.ukiah.k12.or.us",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410474001492",
+          "name": "Village School",
+          "city": "Eugene",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Eugene Education Association (EEA) / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Eugene SD 4J CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Eugene SD 4J OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Eugene SD 4J",
+          "website": "http://www.eugenevillageschool.org",
+          "lat": 44.0521,
+          "lon": -123.0868
+        },
+        {
+          "napcsId": "NCES-411011011352",
+          "name": "Virtual Preparatory Academy of Oregon",
+          "city": "Prairie City",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Prairie City Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Prairie City SD 4 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Prairie City SD 4 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Prairie City SD 4",
+          "website": "http://oregon.virtualpreparatoryacademy.com/",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410495001595",
+          "name": "West Lane Charter School",
+          "city": "Veneta",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Fern Ridge Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Fern Ridge SD 28J CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Fern Ridge SD 28J OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Fern Ridge SD 28J",
+          "website": "http://www.westlanetech.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-411104001876",
+          "name": "Willamette Connections Academy",
+          "city": "Scio",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Scio Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Scio SD 95 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Scio SD 95 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Scio SD 95",
+          "website": "http://www.connectionsacademy.com/",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-411167001525",
+          "name": "Willamette Leadership Academy",
+          "city": "Springfield",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Springfield Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Springfield SD 19 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Springfield SD 19 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Springfield SD 19",
+          "website": "http://www.willametteleadershipacademy.net",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-411353001546",
+          "name": "Woodburn Arthur Academy",
+          "city": "Woodburn",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Woodburn Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Woodburn SD 103 CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Woodburn SD 103 OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Woodburn SD 103",
+          "website": "http://www.arthuracademy.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "NCES-410690001812",
+          "name": "Woodland Charter School",
+          "city": "Grants Pass",
+          "state": "OR",
+          "status": "DEPENDENT",
+          "union": "Three Rivers Education Association / OEA / NEA",
+          "stateAff": "Oregon Education Association (OEA)",
+          "natlAff": "NEA",
+          "dateUnionized": "School opening (Three Rivers/Josephine County SD CBA coverage from inception)",
+          "certCase": "N/A",
+          "cbaStatus": "Active — Three Rivers/Josephine County SD OEA district CBA (covers all district-employed certificated staff)",
+          "firstContract": "N/A — district CBA",
+          "authorizer": "Three Rivers/Josephine County SD",
+          "website": "http://www.woodlandcharterschool.org",
+          "lat": null,
+          "lon": null
+        }
+      ],
+      "networks": []
+    },
+    "PA": {
+      "name": "Pennsylvania",
+      "laborBoard": "NLRB",
+      "governingLaw": "National Labor Relations Act (NLRA). Pennsylvania Virtual Charter School, 364 NLRB No. 87 (2016) established that all PA charter schools incorporated as private nonprofits with self-perpetuating boards are private employers under NLRB jurisdiction — not public employers under PLRB/PERA. This landmark ruling covers all 23 NAPCS PA schools.",
+      "universe": 175,
+      "confirmed": 21,
+      "dependent": 0,
+      "intel": [
+        {
+          "prompt": "TWO ORGANIZING ECOSYSTEMS — PHILADELPHIA VS. PITTSBURGH",
+          "answer": "Pennsylvania presents the clearest geographic bifurcation in the full NAPCS dataset. Philadelphia-area charter organizing is driven by ACSE/AFT Local 6056 (Alliance of Charter School Educators), which conducts targeted campaign-driven organizing one school at a time — with recent certifications at Folk Arts (December 2022), Northwood Academy (January 2023), Urban Pathways (June 2022), and New Foundations (July 2025). Pittsburgh-area organizing is dominated by PSEA/NEA through relationship-driven, network-level bargaining — Propel Schools' 2021 network-wide election (236-82 across 13 campuses, NLRB Case 06-RC-273664) is the paradigmatic example. The two ecosystems have different timelines, tactics, and union cultures."
+        },
+        {
+          "prompt": "SEIU LOCAL 32BJ — FIRST NON-TEACHER CHARTER UNION IN NAPCS DATASET",
+          "answer": "SEIU Local 32BJ certified a custodial/support staff unit at Propel Schools in December 2025. This is the first Service Employees International Union certification in the full 584-school NAPCS dataset and the first custodial-only unit. It signals that non-instructional charter school workers are increasingly targeted by unions — a pattern to watch in future states."
+        },
+        {
+          "prompt": "CYBER CHARTERS AS MULTI-UNIT ORGANIZING TARGETS",
+          "answer": "Agora Cyber Charter School has three separate NLRB-certified bargaining units: teachers (04-RC-170767, 312-46, May 2016), counselors (04-RC-141319, 22-1, January 2015), and student services staff (04-RC-179402, 51-11, September 2016). Pennsylvania Cyber Charter School has two units: teachers (06-RC-120811, 71-34, April 2014) and academic advisors (06-RC-287129, 44-14, February 2022). Pennsylvania Virtual has one teachers unit (04-RC-143831, 57-15, September 2016). This multi-unit pattern in PA cyber charters is unique in the full NAPCS dataset."
+        },
+        {
+          "prompt": "2016 LANDMARK RULING — NLRB JURISDICTION ESTABLISHED FOR ALL PA CHARTERS",
+          "answer": "Pennsylvania Virtual Charter School, 364 NLRB No. 87 (2016) is the single most consequential labor law ruling in the PA charter sector. It established that all PA charter schools incorporated as private nonprofits — including cyber charters — are NLRB employers, not public employers under PLRB/PERA. This gave the Philadelphia and Pittsburgh union ecosystems clear federal jurisdiction and enabled the organizing wave that followed."
+        },
+        {
+          "prompt": "TWO REMAINING UNVERIFIED SCHOOLS — DISTINCT PROFILES",
+          "answer": "West Oak Lane Charter School (C4298015) was upgraded from UNVERIFIED to CONFIRMED in the May 22, 2026 Tab 4 session — now confirmed as the first union charter school in Pennsylvania (2004, ACSE Local 6056, AFT-PA). This leaves two remaining UNVERIFIED PA schools:\n\nMulti-Cultural Academy Charter School (C4298007): The employer filed an RM petition in April 2013 (04-RM-103582) but withdrew it within 8 days before any election — the only PA school where the employer pre-empted an organizing drive by filing its own election petition before the union could file. No union RC case has ever been filed. This pre-emption pattern suggests the school had credible intelligence of an organizing drive but the employer chose withdrawal over election. Organizing threat: LOW (8+ years since last activity). ..."
+        }
+      ],
+      "openItems": [
+        {
+          "priority": "HIGH",
+          "description": "First contract monitoring",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "UNVERIFIED — no NLRB record found. May 25 2026 second-pass: school website yscp.org reviewed - no union reference. Facebook and school profile reviewed - no union mention. Charter renewal document BoardDocs May 2025 references PSEA benefits comparison but does NOT indicate a CBA exists at YSCP. NAPC",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "UNVERIFIED — no union certification found",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "CONFIRMED — FOIA to NLRB Region 4 for RC case number and 2004 cert date",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "Update decertification petition to RESOLVED — union retained",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "OIG investigation flag — verify charter authorization status",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "City correction — Gettysburg not Lancaster",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "NLRB R6 FOIA - NAPCS ID corrected from C4200012 to C4204005 per NAPCS Feb 2026 dataset. School website mrcserie.org reviewed May 25 2026 - no union reference. No social media union evidence. Union name per NLRB R6 FOIA — union name, vote tally, and cert date for case 06-RC-210728 (Closed, cert issue",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "NLRB R4 FOIA + direct school contact — resolve conflict between 0 NLRB RC results and WHYY 2017 secondary source asserting union exists (non-ACSE)",
+          "resolution": ""
+        }
+      ],
+      "confirmedSchools": [
+        {
+          "napcsId": "C4200007",
+          "name": "NEW FOUNDATIONS CHARTER SCHOOL",
+          "city": "Philadelphia",
+          "state": "PA",
+          "status": "CONFIRMED",
+          "union": "AFT Pennsylvania",
+          "stateAff": "AFT Pennsylvania",
+          "natlAff": "AFT",
+          "dateUnionized": "July 14, 2025",
+          "certCase": "NLRB 04-RM-366549",
+          "cbaStatus": "In negotiations",
+          "firstContract": "In negotiations (recently certified July 2025)",
+          "authorizer": "School District of Philadelphia / PDE",
+          "website": "https://www.nfcsonline.org",
+          "lat": 39.9526,
+          "lon": -75.1652
+        },
+        {
+          "napcsId": "C4201001",
+          "name": "21ST CENTURY CYBER CHARTER SCHOOL",
+          "city": "Downingtown",
+          "state": "PA",
+          "status": "CONFIRMED",
+          "union": "21st Century Cyber Education Association / PSEA/NEA",
+          "stateAff": "PSEA (Pennsylvania State Education Association)",
+          "natlAff": "NEA",
+          "dateUnionized": "August 25, 2021",
+          "certCase": "NLRB 04-RC-272006",
+          "cbaStatus": "Active (assumed)",
+          "firstContract": "Unknown",
+          "authorizer": "PDE",
+          "website": "https://www.21cccs.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4201006",
+          "name": "PENNSYLVANIA VIRTUAL CHARTER SCHOOL",
+          "city": "King of Prussia",
+          "state": "PA",
+          "status": "CONFIRMED",
+          "union": "PA Virtual Charter Education Association / PSEA/NEA",
+          "stateAff": "PSEA",
+          "natlAff": "NEA",
+          "dateUnionized": "September 7, 2016",
+          "certCase": "NLRB 04-RC-143831 (landmark case — 364 NLRB No. 87)",
+          "cbaStatus": "Active (assumed)",
+          "firstContract": "Unknown",
+          "authorizer": "PDE",
+          "website": "https://www.pavcs.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4205003",
+          "name": "FOLK ARTS CULTURAL TREASURES CHARTER SCHOOL",
+          "city": "Philadelphia",
+          "state": "PA",
+          "status": "CONFIRMED",
+          "union": "Alliance of Charter School Employees Local 6056 / AFT-PA / AFT",
+          "stateAff": "AFT Pennsylvania",
+          "natlAff": "AFT",
+          "dateUnionized": "December 13, 2022",
+          "certCase": "NLRB 04-RC-307399",
+          "cbaStatus": "Active (assumed)",
+          "firstContract": "Unknown",
+          "authorizer": "School District of Philadelphia / PDE",
+          "website": "https://www.factcs.org",
+          "lat": 39.9526,
+          "lon": -75.1652
+        },
+        {
+          "napcsId": "C4205004",
+          "name": "NORTHWOOD ACADEMY CHARTER SCHOOL",
+          "city": "Philadelphia",
+          "state": "PA",
+          "status": "CONFIRMED",
+          "union": "Alliance of Charter School Employees Local 6056 / AFT-PA / AFT",
+          "stateAff": "AFT Pennsylvania",
+          "natlAff": "AFT",
+          "dateUnionized": "January 30, 2023",
+          "certCase": "NLRB 04-RC-307390",
+          "cbaStatus": "Active (assumed)",
+          "firstContract": "Unknown",
+          "authorizer": "School District of Philadelphia / PDE",
+          "website": "https://www.northwoodcs.org",
+          "lat": 39.9526,
+          "lon": -75.1652
+        },
+        {
+          "napcsId": "C4203010",
+          "name": "PROPEL CHARTER SCHOOL - HOMESTEAD",
+          "city": "Homestead",
+          "state": "PA",
+          "status": "CONFIRMED",
+          "union": "Propel Charter School Education Association (PCSEA) / PSEA/NEA",
+          "stateAff": "PSEA",
+          "natlAff": "NEA",
+          "dateUnionized": "April 29, 2021",
+          "certCase": "NLRB 06-RC-273664 (network-wide — all Propel Allegheny County campuses)",
+          "cbaStatus": "Active (assumed)",
+          "firstContract": "Unknown",
+          "authorizer": "PDE",
+          "website": "https://www.propelschools.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4205006",
+          "name": "PROPEL CHARTER SCHOOL - MCKEESPORT",
+          "city": "McKeesport",
+          "state": "PA",
+          "status": "CONFIRMED",
+          "union": "PCSEA / PSEA/NEA",
+          "stateAff": "PSEA",
+          "natlAff": "NEA",
+          "dateUnionized": "April 29, 2021",
+          "certCase": "NLRB 06-RC-273664 (network)",
+          "cbaStatus": "Active (assumed)",
+          "firstContract": "Unknown",
+          "authorizer": "PDE",
+          "website": "https://www.propelschools.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4211009",
+          "name": "PROPEL CHARTER SCHOOL - NORTHSIDE",
+          "city": "Pittsburgh",
+          "state": "PA",
+          "status": "CONFIRMED",
+          "union": "PCSEA / PSEA/NEA",
+          "stateAff": "PSEA",
+          "natlAff": "NEA",
+          "dateUnionized": "April 29, 2021",
+          "certCase": "NLRB 06-RC-273664 (network)",
+          "cbaStatus": "Active (assumed)",
+          "firstContract": "Unknown",
+          "authorizer": "PDE",
+          "website": "https://www.propelschools.org",
+          "lat": 40.4406,
+          "lon": -79.9959
+        },
+        {
+          "napcsId": "C4219016",
+          "name": "PROPEL CHARTER SCHOOL - HAZELWOOD",
+          "city": "Pittsburgh",
+          "state": "PA",
+          "status": "CONFIRMED",
+          "union": "PCSEA / PSEA/NEA",
+          "stateAff": "PSEA",
+          "natlAff": "NEA",
+          "dateUnionized": "April 29, 2021",
+          "certCase": "NLRB 06-RC-273664 (network)",
+          "cbaStatus": "Active (assumed)",
+          "firstContract": "Unknown",
+          "authorizer": "PDE",
+          "website": "https://www.propelschools.org",
+          "lat": 40.4406,
+          "lon": -79.9959
+        },
+        {
+          "napcsId": "C4219017",
+          "name": "PROPEL CHARTER SCHOOL - BRADDOCK HILLS",
+          "city": "Braddock Hills",
+          "state": "PA",
+          "status": "CONFIRMED",
+          "union": "PCSEA / PSEA/NEA",
+          "stateAff": "PSEA",
+          "natlAff": "NEA",
+          "dateUnionized": "April 29, 2021",
+          "certCase": "NLRB 06-RC-273664 (network)",
+          "cbaStatus": "Active (assumed)",
+          "firstContract": "Unknown",
+          "authorizer": "PDE",
+          "website": "https://www.propelschools.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4219018",
+          "name": "PROPEL CHARTER SCHOOL - EAST",
+          "city": "Turtle Creek",
+          "state": "PA",
+          "status": "CONFIRMED",
+          "union": "PCSEA / PSEA/NEA",
+          "stateAff": "PSEA",
+          "natlAff": "NEA",
+          "dateUnionized": "April 29, 2021",
+          "certCase": "NLRB 06-RC-273664 (network)",
+          "cbaStatus": "Active (assumed)",
+          "firstContract": "Unknown",
+          "authorizer": "PDE",
+          "website": "https://www.propelschools.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4219019",
+          "name": "PROPEL CHARTER SCHOOL - MONTOUR",
+          "city": "McKees Rocks",
+          "state": "PA",
+          "status": "CONFIRMED",
+          "union": "PCSEA / PSEA/NEA",
+          "stateAff": "PSEA",
+          "natlAff": "NEA",
+          "dateUnionized": "April 29, 2021",
+          "certCase": "NLRB 06-RC-273664 (network)",
+          "cbaStatus": "Active (assumed)",
+          "firstContract": "Unknown",
+          "authorizer": "PDE",
+          "website": "https://www.propelschools.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4219020",
+          "name": "PROPEL CHARTER SCHOOL - PITCAIRN",
+          "city": "Pitcairn",
+          "state": "PA",
+          "status": "CONFIRMED",
+          "union": "PCSEA / PSEA/NEA",
+          "stateAff": "PSEA",
+          "natlAff": "NEA",
+          "dateUnionized": "April 29, 2021",
+          "certCase": "NLRB 06-RC-273664 (network)",
+          "cbaStatus": "Active (assumed)",
+          "firstContract": "Unknown",
+          "authorizer": "PDE",
+          "website": "https://www.propelschools.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4208002",
+          "name": "ENVIRONMENTAL CHARTER SCHOOL AT FRICK PARK",
+          "city": "Pittsburgh",
+          "state": "PA",
+          "status": "CONFIRMED",
+          "union": "Alliance of Charter School Employees / AFT Local 6056",
+          "stateAff": "AFT Pennsylvania",
+          "natlAff": "AFT",
+          "dateUnionized": "December 2018",
+          "certCase": "NLRB 06-RC-231989",
+          "cbaStatus": "Active — union retained after decertification attempt (41-37, February 2020)",
+          "firstContract": "Unknown",
+          "authorizer": "PDE",
+          "website": "https://www.ecsfrickpark.org",
+          "lat": 40.4406,
+          "lon": -79.9959
+        },
+        {
+          "napcsId": "C4211007",
+          "name": "URBAN PATHWAYS K-5 COLLEGE CHARTER SCHOOL",
+          "city": "Pittsburgh",
+          "state": "PA",
+          "status": "CONFIRMED",
+          "union": "Alliance for Charter School Employees / ACSE Local 6056 / AFT",
+          "stateAff": "AFT Pennsylvania",
+          "natlAff": "AFT",
+          "dateUnionized": "June 3, 2022",
+          "certCase": "NLRB 06-RC-292638",
+          "cbaStatus": "Active (assumed)",
+          "firstContract": "Unknown",
+          "authorizer": "PDE",
+          "website": "https://www.urbanpathwayscharter.org",
+          "lat": 40.4406,
+          "lon": -79.9959
+        },
+        {
+          "napcsId": "C4211014",
+          "name": "YOUNG SCHOLARS OF WESTERN PENNSYLVANIA CHARTER SCHOOL",
+          "city": "Pittsburgh",
+          "state": "PA",
+          "status": "CONFIRMED",
+          "union": "Young Scholars of Western PA Education Association / PSEA/NEA",
+          "stateAff": "PSEA",
+          "natlAff": "NEA",
+          "dateUnionized": "January 29, 2018",
+          "certCase": "NLRB 06-RC-210615",
+          "cbaStatus": "Active (assumed)",
+          "firstContract": "Unknown",
+          "authorizer": "PDE",
+          "website": "https://www.youngscholarsofwesternpa.org",
+          "lat": 40.4406,
+          "lon": -79.9959
+        },
+        {
+          "napcsId": "C4210003",
+          "name": "VIDA CHARTER SCHOOL",
+          "city": "Gettysburg",
+          "state": "PA",
+          "status": "CONFIRMED",
+          "union": "Vida Education Association & Support Professionals / PSEA/NEA",
+          "stateAff": "PSEA",
+          "natlAff": "NEA",
+          "dateUnionized": "November 3, 2017",
+          "certCase": "NLRB 05-RC-197557",
+          "cbaStatus": "Active (assumed)",
+          "firstContract": "Unknown",
+          "authorizer": "PDE",
+          "website": "https://vidacs.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4219004",
+          "name": "AGORA CYBER CHARTER SCHOOL",
+          "city": "King of Prussia",
+          "state": "PA",
+          "status": "CONFIRMED",
+          "union": "Agora Cyber Education Association / PSEA (teachers); Agora Counselors Associatio",
+          "stateAff": "PSEA",
+          "natlAff": "NEA",
+          "dateUnionized": "January 22, 2015 (earliest unit — counselors)",
+          "certCase": "Unit 1 (teachers): NLRB 04-RC-170767; Unit 2 (counselors): NLRB 04-RC-141319; Unit 3 (student services): NLRB 04-RC-179402",
+          "cbaStatus": "Active (assumed — all 3 units)",
+          "firstContract": "Unknown",
+          "authorizer": "PDE",
+          "website": "https://agora.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4219014",
+          "name": "PENNSYLVANIA CYBER CHARTER SCHOOL",
+          "city": "Midland",
+          "state": "PA",
+          "status": "CONFIRMED",
+          "union": "PA Cyber School Education Association / PSEA/NEA (teachers); PA Cyber Academic A",
+          "stateAff": "PSEA",
+          "natlAff": "NEA",
+          "dateUnionized": "April 25, 2014 (earliest unit — teachers)",
+          "certCase": "Unit 1 (teachers): NLRB 06-RC-120811; Unit 2 (advisors/counselors): NLRB 06-RC-287129",
+          "cbaStatus": "Active (assumed — both units)",
+          "firstContract": "Unknown",
+          "authorizer": "PDE",
+          "website": "https://www.pacyber.org",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "napcsId": "C4200012",
+          "name": "MONTESSORI REGIONAL CHARTER SCHOOL",
+          "city": "Erie",
+          "state": "PA",
+          "status": "CONFIRMED",
+          "union": "Unknown — NLRB RC case closed, cert issued; union name requires NLRB R6 FOIA",
+          "stateAff": "Unknown — FOIA needed",
+          "natlAff": "Unknown — FOIA needed",
+          "dateUnionized": "November 30, 2017 (date filed) or later (election/cert date pending NLRB R6 FOIA)",
+          "certCase": "NLRB 06-RC-210728 — filed November 30, 2017; Status: Closed (Certification of Representative issued); 49 employees; Region 6 Pittsburgh",
+          "cbaStatus": "Unknown — case closed (cert issued); CBA status requires NLRB R6 FOIA or school contact",
+          "firstContract": "Unknown — no public CBA located; NLRB R6 contact recommended",
+          "authorizer": "Erie City School District / Millcreek Township School District / PDE",
+          "website": "https://www.mrcserie.org",
+          "lat": 42.1292,
+          "lon": -80.0851
+        },
+        {
+          "napcsId": "C4298015",
+          "name": "WEST OAK LANE CHARTER SCHOOL",
+          "city": "Philadelphia",
+          "state": "PA",
+          "status": "CONFIRMED",
+          "union": "Alliance for Charter School Employees (ACSE) Local 6056, AFT Pennsylvania / AFT ",
+          "stateAff": "AFT Pennsylvania",
+          "natlAff": "American Federation of Teachers (AFT) / AFL-CIO",
+          "dateUnionized": "2004 (first union charter school in Pennsylvania per AFT-PA press release August 2020)",
+          "certCase": "Unknown — 2004 cert predates NLRB ADS reliable digitization. FOIA to NLRB Region 4 required for case number and vote tally.",
+          "cbaStatus": "Active — 20+ years of continuous union representation. 2023 ULP (information request) confirms active bargaining relatio",
+          "firstContract": "Unknown — operational since 2004",
+          "authorizer": "School District of Philadelphia / PDE",
+          "website": "https://www.westoaklanecharter.org",
+          "lat": 39.9526,
+          "lon": -75.1652
+        }
+      ],
+      "dependentSchools": [],
+      "networks": [
+        {
+          "name": "Propel Schools (Allegheny County — 7 NAPCS campuses)",
+          "union": "PCSEA / PSEA/NEA",
+          "schoolIds": [
+            "C4203010",
+            "C4205006",
+            "C4211009",
+            "C4219016",
+            "C4219017",
+            "C4219018",
+            "C4219019",
+            "C4219020"
+          ],
+          "organizedCount": 8,
+          "cbaStatus": "",
+          "keyFindings": ""
+        }
+      ]
+    },
+    "RI": {
+      "name": "Rhode Island",
+      "laborBoard": "NLRB Region 1 (Boston)",
+      "governingLaw": "Federal NLRA. All 42 RI charter schools are independently incorporated nonprofits — including the 3 LEA/District-authorized schools (Apprenticeship Exploration/Cranston; Times2 x2/Providence). RI charters are treated as private employers under the NLRA. The Rhode Island State Labor Relations Board (RISLRB, R.I.G.L. Ch. 28-7) has no jurisdiction over charter school employees. RI has no Right-to-Work law.",
+      "universe": 42,
+      "confirmed": 7,
+      "dependent": 0,
+      "intel": [
+        {
+          "prompt": "Rhode Island is not in the original NAPCS 584-school dataset. Why was it added and what should sector leaders know at the outset?",
+          "answer": "Rhode Island was added to PLT research scope at the direct request of executive sponsor Peri Lynn Turnbull. With 42 open charter schools and zero NAPCS baseline overlap, all findings here are net-new intelligence. RI is a small but rapidly organizing state — four schools certified within a 10-month window (August 2024 through June 2025), all in Providence. The pace of organizing activity rivals states with far larger charter sectors, and press coverage suggests additional schools may be considering organizing in 2026."
+        },
+        {
+          "prompt": "What is the jurisdictional framework for Rhode Island charter schools, and does the state labor board play any role?",
+          "answer": "All 42 RI charter schools fall under NLRB Region 1 (Boston) jurisdiction. Rhode Island law designates charter schools as public schools for student accountability and curriculum purposes, but all RI charters are independently incorporated nonprofits — making them private employers under the NLRA. The Rhode Island State Labor Relations Board (RISLRB) has no jurisdiction over charter school employees. When RIDE Commissioner Angélica Infante-Green argued in November 2025 that a charter teacher strike was illegal under RI's public school strike ban, IBEW Local 2323 rejected that position in federal court filings, asserting federal law (NLRA) takes precedence. That jurisdictional question remains unresolved as of the research date."
+        },
+        {
+          "prompt": "How did the Paul Cuffee School become Rhode Island's first fully unionized charter, and what does the organizing timeline look like?",
+          "answer": "Paul Cuffee School organized sequentially across three campuses in 9 months: Upper School certified October 29, 2024 (22-8 vote, RIFT&HP/AFT, 01-RC-351451); Lower School certified December 10, 2024 (31-2 landslide, RIFT&HP/AFT, 01-RC-354563); Middle School certified June 11, 2025 (12-1 professional unit, RIFT&HP/AFT, 01-RC-365528). The Middle School certification completed full unionization, confirmed by Providence Business News June 4, 2025. The Providence City Council passed a resolution in March 2025 supporting the Lower and Upper School unionizations. All three campuses are in first-contract negotiations as of the research date."
+        },
+        {
+          "prompt": "What is the Highlander Elementary situation, and why is an electrical workers' union representing charter school teachers?",
+          "answer": "Highlander Elementary Charter School (Providence) is the first RI charter to unionize, certifying with IBEW Local 2323 on September 6, 2024 (28-4 vote, 01-RC-346458). IBEW Local 2323 is a Cranston-based telecommunications local — its entry reflects a broader national trend of non-traditional unions organizing charter school workers. IBEW's Regional Organizing Coordinator Steve Smith worked directly with staff; the union was chosen for organizing capacity and worker-voice reputation, not education-sector expertise. The IBEW newsletter featured Highlander as a model organizing case nationally. Highlander's secondary campus (Warren) is NOT unionized. In November 2025, IBEW called a 2-day strike over wages and healthcare costs, challenging RI's teacher strike prohibition in federal court. Firs..."
+        },
+        {
+          "prompt": "What does the 2019 Highlander failed election tell us about organizing persistence in Rhode Island?",
+          "answer": "Highlander's 2024 certification was its second attempt. The first election (October 2019, 01-RC-250256) failed 11-12 — a single-vote margin. The second attempt succeeded 28-4 — a landslide. This 5-year arc is the clearest national exemplar of organizing persistence in the PLT dataset. Key variables that shifted: national momentum post-2023, IBEW's experienced organizing coordinator, lead organizer Michaela Wnuk (a math specialist at the school since 2007), and worsening wages and healthcare costs. For sector leaders: a failed election does not extinguish organizing interest — it often radicalizes the workforce."
+        },
+        {
+          "prompt": "What is the political and legislative landscape for charter school labor relations in Rhode Island?",
+          "answer": "Rhode Island has no equivalent of Louisiana's Act 172 (which stripped NLRB jurisdiction) or Florida's SB 256 (which requires annual union recertification). RI's charter sector operates under standard federal NLRA rules with no state-level anti-union overlay. The unresolved question — whether RI's public school teacher strike ban applies to charter employees organized under the NLRA — is the most significant active legal issue. Resolution will affect first-contract negotiations at all organized schools. The Boston Globe (January 2025) noted that RIFT&HP/AFT and NEA-RI were in active conversations with other charter school teachers, and that first-contract outcomes at Highlander and Cuffee would serve as bellwethers for whether additional schools organize."
+        },
+        {
+          "prompt": "Which networks and school types are most and least organized, and what does that suggest for future organizing?",
+          "answer": "Organized: All 4 confirmed certifications are at independent charter schools. The Paul Cuffee network (3/3 campuses organized) and Highlander (1/2 campuses) account for the full picture. Unorganized: All 6 Blackstone Valley Prep schools (Charter School Growth Fund portfolio, mayoral academy), all 7 Achievement First schools (national CMO, mayoral academy), all 2 RISE Prep schools (mayoral academy) show no organizing activity. The Boston Globe (January 2025) noted that mayoral academies historically face stronger union pushback because they belong to larger national networks with more resources to resist. The independent-vs.-mayoral gap is the defining structural pattern in RI."
+        },
+        {
+          "prompt": "What is the unique union affiliation story in Rhode Island — specifically the IBEW at Highlander?",
+          "answer": "IBEW Local 2323 is a telecommunications local in Cranston, RI. Its success at Highlander Elementary reflects a national trend of non-traditional unions organizing charter school workers by emphasizing general labor rights over education-sector expertise. RIFT&HP/AFT organized all three Paul Cuffee campuses via the traditional education-union path. The two unions coexist without apparent jurisdictional conflict. IBEW's Highlander certification is featured in the union's national newsletter as a model for organizing non-traditional workplaces — the school was named for the Highlander Folk School in Tennessee, which has deep roots in the labor movement, which the IBEW explicitly invoked in its organizing narrative."
+        },
+        {
+          "prompt": "How do PLT's RI findings compare with the NAPCS baseline data and the February 2026 NAPCS dataset?",
+          "answer": "RI is not in the NAPCS 584-school baseline (PLT research scope). The NAPCS February 2026 dataset contains 36 RI school rows and identifies 3 schools as union: (1) Academy for Career Exploration/ACE — Providence Teachers Union/AFT, \"collective bargaining agreement required by state law\"; (2) NEL/CPS Construction Career Academy (Cranston) — Cranston Teachers Alliance/AFT, same description; (3) Times2 Academy (Providence) — Providence Teachers Union/AFT, same description. CRITICAL: ACE closed June 2020 — NAPCS data is stale for this school. NEL/CPS and Times2 are district-authorized schools whose staff are on district CBAs by law — this is the DEPENDENT pattern (not independently organized). PLT's 4 CONFIRMED schools (Highlander, Paul Cuffee x3) have ZERO overlap with the NAPCS 3 — PLT school..."
+        },
+        {
+          "prompt": "Are there CBA texts available for any of the organized RI charter schools?",
+          "answer": "Yes — one confirmed CBA URL found in the NAPCS data. NEL/CPS Construction Career Academy (Cranston Teachers Alliance, AFT Local 1704) has a publicly available CBA on the CTA website. The NAPCS source field points to the 2019-2022 CTA-CPS contract: https://www.cta1704.org/uploads/8/6/8/7/8687649/cta-cps_2019-2022_teacher_contract_-_final_-__9-12-19__1_.pdf. This confirms NEL/CPS staff bargain under the Cranston Teachers Alliance district CBA — the charter is LEA-authorized by Cranston and its teachers remain district employees covered by the district-wide CBA. No CBA text found for Times2 Academy (PTU source URL leads to proteun.org/ptu/index.php/schools/schools — schools directory, not a contract document). No CBA text found for any of the 4 PLT CONFIRMED schools (all in first-contract neg..."
+        },
+        {
+          "prompt": "What does the NAPCS \"collective bargaining agreement required by state law\" description mean for NEL/CPS and Times2 — and how does it change our count?",
+          "answer": "The NAPCS description \"Collective bargaining agreement required by state law\" is the DEPENDENT classification — staff at these schools are covered by district CBAs by operation of Rhode Island law, not by an independently organized NLRB election. NEL/CPS Construction Career Academy is a Cranston Public Schools LEA-authorized charter whose teachers are Cranston district employees under the Cranston Teachers Alliance (AFT Local 1704) CBA. Times2 Academy is Providence-LEA-authorized; its staff are Providence district employees under the Providence Teachers Union (AFT Local 958) CBA. This is structurally identical to the DEPENDENT pattern documented in Ohio, Oregon, and other states. Adding these two to the RI count: PLT 4 CONFIRMED (NLRB) + 2 DEPENDENT (district CBA) = 6 organized RI charter ..."
+        }
+      ],
+      "openItems": [
+        {
+          "priority": "HIGH",
+          "description": "Federal court dispute: does RI's public teacher strike prohibition apply to charter school employees organized under NLRB? IBEW filed federal court complaint November 2025. Unresolved as of May 2026. Resolution will set precedent for all RI organized charters and potentially national implications.",
+          "resolution": ""
+        },
+        {
+          "priority": "HIGH",
+          "description": "CBA text not yet available for any of the 4 organized schools. All in first-contract negotiations. CBA access needed for Section 6 enrichment.",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "Secondary campus is part of the same Highlander nonprofit as the organized Elementary campus but has NOT organized. Monitor for potential RC petition, especially if Elementary first contract produces favorable terms.",
+          "resolution": ""
+        },
+        {
+          "priority": "MEDIUM",
+          "description": "RI is not in the NAPCS 584-school baseline. Sponsor decision required: formally add RI to baseline, or treat findings as supplemental intelligence only. Placeholder IDs NAPCS-ADD-RI-001 through -004 assigned pending sponsor decision and NAPCS assignment.",
+          "resolution": ""
+        },
+        {
+          "priority": "LOW",
+          "description": "Coded UNVERIFIED — no confirming evidence found in NLRB R1 ADS or press. Voluntary recognition unions would not appear in NLRB ADS. School website checks (Step 3) and RIFTHP/NEA-RI affiliate directory checks (Step 5) not yet completed for UNVERIFIED schools.",
+          "resolution": ""
+        }
+      ],
+      "confirmedSchools": [
+        {
+          "napcsId": "NAPCS-ADD-RI-001",
+          "name": "Highlander Elementary Charter School",
+          "city": "Providence",
+          "state": "RI",
+          "status": "CONFIRMED",
+          "union": "International Brotherhood of Electrical Workers (IBEW) Local 2323",
+          "stateAff": "IBEW Local 2323 (Cranston, RI) — no separate state education affiliate",
+          "natlAff": "International Brotherhood of Electrical Workers (IBEW) / AFL-CIO",
+          "dateUnionized": "September 6, 2024",
+          "certCase": "",
+          "cbaStatus": "First contract under negotiation — not yet ratified",
+          "firstContract": "",
+          "authorizer": "Rhode Island Council on Elementary and Secondary Education (CESE/RIDE)",
+          "website": "https://www.highlandercharter.org",
+          "lat": 41.824,
+          "lon": -71.4128
+        },
+        {
+          "napcsId": "NAPCS-ADD-RI-002",
+          "name": "Paul Cuffee Lower School",
+          "city": "Providence",
+          "state": "RI",
+          "status": "CONFIRMED",
+          "union": "Rhode Island Federation of Teachers and Health Professionals (RIFT&HP)/AFT",
+          "stateAff": "Rhode Island Federation of Teachers and Health Professionals (RIFT&HP)",
+          "natlAff": "American Federation of Teachers (AFT) / AFL-CIO",
+          "dateUnionized": "December 10, 2024",
+          "certCase": "",
+          "cbaStatus": "First contract under negotiation — not yet ratified",
+          "firstContract": "",
+          "authorizer": "Rhode Island Council on Elementary and Secondary Education (CESE/RIDE)",
+          "website": "https://www.paulcuffee.org",
+          "lat": 41.824,
+          "lon": -71.4128
+        },
+        {
+          "napcsId": "NAPCS-ADD-RI-003",
+          "name": "Paul Cuffee Middle School",
+          "city": "Providence",
+          "state": "RI",
+          "status": "CONFIRMED",
+          "union": "Rhode Island Federation of Teachers and Health Professionals (RIFT&HP)/AFT",
+          "stateAff": "Rhode Island Federation of Teachers and Health Professionals (RIFT&HP)",
+          "natlAff": "American Federation of Teachers (AFT) / AFL-CIO",
+          "dateUnionized": "June 11, 2025",
+          "certCase": "",
+          "cbaStatus": "First contract — negotiations likely just beginning as of research date",
+          "firstContract": "",
+          "authorizer": "Rhode Island Council on Elementary and Secondary Education (CESE/RIDE)",
+          "website": "https://www.paulcuffee.org",
+          "lat": 41.824,
+          "lon": -71.4128
+        },
+        {
+          "napcsId": "NAPCS-ADD-RI-004",
+          "name": "Paul Cuffee Upper School",
+          "city": "Providence",
+          "state": "RI",
+          "status": "CONFIRMED",
+          "union": "Rhode Island Federation of Teachers and Health Professionals (RIFT&HP)/AFT",
+          "stateAff": "Rhode Island Federation of Teachers and Health Professionals (RIFT&HP)",
+          "natlAff": "American Federation of Teachers (AFT) / AFL-CIO",
+          "dateUnionized": "October 29, 2024",
+          "certCase": "",
+          "cbaStatus": "First contract under negotiation — not yet ratified",
+          "firstContract": "",
+          "authorizer": "Rhode Island Council on Elementary and Secondary Education (CESE/RIDE)",
+          "website": "https://www.paulcuffee.org",
+          "lat": 41.824,
+          "lon": -71.4128
+        },
+        {
+          "napcsId": "C4402002",
+          "name": "NEL/CPS Construction Career Academy",
+          "city": "Cranston",
+          "state": "RI",
+          "status": "CONFIRMED",
+          "union": "Cranston Teachers Alliance (AFT Local 1704)",
+          "stateAff": "Cranston Teachers Alliance",
+          "natlAff": "American Federation of Teachers (AFT) / AFL-CIO",
+          "dateUnionized": "Pre-2009 (district CBA governs)",
+          "certCase": "",
+          "cbaStatus": "Active — 2019-2022 CBA text confirmed; successor period unknown",
+          "firstContract": "",
+          "authorizer": "Cranston Public Schools (LEA)",
+          "website": "https://aes.cpsed.net",
+          "lat": 41.7798,
+          "lon": -71.4373
+        },
+        {
+          "napcsId": "C4498001",
+          "name": "Times2 Academy",
+          "city": "Providence",
+          "state": "RI",
+          "status": "CONFIRMED",
+          "union": "Providence Teachers Union (AFT Local 958)",
+          "stateAff": "Providence Teachers Union",
+          "natlAff": "American Federation of Teachers (AFT) / AFL-CIO",
+          "dateUnionized": "Pre-2009 (district CBA governs)",
+          "certCase": "",
+          "cbaStatus": "Active (assumed) — PTU district CBA governs; contract text not retrieved",
+          "firstContract": "",
+          "authorizer": "City of Providence School Department (LEA)",
+          "website": "https://www.times2academy.org",
+          "lat": 41.824,
+          "lon": -71.4128
+        },
+        {
+          "napcsId": "C4401001",
+          "name": "Highlander Charter School",
+          "city": "Providence",
+          "state": "RI",
+          "status": "CONFIRMED",
+          "union": "International Brotherhood of Electrical Workers (IBEW) Local 2323",
+          "stateAff": "IBEW Local 2323",
+          "natlAff": "International Brotherhood of Electrical Workers (IBEW) / AFL-CIO",
+          "dateUnionized": "",
+          "certCase": "NLRB Case 01-RC-346458 (NLRB Region 1, Boston). Certification: August 24, 2024.",
+          "cbaStatus": "Pre-first-contract. Strike November 2025 over wages and health insurance. Key issues: wages below traditional public sch",
+          "firstContract": "In negotiation — pre-first-contract as of November 2025. Strike occurred November 24-25, 2025 (Monday-Tuesday) over wages and health benefits. RIDE declared strike illegal under RI law; IBEW argued federal NLRA protection applies. As of May 2026: negotiations ongoing.",
+          "authorizer": "Rhode Island Department of Education (RIDE)",
+          "website": "",
+          "lat": 41.824,
+          "lon": -71.4128
+        }
+      ],
+      "dependentSchools": [],
+      "networks": [
+        {
+          "name": "Paul Cuffee School",
+          "union": "Rhode Island Federation of Teachers and Health Professionals (RIFT&HP/AFT)",
+          "schoolIds": [
+            "NAPCS-ADD-RI-004",
+            "NAPCS-ADD-RI-002",
+            "NAPCS-ADD-RI-003"
+          ],
+          "organizedCount": 3,
+          "cbaStatus": "All three campuses in first-contract negotiations as of May 2026. No CBA yet ratified.",
+          "keyFindings": [
+            "Rhode Island's first fully unionized charter school (as of June 11, 2025 — Paul Cuffee Middle cert).",
+            "Sequential organizing campaign: Upper (Oct 2024) → Lower (Dec 2024) → Middle (Jun 2025) — all three campuses organized within 9 months.",
+            "All three certifications via RIFT&HP/AFT (NLRB R1). Union local number(s) pending confirmation from RIFTHP.",
+            "Providence City Council passed resolution in March 2025 supporting Lower and Upper School unionizations.",
+            "RIFTHP Locals directory (last updated Oct 2025) does not yet list Paul Cuffee chapters — directory lag, not evidence of non-union status. NLRB case pages are authoritative.",
+            "All three campuses in first-contract bargaining as of research date. No CBA text publicly available."
+          ]
+        }
+      ]
+    }
+  },
+  "schools": {
+    "CONFIRMED": [
+      {
+        "n": "BASIS Tucson North",
+        "st": "AZ",
+        "id": "C0412011",
+        "u": "Arizona Alliance of Charter Teachers and Staff (AACTS), AFT ",
+        "c": "Tucson",
+        "dt": "April 25, 2023"
+      },
+      {
+        "n": "City High School",
+        "st": "AZ",
+        "id": "C0404006",
+        "u": "Arizona Alliance of Charter Teachers and Staff (AACTS), AFT ",
+        "c": "Tucson",
+        "dt": "May 19, 2026 (election date; NLRB certification pending — cert date = date NLRB issues formal Certification of Representative, typically 7-10 days post-election absent employer objections)"
+      },
+      {
+        "n": "Paulo Freire Freedom School - Downtown",
+        "st": "AZ",
+        "id": "C0414026",
+        "u": "Arizona Alliance of Charter Teachers and Staff (AACTS), AFT ",
+        "c": "Tucson",
+        "dt": "May 19, 2026 (election date; NLRB certification pending — cert date = date NLRB issues formal Certification of Representative, typically 7-10 days post-election absent employer objections)"
+      },
+      {
+        "n": "Paulo Freire Freedom School - University",
+        "st": "AZ",
+        "id": "C0405011",
+        "u": "Arizona Alliance of Charter Teachers and Staff (AACTS), AFT ",
+        "c": "Tucson",
+        "dt": "May 19, 2026 (election date; NLRB certification pending — cert date = date NLRB issues formal Certification of Representative, typically 7-10 days post-election absent employer objections)"
+      },
+      {
+        "n": "Granada Hills Charter",
+        "st": "CA",
+        "id": "C0603020",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Granada Hills",
+        "dt": "~2003 (conversion from LAUSD Granada Hills HS)"
+      },
+      {
+        "n": "Palisades Charter High",
+        "st": "CA",
+        "id": "C0695011",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Pacific Palisades",
+        "dt": "~1993 (conversion from LAUSD Palisades HS)"
+      },
+      {
+        "n": "Pacoima Charter Elementary",
+        "st": "CA",
+        "id": "C0603046",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Pacoima",
+        "dt": "Conversion — UTLA retained from LAUSD"
+      },
+      {
+        "n": "Montague Charter Academy",
+        "st": "CA",
+        "id": "C0696007",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Arleta",
+        "dt": "Conversion from LAUSD Montague Elementary"
+      },
+      {
+        "n": "The Accelerated School",
+        "st": "CA",
+        "id": "C0694001",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "South Los Angeles",
+        "dt": "March 25, 2009 (PERB LA-RR-1166-E, closed 03/25/2009)"
+      },
+      {
+        "n": "Calahan Community Charter",
+        "st": "CA",
+        "id": "C0613092",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Northridge",
+        "dt": "Unknown — PERB case number pending coordinator search"
+      },
+      {
+        "n": "Chandler Learning Academy",
+        "st": "CA",
+        "id": "C0613094",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Northridge",
+        "dt": "Unknown — PERB case number pending"
+      },
+      {
+        "n": "Darby Avenue Charter",
+        "st": "CA",
+        "id": "C0613095",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Northridge",
+        "dt": "Unknown — PERB case number pending"
+      },
+      {
+        "n": "Emelita Academy Charter",
+        "st": "CA",
+        "id": "C0613096",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Tarzana",
+        "dt": "Unknown — PERB case number pending"
+      },
+      {
+        "n": "Granada Community Charter",
+        "st": "CA",
+        "id": "C0613097",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Northridge",
+        "dt": "Unknown — PERB case number pending"
+      },
+      {
+        "n": "Alliance College-Ready Middle Academy 5",
+        "st": "CA",
+        "id": "C0609015",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Los Angeles",
+        "dt": "May 21, 2020"
+      },
+      {
+        "n": "Animo Leadership High",
+        "st": "CA",
+        "id": "C0600002",
+        "u": "Asociación De Maestros Unidos (AMU)",
+        "c": "Inglewood",
+        "dt": "2001 (first AMU CBA ratified; organizing began 1999)"
+      },
+      {
+        "n": "Animo Inglewood Charter High",
+        "st": "CA",
+        "id": "C0602050",
+        "u": "Asociación De Maestros Unidos (AMU)",
+        "c": "Inglewood",
+        "dt": "Network-wide AMU coverage from school opening — specific campus cert date UNVERIFIED"
+      },
+      {
+        "n": "Animo South Los Angeles Charter",
+        "st": "CA",
+        "id": "C0604002",
+        "u": "Asociación De Maestros Unidos (AMU)",
+        "c": "Los Angeles",
+        "dt": "Network-wide AMU coverage from school opening — specific campus cert date UNVERIFIED"
+      },
+      {
+        "n": "Animo Venice Charter High",
+        "st": "CA",
+        "id": "C0604003",
+        "u": "Asociación De Maestros Unidos (AMU)",
+        "c": "Venice",
+        "dt": "Network-wide AMU coverage from school opening — specific campus cert date UNVERIFIED"
+      },
+      {
+        "n": "Animo Jackie Robinson High",
+        "st": "CA",
+        "id": "C0606008",
+        "u": "Asociación De Maestros Unidos (AMU)",
+        "c": "Los Angeles",
+        "dt": "Network-wide AMU coverage from school opening — specific campus cert date UNVERIFIED"
+      },
+      {
+        "n": "Animo Pat Brown",
+        "st": "CA",
+        "id": "C0606010",
+        "u": "Asociación De Maestros Unidos (AMU)",
+        "c": "Los Angeles",
+        "dt": "Network-wide AMU coverage from school opening — specific campus cert date UNVERIFIED"
+      },
+      {
+        "n": "Animo Ralph Bunche High",
+        "st": "CA",
+        "id": "C0606011",
+        "u": "Asociación De Maestros Unidos (AMU)",
+        "c": "Los Angeles",
+        "dt": "Network-wide AMU coverage from school opening — specific campus cert date UNVERIFIED"
+      },
+      {
+        "n": "Animo Watts College Preparatory Academy",
+        "st": "CA",
+        "id": "C0607002",
+        "u": "Asociación De Maestros Unidos (AMU)",
+        "c": "Los Angeles",
+        "dt": "Network-wide AMU coverage from school opening — specific campus cert date UNVERIFIED"
+      },
+      {
+        "n": "Animo Jefferson Charter Middle",
+        "st": "CA",
+        "id": "C0610012",
+        "u": "Asociación De Maestros Unidos (AMU)",
+        "c": "Los Angeles",
+        "dt": "Network-wide AMU coverage from school opening — specific campus cert date UNVERIFIED"
+      },
+      {
+        "n": "Animo James B. Taylor Charter Middle",
+        "st": "CA",
+        "id": "C0613002",
+        "u": "Asociación De Maestros Unidos (AMU)",
+        "c": "Los Angeles",
+        "dt": "Network-wide AMU coverage from school opening — specific campus cert date UNVERIFIED"
+      },
+      {
+        "n": "Animo Ellen Ochoa Charter Middle",
+        "st": "CA",
+        "id": "C0614016",
+        "u": "Asociación De Maestros Unidos (AMU)",
+        "c": "Los Angeles",
+        "dt": "Network-wide AMU coverage from school opening — specific campus cert date UNVERIFIED"
+      },
+      {
+        "n": "Animo Mae Jemison Charter Middle",
+        "st": "CA",
+        "id": "C0614017",
+        "u": "Asociación De Maestros Unidos (AMU)",
+        "c": "Los Angeles",
+        "dt": "Network-wide AMU coverage from school opening — specific campus cert date UNVERIFIED"
+      },
+      {
+        "n": "Animo Florence Firestone Charter Middle School",
+        "st": "CA",
+        "id": "C0616031",
+        "u": "Asociación De Maestros Unidos (AMU)",
+        "c": "Los Angeles",
+        "dt": "Network-wide AMU coverage from school opening — specific campus cert date UNVERIFIED"
+      },
+      {
+        "n": "Animo City of Champions Charter High",
+        "st": "CA",
+        "id": "C0617006",
+        "u": "Asociación De Maestros Unidos (AMU)",
+        "c": "Inglewood",
+        "dt": "Network-wide AMU coverage from school opening — specific campus cert date UNVERIFIED"
+      },
+      {
+        "n": "Ánimo Compton Charter",
+        "st": "CA",
+        "id": "C0618030",
+        "u": "Asociación De Maestros Unidos (AMU)",
+        "c": "Compton",
+        "dt": "Network-wide AMU coverage from school opening — specific campus cert date UNVERIFIED"
+      },
+      {
+        "n": "Animo Legacy Charter Middle",
+        "st": "CA",
+        "id": "C0618167",
+        "u": "Asociación De Maestros Unidos (AMU)",
+        "c": "Los Angeles",
+        "dt": "Network-wide AMU coverage from school opening — specific campus cert date UNVERIFIED"
+      },
+      {
+        "n": "Animo Oscar De La Hoya Charter High",
+        "st": "CA",
+        "id": "C0603045",
+        "u": "Animo Management United (AMU) / UTLA chapter (Green Dot netw",
+        "c": "LOS ANGELES",
+        "dt": "Green Dot network-wide certification — PERB certified (network AMU/UTLA)"
+      },
+      {
+        "n": "Alain Leroy Locke College Preparatory Academy",
+        "st": "CA",
+        "id": "C0608025",
+        "u": "Animo Management United (AMU) / UTLA chapter (Green Dot netw",
+        "c": "LOS ANGELES",
+        "dt": "Green Dot network-wide certification — PERB certified (network AMU/UTLA)"
+      },
+      {
+        "n": "High Tech Elementary Explorer",
+        "st": "CA",
+        "id": "C0600011",
+        "u": "High Tech Education Collective (HTEC)",
+        "c": "San Diego",
+        "dt": "2021"
+      },
+      {
+        "n": "High Tech High",
+        "st": "CA",
+        "id": "C0600013",
+        "u": "High Tech Education Collective (HTEC)",
+        "c": "San Diego",
+        "dt": "2021"
+      },
+      {
+        "n": "High Tech Middle",
+        "st": "CA",
+        "id": "C0603025",
+        "u": "High Tech Education Collective (HTEC)",
+        "c": "San Diego",
+        "dt": "2021"
+      },
+      {
+        "n": "High Tech High International",
+        "st": "CA",
+        "id": "C0604033",
+        "u": "High Tech Education Collective (HTEC)",
+        "c": "San Diego",
+        "dt": "2021"
+      },
+      {
+        "n": "High Tech High Media Arts",
+        "st": "CA",
+        "id": "C0605028",
+        "u": "High Tech Education Collective (HTEC)",
+        "c": "San Diego",
+        "dt": "2021"
+      },
+      {
+        "n": "High Tech Middle Media Arts",
+        "st": "CA",
+        "id": "C0605029",
+        "u": "High Tech Education Collective (HTEC)",
+        "c": "San Diego",
+        "dt": "2021"
+      },
+      {
+        "n": "High Tech Elementary",
+        "st": "CA",
+        "id": "C0615037",
+        "u": "High Tech Education Collective (HTEC)",
+        "c": "San Diego",
+        "dt": "2021"
+      },
+      {
+        "n": "High Tech High Chula Vista",
+        "st": "CA",
+        "id": "C0607037",
+        "u": "High Tech Education Collective (HTEC)",
+        "c": "Chula Vista",
+        "dt": "2021"
+      },
+      {
+        "n": "High Tech Elementary Chula Vista",
+        "st": "CA",
+        "id": "C0611050",
+        "u": "High Tech Education Collective (HTEC)",
+        "c": "Chula Vista",
+        "dt": "2021"
+      },
+      {
+        "n": "High Tech Middle Chula Vista",
+        "st": "CA",
+        "id": "C0611051",
+        "u": "High Tech Education Collective (HTEC)",
+        "c": "Chula Vista",
+        "dt": "2021"
+      },
+      {
+        "n": "High Tech High North County",
+        "st": "CA",
+        "id": "C0607038",
+        "u": "High Tech Education Collective (HTEC)",
+        "c": "San Marcos",
+        "dt": "2021"
+      },
+      {
+        "n": "High Tech Middle North County",
+        "st": "CA",
+        "id": "C0609033",
+        "u": "High Tech Education Collective (HTEC)",
+        "c": "San Marcos",
+        "dt": "2021"
+      },
+      {
+        "n": "High Tech Elementary North County",
+        "st": "CA",
+        "id": "C0613029",
+        "u": "High Tech Education Collective (HTEC)",
+        "c": "San Marcos",
+        "dt": "2021"
+      },
+      {
+        "n": "High Tech High Mesa",
+        "st": "CA",
+        "id": "C0618077",
+        "u": "High Tech Education Collective (HTEC)",
+        "c": "San Diego",
+        "dt": "2021"
+      },
+      {
+        "n": "High Tech Elementary Mesa",
+        "st": "CA",
+        "id": "C0619017",
+        "u": "High Tech Education Collective (HTEC)",
+        "c": "San Diego",
+        "dt": "2021"
+      },
+      {
+        "n": "High Tech Middle Mesa",
+        "st": "CA",
+        "id": "C0619018",
+        "u": "High Tech Education Collective (HTEC)",
+        "c": "San Diego",
+        "dt": "2021"
+      },
+      {
+        "n": "California Virtual Academy @ San Diego",
+        "st": "CA",
+        "id": "C0602009",
+        "u": "California Virtual Educators United",
+        "c": "Simi Valley",
+        "dt": "PERB(CA) certified (exact date unconfirmed — network-wide unit; PERB records request recommended)"
+      },
+      {
+        "n": "California Virtual Academy @ Sonoma",
+        "st": "CA",
+        "id": "C0604008",
+        "u": "California Virtual Educators United",
+        "c": "Simi Valley",
+        "dt": "PERB(CA) certified (exact date unconfirmed — network-wide unit; PERB records request recommended)"
+      },
+      {
+        "n": "California Virtual Academy at Kings",
+        "st": "CA",
+        "id": "C0606019",
+        "u": "California Virtual Educators United",
+        "c": "Simi Valley",
+        "dt": "PERB(CA) certified (exact date unconfirmed — network-wide unit; PERB records request recommended)"
+      },
+      {
+        "n": "California Virtual Academy @ Los Angeles",
+        "st": "CA",
+        "id": "C0606020",
+        "u": "California Virtual Educators United",
+        "c": "Simi Valley",
+        "dt": "PERB(CA) certified (exact date unconfirmed — network-wide unit; PERB records request recommended)"
+      },
+      {
+        "n": "California Virtual Academy San Mateo",
+        "st": "CA",
+        "id": "C0606021",
+        "u": "California Virtual Educators United",
+        "c": "Simi Valley",
+        "dt": "PERB(CA) certified (exact date unconfirmed — network-wide unit; PERB records request recommended)"
+      },
+      {
+        "n": "California Virtual Academy at Fresno",
+        "st": "CA",
+        "id": "C0612014",
+        "u": "California Virtual Educators United",
+        "c": "Simi Valley",
+        "dt": "PERB(CA) certified (exact date unconfirmed — network-wide unit; PERB records request recommended)"
+      },
+      {
+        "n": "California Virtual Academy at Maricopa",
+        "st": "CA",
+        "id": "C0612016",
+        "u": "California Virtual Educators United",
+        "c": "Simi Valley",
+        "dt": "PERB(CA) certified (exact date unconfirmed — network-wide unit; PERB records request recommended)"
+      },
+      {
+        "n": "California Virtual Academy @ San Joaquin",
+        "st": "CA",
+        "id": "C0612108",
+        "u": "California Virtual Educators United",
+        "c": "Simi Valley",
+        "dt": "PERB(CA) certified (exact date unconfirmed — network-wide unit; PERB records request recommended)"
+      },
+      {
+        "n": "California Virtual Academy at Sutter",
+        "st": "CA",
+        "id": "C0613111",
+        "u": "California Virtual Educators United",
+        "c": "Simi Valley",
+        "dt": "PERB(CA) certified (exact date unconfirmed — network-wide unit; PERB records request recommended)"
+      },
+      {
+        "n": "California Virtual Academy @ Sutter",
+        "st": "CA",
+        "id": "C0606022",
+        "u": "California Virtual Educators United (CVEU/CTA)",
+        "c": "Marysville",
+        "dt": "~2014 (statewide CAVA certification)"
+      },
+      {
+        "n": "Summit Public School: Tahoma",
+        "st": "CA",
+        "id": "C0611081",
+        "u": "Unite Summit",
+        "c": "San Jose",
+        "dt": "02/27/2023"
+      },
+      {
+        "n": "Summit Public School: Shasta",
+        "st": "CA",
+        "id": "C0613027",
+        "u": "Unite Summit",
+        "c": "Daly City",
+        "dt": "02/27/2023"
+      },
+      {
+        "n": "Summit Public School K2",
+        "st": "CA",
+        "id": "C0614146",
+        "u": "Unite Summit",
+        "c": "El Cerrito",
+        "dt": "02/27/2023"
+      },
+      {
+        "n": "Summit Public School: Tamalpais",
+        "st": "CA",
+        "id": "C0616048",
+        "u": "Unite Summit",
+        "c": "Richmond",
+        "dt": "02/27/2023"
+      },
+      {
+        "n": "Alliance Gertz-Ressler Richard Merkin 6-12 Complex",
+        "st": "CA",
+        "id": "C0604027",
+        "u": "Alliance Educators United (UTLA chapter)",
+        "c": "Los Angeles",
+        "dt": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E)"
+      },
+      {
+        "n": "Alliance Judy Ivie Burton Technology Academy High",
+        "st": "CA",
+        "id": "C0605026",
+        "u": "Alliance Educators United (UTLA chapter)",
+        "c": "Los Angeles",
+        "dt": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E)"
+      },
+      {
+        "n": "Alliance Leichtman-Levine Family Foundation Environmental Science High",
+        "st": "CA",
+        "id": "C0609011",
+        "u": "Alliance Educators United (UTLA chapter)",
+        "c": "Los Angeles",
+        "dt": "~2020-2021 (PERB certification anticipated following PERB Order No. Ad-491 May 2020 — exact formal cert date not confirmed; PERB records request needed)"
+      },
+      {
+        "n": "Alliance Morgan McKinzie High",
+        "st": "CA",
+        "id": "C0609013",
+        "u": "Alliance Educators United (UTLA chapter)",
+        "c": "Los Angeles",
+        "dt": "~2020-2021 (PERB certification anticipated following PERB Order No. Ad-491 May 2020 — exact formal cert date not confirmed; PERB records request needed)"
+      },
+      {
+        "n": "Alliance Collins Family College-Ready High",
+        "st": "CA",
+        "id": "C0605030",
+        "u": "Alliance Educators United (UTLA chapter)",
+        "c": "Huntington Park",
+        "dt": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)"
+      },
+      {
+        "n": "Alliance Dr. Olga Mohan High",
+        "st": "CA",
+        "id": "C0606030",
+        "u": "Alliance Educators United (UTLA chapter)",
+        "c": "Los Angeles",
+        "dt": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)"
+      },
+      {
+        "n": "Alliance Ouchi-O'Donovan 6-12 Complex",
+        "st": "CA",
+        "id": "C0606031",
+        "u": "Alliance Educators United (UTLA chapter)",
+        "c": "Los Angeles",
+        "dt": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)"
+      },
+      {
+        "n": "Alliance Marc & Eva Stern Math and Science",
+        "st": "CA",
+        "id": "C0606056",
+        "u": "Alliance Educators United (UTLA chapter)",
+        "c": "Los Angeles",
+        "dt": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)"
+      },
+      {
+        "n": "Alliance Patti and Peter Neuwirth Leadership Academy",
+        "st": "CA",
+        "id": "C0607020",
+        "u": "Alliance Educators United (UTLA chapter)",
+        "c": "Los Angeles",
+        "dt": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)"
+      },
+      {
+        "n": "Alliance Jack H. Skirball Middle",
+        "st": "CA",
+        "id": "C0607098",
+        "u": "Alliance Educators United (UTLA chapter)",
+        "c": "Los Angeles",
+        "dt": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)"
+      },
+      {
+        "n": "Alliance Piera Barbaglia Shaheen Health Services Academy",
+        "st": "CA",
+        "id": "C0609012",
+        "u": "Alliance Educators United (UTLA chapter)",
+        "c": "Los Angeles",
+        "dt": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)"
+      },
+      {
+        "n": "Alliance College-Ready Middle Academy 4",
+        "st": "CA",
+        "id": "C0609014",
+        "u": "Alliance Educators United (UTLA chapter)",
+        "c": "Los Angeles",
+        "dt": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)"
+      },
+      {
+        "n": "Alliance Cindy and Bill Simon Technology Academy High",
+        "st": "CA",
+        "id": "C0610038",
+        "u": "Alliance Educators United (UTLA chapter)",
+        "c": "Los Angeles",
+        "dt": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)"
+      },
+      {
+        "n": "Alliance Tennenbaum Family Technology High",
+        "st": "CA",
+        "id": "C0611025",
+        "u": "Alliance Educators United (UTLA chapter)",
+        "c": "Los Angeles",
+        "dt": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)"
+      },
+      {
+        "n": "Alliance Ted K. Tajima High",
+        "st": "CA",
+        "id": "C0611026",
+        "u": "Alliance Educators United (UTLA chapter)",
+        "c": "Los Angeles",
+        "dt": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)"
+      },
+      {
+        "n": "Alliance Renee and Meyer Luskin Academy High",
+        "st": "CA",
+        "id": "C0612002",
+        "u": "Alliance Educators United (UTLA chapter)",
+        "c": "Los Angeles",
+        "dt": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)"
+      },
+      {
+        "n": "Alliance Susan and Eric Smidt Technology High",
+        "st": "CA",
+        "id": "C0612022",
+        "u": "Alliance Educators United (UTLA chapter)",
+        "c": "Los Angeles",
+        "dt": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)"
+      },
+      {
+        "n": "Alliance College-Ready Middle Academy 12",
+        "st": "CA",
+        "id": "C0613050",
+        "u": "Alliance Educators United (UTLA chapter)",
+        "c": "Los Angeles",
+        "dt": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)"
+      },
+      {
+        "n": "Alliance College-Ready Middle Academy 8",
+        "st": "CA",
+        "id": "C0614010",
+        "u": "Alliance Educators United (UTLA chapter)",
+        "c": "Los Angeles",
+        "dt": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)"
+      },
+      {
+        "n": "Alliance Kory Hunter Middle",
+        "st": "CA",
+        "id": "C0614011",
+        "u": "Alliance Educators United (UTLA chapter)",
+        "c": "Los Angeles",
+        "dt": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)"
+      },
+      {
+        "n": "Alliance Margaret M. Bloomfield Technology Academy High",
+        "st": "CA",
+        "id": "C0614012",
+        "u": "Alliance Educators United (UTLA chapter)",
+        "c": "Huntington Park",
+        "dt": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)"
+      },
+      {
+        "n": "Alliance Marine - Innovation and Technology 6-12 Complex",
+        "st": "CA",
+        "id": "C0615005",
+        "u": "Alliance Educators United (UTLA chapter)",
+        "c": "Sun Valley",
+        "dt": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)"
+      },
+      {
+        "n": "Alliance Virgil Roberts Leadership Academy",
+        "st": "CA",
+        "id": "C0615006",
+        "u": "Alliance Educators United (UTLA chapter)",
+        "c": "Los Angeles",
+        "dt": "May 2020 (PERB certification — PERB Order No. Ad-491, Decision 2809E — network-wide unit)"
+      },
+      {
+        "n": "Citizens of the World Charter School: Silver Lake",
+        "st": "CA",
+        "id": "C0612029",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Los Angeles",
+        "dt": "June 7, 2024 (PERB recognition order — LA-RR-1352-E)"
+      },
+      {
+        "n": "Citizens of the World Charter School: Mar Vista",
+        "st": "CA",
+        "id": "C0613011",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Los Angeles",
+        "dt": "June 7, 2024 (PERB recognition order — LA-RR-1352-E)"
+      },
+      {
+        "n": "Citizens of the World Charter School: Hollywood",
+        "st": "CA",
+        "id": "C0617015",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Los Angeles",
+        "dt": "June 7, 2024 (PERB recognition order — LA-RR-1352-E)"
+      },
+      {
+        "n": "Citizens of the World Charter School: West Valley",
+        "st": "CA",
+        "id": "C0619068",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Winnetka",
+        "dt": "June 7, 2024 (PERB recognition order — LA-RR-1352-E)"
+      },
+      {
+        "n": "Citizens of the World: East Valley",
+        "st": "CA",
+        "id": "C0621006",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Valley Village",
+        "dt": "June 7, 2024 (PERB recognition order — LA-RR-1352-E)"
+      },
+      {
+        "n": "Environmental Charter High - Lawndale",
+        "st": "CA",
+        "id": "C0601017",
+        "u": "Environmental Educators United",
+        "c": "Lawndale",
+        "dt": "May 11, 2023 (PERB recognition order — LA-RR-1344-E)"
+      },
+      {
+        "n": "Environmental Charter Middle - Gardena",
+        "st": "CA",
+        "id": "C0610046",
+        "u": "Environmental Educators United",
+        "c": "Gardena",
+        "dt": "May 11, 2023 (PERB recognition order — LA-RR-1344-E; network-wide)"
+      },
+      {
+        "n": "Environmental Charter Middle - Inglewood",
+        "st": "CA",
+        "id": "C0613022",
+        "u": "Environmental Educators United",
+        "c": "Inglewood",
+        "dt": "May 11, 2023 (PERB recognition order — LA-RR-1344-E; network-wide)"
+      },
+      {
+        "n": "Environmental Charter High - Gardena",
+        "st": "CA",
+        "id": "C0621009",
+        "u": "Environmental Educators United",
+        "c": "Gardena",
+        "dt": "May 11, 2023 (PERB recognition order — LA-RR-1344-E; network-wide)"
+      },
+      {
+        "n": "Joe Serna Jr. Charter",
+        "st": "CA",
+        "id": "C0600015",
+        "u": "California School Employees Association (CSEA) — Chapter 665",
+        "c": "Acampo",
+        "dt": "Not confirmed — PERB records request required (PERBforms@perb.ca.gov)"
+      },
+      {
+        "n": "Leadership Public Schools: Richmond",
+        "st": "CA",
+        "id": "C0603033",
+        "u": "East Bay Educators United",
+        "c": "Richmond",
+        "dt": "Not confirmed — PERB records request required (PERBforms@perb.ca.gov)"
+      },
+      {
+        "n": "Ivy Academia",
+        "st": "CA",
+        "id": "C0604034",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Woodland Hills",
+        "dt": "Not confirmed — PERB records request required (PERBforms@perb.ca.gov)"
+      },
+      {
+        "n": "Ocean Charter",
+        "st": "CA",
+        "id": "C0604053",
+        "u": "Ocean Charter Teachers Association",
+        "c": "Los Angeles",
+        "dt": "Circa 2005 (PERB recognition — LA-RR-1115-E); exact date not confirmed — PERB records request required"
+      },
+      {
+        "n": "Santa Rosa Academy",
+        "st": "CA",
+        "id": "C0605060",
+        "u": "Menifee Teachers Association",
+        "c": "Menifee",
+        "dt": "Not confirmed — PERB records request required (PERBforms@perb.ca.gov)"
+      },
+      {
+        "n": "School of Arts and Enterprise",
+        "st": "CA",
+        "id": "C0605133",
+        "u": "SAE Teachers Association",
+        "c": "Pomona",
+        "dt": "Not confirmed — PERB records request required (PERBforms@perb.ca.gov)"
+      },
+      {
+        "n": "Albert Einstein Academies",
+        "st": "CA",
+        "id": "C0606003",
+        "u": "Einstein Educators Collective",
+        "c": "San Diego",
+        "dt": "Not confirmed — PERB records request required (PERBforms@perb.ca.gov)"
+      },
+      {
+        "n": "Monterey Bay Charter",
+        "st": "CA",
+        "id": "C0606059",
+        "u": "Monterey Bay United",
+        "c": "Pacific Grove",
+        "dt": "Circa 2020 (PERB certification — SF-RR-1011-E); exact date not confirmed — PERB records request required"
+      },
+      {
+        "n": "Leadership Public Schools - Hayward",
+        "st": "CA",
+        "id": "C0606082",
+        "u": "East Bay Educators United",
+        "c": "Hayward",
+        "dt": "Not confirmed — PERB records request required (PERBforms@perb.ca.gov)"
+      },
+      {
+        "n": "Sycamore Academy of Science and Cultural Arts",
+        "st": "CA",
+        "id": "C0609069",
+        "u": "Lake Elsinore Teachers Association",
+        "c": "Wildomar",
+        "dt": "Not confirmed — PERB records request required (PERBforms@perb.ca.gov)"
+      },
+      {
+        "n": "iQ Academy California-Los Angeles",
+        "st": "CA",
+        "id": "C0610119",
+        "u": "IQ Academy Teachers Association",
+        "c": "Simi Valley",
+        "dt": "Not confirmed — PERB records request required (PERBforms@perb.ca.gov)"
+      },
+      {
+        "n": "Thomas Edison Charter Academy",
+        "st": "CA",
+        "id": "C0611108",
+        "u": "Edison Charter Teachers Union",
+        "c": "San Francisco",
+        "dt": "Circa 2007 (PERB certification — SF-RR-895-E); exact date not confirmed — PERB records request required"
+      },
+      {
+        "n": "Palmdale Aerospace Academy",
+        "st": "CA",
+        "id": "C0612053",
+        "u": "Palmdale Elementary Teachers Association (certificated unit)",
+        "c": "Palmdale",
+        "dt": "Not confirmed — PERB records request required for both units (PERBforms@perb.ca.gov)"
+      },
+      {
+        "n": "Sycamore Academy of Science and Cultural Arts - Chino Valley",
+        "st": "CA",
+        "id": "C0619040",
+        "u": "Lake Elsinore Teachers Association",
+        "c": "Chino",
+        "dt": "Not confirmed — PERB records request required (PERBforms@perb.ca.gov)"
+      },
+      {
+        "n": "Creative Arts Charter",
+        "st": "CA",
+        "id": "C0694034",
+        "u": "United Educators of San Francisco (UESF)",
+        "c": "San Francisco",
+        "dt": "Circa 2010 (PERB certification — SF-RR-926-E and/or SF-RR-927-E); exact date not confirmed — PERB records request required"
+      },
+      {
+        "n": "Montague Charter Academy",
+        "st": "CA",
+        "id": "C0696020",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Pacoima",
+        "dt": "Not confirmed — long UTLA organizing history since 2001; exact PERB certification date requires records request (PERBforms@perb.ca.gov)"
+      },
+      {
+        "n": "Pacific Collegiate Charter",
+        "st": "CA",
+        "id": "C0699038",
+        "u": "United Pacific Collegiate School (United PCS)",
+        "c": "Santa Cruz",
+        "dt": "Not confirmed — PERB records request required (PERBforms@perb.ca.gov)"
+      },
+      {
+        "n": "San Carlos Charter Learning Center",
+        "st": "CA",
+        "id": "C0694024",
+        "u": "San Carlos Teachers Association (CTA affiliate)",
+        "c": "San Carlos",
+        "dt": "1994 (district CBA coverage from opening — California first charter school)"
+      },
+      {
+        "n": "Arundel Elementary",
+        "st": "CA",
+        "id": "C0600004",
+        "u": "San Carlos Teachers Association (CTA affiliate)",
+        "c": "San Carlos",
+        "dt": "District CBA — San Carlos USD"
+      },
+      {
+        "n": "Brittan Acres Elementary",
+        "st": "CA",
+        "id": "C0699005",
+        "u": "San Carlos Teachers Association (CTA affiliate)",
+        "c": "San Carlos",
+        "dt": "District CBA — San Carlos USD"
+      },
+      {
+        "n": "Heather Elementary",
+        "st": "CA",
+        "id": "C0699023",
+        "u": "San Carlos Teachers Association (CTA affiliate)",
+        "c": "San Carlos",
+        "dt": "District CBA — San Carlos USD"
+      },
+      {
+        "n": "Tierra Linda Middle",
+        "st": "CA",
+        "id": "C0600036",
+        "u": "San Carlos Teachers Association (CTA affiliate)",
+        "c": "San Carlos",
+        "dt": "District CBA — San Carlos USD"
+      },
+      {
+        "n": "White Oaks Elementary",
+        "st": "CA",
+        "id": "C0600042",
+        "u": "San Carlos Teachers Association (CTA affiliate)",
+        "c": "San Carlos",
+        "dt": "District CBA — San Carlos USD"
+      },
+      {
+        "n": "Camino Nuevo Charter High",
+        "st": "CA",
+        "id": "C0604009",
+        "u": "Camino Nuevo Teachers Association (CTA affiliate)",
+        "c": "Los Angeles",
+        "dt": "With Camino Nuevo network"
+      },
+      {
+        "n": "River Valley Charter",
+        "st": "CA",
+        "id": "C0697008",
+        "u": "California Teachers Association (Lakeside USD local, CTA aff",
+        "c": "Lakeside",
+        "dt": "District CBA — Lakeside Union School District (PERB case for district certification)"
+      },
+      {
+        "n": "Realm Charter",
+        "st": "CA",
+        "id": "C0611068",
+        "u": "Berkeley Federation of Teachers (AFT affiliate)",
+        "c": "Berkeley",
+        "dt": "Unknown — PERB case number pending"
+      },
+      {
+        "n": "Five Keys Adult School (SF Sheriffs Dept)",
+        "st": "CA",
+        "id": "C0608056",
+        "u": "California Federation of Teachers (CFT/AFT)",
+        "c": "San Francisco",
+        "dt": "Unknown — PERB case number pending"
+      },
+      {
+        "n": "Shenandoah Valley",
+        "st": "CA",
+        "id": "C0614072",
+        "u": "Amador County Teachers Association (ACTA, CTA affiliate)",
+        "c": "Plymouth",
+        "dt": "District CBA — Amador County USD"
+      },
+      {
+        "n": "Antioch Charter Academy",
+        "st": "CA",
+        "id": "C0698001",
+        "u": "Antioch Education Association (AEA, CTA affiliate)",
+        "c": "Antioch",
+        "dt": "District CBA — Antioch USD"
+      },
+      {
+        "n": "Darnall Charter",
+        "st": "CA",
+        "id": "C0693004",
+        "u": "Darnall Charter Teachers Association (CTA affiliate)",
+        "c": "Chula Vista",
+        "dt": "Unknown — PERB case number pending"
+      },
+      {
+        "n": "Helix High",
+        "st": "CA",
+        "id": "C0698007",
+        "u": "Helix Teachers Association (CTA affiliate)",
+        "c": "La Mesa",
+        "dt": "Unknown — PERB case number pending"
+      },
+      {
+        "n": "Children of Promise Preparatory Academy",
+        "st": "CA",
+        "id": "C0610032",
+        "u": "Inglewood Teachers Association (ITA, CTA affiliate)",
+        "c": "Inglewood",
+        "dt": "District CBA — Inglewood USD"
+      },
+      {
+        "n": "Pinnacle Academy Charter Independent Study",
+        "st": "CA",
+        "id": "C0616009",
+        "u": "King City Joint Union High School District Teachers Associat",
+        "c": "King City",
+        "dt": "District CBA — King City JUHSD"
+      },
+      {
+        "n": "Los Angeles Academy of Arts and Enterprise Charter",
+        "st": "CA",
+        "id": "C0605040",
+        "u": "LA Academy of Arts and Enterprise (CTA affiliate)",
+        "c": "Pomona",
+        "dt": "Unknown — PERB case number pending"
+      },
+      {
+        "n": "Los Angeles Leadership Academy",
+        "st": "CA",
+        "id": "C0602025",
+        "u": "Los Angeles Leadership Academy United (independent local)",
+        "c": "Los Angeles",
+        "dt": "Unknown — PERB case number pending"
+      },
+      {
+        "n": "Mare Island Technology Academy",
+        "st": "CA",
+        "id": "C0699030",
+        "u": "Mare Island Technology Academy Education Association (CTA af",
+        "c": "Vallejo",
+        "dt": "Unknown — PERB case number pending"
+      },
+      {
+        "n": "Mueller Charter School (Robert L.)",
+        "st": "CA",
+        "id": "C0694017",
+        "u": "Mueller Charter School Teachers Association (CTA affiliate)",
+        "c": "Chula Vista",
+        "dt": "Unknown — PERB case number pending"
+      },
+      {
+        "n": "Santiago Middle",
+        "st": "CA",
+        "id": "C0695016",
+        "u": "Orange Unified Education Association (OUEA, CTA affiliate)",
+        "c": "Garden Grove",
+        "dt": "District CBA — Orange USD"
+      },
+      {
+        "n": "Architecture Construction and Engineering Charter",
+        "st": "CA",
+        "id": "C0610014",
+        "u": "Oxnard Federation of Teachers and Staff (AFT affiliate)",
+        "c": "Oxnard",
+        "dt": "District CBA — Oxnard USD"
+      },
+      {
+        "n": "Gateway To College Academy",
+        "st": "CA",
+        "id": "C0613059",
+        "u": "Petaluma Federation of Teachers (AFT affiliate)",
+        "c": "Petaluma",
+        "dt": "District CBA — Petaluma City USD"
+      },
+      {
+        "n": "Oak Park Preparatory Academy",
+        "st": "CA",
+        "id": "C0612067",
+        "u": "Sacramento City Teachers Association (SCTA, CTA/NEA affiliat",
+        "c": "Sacramento",
+        "dt": "District CBA — Sacramento City USD"
+      },
+      {
+        "n": "Harriet Tubman Village Charter",
+        "st": "CA",
+        "id": "C0694027",
+        "u": "San Diego Education Association (SDEA, NEA affiliate)",
+        "c": "San Diego",
+        "dt": "District CBA — San Diego USD"
+      },
+      {
+        "n": "Gompers Charter Middle",
+        "st": "CA",
+        "id": "C0605025",
+        "u": "San Diego Educators Association (CTA affiliate)",
+        "c": "San Diego",
+        "dt": "Unknown — PERB case number pending"
+      },
+      {
+        "n": "Walter L. Bachrodt Elementary",
+        "st": "CA",
+        "id": "C0608058",
+        "u": "San Jose Teachers Association (SJTA, CTA affiliate)",
+        "c": "San Jose",
+        "dt": "District CBA — San Jose USD"
+      },
+      {
+        "n": "Peabody Charter",
+        "st": "CA",
+        "id": "C0693012",
+        "u": "Santa Barbara Teachers Association (SBTA, CTA affiliate)",
+        "c": "Santa Barbara",
+        "dt": "District CBA — Santa Barbara USD"
+      },
+      {
+        "n": "Shasta County Independent Study Charter",
+        "st": "CA",
+        "id": "C0615066",
+        "u": "Shasta County Certificated Employees Association (SCCEA, CTA",
+        "c": "Redding",
+        "dt": "County CBA — Shasta County Office of Education"
+      },
+      {
+        "n": "Steele Canyon High",
+        "st": "CA",
+        "id": "C0606072",
+        "u": "Steele Canyon Charter Teachers Association (CTA affiliate)",
+        "c": "El Cajon",
+        "dt": "Unknown — PERB case number pending"
+      },
+      {
+        "n": "Children's Community Charter",
+        "st": "CA",
+        "id": "C0695002",
+        "u": "Teacher's Association of Paradise (TAP, CTA affiliate)",
+        "c": "Paradise",
+        "dt": "District CBA — Paradise USD"
+      },
+      {
+        "n": "Smythe Academy of Arts and Sciences",
+        "st": "CA",
+        "id": "C0606071",
+        "u": "Twin Rivers United Educators (TRUE, CTA affiliate)",
+        "c": "Sacramento",
+        "dt": "District CBA — Twin Rivers USD"
+      },
+      {
+        "n": "Creative Arts Charter",
+        "st": "CA",
+        "id": "C0694005",
+        "u": "United Educators of San Francisco (UESF, AFT affiliate)",
+        "c": "San Francisco",
+        "dt": "Unknown — PERB case number pending"
+      },
+      {
+        "n": "Options for Youth-Victorville Charter",
+        "st": "CA",
+        "id": "C0693011",
+        "u": "Victor Valley Options for Youth Teachers Association (CTA af",
+        "c": "Victorville",
+        "dt": "Unknown — PERB case number pending"
+      },
+      {
+        "n": "Animo Oscar De La Hoya Charter High",
+        "st": "CA",
+        "id": "C0603045",
+        "u": "Animo Management United (AMU) / UTLA chapter (Green Dot netw",
+        "c": "LOS ANGELES",
+        "dt": "Green Dot network-wide certification — PERB certified (network AMU/UTLA)"
+      },
+      {
+        "n": "Alain Leroy Locke College Preparatory Academy",
+        "st": "CA",
+        "id": "C0608025",
+        "u": "Animo Management United (AMU) / UTLA chapter (Green Dot netw",
+        "c": "LOS ANGELES",
+        "dt": "Green Dot network-wide certification — PERB certified (network AMU/UTLA)"
+      },
+      {
+        "n": "Granada Hills Charter High",
+        "st": "CA",
+        "id": "C0603076",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Granada Hills",
+        "dt": "Pre-2016 UTLA certification (conversion charter or independent charter organizing)"
+      },
+      {
+        "n": "El Camino Real Charter High",
+        "st": "CA",
+        "id": "C0611037",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Woodland Hills",
+        "dt": "Pre-2016 UTLA certification (conversion charter or independent charter organizing)"
+      },
+      {
+        "n": "Birmingham Community Charter High",
+        "st": "CA",
+        "id": "C0609009",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Lake Balboa",
+        "dt": "Pre-2016 UTLA certification (conversion charter or independent charter organizing)"
+      },
+      {
+        "n": "Global Education Academy",
+        "st": "CA",
+        "id": "C0607033",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "LOS ANGELES",
+        "dt": "Pre-2016 UTLA certification (conversion charter or independent charter organizing)"
+      },
+      {
+        "n": "Global Education Academy 2",
+        "st": "CA",
+        "id": "C0614043",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "LOS ANGELES",
+        "dt": "Pending verification — likely via network UTLA chapter"
+      },
+      {
+        "n": "Accelerated School",
+        "st": "CA",
+        "id": "C0694032",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "LOS ANGELES",
+        "dt": "Pre-2016 UTLA certification (conversion charter or independent charter organizing)"
+      },
+      {
+        "n": "Pacoima Charter Elementary",
+        "st": "CA",
+        "id": "C0603093",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "PACOIMA",
+        "dt": "Pre-2016 UTLA certification (conversion charter or independent charter organizing)"
+      },
+      {
+        "n": "Palisades Charter High",
+        "st": "CA",
+        "id": "C0695025",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Pacific Palisades",
+        "dt": "Pre-2016 UTLA certification (conversion charter or independent charter organizing)"
+      },
+      {
+        "n": "Caliber: Beta Academy",
+        "st": "CA",
+        "id": "C0614021",
+        "u": "Caliber Workers Union / Caliber Independent Workers Associat",
+        "c": "San Pablo",
+        "dt": "May 26, 2022 (voluntary recognition by CEO Terence Johnson; PERB confirmed majority support week of May 10, 2022)"
+      },
+      {
+        "n": "Caliber: ChangeMakers Academy",
+        "st": "CA",
+        "id": "C0616026",
+        "u": "Caliber Workers Union / Caliber Independent Workers Associat",
+        "c": "Vallejo",
+        "dt": "May 26, 2022 (voluntary recognition by CEO Terence Johnson; PERB confirmed majority support week of May 10, 2022)"
+      },
+      {
+        "n": "Horizon Charter",
+        "st": "CA",
+        "id": "NAPCS-ADD-CA-001",
+        "u": "Horizon Certificated Employees Association (CTA/NEA) — certi",
+        "c": "Lincoln",
+        "dt": "Certificated unit: 2001 (SA-RR-1028-E — recognition). Classified unit: recognition date not confirmed — PERB records request recommended."
+      },
+      {
+        "n": "Port of Los Angeles High",
+        "st": "CA",
+        "id": "NAPCS-ADD-CA-002",
+        "u": "United Teachers Los Angeles (UTLA) — certified but dormant; ",
+        "c": "San Pedro",
+        "dt": "December 15, 2014 (LA-RR-1237-E closed — UTLA certified as exclusive representative)"
+      },
+      {
+        "n": "Summit Preparatory Charter High",
+        "st": "CA",
+        "id": "NAPCS-ADD-CA-003",
+        "u": "Unite Summit (CTA/NEA)",
+        "c": "Redwood City",
+        "dt": "February 27, 2023 (PERB(CA) certification via SF-CO-875-E)"
+      },
+      {
+        "n": "Sparrow Academy",
+        "st": "CA",
+        "id": "NAPCS-ADD-CA-004",
+        "u": "La Mesa-Spring Valley Teachers Association (CTA/NEA)",
+        "c": "La Mesa",
+        "dt": "Date not confirmed from public sources — LA-RR-1331-E recognition petition. PERB records request recommended."
+      },
+      {
+        "n": "Riverside Preparatory",
+        "st": "CA",
+        "id": "NAPCS-ADD-CA-005",
+        "u": "Oro Grande Riverside Prep Educators Association (Independent",
+        "c": "Oro Grande",
+        "dt": "Date not confirmed from public sources — LA-CE-6921-E (closed). PERB records request recommended."
+      },
+      {
+        "n": "Quail Lake Environmental Charter",
+        "st": "CA",
+        "id": "NAPCS-ADD-CA-006",
+        "u": "Environmental Educators United (CTA/NEA)",
+        "c": "Clovis",
+        "dt": "July 7, 2023 (PERB(CA) recognition — LA-RR-1344-E, certified 07/07/2023)"
+      },
+      {
+        "n": "Animo Oscar De La Hoya Charter High",
+        "st": "CA",
+        "id": "C0603045",
+        "u": "Animo Management United (AMU) / UTLA chapter (Green Dot netw",
+        "c": "LOS ANGELES",
+        "dt": "Green Dot network-wide certification — PERB certified (network AMU/UTLA)"
+      },
+      {
+        "n": "Granada Hills Charter High",
+        "st": "CA",
+        "id": "C0603076",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Granada Hills",
+        "dt": "Pre-2016 UTLA certification (conversion charter or independent charter organizing)"
+      },
+      {
+        "n": "Pacoima Charter Elementary",
+        "st": "CA",
+        "id": "C0603093",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "PACOIMA",
+        "dt": "Pre-2016 UTLA certification (conversion charter or independent charter organizing)"
+      },
+      {
+        "n": "Global Education Academy",
+        "st": "CA",
+        "id": "C0607033",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "LOS ANGELES",
+        "dt": "Pre-2016 UTLA certification (conversion charter or independent charter organizing)"
+      },
+      {
+        "n": "Alain Leroy Locke College Preparatory Academy",
+        "st": "CA",
+        "id": "C0608025",
+        "u": "Animo Management United (AMU) / UTLA chapter (Green Dot netw",
+        "c": "LOS ANGELES",
+        "dt": "Green Dot network-wide certification — PERB certified (network AMU/UTLA)"
+      },
+      {
+        "n": "Birmingham Community Charter High",
+        "st": "CA",
+        "id": "C0609009",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Lake Balboa",
+        "dt": "Pre-2016 UTLA certification (conversion charter or independent charter organizing)"
+      },
+      {
+        "n": "El Camino Real Charter High",
+        "st": "CA",
+        "id": "C0611037",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Woodland Hills",
+        "dt": "Pre-2016 UTLA certification (conversion charter or independent charter organizing)"
+      },
+      {
+        "n": "Global Education Academy 2",
+        "st": "CA",
+        "id": "C0614043",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "LOS ANGELES",
+        "dt": "Pending verification — likely via network UTLA chapter"
+      },
+      {
+        "n": "Accelerated School",
+        "st": "CA",
+        "id": "C0694032",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "LOS ANGELES",
+        "dt": "Pre-2016 UTLA certification (conversion charter or independent charter organizing)"
+      },
+      {
+        "n": "Palisades Charter High",
+        "st": "CA",
+        "id": "C0695025",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Pacific Palisades",
+        "dt": "Pre-2016 UTLA certification (conversion charter or independent charter organizing)"
+      },
+      {
+        "n": "INTERDISTRICT SCHOOL FOR ARTS AND COMMUNICATION (ISAAC)",
+        "st": "CT",
+        "id": "C0997004",
+        "u": "ISAAC Education Association",
+        "c": "New London",
+        "dt": "2005 (per NAPCS baseline — primary source confirmation pending CEA/CT SBE records request)"
+      },
+      {
+        "n": "NEW BEGINNINGS FAMILY ACADEMY",
+        "st": "CT",
+        "id": "C0902001",
+        "u": "New Beginnings Education Association",
+        "c": "Bridgeport",
+        "dt": "Pre-2013 (NAPCS baseline; exact year unknown. Gap: exact date obtainable via CEA or CT SBE records request.)"
+      },
+      {
+        "n": "COMMON GROUND HIGH SCHOOL",
+        "st": "CT",
+        "id": "C0997001",
+        "u": "UAW Local 2110",
+        "c": "New Haven",
+        "dt": "November 2021 (NLRB election date)"
+      },
+      {
+        "n": "INTEGRATED DAY CHARTER SCHOOL",
+        "st": "CT",
+        "id": "C0997003",
+        "u": "Norwich Integrated Education Association",
+        "c": "Norwich",
+        "dt": "1997 (founding — union predates first day of school operation)"
+      },
+      {
+        "n": "J.F. COOK CAMPUS — MUNDO VERDE BILINGUAL PCS",
+        "st": "DC",
+        "id": "C1100001",
+        "u": "Mundo Verde Staff Union",
+        "c": "Washington",
+        "dt": "May 15, 2019 (NLRB election date, Case 05-RC-240305)"
+      },
+      {
+        "n": "CAPITAL CITY PCS — LOWER SCHOOL",
+        "st": "DC",
+        "id": "C1100005",
+        "u": "Capital City Staff Union",
+        "c": "Washington",
+        "dt": "May 2, 2024 (NLRB election date, Case 05-RC-338902)"
+      },
+      {
+        "n": "CAPITAL CITY PCS — UPPER SCHOOL",
+        "st": "DC",
+        "id": "C1108006",
+        "u": "Capital City Staff Union",
+        "c": "Washington",
+        "dt": "May 2, 2024 (network-wide, NLRB 05-RC-338902)"
+      },
+      {
+        "n": "CAPITAL CITY PCS — MIDDLE SCHOOL",
+        "st": "DC",
+        "id": "C1112001",
+        "u": "Capital City Staff Union",
+        "c": "Washington",
+        "dt": "May 2, 2024 (network-wide, NLRB 05-RC-338902)"
+      },
+      {
+        "n": "DISTRICT OF COLUMBIA INTERNATIONAL SCHOOL (DCI)",
+        "st": "DC",
+        "id": "C1114009",
+        "u": "DCI Staff Union",
+        "c": "Washington",
+        "dt": "May 7, 2024 (NLRB election date — case # pending verification)"
+      },
+      {
+        "n": "BREAKTHROUGH MONTESSORI PCS",
+        "st": "DC",
+        "id": "C1116001",
+        "u": "Breakthrough Montessori Staff Union",
+        "c": "Washington",
+        "dt": "June 5, 2025 (NLRB cert — employer RM petition, Case 05-RM-365867; election tally May 28, 2025)"
+      },
+      {
+        "n": "CALLE OCHO CAMPUS — MUNDO VERDE BILINGUAL PCS",
+        "st": "DC",
+        "id": "C1119008",
+        "u": "Mundo Verde Staff Union",
+        "c": "Washington",
+        "dt": "May 4, 2020 (voluntary recognition / card count date during COVID — mechanism pending verification)"
+      },
+      {
+        "n": "Charter School of Wilmington",
+        "st": "DE",
+        "id": "C1096002",
+        "u": "Charter School of Wilmington Education Association (CSWEA)",
+        "c": "Wilmington",
+        "dt": "Spring 2018 (exact date pending PERB(DE) FOIA)"
+      },
+      {
+        "n": "Odyssey Charter School",
+        "st": "DE",
+        "id": "C1006003",
+        "u": "Odyssey Charter School Education Association (OCSEA)",
+        "c": "Wilmington",
+        "dt": "Fall 2018 (exact date pending PERB(DE) FOIA)"
+      },
+      {
+        "n": "Sussex Academy of Arts and Sciences",
+        "st": "DE",
+        "id": "C1000002",
+        "u": "Sussex Academy of Arts and Sciences Education Association (S",
+        "c": "Georgetown",
+        "dt": "February 2026 (PERB(DE) case 1521 — Notice of BU Determination and Certification)"
+      },
+      {
+        "n": "Sussex Montessori School",
+        "st": "DE",
+        "id": "C1018001",
+        "u": "Sussex Montessori Education Association (SMEA)",
+        "c": "Seaford",
+        "dt": "Unknown — pending PERB(DE) FOIA records request"
+      },
+      {
+        "n": "City of Pembroke Pines Charter — West Middle School",
+        "st": "FL",
+        "id": "C1298003",
+        "u": "Broward Teachers Union (BTU) Local #1975 — Charter School Pr",
+        "c": "Pembroke Pines",
+        "dt": "January 2007 (exact date pending PERC(FL) records)"
+      },
+      {
+        "n": "City of Pembroke Pines Charter School — Academic Village",
+        "st": "FL",
+        "id": "C1200007",
+        "u": "Broward Teachers Union (BTU) Local #1975 — Charter School Pr",
+        "c": "Pembroke Pines",
+        "dt": "January 2007 (exact date pending PERC(FL) records)"
+      },
+      {
+        "n": "City of Pembroke Pines Charter School — East Campus Elementary",
+        "st": "FL",
+        "id": "C1299007",
+        "u": "Broward Teachers Union (BTU) Local #1975 — Charter School Pr",
+        "c": "Pembroke Pines",
+        "dt": "January 2007 (exact date pending PERC(FL) records)"
+      },
+      {
+        "n": "Pembroke Pines FSU Charter Elementary School",
+        "st": "FL",
+        "id": "C1203019",
+        "u": "Broward Teachers Union (BTU) / Florida Education Association",
+        "c": "Pembroke Pines",
+        "dt": "N/A"
+      },
+      {
+        "n": "Compass Middle Charter School",
+        "st": "FL",
+        "id": "C1202008",
+        "u": "Polk Education Association (PEA) / FEA — 3 separate certifie",
+        "c": "Bartow",
+        "dt": "December 1, 2009 (earliest of 3 PERC certifications)"
+      },
+      {
+        "n": "PASSAGES CHARTER SCHOOL",
+        "st": "IL",
+        "id": "C1701005",
+        "u": "ChiACTS (Chicago Alliance of Charter Teachers and Staff)",
+        "c": "Chicago",
+        "dt": "Unknown — NLRB Region 13 records request needed"
+      },
+      {
+        "n": "CHICAGO INTERNATIONAL CHARTER SCHOOL (CICS) - NORTHTOWN",
+        "st": "IL",
+        "id": "C1703003",
+        "u": "ChiACTS (Chicago Alliance of Charter Teachers and Staff)",
+        "c": "Chicago",
+        "dt": "Unknown — NLRB Region 13 records request needed"
+      },
+      {
+        "n": "NAMASTE CHARTER SCHOOL",
+        "st": "IL",
+        "id": "C1704003",
+        "u": "ChiACTS (Chicago Alliance of Charter Teachers and Staff)",
+        "c": "Chicago",
+        "dt": "Unknown — NLRB Region 13 records request needed"
+      },
+      {
+        "n": "CHICAGO INTERNATIONAL CHARTER SCHOOL (CICS) - WRIGHTWOOD",
+        "st": "IL",
+        "id": "C1705003",
+        "u": "ChiACTS (Chicago Alliance of Charter Teachers and Staff)",
+        "c": "Chicago",
+        "dt": "Unknown — NLRB Region 13 records request needed"
+      },
+      {
+        "n": "ACERO CHARTER SCHOOL NETWORK - RUFINO TAMAYO",
+        "st": "IL",
+        "id": "C1705008",
+        "u": "United Educators for Justice (UEJ) / ChiACTS",
+        "c": "Chicago",
+        "dt": "Unknown — NLRB Region 13 records request needed"
+      },
+      {
+        "n": "ASPIRA ANTONIA PANTOJA HIGH SCHOOL",
+        "st": "IL",
+        "id": "C1705012",
+        "u": "ChiACTS / Youth Connections (YCCS)",
+        "c": "Chicago",
+        "dt": "Unknown — NLRB Region 13 records request needed"
+      },
+      {
+        "n": "YCCS: ASSOCIATION HOUSE",
+        "st": "IL",
+        "id": "C1705019",
+        "u": "ChiACTS / Youth Connections (YCCS)",
+        "c": "Chicago",
+        "dt": "Unknown — NLRB Region 13 records request needed"
+      },
+      {
+        "n": "YCCS: LATINO YOUTH HIGH SCHOOL",
+        "st": "IL",
+        "id": "C1705022",
+        "u": "ChiACTS / Youth Connections (YCCS)",
+        "c": "Chicago",
+        "dt": "Unknown — NLRB Region 13 records request needed"
+      },
+      {
+        "n": "YCCS: YOUTH CONNECTION LEADERSHIP ACADEMY",
+        "st": "IL",
+        "id": "C1705030",
+        "u": "ChiACTS / Youth Connections (YCCS)",
+        "c": "Chicago",
+        "dt": "Unknown — NLRB Region 13 records request needed"
+      },
+      {
+        "n": "CHICAGO INTERNATIONAL CHARTER SCHOOL (CICS) - RALPH ELLISON",
+        "st": "IL",
+        "id": "C1706003",
+        "u": "ChiACTS (Chicago Alliance of Charter Teachers and Staff)",
+        "c": "Chicago",
+        "dt": "Unknown — NLRB Region 13 records request needed"
+      },
+      {
+        "n": "ACERO CHARTER SCHOOL NETWORK - CARLOS FUENTES",
+        "st": "IL",
+        "id": "C1706009",
+        "u": "United Educators for Justice (UEJ) / ChiACTS",
+        "c": "Chicago",
+        "dt": "Unknown — NLRB Region 13 records request needed"
+      },
+      {
+        "n": "ACERO CHARTER SCHOOL NETWORK - BARTOLOME DE LAS CASAS",
+        "st": "IL",
+        "id": "C1706010",
+        "u": "United Educators for Justice (UEJ) / ChiACTS",
+        "c": "Chicago",
+        "dt": "Unknown — NLRB Region 13 records request needed"
+      },
+      {
+        "n": "URBAN PREP ACADEMY CHARTER HS - ENGLEWOOD",
+        "st": "IL",
+        "id": "C1706011",
+        "u": "ChiACTS (Chicago Alliance of Charter Teachers and Staff)",
+        "c": "Chicago",
+        "dt": "June 2015 (NLRB cert RC-151747)"
+      },
+      {
+        "n": "ACERO CHARTER SCHOOL NETWORK - OFFICER DONALD J. MARQUEZ SCHOOL",
+        "st": "IL",
+        "id": "C1707007",
+        "u": "United Educators for Justice (UEJ) / ChiACTS",
+        "c": "Chicago",
+        "dt": "Unknown — NLRB Region 13 records request needed"
+      },
+      {
+        "n": "ACERO CHARTER SCHOOL NETWORK - SPC DANIEL ZIZUMBO CAMPUS",
+        "st": "IL",
+        "id": "C1708010",
+        "u": "United Educators for Justice (UEJ) / ChiACTS",
+        "c": "Chicago",
+        "dt": "Unknown — NLRB Region 13 records request needed"
+      },
+      {
+        "n": "ACERO CHARTER SCHOOL NETWORK - PFC OMAR E. TORRES CAMPUS",
+        "st": "IL",
+        "id": "C1708011",
+        "u": "United Educators for Justice (UEJ) / ChiACTS",
+        "c": "Chicago",
+        "dt": "Unknown — NLRB Region 13 records request needed"
+      },
+      {
+        "n": "ACERO CHARTER SCHOOL NETWORK - MAJOR HECTOR P. GARCIA M.D. HIGH SCHOOL",
+        "st": "IL",
+        "id": "C1708012",
+        "u": "United Educators for Justice (UEJ) / ChiACTS",
+        "c": "Chicago",
+        "dt": "Unknown — NLRB Region 13 records request needed"
+      },
+      {
+        "n": "ACERO CHARTER SCHOOL NETWORK - SANDRA CISNEROS",
+        "st": "IL",
+        "id": "C1710004",
+        "u": "United Educators for Justice (UEJ) / ChiACTS",
+        "c": "Chicago",
+        "dt": "Unknown — NLRB Region 13 records request needed"
+      },
+      {
+        "n": "URBAN PREP ACADEMY CHARTER HS - BRONZEVILLE",
+        "st": "IL",
+        "id": "C1710009",
+        "u": "ChiACTS (Chicago Alliance of Charter Teachers and Staff)",
+        "c": "Chicago",
+        "dt": "June 2015 (network-wide, NLRB RC-151747)"
+      },
+      {
+        "n": "INSTITUTO HEALTH SCIENCE CAREER ACADEMY (IHSCA)",
+        "st": "IL",
+        "id": "C1710013",
+        "u": "ChiACTS (Chicago Alliance of Charter Teachers and Staff)",
+        "c": "Chicago",
+        "dt": "Unknown — NLRB Region 13 records request needed"
+      },
+      {
+        "n": "ACERO CHARTER SCHOOL NETWORK - JOVITA IDAR",
+        "st": "IL",
+        "id": "C1711003",
+        "u": "United Educators for Justice (UEJ) / ChiACTS",
+        "c": "Chicago",
+        "dt": "Unknown — NLRB Region 13 records request needed"
+      },
+      {
+        "n": "ACERO CHARTER SCHOOL NETWORK - ESMERALDA SANTIAGO",
+        "st": "IL",
+        "id": "C1711004",
+        "u": "United Educators for Justice (UEJ) / ChiACTS",
+        "c": "Chicago",
+        "dt": "Unknown — NLRB Region 13 records request needed"
+      },
+      {
+        "n": "ACERO CHARTER SCHOOL NETWORK - ROBERTO CLEMENTE",
+        "st": "IL",
+        "id": "C1712003",
+        "u": "United Educators for Justice (UEJ) / ChiACTS",
+        "c": "Chicago",
+        "dt": "Unknown — NLRB Region 13 records request needed"
+      },
+      {
+        "n": "INSTITUTO JUSTICE AND LEADERSHIP CHARTER ACADEMY",
+        "st": "IL",
+        "id": "C1712007",
+        "u": "ChiACTS (Chicago Alliance of Charter Teachers and Staff)",
+        "c": "Chicago",
+        "dt": "Unknown — NLRB Region 13 records request needed"
+      },
+      {
+        "n": "ACERO CHARTER SCHOOL NETWORK - BRIGHTON PARK",
+        "st": "IL",
+        "id": "C1713006",
+        "u": "United Educators for Justice (UEJ) / ChiACTS",
+        "c": "Chicago",
+        "dt": "Unknown — NLRB Region 13 records request needed"
+      },
+      {
+        "n": "ACERO CHARTER SCHOOL NETWORK VICTORIA SOTO CAMPUS",
+        "st": "IL",
+        "id": "C1713007",
+        "u": "United Educators for Justice (UEJ) / ChiACTS",
+        "c": "Chicago",
+        "dt": "Unknown — NLRB Region 13 records request needed"
+      },
+      {
+        "n": "CHRISTOPHER HOUSE",
+        "st": "IL",
+        "id": "C1713010",
+        "u": "ChiACTS (Chicago Alliance of Charter Teachers and Staff)",
+        "c": "Chicago",
+        "dt": "Unknown — NLRB Region 13 records request needed"
+      },
+      {
+        "n": "PRAIRIE CROSSING CHARTER SCHOOL",
+        "st": "IL",
+        "id": "C1799009",
+        "u": "Prairie Crossing Federation of Teachers and Support Staff",
+        "c": "Grayslake",
+        "dt": "Unknown — IELRB records request needed"
+      },
+      {
+        "n": "NAMASTE ELEMENTARY CHARTER SCHOOL",
+        "st": "IL",
+        "id": "NAPCS-ADD-IL-001",
+        "u": "ChiACTS (Chicago Alliance of Charter Teachers and Staff)",
+        "c": "Chicago",
+        "dt": "Unknown — NLRB Region 13 records request needed"
+      },
+      {
+        "n": "JACKSON CHARTER SCHOOL",
+        "st": "IL",
+        "id": "NAPCS-ADD-IL-002",
+        "u": "ChiACTS (Chicago Alliance of Charter Teachers and Staff)",
+        "c": "Chicago",
+        "dt": "Unknown — NLRB Region 13 records request needed"
+      },
+      {
+        "n": "YCCS WEST",
+        "st": "IL",
+        "id": "NAPCS-ADD-IL-003",
+        "u": "ChiACTS / Youth Connections (YCCS)",
+        "c": "Chicago",
+        "dt": "Unknown — NLRB Region 13 records request needed"
+      },
+      {
+        "n": "Morris Jeff Community School",
+        "st": "LA",
+        "id": "C2210012",
+        "u": "Morris Jeff United Educators (MJUE) / UTNO",
+        "c": "New Orleans",
+        "dt": "2013"
+      },
+      {
+        "n": "Benjamin Franklin High School",
+        "st": "LA",
+        "id": "C2205002",
+        "u": "United Teachers of Franklin / UTNO",
+        "c": "New Orleans",
+        "dt": "2014"
+      },
+      {
+        "n": "Bricolage Academy",
+        "st": "LA",
+        "id": "C2217025",
+        "u": "Bricolage Academy Educators United (BAEU) / UTNO",
+        "c": "New Orleans",
+        "dt": "2021"
+      },
+      {
+        "n": "CODMAN ACADEMY CHARTER PUBLIC SCHOOL",
+        "st": "MA",
+        "id": "C2501002",
+        "u": "Codman Academy Educators Union / Boston Teachers Union Local",
+        "c": "Boston",
+        "dt": "May 29, 2024 (DLR WMA card-check certification)"
+      },
+      {
+        "n": "ADVANCED MATH AND SCIENCE ACADEMY CHARTER SCHOOL",
+        "st": "MA",
+        "id": "C2505001",
+        "u": "AMSA Educators Association / Teamsters Local 170",
+        "c": "Marlborough",
+        "dt": "July 16, 2014 (Unit 1 — teachers); March 13, 2023 (Unit 2 — Department Chairs)"
+      },
+      {
+        "n": "COMMUNITY CHARTER SCHOOL OF CAMBRIDGE",
+        "st": "MA",
+        "id": "C2505002",
+        "u": "Community Charter School of Cambridge Educators Union / AFT ",
+        "c": "Cambridge",
+        "dt": "June 7, 2024 (DLR certification; amended June 10, 2024)"
+      },
+      {
+        "n": "NEIGHBORHOOD HOUSE CHARTER SCHOOL",
+        "st": "MA",
+        "id": "C2594002",
+        "u": "Neighborhood House Charter School Educators Union / Boston T",
+        "c": "Boston",
+        "dt": "March 18, 2024 (DLR certification — 4 records including 3 on 3/18/2024 + 1 on 3/28/2024)"
+      },
+      {
+        "n": "CAPE COD LIGHTHOUSE CHARTER SCHOOL",
+        "st": "MA",
+        "id": "C2595003",
+        "u": "Cape Cod Lighthouse Charter School Educators Association / A",
+        "c": "East Harwich",
+        "dt": "April 14, 2011 (DLR certification — 1 record)"
+      },
+      {
+        "n": "CITY ON A HILL CHARTER PUBLIC SCHOOL",
+        "st": "MA",
+        "id": "C2595004",
+        "u": "City on a Hill Educators Association / Boston Teachers Union",
+        "c": "Boston",
+        "dt": "May 1, 2018 (DLR certification — 3 records, all dated 5/1/2018 covering 3 campuses)"
+      },
+      {
+        "n": "PIONEER VALLEY PERFORMING ARTS CHARTER PUBLIC SCHOOL",
+        "st": "MA",
+        "id": "C2596006",
+        "u": "PVPA Staff Association / UAW Local 2322",
+        "c": "South Hadley",
+        "dt": "February 8, 2018 (DLR certification — confirmed in DLR records and CBA Article 2)"
+      },
+      {
+        "n": "FOXBOROUGH REGIONAL CHARTER SCHOOL",
+        "st": "MA",
+        "id": "C2598006",
+        "u": "FRCSTA — Foxborough Regional Charter School Teachers Associa",
+        "c": "Foxborough",
+        "dt": "Unknown — no DLR records found; voluntary recognition suspected"
+      },
+      {
+        "n": "BAXTER ACADEMY FOR TECHNOLOGY AND SCIENCE",
+        "st": "ME",
+        "id": "C2313001",
+        "u": "Baxter Academy Education Association",
+        "c": "Portland",
+        "dt": "May 14, 2019 (NLRB election/certification date, Case 01-RC-239165)"
+      },
+      {
+        "n": "Arts Academy in the Woods",
+        "st": "MI",
+        "id": "C2601002",
+        "u": "Arts Academy in the Woods Federation of Teachers (Michigan A",
+        "c": "Fraser",
+        "dt": "~January 2012 (exact date recoverable via NLRB ADS public search — no FOIA needed)"
+      },
+      {
+        "n": "University Yes Academy",
+        "st": "MI",
+        "id": "C2610008",
+        "u": "Michigan Alliance of Charter Teachers and Staff (Michigan AC",
+        "c": "Detroit",
+        "dt": "May 14, 2015 (NLRB Certification of Representative issued — case 07-RC-148928)"
+      },
+      {
+        "n": "Grand Rapids Child Discovery Center",
+        "st": "MI",
+        "id": "C2600004",
+        "u": "Unknown — bargaining agreement active per school transparenc",
+        "c": "Grand Rapids",
+        "dt": "Unknown — MERC FOIA required for cert date"
+      },
+      {
+        "n": "Cesar Chavez Academy High School",
+        "st": "MI",
+        "id": "C2601012",
+        "u": "Michigan Alliance of Charter Teachers & Staff (Michigan ACTS",
+        "c": "Detroit",
+        "dt": "February 7, 2013 (NLRB R7 election, 2:1 margin — confirmed AFT Michigan organizer interview)"
+      },
+      {
+        "n": "Cesar Chavez Academy Intermediate",
+        "st": "MI",
+        "id": "C2609001",
+        "u": "Michigan Alliance of Charter Teachers & Staff (Michigan ACTS",
+        "c": "Detroit",
+        "dt": "February 7, 2013 (network-wide certification — see C2601012 for full detail)"
+      },
+      {
+        "n": "Cesar Chavez Academy Middle School",
+        "st": "MI",
+        "id": "C2699073",
+        "u": "Michigan Alliance of Charter Teachers & Staff (Michigan ACTS",
+        "c": "Detroit",
+        "dt": "February 7, 2013 (network-wide certification — see C2601012 for full detail)"
+      },
+      {
+        "n": "Cesar Chavez Academy Elementary",
+        "st": "MI",
+        "id": "C2699074",
+        "u": "Michigan Alliance of Charter Teachers & Staff (Michigan ACTS",
+        "c": "Detroit",
+        "dt": "February 7, 2013 (network-wide certification — see C2601012 for full detail)"
+      },
+      {
+        "n": "Macomb Montessori Academy",
+        "st": "MI",
+        "id": "NAPCS-ADD-MI-001",
+        "u": "Michigan Education Association (MEA) / NEA — dual bargaining",
+        "c": "Clinton Township",
+        "dt": "Unknown — confirmed as of 2018 MEA reporting"
+      },
+      {
+        "n": "Old Redford Academy",
+        "st": "MI",
+        "id": "NAPCS-ADD-MI-002",
+        "u": "Michigan Education Association (MEA) / NEA",
+        "c": "Detroit",
+        "dt": "Unknown — confirmed existing as of November 2017 (NLRB ULP case)"
+      },
+      {
+        "n": "West Michigan Academy of Arts and Academics",
+        "st": "MI",
+        "id": "NAPCS-ADD-MI-003",
+        "u": "Michigan Education Association (MEA) / NEA",
+        "c": "Spring Lake",
+        "dt": "October 12, 2010"
+      },
+      {
+        "n": "TWIN CITIES GERMAN IMMERSION SCHOOL (TCGIS)",
+        "st": "MN",
+        "id": "C2705019",
+        "u": "TCGIS Staff Association",
+        "c": "Saint Paul",
+        "dt": "January 2014 (NLRB, pre-PELRA amendment)"
+      },
+      {
+        "n": "COMMUNITY SCHOOL OF EXCELLENCE (CSE)",
+        "st": "MN",
+        "id": "C2707002",
+        "u": "CSE Staff Association",
+        "c": "Saint Paul",
+        "dt": "June 2014 (NLRB, pre-PELRA amendment)"
+      },
+      {
+        "n": "HIAWATHA LEADERSHIP ACADEMY - NORTHROP CAMPUS",
+        "st": "MN",
+        "id": "C2707018",
+        "u": "Hiawatha Area Workers United (HAWU)",
+        "c": "Minneapolis",
+        "dt": "June 2021 (network-wide — NLRB 18-RC-276584)"
+      },
+      {
+        "n": "ART AND SCIENCE ACADEMY",
+        "st": "MN",
+        "id": "C2714001",
+        "u": "ASA Staff Association",
+        "c": "Isanti",
+        "dt": "2021 (BMS card-check, case 21RCE0933 — exact date pending BMS records request)"
+      },
+      {
+        "n": "HIAWATHA COLLEGIATE HIGH SCHOOL",
+        "st": "MN",
+        "id": "C2715010",
+        "u": "Hiawatha Area Workers United (HAWU)",
+        "c": "Minneapolis",
+        "dt": "June 2021 (network-wide — NLRB 18-RC-276584)"
+      },
+      {
+        "n": "HIAWATHA COLLEGE PREP - NORTHROP CAMPUS",
+        "st": "MN",
+        "id": "C2718004",
+        "u": "Hiawatha Area Workers United (HAWU)",
+        "c": "Minneapolis",
+        "dt": "June 2021 (network-wide — NLRB 18-RC-276584)"
+      },
+      {
+        "n": "Ubah Medical Academy",
+        "st": "MN",
+        "id": "NAPCS-ADD-MN-002",
+        "u": "Ubah Academy Staff Association",
+        "c": "Hopkins",
+        "dt": "2011 (BMS case 11PCE0488 — exact date pending BMS records request)"
+      },
+      {
+        "n": "The Queen City Academy Charter School",
+        "st": "NJ",
+        "id": "C3400004",
+        "u": "Queen City Education Association",
+        "c": "Plainfield",
+        "dt": "2015 (card check — exact date pending OPRA)"
+      },
+      {
+        "n": "LEAP Academy University Charter School",
+        "st": "NJ",
+        "id": "C3401005",
+        "u": "LEAP Academy Teachers Association",
+        "c": "Camden",
+        "dt": "2004 (exact date pending OPRA)"
+      },
+      {
+        "n": "New Horizons Community Charter School",
+        "st": "NJ",
+        "id": "C3401006",
+        "u": "New Horizons Employee Association",
+        "c": "Newark",
+        "dt": "2003 (exact date pending OPRA)"
+      },
+      {
+        "n": "Paterson Charter School for Science and Technology",
+        "st": "NJ",
+        "id": "C3403001",
+        "u": "Paterson Charter Education Association",
+        "c": "Paterson",
+        "dt": "2015 (card check — exact date pending OPRA)"
+      },
+      {
+        "n": "Community Charter School of Paterson",
+        "st": "NJ",
+        "id": "C3408004",
+        "u": "Community Charter School of Paterson Education Association",
+        "c": "Paterson",
+        "dt": "2015 (card check — exact date pending OPRA)"
+      },
+      {
+        "n": "Dr. Lena Edwards Academic Charter School",
+        "st": "NJ",
+        "id": "C3411005",
+        "u": "Dr. Lena Edwards Academic Charter School Education Associati",
+        "c": "Jersey City",
+        "dt": "~2016 (cert date uncertain — \"2016?\" in NAPCS baseline)"
+      },
+      {
+        "n": "Learning Community Charter School",
+        "st": "NJ",
+        "id": "C3497004",
+        "u": "Learning Community Charter School Education Association",
+        "c": "Jersey City",
+        "dt": "2024 (exact date pending OPRA)"
+      },
+      {
+        "n": "Soaring Heights Charter School",
+        "st": "NJ",
+        "id": "C3497009",
+        "u": "Soaring Heights Charter School Education Association (name i",
+        "c": "Jersey City",
+        "dt": "Unknown — predates PERC online database; OPRA highest priority"
+      },
+      {
+        "n": "Sussex County Charter School",
+        "st": "NJ",
+        "id": "C3497010",
+        "u": "Sussex County Charter Education Association",
+        "c": "Sparta",
+        "dt": "2016 (card check — exact date pending OPRA)"
+      },
+      {
+        "n": "Classical Academy Charter School",
+        "st": "NJ",
+        "id": "C3498003",
+        "u": "Classical Academy Charter School Association",
+        "c": "Clifton",
+        "dt": "2015-16 (exact date pending OPRA)"
+      },
+      {
+        "n": "East Orange Community Charter School",
+        "st": "NJ",
+        "id": "C3498004",
+        "u": "East Orange Community Charter Education Association",
+        "c": "East Orange",
+        "dt": "2019 (exact date pending OPRA)"
+      },
+      {
+        "n": "Englewood on the Palisades Charter School",
+        "st": "NJ",
+        "id": "C3498006",
+        "u": "Englewood on the Palisades Charter School Teachers Associati",
+        "c": "Englewood",
+        "dt": "October 20, 2010 (PERC RO-2011-010)"
+      },
+      {
+        "n": "Greater Brunswick Charter School",
+        "st": "NJ",
+        "id": "C3498007",
+        "u": "Greater Brunswick Charter School Education Association",
+        "c": "New Brunswick",
+        "dt": "2000-2001 (exact date pending OPRA)"
+      },
+      {
+        "n": "International Charter School",
+        "st": "NJ",
+        "id": "C3498011",
+        "u": "International Charter School of Trenton Education Associatio",
+        "c": "Trenton",
+        "dt": "2000 (original PERC election); reaffirmed via card check 2016"
+      },
+      {
+        "n": "Golden Door Charter School",
+        "st": "NJ",
+        "id": "C3498012",
+        "u": "Golden Door Education Association",
+        "c": "Jersey City",
+        "dt": "2015 (card check — exact date pending OPRA)"
+      },
+      {
+        "n": "Marion P. Thomas Charter School PAC Academy",
+        "st": "NJ",
+        "id": "C3499005",
+        "u": "Marion P. Thomas Education Association",
+        "c": "Newark",
+        "dt": "Unknown — CBA confirmed on PERC portal; cert date pending OPRA"
+      },
+      {
+        "n": "Marion P. Thomas Charter School STEAM Academy",
+        "st": "NJ",
+        "id": "C3499006",
+        "u": "Marion P. Thomas Education Association",
+        "c": "Newark",
+        "dt": "Unknown — same CBA as C3499005"
+      },
+      {
+        "n": "The Ethical Community Charter School",
+        "st": "NJ",
+        "id": "NAPCS-ADD-NJ-001",
+        "u": "Ethical Community CS Education Association (pending OPRA con",
+        "c": "Jersey City",
+        "dt": "September 2020 (PERC cert date from Registry v7)"
+      },
+      {
+        "n": "BelovED Community Charter School",
+        "st": "NJ",
+        "id": "NAPCS-ADD-NJ-002",
+        "u": "BelovED CS Education Association (pending OPRA confirmation)",
+        "c": "Jersey City",
+        "dt": "September 19, 2024 — MOST RECENT CHARTER CERT IN FULL NAPCS DATASET (all states)"
+      },
+      {
+        "n": "Monte del Sol Charter School",
+        "st": "NM",
+        "id": "C3500003",
+        "u": "NEA-New Mexico (National Education Association)",
+        "c": "Santa Fe",
+        "dt": "2010-2011 school year"
+      },
+      {
+        "n": "J Paul Taylor Academy",
+        "st": "NM",
+        "id": "C3511001",
+        "u": "National Education Association (NEA)",
+        "c": "Las Cruces",
+        "dt": "2015-2016 school year (unit formed); 2017-2018 (CBA ratified)"
+      },
+      {
+        "n": "Amber Charter School",
+        "st": "NY",
+        "id": "C3600001",
+        "u": "United Federation of Teachers (UFT) Local 2",
+        "c": "New York",
+        "dt": "September 1, 2009 (UFT CBA effective date; PERB(NY) certification date not confirmed from public sources — PERB records request recommended)"
+      },
+      {
+        "n": "King Center Charter School",
+        "st": "NY",
+        "id": "C3600006",
+        "u": "King Center United Professionals / NYSUT / AFT / NEA / AFL-C",
+        "c": "Buffalo",
+        "dt": "October 1, 2024 (NLRB Certification of Representative, case 03-RC-351776)"
+      },
+      {
+        "n": "Renaissance Charter School",
+        "st": "NY",
+        "id": "C3600008",
+        "u": "United Federation of Teachers, Local 2 / NYSUT / AFT",
+        "c": "Jackson Heights",
+        "dt": "Pre-2010 (NAPCS 2018-19 listed; UFT teachers staged public protest ~2010; cert date requires NLRB FOIA to R29)"
+      },
+      {
+        "n": "Riverhead Charter School",
+        "st": "NY",
+        "id": "C3601011",
+        "u": "NYSUT (local name not specified in case record)",
+        "c": "Calverton",
+        "dt": "November 2016 (survived decertification — union remained certified)"
+      },
+      {
+        "n": "Global Concepts Charter School",
+        "st": "NY",
+        "id": "C3602004",
+        "u": "Global Concepts Charter School Union (INDEPENDENT — no natio",
+        "c": "Lackawanna",
+        "dt": "March 2017"
+      },
+      {
+        "n": "Opportunity Charter School",
+        "st": "NY",
+        "id": "C3604006",
+        "u": "United Federation of Teachers, Local 2 / NYSUT / AFT",
+        "c": "New York",
+        "dt": "Pre-2013 (UFT chapter leader \"Crystal Chandler\" named in UFT press release, 2013; cert date requires NLRB FOIA to R2)"
+      },
+      {
+        "n": "Charter School for Educational Excellence",
+        "st": "NY",
+        "id": "C3605007",
+        "u": "Yonkers Federation of Teachers (YFT) / NYSUT / AFT",
+        "c": "Yonkers",
+        "dt": "Pre-September 2016 (decert petition dismissed Sep 2016 — union was already certified)"
+      },
+      {
+        "n": "Bronx Academy of Promise Charter School",
+        "st": "NY",
+        "id": "C3608004",
+        "u": "United Federation of Teachers, Local 2 / NYSUT / AFT",
+        "c": "Bronx",
+        "dt": "Pre-2024 (UFT cert confirmed via CB case 02-CB-314576 — exact date requires NLRB FOIA to R2)"
+      },
+      {
+        "n": "Bronx Community Charter School",
+        "st": "NY",
+        "id": "C3608005",
+        "u": "United Federation of Teachers (UFT) / UFT ACTS",
+        "c": "Bronx",
+        "dt": "N/A"
+      },
+      {
+        "n": "Bronx Global Learning Institute for Girls Charter School",
+        "st": "NY",
+        "id": "C3608006",
+        "u": "United Federation of Teachers, Local 2 / NYSUT / AFT",
+        "c": "Bronx",
+        "dt": "November 2018"
+      },
+      {
+        "n": "University Prep High School",
+        "st": "NY",
+        "id": "C3608010",
+        "u": "United Federation of Teachers (UFT) Local 2",
+        "c": "Bronx",
+        "dt": "January 2010 (UFT-Green Dot founding partnership; school opened as UFT/Green Dot collaborative 2008 — union from inception)"
+      },
+      {
+        "n": "NYC Charter High School for Architecture, Engineering & Construction Industries",
+        "st": "NY",
+        "id": "C3608017",
+        "u": "United Federation of Teachers, Local 2 / NYSUT / AFT",
+        "c": "Bronx",
+        "dt": "January 2010 (per UFT.org press release — \"Since January 2010, when teachers formed a union at the New York City Charter HS for Architecture, Engineering and Construction Industries\")"
+      },
+      {
+        "n": "Growing Up Green Charter School",
+        "st": "NY",
+        "id": "C3609019",
+        "u": "United Federation of Teachers, Local 2 / AFT",
+        "c": "Long Island City",
+        "dt": "March 2023"
+      },
+      {
+        "n": "New York French-American Charter School",
+        "st": "NY",
+        "id": "C3610026",
+        "u": "United Federation of Teachers (UFT) Local 2",
+        "c": "New York",
+        "dt": "March 2012 (PERB(NY) certification order — UFT certified as exclusive negotiating agent)"
+      },
+      {
+        "n": "New Visions Charter High School for Advanced Math and Science",
+        "st": "NY",
+        "id": "C3611011",
+        "u": "United Federation of Teachers, Local 2 / AFT",
+        "c": "Bronx",
+        "dt": "Pre-existing — exact date unknown; FOIA to NLRB Region 2 required"
+      },
+      {
+        "n": "New Visions Charter High School for the Humanities",
+        "st": "NY",
+        "id": "C3611012",
+        "u": "United Federation of Teachers, Local 2 / AFT",
+        "c": "Bronx",
+        "dt": "Pre-existing — exact date unknown; FOIA to NLRB Region 2 required"
+      },
+      {
+        "n": "New Visions Charter High School for the Humanities II",
+        "st": "NY",
+        "id": "C3612010",
+        "u": "United Federation of Teachers, Local 2 / AFT",
+        "c": "Bronx",
+        "dt": "Pre-existing — exact date unknown; FOIA to NLRB Region 2 required"
+      },
+      {
+        "n": "Compass Charter School",
+        "st": "NY",
+        "id": "C3614006",
+        "u": "United Federation of Teachers, Local 2 / NYSUT / AFT",
+        "c": "Brooklyn",
+        "dt": "March 2021"
+      },
+      {
+        "n": "Charter High School for Law and Social Justice",
+        "st": "NY",
+        "id": "C3615003",
+        "u": "United Federation of Teachers, Local 2 / AFT",
+        "c": "Bronx",
+        "dt": "Pre-existing — exact date unknown; FOIA to NLRB Region 29 required"
+      },
+      {
+        "n": "Brooklyn Prospect Charter School — CSD 13.2",
+        "st": "NY",
+        "id": "C3615012",
+        "u": "United Federation of Teachers, Local 2 / NYSUT / AFT",
+        "c": "Brooklyn",
+        "dt": "May 2024 (voted May 2024; cert date = tally date — FOIA to R29 for exact cert date)"
+      },
+      {
+        "n": "Elm Community Charter School",
+        "st": "NY",
+        "id": "C3618014",
+        "u": "United Federation of Teachers, Local 2 / AFT",
+        "c": "Elmhurst",
+        "dt": "2020"
+      },
+      {
+        "n": "Charter School of Inquiry (Williamsville, Erie County)",
+        "st": "NY",
+        "id": "NAPCS-ADD-NY-001",
+        "u": "Charter School of Inquiry Union (independent — no national a",
+        "c": "Williamsville",
+        "dt": "2019"
+      },
+      {
+        "n": "Amber Charter School — Inwood Campus",
+        "st": "NY",
+        "id": "NAPCS-ADD-NY-002",
+        "u": "United Federation of Teachers, Local 2 / NYSUT / AFT",
+        "c": "New York",
+        "dt": "May 2022"
+      },
+      {
+        "n": "Uncommon Preparatory Charter High School (Brooklyn)",
+        "st": "NY",
+        "id": "NAPCS-ADD-NY-003",
+        "u": "Gap: union name unknown — obtainable via NLRB ADS R29 or FOI",
+        "c": "Brooklyn",
+        "dt": "Estimated June 2024 (case 29-RC-341899 filed May 8, 2024; closed)"
+      },
+      {
+        "n": "Arts and College Preparatory Academy (ACPA)",
+        "st": "OH",
+        "id": "C3902003",
+        "u": "ACPA United",
+        "c": "Columbus",
+        "dt": "December 5, 2025"
+      },
+      {
+        "n": "Northeast Ohio College Preparatory School",
+        "st": "OH",
+        "id": "C3910017",
+        "u": "Cleveland Alliance for Charter Teachers and Staff (Cleveland",
+        "c": "Cleveland",
+        "dt": "May 12, 2016"
+      },
+      {
+        "n": "Cleveland College Preparatory Academy",
+        "st": "OH",
+        "id": "C3910003",
+        "u": "Cleveland Alliance for Charter Teachers and Staff (Cleveland",
+        "c": "Cleveland",
+        "dt": "Spring 2016 — exact date pending NLRB records request"
+      },
+      {
+        "n": "University of Cleveland Preparatory School",
+        "st": "OH",
+        "id": "C3911020",
+        "u": "Cleveland Alliance for Charter Teachers and Staff (Cleveland",
+        "c": "Cleveland",
+        "dt": "March 2016 (approximate) — exact date pending NLRB records request"
+      },
+      {
+        "n": "Stepstone Academy",
+        "st": "OH",
+        "id": "C3912013",
+        "u": "Cleveland Alliance for Charter Teachers and Staff (Cleveland",
+        "c": "Cleveland",
+        "dt": "September 21, 2018"
+      },
+      {
+        "n": "Summit Academy Secondary School-Parma",
+        "st": "OH",
+        "id": "C3904065",
+        "u": "Cleveland Alliance for Charter Teachers and Staff (Cleveland",
+        "c": "Parma",
+        "dt": "March 2018 (approximate) — exact date pending NLRB records request"
+      },
+      {
+        "n": "Summit Academy Community School for Alternative Learners of Lorain",
+        "st": "OH",
+        "id": "C3901015",
+        "u": "OFT (local designation pending NLRB records confirmation)",
+        "c": "Lorain",
+        "dt": "January 14, 2022"
+      },
+      {
+        "n": "Menlo Park Academy",
+        "st": "OH",
+        "id": "C3904034",
+        "u": "Cleveland Alliance for Charter Teachers and Staff (Cleveland",
+        "c": "Cleveland",
+        "dt": "April 14, 2022"
+      },
+      {
+        "n": "KIPP Columbus",
+        "st": "OH",
+        "id": "C3908011",
+        "u": "KIPP Columbus Alliance for Charter Teachers and Staff (KIPP ",
+        "c": "Columbus",
+        "dt": "May 5, 2023"
+      },
+      {
+        "n": "Summit Academy Secondary School-Youngstown",
+        "st": "OH",
+        "id": "C3904066",
+        "u": "Summit Academy Youngstown Secondary Education Association / ",
+        "c": "Youngstown",
+        "dt": "Pre-2018-19 (NAPCS lists this school in BOTH 2018-19 and 2023-24 union data — exact cert date requires NLRB FOIA to Region 8)"
+      },
+      {
+        "n": "Summit Academy Youngstown",
+        "st": "OH",
+        "id": "C3905038",
+        "u": "Ohio Education Association / Summit Academy Youngstown Staff",
+        "c": "Youngstown",
+        "dt": "Pre-2018-19 (NAPCS lists this school in BOTH 2018-19 and 2023-24 union data — exact cert date requires NLRB FOIA to Region 8)"
+      },
+      {
+        "n": "Summit Academy Community School — Painesville",
+        "st": "OH",
+        "id": "NAPCS-ADD-OH-001",
+        "u": "Cleveland Alliance for Charter Teachers and Staff (Cleveland",
+        "c": "Painesville",
+        "dt": "Unknown — NLRB records request required for exact cert date"
+      },
+      {
+        "n": "MOSIER COMMUNITY SCHOOL",
+        "st": "OR",
+        "id": "C4102006",
+        "u": "Oregon Education Association (OEA) — District 21 Education A",
+        "c": "Mosier",
+        "dt": "June 24, 2014 (ERB CC-007-14 — Certification of Exclusive Representative)"
+      },
+      {
+        "n": "OREGON VIRTUAL ACADEMY (ORVA)",
+        "st": "OR",
+        "id": "NAPCS-ADD-OR-001",
+        "u": "Oregon Virtual Academy Educators United, AFT-Oregon, AFT, AF",
+        "c": "North Bend (statewide virtual)",
+        "dt": "August 20, 2021 (NLRB 19-RC-278342 — Certification of Representative)"
+      },
+      {
+        "n": "NEW FOUNDATIONS CHARTER SCHOOL",
+        "st": "PA",
+        "id": "C4200007",
+        "u": "AFT Pennsylvania",
+        "c": "Philadelphia",
+        "dt": "July 14, 2025"
+      },
+      {
+        "n": "21ST CENTURY CYBER CHARTER SCHOOL",
+        "st": "PA",
+        "id": "C4201001",
+        "u": "21st Century Cyber Education Association / PSEA/NEA",
+        "c": "Downingtown",
+        "dt": "August 25, 2021"
+      },
+      {
+        "n": "PENNSYLVANIA VIRTUAL CHARTER SCHOOL",
+        "st": "PA",
+        "id": "C4201006",
+        "u": "PA Virtual Charter Education Association / PSEA/NEA",
+        "c": "King of Prussia",
+        "dt": "September 7, 2016"
+      },
+      {
+        "n": "FOLK ARTS CULTURAL TREASURES CHARTER SCHOOL",
+        "st": "PA",
+        "id": "C4205003",
+        "u": "Alliance of Charter School Employees Local 6056 / AFT-PA / A",
+        "c": "Philadelphia",
+        "dt": "December 13, 2022"
+      },
+      {
+        "n": "NORTHWOOD ACADEMY CHARTER SCHOOL",
+        "st": "PA",
+        "id": "C4205004",
+        "u": "Alliance of Charter School Employees Local 6056 / AFT-PA / A",
+        "c": "Philadelphia",
+        "dt": "January 30, 2023"
+      },
+      {
+        "n": "PROPEL CHARTER SCHOOL - HOMESTEAD",
+        "st": "PA",
+        "id": "C4203010",
+        "u": "Propel Charter School Education Association (PCSEA) / PSEA/N",
+        "c": "Homestead",
+        "dt": "April 29, 2021"
+      },
+      {
+        "n": "PROPEL CHARTER SCHOOL - MCKEESPORT",
+        "st": "PA",
+        "id": "C4205006",
+        "u": "PCSEA / PSEA/NEA",
+        "c": "McKeesport",
+        "dt": "April 29, 2021"
+      },
+      {
+        "n": "PROPEL CHARTER SCHOOL - NORTHSIDE",
+        "st": "PA",
+        "id": "C4211009",
+        "u": "PCSEA / PSEA/NEA",
+        "c": "Pittsburgh",
+        "dt": "April 29, 2021"
+      },
+      {
+        "n": "PROPEL CHARTER SCHOOL - HAZELWOOD",
+        "st": "PA",
+        "id": "C4219016",
+        "u": "PCSEA / PSEA/NEA",
+        "c": "Pittsburgh",
+        "dt": "April 29, 2021"
+      },
+      {
+        "n": "PROPEL CHARTER SCHOOL - BRADDOCK HILLS",
+        "st": "PA",
+        "id": "C4219017",
+        "u": "PCSEA / PSEA/NEA",
+        "c": "Braddock Hills",
+        "dt": "April 29, 2021"
+      },
+      {
+        "n": "PROPEL CHARTER SCHOOL - EAST",
+        "st": "PA",
+        "id": "C4219018",
+        "u": "PCSEA / PSEA/NEA",
+        "c": "Turtle Creek",
+        "dt": "April 29, 2021"
+      },
+      {
+        "n": "PROPEL CHARTER SCHOOL - MONTOUR",
+        "st": "PA",
+        "id": "C4219019",
+        "u": "PCSEA / PSEA/NEA",
+        "c": "McKees Rocks",
+        "dt": "April 29, 2021"
+      },
+      {
+        "n": "PROPEL CHARTER SCHOOL - PITCAIRN",
+        "st": "PA",
+        "id": "C4219020",
+        "u": "PCSEA / PSEA/NEA",
+        "c": "Pitcairn",
+        "dt": "April 29, 2021"
+      },
+      {
+        "n": "ENVIRONMENTAL CHARTER SCHOOL AT FRICK PARK",
+        "st": "PA",
+        "id": "C4208002",
+        "u": "Alliance of Charter School Employees / AFT Local 6056",
+        "c": "Pittsburgh",
+        "dt": "December 2018"
+      },
+      {
+        "n": "URBAN PATHWAYS K-5 COLLEGE CHARTER SCHOOL",
+        "st": "PA",
+        "id": "C4211007",
+        "u": "Alliance for Charter School Employees / ACSE Local 6056 / AF",
+        "c": "Pittsburgh",
+        "dt": "June 3, 2022"
+      },
+      {
+        "n": "YOUNG SCHOLARS OF WESTERN PENNSYLVANIA CHARTER SCHOOL",
+        "st": "PA",
+        "id": "C4211014",
+        "u": "Young Scholars of Western PA Education Association / PSEA/NE",
+        "c": "Pittsburgh",
+        "dt": "January 29, 2018"
+      },
+      {
+        "n": "VIDA CHARTER SCHOOL",
+        "st": "PA",
+        "id": "C4210003",
+        "u": "Vida Education Association & Support Professionals / PSEA/NE",
+        "c": "Gettysburg",
+        "dt": "November 3, 2017"
+      },
+      {
+        "n": "AGORA CYBER CHARTER SCHOOL",
+        "st": "PA",
+        "id": "C4219004",
+        "u": "Agora Cyber Education Association / PSEA (teachers); Agora C",
+        "c": "King of Prussia",
+        "dt": "January 22, 2015 (earliest unit — counselors)"
+      },
+      {
+        "n": "PENNSYLVANIA CYBER CHARTER SCHOOL",
+        "st": "PA",
+        "id": "C4219014",
+        "u": "PA Cyber School Education Association / PSEA/NEA (teachers);",
+        "c": "Midland",
+        "dt": "April 25, 2014 (earliest unit — teachers)"
+      },
+      {
+        "n": "MONTESSORI REGIONAL CHARTER SCHOOL",
+        "st": "PA",
+        "id": "C4200012",
+        "u": "Unknown — NLRB RC case closed, cert issued; union name requi",
+        "c": "Erie",
+        "dt": "November 30, 2017 (date filed) or later (election/cert date pending NLRB R6 FOIA)"
+      },
+      {
+        "n": "WEST OAK LANE CHARTER SCHOOL",
+        "st": "PA",
+        "id": "C4298015",
+        "u": "Alliance for Charter School Employees (ACSE) Local 6056, AFT",
+        "c": "Philadelphia",
+        "dt": "2004 (first union charter school in Pennsylvania per AFT-PA press release August 2020)"
+      },
+      {
+        "n": "Highlander Elementary Charter School",
+        "st": "RI",
+        "id": "NAPCS-ADD-RI-001",
+        "u": "International Brotherhood of Electrical Workers (IBEW) Local",
+        "c": "Providence",
+        "dt": "September 6, 2024"
+      },
+      {
+        "n": "Paul Cuffee Lower School",
+        "st": "RI",
+        "id": "NAPCS-ADD-RI-002",
+        "u": "Rhode Island Federation of Teachers and Health Professionals",
+        "c": "Providence",
+        "dt": "December 10, 2024"
+      },
+      {
+        "n": "Paul Cuffee Middle School",
+        "st": "RI",
+        "id": "NAPCS-ADD-RI-003",
+        "u": "Rhode Island Federation of Teachers and Health Professionals",
+        "c": "Providence",
+        "dt": "June 11, 2025"
+      },
+      {
+        "n": "Paul Cuffee Upper School",
+        "st": "RI",
+        "id": "NAPCS-ADD-RI-004",
+        "u": "Rhode Island Federation of Teachers and Health Professionals",
+        "c": "Providence",
+        "dt": "October 29, 2024"
+      },
+      {
+        "n": "NEL/CPS Construction Career Academy",
+        "st": "RI",
+        "id": "C4402002",
+        "u": "Cranston Teachers Alliance (AFT Local 1704)",
+        "c": "Cranston",
+        "dt": "Pre-2009 (district CBA governs)"
+      },
+      {
+        "n": "Times2 Academy",
+        "st": "RI",
+        "id": "C4498001",
+        "u": "Providence Teachers Union (AFT Local 958)",
+        "c": "Providence",
+        "dt": "Pre-2009 (district CBA governs)"
+      },
+      {
+        "n": "Highlander Charter School",
+        "st": "RI",
+        "id": "C4401001",
+        "u": "International Brotherhood of Electrical Workers (IBEW) Local",
+        "c": "Providence",
+        "dt": ""
+      }
+    ],
+    "DEPENDENT": [
+      {
+        "n": "Alfred B. Nobel Charter Middle School",
+        "st": "CA",
+        "id": "C0612051",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Northridge",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Beckford Charter for Enriched Studies",
+        "st": "CA",
+        "id": "C0611013",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Northridge",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Calabash Charter Academy",
+        "st": "CA",
+        "id": "C0611014",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Woodland Hills",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Calvert Charter for Enriched Studies",
+        "st": "CA",
+        "id": "C0613093",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Woodland Hills",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Canyon Elementary Charter School",
+        "st": "CA",
+        "id": "C0693002",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Santa Monica",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Carpenter Community Charter School",
+        "st": "CA",
+        "id": "C0610028",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Studio City",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Chatsworth Charter High School",
+        "st": "CA",
+        "id": "C0613088",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Chatsworth",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Colfax Charter Elementary School",
+        "st": "CA",
+        "id": "C0608029",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Valley Village",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Community Magnet Charter Elementary School",
+        "st": "CA",
+        "id": "C0605014",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Los Angeles",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Castlebay Lane Charter Elementary School",
+        "st": "CA",
+        "id": "C0612052",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Northridge",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Dearborn Elementary Charter Academy",
+        "st": "CA",
+        "id": "C0612031",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Northridge",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Dixie Canyon Community Charter School",
+        "st": "CA",
+        "id": "C0612032",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Sherman Oaks",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Dr. Theodore T. Alexander Jr. Science Center School",
+        "st": "CA",
+        "id": "C0604017",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Los Angeles",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "El Oro Way Charter for Enriched Studies",
+        "st": "CA",
+        "id": "C0612033",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Granada Hills",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Emerson Community Charter School",
+        "st": "CA",
+        "id": "C0614035",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Los Angeles",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Enadia Way Technology Charter School",
+        "st": "CA",
+        "id": "C0612020",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "West Hills",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Encino Charter Elementary School",
+        "st": "CA",
+        "id": "C0612034",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Encino",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Grover Cleveland Charter High School",
+        "st": "CA",
+        "id": "C0613089",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Reseda",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Hale Charter Academy",
+        "st": "CA",
+        "id": "C0611043",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Woodland Hills",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Hamlin Charter Academy",
+        "st": "CA",
+        "id": "C0612036",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "West Hills",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Haynes Charter for Enriched Studies",
+        "st": "CA",
+        "id": "C0612037",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "West Hills",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Hesby Oaks Leadership Charter School",
+        "st": "CA",
+        "id": "C0612003",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Encino",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Justice Street Academy Charter School",
+        "st": "CA",
+        "id": "C0612038",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "West Hills",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Kenter Canyon Elementary Charter School",
+        "st": "CA",
+        "id": "C0693022",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Los Angeles",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Knollwood Preparatory Academy",
+        "st": "CA",
+        "id": "C0612039",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Granada Hills",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Lockhurst Drive Charter Elementary School",
+        "st": "CA",
+        "id": "C0612040",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Woodland Hills",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Louis Armstrong Middle School Charter",
+        "st": "CA",
+        "id": "C0612050",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Sherman Oaks",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Marquez Charter Elementary School",
+        "st": "CA",
+        "id": "C0693023",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Pacific Palisades",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Nestle Avenue Charter Elementary School",
+        "st": "CA",
+        "id": "C0612041",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Tarzana",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Open Charter Magnet School",
+        "st": "CA",
+        "id": "C0693010",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Los Angeles",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Palisades Charter Elementary School",
+        "st": "CA",
+        "id": "C0698011",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Pacific Palisades",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Plainview Academic Charter Academy",
+        "st": "CA",
+        "id": "C0612042",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Tujunga",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Pomelo Community Charter School",
+        "st": "CA",
+        "id": "C0611065",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "West Hills",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Paul Revere Charter Middle School and Magnet Center",
+        "st": "CA",
+        "id": "C0694020",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Los Angeles",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Riverside Drive Charter Elementary School",
+        "st": "CA",
+        "id": "C0611100",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Sherman Oaks",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Serrania Avenue Charter for Enriched Studies",
+        "st": "CA",
+        "id": "C0612043",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Woodland Hills",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Sherman Oaks Elementary Charter School",
+        "st": "CA",
+        "id": "C0611073",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Sherman Oaks",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Superior Street Elementary Charter School",
+        "st": "CA",
+        "id": "C0612044",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Chatsworth",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Sylmar Charter High School",
+        "st": "CA",
+        "id": "C0616012",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Sylmar",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Taft Charter High School",
+        "st": "CA",
+        "id": "C0613090",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Woodland Hills",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Topanga Elementary Charter School",
+        "st": "CA",
+        "id": "C0695018",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Topanga",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Topeka Charter School for Advanced Studies",
+        "st": "CA",
+        "id": "C0612045",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Northridge",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Van Gogh Charter School",
+        "st": "CA",
+        "id": "C0612046",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Granada Hills",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Welby Way Elementary Charter School",
+        "st": "CA",
+        "id": "C0611091",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "West Hills",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Westwood Elementary Charter School",
+        "st": "CA",
+        "id": "C0693021",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Los Angeles",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Wilbur Charter for Enriched Academics",
+        "st": "CA",
+        "id": "C0612047",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Tarzana",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Woodlake Elementary Community Charter School",
+        "st": "CA",
+        "id": "C0612048",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Woodland Hills",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Woodland Hills Elementary Charter for Enriched Studies",
+        "st": "CA",
+        "id": "C0612049",
+        "u": "United Teachers Los Angeles (UTLA)",
+        "c": "Woodland Hills",
+        "dt": "Structural — no independent certification event"
+      },
+      {
+        "n": "Journey School",
+        "st": "CA",
+        "id": "C0600016",
+        "u": "Capistrano Unified Education Association (CUEA — CTA/NEA) — ",
+        "c": "Aliso Viejo",
+        "dt": "UNVERIFIED"
+      },
+      {
+        "n": "Marysville Charter Academy For The Arts",
+        "st": "CA",
+        "id": "C0600019",
+        "u": "Marysville Teachers Association (CTA/NEA)",
+        "c": "Marysville",
+        "dt": "Via Marysville Joint Unified School District district CBA (structural coverage)"
+      },
+      {
+        "n": "Orchard View",
+        "st": "CA",
+        "id": "C0600029",
+        "u": "Twin Hills Teachers Association (CTA)",
+        "c": "Sebastopol",
+        "dt": "Via Twin Hills Union Elementary School District district CBA (structural coverage)"
+      },
+      {
+        "n": "Delta Charter Elementary",
+        "st": "CA",
+        "id": "C0601009",
+        "u": "New Jerusalem Teachers Association (CTA)",
+        "c": "Tracy",
+        "dt": "Via New Jerusalem Elementary School District district CBA (structural coverage)"
+      },
+      {
+        "n": "Denair Charter Academy",
+        "st": "CA",
+        "id": "C0601010",
+        "u": "Denair Teachers Association (CTA)",
+        "c": "Denair",
+        "dt": "Via Denair Unified School District district CBA (structural coverage)"
+      },
+      {
+        "n": "Nuview Bridge Early College High",
+        "st": "CA",
+        "id": "C0601030",
+        "u": "Nuview Teachers Association (CTA) — coverage unverified",
+        "c": "Nuevo",
+        "dt": "Via Nuview Union School District district CBA (structural coverage — verification needed)"
+      },
+      {
+        "n": "Watsonville Charter School Of The Arts",
+        "st": "CA",
+        "id": "C0601037",
+        "u": "Pajaro Valley Federation of Teachers (AFT/CFT Local 1936)",
+        "c": "Watsonville",
+        "dt": "Via Pajaro Valley Unified SD district CBA (structural coverage)"
+      },
+      {
+        "n": "Roseland Charter",
+        "st": "CA",
+        "id": "C0601088",
+        "u": "Roseland Teachers Association (CTA/NEA)",
+        "c": "Santa Rosa",
+        "dt": "Via Roseland Public Schools district CBA (pre-dates charter — structural coverage)"
+      },
+      {
+        "n": "Mary Collins Charter School At Cherry Valley",
+        "st": "CA",
+        "id": "C0602027",
+        "u": "Petaluma Federation of Teachers (AFT/CFT)",
+        "c": "PETALUMA",
+        "dt": "Via Petaluma Joint Union High School District district CBA (structural coverage)"
+      },
+      {
+        "n": "Pacific Crest Academy",
+        "st": "CA",
+        "id": "C0602040",
+        "u": "El Dorado Teachers Association (CTA) — coverage unverified",
+        "c": "El Dorado",
+        "dt": "Via El Dorado Union High School District district CBA (structural coverage — verification needed)"
+      },
+      {
+        "n": "Sunridge Charter",
+        "st": "CA",
+        "id": "C0602042",
+        "u": "Twin Hills Teachers Association (CTA)",
+        "c": "Sebastopol",
+        "dt": "Via Twin Hills Union Elementary School District district CBA (structural coverage)"
+      },
+      {
+        "n": "George Washington Carver School Of Arts And Science",
+        "st": "CA",
+        "id": "C0603001",
+        "u": "Sacramento City Teachers Association (CTA/NEA) — coverage un",
+        "c": "Sacramento",
+        "dt": "Via Sacramento City Unified district CBA (structural coverage — verification needed)"
+      },
+      {
+        "n": "California Military Institute",
+        "st": "CA",
+        "id": "C0603004",
+        "u": "Perris Teachers Association (CTA/NEA) — coverage unverified",
+        "c": "Perris",
+        "dt": "Via Perris Union High School District district CBA (structural coverage — verification needed)"
+      },
+      {
+        "n": "El Rancho Charter",
+        "st": "CA",
+        "id": "C0603016",
+        "u": "Orange Unified Education Association (CTA/NEA) — coverage un",
+        "c": "Anaheim",
+        "dt": "Via Orange Unified School District district CBA (structural coverage — verification needed)"
+      },
+      {
+        "n": "Hawthorne Math And Science Academy",
+        "st": "CA",
+        "id": "C0603023",
+        "u": "Hawthorne Teachers Association (CTA) — coverage unverified",
+        "c": "Hawthorne",
+        "dt": "Via Hawthorne School District district CBA (structural coverage — verification needed)"
+      },
+      {
+        "n": "The Met",
+        "st": "CA",
+        "id": "C0603037",
+        "u": "Sacramento City Teachers Association (CTA/NEA) — coverage un",
+        "c": "Sacramento",
+        "dt": "Via Sacramento City Unified district CBA (structural coverage — verification needed)"
+      },
+      {
+        "n": "New Technology High",
+        "st": "CA",
+        "id": "C0603040",
+        "u": "Sacramento City Teachers Association (CTA/NEA) — coverage un",
+        "c": "Sacramento",
+        "dt": "Via Sacramento City Unified district CBA (structural coverage — verification needed)"
+      },
+      {
+        "n": "Northwest Prep Charter",
+        "st": "CA",
+        "id": "C0604011",
+        "u": "Piner-Olivet Teachers Association (CTA)",
+        "c": "Santa Rosa",
+        "dt": "Via Piner-Olivet Union Elementary SD district CBA (structural coverage)"
+      },
+      {
+        "n": "Mark West Charter",
+        "st": "CA",
+        "id": "C0604045",
+        "u": "Mark West Teachers Association (CTA)",
+        "c": "Santa Rosa",
+        "dt": "Via Mark West Union School District district CBA (structural coverage)"
+      },
+      {
+        "n": "Spring Creek Elementary Charter",
+        "st": "CA",
+        "id": "C0604058",
+        "u": "Rincon Valley Teachers Association (CTA)",
+        "c": "Santa Rosa",
+        "dt": "Via Rincon Valley Union Elementary SD district CBA (structural coverage)"
+      },
+      {
+        "n": "Santa Rosa Accelerated Charter",
+        "st": "CA",
+        "id": "C0604059",
+        "u": "Santa Rosa Teachers Association (CTA/NEA)",
+        "c": "Santa Rosa",
+        "dt": "Via Santa Rosa City Schools district CBA (structural coverage)"
+      },
+      {
+        "n": "Whitmore Charter High",
+        "st": "CA",
+        "id": "C0604069",
+        "u": "Ceres Teachers Association (CTA) — coverage unverified",
+        "c": "Ceres",
+        "dt": "Via Ceres Unified School District district CBA (structural coverage — verification needed)"
+      },
+      {
+        "n": "Whitmore Charter School Of Art & Technology",
+        "st": "CA",
+        "id": "C0604070",
+        "u": "Ceres Teachers Association (CTA) — coverage unverified",
+        "c": "Ceres",
+        "dt": "Via Ceres Unified School District district CBA (structural coverage — verification needed)"
+      },
+      {
+        "n": "Oak Grove Elementary/Willowside Middle",
+        "st": "CA",
+        "id": "C0604071",
+        "u": "Oak Grove Education Association (CTA)",
+        "c": "Santa Rosa",
+        "dt": "Via Oak Grove Union Elementary SD district CBA (structural coverage)"
+      },
+      {
+        "n": "Creative Connections Arts Academy",
+        "st": "CA",
+        "id": "C0605015",
+        "u": "Twin Rivers Educators Association (CTA/NEA) — coverage unver",
+        "c": "NORTH HIGHLANDS",
+        "dt": "Via Twin Rivers Unified School District district CBA (structural coverage — verification needed)"
+      },
+      {
+        "n": "Fairmont Charter Elementary",
+        "st": "CA",
+        "id": "C0606038",
+        "u": "Vacaville Teachers Association (CTA/NEA)",
+        "c": "Vacaville",
+        "dt": "Via Vacaville Unified School District district CBA (structural coverage)"
+      },
+      {
+        "n": "Forestville Academy",
+        "st": "CA",
+        "id": "C0606040",
+        "u": "Forestville Teachers Association (CTA)",
+        "c": "Forestville",
+        "dt": "Via Forestville Union Elementary School District district CBA (structural coverage)"
+      },
+      {
+        "n": "Paradise Charter",
+        "st": "CA",
+        "id": "C0606064",
+        "u": "Paradise Teachers Association (CTA)",
+        "c": "Modesto",
+        "dt": "Via Paradise Elementary School District district CBA (structural coverage)"
+      },
+      {
+        "n": "Salmon Creek School - A Charter",
+        "st": "CA",
+        "id": "C0606069",
+        "u": "Harmony Teachers Association (CTA)",
+        "c": "Occidental",
+        "dt": "Via Harmony Union Elementary School District district CBA (structural coverage)"
+      },
+      {
+        "n": "Butterfield Charter",
+        "st": "CA",
+        "id": "C0607012",
+        "u": "Porterville Federation of Teachers (AFT/CFT) or Porterville ",
+        "c": "Porterville",
+        "dt": "Via Porterville Unified School District district CBA (structural coverage)"
+      },
+      {
+        "n": "Santa Rosa Charter School For The Arts",
+        "st": "CA",
+        "id": "C0607074",
+        "u": "Santa Rosa Teachers Association (CTA/NEA)",
+        "c": "Santa Rosa",
+        "dt": "Via Santa Rosa City Schools district CBA (structural coverage)"
+      },
+      {
+        "n": "Vallejo Charter",
+        "st": "CA",
+        "id": "C0607090",
+        "u": "Vallejo Education Association (CTA/NEA)",
+        "c": "Vallejo",
+        "dt": "Via Vallejo City Unified district CBA (structural coverage)"
+      },
+      {
+        "n": "Palm Desert Charter Middle",
+        "st": "CA",
+        "id": "C0608009",
+        "u": "Desert Sands Teachers Association (CTA/NEA) — coverage unver",
+        "c": "Palm Desert",
+        "dt": "Via Desert Sands Unified School District district CBA (structural coverage — verification needed)"
+      },
+      {
+        "n": "Academy Of Careers And Exploration",
+        "st": "CA",
+        "id": "C0608013",
+        "u": "Helendale Teachers Association (CTA)",
+        "c": "Helendale",
+        "dt": "Via Helendale Elementary School District district CBA (structural coverage)"
+      },
+      {
+        "n": "Orcutt Academy Charter",
+        "st": "CA",
+        "id": "C0608046",
+        "u": "Orcutt Teachers Association (CTA) — coverage unverified",
+        "c": "Los Alamos",
+        "dt": "Via Orcutt Union Elementary School District district CBA (structural coverage — verification needed)"
+      },
+      {
+        "n": "Ceiba College Preparatory Academy",
+        "st": "CA",
+        "id": "C0608077",
+        "u": "Pajaro Valley Federation of Teachers (AFT/CFT Local 1936)",
+        "c": "Watsonville",
+        "dt": "Via Pajaro Valley Unified SD district CBA (structural coverage)"
+      },
+      {
+        "n": "Da Vinci Charter Academy High",
+        "st": "CA",
+        "id": "C0609019",
+        "u": "Davis Teachers Association (CTA/NEA) — coverage unverified",
+        "c": "Davis",
+        "dt": "Via Davis Joint Unified School District district CBA (structural coverage — verification needed)"
+      },
+      {
+        "n": "Stockton Early College Academy",
+        "st": "CA",
+        "id": "C0609068",
+        "u": "Stockton Teachers Association (CTA/NEA) — coverage unverifie",
+        "c": "STOCKTON",
+        "dt": "Via Stockton Unified School District district CBA (structural coverage — verification needed)"
+      },
+      {
+        "n": "Cielo Vista Charter",
+        "st": "CA",
+        "id": "C0610033",
+        "u": "Palm Springs Teachers Association (CTA/NEA) — coverage unver",
+        "c": "Palm Springs",
+        "dt": "Via Palm Springs Unified School District district CBA (structural coverage — verification needed)"
+      },
+      {
+        "n": "Pittman Charter",
+        "st": "CA",
+        "id": "C0610084",
+        "u": "Stockton Teachers Association (CTA/NEA) — coverage unverifie",
+        "c": "STOCKTON",
+        "dt": "Via Stockton Unified School District district CBA (structural coverage — verification needed)"
+      },
+      {
+        "n": "Village Elementary Charter",
+        "st": "CA",
+        "id": "C0610105",
+        "u": "Rincon Valley Teachers Association (CTA)",
+        "c": "Santa Rosa",
+        "dt": "Via Rincon Valley Union Elementary SD district CBA (structural coverage)"
+      },
+      {
+        "n": "Western Center Academy",
+        "st": "CA",
+        "id": "C0610109",
+        "u": "Hemet Teachers Association (CTA) — coverage unverified",
+        "c": "Hemet",
+        "dt": "Via Hemet Unified School District district CBA (structural coverage — verification needed)"
+      },
+      {
+        "n": "Chicago Park Community Charter",
+        "st": "CA",
+        "id": "C0611023",
+        "u": "Chicago Park Teachers Association (CTA)",
+        "c": "Grass Valley",
+        "dt": "Via Chicago Park Elementary School District district CBA (structural coverage)"
+      },
+      {
+        "n": "Del Vista Math And Science Academy",
+        "st": "CA",
+        "id": "C0611032",
+        "u": "Delano Teachers Association (CTA/NEA)",
+        "c": "Delano",
+        "dt": "Via Delano Union Elementary School District district CBA (structural coverage)"
+      },
+      {
+        "n": "San Miguel Elementary",
+        "st": "CA",
+        "id": "C0612096",
+        "u": "Mark West Teachers Association (CTA)",
+        "c": "Santa Rosa",
+        "dt": "Via Mark West Union School District district CBA (structural coverage)"
+      },
+      {
+        "n": "Old Adobe Elementary Charter",
+        "st": "CA",
+        "id": "C0612098",
+        "u": "Old Adobe Teachers Association (CTA)",
+        "c": "PETALUMA",
+        "dt": "Via Old Adobe Union Elementary School District district CBA (structural coverage)"
+      },
+      {
+        "n": "Santa Rosa French-American Charter (Srfacs)",
+        "st": "CA",
+        "id": "C0612103",
+        "u": "Santa Rosa Teachers Association (CTA/NEA)",
+        "c": "Santa Rosa",
+        "dt": "Via Santa Rosa City Schools district CBA (structural coverage)"
+      },
+      {
+        "n": "New Joseph Bonnheim (Njb) Community Charter",
+        "st": "CA",
+        "id": "C0614061",
+        "u": "Sacramento City Teachers Association (CTA/NEA) — coverage un",
+        "c": "Sacramento",
+        "dt": "Via Sacramento City Unified district CBA (structural coverage — verification needed)"
+      },
+      {
+        "n": "Advanced Learning Academy",
+        "st": "CA",
+        "id": "C0615002",
+        "u": "Santa Ana Educators Association (CTA/NEA) — coverage unverif",
+        "c": "Santa Ana",
+        "dt": "Via Santa Ana Unified School District district CBA (structural coverage — verification needed)"
+      },
+      {
+        "n": "Evergreen Institute Of Excellence",
+        "st": "CA",
+        "id": "C0615030",
+        "u": "Evergreen Teachers Association (CTA)",
+        "c": "Cottonwood",
+        "dt": "Via Evergreen Union Elementary School District district CBA (structural coverage)"
+      },
+      {
+        "n": "Accelerated Charter High",
+        "st": "CA",
+        "id": "C0616049",
+        "u": "Tulare Teachers Association (CTA/NEA)",
+        "c": "Tulare",
+        "dt": "Via Tulare Joint Union High School District district CBA (structural coverage)"
+      },
+      {
+        "n": "Bowling Green Charter Mccoy Academuy",
+        "st": "CA",
+        "id": "C0693001",
+        "u": "Sacramento City Teachers Association (CTA/NEA) — coverage un",
+        "c": "Sacramento",
+        "dt": "Via Sacramento City Unified district CBA (structural coverage — verification needed)"
+      },
+      {
+        "n": "Buckingham Collegiate Charter Academy",
+        "st": "CA",
+        "id": "C0694008",
+        "u": "Vacaville Teachers Association (CTA/NEA)",
+        "c": "Vacaville",
+        "dt": "Via Vacaville Unified School District district CBA (structural coverage)"
+      },
+      {
+        "n": "Linscott Charter",
+        "st": "CA",
+        "id": "C0694014",
+        "u": "Pajaro Valley Federation of Teachers (AFT/CFT Local 1936)",
+        "c": "Watsonville",
+        "dt": "Via Pajaro Valley Unified SD district CBA (structural coverage)"
+      },
+      {
+        "n": "Hart-Ransom Academic Charter",
+        "st": "CA",
+        "id": "C0695006",
+        "u": "Hart-Ransom Teachers Association (CTA)",
+        "c": "Modesto",
+        "dt": "Via Hart-Ransom Union Elementary School District district CBA (structural coverage)"
+      },
+      {
+        "n": "Kern Workforce 2000 Academy",
+        "st": "CA",
+        "id": "C0695008",
+        "u": "Kern High School Teachers Association (CTA/NEA) — coverage u",
+        "c": "Bakersfield",
+        "dt": "Via Kern High School District district CBA (structural coverage — verification needed)"
+      },
+      {
+        "n": "Westside Preparatory Charter",
+        "st": "CA",
+        "id": "C0695020",
+        "u": "Twin Rivers Educators Association (CTA/NEA) — coverage unver",
+        "c": "Rio Linda",
+        "dt": "Via Twin Rivers Unified School District district CBA (structural coverage — verification needed)"
+      },
+      {
+        "n": "Central Valley Home",
+        "st": "CA",
+        "id": "C0696004",
+        "u": "Kingsburg Elementary Teachers Association (CTA)",
+        "c": "Kingsburg",
+        "dt": "Via Kingsburg Elementary Charter School District district CBA (structural coverage)"
+      },
+      {
+        "n": "Piner-Olivet Charter",
+        "st": "CA",
+        "id": "C0696011",
+        "u": "Piner-Olivet Teachers Association (CTA)",
+        "c": "Santa Rosa",
+        "dt": "Via Piner-Olivet Union Elementary SD district CBA (structural coverage)"
+      },
+      {
+        "n": "Cali Calmecac Language Academy",
+        "st": "CA",
+        "id": "C0698002",
+        "u": "Windsor Teachers Association (CTA/NEA)",
+        "c": "Windsor",
+        "dt": "Via Windsor Unified School District district CBA (structural coverage)"
+      },
+      {
+        "n": "Circle Of Independent Learning",
+        "st": "CA",
+        "id": "C0698005",
+        "u": "Fremont Teachers Association (CTA/NEA) — coverage unverified",
+        "c": "Fremont",
+        "dt": "Via Fremont Unified School District district CBA (structural coverage — verification needed)"
+      },
+      {
+        "n": "Diamond Technology Institute",
+        "st": "CA",
+        "id": "C0699001",
+        "u": "Pajaro Valley Federation of Teachers (AFT/CFT Local 1936)",
+        "c": "Watsonville",
+        "dt": "Via Pajaro Valley Unified SD district CBA (structural coverage)"
+      },
+      {
+        "n": "Alianza Charter",
+        "st": "CA",
+        "id": "C0699003",
+        "u": "Pajaro Valley Federation of Teachers (AFT/CFT Local 1936)",
+        "c": "Watsonville",
+        "dt": "Via Pajaro Valley Unified SD district CBA (structural coverage)"
+      },
+      {
+        "n": "Charter Home School Academy",
+        "st": "CA",
+        "id": "C0699008",
+        "u": "Visalia Teachers Association (CTA/NEA) — coverage unverified",
+        "c": "Visalia",
+        "dt": "Via Visalia Unified School District district CBA (structural coverage — verification needed)"
+      },
+      {
+        "n": "Elk Grove Charter",
+        "st": "CA",
+        "id": "C0699016",
+        "u": "Elk Grove Education Association (CTA/NEA) — coverage unverif",
+        "c": "Elk Grove",
+        "dt": "Via Elk Grove Unified School District district CBA (structural coverage — verification needed)"
+      },
+      {
+        "n": "Pacific Coast Charter",
+        "st": "CA",
+        "id": "C0699037",
+        "u": "Pajaro Valley Federation of Teachers (AFT/CFT Local 1936)",
+        "c": "Watsonville",
+        "dt": "Via Pajaro Valley Unified SD district CBA (structural coverage)"
+      },
+      {
+        "n": "ELM CITY MONTESSORI SCHOOL",
+        "st": "CT",
+        "id": "C0914002",
+        "u": "New Haven Federation of Teachers (NHFT)",
+        "c": "New Haven",
+        "dt": "N/A — DEPENDENT (covered by pre-existing NHFT district CBA from school opening)"
+      },
+      {
+        "n": "Academy of Environmental Science",
+        "st": "FL",
+        "id": "C1299001",
+        "u": "Citrus County Education Association (CCEA)",
+        "c": "Crystal River",
+        "dt": "N/A — DEPENDENT status (district CBA applies)"
+      },
+      {
+        "n": "Bellalago Charter Academy",
+        "st": "FL",
+        "id": "C1204006",
+        "u": "Osceola County Education Association (OCEA)",
+        "c": "Kissimmee",
+        "dt": "N/A — DEPENDENT status (district CBA applies)"
+      },
+      {
+        "n": "Children's Reading Center Charter School",
+        "st": "FL",
+        "id": "C1203026",
+        "u": "Putnam Federation of Teachers/United (PFT/United)",
+        "c": "Palatka",
+        "dt": "N/A — DEPENDENT status (district CBA applies)"
+      },
+      {
+        "n": "SPRINGFIELD BALL CHARTER SCHOOL",
+        "st": "IL",
+        "id": "C1798018",
+        "u": "Springfield Education Association (SEA) — district CBA cover",
+        "c": "Springfield",
+        "dt": "N/A — structural coverage, no independent certification event"
+      },
+      {
+        "n": "BOSTON GREEN ACADEMY HORACE MANN CHARTER SCHOOL",
+        "st": "MA",
+        "id": "C2511003",
+        "u": "Boston Teachers Union Local 66 / AFT Massachusetts",
+        "c": "Boston",
+        "dt": "September 2011 (school opening — Horace Mann statutory coverage)"
+      },
+      {
+        "n": "DUDLEY STREET NEIGHBORHOOD CHARTER SCHOOL",
+        "st": "MA",
+        "id": "C2512008",
+        "u": "Boston Teachers Union Local 66 / AFT Massachusetts",
+        "c": "Boston",
+        "dt": "2012 (school opening — Horace Mann statutory coverage)"
+      },
+      {
+        "n": "UP ACADEMY CHARTER SCHOOL OF DORCHESTER",
+        "st": "MA",
+        "id": "C2513006",
+        "u": "Boston Teachers Union Local 66 / AFT Massachusetts",
+        "c": "Boston",
+        "dt": "2013 (school opening — Horace Mann statutory coverage)"
+      },
+      {
+        "n": "BOSTON DAY AND EVENING ACADEMY",
+        "st": "MA",
+        "id": "C2598004",
+        "u": "Boston Teachers Union Local 66 / AFT Massachusetts",
+        "c": "Boston",
+        "dt": "1998 (Horace Mann charter authorization — school opening)"
+      },
+      {
+        "n": "EDWARD M. KENNEDY ACADEMY FOR HEALTH CAREERS",
+        "st": "MA",
+        "id": "C2598007",
+        "u": "Boston Teachers Union Local 66 / AFT Massachusetts",
+        "c": "Boston",
+        "dt": "2007 (school opening — Horace Mann statutory coverage)"
+      },
+      {
+        "n": "John V. Lindsay Wildcat Academy CS — Bronx Campus",
+        "st": "NY",
+        "id": "C3600011",
+        "u": "United Federation of Teachers (UFT) Local 2",
+        "c": "Bronx",
+        "dt": "2000 — converted from NYC DOE alternative public school (founded 1992/1993 as district alternative); UFT coverage transferred automatically at conversion under NY Charter Schools Act"
+      },
+      {
+        "n": "John V. Lindsay Wildcat Academy CS — Manhattan Campus",
+        "st": "NY",
+        "id": "C3600012",
+        "u": "United Federation of Teachers (UFT) Local 2",
+        "c": "New York",
+        "dt": "2000 — same conversion event as Bronx campus; UFT coverage transferred automatically at conversion under NY Charter Schools Act"
+      },
+      {
+        "n": "KIPP Academy Charter School",
+        "st": "NY",
+        "id": "C3600013",
+        "u": "United Federation of Teachers (UFT) Local 2",
+        "c": "Bronx",
+        "dt": "2000 — KIPP Academy converted from a program within PS 156 (Bronx); UFT coverage transferred automatically at conversion under NY Charter Schools Act. \"At no time did the KIPP Academy classroom teacher ever vote to have the UFT represent them. They were subject to automatic, non-consensual representation by the UFT\" (KIPP federal complaint 2017)."
+      },
+      {
+        "n": "Future Leaders Institute Charter School",
+        "st": "NY",
+        "id": "C3605009",
+        "u": "United Federation of Teachers (UFT) Local 2",
+        "c": "New York",
+        "dt": "2005 — converted from NYC DOE district school; UFT coverage transferred automatically at conversion under NY Charter Schools Act"
+      },
+      {
+        "n": "Franklin Local Community School",
+        "st": "OH",
+        "id": "C3906029",
+        "u": "Franklin Local Education Association (FLEA)",
+        "c": "McConnelsville",
+        "dt": "Covered from school opening — district CBA extends by operation of Ohio law"
+      },
+      {
+        "n": "Coshocton Opportunity School",
+        "st": "OH",
+        "id": "C3906011",
+        "u": "Coshocton City Education Association",
+        "c": "Coshocton",
+        "dt": "Covered from school opening — district CBA extends by operation of Ohio law"
+      },
+      {
+        "n": "Eagle Learning Center",
+        "st": "OH",
+        "id": "C3906013",
+        "u": "Oregon City Federation of Teachers",
+        "c": "Oregon",
+        "dt": "Covered from school opening — district CBA extends by operation of Ohio law"
+      },
+      {
+        "n": "Fairborn Digital Academy",
+        "st": "OH",
+        "id": "C3902009",
+        "u": "Fairborn Education Association",
+        "c": "Fairborn",
+        "dt": "Covered from school opening — district CBA extends by operation of Ohio law"
+      },
+      {
+        "n": "Findlay Digital Academy",
+        "st": "OH",
+        "id": "C3905013",
+        "u": "Findlay Education Association",
+        "c": "Findlay",
+        "dt": "Covered from school opening — district CBA extends by operation of Ohio law"
+      },
+      {
+        "n": "Foxfire High School",
+        "st": "OH",
+        "id": "C3903003",
+        "u": "Maysville Education Association",
+        "c": "Mcconnelsville",
+        "dt": "Covered from school opening — district CBA extends by operation of Ohio law"
+      },
+      {
+        "n": "Foxfire Intermediate School",
+        "st": "OH",
+        "id": "C3910011",
+        "u": "Maysville Education Association",
+        "c": "Mcconnelsville",
+        "dt": "Covered from school opening — district CBA extends by operation of Ohio law"
+      },
+      {
+        "n": "Par Excellence Academy",
+        "st": "OH",
+        "id": "C3906030",
+        "u": "Newark Teachers Association",
+        "c": "Newark",
+        "dt": "Covered from school opening — district CBA extends by operation of Ohio law"
+      },
+      {
+        "n": "Quaker Digital Academy",
+        "st": "OH",
+        "id": "C3904050",
+        "u": "New Philadelphia Education Association",
+        "c": "New Philadelphia",
+        "dt": "Covered from school opening — district CBA extends by operation of Ohio law"
+      },
+      {
+        "n": "Rittman Academy",
+        "st": "OH",
+        "id": "C3905032",
+        "u": "Rittman Education Association",
+        "c": "Rittman",
+        "dt": "Covered from school opening — district CBA extends by operation of Ohio law"
+      },
+      {
+        "n": "Schnee Learning Center",
+        "st": "OH",
+        "id": "C3905033",
+        "u": "Cuyahoga Falls Education Association",
+        "c": "Cuyahoga Falls",
+        "dt": "Covered from school opening — district CBA extends by operation of Ohio law"
+      },
+      {
+        "n": "Tomorrow Center Digital",
+        "st": "OH",
+        "id": "C3902042",
+        "u": "Mount Gilead Teachers Association",
+        "c": "Cardington",
+        "dt": "Covered from school opening — district CBA extends by operation of Ohio law"
+      },
+      {
+        "n": "Utica Shale Academy of Ohio",
+        "st": "OH",
+        "id": "C3914011",
+        "u": "Jefferson County Teachers Association",
+        "c": "Salineville",
+        "dt": "Covered from school opening — district CBA extends by operation of Ohio law"
+      },
+      {
+        "n": "Zanesville Community High School",
+        "st": "OH",
+        "id": "C3907020",
+        "u": "Zanesville Education Association (ZEA)",
+        "c": "Zanesville",
+        "dt": "Covered from school opening — district CBA extends by operation of Ohio law"
+      },
+      {
+        "n": "HOWARD STREET CHARTER",
+        "st": "OR",
+        "id": "C4102003",
+        "u": "Salem-Keizer Education Association (SKEA) / OEA / NEA",
+        "c": "Salem",
+        "dt": "School opening (Salem-Keizer district CBA coverage from inception)"
+      },
+      {
+        "n": "OPTIMUM LEARNING ENVIRONMENT CHARTER SCHOOL",
+        "st": "OR",
+        "id": "C4102008",
+        "u": "Salem-Keizer Education Association (SKEA) / OEA / NEA",
+        "c": "Keizer",
+        "dt": "School opening (Salem-Keizer district CBA)"
+      },
+      {
+        "n": "CAMAS VALLEY SCHOOL",
+        "st": "OR",
+        "id": "C4104003",
+        "u": "Local OEA chapter or no union (tiny rural district — UNVERIF",
+        "c": "Camas Valley",
+        "dt": "Unknown — ERB records request required"
+      },
+      {
+        "n": "CENTER FOR ADVANCED LEARNING",
+        "st": "OR",
+        "id": "C4104004",
+        "u": "Gresham-Barlow Education Association (GBEA) / OEA / NEA",
+        "c": "Gresham",
+        "dt": "School opening (Gresham-Barlow district CBA — LIKELY)"
+      },
+      {
+        "n": "CLACKAMAS MIDDLE COLLEGE",
+        "st": "OR",
+        "id": "C4104006",
+        "u": "North Clackamas Education Association (NCEA) / OEA / NEA",
+        "c": "Happy Valley",
+        "dt": "School opening (North Clackamas district CBA — LIKELY)"
+      },
+      {
+        "n": "JANE GOODALL ENVIRONMENTAL MIDDLE CHARTER SCHOOL",
+        "st": "OR",
+        "id": "C4104008",
+        "u": "Salem-Keizer Education Association (SKEA) / OEA / NEA",
+        "c": "Salem",
+        "dt": "School opening (Salem-Keizer district CBA)"
+      },
+      {
+        "n": "PAISLEY CHARTER SCHOOL",
+        "st": "OR",
+        "id": "C4104011",
+        "u": "Local OEA chapter or no union (tiny rural district — UNVERIF",
+        "c": "Paisley",
+        "dt": "Unknown — ERB records request required"
+      },
+      {
+        "n": "CLACKAMAS WEB ACADEMY",
+        "st": "OR",
+        "id": "C4105004",
+        "u": "North Clackamas Education Association (NCEA) / OEA / NEA",
+        "c": "Clackamas",
+        "dt": "School opening (North Clackamas district CBA — LIKELY)"
+      },
+      {
+        "n": "DAYS CREEK CHARTER SCHOOL",
+        "st": "OR",
+        "id": "C4105005",
+        "u": "Local OEA chapter or no union (tiny rural district — UNVERIF",
+        "c": "Days Creek",
+        "dt": "Unknown"
+      },
+      {
+        "n": "IONE COMMUNITY CHARTER SCHOOL",
+        "st": "OR",
+        "id": "C4105008",
+        "u": "Local OEA chapter or no union (tiny rural district — UNVERIF",
+        "c": "Ione",
+        "dt": "Unknown"
+      },
+      {
+        "n": "CASCADE HEIGHTS PUBLIC CHARTER SCHOOL",
+        "st": "OR",
+        "id": "C4106002",
+        "u": "North Clackamas Education Association (NCEA) / OEA / NEA",
+        "c": "Clackamas",
+        "dt": "School opening (North Clackamas district CBA — LIKELY)"
+      },
+      {
+        "n": "MILWAUKIE ACADEMY OF THE ARTS",
+        "st": "OR",
+        "id": "C4106005",
+        "u": "North Clackamas Education Association (NCEA) / OEA / NEA",
+        "c": "Milwaukie",
+        "dt": "School opening (North Clackamas district CBA — LIKELY)"
+      },
+      {
+        "n": "OREGON CITY SERVICE LEARNING ACADEMY",
+        "st": "OR",
+        "id": "C4106009",
+        "u": "Oregon City Education Association (OCEA) / OEA / NEA",
+        "c": "Oregon City",
+        "dt": "School opening (Oregon City district CBA — LIKELY)"
+      },
+      {
+        "n": "RESOURCE LINK CHARTER SCHOOL",
+        "st": "OR",
+        "id": "C4106015",
+        "u": "Coos Bay Education Association (CBEA) / OEA / NEA",
+        "c": "Coos Bay",
+        "dt": "School opening (Coos Bay district CBA — LIKELY)"
+      },
+      {
+        "n": "FOSSIL CHARTER SCHOOL",
+        "st": "OR",
+        "id": "C4107005",
+        "u": "Local OEA chapter or no union (tiny rural district — UNVERIF",
+        "c": "Fossil",
+        "dt": "Unknown"
+      },
+      {
+        "n": "IMBLER CHARTER SCHOOL",
+        "st": "OR",
+        "id": "C4109001",
+        "u": "Local OEA chapter or no union (tiny rural district — UNVERIF",
+        "c": "Imbler",
+        "dt": "Unknown"
+      },
+      {
+        "n": "COVE CHARTER SCHOOL",
+        "st": "OR",
+        "id": "C4109006",
+        "u": "Local OEA chapter or no union (tiny rural district — UNVERIF",
+        "c": "Cove",
+        "dt": "Unknown"
+      },
+      {
+        "n": "ELKTON CHARTER SCHOOL",
+        "st": "OR",
+        "id": "C4109007",
+        "u": "Local OEA chapter or no union (tiny rural district — UNVERIF",
+        "c": "Elkton",
+        "dt": "Unknown"
+      },
+      {
+        "n": "NORTH POWDER CHARTER SCHOOL",
+        "st": "OR",
+        "id": "C4109012",
+        "u": "Local OEA chapter or no union (tiny rural district — UNVERIF",
+        "c": "North Powder",
+        "dt": "Unknown"
+      },
+      {
+        "n": "PROSPECT CHARTER SCHOOL",
+        "st": "OR",
+        "id": "C4109013",
+        "u": "Local OEA chapter or no union (tiny rural district — UNVERIF",
+        "c": "Prospect",
+        "dt": "Unknown"
+      },
+      {
+        "n": "REEDSPORT COMMUNITY CHARTER SCHOOL",
+        "st": "OR",
+        "id": "C4109017",
+        "u": "Local OEA chapter or no union (small coastal district — UNVE",
+        "c": "Reedsport",
+        "dt": "Unknown"
+      },
+      {
+        "n": "PINE EAGLE CHARTER SCHOOL",
+        "st": "OR",
+        "id": "C4110007",
+        "u": "Local OEA chapter or no union (tiny rural district — UNVERIF",
+        "c": "Halfway",
+        "dt": "Unknown"
+      },
+      {
+        "n": "TRIANGLE LAKE CHARTER SCHOOL",
+        "st": "OR",
+        "id": "C4110011",
+        "u": "Local OEA chapter or no union (tiny rural district — UNVERIF",
+        "c": "Blachly",
+        "dt": "Unknown"
+      },
+      {
+        "n": "ANNEX CHARTER SCHOOL",
+        "st": "OR",
+        "id": "C4110012",
+        "u": "Local OEA chapter or no union (small eastern Oregon district",
+        "c": "Ontario",
+        "dt": "Unknown"
+      },
+      {
+        "n": "ARLINGTON CHARTER SCHOOL",
+        "st": "OR",
+        "id": "C4111001",
+        "u": "Local OEA chapter or no union (tiny rural district — UNVERIF",
+        "c": "Arlington",
+        "dt": "Unknown"
+      },
+      {
+        "n": "BUTTE FALLS CHARTER SCHOOL",
+        "st": "OR",
+        "id": "C4111003",
+        "u": "Local OEA chapter or no union (tiny rural district — UNVERIF",
+        "c": "Butte Falls",
+        "dt": "Unknown"
+      },
+      {
+        "n": "HARPER CHARTER SCHOOL",
+        "st": "OR",
+        "id": "C4111005",
+        "u": "Local OEA chapter or no union (tiny rural district — UNVERIF",
+        "c": "Harper",
+        "dt": "Unknown"
+      },
+      {
+        "n": "JOSEPH CHARTER SCHOOL",
+        "st": "OR",
+        "id": "C4111006",
+        "u": "Local OEA chapter or no union (tiny rural district — UNVERIF",
+        "c": "Joseph",
+        "dt": "Unknown"
+      },
+      {
+        "n": "BURNT RIVER CHARTER SCHOOL",
+        "st": "OR",
+        "id": "C4112001",
+        "u": "Local OEA chapter or no union (tiny rural district — UNVERIF",
+        "c": "Unity",
+        "dt": "Unknown"
+      },
+      {
+        "n": "HUNTINGTON CHARTER SCHOOL",
+        "st": "OR",
+        "id": "C4112002",
+        "u": "Local OEA chapter or no union (tiny rural district — UNVERIF",
+        "c": "Huntington",
+        "dt": "Unknown"
+      },
+      {
+        "n": "ALSEA CHARTER SCHOOL",
+        "st": "OR",
+        "id": "C4117001",
+        "u": "Local OEA chapter or no union (tiny rural district — UNVERIF",
+        "c": "Alsea",
+        "dt": "Unknown"
+      },
+      {
+        "n": "Academy For Character Education",
+        "st": "OR",
+        "id": "NCES-411158001727",
+        "u": "South Lane Education Association / OEA / NEA",
+        "c": "Cottage Grove",
+        "dt": "School opening (South Lane SD 45J3 CBA coverage from inception)"
+      },
+      {
+        "n": "Alliance Charter Academy",
+        "st": "OR",
+        "id": "NCES-410933001725",
+        "u": "Oregon City Education Association / OEA / NEA",
+        "c": "Oregon City",
+        "dt": "School opening (Oregon City SD 62 CBA coverage from inception)"
+      },
+      {
+        "n": "Arco Iris Spanish Immersion School",
+        "st": "OR",
+        "id": "NCES-410192001791",
+        "u": "Beaverton Education Association (BEA) / OEA / NEA",
+        "c": "Beaverton",
+        "dt": "School opening (Beaverton SD 48J CBA coverage from inception)"
+      },
+      {
+        "n": "Armadillo Community Charter School",
+        "st": "OR",
+        "id": "NCES-410963001489",
+        "u": "Phoenix-Talent Education Association / OEA / NEA",
+        "c": "Phoenix",
+        "dt": "School opening (Phoenix-Talent SD 4 CBA coverage from inception)"
+      },
+      {
+        "n": "Arthur Academy",
+        "st": "OR",
+        "id": "NCES-410394004181",
+        "u": "David Douglas Education Association / OEA / NEA",
+        "c": "Portland",
+        "dt": "School opening (David Douglas SD 40 CBA coverage from inception)"
+      },
+      {
+        "n": "Baker Early College",
+        "st": "OR",
+        "id": "NCES-410171001783",
+        "u": "Baker Education Association / OEA / NEA",
+        "c": "Baker City",
+        "dt": "School opening (Baker SD 5J CBA coverage from inception)"
+      },
+      {
+        "n": "Baker Web Academy",
+        "st": "OR",
+        "id": "NCES-410171001767",
+        "u": "Baker Education Association / OEA / NEA",
+        "c": "Baker City",
+        "dt": "School opening (Baker SD 5J CBA coverage from inception)"
+      },
+      {
+        "n": "Bend International School",
+        "st": "OR",
+        "id": "NCES-410198001845",
+        "u": "Bend Education Association (BEA) / OEA / NEA",
+        "c": "Bend",
+        "dt": "School opening (Bend-Lapine Administrative SD 1 CBA coverage from inception)"
+      },
+      {
+        "n": "Bethany Charter School",
+        "st": "OR",
+        "id": "NCES-411145000829",
+        "u": "Silver Falls Education Association / OEA / NEA",
+        "c": "Silverton",
+        "dt": "School opening (Silver Falls SD 4J CBA coverage from inception)"
+      },
+      {
+        "n": "Bridge Charter Academy",
+        "st": "OR",
+        "id": "NCES-410759001846",
+        "u": "Lowell Education Association / OEA / NEA",
+        "c": "Lowell",
+        "dt": "School opening (Lowell SD 71 CBA coverage from inception)"
+      },
+      {
+        "n": "Cascade Virtual Academy",
+        "st": "OR",
+        "id": "NCES-410828001869",
+        "u": "Mitchell Education Association / OEA / NEA",
+        "c": "Prineville",
+        "dt": "School opening (Mitchell SD 55 CBA coverage from inception)"
+      },
+      {
+        "n": "Childs Way Charter School",
+        "st": "OR",
+        "id": "NCES-411158001677",
+        "u": "South Lane Education Association / OEA / NEA",
+        "c": "Dorena",
+        "dt": "School opening (South Lane SD 45J3 CBA coverage from inception)"
+      },
+      {
+        "n": "City View Charter School",
+        "st": "OR",
+        "id": "NCES-410002301535",
+        "u": "Hillsboro Education Association (HEA) / OEA / NEA",
+        "c": "Hillsboro",
+        "dt": "School opening (Hillsboro SD 1J CBA coverage from inception)"
+      },
+      {
+        "n": "Clackamas Academy of Industrial Sciences",
+        "st": "OR",
+        "id": "NCES-410933001793",
+        "u": "Oregon City Education Association / OEA / NEA",
+        "c": "Oregon City",
+        "dt": "School opening (Oregon City SD 62 CBA coverage from inception)"
+      },
+      {
+        "n": "Coburg Community Charter School",
+        "st": "OR",
+        "id": "NCES-410474000533",
+        "u": "Eugene Education Association (EEA) / OEA / NEA",
+        "c": "Eugene",
+        "dt": "School opening (Eugene SD 4J CBA coverage from inception)"
+      },
+      {
+        "n": "Corbett School",
+        "st": "OR",
+        "id": "NCES-410342001729",
+        "u": "Corbett Education Association / OEA / NEA",
+        "c": "Corbett",
+        "dt": "School opening (Corbett SD 39 CBA coverage from inception)"
+      },
+      {
+        "n": "Crater Lake Academy",
+        "st": "OR",
+        "id": "NCES-410450001831",
+        "u": "Eagle Point Education Association / OEA / NEA",
+        "c": "Eagle Point",
+        "dt": "School opening (Eagle Point SD 9 CBA coverage from inception)"
+      },
+      {
+        "n": "Dallas Community Charter",
+        "st": "OR",
+        "id": "NCES-410386001835",
+        "u": "Dallas Education Association / OEA / NEA",
+        "c": "Dallas",
+        "dt": "School opening (Dallas SD 2 CBA coverage from inception)"
+      },
+      {
+        "n": "Desert Sky Montessori",
+        "st": "OR",
+        "id": "NCES-410198001860",
+        "u": "Bend Education Association (BEA) / OEA / NEA",
+        "c": "Bend",
+        "dt": "School opening (Bend-Lapine Administrative SD 1 CBA coverage from inception)"
+      },
+      {
+        "n": "Destinations Career Academy of Oregon",
+        "st": "OR",
+        "id": "NCES-410828001864",
+        "u": "Mitchell Education Association / OEA / NEA",
+        "c": "Prineville",
+        "dt": "School opening (Mitchell SD 55 CBA coverage from inception)"
+      },
+      {
+        "n": "Eddyville Charter School",
+        "st": "OR",
+        "id": "NCES-410750001582",
+        "u": "Lincoln County Education Association / OEA / NEA",
+        "c": "Eddyville",
+        "dt": "School opening (Lincoln County SD CBA coverage from inception)"
+      },
+      {
+        "n": "Emerson School",
+        "st": "OR",
+        "id": "NCES-411004001581",
+        "u": "Portland Association of Teachers (PAT) / OEA / NEA",
+        "c": "Portland",
+        "dt": "School opening (Portland SD 1J CBA coverage from inception)"
+      },
+      {
+        "n": "Forest Grove Community School",
+        "st": "OR",
+        "id": "NCES-410516001724",
+        "u": "Forest Grove Education Association / OEA / NEA",
+        "c": "Forest Grove",
+        "dt": "School opening (Forest Grove SD 15 CBA coverage from inception)"
+      },
+      {
+        "n": "Frontier Charter Academy",
+        "st": "OR",
+        "id": "NCES-410001501859",
+        "u": "Gervais Education Association / OEA / NEA",
+        "c": "Gervais",
+        "dt": "School opening (Gervais SD 1 CBA coverage from inception)"
+      },
+      {
+        "n": "Glendale Community Charter School Pre-K-12",
+        "st": "OR",
+        "id": "NCES-410564000327",
+        "u": "Glendale Education Association / OEA / NEA",
+        "c": "Glendale",
+        "dt": "School opening (Glendale SD 77 CBA coverage from inception)"
+      },
+      {
+        "n": "Gresham Arthur Academy",
+        "st": "OR",
+        "id": "NCES-410600001733",
+        "u": "Gresham-Barlow Education Association / OEA / NEA",
+        "c": "Gresham",
+        "dt": "School opening (Gresham-Barlow SD 10J CBA coverage from inception)"
+      },
+      {
+        "n": "Holla School",
+        "st": "OR",
+        "id": "NCES-411052011356",
+        "u": "Reynolds Education Association / OEA / NEA",
+        "c": "Portland",
+        "dt": "School opening (Reynolds SD 7 CBA coverage from inception)"
+      },
+      {
+        "n": "Harmony Academy",
+        "st": "OR",
+        "id": "NCES-410723001873",
+        "u": "Lake Oswego Education Association / OEA / NEA",
+        "c": "Lake Oswego",
+        "dt": "School opening (Lake Oswego SD 7J CBA coverage from inception)"
+      },
+      {
+        "n": "Helix Charter School",
+        "st": "OR",
+        "id": "NCES-410627001084",
+        "u": "Helix Education Association / OEA / NEA",
+        "c": "Helix",
+        "dt": "School opening (Helix SD 1 CBA coverage from inception)"
+      },
+      {
+        "n": "Hope Chinese Charter School",
+        "st": "OR",
+        "id": "NCES-410192001823",
+        "u": "Beaverton Education Association (BEA) / OEA / NEA",
+        "c": "Beaverton",
+        "dt": "School opening (Beaverton SD 48J CBA coverage from inception)"
+      },
+      {
+        "n": "Inavale Community Partners Dba Muddy Creek Charter School",
+        "st": "OR",
+        "id": "NCES-410348001743",
+        "u": "Corvallis Education Association (CEA) / OEA / NEA",
+        "c": "Corvallis",
+        "dt": "School opening (Corvallis SD 509J CBA coverage from inception)"
+      },
+      {
+        "n": "Insight School of Oregon Painted Hills",
+        "st": "OR",
+        "id": "NCES-410828001813",
+        "u": "Mitchell Education Association / OEA / NEA",
+        "c": "Mitchell",
+        "dt": "School opening (Mitchell SD 55 CBA coverage from inception)"
+      },
+      {
+        "n": "Kairos Pdx",
+        "st": "OR",
+        "id": "NCES-411004001830",
+        "u": "Portland Association of Teachers (PAT) / OEA / NEA",
+        "c": "Portland",
+        "dt": "School opening (Portland SD 1J CBA coverage from inception)"
+      },
+      {
+        "n": "Kalmiopsis Community Arts High School",
+        "st": "OR",
+        "id": "NCES-410690011366",
+        "u": "Three Rivers Education Association / OEA / NEA",
+        "c": "Cave Junction",
+        "dt": "School opening (Three Rivers/Josephine County SD CBA coverage from inception)"
+      },
+      {
+        "n": "Kids Unlimited Academy",
+        "st": "OR",
+        "id": "NCES-410804001829",
+        "u": "Medford Education Association / OEA / NEA",
+        "c": "Medford",
+        "dt": "School opening (Medford SD 549C CBA coverage from inception)"
+      },
+      {
+        "n": "Kings Valley Charter School",
+        "st": "OR",
+        "id": "NCES-410960000021",
+        "u": "Philomath Education Association / OEA / NEA",
+        "c": "Philomath",
+        "dt": "School opening (Philomath SD 17J CBA coverage from inception)"
+      },
+      {
+        "n": "Le Monde French Immersion Public Charter School",
+        "st": "OR",
+        "id": "NCES-411004001814",
+        "u": "Portland Association of Teachers (PAT) / OEA / NEA",
+        "c": "Portland",
+        "dt": "School opening (Portland SD 1J CBA coverage from inception)"
+      },
+      {
+        "n": "Lewis And Clark Montessori Charter School",
+        "st": "OR",
+        "id": "NCES-410600001757",
+        "u": "Gresham-Barlow Education Association / OEA / NEA",
+        "c": "Gresham",
+        "dt": "School opening (Gresham-Barlow SD 10J CBA coverage from inception)"
+      },
+      {
+        "n": "Logos Charter School",
+        "st": "OR",
+        "id": "NCES-410804001796",
+        "u": "Medford Education Association / OEA / NEA",
+        "c": "Medford",
+        "dt": "School opening (Medford SD 549C CBA coverage from inception)"
+      },
+      {
+        "n": "Lourdes School",
+        "st": "OR",
+        "id": "NCES-411104001494",
+        "u": "Scio Education Association / OEA / NEA",
+        "c": "Scio",
+        "dt": "School opening (Scio SD 95 CBA coverage from inception)"
+      },
+      {
+        "n": "Luckiamute Valley Charter School",
+        "st": "OR",
+        "id": "NCES-410386001045",
+        "u": "Dallas Education Association / OEA / NEA",
+        "c": "Monmouth",
+        "dt": "School opening (Dallas SD 2 CBA coverage from inception)"
+      },
+      {
+        "n": "Madrone Trail Public Charter School",
+        "st": "OR",
+        "id": "NCES-410804001736",
+        "u": "Medford Education Association / OEA / NEA",
+        "c": "Central Point",
+        "dt": "School opening (Medford SD 549C CBA coverage from inception)"
+      },
+      {
+        "n": "Mckenzie River Community School",
+        "st": "OR",
+        "id": "NCES-410798000629",
+        "u": "McKenzie Education Association / OEA / NEA",
+        "c": "Finn Rock",
+        "dt": "School opening (Mckenzie SD 68 CBA coverage from inception)"
+      },
+      {
+        "n": "Metro East Web Academy",
+        "st": "OR",
+        "id": "NCES-410600001787",
+        "u": "Gresham-Barlow Education Association / OEA / NEA",
+        "c": "Gresham",
+        "dt": "School opening (Gresham-Barlow SD 10J CBA coverage from inception)"
+      },
+      {
+        "n": "Molalla River Academy",
+        "st": "OR",
+        "id": "NCES-410831001789",
+        "u": "Molalla River Education Association / OEA / NEA",
+        "c": "Molalla",
+        "dt": "School opening (Molalla River SD 35 CBA coverage from inception)"
+      },
+      {
+        "n": "Mountain View Academy",
+        "st": "OR",
+        "id": "NCES-410759001834",
+        "u": "Lowell Education Association / OEA / NEA",
+        "c": "Lowell",
+        "dt": "School opening (Lowell SD 71 CBA coverage from inception)"
+      },
+      {
+        "n": "Multi-Sensory Instruction Teaching Children Hands-On (Mitch)",
+        "st": "OR",
+        "id": "NCES-411224004176",
+        "u": "Tigard-Tualatin Education Association / OEA / NEA",
+        "c": "Tualatin",
+        "dt": "School opening (Tigard-Tualatin SD 23J CBA coverage from inception)"
+      },
+      {
+        "n": "Multnomah Learning Academy",
+        "st": "OR",
+        "id": "NCES-411052001434",
+        "u": "Reynolds Education Association / OEA / NEA",
+        "c": "Fairview",
+        "dt": "School opening (Reynolds SD 7 CBA coverage from inception)"
+      },
+      {
+        "n": "Network Charter School",
+        "st": "OR",
+        "id": "NCES-410474001593",
+        "u": "Eugene Education Association (EEA) / OEA / NEA",
+        "c": "Eugene",
+        "dt": "School opening (Eugene SD 4J CBA coverage from inception)"
+      },
+      {
+        "n": "Nixyaawii Community School",
+        "st": "OR",
+        "id": "NCES-410951001534",
+        "u": "Pendleton Education Association / OEA / NEA",
+        "c": "Pendleton",
+        "dt": "School opening (Pendleton SD 16 CBA coverage from inception)"
+      },
+      {
+        "n": "Oregon Charter Academy",
+        "st": "OR",
+        "id": "NCES-410810001680",
+        "u": "Santiam Canyon Education Association / OEA / NEA",
+        "c": "Mill City",
+        "dt": "School opening (Santiam Canyon SD 129J CBA coverage from inception)"
+      },
+      {
+        "n": "Oregon Connections Academy",
+        "st": "OR",
+        "id": "NCES-411011001895",
+        "u": "Prairie City Education Association / OEA / NEA",
+        "c": "Prairie City",
+        "dt": "School opening (Prairie City SD 4 CBA coverage from inception)"
+      },
+      {
+        "n": "Oregon Family School",
+        "st": "OR",
+        "id": "NCES-410360001870",
+        "u": "Harney County Education Association / OEA / NEA",
+        "c": "Crane",
+        "dt": "School opening (Harney County SD 4 CBA coverage from inception)"
+      },
+      {
+        "n": "Oregon International School",
+        "st": "OR",
+        "id": "NCES-410171001877",
+        "u": "Baker Education Association / OEA / NEA",
+        "c": "Baker City",
+        "dt": "School opening (Baker SD 5J CBA coverage from inception)"
+      },
+      {
+        "n": "Oregon Trail Academy",
+        "st": "OR",
+        "id": "NCES-411089001799",
+        "u": "Oregon Trail Education Association / OEA / NEA",
+        "c": "Boring",
+        "dt": "School opening (Oregon Trail SD 46 CBA coverage from inception)"
+      },
+      {
+        "n": "Phoenix School",
+        "st": "OR",
+        "id": "NCES-411071001685",
+        "u": "Douglas County Education Association / OEA / NEA",
+        "c": "Roseburg",
+        "dt": "School opening (Douglas County SD 4 CBA coverage from inception)"
+      },
+      {
+        "n": "Portland Arthur Academy Charter School",
+        "st": "OR",
+        "id": "NCES-411004001667",
+        "u": "Portland Association of Teachers (PAT) / OEA / NEA",
+        "c": "Portland",
+        "dt": "School opening (Portland SD 1J CBA coverage from inception)"
+      },
+      {
+        "n": "Portland Village School",
+        "st": "OR",
+        "id": "NCES-411004001649",
+        "u": "Portland Association of Teachers (PAT) / OEA / NEA",
+        "c": "Portland",
+        "dt": "School opening (Portland SD 1J CBA coverage from inception)"
+      },
+      {
+        "n": "Powell Butte Community Charter School",
+        "st": "OR",
+        "id": "NCES-410372000242",
+        "u": "Crook County Education Association / OEA / NEA",
+        "c": "Powell Butte",
+        "dt": "School opening (Crook County SD CBA coverage from inception)"
+      },
+      {
+        "n": "Redmond Proficiency Academy",
+        "st": "OR",
+        "id": "NCES-411035001785",
+        "u": "Redmond Education Association / OEA / NEA",
+        "c": "Redmond",
+        "dt": "School opening (Redmond SD 2J CBA coverage from inception)"
+      },
+      {
+        "n": "Reynolds Arthur Academy",
+        "st": "OR",
+        "id": "NCES-411052001540",
+        "u": "Reynolds Education Association / OEA / NEA",
+        "c": "Troutdale",
+        "dt": "School opening (Reynolds SD 7 CBA coverage from inception)"
+      },
+      {
+        "n": "Rivers Edge Academy Charter School",
+        "st": "OR",
+        "id": "NCES-411068001811",
+        "u": "Rogue River Education Association / OEA / NEA",
+        "c": "Rogue River",
+        "dt": "School opening (Rogue River SD 35 CBA coverage from inception)"
+      },
+      {
+        "n": "Rockwood Preparatory Academy",
+        "st": "OR",
+        "id": "NCES-411052001798",
+        "u": "Reynolds Education Association / OEA / NEA",
+        "c": "Portland",
+        "dt": "School opening (Reynolds SD 7 CBA coverage from inception)"
+      },
+      {
+        "n": "Sand Ridge Charter School",
+        "st": "OR",
+        "id": "NCES-410738004186",
+        "u": "Lebanon Community Education Association / OEA / NEA",
+        "c": "Lebanon",
+        "dt": "School opening (Lebanon Community SD 9 CBA coverage from inception)"
+      },
+      {
+        "n": "Sauvie Island School",
+        "st": "OR",
+        "id": "NCES-411098001011",
+        "u": "Scappoose Education Association / OEA / NEA",
+        "c": "Portland",
+        "dt": "School opening (Scappoose SD 1J CBA coverage from inception)"
+      },
+      {
+        "n": "Sheridan Allprep Academy",
+        "st": "OR",
+        "id": "NCES-411122001803",
+        "u": "Sheridan Education Association / OEA / NEA",
+        "c": "Sheridan",
+        "dt": "School opening (Sheridan SD 48J CBA coverage from inception)"
+      },
+      {
+        "n": "Sherwood Charter School",
+        "st": "OR",
+        "id": "NCES-411129001684",
+        "u": "Sherwood Education Association / OEA / NEA",
+        "c": "Sherwood",
+        "dt": "School opening (Sherwood SD 88J CBA coverage from inception)"
+      },
+      {
+        "n": "Siletz Valley Schools",
+        "st": "OR",
+        "id": "NCES-410750001590",
+        "u": "Lincoln County Education Association / OEA / NEA",
+        "c": "Siletz",
+        "dt": "School opening (Lincoln County SD CBA coverage from inception)"
+      },
+      {
+        "n": "Silvies River Charter School",
+        "st": "OR",
+        "id": "NCES-410363001756",
+        "u": "Harney County Education Association / OEA / NEA",
+        "c": "Crane",
+        "dt": "School opening (Harney County Union High SD 1J CBA coverage from inception)"
+      },
+      {
+        "n": "South Columbia Family School",
+        "st": "OR",
+        "id": "NCES-411098001542",
+        "u": "Scappoose Education Association / OEA / NEA",
+        "c": "Warren",
+        "dt": "School opening (Scappoose SD 1J CBA coverage from inception)"
+      },
+      {
+        "n": "Springwater Environmental Sciences School",
+        "st": "OR",
+        "id": "NCES-410933001642",
+        "u": "Oregon City Education Association / OEA / NEA",
+        "c": "Oregon City",
+        "dt": "School opening (Oregon City SD 62 CBA coverage from inception)"
+      },
+      {
+        "n": "St Helens Arthur Academy",
+        "st": "OR",
+        "id": "NCES-411172001732",
+        "u": "St Helens Education Association / OEA / NEA",
+        "c": "St Helens",
+        "dt": "School opening (St Helens SD 502 CBA coverage from inception)"
+      },
+      {
+        "n": "Summit Learning Charter",
+        "st": "OR",
+        "id": "NCES-410470001766",
+        "u": "Estacada Education Association / OEA / NEA",
+        "c": "Eagle Creek",
+        "dt": "School opening (Estacada SD 108 CBA coverage from inception)"
+      },
+      {
+        "n": "Sunny Wolf Charter School",
+        "st": "OR",
+        "id": "NCES-410690001797",
+        "u": "Three Rivers Education Association / OEA / NEA",
+        "c": "Wolf Creek",
+        "dt": "School opening (Three Rivers/Josephine County SD CBA coverage from inception)"
+      },
+      {
+        "n": "Sweet Home Charter School",
+        "st": "OR",
+        "id": "NCES-411197001643",
+        "u": "Sweet Home Education Association / OEA / NEA",
+        "c": "Sweet Home",
+        "dt": "School opening (Sweet Home SD 55 CBA coverage from inception)"
+      },
+      {
+        "n": "Teach-Nw",
+        "st": "OR",
+        "id": "NCES-410774001872",
+        "u": "Marcola Education Association / OEA / NEA",
+        "c": "Eugene",
+        "dt": "School opening (Marcola SD 79J CBA coverage from inception)"
+      },
+      {
+        "n": "The Cannon Beach Academy",
+        "st": "OR",
+        "id": "NCES-411110001857",
+        "u": "Seaside Education Association / OEA / NEA",
+        "c": "Cannon Beach",
+        "dt": "School opening (Seaside SD 10 CBA coverage from inception)"
+      },
+      {
+        "n": "The Community Roots School",
+        "st": "OR",
+        "id": "NCES-411145001769",
+        "u": "Silver Falls Education Association / OEA / NEA",
+        "c": "Silverton",
+        "dt": "School opening (Silver Falls SD 4J CBA coverage from inception)"
+      },
+      {
+        "n": "The Valley School of Southern Oregon",
+        "st": "OR",
+        "id": "NCES-410804001843",
+        "u": "Medford Education Association / OEA / NEA",
+        "c": "Medford",
+        "dt": "School opening (Medford SD 549C CBA coverage from inception)"
+      },
+      {
+        "n": "Three Rivers Charter School",
+        "st": "OR",
+        "id": "NCES-411317001437",
+        "u": "West Linn-Wilsonville Education Association / OEA / NEA",
+        "c": "West Linn",
+        "dt": "School opening (West Linn-Wilsonville SD 3J CBA coverage from inception)"
+      },
+      {
+        "n": "Twin Rivers Charter School",
+        "st": "OR",
+        "id": "NCES-410474001848",
+        "u": "Eugene Education Association (EEA) / OEA / NEA",
+        "c": "Eugene",
+        "dt": "School opening (Eugene SD 4J CBA coverage from inception)"
+      },
+      {
+        "n": "Ukiah Charter School",
+        "st": "OR",
+        "id": "NCES-411254001122",
+        "u": "Ukiah Education Association / OEA / NEA",
+        "c": "Ukiah",
+        "dt": "School opening (Ukiah SD 80R CBA coverage from inception)"
+      },
+      {
+        "n": "Village School",
+        "st": "OR",
+        "id": "NCES-410474001492",
+        "u": "Eugene Education Association (EEA) / OEA / NEA",
+        "c": "Eugene",
+        "dt": "School opening (Eugene SD 4J CBA coverage from inception)"
+      },
+      {
+        "n": "Virtual Preparatory Academy of Oregon",
+        "st": "OR",
+        "id": "NCES-411011011352",
+        "u": "Prairie City Education Association / OEA / NEA",
+        "c": "Prairie City",
+        "dt": "School opening (Prairie City SD 4 CBA coverage from inception)"
+      },
+      {
+        "n": "West Lane Charter School",
+        "st": "OR",
+        "id": "NCES-410495001595",
+        "u": "Fern Ridge Education Association / OEA / NEA",
+        "c": "Veneta",
+        "dt": "School opening (Fern Ridge SD 28J CBA coverage from inception)"
+      },
+      {
+        "n": "Willamette Connections Academy",
+        "st": "OR",
+        "id": "NCES-411104001876",
+        "u": "Scio Education Association / OEA / NEA",
+        "c": "Scio",
+        "dt": "School opening (Scio SD 95 CBA coverage from inception)"
+      },
+      {
+        "n": "Willamette Leadership Academy",
+        "st": "OR",
+        "id": "NCES-411167001525",
+        "u": "Springfield Education Association / OEA / NEA",
+        "c": "Springfield",
+        "dt": "School opening (Springfield SD 19 CBA coverage from inception)"
+      },
+      {
+        "n": "Woodburn Arthur Academy",
+        "st": "OR",
+        "id": "NCES-411353001546",
+        "u": "Woodburn Education Association / OEA / NEA",
+        "c": "Woodburn",
+        "dt": "School opening (Woodburn SD 103 CBA coverage from inception)"
+      },
+      {
+        "n": "Woodland Charter School",
+        "st": "OR",
+        "id": "NCES-410690001812",
+        "u": "Three Rivers Education Association / OEA / NEA",
+        "c": "Grants Pass",
+        "dt": "School opening (Three Rivers/Josephine County SD CBA coverage from inception)"
+      }
+    ],
+    "ORGANIZING": [],
+    "DECERTIFIED": [
+      {
+        "n": "St. HOPE Public School 7",
+        "st": "CA",
+        "id": "C0603056",
+        "u": "None — DECERTIFIED March 2026 (formerly SCTA / CTA / NEA)",
+        "c": "Sacramento",
+        "dt": "2018 (PERB(CA) card check certification — exact date not confirmed from public sources; PERB records request recommended)"
+      },
+      {
+        "n": "Gompers Preparatory Academy",
+        "st": "CA",
+        "id": "NAPCS-ADD-CA-DEC-001",
+        "u": "None — DECERTIFIED June 2023 (formerly SDEA / NEA)",
+        "c": "San Diego",
+        "dt": "January 2019 (PERB(CA) card check certification — SDEA certified January 2019)"
+      },
+      {
+        "n": "CONSERVATORY LAB CHARTER SCHOOL",
+        "st": "MA",
+        "id": "C2599003",
+        "u": "AFTMA (formerly) — decertified approximately 2011-2013",
+        "c": "Boston",
+        "dt": "October 22, 2008 (DLR original certification) — DECERTIFIED ~2011-2013"
+      },
+      {
+        "n": "Evergreen Charter School",
+        "st": "NY",
+        "id": "C3609013",
+        "u": "Evergreen Charter Staff Association / NYSUT / AFT (FORMER)",
+        "c": "Hempstead",
+        "dt": "N/A — DECERTIFIED October 2016"
+      },
+      {
+        "n": "RIDGELINE MONTESSORI PUBLIC CHARTER SCHOOL",
+        "st": "OR",
+        "id": "C4100004",
+        "u": "Eugene Charter School Professionals, AFT Local 6432 (formerl",
+        "c": "Eugene",
+        "dt": "November 2008 (ERB CR-002-08 — certification election tally)"
+      }
+    ],
+    "CLOSED": [
+      {
+        "n": "CESAR CHAVEZ PCS — PREP MIDDLE SCHOOL",
+        "st": "DC",
+        "id": "NAPCS-ADD-DC-001",
+        "u": "DC Alliance of Charter Teachers and Staff, Local 1927 (DC AC",
+        "c": "Washington",
+        "dt": "June 2017 (election; exact cert date unknown. Gap: obtainable via NLRB ADS R5 (credentialed) or NLRB records request.)"
+      },
+      {
+        "n": "FAU/SLCSD Palm Pointe Educational Research School",
+        "st": "FL",
+        "id": "C1208026",
+        "u": "None confirmed",
+        "c": "Port St. Lucie",
+        "dt": "N/A"
+      },
+      {
+        "n": "ASPIRA - EARLY COLLEGE HIGH SCHOOL",
+        "st": "IL",
+        "id": "C1707001",
+        "u": "ChiACTS (Chicago Alliance of Charter Teachers and Staff)",
+        "c": "Chicago",
+        "dt": "Unknown — NLRB Region 13 records request needed"
+      },
+      {
+        "n": "EPIC ACADEMY HIGH SCHOOL",
+        "st": "IL",
+        "id": "C1710012",
+        "u": "ChiACTS (Chicago Alliance of Charter Teachers and Staff)",
+        "c": "Chicago",
+        "dt": "Unknown — NLRB Region 13 records request needed"
+      },
+      {
+        "n": "ACERO CHARTER SCHOOL NETWORK- SOR JUANA INES DE LA CRUZ",
+        "st": "IL",
+        "id": "C1712004",
+        "u": "United Educators for Justice (UEJ) / ChiACTS",
+        "c": "Chicago",
+        "dt": "Unknown — NLRB Region 13 records request needed"
+      },
+      {
+        "n": "ASPIRA BUSINESS AND FINANCE SCHOOL",
+        "st": "IL",
+        "id": "C1715001",
+        "u": "ChiACTS (Chicago Alliance of Charter Teachers and Staff)",
+        "c": "Chicago",
+        "dt": "Unknown — NLRB Region 13 records request needed"
+      },
+      {
+        "n": "ACERO CHARTER SCHOOL NETWORK - OCTAVIO PAZ",
+        "st": "IL",
+        "id": "C1798005",
+        "u": "United Educators for Justice (UEJ) / ChiACTS",
+        "c": "Chicago",
+        "dt": "Unknown — NLRB Region 13 records request needed"
+      },
+      {
+        "n": "International High School of New Orleans",
+        "st": "LA",
+        "id": "C2210005",
+        "u": "United Teachers of International High School / UTNO",
+        "c": "New Orleans",
+        "dt": "2016"
+      },
+      {
+        "n": "UP ACADEMY CHARTER SCHOOL OF BOSTON",
+        "st": "MA",
+        "id": "C2511009",
+        "u": "Boston Teachers Union Local 66 (at time of operation)",
+        "c": "Boston",
+        "dt": "N/A — Horace Mann structural coverage (school opening)"
+      },
+      {
+        "n": "HIAWATHA COLLEGE PREP - KINGFIELD CAMPUS",
+        "st": "MN",
+        "id": "C2707017",
+        "u": "Hiawatha Area Workers United (HAWU)",
+        "c": "Minneapolis",
+        "dt": "June 2021 (network-wide — NLRB 18-RC-276584)"
+      },
+      {
+        "n": "Academy for Urban Leadership Charter School",
+        "st": "NJ",
+        "id": "C3411004",
+        "u": "Academy Urban Leadership Education Association",
+        "c": "Perth Amboy",
+        "dt": "2016 (exact date pending OPRA)"
+      },
+      {
+        "n": "Academy for Career Exploration (ACE)",
+        "st": "RI",
+        "id": "C4497001",
+        "u": "Providence Teachers Union (AFT Local 958)",
+        "c": "Providence",
+        "dt": "Pre-2009"
+      }
+    ],
+    "DISPUTED": [
+      {
+        "n": "Lycée Français International de la Louisiane (LFI)",
+        "st": "LA",
+        "id": "C2211007",
+        "u": "Union des Educateurs du LFNO (UELFNO) / UTNO — certification",
+        "c": "New Orleans",
+        "dt": "2024-05-21 (NLRB certification date — jurisdiction subsequently stripped)"
+      }
+    ]
+  },
+  "networks": {
+    "AZ": [
+      {
+        "name": "BASIS Educational Group — Arizona",
+        "union": "Arizona Alliance of Charter Teachers and Staff (AACTS), AFT Local 6627",
+        "schoolIds": [
+          "C0412011"
+        ],
+        "organizedCount": 1,
+        "cbaStatus": "Active CBA at BASIS Tucson North — ratified August 2025. First charter union contract in Arizona history. CBA not public",
+        "keyFindings": [
+          "BASIS Tucson North (C0412011) — CONFIRMED organized; AFT Local 6627; cert April 25, 2023; CBA ratified August 2025.",
+          "BASIS Goodyear — ORGANIZING at non-NAPCS campus; active ULP 28-CA-373855; Law360 May 2026 reports NLRB regional director approved union vote at \"network of AZ charter schools\" — monitor for RC petition.",
+          "BASIS operates 10 AZ schools in NCES Top 100 (2025-26 rankings). AACTS organizing campaign active across the BASIS AZ network.",
+          "Employer defense: Ogletree Deakins (Christopher Meister, Meredith Kirshenbaum, Kyle Broadfoot — Phoenix) representing BASIS Educational Group."
+        ]
+      }
+    ],
+    "CA": [
+      {
+        "name": "LAUSD Horace Mann Charter Schools",
+        "union": "",
+        "schoolIds": [
+          "C0612051",
+          "C0611013",
+          "C0611014",
+          "C0613093",
+          "C0693002",
+          "C0610028",
+          "C0613088",
+          "C0608029",
+          "C0605014",
+          "C0612052",
+          "C0612031",
+          "C0612032",
+          "C0604017",
+          "C0612033",
+          "C0614035",
+          "C0612020",
+          "C0612034",
+          "C0613089",
+          "C0611043",
+          "C0612036",
+          "C0612037",
+          "C0612003",
+          "C0612038",
+          "C0693022",
+          "C0612039",
+          "C0612040",
+          "C0612050",
+          "C0693023",
+          "C0612041",
+          "C0693010",
+          "C0698011",
+          "C0612042",
+          "C0611065",
+          "C0694020",
+          "C0611100",
+          "C0612043",
+          "C0611073",
+          "C0612044",
+          "C0616012",
+          "C0613090",
+          "C0695018",
+          "C0612045",
+          "C0612046",
+          "C0611091",
+          "C0693021",
+          "C0612047",
+          "C0612048",
+          "C0612049",
+          "C0603020",
+          "C0695011",
+          "C0603046",
+          "C0696007",
+          "C0694001",
+          "C0613092",
+          "C0613094",
+          "C0613095",
+          "C0613096",
+          "C0613097",
+          "C0609015"
+        ],
+        "organizedCount": 59,
+        "cbaStatus": "",
+        "keyFindings": ""
+      },
+      {
+        "name": "Green Dot Public Schools / Animo (AMU)",
+        "union": "",
+        "schoolIds": [
+          "C0600002",
+          "C0602050",
+          "C0604002",
+          "C0604003",
+          "C0606008",
+          "C0606010",
+          "C0606011",
+          "C0607002",
+          "C0610012",
+          "C0613002",
+          "C0614016",
+          "C0614017",
+          "C0616031",
+          "C0617006",
+          "C0618030",
+          "C0618167",
+          "C0603045",
+          "C0608025"
+        ],
+        "organizedCount": 18,
+        "cbaStatus": "",
+        "keyFindings": ""
+      },
+      {
+        "name": "High Tech High / HTEC",
+        "union": "",
+        "schoolIds": [
+          "C0600011",
+          "C0600013",
+          "C0603025",
+          "C0604033",
+          "C0605028",
+          "C0605029",
+          "C0615037",
+          "C0607037",
+          "C0611050",
+          "C0611051",
+          "C0607038",
+          "C0609033",
+          "C0613029",
+          "C0618077",
+          "C0619017",
+          "C0619018",
+          "C0604032",
+          "C0618019"
+        ],
+        "organizedCount": 18,
+        "cbaStatus": "",
+        "keyFindings": ""
+      },
+      {
+        "name": "California Virtual Academies (CAVA / K12 Inc.)",
+        "union": "",
+        "schoolIds": [
+          "C0602009",
+          "C0604008",
+          "C0606019",
+          "C0606020",
+          "C0606021",
+          "C0612014",
+          "C0612016",
+          "C0612108",
+          "C0613111",
+          "C0606022"
+        ],
+        "organizedCount": 10,
+        "cbaStatus": "",
+        "keyFindings": ""
+      },
+      {
+        "name": "Summit Public Schools",
+        "union": "",
+        "schoolIds": [
+          "C0611081",
+          "C0613027",
+          "C0614146",
+          "C0616048"
+        ],
+        "organizedCount": 4,
+        "cbaStatus": "",
+        "keyFindings": ""
+      },
+      {
+        "name": "Alliance College-Ready Public Schools",
+        "union": "",
+        "schoolIds": [
+          "C0604027",
+          "C0605026",
+          "C0609011",
+          "C0609013",
+          "C0605030",
+          "C0606030",
+          "C0606031",
+          "C0606056",
+          "C0607020",
+          "C0607098",
+          "C0609012",
+          "C0609014",
+          "C0610038",
+          "C0611025",
+          "C0611026",
+          "C0612002",
+          "C0612022",
+          "C0613050",
+          "C0614010",
+          "C0614011",
+          "C0614012",
+          "C0615005",
+          "C0615006"
+        ],
+        "organizedCount": 23,
+        "cbaStatus": "",
+        "keyFindings": ""
+      },
+      {
+        "name": "Citizens of the World Charter Schools (CWC)",
+        "union": "",
+        "schoolIds": [
+          "C0612029",
+          "C0613011",
+          "C0617015",
+          "C0619068",
+          "C0621006"
+        ],
+        "organizedCount": 5,
+        "cbaStatus": "",
+        "keyFindings": ""
+      },
+      {
+        "name": "Environmental Charter Schools",
+        "union": "",
+        "schoolIds": [
+          "C0601017",
+          "C0610046",
+          "C0613022",
+          "C0621009"
+        ],
+        "organizedCount": 4,
+        "cbaStatus": "",
+        "keyFindings": ""
+      },
+      {
+        "name": "Caliber Public Schools",
+        "union": "",
+        "schoolIds": [
+          "C0614021",
+          "C0616026"
+        ],
+        "organizedCount": 2,
+        "cbaStatus": "",
+        "keyFindings": ""
+      },
+      {
+        "name": "San Carlos School District Charter Cluster",
+        "union": "",
+        "schoolIds": [
+          "C0694024",
+          "C0600004",
+          "C0699005",
+          "C0699023",
+          "C0600036",
+          "C0600042"
+        ],
+        "organizedCount": 6,
+        "cbaStatus": "",
+        "keyFindings": ""
+      }
+    ],
+    "IL": [
+      {
+        "name": "Acero Charter Schools (formerly UNO)",
+        "union": "United Educators for Justice (UEJ) / ChiACTS",
+        "schoolIds": [
+          "C1705008",
+          "C1706009",
+          "C1706010",
+          "C1707007",
+          "C1708010",
+          "C1708011",
+          "C1708012",
+          "C1710004",
+          "C1711003",
+          "C1711004",
+          "C1712003",
+          "C1712004",
+          "C1713006",
+          "C1713007"
+        ],
+        "organizedCount": 14,
+        "cbaStatus": "",
+        "keyFindings": ""
+      },
+      {
+        "name": "ASPIRA of Illinois",
+        "union": "ChiACTS (CTU teachers) + IFT Local 4343 (counselors + paraprofessionals) + IUOE ",
+        "schoolIds": [
+          "C1705001",
+          "C1707001",
+          "C1705012",
+          "C1715001"
+        ],
+        "organizedCount": 4,
+        "cbaStatus": "",
+        "keyFindings": ""
+      },
+      {
+        "name": "Chicago International Charter School (CICS) / Civitas Education Partners",
+        "union": "ChiACTS (CTU-ACTS) — teacher unit; PLUS Epic Academy unit (office/support staff,",
+        "schoolIds": [
+          "C1703003",
+          "C1705003",
+          "C1706003"
+        ],
+        "organizedCount": 3,
+        "cbaStatus": "",
+        "keyFindings": ""
+      },
+      {
+        "name": "Youth Connection Charter School (YCCS)",
+        "union": "ChiACTS / Youth Connections",
+        "schoolIds": [
+          "C1705019",
+          "C1705022",
+          "C1705030"
+        ],
+        "organizedCount": 3,
+        "cbaStatus": "",
+        "keyFindings": ""
+      },
+      {
+        "name": "Urban Prep Academies",
+        "union": "ChiACTS (Chicago Alliance of Charter Teachers and Staff)",
+        "schoolIds": [
+          "C1706011",
+          "C1710009"
+        ],
+        "organizedCount": 2,
+        "cbaStatus": "",
+        "keyFindings": ""
+      },
+      {
+        "name": "Instituto del Progreso Latino",
+        "union": "ChiACTS (Chicago Alliance of Charter Teachers and Staff)",
+        "schoolIds": [
+          "C1710013",
+          "C1712007"
+        ],
+        "organizedCount": 2,
+        "cbaStatus": "",
+        "keyFindings": ""
+      }
+    ],
+    "MI": [
+      {
+        "name": "Cesar Chavez Academy",
+        "union": "",
+        "schoolIds": [
+          "C2601012",
+          "C2609001",
+          "C2699073",
+          "C2699074"
+        ],
+        "organizedCount": 4,
+        "cbaStatus": "",
+        "keyFindings": ""
+      }
+    ],
+    "MN": [
+      {
+        "name": "Hiawatha Academies",
+        "union": "",
+        "schoolIds": [
+          "C2707017",
+          "C2707018",
+          "C2715010",
+          "C2718004"
+        ],
+        "organizedCount": 4,
+        "cbaStatus": "",
+        "keyFindings": ""
+      }
+    ],
+    "NJ": [
+      {
+        "name": "Marion P. Thomas Charter School",
+        "union": "Marion P. Thomas Education Association",
+        "schoolIds": [
+          "C3499005",
+          "C3499006"
+        ],
+        "organizedCount": 2,
+        "cbaStatus": "Active — CBA confirmed on PERC (NJ) public contracts portal",
+        "keyFindings": [
+          "Both campuses (PAC Academy C3499005 and STEAM Academy C3499006) are the same legal employer at the same address. PERC (NJ) treats them as a single employer with a single CBA.",
+          "CBA covers professional and non-professional employees (broad-based / wall-to-wall unit). High School Campus employees are excluded but retain separate organizing rights per CBA Article I.",
+          "Reviewer must decide: keep both NAPCS rows or consolidate to one."
+        ]
+      }
+    ],
+    "NY": [
+      {
+        "name": "UFT Charter Schools (UFT-operated)",
+        "union": "",
+        "schoolIds": [
+          "C3611011",
+          "C3611012"
+        ],
+        "organizedCount": 2,
+        "cbaStatus": "",
+        "keyFindings": ""
+      }
+    ],
+    "OH": [
+      {
+        "name": "Cleveland Alliance for Charter Teachers and Staff (Cleveland ACTS)",
+        "union": "Cleveland Alliance for Charter Teachers and Staff (Cleveland ACTS)",
+        "schoolIds": [
+          "C3910017",
+          "C3911020",
+          "C3910003",
+          "C3912013",
+          "C3904065",
+          "C3901015",
+          "C3904034"
+        ],
+        "organizedCount": 7,
+        "cbaStatus": "Active — all 7 schools have ratified CBAs. Multiple contract cycles completed.",
+        "keyFindings": [
+          "Cleveland ACTS (OFT Local 6570) is the most developed multi-operator charter union local in the NAPCS dataset. Seven schools across three unrelated operators share a single local.",
+          "The ACTS model allows organizing infrastructure (legal, bargaining, communications) to be shared across schools, reducing cost and risk for each individual organizing campaign.",
+          "First Ohio charter school strike occurred at Summit Academy Parma (Feb 2019), producing the first CBA in Ohio's charter sector. This established the template for subsequent negotiations.",
+          "Cleveland ACTS president Sue Kraus (University of Cleveland Prep, 15-year staff member) is OFT's primary spokesperson for charter organizing — providing continuity and institutional knowledge."
+        ]
+      }
+    ],
+    "PA": [
+      {
+        "name": "Propel Schools (Allegheny County — 7 NAPCS campuses)",
+        "union": "PCSEA / PSEA/NEA",
+        "schoolIds": [
+          "C4203010",
+          "C4205006",
+          "C4211009",
+          "C4219016",
+          "C4219017",
+          "C4219018",
+          "C4219019",
+          "C4219020"
+        ],
+        "organizedCount": 8,
+        "cbaStatus": "",
+        "keyFindings": ""
+      }
+    ],
+    "RI": [
+      {
+        "name": "Paul Cuffee School",
+        "union": "Rhode Island Federation of Teachers and Health Professionals (RIFT&HP/AFT)",
+        "schoolIds": [
+          "NAPCS-ADD-RI-004",
+          "NAPCS-ADD-RI-002",
+          "NAPCS-ADD-RI-003"
+        ],
+        "organizedCount": 3,
+        "cbaStatus": "All three campuses in first-contract negotiations as of May 2026. No CBA yet ratified.",
+        "keyFindings": [
+          "Rhode Island's first fully unionized charter school (as of June 11, 2025 — Paul Cuffee Middle cert).",
+          "Sequential organizing campaign: Upper (Oct 2024) → Lower (Dec 2024) → Middle (Jun 2025) — all three campuses organized within 9 months.",
+          "All three certifications via RIFT&HP/AFT (NLRB R1). Union local number(s) pending confirmation from RIFTHP.",
+          "Providence City Council passed resolution in March 2025 supporting Lower and Upper School unionizations.",
+          "RIFTHP Locals directory (last updated Oct 2025) does not yet list Paul Cuffee chapters — directory lag, not evidence of non-union status. NLRB case pages are authoritative.",
+          "All three campuses in first-contract bargaining as of research date. No CBA text publicly available."
+        ]
+      }
+    ]
+  },
+  "monitoring": [
+    {
+      "state": "AZ",
+      "stateName": "Arizona",
+      "priority": "HIGH",
+      "target": "City High / Paulo Freire (C0404006, C0414026, C0405011)",
+      "description": "ELECTION WON May 19, 2026 (80% YES). Monitor NLRB R28 docket (case 28-RC-377822) for: (1) Formal Certification of Representative issuance (typically 7-10 days post-election absent objections); (2) Employer objection filing (deadline ~May 29, 2026); (3) First contract negotiations commencement. Once cert issued: update certCase to formal cert date, update all 3 school records, update dateUnionized,"
+    },
+    {
+      "state": "AZ",
+      "stateName": "Arizona",
+      "priority": "HIGH",
+      "target": "BASIS Goodyear (non-NAPCS)",
+      "description": "RC petition approved per Law360 — monitor for election date and result. If certified: file Discovery Report for BASIS Goodyear as non-NAPCS find."
+    },
+    {
+      "state": "CT",
+      "stateName": "Connecticut",
+      "priority": "HIGH",
+      "target": "Common Ground High School (C0997001)",
+      "description": "First contract ratification"
+    },
+    {
+      "state": "DC",
+      "stateName": "Washington DC",
+      "priority": "HIGH",
+      "target": "DC International School (C1114009)",
+      "description": "First contract ratification"
+    },
+    {
+      "state": "DC",
+      "stateName": "Washington DC",
+      "priority": "HIGH",
+      "target": "Breakthrough Montessori PCS (C1116001)",
+      "description": "First contract ratification"
+    },
+    {
+      "state": "DE",
+      "stateName": "Delaware",
+      "priority": "HIGH",
+      "target": "Sussex Montessori Charter School (C1096001)",
+      "description": "PERB(DE) FOIA response for cert date and case number. Confirm CBA status and contract period. UniServ Director assignment confirmed — follow up with DSEA for contract details."
+    },
+    {
+      "state": "DE",
+      "stateName": "Delaware",
+      "priority": "HIGH",
+      "target": "Sussex Academy of Arts and Sciences (C1096003)",
+      "description": "First contract negotiations — expected within 12-18 months of February 2026 certification (PERB case 1521). Monitor PERB(DE) docket and DSEA for ratification announcement."
+    },
+    {
+      "state": "IL",
+      "stateName": "Illinois",
+      "priority": "HIGH",
+      "target": "Noble Schools (17 campuses)",
+      "description": "CTU organizing drive — RC petition filing"
+    },
+    {
+      "state": "IL",
+      "stateName": "Illinois",
+      "priority": "HIGH",
+      "target": "Perspectives Charter Schools (4 campuses)",
+      "description": "CTU re-filing — RC petition"
+    },
+    {
+      "state": "IL",
+      "stateName": "Illinois",
+      "priority": "HIGH",
+      "target": "5 Acero CPS reabsorption campuses",
+      "description": "CPS transition confirmation — update status codes"
+    },
+    {
+      "state": "IL",
+      "stateName": "Illinois",
+      "priority": "HIGH",
+      "target": "HB 1120 / Card-Check Law — federal court",
+      "description": "Court ruling on neutrality mandate and card-check law"
+    },
+    {
+      "state": "IL",
+      "stateName": "Illinois",
+      "priority": "HIGH",
+      "target": "CICS ChicagoQuest High School (NAPCS-ADD-IL-004)",
+      "description": "Open/closed status + first contract status. CICS closed ChicagoQuest in 2020 attempt but staff fought it off. School remains at risk of closure. Monitor ISBE and CPS for charter renewal decisions. Also monitor for successor CBA to 2018-22 CICS/CTU contract."
+    },
+    {
+      "state": "LA",
+      "stateName": "Louisiana",
+      "priority": "HIGH",
+      "target": "Lycée Français de la Nouvelle-Orléans",
+      "description": "LSCSC/LERA petition filing by UTNO"
+    },
+    {
+      "state": "LA",
+      "stateName": "Louisiana",
+      "priority": "HIGH",
+      "target": "KIPP New Orleans (8 campuses, non-NAPCS)",
+      "description": "UTNO organizing activity or LSCSC petition"
+    },
+    {
+      "state": "MA",
+      "stateName": "Massachusetts",
+      "priority": "HIGH",
+      "target": "PVPA successor CBA",
+      "description": "Third successor contract ratification"
+    },
+    {
+      "state": "MA",
+      "stateName": "Massachusetts",
+      "priority": "HIGH",
+      "target": "Codman Academy first contract",
+      "description": "First CBA ratification (BTU)"
+    },
+    {
+      "state": "MA",
+      "stateName": "Massachusetts",
+      "priority": "HIGH",
+      "target": "CCSC Cambridge first contract",
+      "description": "First CBA ratification (AFTMA)"
+    },
+    {
+      "state": "MI",
+      "stateName": "Michigan",
+      "priority": "HIGH",
+      "target": "University Yes Academy",
+      "description": "Certified May 14, 2015. Post-management-change CBA status unknown. If NPFE does not recognize Michigan ACTS as successor, school may face renewed organizing or ULP action. NPFE manages multiple Detroit charter schools — labor relations posture across network is relevant."
+    },
+    {
+      "state": "MI",
+      "stateName": "Michigan",
+      "priority": "HIGH",
+      "target": "Mid-Michigan Leadership Academy",
+      "description": "MEA was certified January 2000 (38-21 vote). Failed decertification attempt (30-16). No current CBA on Mackinac database. SABIS now manages. Either MEA is still the certified representative (in which case school is CONFIRMED) or MEA was decertified (in which case MERC records would show decertification). Michigan FOIA Act request to MERC is required — MERC 2000-era certifications not in public dig"
+    },
+    {
+      "state": "MI",
+      "stateName": "Michigan",
+      "priority": "HIGH",
+      "target": "Cesar Chavez Academy network",
+      "description": "CONFIRMED Session C May 24, 2026 — Michigan ACTS certified Feb 7, 2013 (2:1 margin); second 5-year contract ratified 91-3 (~2016). Leona Group departed ~2019. Monitor: (1) NLRB R7 FOIA for RC case number; (2) Post-2019 NLRB ADS for any new R7 cases; (3) Whether Michigan ACTS/AFT Michigan still recognized under successor CCA nonprofit. Second contract expired ~2021 — successor unknown."
+    },
+    {
+      "state": "MN",
+      "stateName": "Minnesota",
+      "priority": "HIGH",
+      "target": "Art and Science Academy (C2714001)",
+      "description": "BMS arbitration 25RA0150 outcome"
+    },
+    {
+      "state": "MN",
+      "stateName": "Minnesota",
+      "priority": "HIGH",
+      "target": "Hiawatha Academies (all campuses)",
+      "description": "First contract ratification"
+    },
+    {
+      "state": "MN",
+      "stateName": "Minnesota",
+      "priority": "HIGH",
+      "target": "Ubah Academy (NAPCS-ADD-MN-002)",
+      "description": "BMS records request for cert date and CBA details. NCES CCD address and authorizer verification."
+    },
+    {
+      "state": "NJ",
+      "stateName": "New Jersey",
+      "priority": "HIGH",
+      "target": "BelovED Community CS",
+      "description": "First contract ratification"
+    },
+    {
+      "state": "NJ",
+      "stateName": "New Jersey",
+      "priority": "HIGH",
+      "target": "Englewood on the Palisades CS",
+      "description": "CBA status + potential deunionization"
+    },
+    {
+      "state": "NM",
+      "stateName": "New Mexico",
+      "priority": "HIGH",
+      "target": "PELRB/NLRB R28 jurisdictional determination",
+      "description": "Any NM charter school PELRB filing or NLRB R28 RC petition would resolve the 20-year jurisdictional ambiguity. Monitor both boards quarterly."
+    },
+    {
+      "state": "NM",
+      "stateName": "New Mexico",
+      "priority": "HIGH",
+      "target": "AACTS (AFT Local 6627) expansion — NM geography",
+      "description": "AACTS operates in NLRB R28 (covers AZ and NM). If AACTS achieves second AZ certification, NM is the logical next target. Monitor AACTS public communications and NLRB R28 docket for NM filings."
+    },
+    {
+      "state": "NY",
+      "stateName": "New York",
+      "priority": "HIGH",
+      "target": "KIPP Academy Bronx (C3600013)",
+      "description": "NRtW Foundation decertification petition (Barrera) — ACTIVE as of May 2026. Monitor NLRB R2 ADS weekly for case resolution. If decertification election is ordered or held: alert Peri Lynn Turnbull immediately. Same playbook as CA (Gompers DECERTIFIED 2023, St. HOPE DECERTIFIED March 2026). Bad faith bargaining ruling June 2025 — employer found to have violated NLRA. UFT ULP blocking charges protec"
+    },
+    {
+      "state": "NY",
+      "stateName": "New York",
+      "priority": "HIGH",
+      "target": "Uncommon Preparatory Charter HS (NAPCS-ADD-NY-003)",
+      "description": "First Uncommon Schools NYC certification (case 29-RC-341899, est. June 2024). Monitor for first contract ratification and union name resolution (FOIA to R29 pending). Also monitor Uncommon campuses in NJ, IL, MA for organizing spread — same operator."
+    },
+    {
+      "state": "NY",
+      "stateName": "New York",
+      "priority": "HIGH",
+      "target": "",
+      "description": ""
+    },
+    {
+      "state": "OH",
+      "stateName": "Ohio",
+      "priority": "HIGH",
+      "target": "KIPP Columbus (C3908011)",
+      "description": "Pre-first-contract 3+ years. Monitor NLRB docket weekly for contract ratification or additional ULP filings."
+    },
+    {
+      "state": "OH",
+      "stateName": "Ohio",
+      "priority": "HIGH",
+      "target": "ACPA United / ACPA (C3902003)",
+      "description": "Newly certified Dec 2025. Monitor OFT and NLRB for first contract status quarterly."
+    },
+    {
+      "state": "OH",
+      "stateName": "Ohio",
+      "priority": "HIGH",
+      "target": "Summit Academy Youngstown (C3905038)",
+      "description": "CONFIRMED May 22, 2026 — OEA/NEA independently organized. NLRB records request needed for case number and certification date. Accumulator entry pending reviewer approval."
+    },
+    {
+      "state": "OH",
+      "stateName": "Ohio",
+      "priority": "HIGH",
+      "target": "Summit Academy Secondary School-Youngstown (C3904066)",
+      "description": "CONFIRMED May 22, 2026 — OEA/NEA independently organized. NLRB records request needed for case number and certification date. Accumulator entry pending reviewer approval."
+    },
+    {
+      "state": "OH",
+      "stateName": "Ohio",
+      "priority": "HIGH",
+      "target": "Everest High School (Reynoldsburg, OH)",
+      "description": "UNVERIFIED as of Session B. St. Aloysius Orphanage sponsor (501c3 — not district). NLRB R8 individual ADS search still required. Also monitor for: (1) any organizing activity (prior Reynoldsburg CSD district teachers union connection may create awareness); (2) any NLRB R8 case filing. Add to next OH research session work queue."
+    },
+    {
+      "state": "OR",
+      "stateName": "Oregon",
+      "priority": "HIGH",
+      "target": "Mosier Community School (C4102006)",
+      "description": "ERB RC-003-26 (2026 re-cert) — nature and CBA status"
+    },
+    {
+      "state": "OR",
+      "stateName": "Oregon",
+      "priority": "HIGH",
+      "target": "Valley Inquiry Charter (C4105002)",
+      "description": "Staffing model verification and any new organizing activity post-2024"
+    },
+    {
+      "state": "PA",
+      "stateName": "Pennsylvania",
+      "priority": "HIGH",
+      "target": "New Foundations Charter School",
+      "description": "First contract ratification"
+    },
+    {
+      "state": "RI",
+      "stateName": "Rhode Island",
+      "priority": "HIGH",
+      "target": "Highlander Elementary Charter School",
+      "description": "First contract ratification. Federal court ruling on strike prohibition."
+    },
+    {
+      "state": "RI",
+      "stateName": "Rhode Island",
+      "priority": "HIGH",
+      "target": "Paul Cuffee Lower/Middle/Upper School",
+      "description": "First contract ratification for all three campuses."
+    },
+    {
+      "state": "RI",
+      "stateName": "Rhode Island",
+      "priority": "HIGH",
+      "target": "IBEW Local 2323 vs. RIDE (federal court)",
+      "description": "Court ruling on whether RI teacher strike ban applies to NLRB-organized charter employees."
+    }
+  ],
+  "patterns": [
+    {
+      "state": "AZ",
+      "stateName": "Arizona",
+      "title": "The Jurisdictional Defense Playbook — AZ as a Test Case for Charter-as-Public-Employer Arguments",
+      "body": "The CITY Center governing board's Littler Mendelson filing (January 2026) represents the most direct legal articulation of the \"charter schools are public employers\" argument in NLRB Region 28. NLRB Regional Director Overstreet's 24-page rejection (May 4, 2026) is the authoritative counter-ruling. This playbook — employer files RM petition claiming public employer status to oust NLRB jurisdiction — mirrors the LA Act 172 strategy (legislative jurisdiction-stripping). In AZ, the employer lost the jurisdictional battle at the regional level. This ruling strengthens NLRB jurisdiction arguments in"
+    },
+    {
+      "state": "AZ",
+      "stateName": "Arizona",
+      "title": "AACTS as Single-State AFT Organizing Vehicle — Template or One-Off?",
+      "body": "Arizona Alliance of Charter Teachers and Staff (AACTS/AFT Local 6627) is the sole organizing vehicle in the AZ charter sector, modeled similarly to DC-ACTS in DC and ChiACTS in IL — state-specific AFT charter affiliates with dedicated organizing capacity. AACTS achieved certification in 2023, a ratified contract in 2025, and has an election pending in 2026. This trajectory (1 → 4 certified schools in 3 years, if CITY Center succeeds) is consistent with the trajectory of ChiACTS in IL (which grew from a handful of certifications to 26 in the NAPCS dataset). AZ is 3-4 years behind IL in this pat"
+    },
+    {
+      "state": "AZ",
+      "stateName": "Arizona",
+      "title": "Mission-Aligned Schools as First-Movers — AZ Confirms the National Pattern",
+      "body": "All three NAPCS AZ schools in the ORGANIZING category share mission-distinctive profiles: City High (project-based, community-oriented, Title I), Paulo Freire Freedom School (social justice pedagogy, Paulo Freire namesake, environmental sustainability). These mirror the mission-alignment pattern documented across NY (bilingual/arts schools), MA (Montessori, performing arts), and LA (Morris Jeff, Bricolage). BASIS Tucson North is the outlier — a rigorous academic/test-prep school — but its organizing was employer-specific (financial transparency concerns, grievance process). The mission-alignme"
+    },
+    {
+      "state": "CA",
+      "stateName": "California",
+      "title": "Card-Check Jurisdiction Creates Fastest Organizing Timelines",
+      "body": "California's EERA card-check certification pathway produces the fastest organizing timelines in the NAPCS dataset. States requiring NLRB secret ballot elections (NY, IL, PA, DC) give employers a counter-organizing window of weeks to months after a petition is filed; EERA eliminates this window. The practical result: CA charter organizing drives succeed at higher rates and with shorter timelines than equivalent drives in NLRB states. States considering charter labor legislation should treat California's union density levels — 23.9% CONFIRMED NAPCS density, not counting 48 DEPENDENT LAUSD-HM sch"
+    },
+    {
+      "state": "CA",
+      "stateName": "California",
+      "title": "The NRtW Dual Decertification Playbook Is Nationally Novel",
+      "body": "No other state in the 19-jurisdiction NAPCS dataset shows NRtW Foundation deployment of both a state-board decertification pathway (PERB) and a federal private-employer jurisdiction challenge (NLRB) in the same charter sector within a three-year window. The St. HOPE NLRB jurisdiction switch (March 2026) is the first documented successful use of this strategy in CA. The two-track playbook — exhaust state board remedies, then challenge jurisdiction federally — is now available as a template for any independently incorporated charter nonprofit in a state labor board jurisdiction. Charter operator"
+    },
+    {
+      "state": "CA",
+      "stateName": "California",
+      "title": "Virtual School Organizing Is a Replicable Pattern",
+      "body": "CAVA's 9-school network-wide certification (California Virtual Educators United, CTA/NEA, card-check April 2021) demonstrates that online/virtual charter schools are fully organizable at scale under a state labor board jurisdiction. No comparable virtual school certification exists in the NAPCS dataset outside California. As virtual charter enrollment grows nationally, CAVA's model — single network-wide bargaining unit covering all teachers in a virtual CMO regardless of student geographic location — is likely to be replicated in other states with card-check or favorable organizing environment"
+    },
+    {
+      "state": "CA",
+      "stateName": "California",
+      "title": "Independent Unions Cluster in Charter Sectors with Strong CMO Identity",
+      "body": "California has the highest concentration of independent (non-NEA/AFT) charter unions in the NAPCS dataset: AMU (Green Dot, 16 schools), HTEC (HTH, 16 schools), California Virtual Educators United (CAVA, 9 schools), Unite Summit (Summit, 4 schools), Environmental Educators United (Environmental Charter, 4 schools). The pattern is consistent: workers at networks with strong institutional identity and employer willingness to negotiate form school-specific or network-specific unions rather than affiliating with NEA/AFT. This contrasts with states like NY (UFT dominates) and IL (CTU dominates) wher"
+    },
+    {
+      "state": "CA",
+      "stateName": "California",
+      "title": "The LAUSD Horace Mann Model Is the Stealth Unionization Vector",
+      "body": "The 48 LAUSD Horace Mann charter schools in the NAPCS dataset are unionized by default — not through any organizing campaign, election, or recognition petition, but through LAUSD's employer-of-record structure and UTLA's master CBA. These schools would not appear in any PERB database as individually certified because there is no individual certification event. This structural/statutory coverage model (DEPENDENT in PLT status terms) is invisible to standard labor board searches and likely undercounts actual union coverage in district-authorized charter sectors nationally. Any state where charte"
+    },
+    {
+      "state": "CT",
+      "stateName": "Connecticut",
+      "title": "TNA AS A DOCUMENTATION GAP — THE CT EVIDENCE",
+      "body": "Connecticut is the only NAPCS state where union representation dates cannot be confirmed via a primary labor board database. The TNA process generates no public certification order. This means two of CT's four independently certified schools (ISAAC and New Beginnings) have only approximate dates from NAPCS baseline data and CEA records. This is structurally different from every other state in the dataset — even PERB states with limited online records at least have a certification order. CT requires a sponsor decision on date convention application."
+    },
+    {
+      "state": "CT",
+      "stateName": "Connecticut",
+      "title": "FOUNDING-ERA UNIONS — THE 1997 PATTERN",
+      "body": "Integrated Day Charter School (1997) was unionized from its first day of operation — the union was part of the school's founding design, not a response to a labor dispute. This mirrors patterns in New York (some early UFT charter schools) and Minnesota (TCGIS 2014). Schools that open with union support tend to have longer, more stable labor relationships with fewer decertification attempts."
+    },
+    {
+      "state": "CT",
+      "stateName": "Connecticut",
+      "title": "UAW IN EDUCATION — CROSS-STATE SIGNAL",
+      "body": "UAW Local 2110 at Common Ground is one of very few UAW charter school certifications in the full national NAPCS dataset. UAW Local 2110 is an amalgamated local covering academics, artists, museum workers, and journalists in the NYC metro area. Its presence in New Haven reflects UAW's broader higher-ed and nonprofit organizing strategy rather than a CT-specific charter sector campaign."
+    },
+    {
+      "state": "DC",
+      "stateName": "Washington DC",
+      "title": "COOPERATIVE EMPLOYER CULTURE — THE DC EXCEPTION",
+      "body": "DC is the only market in the full NAPCS dataset with zero documented employer resistance to unionization across multiple certification campaigns. No ULP charges, no counter-campaigns, no public statements. This appears driven by: (1) DC PCSB's reputational culture; (2) DC ACTS's professional, non-confrontational organizing model; (3) the small DC charter sector where reputational risk of anti-union campaigns is high. The DC finding directly challenges the assumption that NLRB-jurisdiction schools are inherently more adversarial than card-check states."
+    },
+    {
+      "state": "DC",
+      "stateName": "Washington DC",
+      "title": "NETWORK-LEVEL UNITS IN MULTI-CAMPUS SYSTEMS — DC PRECEDENT",
+      "body": "Both Mundo Verde (2 campuses, 1 unit) and Capital City (3 campuses, 1 unit) demonstrate that DC ACTS successfully negotiates network-wide bargaining units covering all campuses of a multi-campus school. This mirrors the Propel model in PA and CICS model in IL. The pattern suggests that multi-campus charters with unified governance are best organized as network units — fewer bargaining tables, more leverage for both sides."
+    },
+    {
+      "state": "DE",
+      "stateName": "Delaware",
+      "title": "Card-Check + Public Employer = Fastest Organizing Pathway in Dataset",
+      "body": "Delaware and Massachusetts are the two clearest examples of how card-check availability under public-employer law accelerates charter union density. Delaware has achieved 100% NAPCS density using only card-check — no election has been held at any of the four certified schools. Massachusetts has produced seven independent certifications since 2018, most via Written Majority Authorization (DLR card-check equivalent). Compare with NLRB-jurisdiction states: Pennsylvania (10.7% density, secret ballot only), New York (4.5%, secret ballot only). The procedural pathway is the single strongest predicto"
+    },
+    {
+      "state": "DE",
+      "stateName": "Delaware",
+      "title": "Governance Conflict as Organizing Trigger — Delaware Pattern",
+      "body": "All three initial DE charter certifications (CSW 2018, Odyssey 2018, and likely Sussex Academy 2026) were preceded by documented leadership or governance conflicts. CSW: president management style. Odyssey: board financial improprieties and AHEPA conflicts. This pattern replicates across the full NAPCS dataset (KIPP Columbus/Ohio, ACPA/Ohio, Baxter Academy/Maine) — the immediate organizing catalyst is typically a specific institutional conflict rather than abstract labor ideology. Delaware's concentrated small-state charter environment means DSEA can rapidly mobilize when conditions are right."
+    },
+    {
+      "state": "DE",
+      "stateName": "Delaware",
+      "title": "DSEA UniServ Integration — Comparison with State-Specific Charter Locals",
+      "body": "Delaware integrates charter schools directly into its standard UniServ structure rather than creating a separate charter-specific local (contrast: CTU-ACTS in IL, Cleveland ACTS in OH, DC ACTS in DC, AACTS in AZ). Each certified DE charter is assigned a dedicated DSEA UniServ Director — the same structure used for every traditional district. This integration eliminates the resource gap that new charter locals face between certification and first contract, giving DE charter staff immediate access to DSEA's full legal, bargaining, and grievance infrastructure."
+    },
+    {
+      "state": "DE",
+      "stateName": "Delaware",
+      "title": "",
+      "body": ""
+    },
+    {
+      "state": "DE",
+      "stateName": "Delaware",
+      "title": "",
+      "body": ""
+    },
+    {
+      "state": "DE",
+      "stateName": "Delaware",
+      "title": "",
+      "body": ""
+    },
+    {
+      "state": "FL",
+      "stateName": "Florida",
+      "title": "Municipal Employer = Organizing Enabler",
+      "body": ""
+    },
+    {
+      "state": "FL",
+      "stateName": "Florida",
+      "title": "State Law as Organizing Barrier: Florida as the Ceiling Case",
+      "body": ""
+    },
+    {
+      "state": "FL",
+      "stateName": "Florida",
+      "title": "First Mover Significance: Pembroke Pines 2007 Remains Unmatched",
+      "body": ""
+    },
+    {
+      "state": "FL",
+      "stateName": "Florida",
+      "title": "Session E — Type D4 Pattern: NAPCS Baseline Errors in FL (May 24, 2026)",
+      "body": ""
+    },
+    {
+      "state": "FL",
+      "stateName": "Florida",
+      "title": "",
+      "body": ""
+    },
+    {
+      "state": "FL",
+      "stateName": "Florida",
+      "title": "",
+      "body": ""
+    },
+    {
+      "state": "FL",
+      "stateName": "Florida",
+      "title": "",
+      "body": ""
+    },
+    {
+      "state": "FL",
+      "stateName": "Florida",
+      "title": "",
+      "body": ""
+    },
+    {
+      "state": "IL",
+      "stateName": "Illinois",
+      "title": "THE NAPCS UNDERCOUNT PROBLEM — IL AS THE CLEAREST CASE STUDY",
+      "body": "Illinois provides the most dramatic illustration of the NAPCS dataset's structural limitation: campus-level counting. NAPCS lists 26 organized IL schools. The Registry found 53. The entire gap is explained by CMO campus accounting — NAPCS lists 3 CICS entries, CICS has 12 organized campuses; NAPCS lists 3 YCCS entries, YCCS has 17 organized campuses; NAPCS lists 13 Acero entries, Acero has 15. Charter sector observers who rely on the NAPCS dataset to assess union exposure in Illinois are looking at fewer than half the actual organized employers. This pattern likely recurs in other large-CMO st"
+    },
+    {
+      "state": "IL",
+      "stateName": "Illinois",
+      "title": "THE CHAPTER/AFFILIATE MODEL AS ORGANIZING ARCHITECTURE — CTU VS. DC ACTS VS. INDEPENDENT",
+      "body": "Illinois CTU, DC ACTS, and UEJ (Acero) represent three distinct variants of the same basic organizational architecture: a large district union creates a charter-specific sub-structure that gives charter school staff a locally branded identity while sharing legal and administrative resources. CTU-ACTS is the Chicago model; DC ACTS Local 1927 is the DC model; UEJ is a network-specific variant unique to Acero. All three models are more effective than either pure independent locals (Prairie Crossing) or direct district-union extension (which charter staff often resist). The chapter/affiliate archi"
+    },
+    {
+      "state": "IL",
+      "stateName": "Illinois",
+      "title": "FAILED DRIVES AS INTELLIGENCE — THE PERSPECTIVES RESULT",
+      "body": "The August 2024 CTU election loss at Perspectives Charter Schools (45 yes, 51 no, RC-341523) is the first documented CTU charter school election loss in the full research dataset. It is strategically significant in two directions. For charter operators: the Perspectives result demonstrates that CTU can be defeated without employer misconduct — through staff culture, compensation, and transparent communication. No NLRB ULP charges were filed by CTU against Perspectives, suggesting the employer ran a clean counter-campaign within NLRB rules. For CTU and sector observers: the close result (45-51)"
+    },
+    {
+      "state": "IL",
+      "stateName": "Illinois",
+      "title": "THE MULTI-UNIT CHARTER — ASPIRA AS THE ENDPOINT OF MATURE ORGANIZING",
+      "body": "ASPIRA of Illinois achieved four separate NLRB certifications over 6 years: CTU-ACTS teachers; IFT Local 4343 guidance counselors and mentors (RC-176024, June 2016, 6-0 vote); IFT paraprofessionals (RC-210456, December 2017, 8-0 vote); IUOE Local 399 skilled maintenance workers (RC-293154, April 2022, 2-0 vote). This multi-unit structure is the logical endpoint of a mature organizing relationship where successively smaller employee groups achieve their own certifications over time. It is also the most financially complex scenario for a charter operator: four separate bargaining processes, four"
+    },
+    {
+      "state": "IL",
+      "stateName": "Illinois",
+      "title": "STATE NEUTRALITY LAW AS GAME-CHANGER — HB 1120 AND THE CHANGED LANDSCAPE",
+      "body": "Illinois HB 1120 (August 2023) requires union neutrality clauses in all charter contract renewals. If upheld by federal courts, this law makes it legally impossible for CPS-authorized charter operators to campaign against unionization as a condition of keeping their charter. The pre-2023 counter-organizing playbook — captive audience meetings, direct anti-union communications, management-side labor consultants — becomes a charter renewal risk. This fundamentally changes the strategic calculus for the 75+ non-union IL charter campuses not in the NAPCS dataset. Noble Schools, KIPP Chicago, LEARN"
+    },
+    {
+      "state": "IL",
+      "stateName": "Illinois",
+      "title": "CICS Network Undercount: ChicagoQuest as Fourth Organized Campus Missing from NAPCS (Session C)",
+      "body": "Session C identified CICS ChicagoQuest High School (known as \"Chicago Quest North\" in INCS/NAPCS nomenclature) as a fourth organized CICS campus not in the NAPCS 3-school baseline (Northtown, Wrightwood, Ralph Ellison). ChicagoQuest participated in the February 2019 multi-employer CICS strike alongside the three NAPCS-listed campuses — confirming shared CTU certification. ChicagoQuest was organized in a near-unanimous 96% vote (~2014) under IFT Local 4343 before transitioning to CTU. The school is also covered by the second CICS unit (RC-248092, Oct 2019, office/support staff). The gap between"
+    },
+    {
+      "state": "LA",
+      "stateName": "Louisiana",
+      "title": "ACT 172 — THE ONLY DOCUMENTED LEGISLATIVE COUNTER-RESPONSE TO A CHARTER UNION ELECTION",
+      "body": "Louisiana Act 172 (May 23, 2024) is unique in the NAPCS research dataset: it is the only documented case of state legislation specifically enacted in response to a successful charter school union election. The two-day gap between the Lycée Français certification (May 21) and the Act 172 signing (May 23) makes the targeting unmistakable. No other state in the 19-jurisdiction NAPCS dataset has responded to charter school organizing with targeted jurisdictional legislation. This sets Louisiana apart from all other NAPCS states as the jurisdiction most willing to use legislative power to override "
+    },
+    {
+      "state": "LA",
+      "stateName": "Louisiana",
+      "title": "THE UTNO MODEL — COMMUNITY-EMBEDDED ORGANIZING IN A POST-RECOVERY SCHOOL SYSTEM",
+      "body": "UTNO's organizing model in the New Orleans charter sector is the most community-embedded of any union in the NAPCS dataset. Dave Cash (UTNO president) teaches at Rooted School — one of the organized schools — making UTNO leadership a literal participant in the workplace it represents. Morris Jeff's voluntary recognition in 2013 (the first NOLA charter to unionize) was achieved through a community-school governance model in which the school board was philosophically aligned with labor recognition. This model — community-driven, voluntary recognition, cooperating employer — contrasts sharply wit"
+    },
+    {
+      "state": "LA",
+      "stateName": "Louisiana",
+      "title": "THE REFUSAL-TO-BARGAIN PATTERN — INTERNATIONAL HIGH SCHOOL AS EXTREME CASE",
+      "body": "International High School of New Orleans documents the most extreme employer refusal-to-bargain pattern in the NAPCS research dataset: 9 years (2016–2025), 10 NLRB ULP cases, a Fifth Circuit affirmation of NLRB jurisdiction (2018), and still no contract — until the school closed. This pattern was not accidental. The operator (Voices for International Business and Education, Inc.) systematically used ULP challenges to delay, exhaust the union, and avoid bargaining until the school’s closure made the question moot. This approach is available to any NLRB-jurisdiction charter school employer as a "
+    },
+    {
+      "state": "LA",
+      "stateName": "Louisiana",
+      "title": "THE VOLUNTARY RECOGNITION PATTERN — OPSB SCHOOLS AS THE ORGANIZING-FRIENDLY SUBMARKET",
+      "body": "All three actively confirmed NAPCS Louisiana schools (Morris Jeff, Benjamin Franklin, Bricolage Academy) are OPSB-authorized (Type 1/3/3B locally-authorized). All three reached union status through low-conflict mechanisms: two via board vote voluntary recognition, one via NLRB election that was not contested by the employer. The OPSB locally-authorized submarket is the organizing-friendly zone in the NOLA charter sector — and Act 172 did not change this, because LSCSC/LERA jurisdiction already applied to these schools. The lesson for the broader NAPCS dataset: charter school organizing outcome"
+    },
+    {
+      "state": "LA",
+      "stateName": "Louisiana",
+      "title": "DENSITY IN A SMALL STATE DATASET — HIGH NAPCS DENSITY, LOW SECTOR PENETRATION",
+      "body": "Louisiana presents a paradox familiar from the larger NAPCS dataset: high density within the NAPCS subset does not mean high density in the sector. 3 of 4 active NAPCS LA schools are confirmed unionized (75%). But only 6 of 152 registry schools (4%) are confirmed organized — and all 6 are in New Orleans (geographic concentration). The NAPCS dataset, which skews toward larger and more visible schools, captures the organizing successes but understates the overwhelming non-union character of the broader Louisiana charter sector. KIPP NOLA (8 campuses, non-NAPCS) is entirely unorganized. The pictu"
+    },
+    {
+      "state": "LA",
+      "stateName": "Louisiana",
+      "title": "NO LSCSC PUBLIC PORTAL — AN ACCOUNTABILITY GAP POST-ACT 172",
+      "body": "LSCSC does not maintain a public searchable portal for LERA certifications or charter school labor records. For a board that is now (post-Act 172) the operative labor forum for all BESE-authorized Type 2/5 LA charters, the absence of a public records interface creates a transparency gap. In every other NAPCS state, labor board portal searchability is the foundation of the research methodology (PERC NJ, DLR MA, BMS MN, ERB OR, NLRB ADS). In Louisiana, public access to charter school labor records requires formal records requests, and the LSCSC has no established procedure for charter school org"
+    },
+    {
+      "state": "LA",
+      "stateName": "Louisiana",
+      "title": "",
+      "body": ""
+    },
+    {
+      "state": "LA",
+      "stateName": "Louisiana",
+      "title": "",
+      "body": ""
+    },
+    {
+      "state": "LA",
+      "stateName": "Louisiana",
+      "title": "",
+      "body": ""
+    },
+    {
+      "state": "LA",
+      "stateName": "Louisiana",
+      "title": "",
+      "body": ""
+    },
+    {
+      "state": "MA",
+      "stateName": "Massachusetts",
+      "title": "CARD-CHECK AS ORGANIZING VELOCITY MULTIPLIER — THE MA EVIDENCE BASE",
+      "body": "Massachusetts provides the clearest evidence in the full NAPCS research dataset that card-check availability is the primary driver of organizing velocity. Two charter school certifications in 2024 (Codman, CCSC Cambridge) plus a first contract ratification (NHCS) in a twelve-month window represent a pace of charter sector organizing that no NLRB-jurisdiction state has matched in any single year. The mechanism is direct: WMA card-check eliminates the employer's counter-organizing window. An employer in MA cannot demand a secret ballot election, cannot run an extended anti-union campaign, and ca"
+    },
+    {
+      "state": "MA",
+      "stateName": "Massachusetts",
+      "title": "THE INVISIBLE CONTRACT — MA AS THE PRIMARY CASE STUDY",
+      "body": "Foxborough Regional Charter School's FRCSTA contract is the primary case study in the NAPCS research dataset for what we term the \"invisible contract\" pattern: a confirmed, active CBA with an independent local union that is undetectable by any standard monitoring approach. FRCSTA has no AFT affiliation, no NEA affiliation, no IBT/UAW affiliation, no national press coverage, no Alidade monitoring feed, and no DLR database entry for its original certification. The DESE educator contracts portal (orgcode 04460000) is the only source. Charter sector leaders, policy researchers, and labor relations"
+    },
+    {
+      "state": "MA",
+      "stateName": "Massachusetts",
+      "title": "NON-AFT/NEA AFFILIATIONS — GEOGRAPHY PREDICTS AFFILIATION",
+      "body": "Three of the nine independently certified MA charter unions have affiliations outside the AFT/NEA world: Teamsters Local 170 (AMSA, Marlborough), UAW Local 2322 (PVPA, South Hadley), and FRCSTA (Foxborough, independent). The geographic pattern is striking: all three are in communities with existing industrial union density — Worcester County (Teamsters), Pioneer Valley (UAW), and South Norfolk County (independent/suburban). Boston-area charter schools organized with BTU or AFTMA, the geographically proximate education union infrastructure. The implication for monitoring: tracking only AFT and "
+    },
+    {
+      "state": "MA",
+      "stateName": "Massachusetts",
+      "title": "THE HORACE MANN MODEL — STRUCTURAL COVERAGE WITHOUT CERTIFICATION",
+      "body": "Massachusetts has the largest concentration of structurally covered (DEPENDENT) charter schools in the NAPCS research dataset: 5 active Horace Mann charters whose certificated staff are BPS employees covered by the BPS-BTU district CBA without any independent certification event. The Horace Mann model is a distinct organizing architecture — not union organizing by charter school staff, but structural statutory coverage because the charter school is legally a BPS school. This model will recur in other states wherever district-operated or district-employee-model charter schools appear in NAPCS. "
+    },
+    {
+      "state": "MA",
+      "stateName": "Massachusetts",
+      "title": "DECERTIFICATION IS POSSIBLE BUT EXTREMELY RARE — MA CONFIRMS THE PATTERN",
+      "body": "Conservatory Lab Charter School (certified AFTMA 2008, decertified ~2011-2013) is the only confirmed MA charter decertification in the research dataset and one of only a handful nationally across all researched states. Its rarity — one decertification against 7 active certifications and 5 structural coverages in a 17-school dataset — confirms the cross-state finding that decertification is not a viable strategic option for charter operators. The practical barriers (employee-initiated, timing restrictions, management non-assistance rule) combined with high staff turnover (which removes the orga"
+    },
+    {
+      "state": "ME",
+      "stateName": "Maine",
+      "title": "SMALL-STATE DYNAMICS — SINGLE-SCHOOL STATES",
+      "body": "Maine and Delaware (along with DC before registry expansion) represent the \"small state\" pattern in the NAPCS dataset: a single school or very small school count where 100% NAPCS density can mask very low sector-wide density. Maine has 1 of 9 charter schools in NAPCS; DE has 4 of ~20. Both are 100% NAPCS density but very different sector stories."
+    },
+    {
+      "state": "MI",
+      "stateName": "Michigan",
+      "title": "Mission-Driven First Mover: Arts-Integrated Schools Continue to Lead Charter Organizing",
+      "body": "Arts Academy in the Woods (2012) and Boggs School (2013 RC petition, withdrawn) join a pattern visible in Connecticut (cooperative/project-based), Oregon (rural experiential), and Pennsylvania (arts-integrated Westinghouse Arts) — schools whose educational missions create collective staff identities that translate directly into organizing drives. The 20-1 AAW vote mirrors the unanimity seen at other mission-driven first movers. AAW's employment page continues to highlight union membership as an institutional value, suggesting that organized status has become constitutive of school identity."
+    },
+    {
+      "state": "MI",
+      "stateName": "Michigan",
+      "title": "Alter-Ego Employer Tactic: Management Company Restructuring as Union-Avoidance Strategy",
+      "body": "UYA's New Urban Learning / InspirED case is the most documented example in the NAPCS dataset of a charter employer attempting to escape a union certification by restructuring the management company. The NLRB's alter-ego doctrine — which binds a successor employer when management, ownership, and operations are substantially continuous — defeated this strategy, resulting in a federal complaint. This pattern has been documented in other states (IL, NY) where management company changes coincide with organizing drives. Charter leaders should note that management company restructuring does not elimi"
+    },
+    {
+      "state": "MI",
+      "stateName": "Michigan",
+      "title": "MEA vs. AFT Target Population Divide: Different Unions for Different School Types",
+      "body": "In Michigan, MEA/NEA and AFT-Michigan (Michigan ACTS) have organically divided their target populations. MEA has focused on MERC-jurisdiction schools (community-oriented, ISD/locally-authorized, suburban and small-city charters), using card-check where available. Michigan ACTS has focused on NLRB-jurisdiction schools in Detroit's urban charter market. This division may reflect strategic calculation by each union about where their organizing infrastructure is most effective, or it may reflect natural geographic and political alignment. Either way, the result is that NAPCS schools (which skew ur"
+    },
+    {
+      "state": "MI",
+      "stateName": "Michigan",
+      "title": "Right-to-Work Repeal: New Variable in Michigan Charter Organizing Calculus",
+      "body": "Michigan's repeal of right-to-work for private-sector employees (effective February 2024) adds a new organizing incentive absent from most other NAPCS states. In right-to-work states (AZ, FL), even certified unions cannot require dues payment as a condition of employment, which reduces union stability and bargaining leverage. Michigan's repeal means that new CBAs at NLRB-jurisdiction charter schools can now include union security clauses — increasing both the financial sustainability of charter locals and the union's bargaining power. This change post-dates the AAW (2012) and UYA (2015) organi"
+    },
+    {
+      "state": "MI",
+      "stateName": "Michigan",
+      "title": "CA Case Type as Certification Proof — Cesar Chavez Academy Named Exemplar (Session C)",
+      "body": "Section 8(a)(5) ULP charges (CA cases) filed by a union against an employer can ONLY be filed when the union holds a valid NLRB certification. When NLRB ADS returns 0 RC results for a school but shows CA charges filed by a union against that employer, the CA charges constitute proof of certification. Cesar Chavez Academy Detroit (all 4 campuses) is the named exemplar: prior PLT research concluded \"no certification\" based on 0 NLRB ADS RC results. However, 10 Michigan ACTS CA charges against the Leona Group / CCA (2013-2019) were visible in the ADS and prove Michigan ACTS held a valid certifica"
+    },
+    {
+      "state": "MI",
+      "stateName": "Michigan",
+      "title": "Michigan Charter School Transparency Page as Secondary Detection Source",
+      "body": "Michigan law requires all charter schools (public school academies) to post annual transparency reports on their websites, including health benefit terms for staff. When the transparency report references \"the current bargaining agreement\" as the governing instrument for teacher benefits, this is secondary-source confirmation of an active CBA. Grand Rapids Child Discovery Center (C2600004) confirmed this: the 2025-26 transparency page explicitly states \"Health benefits for teaching staff are directed by the current bargaining agreement.\" This detection method is particularly useful for MERC-ju"
+    },
+    {
+      "state": "MN",
+      "stateName": "Minnesota",
+      "title": "DUAL AFFILIATION AS ORGANIZING ADVANTAGE",
+      "body": "Education Minnesota's NEA/AFT dual affiliation is unique in the full NAPCS dataset. No other state union bridges both national federations. This gives EdMN unusual flexibility: it can draw on AFT resources (strong in urban markets) and NEA resources (strong in suburban/rural markets) simultaneously. The MN charter sector has benefited from this dual pipeline — all 7 NAPCS confirmed schools reached EdMN through different pathways."
+    },
+    {
+      "state": "MN",
+      "stateName": "Minnesota",
+      "title": "2023 PELRA AMENDMENT — FIRST STATE JURISDICTION SHIFT IN DATASET",
+      "body": "Minnesota is the only state in the NAPCS dataset that explicitly shifted charter school jurisdiction from NLRB (private sector) to state labor board (public sector) via legislation. The 2023 amendment creates a transitional records challenge: pre-amendment certs have NLRB case numbers, post-amendment petitions will have BMS case numbers. Future MN research must check both systems."
+    },
+    {
+      "state": "NJ",
+      "stateName": "New Jersey",
+      "title": "CARD-CHECK AS DEFAULT MECHANISM — THE NJ EVIDENCE",
+      "body": "New Jersey provides the clearest evidence in the NAPCS dataset that card-check availability fundamentally changes the character of charter school organizing. Where NLRB states (IL, PA, NY) show adversarial certification battles and employer counter-campaigns, NJ shows near-complete card-check dominance with no documented employer resistance. The NJPERA card-check mechanism has made NJEA certification essentially administrative in character. This finding directly challenges the assumption that charter school unionization is inherently adversarial: in card-check jurisdictions, it is not."
+    },
+    {
+      "state": "NJ",
+      "stateName": "New Jersey",
+      "title": "NJEA ORGANIZING MONOPOLY — STRUCTURAL DOMINANCE, NOT MARKET COMPETITION",
+      "body": "New Jersey presents a single-union organizing environment in sharp contrast to Massachusetts (BTU, Teamsters, UAW, and independent locals) and Illinois (CTU dominant). NJEA holds 15 of 17 confirmed active NAPCS-listed NJ charter school certifications. AFT has exactly one NJ charter school in the dataset; one independent local exists. This dominance is structural: NJEA's decades-long presence in NJ public schools and the NJPERA framework made NJEA the natural organizing partner for NJ charter school staff. The AFT is effectively absent from the NJ charter sector."
+    },
+    {
+      "state": "NJ",
+      "stateName": "New Jersey",
+      "title": "THE INVISIBLE PRESS RECORD — CARD-CHECK AS STEALTH ORGANIZING",
+      "body": "No press coverage of any NJ charter school union organizing drive, certification campaign, or union victory was found in this research. The NJ organizing record is invisible to press-based monitoring because card-check certifications require no public election, no employer campaigning period, and generate no newsworthy conflict. Charter sector leaders who rely on press monitoring as an early-warning system for organizing activity in NJ are receiving no warning at all. Direct PERC portal monitoring and OPRA-based records requests are the only reliable approach."
+    },
+    {
+      "state": "NJ",
+      "stateName": "New Jersey",
+      "title": "JERSEY CITY AS THE MOST ORGANIZED CHARTER MARKET IN THE DATASET",
+      "body": "Jersey City (Hudson County) is the most densely organized charter school market in the entire NAPCS research dataset. Of 8 NAPCS-listed schools with Jersey City addresses, 5 are confirmed unionized: Soaring Heights, Learning Community, Golden Door, Dr. Lena Edwards, and BelovED (via discovery). BelovED's September 2024 certification deepens this concentration further. The Jersey City market is the highest-priority monitoring target in the NJ charter sector."
+    },
+    {
+      "state": "NJ",
+      "stateName": "New Jersey",
+      "title": "THE DATA QUALITY PROBLEM — THREE POSSIBLE NAPCS ERRORS",
+      "body": "Three of 21 NAPCS-listed NJ charter schools (Burch, Teaneck Community, University Academy HS) show zero PERC footprint and no press coverage despite being listed as confirmed unionized. A 2015-16 card-check certification should appear in the PERC online database but none does for these three schools. The possibility that true NJ confirmed count is 14 of 18 active schools (not 17 of 21) is material to any density calculation and must be disclosed to the executive sponsor. Gap: confirmable via PERC(NJ) OPRA request for Burch, Teaneck Community, University Academy HS."
+    },
+    {
+      "state": "NM",
+      "stateName": "New Mexico",
+      "title": "Jurisdictional Ambiguity as Structural Deterrent — NM vs. AZ Comparison",
+      "body": "New Mexico and Arizona are both NLRB Region 28 states with similar charter sector profiles, yet AZ produced its first charter certification in 2023 (BASIS Tucson North) and NM has produced none in 20+ years. The key difference: Arizona's charter schools are clearly classified as private employers under NLRB (no competing state public employer claim), while NM's PEBA arguably covers charter LEAs as units of local government. This jurisdictional ambiguity creates a first-mover deterrent — the first NM charter to organize would bear the cost of resolving PELRB vs. NLRB R28 jurisdiction through ad"
+    },
+    {
+      "state": "NM",
+      "stateName": "New Mexico",
+      "title": "0% Density in Progressive Markets — The Deterrence Effect",
+      "body": "All five NM NAPCS schools are in Santa Fe (3) or Las Cruces (2) — cities with progressive cultures where, in comparable state environments (Massachusetts, Delaware), charter organizing has taken hold. The absence of organizing in these markets despite favorable community conditions is the strongest evidence that the PELRB/NLRB R28 jurisdictional ambiguity functions as a structural deterrent suppressing activity that community conditions might otherwise support. When jurisdictional deterrence is removed (as in AZ, DE, MA), organizing follows. NM is a test case for deterrence theory in charter l"
+    },
+    {
+      "state": "NM",
+      "stateName": "New Mexico",
+      "title": "AACTS Expansion as the Most Likely First Mover",
+      "body": "If NM charter organizing develops, it will most likely be through AFT's AACTS (Arizona Alliance of Charter Teachers and Staff, NLRB R28). AACTS operates in the same NLRB region as NM, has organized BASIS Tucson North (2023, AFT Local 6627), and is pursuing additional AZ certifications. AACTS's NLRB R28 infrastructure and legal capacity (Washington DC-based AFT attorney Michael Piccinelli) would minimize the first-mover cost of resolving NM jurisdiction. The most likely NM target would be a school with AZ network connections or an AFT-NM state affiliate with organizing interest."
+    },
+    {
+      "state": "NY",
+      "stateName": "New York",
+      "title": "NY conversion charter Type B: NYC DOE/UFT CBA carryover via Education Law §2854(3)(a) — named exempl",
+      "body": "New York Education Law §2854(3)(a) mandates that conversion charters — schools formed by converting an existing public school or district program into a charter — remain subject to existing collective bargaining agreements for all titles and positions, including salary, medical, pension, and welfare benefits. For NYC conversion charters, this means the UFT/NYC DOE master CBA covers teachers, supervisors, and paraprofessionals automatically from inception. No independent NLRB RC election ever occurs and none is required. Zero NLRB ADS results for a conversion charter are correct and expected — "
+    },
+    {
+      "state": "NY",
+      "stateName": "New York",
+      "title": "NRtW Foundation decertification playbook in charter schools — NY/CA cross-state pattern",
+      "body": "The National Right to Work Legal Defense Foundation has deployed an identical decertification strategy across charter schools in multiple NAPCS states. The playbook: (1) identify an employee willing to serve as named petitioner; (2) provide free legal aid for NLRB decertification petition; (3) simultaneously file CB charges against the union alleging illegal dues demands; (4) use employer-side pressure (management emails to staff characterizing union as harmful) to suppress pro-union sentiment; (5) coordinate media coverage through NRtW press releases. In CA, this strategy succeeded at Gompers"
+    },
+    {
+      "state": "NY",
+      "stateName": "New York",
+      "title": "",
+      "body": ""
+    },
+    {
+      "state": "NY",
+      "stateName": "New York",
+      "title": "",
+      "body": ""
+    },
+    {
+      "state": "OH",
+      "stateName": "Ohio",
+      "title": "ACTS organizing model — national template",
+      "body": "The ACTS (Alliance of Charter Teachers and Staff) model — multi-school, multi-operator local under AFT umbrella — is the dominant AFT charter organizing vehicle in all three states. Ohio's Cleveland ACTS is the clearest pure-form example: built from scratch in one city, expanding school by school with shared infrastructure."
+    },
+    {
+      "state": "OH",
+      "stateName": "Ohio",
+      "title": "NLRB jurisdiction / no card-check = slower organizing velocity",
+      "body": "All three NLRB-jurisdiction states in the dataset (OH, IL, PA) show lower confirmed density than card-check states (NJ 81%, MA 47%, MN 3 new confirms). NLRB election requirement creates a 60-120 day counter-organizing window that card-check states lack."
+    },
+    {
+      "state": "OH",
+      "stateName": "Ohio",
+      "title": "Mission-aligned schools organize with near-unanimity",
+      "body": "Schools with explicit progressive, equity, or arts-integration missions that already embed collective values in their culture tend to vote overwhelmingly for union representation when they organize. ACPA's 44-1 result is the strongest single example in the full dataset."
+    },
+    {
+      "state": "OH",
+      "stateName": "Ohio",
+      "title": "Employer ULP violations appear in KIPP campaigns",
+      "body": "KIPP operators in multiple states have faced NLRB unfair labor practice findings during organizing campaigns. This pattern is documented in the national KIPP network's labor relations approach and should be treated as a predictive indicator for remaining unorganized KIPP campuses."
+    },
+    {
+      "state": "OH",
+      "stateName": "Ohio",
+      "title": "Ohio dual-track: NLRB (independent charters) vs. ORC §3314.10(A)(3) district CBA carryover (conversi",
+      "body": "Ohio is the only state in the NAPCS dataset with a confirmed dual-track jurisdictional architecture within a single state research scope. Track 1 (NLRB): 9 independently incorporated charters — researched via NLRB ADS, refreshed annually via NLRB ADS. Track 2 (ORC §3314.10(A)(3)): 12 conversion community schools — employees remain in district CBA by statute, no NLRB case exists, researched via SERB district CBA archive, refreshed via SERB CBA renewal cycle. Detection signal: NAPCS description \"Collective bargaining agreement required by state law\" is verbatim ORC §3314.10 language — any Ohio s"
+    },
+    {
+      "state": "OR",
+      "stateName": "Oregon",
+      "title": "THE DEPENDENT CHARTER STRUCTURAL INSIGHT — OREGON AS THE PRIMARY CASE STUDY",
+      "body": "Oregon is the only state in the NAPCS research dataset where all 34 NAPCS schools are district-authorized dependent charters. The research question is fundamentally different: not \"did this school organize?\" but \"does the authorizing district's OEA/OSEA local cover charter-employed staff?\" This distinction matters for how the density figure is reported — apparent 100% coverage is structural, not the product of charter school organizing. Oregon's dependent charter model contrasts sharply with Illinois (53 independent certifications) and Massachusetts (7 independent certifications) and is the mo"
+    },
+    {
+      "state": "OR",
+      "stateName": "Oregon",
+      "title": "DECLINING CHARTER UNION ACTIVITY — OREGON CONTRADICTS THE NATIONAL TREND",
+      "body": "While the national charter union trend is upward (IL +27 since 2018, MA +3 in 2024 alone, NJ +2 in 2024), Oregon has seen a DECLINE in independent charter organizing since the early 2010s (per Education Week 2019). The ERB ContentDM archive shows peak charter organizing activity in 2008-2016 (Ridgeline cert 2008; Mosier cert 2014; Lighthouse cert+decert 2016) with minimal activity since. The 2026 Mosier re-certification and the Ivy School NLRB petition represent tentative signs of renewed activity. The VICS staffing transition (2024) is the opposite signal — an OR charter exiting district CBA "
+    },
+    {
+      "state": "OR",
+      "stateName": "Oregon",
+      "title": "RULE 8 — NCES NAME VS. LABOR BOARD EMPLOYER NAME",
+      "body": "Oregon Virtual Academy (ORVA) is the clearest Rule 8 case in the full OR dataset: NCES/CCD name = \"Evergreen Virtual Academy\" while NLRB employer name = \"Oregon Virtual Academy.\" An NCES-name-only NLRB search would have returned zero results and classified ORVA as UNVERIFIED. Direct NLRB employer name search — using the operational name rather than the NCES administrative name — is what surfaced NLRB 19-RC-278342. This reinforces the standing Rule 8 protocol: always verify the employer's legal name used in labor board filings before concluding a school has no cases."
+    },
+    {
+      "state": "OR",
+      "stateName": "Oregon",
+      "title": "THE HAWKINS COUNTY PRIVATE-EMPLOYER ROUTE — A TOOL FOR ALL DEPENDENT-STATE CHARTERS",
+      "body": "The Ivy School election (31-2 employer win, May 12, 2026) establishes a critical cross-state pattern: independently incorporated charter schools in DEPENDENT states are not necessarily bound by state labor law. The Hawkins County test (402 U.S. 600 (1971)) — not used until recently in the charter context — allows any charter with a private-incorporated, self-perpetuating board to be classified as a private NLRB employer rather than a public ERB/state labor board employer. This route is available in all seven DEPENDENT states in the NAPCS dataset (OR, MA, MN, CT, ME, DC, FL), but only for schoo"
+    },
+    {
+      "state": "OR",
+      "stateName": "Oregon",
+      "title": "ERB ContentDM API AS THE ONLY SCALABLE OR SEARCH METHOD",
+      "body": "The Oregon ERB has no public employer search portal comparable to NLRB ADS, PERC NJ, or DLR MA. The ContentDM REST API (cdm17027.contentdm.oclc.org) — discovered during the Registry OR sweep — is the only scalable method for searching the full ERB case archive by employer name. The ERB website shows only 10 active cases and 26 recent orders; full historical coverage requires ContentDM. This methodology finding is project-critical: any future OR research cycle must use the ContentDM API rather than the ERB website."
+    },
+    {
+      "state": "PA",
+      "stateName": "Pennsylvania",
+      "title": "NETWORK-LEVEL BARGAINING — THE PROPEL MODEL",
+      "body": "Propel Schools' April 2021 network-wide election (236-82 across 13 campuses, one NLRB case number 06-RC-273664) is the paradigmatic network-level bargaining case in the NAPCS dataset. One certification covers all Allegheny County Propel campuses — individual school reports all reference the same case number."
+    },
+    {
+      "state": "PA",
+      "stateName": "Pennsylvania",
+      "title": "CYBER CHARTERS AS MULTI-UNIT TARGETS",
+      "body": "Pennsylvania's three cyber charters (Agora, PA Cyber, PA Virtual) demonstrate a unique multi-unit organizing pattern. Agora has three separate NLRB-certified units (teachers, counselors, student services). PA Cyber has two (teachers, advisors). This staged organizing approach — winning student services and counselor units first, then teachers — is unique in the full NAPCS dataset."
+    },
+    {
+      "state": "PA",
+      "stateName": "Pennsylvania",
+      "title": "ACSE LOCAL 6056 EXPANSION — PHILADELPHIA AND PITTSBURGH",
+      "body": "ACSE/AFT Local 6056 was historically a Philadelphia-only organizing vehicle. The certifications at Environmental CS at Frick Park (Pittsburgh, December 2018) and Urban Pathways (Pittsburgh, June 2022) represent a geographic expansion into the Pittsburgh market — historically PSEA/NEA territory. This cross-ecosystem incursion is a significant development."
+    },
+    {
+      "state": "PA",
+      "stateName": "Pennsylvania",
+      "title": "MULTI-CULTURAL ACADEMY — STATUS CONFLICT (Session C, May 24, 2026)",
+      "body": "Multi-Cultural Academy Charter School (C4298007, Philadelphia) presents the most complex evidentiary conflict in the full PA dataset. NLRB ADS R4 search (May 2026) found only one record: 04-RM-103582, an employer-initiated RM petition filed April 24, 2013, withdrawn 8 days later — no union RC case ever filed, no certification event. However, a WHYY public radio report (August 2017) stated that \"all of Philadelphia's current charter school unions — minus Multi-Cultural Academy — fall under the purview of ACSE.\" The grammatical structure implies MACS DOES have a union, just not under ACSE/AFT Lo"
+    },
+    {
+      "state": "PA",
+      "stateName": "Pennsylvania",
+      "title": "THREE ORGANIZING ECOSYSTEMS — ERIE CONFIRMED AS THIRD (Session C)",
+      "body": "Session C (May 24, 2026) confirmed a third distinct Pennsylvania organizing geography with the addition of Montessori Regional Charter School (Erie, NLRB 06-RC-210728, closed with cert issued, 49 employees). Pennsylvania now has three geographically distinct organizing ecosystems: (1) Philadelphia metro — ACSE/AFT Local 6056, campaign-driven one-school-at-a-time organizing, recent certs at Folk Arts (December 2022), Northwood Academy (January 2023), New Foundations (July 2025); (2) Pittsburgh metro — PSEA/NEA, network-level bargaining (Propel 2021, 236-82 across 13 campuses), Environmental CS,"
+    },
+    {
+      "state": "PA",
+      "stateName": "Pennsylvania",
+      "title": "West Oak Lane — First PA Union Charter School (2004) and Pre-Digitization Detection via Institutiona",
+      "body": "West Oak Lane Charter School (Philadelphia) has been organized under Alliance for Charter School Employees (ACSE) Local 6056, AFT Pennsylvania since 2004 — making it the first union charter school in Pennsylvania, predating the 2016 Hyde ruling that confirmed NLRB jurisdiction over all PA charters. The 2004 cert does not appear in NLRB ADS because it predates reliable online digitization for employers of this size and region. It was confirmed via the AFT Pennsylvania institutional press release from August 2020, which explicitly named West Oak Lane as \"the first union charter school\" and liste"
+    },
+    {
+      "state": "RI",
+      "stateName": "Rhode Island",
+      "title": "IBEW charter school organizing — non-traditional union entry into education sector (RI named exempla",
+      "body": "Highlander Elementary Charter (Providence, RI, IBEW Local 2323, cert September 2024) is only the second known IBEW charter school certification in the PLT dataset. IBEW Local 2323 is a telecommunications local — its entry reflects a national trend of non-traditional unions (IBEW, IATSE, Teamsters) filling the organizing vacuum in sectors where NEA/AFT have been slow to engage. The Highlander case is featured in IBEW's national newsletter as a replicable model. Sector leaders should be aware that the union landscape in their schools may not be limited to NEA/AFT affiliates."
+    },
+    {
+      "state": "RI",
+      "stateName": "Rhode Island",
+      "title": "Sequential multi-campus organizing — Paul Cuffee as national model for network-wide unionization str",
+      "body": "Paul Cuffee School certified three campuses sequentially in 9 months: Upper (Oct 2024), Lower (Dec 2024), Middle (Jun 2025). This strategy — organizing the most sympathetic unit first, then using certification momentum at adjacent campuses — mirrors patterns in IL (ChiACTS campaigns) and CA (Green Dot wave organizing). The Paul Cuffee arc is the clearest recent national exemplar of deliberate multi-campus sequential organizing at a single charter network."
+    },
+    {
+      "state": "RI",
+      "stateName": "Rhode Island",
+      "title": "Federal vs. state law strike rights — RI as first documented test case for charter school NLRA preem",
+      "body": "Rhode Island is the first documented case in the PLT dataset where a charter school union (IBEW Local 2323 at Highlander Elementary) asserted federal NLRA preemption of a state-law teacher strike prohibition and acted on that assertion (November 2025 strike). RIDE and the school argued RI's public teacher strike ban applied; IBEW filed a federal court complaint asserting NLRA preemption. The legal question has national implications wherever state strike bans exist — which is most states. RI's resolution will be closely watched."
+    },
+    {
+      "state": "RI",
+      "stateName": "Rhode Island",
+      "title": "Second-attempt organizing success — Highlander Elementary as named exemplar (RI)",
+      "body": "Highlander Elementary's 2024 certification (28-4) followed a 2019 failed election (11-12 — one vote). The 5-year gap, different union, and dramatically improved outcome is the clearest national exemplar of organizing persistence in the PLT dataset. The parallel in NY is King Center Charter School, where organizing succeeded after earlier dormancy. Key lesson: failed elections do not extinguish organizing interest — they often radicalize the workforce. Charter operators who \"win\" an election should treat it as a temporary outcome."
+    }
+  ],
+  "densityTable": [
+    {
+      "st": "OR",
+      "name": "Oregon",
+      "universe": 128,
+      "confirmed": 2,
+      "dependent": 120,
+      "combined": 122,
+      "density": "95.3%",
+      "note": "122/128 · ERB · OEA structural coverage — 120 LEA-authorized dependent charters (31 NAPCS + 89 non-NAPCS); 3 State Board-authorized schools are NLRB/independent (not counted as dependent). 97.7% densi"
+    },
+    {
+      "st": "IL",
+      "name": "Illinois",
+      "universe": 131,
+      "confirmed": 31,
+      "dependent": 1,
+      "combined": 32,
+      "density": "24.4%",
+      "note": "32/131 · NLRB R13/IELRB · CTU/ChiACTS · incl. 3 approved discoveries · 5 CONFIRMED CLOSED (data file current); 4 additional Acero/ASPIRA closures pending confirmation fall 2026"
+    },
+    {
+      "st": "CT",
+      "name": "Connecticut",
+      "universe": 21,
+      "confirmed": 4,
+      "dependent": 1,
+      "combined": 5,
+      "density": "23.8%",
+      "note": "5/21 · SBLR/NLRB R34"
+    },
+    {
+      "st": "NJ",
+      "name": "New Jersey",
+      "universe": 85,
+      "confirmed": 19,
+      "dependent": 0,
+      "combined": 19,
+      "density": "22.4%",
+      "note": "19/85 · PERC(NJ) · card-check · NJEA dominant · incl. 2 approved discoveries"
+    },
+    {
+      "st": "MA",
+      "name": "Massachusetts",
+      "universe": 73,
+      "confirmed": 8,
+      "dependent": 5,
+      "combined": 13,
+      "density": "17.8%",
+      "note": "13/73 · DLR(MA) · card-check via WMA"
+    },
+    {
+      "st": "DE",
+      "name": "Delaware",
+      "universe": 23,
+      "confirmed": 4,
+      "dependent": 0,
+      "combined": 4,
+      "density": "17.4%",
+      "note": "4/23 · PERB(DE) · card-check · DSEA/NEA dominant"
+    },
+    {
+      "st": "PA",
+      "name": "Pennsylvania",
+      "universe": 175,
+      "confirmed": 20,
+      "dependent": 0,
+      "combined": 20,
+      "density": "11.4%",
+      "note": "20/175 · NLRB R4/R6 · ACSE/AFT Philadelphia · West Oak Lane upgraded May 2026 (first PA charter union since 2004) · 2016 landmark ruling"
+    },
+    {
+      "st": "CA",
+      "name": "California",
+      "universe": 1246,
+      "confirmed": 88,
+      "dependent": 48,
+      "combined": 136,
+      "density": "10.9%",
+      "note": "136/1,246 · PERB(CA)/EERA · card-check · incl. 5 approved discoveries · POLAHS = certified/dormant (not counted)"
+    },
+    {
+      "st": "ME",
+      "name": "Maine",
+      "universe": 11,
+      "confirmed": 1,
+      "dependent": 0,
+      "combined": 1,
+      "density": "9.1%",
+      "note": "1/11 · MLRB · Baxter Academy only NAPCS school"
+    },
+    {
+      "st": "OH",
+      "name": "Ohio",
+      "universe": 323,
+      "confirmed": 12,
+      "dependent": 12,
+      "combined": 24,
+      "density": "7.4%",
+      "note": "24/323 · NLRB R8/R9 · 12 CONFIRMED (Cleveland ACTS/OFT + Summit Youngstown/OEA) + 12 DEPENDENT (ORC §3314.10(A)(3) district CBA carryover) · incl. 1 approved discovery"
+    },
+    {
+      "st": "NY",
+      "name": "New York",
+      "universe": 330,
+      "confirmed": 21,
+      "dependent": 0,
+      "combined": 21,
+      "density": "6.4%",
+      "note": "21/330 · NLRB R2/R29/R3 · UFT dominant · King Center United Professionals (Oct 2024) · incl. 3 approved discoveries · 6 schools upgraded UNVERIFIED→CONFIRMED May 22, 2026"
+    },
+    {
+      "st": "DC",
+      "name": "Washington DC",
+      "universe": 123,
+      "confirmed": 7,
+      "dependent": 0,
+      "combined": 7,
+      "density": "5.7%",
+      "note": "7/123 · NLRB R5 · DC ACTS/AFT · closed = Cesar Chavez PCS (2019)"
+    },
+    {
+      "st": "MN",
+      "name": "Minnesota",
+      "universe": 309,
+      "confirmed": 7,
+      "dependent": 0,
+      "combined": 7,
+      "density": "2.3%",
+      "note": "7/309 · BMS · card-check post-2023 PELRA · incl. Ubah"
+    },
+    {
+      "st": "LA",
+      "name": "Louisiana",
+      "universe": 138,
+      "confirmed": 3,
+      "dependent": 0,
+      "combined": 3,
+      "density": "2.2%",
+      "note": "3/138 · LSCSC/LERA · Act 172 stripped NLRB jurisdiction"
+    },
+    {
+      "st": "NM",
+      "name": "New Mexico",
+      "universe": 98,
+      "confirmed": 2,
+      "dependent": 0,
+      "combined": 2,
+      "density": "2.0%",
+      "note": "2/98 · PELRB/NLRB R28 · Monte del Sol (CONFIRMED voluntary recognition, NEA-NM, 2010-11) + J Paul Taylor Academy (CONFIRMED PELRB cert ~2015-16) · 3 schools remain UNVERIFIED vs NAPCS assertion"
+    },
+    {
+      "st": "MI",
+      "name": "Michigan",
+      "universe": 374,
+      "confirmed": 5,
+      "dependent": 0,
+      "combined": 5,
+      "density": "1.3%",
+      "note": "5/374 · MERC/NLRB R7 · split jurisdiction · incl. 3 approved discoveries"
+    },
+    {
+      "st": "FL",
+      "name": "Florida",
+      "universe": 730,
+      "confirmed": 4,
+      "dependent": 3,
+      "combined": 7,
+      "density": "1.0%",
+      "note": "7/730 · PERC(FL) · SB256 annual recertification"
+    },
+    {
+      "st": "AZ",
+      "name": "Arizona",
+      "universe": 562,
+      "confirmed": 1,
+      "dependent": 0,
+      "combined": 1,
+      "density": "0.2%",
+      "note": "1/562 · NLRB R28 · right-to-work · CITY Center election May 19 result pending"
+    }
+  ],
+  "densityTotals": {
+    "universe": 4880,
+    "confirmed": 242,
+    "dependent": 190,
+    "organizing": 3,
+    "decertified": 7,
+    "closed": 9,
+    "combined": 425,
+    "density": "8.7%",
+    "note": "425 combined (235 confirmed + 190 dependent) / 4,880"
+  },
+  "stateCities": {
+    "AZ": [
+      [
+        "Phoenix",
+        33.4484,
+        -112.074
+      ],
+      [
+        "Tucson",
+        32.2226,
+        -110.9747
+      ],
+      [
+        "Mesa",
+        33.4152,
+        -111.8315
+      ],
+      [
+        "Scottsdale",
+        33.4942,
+        -111.9261
+      ],
+      [
+        "Flagstaff",
+        35.1983,
+        -111.6513
+      ],
+      [
+        "Peoria",
+        33.5806,
+        -112.2374
+      ],
+      [
+        "Glendale",
+        33.5387,
+        -112.186
+      ],
+      [
+        "Chandler",
+        33.3062,
+        -111.8413
+      ],
+      [
+        "Tempe",
+        33.4255,
+        -111.94
+      ]
+    ],
+    "CA": [
+      [
+        "Los Angeles",
+        34.0522,
+        -118.2437
+      ],
+      [
+        "San Francisco",
+        37.7749,
+        -122.4194
+      ],
+      [
+        "San Diego",
+        32.7157,
+        -117.1611
+      ],
+      [
+        "Sacramento",
+        38.5816,
+        -121.4944
+      ],
+      [
+        "Oakland",
+        37.8044,
+        -122.2712
+      ],
+      [
+        "San Jose",
+        37.3382,
+        -121.8863
+      ],
+      [
+        "Fresno",
+        36.7378,
+        -119.7871
+      ],
+      [
+        "Long Beach",
+        33.7701,
+        -118.1937
+      ],
+      [
+        "Riverside",
+        33.9806,
+        -117.3755
+      ],
+      [
+        "Stockton",
+        37.9577,
+        -121.2908
+      ],
+      [
+        "Chula Vista",
+        32.6401,
+        -117.0842
+      ],
+      [
+        "Inglewood",
+        33.9617,
+        -118.3531
+      ],
+      [
+        "Compton",
+        33.8958,
+        -118.2201
+      ],
+      [
+        "East Los Angeles",
+        34.0239,
+        -118.172
+      ],
+      [
+        "Hawthorne",
+        33.9164,
+        -118.3526
+      ],
+      [
+        "Lynwood",
+        33.9303,
+        -118.2117
+      ],
+      [
+        "Gardena",
+        33.8883,
+        -118.3089
+      ],
+      [
+        "Carson",
+        33.8317,
+        -118.282
+      ],
+      [
+        "Torrance",
+        33.8358,
+        -118.3406
+      ],
+      [
+        "Santa Ana",
+        33.7455,
+        -117.8677
+      ],
+      [
+        "Anaheim",
+        33.8366,
+        -117.9143
+      ],
+      [
+        "Irvine",
+        33.6846,
+        -117.8265
+      ],
+      [
+        "Pasadena",
+        34.1478,
+        -118.1445
+      ],
+      [
+        "Pomona",
+        34.0553,
+        -117.7526
+      ],
+      [
+        "Ontario",
+        34.0633,
+        -117.6509
+      ],
+      [
+        "Rancho Cucamonga",
+        34.1064,
+        -117.5931
+      ],
+      [
+        "San Bernardino",
+        34.1083,
+        -117.2898
+      ],
+      [
+        "Moreno Valley",
+        33.9425,
+        -117.2297
+      ],
+      [
+        "Santa Clarita",
+        34.3917,
+        -118.5426
+      ],
+      [
+        "Lancaster",
+        34.6868,
+        -118.1542
+      ],
+      [
+        "Palmdale",
+        34.5794,
+        -118.1165
+      ],
+      [
+        "Salinas",
+        36.6777,
+        -121.6555
+      ],
+      [
+        "Sunnyvale",
+        37.3688,
+        -122.0363
+      ],
+      [
+        "Berkeley",
+        37.8716,
+        -122.2727
+      ],
+      [
+        "Richmond",
+        37.9358,
+        -122.3477
+      ],
+      [
+        "Santa Rosa",
+        38.4405,
+        -122.7145
+      ],
+      [
+        "Watsonville",
+        36.9102,
+        -121.7569
+      ],
+      [
+        "El Monte",
+        34.0686,
+        -118.0276
+      ],
+      [
+        "Baldwin Park",
+        34.0853,
+        -117.9609
+      ],
+      [
+        "Alhambra",
+        34.0953,
+        -118.127
+      ]
+    ],
+    "CT": [
+      [
+        "Hartford",
+        41.7658,
+        -72.6851
+      ],
+      [
+        "New Haven",
+        41.3083,
+        -72.9279
+      ],
+      [
+        "Bridgeport",
+        41.1865,
+        -73.1952
+      ],
+      [
+        "Stamford",
+        41.0534,
+        -73.5387
+      ],
+      [
+        "Waterbury",
+        41.5582,
+        -73.0515
+      ],
+      [
+        "New Britain",
+        41.6612,
+        -72.7795
+      ]
+    ],
+    "DC": [
+      [
+        "Washington",
+        38.9072,
+        -77.0369
+      ]
+    ],
+    "DE": [
+      [
+        "Wilmington",
+        39.7447,
+        -75.5484
+      ],
+      [
+        "Dover",
+        39.1582,
+        -75.5244
+      ],
+      [
+        "Newark",
+        39.6837,
+        -75.7497
+      ],
+      [
+        "Middletown",
+        39.4495,
+        -75.7163
+      ]
+    ],
+    "FL": [
+      [
+        "Miami",
+        25.7617,
+        -80.1918
+      ],
+      [
+        "Orlando",
+        28.5383,
+        -81.3792
+      ],
+      [
+        "Tampa",
+        27.9506,
+        -82.4572
+      ],
+      [
+        "Jacksonville",
+        30.3322,
+        -81.6557
+      ],
+      [
+        "Tallahassee",
+        30.4518,
+        -84.2807
+      ],
+      [
+        "Fort Lauderdale",
+        26.1224,
+        -80.1373
+      ],
+      [
+        "St. Petersburg",
+        27.7676,
+        -82.6403
+      ],
+      [
+        "Hialeah",
+        25.8576,
+        -80.2781
+      ],
+      [
+        "Gainesville",
+        29.6516,
+        -82.3248
+      ],
+      [
+        "Port St. Lucie",
+        27.2939,
+        -80.3503
+      ]
+    ],
+    "IL": [
+      [
+        "Chicago",
+        41.8781,
+        -87.6298
+      ],
+      [
+        "Aurora",
+        41.7606,
+        -88.3201
+      ],
+      [
+        "Rockford",
+        42.2711,
+        -89.0937
+      ],
+      [
+        "Joliet",
+        41.525,
+        -88.0817
+      ],
+      [
+        "Springfield",
+        39.7817,
+        -89.6501
+      ],
+      [
+        "Peoria",
+        40.6936,
+        -89.589
+      ],
+      [
+        "Grayslake",
+        42.3439,
+        -88.0404
+      ]
+    ],
+    "LA": [
+      [
+        "New Orleans",
+        29.9511,
+        -90.0715
+      ],
+      [
+        "Baton Rouge",
+        30.4515,
+        -91.1871
+      ],
+      [
+        "Shreveport",
+        32.5252,
+        -93.7502
+      ],
+      [
+        "Lafayette",
+        30.2241,
+        -92.0198
+      ]
+    ],
+    "MA": [
+      [
+        "Boston",
+        42.3601,
+        -71.0589
+      ],
+      [
+        "Worcester",
+        42.2626,
+        -71.8023
+      ],
+      [
+        "Springfield",
+        42.1015,
+        -72.5898
+      ],
+      [
+        "Cambridge",
+        42.3736,
+        -71.1097
+      ],
+      [
+        "Lowell",
+        42.6334,
+        -71.3162
+      ],
+      [
+        "Brockton",
+        42.0834,
+        -71.0184
+      ],
+      [
+        "Framingham",
+        42.2793,
+        -71.4162
+      ],
+      [
+        "New Bedford",
+        41.6362,
+        -70.9342
+      ],
+      [
+        "Lawrence",
+        42.707,
+        -71.1631
+      ],
+      [
+        "Lynn",
+        42.4668,
+        -70.9495
+      ],
+      [
+        "Holyoke",
+        42.2042,
+        -72.6162
+      ],
+      [
+        "Somerville",
+        42.3876,
+        -71.0995
+      ]
+    ],
+    "ME": [
+      [
+        "Portland",
+        43.6591,
+        -70.2568
+      ],
+      [
+        "Augusta",
+        44.3106,
+        -69.7795
+      ],
+      [
+        "Bangor",
+        44.8012,
+        -68.7778
+      ],
+      [
+        "Lewiston",
+        44.1004,
+        -70.2148
+      ]
+    ],
+    "MI": [
+      [
+        "Detroit",
+        42.3314,
+        -83.0458
+      ],
+      [
+        "Grand Rapids",
+        42.9634,
+        -85.6681
+      ],
+      [
+        "Lansing",
+        42.7325,
+        -84.5555
+      ],
+      [
+        "Ann Arbor",
+        42.2808,
+        -83.743
+      ],
+      [
+        "Flint",
+        43.0125,
+        -83.6875
+      ],
+      [
+        "Pontiac",
+        42.6389,
+        -83.291
+      ]
+    ],
+    "MN": [
+      [
+        "Minneapolis",
+        44.9778,
+        -93.265
+      ],
+      [
+        "Saint Paul",
+        44.9537,
+        -93.09
+      ],
+      [
+        "Rochester",
+        44.0121,
+        -92.4802
+      ],
+      [
+        "Duluth",
+        46.7867,
+        -92.1005
+      ],
+      [
+        "Brooklyn Park",
+        45.0941,
+        -93.3752
+      ],
+      [
+        "Brooklyn Center",
+        45.0761,
+        -93.3327
+      ]
+    ],
+    "NJ": [
+      [
+        "Newark",
+        40.7357,
+        -74.1724
+      ],
+      [
+        "Jersey City",
+        40.7178,
+        -74.0431
+      ],
+      [
+        "Paterson",
+        40.9176,
+        -74.1719
+      ],
+      [
+        "Elizabeth",
+        40.664,
+        -74.2107
+      ],
+      [
+        "Plainfield",
+        40.6337,
+        -74.4074
+      ],
+      [
+        "Camden",
+        39.9259,
+        -75.1196
+      ],
+      [
+        "Trenton",
+        40.2171,
+        -74.7429
+      ],
+      [
+        "New Brunswick",
+        40.4862,
+        -74.4518
+      ],
+      [
+        "Hackensack",
+        40.8859,
+        -74.0435
+      ],
+      [
+        "Asbury Park",
+        40.2204,
+        -74.0121
+      ]
+    ],
+    "NM": [
+      [
+        "Albuquerque",
+        35.0844,
+        -106.6504
+      ],
+      [
+        "Santa Fe",
+        35.687,
+        -105.9378
+      ],
+      [
+        "Las Cruces",
+        32.3199,
+        -106.7637
+      ],
+      [
+        "Rio Rancho",
+        35.2328,
+        -106.663
+      ]
+    ],
+    "NY": [
+      [
+        "New York",
+        40.7128,
+        -74.006
+      ],
+      [
+        "Buffalo",
+        42.8864,
+        -78.8784
+      ],
+      [
+        "Yonkers",
+        40.9312,
+        -73.8988
+      ],
+      [
+        "Rochester",
+        43.1566,
+        -77.6088
+      ],
+      [
+        "Brooklyn",
+        40.6782,
+        -73.9442
+      ],
+      [
+        "Bronx",
+        40.8448,
+        -73.8648
+      ],
+      [
+        "Jackson Heights",
+        40.7557,
+        -73.883
+      ],
+      [
+        "Long Island City",
+        40.7448,
+        -73.9468
+      ],
+      [
+        "Elmhurst",
+        40.7357,
+        -73.8826
+      ],
+      [
+        "Calverton",
+        40.9168,
+        -72.7551
+      ],
+      [
+        "Lackawanna",
+        42.8253,
+        -78.8275
+      ],
+      [
+        "Williamsville",
+        42.9612,
+        -78.7376
+      ]
+    ],
+    "OH": [
+      [
+        "Columbus",
+        39.9612,
+        -82.9988
+      ],
+      [
+        "Cleveland",
+        41.4993,
+        -81.6944
+      ],
+      [
+        "Cincinnati",
+        39.1031,
+        -84.512
+      ],
+      [
+        "Toledo",
+        41.6528,
+        -83.5379
+      ],
+      [
+        "Akron",
+        41.0814,
+        -81.519
+      ],
+      [
+        "Dayton",
+        39.7589,
+        -84.1916
+      ],
+      [
+        "Youngstown",
+        41.0998,
+        -80.6495
+      ],
+      [
+        "Canton",
+        40.7989,
+        -81.3784
+      ]
+    ],
+    "OR": [
+      [
+        "Portland",
+        45.5051,
+        -122.675
+      ],
+      [
+        "Salem",
+        44.9429,
+        -123.0351
+      ],
+      [
+        "Eugene",
+        44.0521,
+        -123.0868
+      ],
+      [
+        "Gresham",
+        45.5001,
+        -122.4302
+      ],
+      [
+        "Hillsboro",
+        45.5229,
+        -122.9898
+      ],
+      [
+        "Beaverton",
+        45.4871,
+        -122.8037
+      ],
+      [
+        "Bend",
+        44.0582,
+        -121.3153
+      ],
+      [
+        "Medford",
+        42.3265,
+        -122.8756
+      ]
+    ],
+    "PA": [
+      [
+        "Philadelphia",
+        39.9526,
+        -75.1652
+      ],
+      [
+        "Pittsburgh",
+        40.4406,
+        -79.9959
+      ],
+      [
+        "Allentown",
+        40.6023,
+        -75.4714
+      ],
+      [
+        "Erie",
+        42.1292,
+        -80.0851
+      ],
+      [
+        "Reading",
+        40.3356,
+        -75.9269
+      ],
+      [
+        "Scranton",
+        41.409,
+        -75.6624
+      ],
+      [
+        "Lancaster",
+        40.0379,
+        -76.3055
+      ],
+      [
+        "Harrisburg",
+        40.2732,
+        -76.8867
+      ]
+    ],
+    "RI": [
+      [
+        "Providence",
+        41.824,
+        -71.4128
+      ],
+      [
+        "Cranston",
+        41.7798,
+        -71.4373
+      ],
+      [
+        "Warwick",
+        41.7001,
+        -71.4162
+      ],
+      [
+        "Pawtucket",
+        41.8787,
+        -71.3826
+      ]
+    ]
+  },
+  "unorgLookup": {
+    "CA|34.1|-118.2": [
+      {
+        "name": "CNCA Early Childhood Campus",
+        "napcsId": "C0618350",
+        "city": "Los Angeles"
+      },
+      {
+        "name": "Camino Nuevo Charter Academy",
+        "napcsId": "C0600006",
+        "city": "Los Angeles"
+      },
+      {
+        "name": "Santa Monica Boulevard Community Charter",
+        "napcsId": "C0601065",
+        "city": "LOS ANGELES"
+      },
+      {
+        "name": "Los Angeles Leadership Academy",
+        "napcsId": "C0602075",
+        "city": "LOS ANGELES"
+      },
+      {
+        "name": "N.E.W. Academy Of Science And Arts",
+        "napcsId": "C0603039",
+        "city": "LOS ANGELES"
+      },
+      {
+        "name": "Wallis Annenberg High",
+        "napcsId": "C0603061",
+        "city": "LOS ANGELES"
+      },
+      {
+        "name": "Accelerated Charter Elementary-Aces",
+        "napcsId": "C0604001",
+        "city": "LOS ANGELES"
+      },
+      {
+        "name": "Los Angeles Academy Of Arts & Enterprise Charter",
+        "napcsId": "C0605116",
+        "city": "LOS ANGELES"
+      },
+      {
+        "name": "New Los Angeles Charter Middle",
+        "napcsId": "C0608038",
+        "city": "LOS ANGELES"
+      },
+      {
+        "name": "Ballington Academy For The Arts And Sciences",
+        "napcsId": "C0609006",
+        "city": "El Centro"
+      },
+      {
+        "name": "Camino Nuevo Academy #2",
+        "napcsId": "C0610025",
+        "city": "LOS ANGELES"
+      },
+      {
+        "name": "Camino Nuevo Elementary No. 3",
+        "napcsId": "C0610026",
+        "city": "LOS ANGELES"
+      },
+      {
+        "name": "Camino Nuevo Charter Academy No. 4",
+        "napcsId": "C0611016",
+        "city": "LOS ANGELES"
+      },
+      {
+        "name": "Los Angeles Leadership Primary Academy",
+        "napcsId": "C0611058",
+        "city": "LOS ANGELES"
+      },
+      {
+        "name": "Camino Nuevo High #2",
+        "napcsId": "C0613042",
+        "city": "LOS ANGELES"
+      },
+      {
+        "name": "New Los Angeles Charter Elementary",
+        "napcsId": "C0616041",
+        "city": "LOS ANGELES"
+      }
+    ],
+    "CA|37.8|-122.3": [
+      {
+        "name": "AMERICAN INDIAN PUBLIC CHARTER SCHOOL II",
+        "napcsId": "C0607001",
+        "city": "Oakland"
+      },
+      {
+        "name": "Oakland School For The Arts",
+        "napcsId": "C0602029",
+        "city": "Oakland"
+      },
+      {
+        "name": "Envision Academy For Arts & Technology",
+        "napcsId": "C0606036",
+        "city": "Oakland"
+      },
+      {
+        "name": "Yu Ming Charter",
+        "napcsId": "C0611095",
+        "city": "Oakland"
+      },
+      {
+        "name": "Lps Oakland R&D Campus",
+        "napcsId": "C0612008",
+        "city": "Oakland"
+      },
+      {
+        "name": "East Bay Innovation Academy-Lower School",
+        "napcsId": "C0614033",
+        "city": "Oakland"
+      },
+      {
+        "name": "Aims College Prep Elementary School",
+        "napcsId": "C0618621",
+        "city": "Oakland"
+      },
+      {
+        "name": "Aims College Prep Middle School",
+        "napcsId": "C0696001",
+        "city": "Oakland"
+      },
+      {
+        "name": "Helix High",
+        "napcsId": "C0698054",
+        "city": "La Mesa"
+      },
+      {
+        "name": "Preuss School Ucsd",
+        "napcsId": "C0699042",
+        "city": "La Jolla"
+      }
+    ],
+    "CA|37.3|-121.9": [
+      {
+        "name": "DISCOVERY CHARTER",
+        "napcsId": "C0694006",
+        "city": "San Jose"
+      },
+      {
+        "name": "Latino College Preparatory Academy",
+        "napcsId": "C0601021",
+        "city": "SAN JOSE"
+      },
+      {
+        "name": "Discovery Charter-Phoenix Campus",
+        "napcsId": "C0606034",
+        "city": "SAN JOSE"
+      },
+      {
+        "name": "Alpha: Cornerstone Academy Preparatory",
+        "napcsId": "C0610040",
+        "city": "SAN JOSE"
+      },
+      {
+        "name": "Ace Charter High",
+        "napcsId": "C0612092",
+        "city": "SAN JOSE"
+      },
+      {
+        "name": "Discovery Charter School-Falcon Campus",
+        "napcsId": "C0613046",
+        "city": "SAN JOSE"
+      },
+      {
+        "name": "Luis Valdez Leadership Academy",
+        "napcsId": "C0614056",
+        "city": "SAN JOSE"
+      },
+      {
+        "name": "Roberto Cruz Leadership Academy",
+        "napcsId": "C0615063",
+        "city": "SAN JOSE"
+      }
+    ],
+    "CA|36.7|-121.7": [
+      {
+        "name": "Monterey County Home Charter",
+        "napcsId": "C0600023",
+        "city": "Salinas"
+      }
+    ],
+    "CA|33.7|-117.9": [
+      {
+        "name": "Ocsa",
+        "napcsId": "C0600028",
+        "city": "Santa Ana"
+      },
+      {
+        "name": "Santa Ynez Valley Charter",
+        "napcsId": "C0601036",
+        "city": "Santa Ynez"
+      },
+      {
+        "name": "Orange County Educational Arts Academy (Oceaa)",
+        "napcsId": "C0605053",
+        "city": "Santa Ana"
+      },
+      {
+        "name": "Envision Education",
+        "napcsId": "C0606039",
+        "city": "Santa Maria"
+      },
+      {
+        "name": "Peabody Charter",
+        "napcsId": "C0693026",
+        "city": "SANTA BARBARA"
+      }
+    ],
+    "CA|32.6|-117.1": [
+      {
+        "name": "Maac Community Charter School",
+        "napcsId": "C0601024",
+        "city": "Chula Vista"
+      },
+      {
+        "name": "Discovery Charter",
+        "napcsId": "C0694035",
+        "city": "Chula Vista"
+      },
+      {
+        "name": "Mueller Charter (Robert L.)",
+        "napcsId": "C0694040",
+        "city": "Chula Vista"
+      }
+    ],
+    "CA|38.0|-121.3": [
+      {
+        "name": "Venture Academy",
+        "napcsId": "C0602045",
+        "city": "STOCKTON"
+      }
+    ],
+    "CA|38.6|-121.5": [
+      {
+        "name": "Sacramento Charter High",
+        "napcsId": "C0603050",
+        "city": "Sacramento"
+      }
+    ],
+    "CA|37.8|-122.4": [
+      {
+        "name": "City Arts & Leadership Academy",
+        "napcsId": "C0604014",
+        "city": "SAN FRANCISCO"
+      },
+      {
+        "name": "Five Keys Charter (Sf Sheriff'S)",
+        "napcsId": "C0604023",
+        "city": "SAN FRANCISCO"
+      },
+      {
+        "name": "Five Keys Independence Hs (Sf Sheriff'S)",
+        "napcsId": "C0608057",
+        "city": "SAN FRANCISCO"
+      },
+      {
+        "name": "Vaughn Next Century Learning Center",
+        "napcsId": "C0693029",
+        "city": "San Fernando"
+      },
+      {
+        "name": "San Carlos Charter Learning Center",
+        "napcsId": "C0694042",
+        "city": "San Carlos"
+      },
+      {
+        "name": "Phoenix Academy",
+        "napcsId": "C0695013",
+        "city": "San Rafael"
+      },
+      {
+        "name": "San Jacinto Valley Academy",
+        "napcsId": "C0697018",
+        "city": "San Jacinto"
+      },
+      {
+        "name": "Grizzly Challenge Charter",
+        "napcsId": "C0698029",
+        "city": "San Luis Obispo"
+      }
+    ],
+    "CA|34.1|-117.3": [
+      {
+        "name": "Public Safety Academy",
+        "napcsId": "C0605056",
+        "city": "San Bernardino"
+      }
+    ],
+    "CA|32.7|-117.2": [
+      {
+        "name": "Iftin Charter",
+        "napcsId": "C0606047",
+        "city": "SAN DIEGO"
+      },
+      {
+        "name": "America'S Finest Charter",
+        "napcsId": "C0611002",
+        "city": "SAN DIEGO"
+      },
+      {
+        "name": "Darnall Charter",
+        "napcsId": "C0693024",
+        "city": "SAN DIEGO"
+      },
+      {
+        "name": "Harriet Tubman Village Charter",
+        "napcsId": "C0694045",
+        "city": "SAN DIEGO"
+      }
+    ],
+    "CA|34.0|-117.4": [
+      {
+        "name": "Come Back Kids",
+        "napcsId": "C0613064",
+        "city": "Riverside"
+      }
+    ],
+    "CA|33.9|-117.2": [
+      {
+        "name": "The Journey School",
+        "napcsId": "C0618043",
+        "city": "Moreno Valley"
+      }
+    ],
+    "CA|36.7|-119.8": [
+      {
+        "name": "Edison-Bethune Charter Academy",
+        "napcsId": "C0699099",
+        "city": "Fresno"
+      }
+    ],
+    "DC|38.9|-77.0": [
+      {
+        "name": "AppleTree Early Learning Center PCS — Spring Valley",
+        "napcsId": "GAP-DC-001",
+        "city": "Washington"
+      },
+      {
+        "name": "AppleTree Early Learning PCS — Waterfront Station",
+        "napcsId": "GAP-DC-002",
+        "city": "Washington"
+      }
+    ],
+    "IL|41.9|-87.6": [
+      {
+        "name": "ASPIRA - HAUGEN MIDDLE SCHOOL",
+        "napcsId": "C1705001",
+        "city": "Chicago"
+      }
+    ],
+    "MA|42.3|-71.4": [
+      {
+        "name": "CHRISTA MCAULIFFE REGIONAL CHARTER SCHOOL",
+        "napcsId": "C2502001",
+        "city": "Framingham"
+      }
+    ],
+    "MI|42.3|-83.0": [
+      {
+        "name": "DeTour Arts and Technology Academy",
+        "napcsId": "C2610011",
+        "city": "De Tour Village"
+      },
+      {
+        "name": "The James and Grace Lee Boggs School",
+        "napcsId": "C2613030",
+        "city": "Detroit"
+      }
+    ],
+    "MI|42.7|-84.6": [
+      {
+        "name": "Mid-Michigan Leadership Academy",
+        "napcsId": "C2696006",
+        "city": "Lansing"
+      }
+    ],
+    "NJ|40.7|-74.0": [
+      {
+        "name": "University Academy Charter High School",
+        "napcsId": "C3402001",
+        "city": "Jersey City"
+      }
+    ],
+    "NM|35.7|-105.9": [
+      {
+        "name": "Tierra Encantada Charter School",
+        "napcsId": "C3506002",
+        "city": "Santa Fe"
+      },
+      {
+        "name": "Turquoise Trail Charter School",
+        "napcsId": "C3594001",
+        "city": "Santa Fe"
+      }
+    ],
+    "NM|32.3|-106.8": [
+      {
+        "name": "Alma d'Arte Charter High School",
+        "napcsId": "C3509008",
+        "city": "Las Cruces"
+      }
+    ],
+    "NY|42.9|-78.9": [
+      {
+        "name": "South Buffalo Charter School",
+        "napcsId": "C3600009",
+        "city": "Buffalo"
+      },
+      {
+        "name": "Charter School for Applied Technologies",
+        "napcsId": "C3601005",
+        "city": "Buffalo"
+      },
+      {
+        "name": "Buffalo United Charter School",
+        "napcsId": "C3603004",
+        "city": "Buffalo"
+      },
+      {
+        "name": "Westminster Community Charter School",
+        "napcsId": "C3604009",
+        "city": "Buffalo"
+      }
+    ],
+    "NY|40.8|-73.9": [
+      {
+        "name": "Family Life Academy Charter School",
+        "napcsId": "C3601007",
+        "city": "Bronx"
+      },
+      {
+        "name": "Amber Charter School II",
+        "napcsId": "C3616002",
+        "city": "Bronx"
+      }
+    ],
+    "NY|40.7|-73.9": [
+      {
+        "name": "Brooklyn Excelsior Charter School",
+        "napcsId": "C3603003",
+        "city": "Brooklyn"
+      },
+      {
+        "name": "KIPP AMP Academy",
+        "napcsId": "C3605015",
+        "city": "Brooklyn"
+      },
+      {
+        "name": "Beginning With Children Charter School II",
+        "napcsId": "C3612019",
+        "city": "Brooklyn"
+      }
+    ],
+    "NY|40.7|-74.0": [
+      {
+        "name": "KIPP Infinity Charter School",
+        "napcsId": "C3605016",
+        "city": "New York"
+      },
+      {
+        "name": "Sisulu-Walker Charter School of Harlem",
+        "napcsId": "C3699001",
+        "city": "New York"
+      }
+    ],
+    "OH|40.0|-83.0": [
+      {
+        "name": "Brookwood Academy",
+        "napcsId": "C3906007",
+        "city": "Columbus"
+      },
+      {
+        "name": "Early College Academy",
+        "napcsId": "C3906001",
+        "city": "Columbus"
+      }
+    ],
+    "OH|41.1|-80.6": [
+      {
+        "name": "Mahoning Valley Community School",
+        "napcsId": "C3908015",
+        "city": "Youngstown"
+      }
+    ],
+    "OH|41.5|-81.7": [
+      {
+        "name": "Promise Academy",
+        "napcsId": "C3906035",
+        "city": "Cleveland"
+      }
+    ],
+    "OH|40.8|-81.4": [
+      {
+        "name": "Summit Academy Community School for Alternative Learners of Canton",
+        "napcsId": "C3900014",
+        "city": "Canton"
+      },
+      {
+        "name": "Summit Academy Secondary School-Canton",
+        "napcsId": "C3904063",
+        "city": "Canton"
+      }
+    ],
+    "OR|44.9|-123.0": [
+      {
+        "name": "VALLEY INQUIRY CHARTER SCHOOL",
+        "napcsId": "C4105002",
+        "city": "Salem"
+      }
+    ],
+    "OR|42.3|-122.9": [
+      {
+        "name": "THE IVY SCHOOL",
+        "napcsId": "NAPCS-ADD-OR-002",
+        "city": "Medford"
+      }
+    ],
+    "PA|40.0|-75.2": [
+      {
+        "name": "MULTI-CULTURAL ACADEMY CHARTER SCHOOL",
+        "napcsId": "C4298007",
+        "city": "Philadelphia"
+      }
+    ],
+    "RI|41.9|-71.4": [
+      {
+        "name": "Segue Institute for Learning High",
+        "napcsId": "NAPCS-ADD-RI-010",
+        "city": "Pawtucket"
+      },
+      {
+        "name": "International Charter School",
+        "napcsId": "NAPCS-ADD-RI-033",
+        "city": "Pawtucket"
+      },
+      {
+        "name": "Blackstone Academy Charter School",
+        "napcsId": "NAPCS-ADD-RI-035",
+        "city": "Pawtucket"
+      }
+    ],
+    "RI|41.8|-71.4": [
+      {
+        "name": "Trinity Academy for the Performing Arts",
+        "napcsId": "NAPCS-ADD-RI-018",
+        "city": "Providence"
+      },
+      {
+        "name": "RINI Middle College Charter School",
+        "napcsId": "NAPCS-ADD-RI-019",
+        "city": "Providence"
+      },
+      {
+        "name": "Achievement First Providence",
+        "napcsId": "NAPCS-ADD-RI-020",
+        "city": "Providence"
+      },
+      {
+        "name": "Achievement First Iluminar",
+        "napcsId": "NAPCS-ADD-RI-021",
+        "city": "Cranston"
+      },
+      {
+        "name": "AF Providence Mayoral Middle",
+        "napcsId": "NAPCS-ADD-RI-022",
+        "city": "Providence"
+      },
+      {
+        "name": "AF Iluminar Mayoral Middle School",
+        "napcsId": "NAPCS-ADD-RI-023",
+        "city": "Cranston"
+      },
+      {
+        "name": "Achievement First Promesa",
+        "napcsId": "NAPCS-ADD-RI-024",
+        "city": "Providence"
+      },
+      {
+        "name": "Achievement First Providence High",
+        "napcsId": "NAPCS-ADD-RI-025",
+        "city": "Providence"
+      },
+      {
+        "name": "Achievement First Envision Elementary",
+        "napcsId": "NAPCS-ADD-RI-026",
+        "city": "Providence"
+      },
+      {
+        "name": "Village Green Virtual",
+        "napcsId": "NAPCS-ADD-RI-027",
+        "city": "Providence"
+      },
+      {
+        "name": "The Hope Academy",
+        "napcsId": "NAPCS-ADD-RI-028",
+        "city": "Providence"
+      },
+      {
+        "name": "SouthSide Elementary Charter School",
+        "napcsId": "NAPCS-ADD-RI-029",
+        "city": "Providence"
+      },
+      {
+        "name": "Charette Charter School",
+        "napcsId": "NAPCS-ADD-RI-036",
+        "city": "Providence"
+      },
+      {
+        "name": "Nuestro Mundo Public Charter School",
+        "napcsId": "NAPCS-ADD-RI-037",
+        "city": "Providence"
+      },
+      {
+        "name": "Providence Preparatory Charter School",
+        "napcsId": "NAPCS-ADD-RI-038",
+        "city": "Providence"
+      },
+      {
+        "name": "Apprenticeship Exploration School",
+        "napcsId": "NAPCS-ADD-RI-039",
+        "city": "Cranston"
+      },
+      {
+        "name": "Times2 Elementary School",
+        "napcsId": "NAPCS-ADD-RI-040",
+        "city": "Providence"
+      },
+      {
+        "name": "Times2 Middle/High School",
+        "napcsId": "NAPCS-ADD-RI-041",
+        "city": "Providence"
+      },
+      {
+        "name": "Excel Academy Rhode Island",
+        "napcsId": "NAPCS-ADD-RI-042",
+        "city": "North Providence"
+      }
+    ]
+  }
+};

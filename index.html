@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NAPCS Charter School Unionization Dashboard | PLT Strategies Group</title>
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+<script src="napcs_data.js"></script>
+<style>
+/* ── Reset & CSS Variables ─────────────────────────────────────────────── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#1a1917;--bg2:#232220;--bg3:#2a2927;--bg4:#1e1d1b;
+  --text:#f0ede8;--text2:#b4b2a9;--text3:#7a7872;
+  --border:rgba(255,255,255,0.08);--border2:rgba(255,255,255,0.14);
+  --blue:#5b9bd5;--blue-dk:#3a7ab5;
+  --grn-bg:#1a2e14;--grn-mid:#4a7c3f;--grn-txt:#a8d4a0;
+  --teal-bg:#0d2a2a;--teal-mid:#00796B;--teal-txt:#80cbc4;
+  --burg-bg:#2a1218;--burg-mid:#8B2635;--burg-txt:#d4909a;
+  --slate-bg:#141d2a;--slate-mid:#2E75B6;--slate-txt:#90b8e0;
+  --pur-bg:#1a1628;--pur-mid:#534AB7;--pur-txt:#b0a8e0;
+  --amb-bg:#2a1e08;--amb-mid:#c17f2a;--amb-txt:#e8c07a;
+  --radius:6px;--radius-lg:10px;
+  --density-vhigh:#6B1A2A;--density-high:#C0392B;
+  --density-mod:#E67E22;--density-low:#F39C12;
+  --density-min:#4a3a20;--density-zero:#2a2927;
+  --density-dep:#00796B;
+}
+body{background:var(--bg);color:var(--text);font-family:'Georgia',serif;font-size:14px;line-height:1.5;min-height:100vh}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* ── Layout ─────────────────────────────────────────────────────────────── */
+.shell{max-width:1200px;margin:0 auto;padding:0 20px 60px}
+
+/* ── Header ─────────────────────────────────────────────────────────────── */
+.hdr{padding:24px 0 16px;border-bottom:1px solid var(--border);margin-bottom:24px}
+.hdr-top{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.hdr-brand{font-family:'Georgia',serif}
+.hdr-title{font-size:22px;font-weight:700;color:var(--text);letter-spacing:-0.3px}
+.hdr-sub{font-size:12px;color:var(--text3);margin-top:3px;letter-spacing:0.3px}
+.hdr-badges{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.badge{display:inline-flex;align-items:center;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.3px}
+.badge-grn{background:var(--grn-bg);color:var(--grn-txt);border:1px solid var(--grn-mid)}
+.badge-conf{background:#1a2e1a;color:#90d490;border:1px solid #3a6a3a}
+.badge-info{background:var(--bg3);color:var(--text2);border:1px solid var(--border2)}
+.badge-burg{background:var(--burg-bg);color:var(--burg-txt);border:1px solid var(--burg-mid)}
+.badge-amb{background:var(--amb-bg);color:var(--amb-txt);border:1px solid var(--amb-mid)}
+.badge-pur{background:var(--pur-bg);color:var(--pur-txt);border:1px solid var(--pur-mid)}
+.badge-teal{background:var(--teal-bg);color:var(--teal-txt);border:1px solid var(--teal-mid)}
+
+/* ── Nav Tabs ────────────────────────────────────────────────────────────── */
+.nav{display:flex;gap:0;border-bottom:2px solid var(--border);margin-bottom:28px;overflow-x:auto}
+.nav-tab{padding:10px 18px;font-size:13px;color:var(--text2);cursor:pointer;white-space:nowrap;border-bottom:2px solid transparent;margin-bottom:-2px;transition:color 0.15s,border-color 0.15s;background:none;border-top:none;border-left:none;border-right:none}
+.nav-tab:hover{color:var(--text)}
+.nav-tab.active{color:var(--blue);border-bottom-color:var(--blue);font-weight:600}
+
+/* ── Tab Panels ──────────────────────────────────────────────────────────── */
+.tab-panel{display:none}.tab-panel.active{display:block}
+
+/* ── Metric Cards ────────────────────────────────────────────────────────── */
+.metrics{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;margin-bottom:20px}
+.metric-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px 18px;cursor:pointer;transition:border-color 0.15s,transform 0.1s}
+.metric-card:hover{border-color:var(--border2);transform:translateY(-1px)}
+.metric-card.grn{border-top:3px solid var(--grn-mid)}
+.metric-card.teal{border-top:3px solid var(--teal-mid)}
+.metric-card.burg{border-top:3px solid var(--burg-mid)}
+.metric-card.pur{border-top:3px solid var(--pur-mid)}
+.metric-card.blu{border-top:3px solid var(--blue)}
+.metric-num{font-size:32px;font-weight:700;line-height:1;margin-bottom:6px;font-family:'Georgia',serif}
+.metric-card.grn .metric-num{color:var(--grn-txt)}
+.metric-card.teal .metric-num{color:var(--teal-txt)}
+.metric-card.burg .metric-num{color:var(--burg-txt)}
+.metric-card.pur .metric-num{color:var(--pur-txt)}
+.metric-card.blu .metric-num{color:var(--blue)}
+.metric-label{font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:0.6px}
+.metric-sub{font-size:11px;color:var(--text2);margin-top:4px}
+
+/* ── Combined Box ────────────────────────────────────────────────────────── */
+.combined-box{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px 20px;margin-bottom:24px;display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.combined-num{font-size:36px;font-weight:700;color:var(--text);font-family:'Georgia',serif}
+.combined-pct{font-size:20px;color:var(--text2);margin-left:6px}
+.combined-label{font-size:12px;color:var(--text3);text-transform:uppercase;letter-spacing:0.5px}
+.combined-breakdown{display:flex;gap:16px;flex-wrap:wrap}
+.combined-item{display:flex;align-items:center;gap:6px;font-size:12px}
+.swatch{width:10px;height:10px;border-radius:2px;display:inline-block}
+.swatch-grn{background:var(--grn-mid)}
+.swatch-teal{background:var(--teal-mid)}
+
+/* ── National Map ────────────────────────────────────────────────────────── */
+.map-container{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px;margin-bottom:20px}
+.map-title{font-size:13px;color:var(--text2);margin-bottom:12px}
+#national-map{width:100%;height:480px}
+.map-legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:12px;padding-top:12px;border-top:1px solid var(--border)}
+.legend-item{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--text2)}
+.legend-swatch{width:14px;height:14px;border-radius:3px}
+
+/* ── Drilldown View ──────────────────────────────────────────────────────── */
+.drilldown-header{display:flex;align-items:center;gap:12px;margin-bottom:20px}
+.back-btn{background:var(--bg3);border:1px solid var(--border2);color:var(--text2);padding:6px 14px;border-radius:var(--radius);cursor:pointer;font-size:12px;transition:color 0.15s}
+.back-btn:hover{color:var(--text)}
+.drilldown-title{font-size:18px;font-weight:700}
+.drilldown-table{width:100%;border-collapse:collapse}
+.drilldown-table th{text-align:left;padding:8px 12px;font-size:11px;text-transform:uppercase;letter-spacing:0.5px;color:var(--text3);border-bottom:1px solid var(--border2);font-weight:600}
+.drilldown-table td{padding:9px 12px;font-size:13px;border-bottom:1px solid var(--border);vertical-align:top}
+.drilldown-table tr:hover td{background:var(--bg3)}
+.status-badge{display:inline-block;padding:2px 8px;border-radius:4px;font-size:10px;font-weight:700;letter-spacing:0.5px}
+.sb-CONFIRMED{background:var(--grn-bg);color:var(--grn-txt);border:1px solid var(--grn-mid)}
+.sb-DEPENDENT{background:var(--teal-bg);color:var(--teal-txt);border:1px solid var(--teal-mid)}
+.sb-ORGANIZING{background:var(--pur-bg);color:var(--pur-txt);border:1px solid var(--pur-mid)}
+.sb-DECERTIFIED,.sb-CLOSED{background:var(--burg-bg);color:var(--burg-txt);border:1px solid var(--burg-mid)}
+.sb-DISPUTED{background:var(--slate-bg);color:var(--slate-txt);border:1px solid var(--slate-mid)}
+.sb-UNVERIFIED{background:var(--amb-bg);color:var(--amb-txt);border:1px solid var(--amb-mid)}
+
+/* ── State Detail ────────────────────────────────────────────────────────── */
+.state-detail-header{display:flex;align-items:flex-start;gap:20px;margin-bottom:20px;flex-wrap:wrap}
+.state-selector-wrap{margin-bottom:20px}
+.state-selector-wrap label{font-size:12px;color:var(--text3);display:block;margin-bottom:6px;text-transform:uppercase;letter-spacing:0.5px}
+select{background:var(--bg3);color:var(--text);border:1px solid var(--border2);border-radius:var(--radius);padding:8px 12px;font-size:13px;cursor:pointer;min-width:200px}
+select:focus{outline:none;border-color:var(--blue)}
+.state-stats{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:16px}
+.stat-pill{background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);padding:8px 14px;font-size:12px}
+.stat-pill strong{font-size:18px;display:block;font-family:'Georgia',serif}
+.state-map-wrap{position:relative;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);margin-bottom:20px;overflow:hidden}
+#state-map-svg{width:100%;height:420px;display:block}
+.zoom-controls{position:absolute;top:10px;right:10px;display:flex;flex-direction:column;gap:4px}
+.zoom-btn{background:var(--bg3);border:1px solid var(--border2);color:var(--text2);width:28px;height:28px;border-radius:4px;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center}
+.zoom-btn:hover{color:var(--text);border-color:var(--blue)}
+
+/* ── Slide-Out Panel ─────────────────────────────────────────────────────── */
+.slideout{position:absolute;top:0;right:-340px;width:340px;height:100%;background:var(--bg4);border-left:1px solid var(--border2);transition:right 0.25s ease;overflow-y:auto;z-index:10;padding:16px}
+.slideout.open{right:0}
+.slideout-close{position:sticky;top:0;display:flex;justify-content:flex-end;margin-bottom:8px}
+.slideout-close button{background:none;border:none;color:var(--text3);cursor:pointer;font-size:18px;line-height:1;padding:4px 6px}
+.slideout-close button:hover{color:var(--text)}
+.school-name{font-size:14px;font-weight:700;margin-bottom:4px;line-height:1.3}
+.school-id{font-size:10px;color:var(--text3);margin-bottom:10px;font-family:monospace}
+.detail-row{display:flex;gap:8px;margin-bottom:6px;font-size:12px}
+.detail-label{color:var(--text3);min-width:90px;flex-shrink:0}
+.detail-val{color:var(--text2);word-break:break-word}
+
+/* ── Intel Section ───────────────────────────────────────────────────────── */
+.intel-section{margin-bottom:24px}
+.intel-section h3{font-size:14px;font-weight:700;margin-bottom:12px;color:var(--text);border-bottom:1px solid var(--border);padding-bottom:8px}
+.intel-item{margin-bottom:16px}
+.intel-prompt{font-size:12px;font-weight:700;color:var(--blue);margin-bottom:4px}
+.intel-answer{font-size:13px;color:var(--text2);line-height:1.6}
+
+/* ── Open Items ──────────────────────────────────────────────────────────── */
+.open-items-section{margin-bottom:24px}
+.open-items-section h3{font-size:14px;font-weight:700;margin-bottom:12px;color:var(--text);border-bottom:1px solid var(--border);padding-bottom:8px}
+.open-item{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:10px 12px;margin-bottom:8px}
+.open-item-top{display:flex;gap:8px;align-items:flex-start;margin-bottom:4px}
+.open-item-desc{font-size:13px;color:var(--text2)}
+.open-item-res{font-size:11px;color:var(--text3);margin-top:4px}
+.pri-BLOCKING,.pri-CRITICAL{background:var(--burg-bg);color:var(--burg-txt);border:1px solid var(--burg-mid);padding:2px 7px;border-radius:3px;font-size:10px;font-weight:700}
+.pri-HIGH{background:var(--amb-bg);color:var(--amb-txt);border:1px solid var(--amb-mid);padding:2px 7px;border-radius:3px;font-size:10px;font-weight:700}
+.pri-MEDIUM{background:var(--slate-bg);color:var(--slate-txt);border:1px solid var(--slate-mid);padding:2px 7px;border-radius:3px;font-size:10px;font-weight:700}
+.pri-LOW{background:var(--bg3);color:var(--text3);border:1px solid var(--border);padding:2px 7px;border-radius:3px;font-size:10px;font-weight:700}
+
+/* ── Density Table ───────────────────────────────────────────────────────── */
+.density-table-wrap{overflow-x:auto}
+.density-table{width:100%;border-collapse:collapse;font-size:13px}
+.density-table th{text-align:left;padding:10px 12px;font-size:11px;text-transform:uppercase;letter-spacing:0.5px;color:var(--text3);border-bottom:2px solid var(--border2);position:sticky;top:0;background:var(--bg)}
+.density-table td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+.density-table tr:hover td{background:var(--bg2)}
+.density-table .totals-row td{border-top:2px solid var(--border2);font-weight:700;color:var(--text)}
+.density-bar-wrap{display:flex;align-items:center;gap:8px}
+.density-bar{height:6px;border-radius:3px;min-width:2px}
+.density-pct{font-weight:700;font-family:'Georgia',serif}
+.note-text{font-size:11px;color:var(--text3);line-height:1.4}
+
+/* ── Networks Tab ────────────────────────────────────────────────────────── */
+.networks-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+.network-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px}
+.network-card-hdr{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px}
+.network-name{font-size:14px;font-weight:700;line-height:1.3}
+.network-state{font-size:11px;color:var(--text3);margin-top:2px}
+.network-count{font-size:22px;font-weight:700;color:var(--grn-txt);font-family:'Georgia',serif;text-align:right;white-space:nowrap}
+.network-count-sub{font-size:11px;color:var(--text3)}
+.network-union{font-size:12px;color:var(--text2);margin-bottom:6px}
+.network-cba{font-size:11px;color:var(--text3);line-height:1.4}
+
+/* ── Threat Intel Tab ────────────────────────────────────────────────────── */
+.threat-grid{display:grid;gap:12px}
+.threat-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:14px 16px}
+.threat-card.CRITICAL{border-left:4px solid var(--burg-mid)}
+.threat-card.HIGH{border-left:4px solid var(--amb-mid)}
+.threat-hdr{display:flex;gap:10px;align-items:flex-start;margin-bottom:8px}
+.threat-target{font-size:13px;font-weight:700;color:var(--text);line-height:1.3}
+.threat-desc{font-size:12px;color:var(--text2);line-height:1.6}
+
+/* ── Patterns Tab ────────────────────────────────────────────────────────── */
+.patterns-filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;align-items:center}
+.patterns-filters label{font-size:12px;color:var(--text3);margin-right:4px}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+.pcard{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:14px 16px}
+.pcard-state{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px}
+.pcard-title{font-size:13px;font-weight:700;margin-bottom:6px;color:var(--text);line-height:1.3}
+.pcard-body{font-size:12px;color:var(--text2);line-height:1.6}
+
+/* ── Empty States ────────────────────────────────────────────────────────── */
+.empty{text-align:center;padding:40px;color:var(--text3);font-size:13px}
+
+/* ── Scroll to top ───────────────────────────────────────────────────────── */
+#scroll-top{position:fixed;bottom:24px;right:24px;background:var(--bg3);border:1px solid var(--border2);color:var(--text2);width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;transition:opacity 0.2s;font-size:16px}
+#scroll-top.vis{opacity:1}
+
+/* ── Responsive ──────────────────────────────────────────────────────────── */
+@media(max-width:600px){
+  .metrics{grid-template-columns:repeat(2,1fr)}
+  .hdr-top{flex-direction:column}
+  .combined-box{flex-direction:column;gap:12px}
+}
+</style>
+</head>
+<body>
+<div class="shell">
+
+<!-- HEADER -->
+<header class="hdr">
+  <div class="hdr-top">
+    <div class="hdr-brand">
+      <div class="hdr-title">NAPCS Charter School Unionization Dashboard</div>
+      <div class="hdr-sub" id="hdr-sub">PLT Strategies Group, Inc. &middot; Loading&hellip;</div>
+    </div>
+    <div class="hdr-badges" id="hdr-badges"></div>
+  </div>
+</header>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <button class="nav-tab active" data-tab="overview">Overview</button>
+  <button class="nav-tab" data-tab="state">State Detail</button>
+  <button class="nav-tab" data-tab="density">Density Table</button>
+  <button class="nav-tab" data-tab="networks">Networks</button>
+  <button class="nav-tab" data-tab="threat">Threat Intel</button>
+  <button class="nav-tab" data-tab="patterns">Patterns</button>
+</nav>
+
+<!-- ── OVERVIEW TAB ────────────────────────────────────────────────────── -->
+<div class="tab-panel active" id="tab-overview">
+  <div id="overview-main">
+    <div class="metrics" id="metric-cards"></div>
+    <div class="combined-box" id="combined-box"></div>
+    <div class="map-container">
+      <div class="map-title">National Overview &mdash; click a state to view detail</div>
+      <svg id="national-map"></svg>
+      <div class="map-legend" id="map-legend"></div>
+    </div>
+  </div>
+  <div id="drilldown-view" style="display:none">
+    <div class="drilldown-header">
+      <button class="back-btn" id="back-btn">&#8592; All States</button>
+      <div class="drilldown-title" id="drilldown-title"></div>
+    </div>
+    <div id="drilldown-content"></div>
+  </div>
+</div>
+
+<!-- ── STATE DETAIL TAB ───────────────────────────────────────────────── -->
+<div class="tab-panel" id="tab-state">
+  <div class="state-selector-wrap">
+    <label>Select State or Jurisdiction</label>
+    <select id="state-select"></select>
+  </div>
+  <div id="state-detail-content"></div>
+</div>
+
+<!-- ── DENSITY TABLE TAB ──────────────────────────────────────────────── -->
+<div class="tab-panel" id="tab-density">
+  <div class="density-table-wrap">
+    <table class="density-table" id="density-table"></table>
+  </div>
+</div>
+
+<!-- ── NETWORKS TAB ───────────────────────────────────────────────────── -->
+<div class="tab-panel" id="tab-networks">
+  <div class="networks-grid" id="networks-grid"></div>
+</div>
+
+<!-- ── THREAT INTEL TAB ───────────────────────────────────────────────── -->
+<div class="tab-panel" id="tab-threat">
+  <div class="threat-grid" id="threat-grid"></div>
+</div>
+
+<!-- ── PATTERNS TAB ───────────────────────────────────────────────────── -->
+<div class="tab-panel" id="tab-patterns">
+  <div class="patterns-filters">
+    <label>Filter by state:</label>
+    <select id="patterns-state-filter"><option value="">All States</option></select>
+  </div>
+  <div class="pgrid" id="patterns-grid"></div>
+</div>
+
+</div><!-- /.shell -->
+
+<button id="scroll-top" title="Back to top">&#8679;</button>
+
+<script>
+// ── All logic reads from NAPCS_DATA global (loaded from napcs_data.js) ────
+
+const D = NAPCS_DATA;
+const NAT = D.meta.national;
+const STATES = D.states;
+const STATE_ORDER = Object.keys(STATES).sort((a,b)=>STATES[a].name.localeCompare(STATES[b].name));
+
+// ── Header ────────────────────────────────────────────────────────────────
+document.getElementById('hdr-sub').textContent =
+  'PLT Strategies Group, Inc. \u00B7 Registry ' + D.meta.registryVersion +
+  ' \u00B7 ' + D.meta.researchDate + ' \u00B7 CONFIDENTIAL';
+
+const badges = document.getElementById('hdr-badges');
+badges.innerHTML =
+  '<span class="badge badge-info">' + D.meta.jurisdictions + ' Jurisdictions Complete</span>' +
+  '<span class="badge badge-conf">' + NAT.confirmed + ' Confirmed</span>' +
+  '<span class="badge badge-teal">' + NAT.dependent + ' Dependent</span>';
+
+// ── Nav tabs ──────────────────────────────────────────────────────────────
+document.getElementById('nav').addEventListener('click', function(e) {
+  const btn = e.target.closest('.nav-tab');
+  if (!btn) return;
+  const tabId = btn.getAttribute('data-tab');
+  document.querySelectorAll('.nav-tab').forEach(function(t) { t.classList.remove('active'); });
+  document.querySelectorAll('.tab-panel').forEach(function(p) { p.classList.remove('active'); });
+  btn.classList.add('active');
+  document.getElementById('tab-' + tabId).classList.add('active');
+  if (tabId === 'state' && !window._stateMapBuilt) renderStateDetail(STATE_ORDER[0]);
+  if (tabId === 'density' && !window._densityBuilt) buildDensityTable();
+  if (tabId === 'networks' && !window._networksBuilt) buildNetworks();
+  if (tabId === 'threat' && !window._threatBuilt) buildThreat();
+  if (tabId === 'patterns' && !window._patternsBuilt) buildPatterns();
+});
+
+// ── Status metadata ───────────────────────────────────────────────────────
+var STATUS_META = {
+  CONFIRMED:  {label:'Confirmed Organized', color:'grn', badgeClass:'sb-CONFIRMED'},
+  DEPENDENT:  {label:'Dependent (District CBA)', color:'teal', badgeClass:'sb-DEPENDENT'},
+  ORGANIZING: {label:'Active Organizing', color:'pur', badgeClass:'sb-ORGANIZING'},
+  DECERTIFIED:{label:'Decertified', color:'burg', badgeClass:'sb-DECERTIFIED'},
+  CLOSED:     {label:'Closed (Formerly Org.)', color:'burg', badgeClass:'sb-CLOSED'},
+  DISPUTED:   {label:'Certified/Disputed', color:'slate', badgeClass:'sb-DISPUTED'},
+  UNVERIFIED: {label:'Unverified', color:'amb', badgeClass:'sb-UNVERIFIED'},
+};
+
+// ── Metric Cards ──────────────────────────────────────────────────────────
+var cardDefs = [
+  {key:'charterUniverse', label:'Total Charter Schools', sub:'Registry ' + D.meta.registryVersion, color:'blu', status:null},
+  {key:'confirmed', label:'Confirmed Organized', sub:NAT.confirmedDensity + ' of universe', color:'grn', status:'CONFIRMED'},
+  {key:'dependent', label:'Dependent (Structural)', sub:NAT.dependentDensity + ' \u00B7 District CBA', color:'teal', status:'DEPENDENT'},
+  {key:'organizing', label:'Active Organizing', sub:'Petitions filed / active', color:'pur', status:'ORGANIZING'},
+  {key:'decertified', label:'Decertified', sub:'Cert removed', color:'burg', status:'DECERTIFIED'},
+  {key:'closed', label:'Closed (Formerly Org.)', sub:'Historical record', color:'burg', status:'CLOSED'},
+];
+
+var cardsEl = document.getElementById('metric-cards');
+cardsEl.innerHTML = cardDefs.map(function(c) {
+  return '<div class="metric-card ' + c.color + '" data-status="' + (c.status||'') + '">' +
+    '<div class="metric-num">' + (NAT[c.key]||0).toLocaleString() + '</div>' +
+    '<div class="metric-label">' + c.label + '</div>' +
+    '<div class="metric-sub">' + c.sub + '</div>' +
+    '</div>';
+}).join('');
+
+cardsEl.addEventListener('click', function(e) {
+  var card = e.target.closest('.metric-card');
+  if (!card) return;
+  var status = card.getAttribute('data-status');
+  if (status) showDrilldown(status);
+});
+
+// ── Combined Box ──────────────────────────────────────────────────────────
+document.getElementById('combined-box').innerHTML =
+  '<div><div class="combined-num">' + NAT.combined.toLocaleString() +
+  '<span class="combined-pct">' + NAT.combinedDensity + '</span></div>' +
+  '<div class="combined-label">Combined Organized (Confirmed + Dependent)</div></div>' +
+  '<div class="combined-breakdown">' +
+  '<div class="combined-item"><span class="swatch swatch-grn"></span><span>' + NAT.confirmed + ' Confirmed</span></div>' +
+  '<div class="combined-item"><span class="swatch swatch-teal"></span><span>' + NAT.dependent + ' Dependent</span></div>' +
+  '</div>';
+
+// ── Drilldown ─────────────────────────────────────────────────────────────
+function showDrilldown(status) {
+  var schools = D.schools[status] || [];
+  var meta = STATUS_META[status] || {label:status};
+  document.getElementById('drilldown-title').textContent = meta.label + ' (' + schools.length + ' schools)';
+  var rows = schools.map(function(s) {
+    return '<tr><td>' + (s.n||'') + '</td><td>' + (s.st||'') + '</td>' +
+      '<td>' + (s.c||'') + '</td><td>' + (s.u||'').replace(/\(.+\)/,'').trim() + '</td>' +
+      '<td>' + (s.dt||'') + '</td></tr>';
+  }).join('');
+  document.getElementById('drilldown-content').innerHTML =
+    '<table class="drilldown-table">' +
+    '<thead><tr><th>School</th><th>State</th><th>City</th><th>Union</th><th>Date</th></tr></thead>' +
+    '<tbody>' + (rows || '<tr><td colspan="5" class="empty">No schools in this category</td></tr>') + '</tbody>' +
+    '</table>';
+  document.getElementById('overview-main').style.display = 'none';
+  document.getElementById('drilldown-view').style.display = 'block';
+}
+
+document.getElementById('back-btn').addEventListener('click', function() {
+  document.getElementById('overview-main').style.display = '';
+  document.getElementById('drilldown-view').style.display = 'none';
+});
+
+// ── National Choropleth Map ───────────────────────────────────────────────
+var NAT_MAP_URL = 'https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json';
+var STATE_FIPS = {
+  '01':'AL','02':'AK','04':'AZ','05':'AR','06':'CA','08':'CO','09':'CT','10':'DE',
+  '11':'DC','12':'FL','13':'GA','15':'HI','16':'ID','17':'IL','18':'IN','19':'IA',
+  '20':'KS','21':'KY','22':'LA','23':'ME','24':'MD','25':'MA','26':'MI','27':'MN',
+  '28':'MS','29':'MO','30':'MT','31':'NE','32':'NV','33':'NH','34':'NJ','35':'NM',
+  '36':'NY','37':'NC','38':'ND','39':'OH','40':'OK','41':'OR','42':'PA','44':'RI',
+  '45':'SC','46':'SD','47':'TN','48':'TX','49':'UT','50':'VT','51':'VA','53':'WA',
+  '54':'WV','55':'WI','56':'WY'
+};
+
+function densityColor(code) {
+  var st = STATES[code];
+  if (!st) return '#2a2927';
+  var conf = st.confirmed || 0;
+  var dep = st.dependent || 0;
+  var univ = st.universe || 1;
+  var combined = conf + dep;
+  var pct = combined / univ;
+  if (code === 'OR') return 'url(#hatch-dep)';
+  if (pct > 0.20) return '#6B1A2A';
+  if (pct > 0.10) return '#C0392B';
+  if (pct > 0.05) return '#E67E22';
+  if (pct > 0.01) return '#c17f2a';
+  if (pct > 0) return '#4a3a20';
+  return '#2a2927';
+}
+
+function buildNationalMap() {
+  var svg = d3.select('#national-map');
+  var W = svg.node().getBoundingClientRect().width;
+  var H = 480;
+  svg.attr('viewBox','0 0 '+W+' '+H);
+
+  // Hatch for OR
+  var defs = svg.append('defs');
+  var pat = defs.append('pattern').attr('id','hatch-dep').attr('patternUnits','userSpaceOnUse').attr('width',6).attr('height',6);
+  pat.append('rect').attr('width',6).attr('height',6).attr('fill','#0d2a2a');
+  pat.append('line').attr('x1',0).attr('y1',0).attr('x2',6).attr('y2',6).attr('stroke','#00796B').attr('stroke-width',1.5);
+
+  var proj = d3.geoAlbersUsa().scale(W*1.25).translate([W/2, H/2]);
+  var path = d3.geoPath().projection(proj);
+
+  d3.json(NAT_MAP_URL).then(function(us) {
+    var states = topojson.feature(us, us.objects.states);
+    svg.selectAll('path.state')
+      .data(states.features)
+      .enter().append('path')
+      .attr('class','state')
+      .attr('d', path)
+      .attr('fill', function(d) { return densityColor(STATE_FIPS[d.id.toString().padStart(2,'0')]); })
+      .attr('stroke','rgba(240,237,232,0.12)')
+      .attr('stroke-width',0.5)
+      .attr('cursor', function(d) {
+        var code = STATE_FIPS[d.id.toString().padStart(2,'0')];
+        return STATES[code] ? 'pointer' : 'default';
+      })
+      .on('click', function(event, d) {
+        var code = STATE_FIPS[d.id.toString().padStart(2,'0')];
+        if (!STATES[code]) return;
+        switchToState(code);
+      })
+      .append('title').text(function(d) {
+        var code = STATE_FIPS[d.id.toString().padStart(2,'0')];
+        var st = STATES[code];
+        if (!st) return '';
+        return st.name + ': ' + (st.confirmed||0) + ' confirmed, ' + (st.dependent||0) + ' dependent';
+      });
+  }).catch(function() {
+    svg.append('text').attr('x',W/2).attr('y',H/2).attr('text-anchor','middle')
+      .attr('fill','#7a7872').attr('font-size',13)
+      .text('National map requires internet connection');
+  });
+
+  // Legend
+  document.getElementById('map-legend').innerHTML =
+    '<div class="legend-item"><div class="legend-swatch" style="background:#6B1A2A"></div>>20% Combined Density</div>' +
+    '<div class="legend-item"><div class="legend-swatch" style="background:#C0392B"></div>10-20%</div>' +
+    '<div class="legend-item"><div class="legend-swatch" style="background:#E67E22"></div>5-10%</div>' +
+    '<div class="legend-item"><div class="legend-swatch" style="background:#c17f2a"></div>1-5%</div>' +
+    '<div class="legend-item"><div class="legend-swatch" style="background:#00796B"></div>Structural (OR)</div>' +
+    '<div class="legend-item"><div class="legend-swatch" style="background:#2a2927;border:1px solid #555"></div>None / Not Researched</div>';
+}
+
+function switchToState(code) {
+  document.querySelectorAll('.nav-tab').forEach(function(t) { t.classList.remove('active'); });
+  document.querySelectorAll('.tab-panel').forEach(function(p) { p.classList.remove('active'); });
+  document.querySelector('[data-tab="state"]').classList.add('active');
+  document.getElementById('tab-state').classList.add('active');
+  document.getElementById('state-select').value = code;
+  renderStateDetail(code);
+}
+
+buildNationalMap();
+
+// ── State Detail ──────────────────────────────────────────────────────────
+STATE_ORDER.forEach(function(code) {
+  var opt = document.createElement('option');
+  opt.value = code;
+  opt.textContent = STATES[code].name;
+  document.getElementById('state-select').appendChild(opt);
+});
+
+document.getElementById('state-select').addEventListener('change', function() {
+  renderStateDetail(this.value);
+});
+
+var _baseProj = null;
+var _currentProj = null;
+var _currentStateCode = null;
+var _slideoutOpen = false;
+
+function renderStateDetail(code) {
+  _currentStateCode = code;
+  window._stateMapBuilt = true;
+  var st = STATES[code];
+  if (!st) return;
+  var combined = (st.confirmed||0) + (st.dependent||0);
+  var densityPct = st.universe ? ((combined/st.universe)*100).toFixed(1)+'%' : 'N/A';
+
+  var html = '';
+  // Stats row
+  html += '<div class="state-stats">' +
+    '<div class="stat-pill"><strong style="color:var(--grn-txt)">' + (st.confirmed||0) + '</strong>Confirmed</div>' +
+    '<div class="stat-pill"><strong style="color:var(--teal-txt)">' + (st.dependent||0) + '</strong>Dependent</div>' +
+    '<div class="stat-pill"><strong>' + combined + '</strong>Combined</div>' +
+    '<div class="stat-pill"><strong>' + densityPct + '</strong>of ' + (st.universe||0).toLocaleString() + ' Total</div>' +
+    '<div class="stat-pill" style="font-size:11px;color:var(--text3)">' + (st.laborBoard||'') + '</div>' +
+    '</div>';
+
+  // Map container
+  html += '<div class="state-map-wrap" id="state-map-wrap">' +
+    '<svg id="state-map-svg"></svg>' +
+    '<div class="zoom-controls">' +
+    '<button class="zoom-btn" id="zoom-in">+</button>' +
+    '<button class="zoom-btn" id="zoom-out">&minus;</button>' +
+    '<button class="zoom-btn" id="zoom-reset" title="Reset">&#8857;</button>' +
+    '</div>' +
+    '<div class="slideout" id="slideout">' +
+    '<div class="slideout-close"><button id="slideout-close-btn">&times;</button></div>' +
+    '<div id="slideout-content"></div>' +
+    '</div>' +
+    '</div>';
+
+  // Intel
+  if (st.intel && st.intel.length) {
+    html += '<div class="intel-section"><h3>State Intelligence</h3>';
+    st.intel.forEach(function(q) {
+      if (!q || !q.prompt) return;
+      html += '<div class="intel-item">' +
+        '<div class="intel-prompt">' + q.prompt + '</div>' +
+        '<div class="intel-answer">' + (q.answer||'Not available.') + '</div>' +
+        '</div>';
+    });
+    html += '</div>';
+  }
+
+  // Open Items
+  if (st.openItems && st.openItems.length) {
+    html += '<div class="open-items-section"><h3>Open Items</h3>';
+    st.openItems.forEach(function(o) {
+      var priClass = 'pri-' + (o.priority||'MEDIUM').toUpperCase().split(' ')[0];
+      html += '<div class="open-item">' +
+        '<div class="open-item-top"><span class="' + priClass + '">' + (o.priority||'') + '</span>' +
+        '<div class="open-item-desc">' + (o.description||'') + '</div></div>' +
+        (o.resolution ? '<div class="open-item-res">Resolution: ' + o.resolution + '</div>' : '') +
+        '</div>';
+    });
+    html += '</div>';
+  }
+
+  document.getElementById('state-detail-content').innerHTML = html;
+
+  // Wire slideout close
+  document.getElementById('slideout-close-btn').addEventListener('click', function() {
+    document.getElementById('slideout').classList.remove('open');
+  });
+
+  // Build state map
+  buildStateMap(code, st);
+
+  // Zoom buttons
+  document.getElementById('zoom-in').addEventListener('click', function() {
+    if (window._zoomBehavior && window._stateMapSvg) {
+      window._stateMapSvg.transition().call(window._zoomBehavior.scaleBy, 1.5);
+    }
+  });
+  document.getElementById('zoom-out').addEventListener('click', function() {
+    if (window._zoomBehavior && window._stateMapSvg) {
+      window._stateMapSvg.transition().call(window._zoomBehavior.scaleBy, 1/1.5);
+    }
+  });
+  document.getElementById('zoom-reset').addEventListener('click', function() {
+    if (window._zoomBehavior && window._stateMapSvg) {
+      window._stateMapSvg.transition().call(window._zoomBehavior.transform, d3.zoomIdentity);
+    }
+  });
+}
+
+function buildStateMap(code, st) {
+  var svgEl = document.getElementById('state-map-svg');
+  var W = svgEl.getBoundingClientRect().width || 800;
+  var H = 420;
+  var svg = d3.select('#state-map-svg').attr('viewBox','0 0 '+W+' '+H);
+  svg.selectAll('*').remove();
+  window._stateMapSvg = svg;
+
+  // Hatch def for dependent
+  var defs = svg.append('defs');
+  var p = defs.append('pattern').attr('id','state-circ-hatch').attr('patternUnits','userSpaceOnUse').attr('width',5).attr('height',5);
+  p.append('line').attr('x1',0).attr('y1',0).attr('x2',5).attr('y2',5).attr('stroke','#00796B').attr('stroke-width',1.5).attr('stroke-opacity',0.7);
+
+  d3.json(NAT_MAP_URL).then(function(us) {
+    var allStates = topojson.feature(us, us.objects.states);
+    // Find this state's feature
+    var fipsMap = {};
+    Object.entries(STATE_FIPS).forEach(function(e) { fipsMap[e[1]] = e[0]; });
+    var fips = fipsMap[code];
+    var stateFeature = allStates.features.find(function(f) {
+      return f.id.toString().padStart(2,'0') === fips;
+    });
+    if (!stateFeature) return;
+
+    var proj = d3.geoAlbersUsa().fitSize([W, H], stateFeature);
+    _baseProj = proj;
+    _currentProj = proj;
+
+    var mapGroup = svg.append('g').attr('class','map-layer');
+    var circlesGroup = svg.append('g').attr('class','circles-layer');
+    var labelsGroup = svg.append('g').attr('class','labels-layer');
+
+    function drawState(pr) {
+      var path = d3.geoPath().projection(pr);
+      mapGroup.selectAll('*').remove();
+      mapGroup.append('path').datum(stateFeature)
+        .attr('d', path)
+        .attr('fill','#c8b89a').attr('fill-opacity',0.25)
+        .attr('stroke','rgba(240,237,232,0.3)').attr('stroke-width',1);
+    }
+
+    function rScale(count) {
+      var r = Math.sqrt(count||1) * 6;
+      return Math.max(5, Math.min(28, r));
+    }
+
+    function drawCircles(pr) {
+      circlesGroup.selectAll('*').remove();
+      labelsGroup.selectAll('*').remove();
+
+      // UNORGANIZED
+      var unorgKeys = Object.keys(D.unorgLookup).filter(function(k) { return k.startsWith(code+'|'); });
+      unorgKeys.forEach(function(key) {
+        var parts = key.split('|');
+        var lat = parseFloat(parts[1]), lon = parseFloat(parts[2]);
+        var schools = D.unorgLookup[key];
+        var pt = pr([lon, lat]);
+        if (!pt) return;
+        var r = rScale(schools.length);
+        circlesGroup.append('circle')
+          .attr('cx', pt[0]).attr('cy', pt[1]).attr('r', r)
+          .attr('fill','rgba(136,135,128,0.15)')
+          .attr('stroke','#888780').attr('stroke-dasharray','3,2').attr('stroke-width',1.2)
+          .attr('cursor','pointer')
+          .attr('data-type','unorg').attr('data-key', key)
+          .on('click', function(event, d) { showSlideoutUnorg(key); });
+      });
+
+      // DEPENDENT
+      (st.dependentSchools||[]).forEach(function(s) {
+        if (!s.lat||!s.lon) return;
+        var pt = pr([s.lon, s.lat]);
+        if (!pt) return;
+        circlesGroup.append('circle')
+          .attr('cx', pt[0]+2).attr('cy', pt[1]+2).attr('r', 10)
+          .attr('fill','#8B2635').attr('fill-opacity',0.7)
+          .attr('stroke','none').attr('cursor','pointer')
+          .attr('data-type','dependent').attr('data-id', s.napcsId)
+          .on('click', function() { showSlideoutSchool(s, 'DEPENDENT'); });
+        circlesGroup.append('circle')
+          .attr('cx', pt[0]+2).attr('cy', pt[1]+2).attr('r', 10)
+          .attr('fill','url(#state-circ-hatch)').attr('cursor','pointer')
+          .on('click', function() { showSlideoutSchool(s, 'DEPENDENT'); });
+      });
+
+      // CONFIRMED — group by city
+      var cityGroups = {};
+      (st.confirmedSchools||[]).forEach(function(s) {
+        if (!s.lat||!s.lon) return;
+        var ck = s.lat.toFixed(2)+','+s.lon.toFixed(2);
+        if (!cityGroups[ck]) cityGroups[ck] = {lat:s.lat, lon:s.lon, schools:[]};
+        cityGroups[ck].schools.push(s);
+      });
+
+      Object.values(cityGroups).forEach(function(grp) {
+        var pt = pr([grp.lon, grp.lat]);
+        if (!pt) return;
+        var count = grp.schools.length;
+        var r = rScale(count);
+        var fill = count > 10 ? '#6B1A2A' : count > 5 ? '#8B2635' : count > 2 ? '#a83040' : '#c05060';
+        circlesGroup.append('circle')
+          .attr('cx', pt[0]).attr('cy', pt[1]).attr('r', r)
+          .attr('fill', fill).attr('fill-opacity',0.9)
+          .attr('stroke','rgba(255,255,255,0.3)').attr('stroke-width',0.8)
+          .attr('cursor','pointer')
+          .on('click', function() { showSlideoutGroup(grp.schools, grp.schools[0].city); });
+        if (r >= 10) {
+          circlesGroup.append('text')
+            .attr('x', pt[0]).attr('y', pt[1])
+            .attr('text-anchor','middle').attr('dominant-baseline','central')
+            .attr('fill','white').attr('font-size',10).attr('font-weight','700')
+            .attr('pointer-events','none')
+            .text(count);
+        }
+      });
+
+      // City labels
+      var cities = D.stateCities[code] || [];
+      cities.forEach(function(c) {
+        var pt = pr([c[2], c[1]]);
+        if (!pt || pt[0]<0 || pt[0]>W || pt[1]<0 || pt[1]>H) return;
+        labelsGroup.append('circle').attr('cx',pt[0]).attr('cy',pt[1]).attr('r',2.5)
+          .attr('fill','white').attr('stroke','#1a1917').attr('stroke-width',0.8).attr('pointer-events','none');
+        labelsGroup.append('text').attr('x',pt[0]+7).attr('y',pt[1]+4)
+          .attr('font-size',9.5).attr('font-weight','600').attr('pointer-events','none')
+          .attr('stroke','#1a1917').attr('stroke-width',3).attr('stroke-linejoin','round').attr('fill','none')
+          .text(c[0]);
+        labelsGroup.append('text').attr('x',pt[0]+7).attr('y',pt[1]+4)
+          .attr('font-size',9.5).attr('font-weight','600').attr('pointer-events','none')
+          .attr('fill','rgba(240,237,232,0.9)')
+          .text(c[0]);
+      });
+    }
+
+    drawState(proj);
+    drawCircles(proj);
+
+    // Geographic zoom (re-project, not transform)
+    var zoom = d3.zoom().scaleExtent([1,12]).on('zoom', function(event) {
+      var t = event.transform;
+      var baseScale = _baseProj.scale();
+      var baseTx = _baseProj.translate();
+      var newProj = d3.geoAlbersUsa()
+        .scale(baseScale * t.k)
+        .translate([baseTx[0]*t.k + t.x, baseTx[1]*t.k + t.y]);
+      _currentProj = newProj;
+      drawState(newProj);
+      drawCircles(newProj);
+    });
+
+    window._zoomBehavior = zoom;
+    svg.call(zoom);
+
+  }).catch(function(e) {
+    svg.append('text').attr('x',W/2).attr('y',H/2).attr('text-anchor','middle')
+      .attr('fill','#7a7872').attr('font-size',13)
+      .text('Map requires internet connection');
+  });
+}
+
+function showSlideoutSchool(s, status) {
+  var badge = '<span class="status-badge ' + (STATUS_META[status]||{}).badgeClass + '">' + status + '</span>';
+  var html = '<div class="school-name">' + s.name + '</div>' +
+    '<div class="school-id">' + (s.napcsId||'') + '</div>' +
+    badge +
+    detailRow('City', s.city) +
+    detailRow('Union', s.union) +
+    detailRow('Affiliate', s.natlAff) +
+    detailRow('Labor Board', s.laborBoard||'') +
+    detailRow('Certified', s.dateUnionized) +
+    detailRow('Case', s.certCase) +
+    detailRow('CBA', s.cbaStatus) +
+    detailRow('1st Contract', s.firstContract) +
+    detailRow('Authorizer', s.authorizer);
+  openSlideout(html);
+}
+
+function showSlideoutGroup(schools, city) {
+  var html = '<div class="school-name">' + city + '</div>' +
+    '<div class="school-id">' + schools.length + ' confirmed school' + (schools.length!==1?'s':'') + '</div><br>';
+  schools.forEach(function(s) {
+    html += '<div style="margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid var(--border)">' +
+      '<div style="font-size:13px;font-weight:700;margin-bottom:4px">' + s.name + '</div>' +
+      '<div style="font-size:11px;color:var(--text3);margin-bottom:4px">' + (s.napcsId||'') + '</div>' +
+      detailRow('Union', s.union) +
+      detailRow('Certified', s.dateUnionized) +
+      '</div>';
+  });
+  openSlideout(html);
+}
+
+function showSlideoutUnorg(key) {
+  var schools = D.unorgLookup[key] || [];
+  var html = '<div class="school-name">Unorganized Schools</div>' +
+    '<div class="school-id">' + schools.length + ' school' + (schools.length!==1?'s':'') + ' in this area</div><br>' +
+    '<span class="status-badge sb-UNVERIFIED">UNVERIFIED</span><br><br>';
+  schools.forEach(function(s) {
+    html += '<div style="margin-bottom:8px;font-size:13px">' + s.name + '</div>' +
+      '<div style="font-size:11px;color:var(--text3);margin-bottom:8px">' + (s.city||'') + ' &bull; ' + (s.napcsId||'') + '</div>';
+  });
+  openSlideout(html);
+}
+
+function openSlideout(html) {
+  document.getElementById('slideout-content').innerHTML = html;
+  document.getElementById('slideout').classList.add('open');
+}
+
+function detailRow(label, val) {
+  if (!val) return '';
+  return '<div class="detail-row"><span class="detail-label">' + label + '</span><span class="detail-val">' + val + '</span></div>';
+}
+
+// ── Density Table ─────────────────────────────────────────────────────────
+function buildDensityTable() {
+  window._densityBuilt = true;
+  var rows = D.densityTable.map(function(r) {
+    var pct = parseFloat(r.density)||0;
+    var barW = Math.max(2, Math.min(120, pct*2));
+    var barColor = pct>20?'#6B1A2A':pct>10?'#C0392B':pct>5?'#E67E22':pct>1?'#c17f2a':'#4a3a20';
+    if (r.st==='OR') barColor='#00796B';
+    return '<tr>' +
+      '<td><strong>' + r.name + '</strong> <span style="color:var(--text3);font-size:11px">' + r.st + '</span></td>' +
+      '<td>' + (r.universe||0).toLocaleString() + '</td>' +
+      '<td style="color:var(--grn-txt)">' + (r.confirmed||0) + '</td>' +
+      '<td style="color:var(--teal-txt)">' + (r.dependent||0) + '</td>' +
+      '<td>' + ((r.confirmed||0)+(r.dependent||0)) + '</td>' +
+      '<td><div class="density-bar-wrap"><div class="density-bar" style="width:'+barW+'px;background:'+barColor+'"></div><span class="density-pct">'+r.density+'</span></div></td>' +
+      '<td class="note-text">' + (r.note||'') + '</td>' +
+      '</tr>';
+  }).join('');
+  var tot = D.densityTotals||{};
+  var totRow = '<tr class="totals-row">' +
+    '<td>TOTAL / COMBINED</td>' +
+    '<td>' + (tot.universe||0).toLocaleString() + '</td>' +
+    '<td>' + (tot.confirmed||0) + '</td>' +
+    '<td>' + (tot.dependent||0) + '</td>' +
+    '<td>' + (tot.combined||0) + '</td>' +
+    '<td><strong>' + (tot.density||'') + '</strong></td><td></td></tr>';
+  document.getElementById('density-table').innerHTML =
+    '<thead><tr><th>Jurisdiction</th><th>Universe</th><th>Confirmed</th><th>Dependent</th><th>Combined</th><th>Density</th><th>Notes</th></tr></thead>' +
+    '<tbody>' + rows + totRow + '</tbody>';
+}
+
+// ── Networks ──────────────────────────────────────────────────────────────
+function buildNetworks() {
+  window._networksBuilt = true;
+  var cards = '';
+  STATE_ORDER.forEach(function(code) {
+    var nets = D.networks[code];
+    if (!nets || !nets.length) return;
+    nets.forEach(function(n) {
+      cards += '<div class="network-card">' +
+        '<div class="network-card-hdr">' +
+        '<div><div class="network-name">' + n.name + '</div><div class="network-state">' + STATES[code].name + '</div></div>' +
+        '<div><div class="network-count">' + n.organizedCount + '</div><div class="network-count-sub">schools</div></div>' +
+        '</div>' +
+        '<div class="network-union">' + (n.union||'') + '</div>' +
+        '<div class="network-cba">' + (n.cbaStatus||'') + '</div>' +
+        (n.keyFindings ? '<div class="network-cba" style="margin-top:6px;color:var(--text2)">' + n.keyFindings + '</div>' : '') +
+        '</div>';
+    });
+  });
+  document.getElementById('networks-grid').innerHTML = cards || '<div class="empty">No network data available</div>';
+}
+
+// ── Threat Intel ──────────────────────────────────────────────────────────
+function buildThreat() {
+  window._threatBuilt = true;
+  var sorted = D.monitoring.slice().sort(function(a,b) {
+    var order = {CRITICAL:0,HIGH:1};
+    return (order[a.priority]||2) - (order[b.priority]||2);
+  });
+  var html = sorted.map(function(m) {
+    return '<div class="threat-card ' + m.priority + '">' +
+      '<div class="threat-hdr">' +
+      '<span class="' + (m.priority==='CRITICAL'?'pri-CRITICAL':'pri-HIGH') + '">' + m.priority + '</span>' +
+      '<span class="badge badge-info" style="font-size:10px">' + m.stateName + '</span>' +
+      '</div>' +
+      '<div class="threat-target">' + m.target + '</div>' +
+      '<div class="threat-desc">' + m.description + '</div>' +
+      '</div>';
+  }).join('');
+  document.getElementById('threat-grid').innerHTML = html || '<div class="empty">No critical or high monitoring items</div>';
+}
+
+// ── Patterns ──────────────────────────────────────────────────────────────
+function buildPatterns() {
+  window._patternsBuilt = true;
+  // Populate filter
+  var sel = document.getElementById('patterns-state-filter');
+  var statesWithPatterns = [...new Set(D.patterns.map(function(p){return p.state;}))].sort(function(a,b){
+    return (STATES[a]&&STATES[b]) ? STATES[a].name.localeCompare(STATES[b].name) : 0;
+  });
+  statesWithPatterns.forEach(function(code) {
+    var opt = document.createElement('option');
+    opt.value = code;
+    opt.textContent = STATES[code] ? STATES[code].name : code;
+    sel.appendChild(opt);
+  });
+  renderPatterns('');
+  sel.addEventListener('change', function() { renderPatterns(this.value); });
+}
+
+function renderPatterns(filterState) {
+  var patterns = filterState ? D.patterns.filter(function(p){return p.state===filterState;}) : D.patterns;
+  document.getElementById('patterns-grid').innerHTML = patterns.map(function(p) {
+    return '<div class="pcard">' +
+      '<div class="pcard-state">' + (STATES[p.state]?STATES[p.state].name:p.state) + '</div>' +
+      '<div class="pcard-title">' + (p.title||'Pattern') + '</div>' +
+      '<div class="pcard-body">' + (p.body||'') + '</div>' +
+      '</div>';
+  }).join('') || '<div class="empty">No patterns for this selection</div>';
+}
+
+// ── Scroll to top ─────────────────────────────────────────────────────────
+window.addEventListener('scroll', function() {
+  document.getElementById('scroll-top').classList.toggle('vis', window.scrollY > 300);
+});
+document.getElementById('scroll-top').addEventListener('click', function() {
+  window.scrollTo({top:0, behavior:'smooth'});
+});
+
+</script>
+</body>
+</html>
