@@ -6725,7 +6725,7 @@ const NAPCS_CONFIG = {
   "stateReports": {
     "AZ": {
       "fileName": "AZ_State_Research_Report.pdf",
-      "boxUrl": null,
+      "boxUrl": "https://pltstrategiesgroup.box.com/v/NAPCS-AZ-State-Research-Report",
       "netlifyUrl": "reports/AZ_State_Research_Report.pdf"
     },
     "CA": {
@@ -6825,7 +6825,7 @@ const NAPCS_CONFIG = {
     },
     "WI": {
       "fileName": "WI_State_Research_Report.pdf",
-      "boxUrl": null,
+      "boxUrl": "https://pltstrategiesgroup.box.com/v/NAPCS-WI-State-Research-Report",
       "netlifyUrl": "reports/WI_State_Research_Report.pdf"
     }
   }
