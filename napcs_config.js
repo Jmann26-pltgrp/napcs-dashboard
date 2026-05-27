@@ -6730,97 +6730,102 @@ const NAPCS_CONFIG = {
     },
     "CA": {
       "fileName": "CA_State_Research_Report.pdf",
-      "boxUrl": null,
+      "boxUrl": "https://pltstrategiesgroup.box.com/v/NAPCS-CA-State-Research-Report",
       "netlifyUrl": "reports/CA_State_Research_Report.pdf"
     },
     "CT": {
       "fileName": "CT_State_Research_Report.pdf",
-      "boxUrl": null,
+      "boxUrl": "https://pltstrategiesgroup.box.com/v/NAPCS-CT-State-Research-Report",
       "netlifyUrl": "reports/CT_State_Research_Report.pdf"
     },
     "DC": {
       "fileName": "DC_State_Research_Report.pdf",
-      "boxUrl": null,
+      "boxUrl": "https://pltstrategiesgroup.box.com/v/NAPCS-DC-State-Research-Report",
       "netlifyUrl": "reports/DC_State_Research_Report.pdf"
     },
     "DE": {
       "fileName": "DE_State_Research_Report.pdf",
-      "boxUrl": null,
+      "boxUrl": "https://pltstrategiesgroup.box.com/v/NAPCS-DE-State-Research-Report",
       "netlifyUrl": "reports/DE_State_Research_Report.pdf"
     },
     "FL": {
       "fileName": "FL_State_Research_Report.pdf",
-      "boxUrl": null,
+      "boxUrl": "https://pltstrategiesgroup.box.com/v/NAPCS-FL-State-Research-Report",
       "netlifyUrl": "reports/FL_State_Research_Report.pdf"
     },
     "HI": {
       "fileName": "HI_State_Research_Report.pdf",
-      "boxUrl": null,
+      "boxUrl": "https://pltstrategiesgroup.box.com/v/NAPCS-HI-State-Research-Report",
       "netlifyUrl": "reports/HI_State_Research_Report.pdf"
     },
     "IL": {
       "fileName": "IL_State_Research_Report.pdf",
-      "boxUrl": null,
+      "boxUrl": "https://pltstrategiesgroup.box.com/v/NAPCS-IL-State-Research-Report",
       "netlifyUrl": "reports/IL_State_Research_Report.pdf"
     },
     "LA": {
       "fileName": "LA_State_Research_Report.pdf",
-      "boxUrl": null,
+      "boxUrl": "https://pltstrategiesgroup.box.com/v/NAPCS-LA-State-Research-Report",
       "netlifyUrl": "reports/LA_State_Research_Report.pdf"
     },
     "MA": {
       "fileName": "MA_State_Research_Report.pdf",
-      "boxUrl": null,
+      "boxUrl": "https://pltstrategiesgroup.box.com/v/NAPCS-MA-State-Research-Report",
       "netlifyUrl": "reports/MA_State_Research_Report.pdf"
     },
     "ME": {
       "fileName": "ME_State_Research_Report.pdf",
-      "boxUrl": null,
+      "boxUrl": "https://pltstrategiesgroup.box.com/v/NAPCS-ME-State-Research-Report",
       "netlifyUrl": "reports/ME_State_Research_Report.pdf"
+    },
+    "MD": {
+      "fileName": "MD_State_Research_Report.pdf",
+      "boxUrl": "https://pltstrategiesgroup.box.com/v/NAPCS-MD-State-Research-Report",
+      "netlifyUrl": "reports/MD_State_Research_Report.pdf"
     },
     "MI": {
       "fileName": "MI_State_Research_Report.pdf",
-      "boxUrl": null,
+      "boxUrl": "https://pltstrategiesgroup.box.com/v/NAPCS-MI-State-Research-Report",
       "netlifyUrl": "reports/MI_State_Research_Report.pdf"
     },
     "MN": {
       "fileName": "MN_State_Research_Report.pdf",
-      "boxUrl": null,
+      "boxUrl": "https://pltstrategiesgroup.box.com/v/NAPCS-MN-State-Research-Report",
       "netlifyUrl": "reports/MN_State_Research_Report.pdf"
     },
     "NJ": {
       "fileName": "NJ_State_Research_Report.pdf",
-      "boxUrl": null,
+      "boxUrl": "https://pltstrategiesgroup.box.com/v/NAPCS-NJ-State-Research-Report",
       "netlifyUrl": "reports/NJ_State_Research_Report.pdf"
     },
     "NM": {
       "fileName": "NM_State_Research_Report.pdf",
-      "boxUrl": null,
+      "boxUrl": "https://pltstrategiesgroup.box.com/v/NAPCS-NM-State-Research-Report",
       "netlifyUrl": "reports/NM_State_Research_Report.pdf"
     },
     "NY": {
       "fileName": "NY_State_Research_Report.pdf",
-      "boxUrl": null,
+      "boxUrl": "https://pltstrategiesgroup.box.com/v/NAPCS-NY-State-Research-Report",
       "netlifyUrl": "reports/NY_State_Research_Report.pdf"
     },
     "OH": {
       "fileName": "OH_State_Research_Report.pdf",
-      "boxUrl": null,
+      "boxUrl": "https://pltstrategiesgroup.box.com/v/NAPCS-OH-State-Research-Report",
       "netlifyUrl": "reports/OH_State_Research_Report.pdf"
     },
     "OR": {
       "fileName": "OR_State_Research_Report.pdf",
-      "boxUrl": null,
+      "boxUrl": "https://pltstrategiesgroup.box.com/v/NAPCS-OR-State-Research-Report",
       "netlifyUrl": "reports/OR_State_Research_Report.pdf"
     },
     "PA": {
       "fileName": "PA_State_Research_Report.pdf",
-      "boxUrl": null,
+      "boxUrl": "https://pltstrategiesgroup.box.com/v/NAPCS-PA-State-Research-Report",
       "netlifyUrl": "reports/PA_State_Research_Report.pdf"
     },
     "RI": {
       "fileName": "RI_State_Research_Report.pdf",
-      "boxUrl": null,
+      "boxUrl": "https://pltstrategiesgroup.box.com/v/NAPCS-RI-State-Research-Report",
       "netlifyUrl": "reports/RI_State_Research_Report.pdf"
     },
     "WI": {
