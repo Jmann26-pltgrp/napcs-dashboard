@@ -189,6 +189,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .bc-ORGANIZING{background:#2A1A0A;color:#F5A623;border:1px solid #4A3010}
 .bc-DECERTIFIED{background:#1A1A1A;color:#888;border:1px solid #333}
 .bc-CLOSED{background:#2A1010;color:#E07A4A;border:1px solid #4A2010}
+.bc-HISTORICAL{background:#1A0A2A;color:#9B59B6;border:1px solid #4A1A6A}
 .bc-UNVERIFIED{background:#0A1520;color:#4A6A80;border:1px solid #1E2D40}
 
 /* MODAL */
@@ -276,6 +277,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
       <label class="fitem"><input type="checkbox" checked data-status="ORGANIZING"><span class="fdot" style="background:#F5A623"></span><span>Organizing (<span id="fc-2">0</span>)</span></label>
       <label class="fitem"><input type="checkbox" checked data-status="DECERTIFIED"><span class="fdot" style="background:#888;border:1px solid #555"></span><span>Decertified (<span id="fc-3">0</span>)</span></label>
       <label class="fitem"><input type="checkbox" checked data-status="CLOSED"><span class="fdot" style="background:#E07A4A"></span><span>Closed (<span id="fc-4">0</span>)</span></label>
+      <label class="fitem"><input type="checkbox" checked data-status="HISTORICAL"><span class="fdot" style="background:#9B59B6"></span><span>Historical (<span id="fc-6">0</span>)</span></label>
       <label class="fitem"><input type="checkbox" checked data-status="UNVERIFIED"><span class="fdot" style="background:transparent;border:1.5px dashed #8080C0"></span><span>Unverified (<span id="fc-5">0</span>)</span></label>
     </div>
 
@@ -362,6 +364,7 @@ var STATUS_CFG = {
   ORGANIZING: {color:'#F5A623',r:9,opacity:0.95},
   DECERTIFIED:{color:'#888888',r:5,opacity:0.70},
   CLOSED:     {color:'#E07A4A',r:5,opacity:0.70},
+  HISTORICAL: {color:'#9B59B6',r:5,opacity:0.70}, // Purple — past union activity, no active cert
   UNVERIFIED: {color:'rgba(0,0,0,0)',r:5,opacity:1.0}, // No fill — cyan outline only
 };
 
@@ -398,13 +401,14 @@ document.getElementById('sv-dec').textContent   = NAT.decertified;
 document.getElementById('sv-clo').textContent   = NAT.closed;
 
 // Filter counts
-var sc={CONFIRMED:0,DEPENDENT:0,ORGANIZING:0,DECERTIFIED:0,CLOSED:0,UNVERIFIED:0};
+var sc={CONFIRMED:0,DEPENDENT:0,ORGANIZING:0,DECERTIFIED:0,CLOSED:0,HISTORICAL:0,UNVERIFIED:0};
 SCHOOLS.forEach(function(s){ if(sc[s.status]!==undefined) sc[s.status]++; });
 document.getElementById('fc-0').textContent=sc.CONFIRMED;
 document.getElementById('fc-1').textContent=sc.DEPENDENT;
 document.getElementById('fc-2').textContent=sc.ORGANIZING;
 document.getElementById('fc-3').textContent=sc.DECERTIFIED;
 document.getElementById('fc-4').textContent=sc.CLOSED;
+document.getElementById('fc-6').textContent=sc.HISTORICAL;
 document.getElementById('fc-5').textContent=sc.UNVERIFIED;
 
 // Stat bar clicks
@@ -472,7 +476,7 @@ function unionUrl(u){
 
 // ── POPUP ───────────────────────────────────────────────────────────────────
 function buildPopup(s){
-  var stLbl={CONFIRMED:'Confirmed',DEPENDENT:'Dependent (District CBA)',ORGANIZING:'Organizing',DECERTIFIED:'Decertified',CLOSED:'Closed (Formerly Org.)',UNVERIFIED:'Unverified'}[s.status]||s.status;
+  var stLbl={CONFIRMED:'Confirmed',DEPENDENT:'Dependent (District CBA)',ORGANIZING:'Organizing',DECERTIFIED:'Decertified',CLOSED:'Closed (Formerly Org.)',HISTORICAL:'Historical (Past Activity)',UNVERIFIED:'Unverified'}[s.status]||s.status;
   var lowPrec=isLowPrecision(s);
   var h='<div class="pu-name">'+esc(s.name)+'</div>';
   h+=purow('Status','<span class="pu-badge bc-'+s.status+'">'+stLbl+'</span>');
