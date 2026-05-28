@@ -276,8 +276,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
       <label class="fitem"><input type="checkbox" checked data-status="DEPENDENT"><span class="fdot" style="background:#4ABFBF"></span><span>Dependent (<span id="fc-1">0</span>)</span></label>
       <label class="fitem"><input type="checkbox" checked data-status="ORGANIZING"><span class="fdot" style="background:#F5A623"></span><span>Organizing (<span id="fc-2">0</span>)</span></label>
       <label class="fitem"><input type="checkbox" checked data-status="DECERTIFIED"><span class="fdot" style="background:#888;border:1px solid #555"></span><span>Decertified (<span id="fc-3">0</span>)</span></label>
-      <label class="fitem"><input type="checkbox" checked data-status="CLOSED"><span class="fdot" style="background:#E07A4A"></span><span>Closed (<span id="fc-4">0</span>)</span></label>
-      <label class="fitem"><input type="checkbox" checked data-status="HISTORICAL"><span class="fdot" style="background:#9B59B6"></span><span>Historical (<span id="fc-6">0</span>)</span></label>
+      <label class="fitem"><input type="checkbox" data-status="CLOSED"><span class="fdot" style="background:#E07A4A"></span><span>Closed (<span id="fc-4">0</span>)</span></label>
+      <label class="fitem"><input type="checkbox" data-status="HISTORICAL"><span class="fdot" style="background:#9B59B6"></span><span>Historical (<span id="fc-6">0</span>)</span></label>
       <label class="fitem"><input type="checkbox" checked data-status="UNVERIFIED"><span class="fdot" style="background:transparent;border:1.5px dashed #8080C0"></span><span>Unverified (<span id="fc-5">0</span>)</span></label>
     </div>
 
@@ -427,7 +427,11 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{
 }).addTo(map);
 
 var layers={};
-Object.keys(STATUS_CFG).forEach(function(s){ layers[s]=L.layerGroup().addTo(map); });
+var HIDDEN_BY_DEFAULT = new Set(['CLOSED','HISTORICAL']);
+Object.keys(STATUS_CFG).forEach(function(s){
+  layers[s] = L.layerGroup();
+  if(!HIDDEN_BY_DEFAULT.has(s)) layers[s].addTo(map);
+});
 map.createPane('labelPane');
 map.getPane('labelPane').style.zIndex=650;
 
@@ -606,7 +610,8 @@ function openStateSlideout(code, coords){
 
   // Enrollment
   if(charterEnroll>0){
-    h+='<div class="spo-section">Enrollment (2024\u201325)</div>';
+    h+='<div class="spo-section">State Enrollment (2024\u201325)</div>';
+    h+=spoRow('Total Public K\u201312',totalK12>0?totalK12.toLocaleString():'N/A','');
     h+=spoRow('Charter Enrollment',charterEnroll.toLocaleString(),'b');
     if(charterSharePct) h+=spoRow('Charter Share',charterSharePct+'% of public K\u201312','');
   }

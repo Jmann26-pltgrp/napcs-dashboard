@@ -151,6 +151,18 @@ const NAPCS_CONFIG = {
       "lb_abbrev": "MLRB",
       "note": "Public employees covered by MLRB. No public portal — labor board searches require emailing mlrb@maine.gov. NLRB may appl"
     },
+    "MD": {
+      "name": "Maryland",
+      "universe": 54,
+      "conf": 0,
+      "dep": 54,
+      "org": 0,
+      "dec": 0,
+      "clo": 0,
+      "lb": "Maryland State Board of Education",
+      "lb_abbrev": "MSDE",
+      "note": "All MD charter schools are dependent — authorized by local school boards; staff are district employees covered by district CBAs."
+    },
     "MI": {
       "name": "Michigan",
       "universe": 373,
@@ -261,15 +273,27 @@ const NAPCS_CONFIG = {
     },
     "WI": {
       "name": "Wisconsin",
-      "universe": 225,
+      "universe": 237,
       "conf": 0,
-      "dep": 0,
+      "dep": 124,
+      "org": 0,
+      "dec": 0,
+      "clo": 12,
+      "lb": "Wisconsin Employment Relations Commission / NLRB Region 18",
+      "lb_abbrev": "WERC / NLRB R18",
+      "note": "124 LEA instrumentality charters DEPENDENT under Wis. Stat. §118.40(7)(ar). Act 10 constrains bargaining to base wages (stayed Dec 2024)."
+    },
+    "MD": {
+      "name": "Maryland",
+      "universe": 54,
+      "conf": 0,
+      "dep": 54,
       "org": 0,
       "dec": 0,
       "clo": 0,
-      "lb": "Wisconsin Employment Relations Commission",
-      "lb_abbrev": "WERC",
-      "note": "Non-instrumentality charter school under Wis. Stat. §118.40. Authorized by CITY OF MILWAUKEE (non-LEA authorizer). Indep"
+      "lb": "Maryland State Board of Education",
+      "lb_abbrev": "MSDE",
+      "note": "All MD charter schools are dependent — authorized by local school boards; staff are district employees covered by district CBAs."
     }
   },
   "state_centers": {
@@ -316,6 +340,10 @@ const NAPCS_CONFIG = {
     "ME": [
       44.5,
       -69
+    ],
+    "MD": [
+      39.0,
+      -76.8
     ],
     "MI": [
       43.5,
