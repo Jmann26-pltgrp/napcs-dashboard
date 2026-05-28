@@ -398,6 +398,16 @@ const NAPCS_CONFIG = {
       "lb": "HLRB"
     },
     {
+      "st": "MD",
+      "name": "Maryland",
+      "universe": 54,
+      "confirmed": 0,
+      "dependent": 54,
+      "combined": 54,
+      "density": "100.0%",
+      "lb": "MSDE"
+    },
+    {
       "st": "OR",
       "name": "Oregon",
       "universe": 128,
@@ -406,6 +416,16 @@ const NAPCS_CONFIG = {
       "combined": 121,
       "density": "94.5%",
       "lb": "ERB"
+    },
+    {
+      "st": "WI",
+      "name": "Wisconsin",
+      "universe": 237,
+      "confirmed": 0,
+      "dependent": 124,
+      "combined": 124,
+      "density": "52.3%",
+      "lb": "WERC / NLRB R18"
     },
     {
       "st": "CT",
@@ -586,16 +606,6 @@ const NAPCS_CONFIG = {
       "combined": 4,
       "density": "0.7%",
       "lb": "NLRB"
-    },
-    {
-      "st": "WI",
-      "name": "Wisconsin",
-      "universe": 225,
-      "confirmed": 0,
-      "dependent": 0,
-      "combined": 0,
-      "density": "0.0%",
-      "lb": "WERC"
     }
   ],
   "jurisdiction_data": {
