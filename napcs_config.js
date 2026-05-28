@@ -6833,5 +6833,35 @@ const NAPCS_CONFIG = {
       "boxUrl": "https://pltstrategiesgroup.box.com/v/NAPCS-WI-State-Research-Report",
       "netlifyUrl": "reports/WI_State_Research_Report.pdf"
     }
+  },
+
+  "stateK12Enrollment": {
+    "source": "NCES CCD ELSI 2024-25 (SY 2024-25 Universe Files, Version 1a)",
+    "vintage": "2024-25",
+    "AZ": 1103894,
+    "CA": 5805510,
+    "CO": 865077,
+    "CT": 508402,
+    "DE": 142156,
+    "DC": 94211,
+    "FL": 2859600,
+    "HI": 167071,
+    "IL": 1842881,
+    "LA": 666840,
+    "ME": 167309,
+    "MD": 891525,
+    "MA": 915932,
+    "MI": 1423933,
+    "MN": 876182,
+    "NJ": 1394971,
+    "NM": 307110,
+    "NY": 2527258,
+    "OH": 1665566,
+    "OR": 545088,
+    "PA": 1691456,
+    "RI": 135978,
+    "TX": 5545640,
+    "WA": 1094502,
+    "WI": 806065
   }
 };
